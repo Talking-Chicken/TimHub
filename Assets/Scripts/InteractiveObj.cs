@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 {
-    [SerializeField] private string _talkerName;
-    [SerializeField] private string _startNode;
-    [SerializeField] private bool _talkable;
+    [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField] private bool _interactable;
-
+    [SerializeField, EnableIf("_talkable"), BoxGroup("Dialogue")] private string _talkerName;
+    [SerializeField, EnableIf("_talkable"), BoxGroup("Dialogue")] private string _startNode;
+    
     //getter & setters
     public string TalkerName{get {return _talkerName;} set {_talkerName = value;}}
     public string StartNode{get {return _startNode;} set {_startNode = value;}}
