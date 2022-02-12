@@ -3,5 +3,5 @@ using System.Collections.Generic;
 
 public interface IInteractable
 {
-    public abstract void interact();
+    void interact();
 }
