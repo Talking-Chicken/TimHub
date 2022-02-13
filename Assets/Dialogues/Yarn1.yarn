@@ -3,4 +3,32 @@ tags:
 ---
 People: Hello!
 Peoples: Hi!
+<<jump Yarn2>>
+===
+title: Yarn2
+position: -3,132
+---
+People: hows ur day?
+
+-> good
+    People: that's good!
+-> so so
+    People: what happend?
+
+People: sounds good!
+
+-> where are u going?
+    <<jump People_Location>>
+-> what's ur plan?
+    <<jump People_Plan>>
+===
+title: People_Location
+position: -124,289
+---
+People: to the end of the world!
+===
+title: People_Plan
+position: 103,283
+---
+People: i'm going to play my favorite game today
 ===
