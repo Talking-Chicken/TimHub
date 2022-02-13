@@ -1,23 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class PlayerControl : MonoBehaviour
 {
-    private Vector2 destination;
+    private Vector2 _destination;
+    public Vector2 Destination{get {return _destination;} set {_destination = value;}}
+
+    public InteractiveObj interactingObj;
+    public DialogueRunner runner;
+
+    //states
+    private PlayerStateBase currentState;
+    public PlayerStateExplore stateExplore = new PlayerStateExplore();
+    public PlayerStateDialogue stateDialogue = new PlayerStateDialogue();
+
+    public void changeState(PlayerStateBase newState) {
+        if (currentState != null)
+        {
+            currentState.leaveState(this);
+        }
+
+        currentState = newState;
+
+        if (currentState != null)
+        {  
+            currentState.enterState(this);
+        }
+    }
+
     void Start()
     {
-        destination = transform.position;
+        changeState(stateExplore);
+        _destination = transform.position;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) {
-            destination = Input.mousePosition;
-        }
-
-        if (Vector2.Distance(transform.position, destination) > 0.1f)
-            moveTo(Camera.main.ScreenToWorldPoint(destination));
+        currentState.updateState(this);
     }
 
     public void moveTo(Vector2 destination) {
