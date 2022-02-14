@@ -1,0 +1,20 @@
+﻿title: Human_Start
+tags:
+position: -6,-26
+---
+Human: This is the start of human dialogue;
+<<jump Human_End>>
+===
+title: Human_End
+position: -7,133
+---
+Human: It is a complicated question.
+-> choose option 1
+    option 1!
+-> choose option 2
+    option 2!
+-> choose option 3
+    option 3!
+-> choose option 4
+    option 4!
+===
