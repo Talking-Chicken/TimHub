@@ -6,5 +6,6 @@ public abstract class PlayerStateBase
 {
     public abstract void enterState(PlayerControl player);
     public abstract void updateState(PlayerControl player);
+    public abstract void fixedUpdate(PlayerControl player);
     public abstract void leaveState(PlayerControl player);
 }

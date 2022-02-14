@@ -42,8 +42,11 @@ public class PlayerControl : MonoBehaviour
         currentState.updateState(this);
     }
 
+    void FixedUpdate() {
+        currentState.fixedUpdate(this);
+    }
+
     public void moveTo(Vector2 destination) {
-        transform.position = Vector2.MoveTowards(transform.position, destination, Time.deltaTime*speed);
-        //transform.position = Vector2.Lerp(transform.position, destination, 0.1f);
+        transform.position = Vector2.Lerp(transform.position, Vector2.MoveTowards(transform.position, destination, Time.deltaTime*speed), 0.5f);
     }
 }

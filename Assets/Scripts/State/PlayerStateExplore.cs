@@ -10,7 +10,7 @@ public class PlayerStateExplore : PlayerStateBase
     public override void updateState(PlayerControl player){
         InteractiveObj interactingObj = null;
 
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null) {
                 Debug.Log("hit something");
@@ -20,7 +20,7 @@ public class PlayerStateExplore : PlayerStateBase
                 }
             }
             else
-                player.Destination = Input.mousePosition;
+                player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
         //start dialogue first, then interact
@@ -34,10 +34,12 @@ public class PlayerStateExplore : PlayerStateBase
                     interactingObj.interact();
             }    
         }
+    }
 
+    public override void fixedUpdate(PlayerControl player) {
         //move
         if (Vector2.Distance(player.transform.position, player.Destination) > 0.1f)
-            player.moveTo(Camera.main.ScreenToWorldPoint(player.Destination));
+            player.moveTo(player.Destination);
     }
     public override void leaveState(PlayerControl player){
         

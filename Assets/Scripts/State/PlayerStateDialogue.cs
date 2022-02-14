@@ -12,6 +12,11 @@ public class PlayerStateDialogue : PlayerStateBase
         if (!player.runner.IsDialogueRunning)
             player.changeState(player.stateExplore);
     }
+
+    public override void fixedUpdate(PlayerControl player)
+    {
+        
+    }
     public override void leaveState(PlayerControl player) {
         
     }
