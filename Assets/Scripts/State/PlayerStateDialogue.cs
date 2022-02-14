@@ -13,6 +13,6 @@ public class PlayerStateDialogue : PlayerStateBase
             player.changeState(player.stateExplore);
     }
     public override void leaveState(PlayerControl player) {
-
+        
     }
 }

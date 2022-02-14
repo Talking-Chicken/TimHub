@@ -5,6 +5,7 @@ using Yarn.Unity;
 
 public class PlayerControl : MonoBehaviour
 {
+    [SerializeField, Range(3.0f,15.0f)] private float speed;
     private Vector2 _destination;
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
 
@@ -42,6 +43,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     public void moveTo(Vector2 destination) {
-        transform.position = Vector2.Lerp(transform.position, destination, 0.1f);
+        transform.position = Vector2.MoveTowards(transform.position, destination, Time.deltaTime*speed);
+        //transform.position = Vector2.Lerp(transform.position, destination, 0.1f);
     }
 }

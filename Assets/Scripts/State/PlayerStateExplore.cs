@@ -40,6 +40,6 @@ public class PlayerStateExplore : PlayerStateBase
             player.moveTo(Camera.main.ScreenToWorldPoint(player.Destination));
     }
     public override void leaveState(PlayerControl player){
-
+        
     }
 }
