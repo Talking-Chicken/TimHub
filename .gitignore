@@ -146,3 +146,26 @@ Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Tests/Editor/Editor Test 
 Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Textures/Divider.png
 Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Textures/Selector-Off.png
 Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Textures/Selector-On.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/Asset Icons/Localization Icon.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/Asset Icons/LocalizationDatabase Icon.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/Asset Icons/YarnProject Icon.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/Asset Icons/YarnScript Icon.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/YarnSpinnerEditorWindow.psd
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/YarnSpinnerFailed.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/YarnSpinnerLogo.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/YarnSpinnerNotTested.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Editor/Icons/YarnSpinnerSuccess.png
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/Antlr4.Runtime.Standard.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/CsvHelper.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/Google.Protobuf.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/System.Buffers.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/System.Memory.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/System.Numerics.Vectors.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/System.Reflection.TypeExtensions.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/System.Runtime.CompilerServices.Unsafe.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/YarnSpinner.Compiler.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Runtime/DLLs/YarnSpinner.dll
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Samples~/Addressables/Audio/VoiceOversFMOD~/Assets/FMOD Audio Table Example/de/0967160.ogg
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Samples~/Addressables/Audio/VoiceOversFMOD~/Assets/FMOD Audio Table Example/de/0e3dc4b.ogg
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Samples~/Addressables/Audio/VoiceOversFMOD~/Assets/FMOD Audio Table Example/en/0967160.ogg
+Assets/YarnSpinner-Unity-2.0.2/YarnSpinner-Unity-2.0.2/Samples~/Addressables/Audio/VoiceOversFMOD~/Assets/FMOD Audio Table Example/en/0e3dc4b.ogg
