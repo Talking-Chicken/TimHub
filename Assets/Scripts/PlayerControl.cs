@@ -7,8 +7,13 @@ public class PlayerControl : MonoBehaviour
 {
     [SerializeField, Range(3.0f,15.0f)] private float speed;
     private Vector2 _destination;
+    private SpriteRenderer myRenderer;
+
+    //getters & setters
+    public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
 
+    //dialogue
     public InteractiveObj interactingObj;
     public DialogueRunner runner;
 
@@ -34,6 +39,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         changeState(stateExplore);
+        myRenderer = GetComponent<SpriteRenderer>();
         _destination = transform.position;
     }
 
@@ -46,7 +52,17 @@ public class PlayerControl : MonoBehaviour
         currentState.fixedUpdate(this);
     }
 
+    /**
+    * move this object to destination
+    * meanwhile, adjust sprite facing direction
+    */
     public void moveTo(Vector2 destination) {
-        transform.position = Vector2.Lerp(transform.position, Vector2.MoveTowards(transform.position, destination, Time.deltaTime*speed), 0.5f);
+        Vector2 movingPos = Vector2.MoveTowards(transform.position, destination, Time.deltaTime*speed);
+        if (movingPos.x - transform.position.x > 0)
+            myRenderer.flipX = true;
+        else
+            myRenderer.flipX = false;
+        
+        transform.position = Vector2.Lerp(transform.position, movingPos, 0.5f);;
     }
 }
