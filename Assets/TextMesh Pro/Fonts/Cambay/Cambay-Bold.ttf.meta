@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1acd708f08287ce41826e10756d1336a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cambay
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 57d40d644a257e24d9d6fcb8587c0fbe, type: 3}
+  - {fileID: 12800000, guid: 317b8206157c0044db59a53c06e33747, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
