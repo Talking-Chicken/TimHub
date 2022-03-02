@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerStateExplore : PlayerStateBase
 {
     public override void enterState(PlayerControl player){
-
+        player.blurCamera.SetActive(false);
     }
     public override void updateState(PlayerControl player){
         InteractiveObj interactingObj = null;
@@ -42,6 +42,6 @@ public class PlayerStateExplore : PlayerStateBase
             player.moveTo(player.Destination);
     }
     public override void leaveState(PlayerControl player){
-        
+        player.blurCamera.SetActive(true);
     }
 }

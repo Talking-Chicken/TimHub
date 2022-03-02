@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
+using NaughtyAttributes;
 
 public class PlayerControl : MonoBehaviour
 {
-    [SerializeField, Range(3.0f,15.0f)] private float speed;
+    [SerializeField, Range(3.0f,15.0f), BoxGroup("Movement")] private float speed;
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
 
@@ -14,8 +15,11 @@ public class PlayerControl : MonoBehaviour
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
 
     //dialogue
-    public InteractiveObj interactingObj;
-    public DialogueRunner runner;
+    [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
+    [BoxGroup("Dialgoue")] public DialogueRunner runner;
+
+    //post processing
+    [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
 
     //states
     private PlayerStateBase currentState;
