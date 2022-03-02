@@ -18,6 +18,9 @@ public class PlayerControl : MonoBehaviour
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
     [BoxGroup("Dialgoue")] public DialogueRunner runner;
 
+    //journal
+    [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
+
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
 
@@ -25,6 +28,7 @@ public class PlayerControl : MonoBehaviour
     private PlayerStateBase currentState;
     public PlayerStateExplore stateExplore = new PlayerStateExplore();
     public PlayerStateDialogue stateDialogue = new PlayerStateDialogue();
+    public PlayerStateJournal stateJournal = new PlayerStateJournal();
 
     public void changeState(PlayerStateBase newState) {
         if (currentState != null)
@@ -39,6 +43,11 @@ public class PlayerControl : MonoBehaviour
             currentState.enterState(this);
         }
     }
+
+    //changing state function, for unity event (button)
+    public void changeToExploreState() {changeState(stateExplore);}
+    public void changeToDialogueState() {changeState(stateDialogue);}
+    public void changeToJournalState() {changeState(stateJournal);}
 
     void Start()
     {
@@ -68,5 +77,13 @@ public class PlayerControl : MonoBehaviour
             myRenderer.flipX = false;
         
         transform.position = Vector2.Lerp(transform.position, movingPos, 0.5f);;
+    }
+
+    //open and close things
+    public void openJournal() {
+        journalContainer.SetActive(true);
+    }
+    public void closeJournal() {
+        journalContainer.SetActive(false);
     }
 }
