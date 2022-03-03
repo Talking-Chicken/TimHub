@@ -6,9 +6,6 @@ public class PlayerStateJournal : PlayerStateBase
 {
     public override void enterState(PlayerControl player)
     {
-        //stop player moving
-        player.Destination = player.transform.position;
-
         player.openJournal();
         player.blurCamera.SetActive(true);
     }

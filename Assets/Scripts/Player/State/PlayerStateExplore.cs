@@ -19,7 +19,7 @@ public class PlayerStateExplore : PlayerStateBase
                     interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
                 }
             }
-            else
+            else 
                 player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
@@ -42,6 +42,8 @@ public class PlayerStateExplore : PlayerStateBase
             player.moveTo(player.Destination);
     }
     public override void leaveState(PlayerControl player){
+        //stop player moving
+        player.Destination = player.transform.position;
         player.blurCamera.SetActive(true);
     }
 }

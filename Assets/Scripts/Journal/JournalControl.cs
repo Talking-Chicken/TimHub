@@ -6,10 +6,13 @@ using NaughtyAttributes;
 public class JournalControl : MonoBehaviour
 {
     //gameobjects of different sections
-    [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody;
+    [SerializeField, BoxGroup("Journal Body"), Tooltip("this is used to block player mouse raycast, when clicking on journal icon")]
+    private GameObject blockRaycastSquare;
+    [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon;
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntries, alibieTab;
     [SerializeField, BoxGroup("Item")] private GameObject itemEntries, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
+
 
     //states
     private JournalStateBase currentState;
@@ -48,6 +51,9 @@ public class JournalControl : MonoBehaviour
     void Update()
     {
         currentState.updateState(this);
+
+        //happens all states
+        blockRaycastSquare.transform.position = Camera.main.ScreenToWorldPoint(journalIcon.transform.position);
     }
 
     //open and close sections, also notice that tab will change their hierarchy in canvas
