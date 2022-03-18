@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 3756276975525379585}
   - component: {fileID: 3882206063926658735}
   - component: {fileID: 3617705419006661430}
+  - component: {fileID: 6177947475350380915}
   m_Layer: 5
   m_Name: AlibiEntry
   m_TagString: Untagged
@@ -588,3 +589,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &6177947475350380915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702482058325787345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ebee3fc8c4b6842baa6faada625e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 6406203403362885971}
+  descriptionText: {fileID: 3480991041867027313}
+  image: {fileID: 8891023466424448345}

@@ -6,17 +6,32 @@ using Yarn.Unity;
 
 public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 {
+    [SerializeField, BoxGroup("Entry Info")] private string entryName;
+    [SerializeField, BoxGroup("Entry Info"), ResizableTextArea] private string entryDes;
+    [SerializeField, BoxGroup("Entry Info")] private Sprite entryImage;
     [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField, BoxGroup("interaction")] private bool _interactable;
     [SerializeField, BoxGroup("interaction"), Header("do interact before dialogue"), EnableIf("_interactable")] private bool _interactFirst;
     [SerializeField, EnableIf("_talkable"), BoxGroup("Dialogue")] private string _startNode;
     [SerializeField, BoxGroup("collider")] private Collider2D collider;
+
+    private entry entryInfo;
+    
     
     //getter & setters
     public string StartNode{get {return _startNode;} set {_startNode = value;}}
     public bool IsTalkable{get {return _talkable;} set {_talkable = value;}}
     public bool IsInteractable{get {return _interactable;} set {_interactable = value;}}
     public bool IsInteractFirst{get {return _interactFirst;} private set{_interactFirst = value;}}
+    public entry Entry {
+        get {
+            return entryInfo;
+        } private set {
+            entryInfo.entryName = this.entryName;
+            entryInfo.entryDes = this.entryDes;
+            entryInfo.entryImage = this.entryImage;
+        }
+    }
 
     void Start()
     {

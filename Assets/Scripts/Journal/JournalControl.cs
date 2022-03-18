@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
+[System.Serializable]
 public struct entry {
     public string entryName;
     public string entryDes;
