@@ -68,6 +68,9 @@ public class JournalControl : MonoBehaviour
     public void openAlibi() {
         alibiEntries.SetActive(true);
         bringToTop(alibieTab, journalBody);
+
+        //draw all alibi entries
+        alibiControl.showEntries();
     }
 
     public void closeAlibi() {
@@ -96,5 +99,11 @@ public class JournalControl : MonoBehaviour
     private void bringToTop(GameObject topObject, GameObject secondToTopObject) {
         secondToTopObject.transform.SetAsLastSibling();
         topObject.transform.SetAsLastSibling();
+    }
+
+    /*add entry to either alibi or item evidence
+      for now only adds to alibi*/
+    public void addEntry(entry newEntry) {
+        alibiControl.Alibies.Add(newEntry);
     }
 }

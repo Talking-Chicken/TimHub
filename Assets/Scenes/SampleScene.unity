@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &194212326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 995426117, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+  m_PrefabInstance: {fileID: 995426112}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d224172445028459da530daecce8da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &450951647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -713,6 +724,7 @@ MonoBehaviour:
   interactingObj: {fileID: 0}
   runner: {fileID: 822678631}
   journalContainer: {fileID: 1315632215}
+  journal: {fileID: 194212326}
   blurCamera: {fileID: 1973186016}
 --- !u!212 &1034750824
 SpriteRenderer:
@@ -947,9 +959,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1438861656}
     - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
+      propertyPath: entryDes
+      value: "I am at the other side of the town that day, \nthere's no way someone
+        saw me at the crime scene"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
+      propertyPath: entryName
+      value: 233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: _startNode
       value: Human_Start
       objectReference: {fileID: 0}
+    - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
+      propertyPath: entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: ed9d24dd1eb826a4d83533195a853cee, type: 3}
     - target: {fileID: 1578899831633838394, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_Name
       value: Tim

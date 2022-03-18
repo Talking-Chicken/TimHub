@@ -8,6 +8,8 @@ public class AlibiControl : MonoBehaviour
     [SerializeField] private List<entry> alibies = new List<entry>();
     [SerializeField] private GameObject alibiEntry;
 
+    //getters & setters
+    public List<entry> Alibies {get {return alibies;} set {alibies = value;}}
 
     void Start()
     {

@@ -27,14 +27,18 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
         get {
             return entryInfo;
         } private set {
+            Debug.Log("setting");
             entryInfo.entryName = this.entryName;
             entryInfo.entryDes = this.entryDes;
             entryInfo.entryImage = this.entryImage;
+            Debug.Log(Entry.entryName);
         }
     }
 
     void Start()
     {
+        Entry = entryInfo;
+
         //check everything has set up
         if (collider == null)
             Debug.LogWarning(name + " has not set up a collider yet");

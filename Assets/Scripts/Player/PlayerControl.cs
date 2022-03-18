@@ -10,9 +10,7 @@ public class PlayerControl : MonoBehaviour
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
 
-    //getters & setters
-    public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
-    public Vector2 Destination{get {return _destination;} set {_destination = value;}}
+    
 
     //dialogue
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
@@ -20,6 +18,12 @@ public class PlayerControl : MonoBehaviour
 
     //journal
     [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
+    [SerializeField, BoxGroup("Journal")] private JournalControl journal;
+
+    //getters & setters
+    public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
+    public Vector2 Destination{get {return _destination;} set {_destination = value;}}
+    public JournalControl Journal {get {return journal;}}
 
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
