@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
+public struct entry {
+    public string entryName;
+    public string entryDes;
+    public Sprite entryImage;
+}
+
 public class JournalControl : MonoBehaviour
 {
     //gameobjects of different sections
     [SerializeField, BoxGroup("Journal Body"), Tooltip("this is used to block player mouse raycast, when clicking on journal icon")]
-    private GameObject blockRaycastSquare;
+    private GameObject blockRaycastSquare; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
     [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon;
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntries, alibieTab;
+    [SerializeField, BoxGroup("Alibi")] private AlibiControl alibiControl;
     [SerializeField, BoxGroup("Item")] private GameObject itemEntries, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
 

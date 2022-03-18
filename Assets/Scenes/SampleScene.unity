@@ -600,6 +600,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 170488459318215907, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 397399215460164330, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_Name
       value: journal
@@ -1558,6 +1562,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+--- !u!1 &995426113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3056864984908375706, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+  m_PrefabInstance: {fileID: 995426112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &995426114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995426113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976fe82f921d71141905fe51523b72d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alibiEntry: {fileID: 0}
 --- !u!1 &1034750822
 GameObject:
   m_ObjectHideFlags: 0
