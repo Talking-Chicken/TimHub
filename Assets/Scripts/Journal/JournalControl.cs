@@ -9,7 +9,7 @@ public struct entry {
     public string entryName;
     public string entryDes;
     public Sprite entryImage;
-    public EntryType entryCat;
+    public EntryType entryType;
 }
 #endregion
 
@@ -23,12 +23,12 @@ public class JournalControl : MonoBehaviour
     private GameObject blockRaycastSquare; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
     [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon;
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab, alibiEntry;
-    [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
+    [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab, itemEntry;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
 
     //journal entries
-    private List<entry> alibies = new List<entry>();
-    private List<GameObject> alibiEntryObjects = new List<GameObject>();
+    private List<entry> alibies = new List<entry>(), items = new List<entry>();
+    private List<GameObject> alibiEntryObjects = new List<GameObject>(), itemEntryObjects = new List<GameObject>();
 
 
     #region STATES
@@ -87,7 +87,7 @@ public class JournalControl : MonoBehaviour
         alibiEntriesContainer.SetActive(false);
 
         //destroy all alibi entries
-        hideEntries();
+        
     }    
 
     public void openItem() {
@@ -117,10 +117,11 @@ public class JournalControl : MonoBehaviour
 
     /*add entry to either alibi or item evidence
       for now only adds to alibi*/
-    public void addEntry(entry newEntry, EntryType entryCat) {
-        if (entryCat == EntryType.Alibi)
+    public void addEntry(entry newEntry) {
+        if (newEntry.entryType == EntryType.Alibi)
             alibies.Add(newEntry);
-            //alibiControl.Alibies.Add(newEntry);
+        else if (newEntry.entryType == EntryType.Item)
+            items.Add(newEntry);
     }
 
     /*show entries of the current state*/
@@ -136,16 +137,35 @@ public class JournalControl : MonoBehaviour
                 newAlibi.CurrentEntry = alibies[i];
                 newAlibi.drawSelf();
             }
+        } else if (currentState == stateItems) {
+            //for now instantiate new item entry every time, change to object pool when we know how many entries should be one page
+            for (int i = 0; i < alibies.Count; i++) {
+                itemEntryObjects.Add(Instantiate(itemEntry, Vector2.zero, Quaternion.identity));
+                itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
+                
+                //set information of new entry
+                JournalEntry newAlibi = itemEntryObjects[i].GetComponent<JournalEntry>();
+                newAlibi.CurrentEntry = items[i];
+                newAlibi.drawSelf();
+            }
         }
     }
 
     /*hide alibi entries
     destroy entries that been created by show entries*/
-  public void hideEntries() {
-    for (int i = 0; i < alibiEntryObjects.Count; i++) {
-      GameObject deletingEntry = alibiEntryObjects[i];
-      alibiEntryObjects.RemoveAt(i);
-      Destroy(deletingEntry);
+    public void hideEntries(JournalStateBase currentState) {
+        if (currentState == stateAlibis) {
+            for (int i = 0; i < alibiEntryObjects.Count; i++) {
+                GameObject deletingEntry = alibiEntryObjects[i];
+                alibiEntryObjects.RemoveAt(i);
+                Destroy(deletingEntry);
+            }
+        } else if (currentState == stateItems) {
+            for (int i = 0; i < itemEntryObjects.Count; i++) {
+                GameObject deletingEntry = itemEntryObjects[i];
+                itemEntryObjects.RemoveAt(i);
+                Destroy(deletingEntry);
+            }
+        }
     }
-  }
 }

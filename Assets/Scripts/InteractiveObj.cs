@@ -9,7 +9,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     [SerializeField, BoxGroup("Entry Info")] private string entryName;
     [SerializeField, BoxGroup("Entry Info"), ResizableTextArea] private string entryDes;
     [SerializeField, BoxGroup("Entry Info")] private Sprite entryImage;
-    [SerializeField, BoxGroup("Entry Info")] private EntryType entryCat;
+    [SerializeField, BoxGroup("Entry Info")] private EntryType entryType;
     [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField, BoxGroup("interaction")] private bool _interactable;
     [SerializeField, BoxGroup("interaction"), Header("do interact before dialogue"), EnableIf("_interactable")] private bool _interactFirst;
@@ -31,7 +31,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
             entryInfo.entryName = this.entryName;
             entryInfo.entryDes = this.entryDes;
             entryInfo.entryImage = this.entryImage;
-            entryInfo.entryCat = this.entryCat;
+            entryInfo.entryType = this.entryType;
         }
     }
 
