@@ -75,6 +75,9 @@ public class JournalControl : MonoBehaviour
 
     public void closeAlibi() {
         alibiEntries.SetActive(false);
+
+        //destroy all alibi entries
+        alibiControl.hideEntries();
     }    
 
     public void openItem() {
