@@ -37,6 +37,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 
     void Start()
     {
+        //initialize Entry
         Entry = entryInfo;
 
         //check everything has set up

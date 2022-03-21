@@ -86,6 +86,7 @@ public class PlayerControl : MonoBehaviour
     //open and close things
     public void openJournal() {
         journalContainer.SetActive(true);
+        journal.changeState(journal.stateAlibis);
     }
     public void closeJournal() {
         journalContainer.SetActive(false);

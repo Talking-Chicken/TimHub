@@ -32,6 +32,7 @@ public class JournalControl : MonoBehaviour
     public JournalStateAlibis stateAlibis = new JournalStateAlibis();
     public JournalStateItems stateItems = new JournalStateItems();
     public JournalStateCaseReport stateCaseReport = new JournalStateCaseReport();
+    public JournalStateIdle stateIdle = new JournalStateIdle();
 
     public void changeState(JournalStateBase newState) {
         if (currentState != newState) {
@@ -57,7 +58,7 @@ public class JournalControl : MonoBehaviour
 
     void Start()
     {
-        changeState(stateAlibis);    
+        changeState(stateIdle);
     }
 
     
