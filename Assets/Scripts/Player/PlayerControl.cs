@@ -90,5 +90,6 @@ public class PlayerControl : MonoBehaviour
     }
     public void closeJournal() {
         journalContainer.SetActive(false);
+        journal.changeState(journal.stateIdle);
     }
 }

@@ -6,6 +6,7 @@ public class JournalStateAlibis : JournalStateBase
 {
     public override void enterState(JournalControl journal) {
         journal.openAlibi();
+        journal.showEntries(this);
     }
     public override void updateState(JournalControl journal) {
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class AlibiEntry : MonoBehaviour
+public class JournalEntry : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI nameText, descriptionText;
     [SerializeField] private Image image;
