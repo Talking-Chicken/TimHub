@@ -3,6 +3,7 @@ tags:
 position: -6,-26
 ---
 Human: This is the start of human dialogue;
+<<debugMessage TestManager>>
 <<jump Human_End>>
 ===
 title: Human_End
