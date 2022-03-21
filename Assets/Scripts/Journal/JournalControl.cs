@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
+//entry of evidence that player collected by interacting with item or NPC
 [System.Serializable]
 public struct entry {
     public string entryName;
     public string entryDes;
     public Sprite entryImage;
+    public EntryType entryCat;
 }
+
+//to categorize which kind of entry the entry is (item or alibi)
+public enum EntryType {Item, Alibi}
 
 public class JournalControl : MonoBehaviour
 {
@@ -106,7 +111,8 @@ public class JournalControl : MonoBehaviour
 
     /*add entry to either alibi or item evidence
       for now only adds to alibi*/
-    public void addEntry(entry newEntry) {
-        alibiControl.Alibies.Add(newEntry);
+    public void addEntry(entry newEntry, EntryType entryCat) {
+        if (entryCat == EntryType.Alibi)
+            alibiControl.Alibies.Add(newEntry);
     }
 }

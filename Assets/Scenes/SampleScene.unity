@@ -975,6 +975,10 @@ PrefabInstance:
       propertyPath: entryImage
       value: 
       objectReference: {fileID: 21300000, guid: ed9d24dd1eb826a4d83533195a853cee, type: 3}
+    - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
+      propertyPath: _interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838394, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_Name
       value: Tim

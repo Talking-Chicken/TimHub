@@ -26,7 +26,7 @@ public class PlayerStateExplore : PlayerStateBase
         //start dialogue first, then interact
         if (interactingObj != null) {
             //for test first, add its entry to journal
-            player.Journal.addEntry(interactingObj.Entry);
+            player.Journal.addEntry(interactingObj.Entry, EntryType.Alibi);
 
             if (interactingObj.IsInteractFirst)
                 interactingObj.interact();
