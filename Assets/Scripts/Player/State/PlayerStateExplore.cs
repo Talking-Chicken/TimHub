@@ -28,12 +28,14 @@ public class PlayerStateExplore : PlayerStateBase
             //for test first, add its entry to journal
             player.Journal.addEntry(interactingObj.Entry);
 
-            if (interactingObj.IsInteractFirst)
+            if (interactingObj.IsInteractFirst) {
                 interactingObj.interact();
+                interactingObj.talk();
+            }
             else {
                 if (interactingObj.IsTalkable)
                     interactingObj.talk();
-                else if (interactingObj.IsInteractable)
+                if (interactingObj.IsInteractable)
                     interactingObj.interact();
             }    
         }

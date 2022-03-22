@@ -28,7 +28,11 @@ public class JournalControl : MonoBehaviour
 
     //journal entries
     private List<entry> alibies = new List<entry>(), items = new List<entry>();
-    private List<GameObject> alibiEntryObjects = new List<GameObject>(), itemEntryObjects = new List<GameObject>();
+    [SerializeField, BoxGroup("Alibi")] private List<GameObject> alibiEntryObjects = new List<GameObject>();
+    [SerializeField, BoxGroup("Item")] private List<GameObject> itemEntryObjects = new List<GameObject>();
+
+    //general jouranl variable
+    private int page = 1, maxPage = 1; //maxPage will alter in different journal state
 
 
     #region STATES
@@ -115,18 +119,26 @@ public class JournalControl : MonoBehaviour
         topObject.transform.SetAsLastSibling();
     }
 
-    /*add entry to either alibi or item evidence
+    /*add entry to either alibi or item evidence which haven't been added
       for now only adds to alibi*/
     public void addEntry(entry newEntry) {
-        if (newEntry.entryType == EntryType.Alibi)
+        if (newEntry.entryType == EntryType.Alibi && !containsEntry(newEntry.entryName, alibies))
             alibies.Add(newEntry);
-        else if (newEntry.entryType == EntryType.Item)
+        else if (newEntry.entryType == EntryType.Item && !containsEntry(newEntry.entryName, items))
             items.Add(newEntry);
     }
 
     /*show entries of the current state*/
     public void showEntries(JournalStateBase currentState) {
         if (currentState == stateAlibis) {
+            //set max page
+            if (alibies.Count/alibiEntryObjects.Count > 1) {
+                if (alibies.Count%alibiEntryObjects.Count > 0)
+                    maxPage = alibies.Count/alibiEntryObjects.Count+1;
+                else
+                    maxPage = alibies.Count/alibiEntryObjects.Count;
+            }
+        
             //for now instantiate new alibi entry every time, change to object pool when we know how many entries should be one page
             for (int i = 0; i < alibies.Count; i++) {
                 alibiEntryObjects.Add(Instantiate(alibiEntry, Vector2.zero, Quaternion.identity));
@@ -139,14 +151,14 @@ public class JournalControl : MonoBehaviour
             }
         } else if (currentState == stateItems) {
             //for now instantiate new item entry every time, change to object pool when we know how many entries should be one page
-            for (int i = 0; i < alibies.Count; i++) {
+            for (int i = 0; i < items.Count; i++) {
                 itemEntryObjects.Add(Instantiate(itemEntry, Vector2.zero, Quaternion.identity));
                 itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
                 
                 //set information of new entry
-                JournalEntry newAlibi = itemEntryObjects[i].GetComponent<JournalEntry>();
-                newAlibi.CurrentEntry = items[i];
-                newAlibi.drawSelf();
+                JournalEntry newItem = itemEntryObjects[i].GetComponent<JournalEntry>();
+                newItem.CurrentEntry = items[i];
+                newItem.drawSelf();
             }
         }
     }
@@ -167,5 +179,24 @@ public class JournalControl : MonoBehaviour
                 Destroy(deletingEntry);
             }
         }
+    }
+
+    //return whether entryList contains a entry that equals to the entryName
+    public bool containsEntry(string entryName, List<entry> entryList) {
+        for (int i = 0; i < entryList.Count;i++) {
+            if (entryList[i].entryName.ToLower().Trim().Equals(entryName.ToLower().Trim()))
+                return true;
+        }
+        return false;
+    }
+
+    /*flip to next page if there's any*/
+    public void nextPage() {
+        page = Mathf.Min(maxPage, page+1);
+    }
+
+    /*flip to previous page if there's any*/
+    public void previousPage() {
+        page = Mathf.Max(1, page-1);
     }
 }

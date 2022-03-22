@@ -12,7 +12,8 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     [SerializeField, BoxGroup("Entry Info")] private EntryType entryType;
     [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField, BoxGroup("interaction")] private bool _interactable;
-    [SerializeField, BoxGroup("interaction"), Header("do interact before dialogue"), EnableIf("_interactable")] private bool _interactFirst;
+    [SerializeField, BoxGroup("interaction"), Header("do interact before dialogue"),ShowIf("_talkable")] 
+    private bool _interactFirst;
     [SerializeField, EnableIf("_talkable"), BoxGroup("Dialogue")] private string _startNode;
     [SerializeField, BoxGroup("collider")] private Collider2D collider;
 
