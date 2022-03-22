@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using TMPro;
 
 #region ENTRY of evidence that player collected by interacting with item or NPC
 [System.Serializable]
@@ -27,13 +28,13 @@ public class JournalControl : MonoBehaviour
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
 
     //journal entries
-    private List<entry> alibies = new List<entry>(), items = new List<entry>();
+    [SerializeField] private List<entry> alibies = new List<entry>(), items = new List<entry>();
     [SerializeField, BoxGroup("Alibi")] private List<GameObject> alibiEntryObjects = new List<GameObject>();
     [SerializeField, BoxGroup("Item")] private List<GameObject> itemEntryObjects = new List<GameObject>();
 
     //general jouranl variable
     private int page = 1, maxPage = 1; //maxPage will alter in different journal state
-
+    [SerializeField, BoxGroup("General")] private TextMeshProUGUI pageText;
 
     #region STATES
     private JournalStateBase currentState;
@@ -76,6 +77,7 @@ public class JournalControl : MonoBehaviour
 
         //happens all states
         blockRaycastSquare.transform.position = Camera.main.ScreenToWorldPoint(journalIcon.transform.position);
+        pageText.text = page + "/" + maxPage;
     }
 
     #region open and close sections, also notice that tab will change their hierarchy in canvas
@@ -130,26 +132,34 @@ public class JournalControl : MonoBehaviour
 
     /*show entries of the current state*/
     public void showEntries(JournalStateBase currentState) {
-        if (currentState == stateAlibis) {
+        if (currentState == stateAlibis && alibies.Count > 0) {
             //set max page
-            if (alibies.Count/alibiEntryObjects.Count > 1) {
+            if (alibies.Count/alibiEntryObjects.Count > 0) {
                 if (alibies.Count%alibiEntryObjects.Count > 0)
                     maxPage = alibies.Count/alibiEntryObjects.Count+1;
                 else
                     maxPage = alibies.Count/alibiEntryObjects.Count;
             }
         
-            //for now instantiate new alibi entry every time, change to object pool when we know how many entries should be one page
-            for (int i = 0; i < alibies.Count; i++) {
-                alibiEntryObjects.Add(Instantiate(alibiEntry, Vector2.zero, Quaternion.identity));
-                alibiEntryObjects[i].transform.SetParent(alibiEntriesContainer.transform);
+            //active alibi entry and draw them based ob which page we are on
+            for (int i = 0; i < Mathf.Min(alibiEntryObjects.Count, alibies.Count); i++) {
+                alibiEntryObjects[i].SetActive(true);
+                //alibiEntryObjects[i].transform.SetParent(alibiEntriesContainer.transform);
                 
                 //set information of new entry
                 JournalEntry newAlibi = alibiEntryObjects[i].GetComponent<JournalEntry>();
-                newAlibi.CurrentEntry = alibies[i];
-                newAlibi.drawSelf();
+
+                int startIndex = (page-1)*alibiEntryObjects.Count + i; //decide from which alibi to draw, in the journal
+                if (startIndex <= alibies.Count-1) {
+                    newAlibi.CurrentEntry = alibies[startIndex];
+                    newAlibi.drawSelf();
+                } else {
+                    newAlibi.gameObject.SetActive(false);
+                }
             }
         } else if (currentState == stateItems) {
+            //TO DO : set max page
+
             //for now instantiate new item entry every time, change to object pool when we know how many entries should be one page
             for (int i = 0; i < items.Count; i++) {
                 itemEntryObjects.Add(Instantiate(itemEntry, Vector2.zero, Quaternion.identity));
@@ -168,9 +178,10 @@ public class JournalControl : MonoBehaviour
     public void hideEntries(JournalStateBase currentState) {
         if (currentState == stateAlibis) {
             for (int i = 0; i < alibiEntryObjects.Count; i++) {
-                GameObject deletingEntry = alibiEntryObjects[i];
-                alibiEntryObjects.RemoveAt(i);
-                Destroy(deletingEntry);
+                alibiEntryObjects[i].SetActive(false);
+                // GameObject deletingEntry = alibiEntryObjects[i];
+                // alibiEntryObjects.RemoveAt(i);
+                // Destroy(deletingEntry);
             }
         } else if (currentState == stateItems) {
             for (int i = 0; i < itemEntryObjects.Count; i++) {
@@ -193,10 +204,12 @@ public class JournalControl : MonoBehaviour
     /*flip to next page if there's any*/
     public void nextPage() {
         page = Mathf.Min(maxPage, page+1);
+        showEntries(currentState);
     }
 
     /*flip to previous page if there's any*/
     public void previousPage() {
         page = Mathf.Max(1, page-1);
+        showEntries(currentState);
     }
 }
