@@ -28,7 +28,7 @@ public class JournalControl : MonoBehaviour
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
 
     //journal entries
-    [SerializeField] private List<entry> alibies = new List<entry>(), items = new List<entry>();
+    private List<entry> alibies = new List<entry>(), items = new List<entry>();
     [SerializeField, BoxGroup("Alibi")] private List<GameObject> alibiEntryObjects = new List<GameObject>();
     [SerializeField, BoxGroup("Item")] private List<GameObject> itemEntryObjects = new List<GameObject>();
 
