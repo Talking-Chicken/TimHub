@@ -71,7 +71,6 @@ public class JournalControl : MonoBehaviour
 
         //set entry objects
         JournalEntry[] entryArray = itemEntriesContainer.GetComponentsInChildren<JournalEntry>(true);
-        Debug.Log(entryArray.Length);
         for (int i = 0; i < entryArray.Length; i++) {
             itemEntryObjects.Add(entryArray[i].gameObject);
         }
