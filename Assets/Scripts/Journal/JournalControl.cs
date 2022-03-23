@@ -23,14 +23,14 @@ public class JournalControl : MonoBehaviour
     [SerializeField, BoxGroup("Journal Body"), Tooltip("this is used to block player mouse raycast, when clicking on journal icon")]
     private GameObject blockRaycastSquare; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
     [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon;
-    [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab, alibiEntry;
-    [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab, itemEntry;
+    [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab;
+    [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
 
     //journal entries
     private List<entry> alibies = new List<entry>(), items = new List<entry>();
-    [SerializeField, BoxGroup("Alibi")] private List<GameObject> alibiEntryObjects = new List<GameObject>();
-    [SerializeField, BoxGroup("Item")] private List<GameObject> itemEntryObjects = new List<GameObject>();
+    private List<GameObject> alibiEntryObjects = new List<GameObject>();
+    private List<GameObject> itemEntryObjects = new List<GameObject>();
 
     //general jouranl variable
     private int page = 1, maxPage = 1; //maxPage will alter in different journal state
@@ -73,6 +73,10 @@ public class JournalControl : MonoBehaviour
         JournalEntry[] entryArray = itemEntriesContainer.GetComponentsInChildren<JournalEntry>(true);
         for (int i = 0; i < entryArray.Length; i++) {
             itemEntryObjects.Add(entryArray[i].gameObject);
+        }
+        entryArray = alibiEntriesContainer.GetComponentsInChildren<JournalEntry>(true);
+        for (int i = 0; i < entryArray.Length; i++) {
+            alibiEntryObjects.Add(entryArray[i].gameObject);
         }
     }
 
