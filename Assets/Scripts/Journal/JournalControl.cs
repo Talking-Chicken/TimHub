@@ -68,6 +68,13 @@ public class JournalControl : MonoBehaviour
     void Start()
     {
         changeState(stateIdle);
+
+        //set entry objects
+        JournalEntry[] entryArray = itemEntriesContainer.GetComponentsInChildren<JournalEntry>(true);
+        Debug.Log(entryArray.Length);
+        for (int i = 0; i < entryArray.Length; i++) {
+            itemEntryObjects.Add(entryArray[i].gameObject);
+        }
     }
 
     
@@ -157,9 +164,33 @@ public class JournalControl : MonoBehaviour
                     newAlibi.gameObject.SetActive(false);
                 }
             }
-        } else if (currentState == stateItems) {
-            //TO DO : set max page
+        } else if (currentState == stateItems && items.Count > 0) {
+            //set max page
+            if (items.Count/itemEntryObjects.Count > 0) {
+                if (items.Count%itemEntryObjects.Count > 0)
+                    maxPage = items.Count/itemEntryObjects.Count+1;
+                else
+                    maxPage = items.Count/itemEntryObjects.Count;
+            }
 
+            //active item entry and draw them based ob which page we are on
+            for (int i = 0; i < Mathf.Min(itemEntryObjects.Count, items.Count); i++) {
+                itemEntryObjects[i].SetActive(true);
+                //itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
+                
+                //set information of new entry
+                JournalEntry newItem = itemEntryObjects[i].GetComponent<JournalEntry>();
+
+                int startIndex = (page-1)*itemEntryObjects.Count + i; //decide from which item to draw, in the journal
+                if (startIndex <= items.Count-1) {
+                    newItem.CurrentEntry = items[startIndex];
+                    newItem.drawSelf();
+                } else {
+                    newItem.gameObject.SetActive(false);
+                }
+            }
+
+            /*
             //for now instantiate new item entry every time, change to object pool when we know how many entries should be one page
             for (int i = 0; i < items.Count; i++) {
                 itemEntryObjects.Add(Instantiate(itemEntry, Vector2.zero, Quaternion.identity));
@@ -169,7 +200,7 @@ public class JournalControl : MonoBehaviour
                 JournalEntry newItem = itemEntryObjects[i].GetComponent<JournalEntry>();
                 newItem.CurrentEntry = items[i];
                 newItem.drawSelf();
-            }
+            }*/
         }
     }
 
@@ -185,9 +216,10 @@ public class JournalControl : MonoBehaviour
             }
         } else if (currentState == stateItems) {
             for (int i = 0; i < itemEntryObjects.Count; i++) {
-                GameObject deletingEntry = itemEntryObjects[i];
-                itemEntryObjects.RemoveAt(i);
-                Destroy(deletingEntry);
+                itemEntryObjects[i].SetActive(false);
+                // GameObject deletingEntry = itemEntryObjects[i];
+                // itemEntryObjects.RemoveAt(i);
+                // Destroy(deletingEntry);
             }
         }
     }
