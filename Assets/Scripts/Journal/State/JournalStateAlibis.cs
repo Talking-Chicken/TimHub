@@ -15,5 +15,6 @@ public class JournalStateAlibis : JournalStateBase
     public override void leaveState(JournalControl journal) {
         journal.closeAlibi();
         journal.hideEntries(this);
+        journal.resetPageNum();
     }
 }

@@ -15,5 +15,6 @@ public class JournalStateItems : JournalStateBase
     public override void leaveState(JournalControl journal) {
         journal.closeItem();
         journal.hideEntries(this);
+        journal.resetPageNum();
     }
 }

@@ -94,9 +94,6 @@ public class JournalControl : MonoBehaviour
     public void openAlibi() {
         alibiEntriesContainer.SetActive(true);
         bringToTop(alibieTab, journalBody);
-
-        //draw all alibi entries
-        
     }
 
     public void closeAlibi() {
@@ -125,6 +122,11 @@ public class JournalControl : MonoBehaviour
     }
     #endregion
 
+    /*reset page number to 1*/
+    public void resetPageNum() {
+        page = 1;
+    }
+
     //bring the gameobject to the top in UI, basically change it's hierarhy to the last in the canvas
     private void bringToTop(GameObject topObject, GameObject secondToTopObject) {
         secondToTopObject.transform.SetAsLastSibling();
@@ -145,11 +147,14 @@ public class JournalControl : MonoBehaviour
         if (currentState == stateAlibis && alibies.Count > 0) {
             //set max page
             if (alibies.Count/alibiEntryObjects.Count > 0) {
-                if (alibies.Count%alibiEntryObjects.Count > 0)
+                if (alibies.Count%alibiEntryObjects.Count > 0) {
                     maxPage = alibies.Count/alibiEntryObjects.Count+1;
+                }
                 else
                     maxPage = alibies.Count/alibiEntryObjects.Count;
             }
+            else
+                maxPage = 1;
         
             //active alibi entry and draw them based ob which page we are on
             for (int i = 0; i < Mathf.Min(alibiEntryObjects.Count, alibies.Count); i++) {
@@ -174,7 +179,8 @@ public class JournalControl : MonoBehaviour
                     maxPage = items.Count/itemEntryObjects.Count+1;
                 else
                     maxPage = items.Count/itemEntryObjects.Count;
-            }
+            } else
+                maxPage = 1;
 
             //active item entry and draw them based ob which page we are on
             for (int i = 0; i < Mathf.Min(itemEntryObjects.Count, items.Count); i++) {
@@ -192,18 +198,9 @@ public class JournalControl : MonoBehaviour
                     newItem.gameObject.SetActive(false);
                 }
             }
-
-            /*
-            //for now instantiate new item entry every time, change to object pool when we know how many entries should be one page
-            for (int i = 0; i < items.Count; i++) {
-                itemEntryObjects.Add(Instantiate(itemEntry, Vector2.zero, Quaternion.identity));
-                itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
-                
-                //set information of new entry
-                JournalEntry newItem = itemEntryObjects[i].GetComponent<JournalEntry>();
-                newItem.CurrentEntry = items[i];
-                newItem.drawSelf();
-            }*/
+        } else {
+            //when there's nothing collected, set the max page to 1
+            maxPage = 1;
         }
     }
 
