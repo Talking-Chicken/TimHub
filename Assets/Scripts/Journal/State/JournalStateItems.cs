@@ -6,6 +6,7 @@ public class JournalStateItems : JournalStateBase
 {
     public override void enterState(JournalControl journal) {
         journal.openItem();
+        journal.hideEntries(this);
         journal.showEntries(this);
     }
     public override void updateState(JournalControl journal) {
@@ -14,5 +15,6 @@ public class JournalStateItems : JournalStateBase
     public override void leaveState(JournalControl journal) {
         journal.closeItem();
         journal.hideEntries(this);
+        journal.resetPageNum();
     }
 }

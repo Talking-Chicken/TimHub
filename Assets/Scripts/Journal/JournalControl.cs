@@ -23,14 +23,14 @@ public class JournalControl : MonoBehaviour
     [SerializeField, BoxGroup("Journal Body"), Tooltip("this is used to block player mouse raycast, when clicking on journal icon")]
     private GameObject blockRaycastSquare; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
     [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon;
-    [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab, alibiEntry;
-    [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab, itemEntry;
+    [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab;
+    [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
 
     //journal entries
     private List<entry> alibies = new List<entry>(), items = new List<entry>();
-    [SerializeField, BoxGroup("Alibi")] private List<GameObject> alibiEntryObjects = new List<GameObject>();
-    [SerializeField, BoxGroup("Item")] private List<GameObject> itemEntryObjects = new List<GameObject>();
+    private List<GameObject> alibiEntryObjects = new List<GameObject>();
+    private List<GameObject> itemEntryObjects = new List<GameObject>();
 
     //general jouranl variable
     private int page = 1, maxPage = 1; //maxPage will alter in different journal state
@@ -68,6 +68,16 @@ public class JournalControl : MonoBehaviour
     void Start()
     {
         changeState(stateIdle);
+
+        //set entry objects
+        JournalEntry[] entryArray = itemEntriesContainer.GetComponentsInChildren<JournalEntry>(true);
+        for (int i = 0; i < entryArray.Length; i++) {
+            itemEntryObjects.Add(entryArray[i].gameObject);
+        }
+        entryArray = alibiEntriesContainer.GetComponentsInChildren<JournalEntry>(true);
+        for (int i = 0; i < entryArray.Length; i++) {
+            alibiEntryObjects.Add(entryArray[i].gameObject);
+        }
     }
 
     
@@ -84,9 +94,6 @@ public class JournalControl : MonoBehaviour
     public void openAlibi() {
         alibiEntriesContainer.SetActive(true);
         bringToTop(alibieTab, journalBody);
-
-        //draw all alibi entries
-        
     }
 
     public void closeAlibi() {
@@ -115,6 +122,11 @@ public class JournalControl : MonoBehaviour
     }
     #endregion
 
+    /*reset page number to 1*/
+    public void resetPageNum() {
+        page = 1;
+    }
+
     //bring the gameobject to the top in UI, basically change it's hierarhy to the last in the canvas
     private void bringToTop(GameObject topObject, GameObject secondToTopObject) {
         secondToTopObject.transform.SetAsLastSibling();
@@ -135,11 +147,14 @@ public class JournalControl : MonoBehaviour
         if (currentState == stateAlibis && alibies.Count > 0) {
             //set max page
             if (alibies.Count/alibiEntryObjects.Count > 0) {
-                if (alibies.Count%alibiEntryObjects.Count > 0)
+                if (alibies.Count%alibiEntryObjects.Count > 0) {
                     maxPage = alibies.Count/alibiEntryObjects.Count+1;
+                }
                 else
                     maxPage = alibies.Count/alibiEntryObjects.Count;
             }
+            else
+                maxPage = 1;
         
             //active alibi entry and draw them based ob which page we are on
             for (int i = 0; i < Mathf.Min(alibiEntryObjects.Count, alibies.Count); i++) {
@@ -157,19 +172,35 @@ public class JournalControl : MonoBehaviour
                     newAlibi.gameObject.SetActive(false);
                 }
             }
-        } else if (currentState == stateItems) {
-            //TO DO : set max page
+        } else if (currentState == stateItems && items.Count > 0) {
+            //set max page
+            if (items.Count/itemEntryObjects.Count > 0) {
+                if (items.Count%itemEntryObjects.Count > 0)
+                    maxPage = items.Count/itemEntryObjects.Count+1;
+                else
+                    maxPage = items.Count/itemEntryObjects.Count;
+            } else
+                maxPage = 1;
 
-            //for now instantiate new item entry every time, change to object pool when we know how many entries should be one page
-            for (int i = 0; i < items.Count; i++) {
-                itemEntryObjects.Add(Instantiate(itemEntry, Vector2.zero, Quaternion.identity));
-                itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
+            //active item entry and draw them based ob which page we are on
+            for (int i = 0; i < Mathf.Min(itemEntryObjects.Count, items.Count); i++) {
+                itemEntryObjects[i].SetActive(true);
+                //itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
                 
                 //set information of new entry
                 JournalEntry newItem = itemEntryObjects[i].GetComponent<JournalEntry>();
-                newItem.CurrentEntry = items[i];
-                newItem.drawSelf();
+
+                int startIndex = (page-1)*itemEntryObjects.Count + i; //decide from which item to draw, in the journal
+                if (startIndex <= items.Count-1) {
+                    newItem.CurrentEntry = items[startIndex];
+                    newItem.drawSelf();
+                } else {
+                    newItem.gameObject.SetActive(false);
+                }
             }
+        } else {
+            //when there's nothing collected, set the max page to 1
+            maxPage = 1;
         }
     }
 
@@ -185,9 +216,10 @@ public class JournalControl : MonoBehaviour
             }
         } else if (currentState == stateItems) {
             for (int i = 0; i < itemEntryObjects.Count; i++) {
-                GameObject deletingEntry = itemEntryObjects[i];
-                itemEntryObjects.RemoveAt(i);
-                Destroy(deletingEntry);
+                itemEntryObjects[i].SetActive(false);
+                // GameObject deletingEntry = itemEntryObjects[i];
+                // itemEntryObjects.RemoveAt(i);
+                // Destroy(deletingEntry);
             }
         }
     }
