@@ -2,20 +2,20 @@
 tags:
 position: -6,-26
 ---
-Human: This is the start of human dialogue;
+Human: This is the start of human dialogue; #line:04fb19c 
 <<debugMessage TestManager>>
 <<jump Human_End>>
 ===
 title: Human_End
 position: -7,133
 ---
-Human: It is a complicated question.
--> choose option 1
-    option 1!
--> choose option 2
-    option 2!
--> choose option 3
-    option 3!
--> choose option 4
-    option 4!
+Human: It is a complicated question. #line:0b47794 
+-> choose option 1 #line:09ab210 
+    option 1! #line:0012902 
+-> choose option 2 #line:022f75b 
+    option 2! #line:019bba6 
+-> choose option 3 #line:07ea80c 
+    option 3! #line:08a0461 
+-> choose option 4 #line:000339a 
+    option 4! #line:021cca1 
 ===

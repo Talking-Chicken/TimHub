@@ -1,34 +1,34 @@
 ﻿title: Yarn1
 tags:
 ---
-People: Hello!
-Peoples: Hi!
+People: Hello! #line:01203f1 
+Peoples: Hi! #line:0ed1417 
 <<jump Yarn2>>
 ===
 title: Yarn2
 position: -3,132
 ---
-People: hows ur day?
+People: hows ur day? #line:06155bb 
 
--> good
-    People: that's good!
--> so so
-    People: what happend?
+-> good #line:020523c 
+    People: that's good! #line:01d1d59 
+-> so so #line:0b6b113 
+    People: what happend? #line:0fe290a 
 
-People: sounds good!
+People: sounds good! #line:00aa7ee 
 
--> where are u going?
+-> where are u going? #line:00d20f0 
     <<jump People_Location>>
--> what's ur plan?
+-> what's ur plan? #line:0e31ac6 
     <<jump People_Plan>>
 ===
 title: People_Location
 position: -124,289
 ---
-People: to the end of the world!
+People: to the end of the world! #line:0ac7cde 
 ===
 title: People_Plan
 position: 103,283
 ---
-People: i'm going to play my favorite game today
+People: i'm going to play my favorite game today #line:09ce7ae 
 ===
