@@ -1,0 +1,45 @@
+﻿title: StelleSprint3
+tags:
+---
+-> How did you know Orzo?
+<<jump question_relationship>>
+-> So when did you last see Orzo?
+<<jump question_alibi>>
+-> Where were you during the time of the murder?
+<<jump question_whereabouts>>
+-> Do you understand anything in Orzo's journal? I can hardly read any of it!
+<<jump question_journal>>
+-> What's up with Orzo's closet?
+<<jump question_closet>>
+-> Do you know what this... little creature is>
+<<jump question_timlings>>
+===
+title: question_relationship
+---
+Stelle: Orzo was my big brother... H-he was the only family I had left! Now, I'm all alone... 
+===
+
+title: question_alibi
+---
+Stelle: The last I saw him was the night before Timsday, Praise Tim... We always have a big celebration. H-he used to love it...
+===
+
+title: question_whereabouts
+---
+Stelle: I was helping the Church with the Timsday celebration, Praise Tim, after my shift at the library. My boss, Nero, was there with me the whole time. I-I didn't know why Orzo wasn't there...
+===
+
+title: question_journal
+---
+Stelle: Orzo came to me before he disappeared and told me he had some strange dreams... I think he was going crazy trying to prove that they were real. He called them "past memories". He was such a creative soul. 
+===
+
+title: question_closet
+---
+Stelle: My brother wasn't the neatest. He always seemed to be in a hurry, rushing off to somewhere. At least there aren't any skeletons in there! Haha! ...Right?
+===
+
+title: question_timlings
+---
+Stelle: Eek! Orzo called those his "roommates". He said that they liked company and called them "lonely little dudes". My brother was very... eccentric. But he was kind, in his own strange way. 
+===
