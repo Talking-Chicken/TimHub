@@ -2,17 +2,17 @@
 tags:
 ---
 -> How did you know Orzo?
-<<jump question_relationship>>
+    <<jump question_relationship>>
 -> So when did you last see Orzo?
-<<jump question_alibi>>
+    <<jump question_alibi>>
 -> Where were you during the time of the murder?
-<<jump question_whereabouts>>
+    <<jump question_whereabouts>>
 -> Do you understand anything in Orzo's journal? I can hardly read any of it!
-<<jump question_journal>>
+    <<jump question_journal>>
 -> What's up with Orzo's closet?
-<<jump question_closet>>
+    <<jump question_closet>>
 -> Do you know what this... little creature is>
-<<jump question_timlings>>
+    <<jump question_timlings>>
 ===
 title: question_relationship
 ---
