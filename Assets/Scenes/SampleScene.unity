@@ -2222,6 +2222,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictimHouse
       objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: characterName
+      value: Stelle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryDes
+      value: Orzo's sister. Works at the library and the Church. Claimed her brother
+        was alive on Timsday.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: St
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: bcb3abbfad8142c4cb71dd248718482a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
 --- !u!1 &1075738882
@@ -2259,11 +2284,13 @@ MonoBehaviour:
   entryDes: It's a fridge, contains many objects
   entryImage: {fileID: 21300000, guid: b4c1da72582f45146a8d5eb0c8f9966b, type: 3}
   entryType: 0
+  characterName: 
   _talkable: 0
   _interactable: 0
   _interactFirst: 0
   _startNode: 
   collider: {fileID: 559201131}
+  entryList: []
 --- !u!212 &1075738884
 SpriteRenderer:
   m_ObjectHideFlags: 0

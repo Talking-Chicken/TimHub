@@ -184,17 +184,20 @@ public class JournalControl : MonoBehaviour
     }
 
 
-    [YarnCommand("AddEntry")]
+    [YarnCommand("Add_Entry")]
     /* add entry to journal based on NPC's name and entry name*/
     public void addEntry(string NPC, string entryName) {
         InteractiveObj[] NPCs = FindObjectsOfType<InteractiveObj>();
         
         foreach(InteractiveObj character in NPCs) {
-            if (character.gameObject.name.ToLower().Trim().Equals(entryName.ToLower().Trim()))
-                if (addEntry(character.EntryList, character.name))
+            if (character.gameObject.name.ToLower().Trim().Equals(NPC.ToLower().Trim()))
+                if (addEntry(character.EntryList, entryName))
                     return;
+                else
+                    Debug.LogWarning("can't find character with name: " + NPC);
         }
-        Debug.LogWarning("can't find character with name: " + NPC);
+        Debug.LogWarning("add entry false");
+        
     }
 
     /*show entries of the current state*/

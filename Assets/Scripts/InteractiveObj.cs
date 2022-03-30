@@ -43,7 +43,10 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     void Start()
     {
         //set gameobject name to character name
-        name = characterName;
+        if (characterName != "")
+            name = characterName;
+        else
+            Debug.LogWarning("didn't set a character name for " + name);
 
         //initialize Entry
         Entry = entryInfo;
