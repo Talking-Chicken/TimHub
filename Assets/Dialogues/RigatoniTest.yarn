@@ -1,0 +1,101 @@
+﻿title: RigatoniTest
+tags:
+---
+//if player hasn't read the introduction/first conversation
+<<set $introRead to false>>
+
+//if player hasn't read the investigation convo
+<<set $investigationRead to false>>
+
+//if player hasn't read the forgetfulness convo
+<<set $forgetfulnessRead to false>>
+
+//show dialogue choice to trigger intro/first convo
+-> Talk to Rigatoni
+    <<jump question_introductions>>
+
+===
+
+---
+//if player has read the intro/first convo
+<<if $introread == true>>
+
+//show dialogue choices to ask about investigation and Rigatoni's forgetfullness
+-> About the investigations so far
+    <<jump question_investigationSoFar>>
+
+-> About your forgetfulness  
+    <<jump question_rigatoniForgetfulness>>
+===
+
+---
+//if player has read investigation AND Rigatoni's forgetfulness convos
+<<if $investigationRead == true && $forgetfulnessRead == true>>
+
+//show dialogue choice to ask about Penne's new partnership with Rigatoni
+-> About our new partnership
+    <<jump question_ourNewPartnership>>
+
+===
+
+title: question_introductions
+---
+//the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
+Penne: Rigatoni! It's so good to see you. I missed seeing you at HQ! //Penne Happy
+Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
+Penne: You called for backup. So here I am! //Penne Happy
+Rigatoni: The bureau sent...you? //Rigatoni Disbelief
+Penne: Yeah! //Penne Happy
+Rigatoni: Let me guess: nobody else volunteered. //Rigatoni Unamused
+Penne: Yeah! //Penne Happy
+Rigatoni: Of course. While I would have hoped they had sent a more...senior detective, it seems like I have no choice but to work with you. //Rigatoni Disdain
+Penne: Yeah! //Penne Happy
+Rigatoni: Stop saying that! //Rigatoni Annoyed
+
+//setting bool for player reading the intro/first convo to true
+<<set $introRead to true>>
+
+===
+
+title: question_investigationSoFar
+---
+//this convo is a tutorial for players on what needs to be done in the room
+Penne: So I got your letter with the case debriefing and all that jazz. How's the investigation so far? //Penne Happy
+Rigatoni: I have already investigated the locations and witnesses, but something is not adding up. The people here are hiding something. Afraid. I need you to go in for a second assessment. //Rigatoni Annoyed
+Penne: Gotcha! So what should I do? //Penne Happy
+Rigatoni: Talk to any witnesses you come across. Scope out any suspicious pieces of evidence. Whatever you may find could either be potential evidence for the case or prove a contradiction in an alibi. //Rigatoni Serious
+Rigatoni: Be sure to cross-check everything. If you need my professional opinion on anything, report back to me. //Rigatoni Serious
+
+//setting bool for player reading the investigation convo to true
+<<set $investigationRead to true>>
+
+===
+
+title: question_rigatoniForgetfulness
+---
+//player can ask about Rigatoni's forgetfulness. This is the first hint at her deterioration!
+Penne: I heard through your letter that ever since you came to Timsville, you've been more forgetful? //Penne Neutral
+Rigatoni: ...I hate to admit it, but yes. For some reason, ever since I set foot in this town, I have experienced small lapses in my memory. //Rigatoni Serious
+Penne: That's so unlike you! You're usually as sharp as a tack. //Penne Shocked
+Rigatoni: I know. It...unnerves me. We need to bring justice to Orchiette Parmagiano quickly before things take a turn for the worse. //Rigatoni Serious
+Penne: You mean Orzo Parmesan? //Penne Confused
+Rigatoni: Is that not what I said? //Rigatoni Confused
+Penne: No...you called the victim the wrong name. //Penne Unnerved/Disturbed
+Rigatoni: Forget it happened. Let us continue our investigation. //Rigatoni Unnerved
+
+//setting bool for player reading the forgetfulness convo to true
+<<set $forgetfulnessRead to true>>
+
+===
+
+title: question_ourNewPartnership
+---
+//player can ask about how Rigatoni feels about partnering up with Penne
+Penne: So...partners, huh? We can do that lone wolf thing you love together. We can be pack, partner! //Penne Happy
+Rigatoni: I am not your partner. //Rigatoni Annoyed
+Penne: You're so right. Too formal. How do you like the sound of Toni? //Penne Happy
+Rigatoni: You may not call me that. //Rigatoni Annoyed
+Penne: Aw. Are you sure? You could call me...Pen...? //Penne Sad
+Rigatoni: ...Pen is an awful nickname. Toni is far superior, without a doubt. //Rigatoni Slightly amused
+
+===
