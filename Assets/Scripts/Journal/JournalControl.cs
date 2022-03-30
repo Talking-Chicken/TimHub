@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 using TMPro;
+using Yarn.Unity;
 
 #region ENTRY of evidence that player collected by interacting with item or NPC
 [System.Serializable]
 public struct entry {
     public string entryName;
-    public string entryDes;
+    [ResizableTextArea] public string entryDes;
     public Sprite entryImage;
     public EntryType entryType;
+
+    public entry(string entryName, string entryDes, Sprite entryImage, EntryType entryType) {
+        this.entryName = entryName;
+        this.entryDes = entryDes;
+        this.entryImage = entryImage;
+        this.entryType = entryType;
+    }
 }
 #endregion
 
@@ -142,6 +150,53 @@ public class JournalControl : MonoBehaviour
             items.Add(newEntry);
     }
 
+    /* add entry to either alibi or item evidence
+       the entry is from the list, if no int parameter, default will be 0
+       if a entry with the same name is already in there, this function will return false*/
+    public bool addEntry(List<entry> entryList, string entryName) {
+        //throw exception
+        if (entryList == null) {
+            Debug.LogWarning("entry list is null");
+            return false;
+        }
+        if (entryList.Count <= 0) {
+            Debug.LogWarning("entry list is empty");
+            return false;
+        }
+
+        for (int i = 0; i < entryList.Count; i++) {
+            if(entryList[i].entryName.ToLower().Trim().Equals(entryName.ToLower().Trim())) {
+                entry newEntry = entryList[i];
+                
+                //decides where to put the entry (alibi or item)
+                if (newEntry.entryType == EntryType.Alibi && !containsEntry(newEntry.entryName, alibies)) {
+                    alibies.Add(newEntry);
+                    return true;
+                }
+                else if (newEntry.entryType == EntryType.Item && !containsEntry(newEntry.entryName, items)) {
+                    items.Add(newEntry);
+                    return true;
+                }
+            }
+        }
+        Debug.LogWarning("can't find entry with name: " + entryName);
+        return false;
+    }
+
+
+    [YarnCommand("AddEntry")]
+    /* add entry to journal based on NPC's name and entry name*/
+    public void addEntry(string NPC, string entryName) {
+        InteractiveObj[] NPCs = FindObjectsOfType<InteractiveObj>();
+        
+        foreach(InteractiveObj character in NPCs) {
+            if (character.gameObject.name.ToLower().Trim().Equals(entryName.ToLower().Trim()))
+                if (addEntry(character.EntryList, character.name))
+                    return;
+        }
+        Debug.LogWarning("can't find character with name: " + NPC);
+    }
+
     /*show entries of the current state*/
     public void showEntries(JournalStateBase currentState) {
         if (currentState == stateAlibis && alibies.Count > 0) {
@@ -159,7 +214,6 @@ public class JournalControl : MonoBehaviour
             //active alibi entry and draw them based ob which page we are on
             for (int i = 0; i < Mathf.Min(alibiEntryObjects.Count, alibies.Count); i++) {
                 alibiEntryObjects[i].SetActive(true);
-                //alibiEntryObjects[i].transform.SetParent(alibiEntriesContainer.transform);
                 
                 //set information of new entry
                 JournalEntry newAlibi = alibiEntryObjects[i].GetComponent<JournalEntry>();
@@ -185,7 +239,6 @@ public class JournalControl : MonoBehaviour
             //active item entry and draw them based ob which page we are on
             for (int i = 0; i < Mathf.Min(itemEntryObjects.Count, items.Count); i++) {
                 itemEntryObjects[i].SetActive(true);
-                //itemEntryObjects[i].transform.SetParent(itemEntriesContainer.transform);
                 
                 //set information of new entry
                 JournalEntry newItem = itemEntryObjects[i].GetComponent<JournalEntry>();
@@ -210,16 +263,10 @@ public class JournalControl : MonoBehaviour
         if (currentState == stateAlibis) {
             for (int i = 0; i < alibiEntryObjects.Count; i++) {
                 alibiEntryObjects[i].SetActive(false);
-                // GameObject deletingEntry = alibiEntryObjects[i];
-                // alibiEntryObjects.RemoveAt(i);
-                // Destroy(deletingEntry);
             }
         } else if (currentState == stateItems) {
             for (int i = 0; i < itemEntryObjects.Count; i++) {
                 itemEntryObjects[i].SetActive(false);
-                // GameObject deletingEntry = itemEntryObjects[i];
-                // itemEntryObjects.RemoveAt(i);
-                // Destroy(deletingEntry);
             }
         }
     }
