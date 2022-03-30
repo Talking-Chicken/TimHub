@@ -10,6 +10,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     [SerializeField, BoxGroup("Entry Info"), ResizableTextArea] private string entryDes;
     [SerializeField, BoxGroup("Entry Info")] private Sprite entryImage;
     [SerializeField, BoxGroup("Entry Info")] private EntryType entryType;
+    [SerializeField, BoxGroup("Character Info")] private string characterName;
     [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField, BoxGroup("interaction")] private bool _interactable;
     [SerializeField, BoxGroup("interaction"), Header("do interact before dialogue"),ShowIf("_talkable")] 
@@ -18,6 +19,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     [SerializeField, BoxGroup("collider")] private Collider2D collider;
 
     private entry entryInfo;
+    [SerializeField, BoxGroup("Character Info")] private List<entry> entryList;
     
     
     //getter & setters
@@ -36,8 +38,16 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
         }
     }
 
+    public List<entry> EntryList {get => entryList; set => entryList = value;}
+
     void Start()
     {
+        //set gameobject name to character name
+        if (characterName != "")
+            name = characterName;
+        else
+            Debug.LogWarning("didn't set a character name for " + name);
+
         //initialize Entry
         Entry = entryInfo;
 
