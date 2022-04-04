@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
@@ -2447,6 +2447,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2695572325536280368}
     m_Modifications:
+    - target: {fileID: 2640680543101793799, guid: cd14527c4d5ce9f47969d757802de173, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00009918213
+      objectReference: {fileID: 0}
     - target: {fileID: 4640951823179500987, guid: cd14527c4d5ce9f47969d757802de173, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -2.949997
@@ -2561,6 +2565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2695572325536280368}
     m_Modifications:
+    - target: {fileID: 2640680543101793799, guid: cd14527c4d5ce9f47969d757802de173, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00009918213
+      objectReference: {fileID: 0}
     - target: {fileID: 7760274021574892212, guid: cd14527c4d5ce9f47969d757802de173, type: 3}
       propertyPath: m_Name
       value: Option View Variant
@@ -2674,6 +2682,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2695572325536280368}
     m_Modifications:
+    - target: {fileID: 2640680543101793799, guid: cd14527c4d5ce9f47969d757802de173, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00009918213
+      objectReference: {fileID: 0}
     - target: {fileID: 4640951823179500987, guid: cd14527c4d5ce9f47969d757802de173, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -2.949997
