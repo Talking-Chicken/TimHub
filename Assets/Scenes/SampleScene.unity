@@ -1207,6 +1207,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictimHouse
       objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: _talkable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: _startNode
+      value: Receipt_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: characterName
+      value: Bodega Receipt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryDes
+      value: The Bodega Receipt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: Receipt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: -6535797698658018930, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: characterName
       value: Stelle

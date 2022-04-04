@@ -32,3 +32,13 @@ position: 103,283
 ---
 People: i'm going to play my favorite game today #line:09ce7ae 
 ===
+title: Receipt_Test
+position: -13,-145
+---
+Penne: Do i want to collect this receipt?
+-> yes!
+    <<Add_Entry journal Receipt>>
+    Penne: I'll take a picture of it
+-> nope
+    Penne: I have limited space in my journal, it's a good idea to look at other things first
+===

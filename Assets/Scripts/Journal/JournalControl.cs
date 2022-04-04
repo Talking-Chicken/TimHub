@@ -160,7 +160,6 @@ public class JournalControl : MonoBehaviour
             return false;
         }
         if (entryList.Count <= 0) {
-            Debug.LogWarning("entry list is empty");
             return false;
         }
 
@@ -187,7 +186,7 @@ public class JournalControl : MonoBehaviour
     [YarnCommand("Add_Entry")]
     /* add entry to journal based on NPC's name and entry name
         since Yarn spinner cannot have [space] in parameter, this entry name should substitute [space] to [_]*/
-    public void addEntry(string NPC, string entryName) {
+    public void addEntry(string entryName) {
         InteractiveObj[] NPCs = FindObjectsOfType<InteractiveObj>();
         
         //modify entryName
@@ -203,13 +202,11 @@ public class JournalControl : MonoBehaviour
 
         //search through all interactive objects and check if we can add the entry from that InteractiveObj
         foreach(InteractiveObj character in NPCs) {
-            if (character.gameObject.name.ToLower().Trim().Equals(NPC.ToLower().Trim()))
-                if (addEntry(character.EntryList, newEntryName))
-                    return;
-                else
-                    Debug.LogWarning("can't find character with name: " + NPC);
+            if (addEntry(character.EntryList, newEntryName))
+                return;
         }
-        Debug.LogWarning("add entry false");
+
+        Debug.LogWarning("add entry false, can't find entry: " + newEntryName);
         
     }
 
