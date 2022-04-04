@@ -6,10 +6,6 @@ using Yarn.Unity;
 
 public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 {
-    [SerializeField, BoxGroup("Entry Info")] private string entryName;
-    [SerializeField, BoxGroup("Entry Info"), ResizableTextArea] private string entryDes;
-    [SerializeField, BoxGroup("Entry Info")] private Sprite entryImage;
-    [SerializeField, BoxGroup("Entry Info")] private EntryType entryType;
     [SerializeField, BoxGroup("Character Info")] private string characterName;
     [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField, BoxGroup("interaction")] private bool _interactable;
@@ -27,16 +23,6 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     public bool IsTalkable{get {return _talkable;} set {_talkable = value;}}
     public bool IsInteractable{get {return _interactable;} set {_interactable = value;}}
     public bool IsInteractFirst{get {return _interactFirst;} private set{_interactFirst = value;}}
-    public entry Entry {
-        get {
-            return entryInfo;
-        } private set {
-            entryInfo.entryName = this.entryName;
-            entryInfo.entryDes = this.entryDes;
-            entryInfo.entryImage = this.entryImage;
-            entryInfo.entryType = this.entryType;
-        }
-    }
 
     public List<entry> EntryList {get => entryList; set => entryList = value;}
 
@@ -47,9 +33,6 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
             name = characterName;
         else
             Debug.LogWarning("didn't set a character name for " + name);
-
-        //initialize Entry
-        Entry = entryInfo;
 
         //check everything has set up
         if (collider == null)

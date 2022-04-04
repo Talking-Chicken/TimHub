@@ -185,13 +185,26 @@ public class JournalControl : MonoBehaviour
 
 
     [YarnCommand("Add_Entry")]
-    /* add entry to journal based on NPC's name and entry name*/
+    /* add entry to journal based on NPC's name and entry name
+        since Yarn spinner cannot have [space] in parameter, this entry name should substitute [space] to [_]*/
     public void addEntry(string NPC, string entryName) {
         InteractiveObj[] NPCs = FindObjectsOfType<InteractiveObj>();
         
+        //modify entryName
+        char[] nameCharacters = entryName.ToCharArray();
+        for (int i = 0; i < nameCharacters.Length; i++) {
+            if (nameCharacters[i].Equals('_'))
+                nameCharacters[i] = ' ';
+        }
+        string newEntryName = "";
+        for (int i = 0; i < nameCharacters.Length; i++) {
+            newEntryName += nameCharacters[i];
+        }
+
+        //search through all interactive objects and check if we can add the entry from that InteractiveObj
         foreach(InteractiveObj character in NPCs) {
             if (character.gameObject.name.ToLower().Trim().Equals(NPC.ToLower().Trim()))
-                if (addEntry(character.EntryList, entryName))
+                if (addEntry(character.EntryList, newEntryName))
                     return;
                 else
                     Debug.LogWarning("can't find character with name: " + NPC);

@@ -6,6 +6,6 @@ public class Fridge : InteractiveObj
 {
     public override void interact()
     {
-        FindObjectOfType<JournalControl>().addEntry(base.Entry);
+        
     }
 }

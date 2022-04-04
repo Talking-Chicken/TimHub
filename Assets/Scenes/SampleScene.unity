@@ -876,6 +876,78 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 413
       objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1034750823}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1034750823}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeToJournalState
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: changeToJournalState
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876566466613388020, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1034750823}
+    - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeToExploreState
+      objectReference: {fileID: 0}
+    - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerControl, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6954200007111919704, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1136,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: entryList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: entryList.Array.data[0].entryDes
@@ -1144,17 +1216,34 @@ PrefabInstance:
         was alive on Timsday.
       objectReference: {fileID: 0}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[1].entryDes
+      value: Orzo's sister. Works at the library and the Church. Claimed her brother
+        was alive on Timsday.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: entryList.Array.data[0].entryName
-      value: St
+      value: The First Entry
       objectReference: {fileID: 0}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: entryList.Array.data[0].entryType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[1].entryName
+      value: ' Test 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[1].entryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: entryList.Array.data[0].entryImage
       value: 
       objectReference: {fileID: 21300000, guid: bcb3abbfad8142c4cb71dd248718482a, type: 3}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[1].entryImage
+      value: 
+      objectReference: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
 --- !u!1 &1075738882
@@ -1188,10 +1277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352c773d100f8a34e912a746193d7679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entryName: Fridge
-  entryDes: It's a fridge, contains many objects
-  entryImage: {fileID: 21300000, guid: b4c1da72582f45146a8d5eb0c8f9966b, type: 3}
-  entryType: 0
   characterName: 
   _talkable: 0
   _interactable: 0
