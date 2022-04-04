@@ -7,7 +7,7 @@ Human: This is the start of human dialogue; #line:04fb19c
 <<jump Human_End>>
 ===
 title: Human_End
-position: -7,133
+position: -3,108
 ---
 Human: It is a complicated question. #line:0b47794 
 -> choose option 1 #line:09ab210 

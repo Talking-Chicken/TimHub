@@ -9,7 +9,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField, Range(3.0f,15.0f), BoxGroup("Movement")] private float speed;
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
-
+    
     
 
     //dialogue
