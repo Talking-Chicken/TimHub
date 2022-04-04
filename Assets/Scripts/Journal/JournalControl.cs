@@ -178,7 +178,6 @@ public class JournalControl : MonoBehaviour
                 }
             }
         }
-        Debug.LogWarning("can't find entry with name: " + entryName);
         return false;
     }
 
@@ -200,10 +199,17 @@ public class JournalControl : MonoBehaviour
             newEntryName += nameCharacters[i];
         }
 
-        //search through all interactive objects and check if we can add the entry from that InteractiveObj
+        //search through all interactive objects and check if we can add the entry from them
         foreach(InteractiveObj character in NPCs) {
-            if (addEntry(character.EntryList, newEntryName))
-                return;
+            if (addEntry(character.EntryList, newEntryName)) {
+                //if not contains this name, create a key in hashtable of GameManager
+                if (!GameManager.ProgressTable.ContainsKey(newEntryName.ToLower().Trim())) {
+                    GameManager.ProgressTable.Add(newEntryName.ToLower().Trim(), true);
+                } else {
+                    GameManager.ProgressTable[newEntryName.ToLower().Trim()] = true;
+                    return;
+                }
+            }
         }
 
         Debug.LogWarning("add entry false, can't find entry: " + newEntryName);
