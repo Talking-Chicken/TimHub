@@ -15,7 +15,8 @@ tags:
     <<jump question_introductions>>
 
 ===
-
+title: Rigatoni_askInvestigation
+tags:
 ---
 //if player has read the intro/first convo
 <<if $introread == true>>
@@ -26,8 +27,10 @@ tags:
 
 -> About your forgetfulness  
     <<jump question_rigatoniForgetfulness>>
+<<endif>>
 ===
-
+title: RigatoniTest_partnership
+tags:
 ---
 //if player has read investigation AND Rigatoni's forgetfulness convos
 <<if $investigationRead == true && $forgetfulnessRead == true>>
@@ -35,7 +38,7 @@ tags:
 //show dialogue choice to ask about Penne's new partnership with Rigatoni
 -> About our new partnership
     <<jump question_ourNewPartnership>>
-
+<<endif>>
 ===
 
 title: question_introductions
