@@ -62,4 +62,37 @@ position: -101,-44
 <<endif>>
 ===
 
+title: fishbowl
+tags:
+position: 300,-101
+---
+<<if Check_Collected("fishbowl") == false>>
+    Penne: Hey there... fishie... hand... thing...?
+    <<set $newItem to "fishbowl">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: mounTimDewTimling
+tags:
+position: 300,-101
+---
+<<if Check_Collected("mountTimDewTimling") == false>>
+    Penne: Uh... hi? What are you doing in Orzo's wall?
+    Timling: I live here. Orzo's gone tho, so now I don't wanna. I'm lonely! Take me with you!
+        -> Yes!
+            Penne: Sure, little dude! All aboard the Penne train!
+            Timling: Nice. 
+            Timling: ...Got any games on your phone?
+            <<set $newItem to "mountTimDewTimling">>
+            <<jump addEntry>>
+        -> Nah.
+            Penne: Uh, no thanks.
+            Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
 

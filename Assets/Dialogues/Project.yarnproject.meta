@@ -16,6 +16,14 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: 907f8afc95d8d42b8aa6fba9f24782ab, type: 3}
   compileErrors: []
   serializedDeclarations:
+  - name: $variable
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
   - name: $introRead
     typeName: Bool
     defaultValueBool: 0
@@ -40,14 +48,14 @@ ScriptedImporter:
     description: RigatoniTest.yarn, node RigatoniTest, line 7
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 2dc6e8867b50547129dac94f652bc522, type: 3}
-  - name: $variable
-    typeName: Bool
+  - name: $newItem
+    typeName: String
     defaultValueBool: 0
     defaultValueNumber: 0
     defaultValueString: 
-    description: 
+    description: OrzoRoomObjects.yarn, node templateNode, line 2
     isImplicit: 1
-    sourceYarnAsset: {instanceID: 0}
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 907f8afc95d8d42b8aa6fba9f24782ab, type: 3}
   defaultLanguage: en-US
   languagesToSourceAssets: []
   useAddressableAssets: 0

@@ -1213,6 +1213,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: _talkable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: _startNode
+      value: fishbowl
+      objectReference: {fileID: 0}
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: characterName
+      value: Fishbowl
+      objectReference: {fileID: 0}
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: Fishbowl
+      objectReference: {fileID: 0}
     - target: {fileID: 952756792107084404, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1261,6 +1277,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictimHouse
       objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: _talkable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: _startNode
+      value: mounTimDewTimling
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: characterName
+      value: mounTimDewTimling
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryDes
+      value: MounTim Dew Timling
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: mounTimDewTimling
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: -125224504512678041, guid: 16804eed98b315944817232d93631107, type: 3}
     - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: _talkable
       value: 1
@@ -1491,6 +1535,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6680222, y: 2.0941105}
   m_EdgeRadius: 0
+--- !u!1 &1160172265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5469724190127333424, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+  m_PrefabInstance: {fileID: 1061571045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1160172266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160172265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: orzoCloset
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: orzoCloset
+  collider: {fileID: 0}
+  entryList:
+  - entryName: Orzo Closet
+    entryDes: Orzo's room closet
+    entryImage: {fileID: 21300000, guid: 1d44c5812fd564960ae48cf942c55f5d, type: 3}
+    entryType: 0
 --- !u!1001 &1232389747
 PrefabInstance:
   m_ObjectHideFlags: 0
