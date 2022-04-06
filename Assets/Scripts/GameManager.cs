@@ -13,6 +13,7 @@ public class GameManager : Singleton<GameManager>
         ProgressTable.Add("rigatoni introread", false);
         ProgressTable.Add("rigatoni investigationread", false);
         ProgressTable.Add("rigatoni forgetfulnessread", false);
+        ProgressTable.Add("rigatoni partnership", false);
 
         ProgressTable.Add("accessToBodega", false);
         ProgressTable.Add("accessToChurch", false);
