@@ -12,10 +12,10 @@ position: -1,-117
 <<set $forgetfulnessRead to false>>
 
 //show dialogue choice to trigger intro/first convo
-<<if Check_Read("rigatoni introRead") == false>>
+<<if Check_Read("rigatoni introread") == false>>
     -> Talk to Rigatoni
         <<jump question_introductions>>
-<<elseif Check_Read("rigatoni investigationRead") || Check_Read("rigatoni forgetfulnessRead")>>
+<<elseif Check_Read("rigatoni investigationread") == false || Check_Read("rigatoni forgetfulnessread") == false>>
     -> Ask about investigation
         <<jump question_investigationSoFar>>
     -> Ask about forgetfulness
@@ -55,7 +55,7 @@ Penne: Yeah! //Penne Happy
 Rigatoni: Stop saying that! //Rigatoni Annoyed
 
 //setting bool for player reading the intro/first convo to true
-<<Set_Read("rigatoni introRead")>>
+<<Set_Read rigatoni_introread>>
 
 ===
 
@@ -70,7 +70,7 @@ Rigatoni: Talk to any witnesses you come across. Scope out any suspicious pieces
 Rigatoni: Be sure to cross-check everything. If you need my professional opinion on anything, report back to me. //Rigatoni Serious
 
 //setting bool for player reading the investigation convo to true
-<<Set_Read("rigatoni investigationRead")>>
+<<Set_Read rigatoni_investigationread>>
 
 ===
 
@@ -88,7 +88,7 @@ Penne: No...you called the victim the wrong name. //Penne Unnerved/Disturbed
 Rigatoni: Forget it happened. Let us continue our investigation. //Rigatoni Unnerved
 
 //setting bool for player reading the forgetfulness convo to true
-<<Set_Read("rigatoni forgetfulnessRead")>>
+<<Set_Read rigatoni_forgetfulnessread>>
 
 ===
 
