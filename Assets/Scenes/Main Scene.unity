@@ -1491,7 +1491,7 @@ MonoBehaviour:
   runner: {fileID: 938455774}
   journalContainer: {fileID: 1315632215}
   journal: {fileID: 194212326}
-  blurCamera: {fileID: 0}
+  blurCamera: {fileID: 1891784918}
 --- !u!212 &1034750824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1764,6 +1764,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 938455774, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: startAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1257645556154266991, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1935,6 +1939,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1891784918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5409445403340980603, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+  m_PrefabInstance: {fileID: 1462577656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2068821640
 PrefabInstance:
   m_ObjectHideFlags: 0
