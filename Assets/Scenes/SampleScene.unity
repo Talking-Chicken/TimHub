@@ -2043,26 +2043,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _talkable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _startNode
-      value: fishbowl
-      objectReference: {fileID: 0}
-    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: characterName
-      value: Fishbowl
-      objectReference: {fileID: 0}
-    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryName
-      value: Fishbowl
-      objectReference: {fileID: 0}
-    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 00c3594d6db158f41b2d82ca06f8be63, type: 3}
     - target: {fileID: 952756792107084404, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2110,184 +2090,6 @@ PrefabInstance:
     - target: {fileID: 952756792107084407, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Name
       value: VictimHouse
-      objectReference: {fileID: 0}
-    - target: {fileID: 1696813330347108332, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1696813330347108332, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1901766707
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000751082081601548, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2081154388483999451, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 3026122443510956438, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3026122443510956438, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1901766707
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _talkable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _startNode
-      value: mounTimDewTimling
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: characterName
-      value: mounTimDewTimling
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryDes
-      value: MounTim Dew Timling
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryName
-      value: mounTimDewTimling
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556175423902491701, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryImage
-      value: 
-      objectReference: {fileID: -125224504512678041, guid: 16804eed98b315944817232d93631107, type: 3}
-    - target: {fileID: 3676817073997873437, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3676817073997873437, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1901766707
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _talkable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _startNode
-      value: bodegaReceipt
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: characterName
-      value: Bodega Receipt
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryDes
-      value: The Bodega Receipt
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryName
-      value: Receipt
-      objectReference: {fileID: 0}
-    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryImage
-      value: 
-      objectReference: {fileID: -6535797698658018930, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _talkable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: _startNode
-      value: orzoDreamJournal
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: characterName
-      value: orzoJournal
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryDes
-      value: Orzo'z Dream Journal
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryName
-      value: orzoJournal
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 116145a3b5a184c94aff74b778eb3b29, type: 3}
-    - target: {fileID: 5568207003881493682, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: characterName
-      value: Stelle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryDes
-      value: Orzo's sister. Works at the library and the Church. Claimed her brother
-        was alive on Timsday.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[1].entryDes
-      value: Orzo's sister. Works at the library and the Church. Claimed her brother
-        was alive on Timsday.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryName
-      value: The First Entry
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[1].entryName
-      value: ' Test 2'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[1].entryType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[0].entryImage
-      value: 
-      objectReference: {fileID: 21300000, guid: bcb3abbfad8142c4cb71dd248718482a, type: 3}
-    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: entryList.Array.data[1].entryImage
-      value: 
-      objectReference: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
-    - target: {fileID: 7489631403543955709, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489631403543955709, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8207313362149436312, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9004493540847857671, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
@@ -2421,34 +2223,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6680222, y: 2.0941105}
   m_EdgeRadius: 0
---- !u!1 &1160172265 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5469724190127333424, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
-  m_PrefabInstance: {fileID: 1061571045}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1160172266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160172265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: orzoCloset
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: orzoCloset
-  collider: {fileID: 0}
-  entryList:
-  - entryName: Orzo Closet
-    entryDes: Orzo's room closet
-    entryImage: {fileID: 21300000, guid: 1d44c5812fd564960ae48cf942c55f5d, type: 3}
-    entryType: 0
 --- !u!1001 &1232389747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3214,11 +2988,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838392, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.44
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838392, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.78
+      value: 4.31
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838392, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_LocalPosition.z
