@@ -40,9 +40,9 @@ title: orzoCloset
 tags:
 position: 124,-16
 ---
-<<if Check_Collected("orzoCloset") == false>>
+<<if Check_Collected("orzo Closet") == false>>
     Penne: This closet is basically empty. All that's inside is a hastily packed suitcase. Vacation time...?
-    <<set $newItem to "orzoCloset ">>
+    <<set $newItem to "orzo_Closet ">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!

@@ -21,20 +21,21 @@ public class GameManager : Singleton<GameManager>
         InteractiveObj[] interactiveObjs = FindObjectsOfType<InteractiveObj>();
         for (int i = 0; i < interactiveObjs.Length; i++) {
             foreach(entry entryName in interactiveObjs[i].EntryList) {
+                if (!entryName.entryName.Equals("")) {
+                    //modify entryName
+                    char[] nameCharacters = entryName.entryName.ToCharArray();
+                    for (int n = 0; n < nameCharacters.Length; n++) {
+                        if (nameCharacters[n].Equals('_'))
+                            nameCharacters[n] = ' ';
+                    }
+                    string newEntryName = "";
+                    for (int n = 0; n < nameCharacters.Length; n++) {
+                        newEntryName += nameCharacters[n];
+                    }
+                    newEntryName = newEntryName.ToLower().Trim();
 
-                //modify entryName
-                char[] nameCharacters = entryName.entryName.ToCharArray();
-                for (int n = 0; n < nameCharacters.Length; n++) {
-                    if (nameCharacters[n].Equals('_'))
-                        nameCharacters[n] = ' ';
+                    ProgressTable.Add(newEntryName, false);
                 }
-                string newEntryName = "";
-                for (int n = 0; n < nameCharacters.Length; n++) {
-                    newEntryName += nameCharacters[n];
-                }
-                newEntryName = newEntryName.ToLower().Trim();
-
-                ProgressTable.Add(newEntryName, false);
             }
         }
 
