@@ -11,23 +11,21 @@ position: -1,-117
         <<jump question_investigationSoFar>>
     -> Ask about forgetfulness
         <<jump question_rigatoniForgetfulness>>
-<<else>>
+<<elseif Check_Read("rigatoni partnership") == false>>
     -> Ask about partnership
         <<jump question_ourNewPartnership>>
+<<else>>
+    <<jump question_aboutItems>>
 <<endif>>
 ===
 
-title: RigatoniTest_partnership
-tags:
-position: -236,-184
+title: question_aboutItems
+position:
 ---
-//if player has read investigation AND Rigatoni's forgetfulness convos
-<<if $investigationRead == true && $forgetfulnessRead == true>>
-
-//show dialogue choice to ask about Penne's new partnership with Rigatoni
--> About our new partnership
-    <<jump question_ourNewPartnership>>
+<<if Check_Collected("orzoJournal")>>
+    -> Ask about Orzo's Journal
 <<endif>>
+Penne: I can collect items and ask about them.
 ===
 
 title: question_introductions
@@ -93,5 +91,5 @@ Penne: You're so right. Too formal. How do you like the sound of Toni? //Penne H
 Rigatoni: You may not call me that. //Rigatoni Annoyed
 Penne: Aw. Are you sure? You could call me...Pen...? //Penne Sad
 Rigatoni: ...Pen is an awful nickname. Toni is far superior, without a doubt. //Rigatoni Slightly amused
-
+<<Set_Read rigatoni_partnership>>
 ===
