@@ -3,20 +3,18 @@ tags:
 ---
 -> How did you know Orzo?
     <<jump question_relationship>>
--> So when did you last see Orzo?
-    <<jump question_alibi>>
--> Where were you during the time of the murder?
-    <<jump question_whereabouts>>
 -> Do you understand anything in Orzo's journal? I can hardly read any of it!
     <<jump question_journal>>
 -> What's up with Orzo's closet?
     <<jump question_closet>>
--> Do you know what this... little creature is>
+-> Do you know what this... little creature is?>
     <<jump question_timlings>>
 ===
 title: question_relationship
 ---
 Stelle: Orzo was my big brother... H-he was the only family I had left! Now, I'm all alone... 
+-> So when did you last see Orzo?
+    <<jump question_alibi>>>>
 ===
 
 title: question_alibi
@@ -24,6 +22,8 @@ title: question_alibi
 <<Add_Entry journal The_First_Entry>>
 <<Add_Entry journal Test_2>>
 Stelle: The last I saw him was the night before Timsday, Praise Tim... We always have a big celebration. H-he used to love it...
+-> Then were you during the time of the murder?
+    <<jump question_whereabouts>>
 ===
 
 title: question_whereabouts
