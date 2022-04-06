@@ -27,12 +27,10 @@ public class GameManager : Singleton<GameManager>
                 ProgressTable.Add(newEntryName, false);
             }
         }
-    }
 
-    
-    void Update()
-    {
-        
+        ProgressTable.Add("accesstobodega", false);
+        ProgressTable.Add("accesstochurch", false);
+        ProgressTable.Add("accesstosecretroom", false);
     }
 
     [YarnFunction("Check_Collected")]
