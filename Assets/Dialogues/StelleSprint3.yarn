@@ -7,8 +7,8 @@ tags:
     <<jump question_journal>>
 -> What's up with Orzo's closet?
     <<jump question_closet>>
--> Do you know what this... little creature is?>
-    <<jump question_timlings>>
+// -> Do you know what this... little creature is?>
+//     <<jump question_timlings>>
 ===
 title: question_relationship
 ---
