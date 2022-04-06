@@ -96,11 +96,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: 
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
   _startNode: Yarn1
   collider: {fileID: 1578899833044932012}
+  entryList:
+  - entryName: 
+    entryDes: 
+    entryImage: {fileID: 0}
+    entryType: 0
 --- !u!1 &1578899833044932014
 GameObject:
   m_ObjectHideFlags: 0
