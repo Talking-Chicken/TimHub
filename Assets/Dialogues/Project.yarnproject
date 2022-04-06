@@ -1,5 +1,4 @@
-﻿title: Project
-tags:
+﻿title: Program
 ---
-
+<<declare $variable = false>>
 ===
