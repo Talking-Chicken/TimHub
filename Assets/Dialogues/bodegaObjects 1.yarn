@@ -1,0 +1,25 @@
+﻿title: addEntry
+tags:
+position: 96,-203
+---
+Penne: Do I want to record this as evidence?
+    -> Yes!
+        <<Add_Entry journal {$newItem}>>
+        Penne: I'll take a picture of it and add it to my journal.
+    -> Nope.
+        Penne: I have limited space in my journal, it's a good idea to look at other things first.
+===
+
+title: rugLady
+tags:
+position: 300,-101
+---
+<<if Check_Collected("rugLady") == false>>
+    Penne: Oh, I'm so sorry, I almost stepped on you! 
+    RugLady: Worry not, my child. For my existence is naught if I am not a conduit for the soles of your chosen footwear. Avoiding that truth is futile.
+    <<set $newItem to "rugLady">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===

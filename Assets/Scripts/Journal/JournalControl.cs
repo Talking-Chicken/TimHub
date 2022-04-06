@@ -34,6 +34,7 @@ public class JournalControl : MonoBehaviour
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab;
     [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
+    [SerializeField, BoxGroup("Case Brief")] private GameObject caseBrief, caseBriefTab;
 
     //journal entries
     private List<entry> alibies = new List<entry>(), items = new List<entry>();
@@ -49,6 +50,7 @@ public class JournalControl : MonoBehaviour
     public JournalStateAlibis stateAlibis = new JournalStateAlibis();
     public JournalStateItems stateItems = new JournalStateItems();
     public JournalStateCaseReport stateCaseReport = new JournalStateCaseReport();
+    public JournalStateCaseBrief stateCaseBrief = new JournalStateCaseBrief();
     public JournalStateIdle stateIdle = new JournalStateIdle();
 
     public void changeState(JournalStateBase newState) {
@@ -127,6 +129,15 @@ public class JournalControl : MonoBehaviour
 
     public void closeCaseReport() {
         caseReport.SetActive(false);
+    }
+
+    public void openCaseBrief() {
+        caseBrief.SetActive(true);
+        bringToTop(caseBriefTab, journalBody);
+    }
+
+    public void closeCaseBrief() {
+        caseBrief.SetActive(false);
     }
     #endregion
 

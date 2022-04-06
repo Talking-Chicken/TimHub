@@ -1,5 +1,6 @@
 ﻿title: RigatoniTest
 tags:
+position: -1,-117
 ---
 //if player hasn't read the introduction/first conversation
 <<set $introRead to false>>
@@ -11,23 +12,23 @@ tags:
 <<set $forgetfulnessRead to false>>
 
 //show dialogue choice to trigger intro/first convo
--> Talk to Rigatoni
-    <<jump question_introductions>>
-
+<<if Check_Read("rigatoni introRead") == false>>
+    -> Talk to Rigatoni
+        <<jump question_introductions>>
+<<elseif Check_Read("rigatoni investigationRead") || Check_Read("rigatoni forgetfulnessRead")>>
+    -> Ask about investigation
+        <<jump question_investigationSoFar>>
+    -> Ask about forgetfulness
+        <<jump question_rigatoniForgetfulness>>
+<<else>>
+    -> Ask about partnership
+        <<jump question_ourNewPartnership>>
+<<endif>>
 ===
 
----
-//if player has read the intro/first convo
-<<if $introread == true>>
-
-//show dialogue choices to ask about investigation and Rigatoni's forgetfullness
--> About the investigations so far
-    <<jump question_investigationSoFar>>
-
--> About your forgetfulness  
-    <<jump question_rigatoniForgetfulness>>
-===
-
+title: RigatoniTest_partnership
+tags:
+position: -236,-184
 ---
 //if player has read investigation AND Rigatoni's forgetfulness convos
 <<if $investigationRead == true && $forgetfulnessRead == true>>
@@ -35,10 +36,11 @@ tags:
 //show dialogue choice to ask about Penne's new partnership with Rigatoni
 -> About our new partnership
     <<jump question_ourNewPartnership>>
-
+<<endif>>
 ===
 
 title: question_introductions
+position: -204,-292
 ---
 //the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
 Penne: Rigatoni! It's so good to see you. I missed seeing you at HQ! //Penne Happy
@@ -53,11 +55,12 @@ Penne: Yeah! //Penne Happy
 Rigatoni: Stop saying that! //Rigatoni Annoyed
 
 //setting bool for player reading the intro/first convo to true
-<<set $introRead to true>>
+<<Set_Read("rigatoni introRead")>>
 
 ===
 
 title: question_investigationSoFar
+position: 174,-39
 ---
 //this convo is a tutorial for players on what needs to be done in the room
 Penne: So I got your letter with the case debriefing and all that jazz. How's the investigation so far? //Penne Happy
@@ -67,11 +70,12 @@ Rigatoni: Talk to any witnesses you come across. Scope out any suspicious pieces
 Rigatoni: Be sure to cross-check everything. If you need my professional opinion on anything, report back to me. //Rigatoni Serious
 
 //setting bool for player reading the investigation convo to true
-<<set $investigationRead to true>>
+<<Set_Read("rigatoni investigationRead")>>
 
 ===
 
 title: question_rigatoniForgetfulness
+position: -6,123
 ---
 //player can ask about Rigatoni's forgetfulness. This is the first hint at her deterioration!
 Penne: I heard through your letter that ever since you came to Timsville, you've been more forgetful? //Penne Neutral
@@ -84,11 +88,12 @@ Penne: No...you called the victim the wrong name. //Penne Unnerved/Disturbed
 Rigatoni: Forget it happened. Let us continue our investigation. //Rigatoni Unnerved
 
 //setting bool for player reading the forgetfulness convo to true
-<<set $forgetfulnessRead to true>>
+<<Set_Read("rigatoni forgetfulnessRead")>>
 
 ===
 
 title: question_ourNewPartnership
+position: -227,-47
 ---
 //player can ask about how Rigatoni feels about partnering up with Penne
 Penne: So...partners, huh? We can do that lone wolf thing you love together. We can be pack, partner! //Penne Happy
