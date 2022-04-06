@@ -23,6 +23,19 @@ position: 300,-101
 <<endif>>
 ===
 
+title: bodegaReceipt
+tags:
+position: 300,-101
+---
+<<if Check_Collected("bodegaReceipt") == false>>
+    Penne: This receipt says that Orzo bought something at the local bodega on Timsday. Aha!   
+    <<set $newItem to "bodegaReceipt">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
 title: orzoDreamJournal
 tags:
 position: -138,-170

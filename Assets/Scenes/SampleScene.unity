@@ -2059,6 +2059,10 @@ PrefabInstance:
       propertyPath: entryList.Array.data[0].entryName
       value: Fishbowl
       objectReference: {fileID: 0}
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 00c3594d6db158f41b2d82ca06f8be63, type: 3}
     - target: {fileID: 952756792107084404, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2115,6 +2119,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1901766707
       objectReference: {fileID: 0}
+    - target: {fileID: 2000751082081601548, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2081154388483999451, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.57
@@ -2169,7 +2177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: _startNode
-      value: Receipt_Test
+      value: bodegaReceipt
       objectReference: {fileID: 0}
     - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: characterName
@@ -2219,6 +2227,10 @@ PrefabInstance:
       propertyPath: entryList.Array.data[0].entryImage
       value: 
       objectReference: {fileID: 21300000, guid: 116145a3b5a184c94aff74b778eb3b29, type: 3}
+    - target: {fileID: 5568207003881493682, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: characterName
       value: Stelle
@@ -2261,6 +2273,14 @@ PrefabInstance:
       propertyPath: entryList.Array.data[1].entryImage
       value: 
       objectReference: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
+    - target: {fileID: 8207313362149436312, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004493540847857671, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
 --- !u!1 &1075738882
