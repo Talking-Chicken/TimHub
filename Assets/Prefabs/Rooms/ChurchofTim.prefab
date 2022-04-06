@@ -1886,7 +1886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2354085676042358616}
   - component: {fileID: 2467599957536664325}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: rug _ test#1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1901,8 +1901,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5988485009369927491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.15, y: -34.17, z: 49.89235}
-  m_LocalScale: {x: 0.67022073, y: 1.447654, z: 1}
+  m_LocalPosition: {x: 5.2704, y: -34.17, z: 49.89235}
+  m_LocalScale: {x: 0.71036696, y: 1.447654, z: 1}
   m_Children: []
   m_Father: {fileID: 8872440421651647760}
   m_RootOrder: 7
