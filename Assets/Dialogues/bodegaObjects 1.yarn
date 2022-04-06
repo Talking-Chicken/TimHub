@@ -23,3 +23,120 @@ position: 300,-101
     Penne: I already recorded this evidence!
 <<endif>>
 ===
+
+title: teethIsle
+tags:
+position: 300,-101
+---
+<<if Check_Collected("teethIsle") == false>>
+    Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
+    <<set $newItem to "teethIsle">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: hamDugo
+tags:
+position: 300,-101
+---
+<<if Check_Collected("hamDugo") == false>>
+    HamDugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
+    <<set $newItem to "hamDugo">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: bodegaCat
+tags:
+position: 300,-101
+---
+<<if Check_Collected("bodegaCat") == false>>
+    Penne: Mrow. Meow! This cat's named Pocky. 
+    <<set $newItem to "bodegaCat">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: miku
+tags:
+position: 300,-101
+---
+<<if Check_Collected("miku") == false>>
+    Penne: *Sigh.* What a pretty lady. I wish I could give her a kiss.
+    <<set $newItem to "miku">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: fishATM
+tags:
+position: 300,-101
+---
+<<if Check_Collected("fishATM") == false>>
+    Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
+    <<set $newItem to "fishATM">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: bloodyShears
+tags:
+position: 300,-101
+---
+<<if Check_Collected("bloodyShears") == false>>
+    Penne: Shears that look like Tim. It's not marinara covering these shears...
+    <<set $newItem to "bloodyShears">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: spearmintToothpaste
+tags:
+position: 300,-101
+---
+<<if Check_Collected("bloodyShears") == false>>
+    Penne: Spearmint toothpaste. The best one!
+    <<set $newItem to "bloodyShears">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: charcoalToothpaste
+tags:
+position: 300,-101
+---
+<<if Check_Collected("charcoalToothpaste") == false>>
+    Penne: Charcoal toothpaste. Quirky...
+    <<set $newItem to "charcoalToothpaste">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: mintToothpaste
+tags:
+position: 300,-101
+---
+<<if Check_Collected("mintToothpaste") == false>>
+    Penne: Mint toothpaste. Basic. Meh.
+    <<set $newItem to "mintToothpaste">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
