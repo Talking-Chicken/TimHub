@@ -28,9 +28,14 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        ProgressTable.Add("accesstobodega", false);
-        ProgressTable.Add("accesstochurch", false);
-        ProgressTable.Add("accesstosecretroom", false);
+        //for rigatoni progress check
+        ProgressTable.Add("rigatoni introRead", false);
+        ProgressTable.Add("rigatoni investigationRead", false);
+        ProgressTable.Add("rigatoni forgetfulnessRead", false);
+
+        ProgressTable.Add("accessToBodega", false);
+        ProgressTable.Add("accessToChurch", false);
+        ProgressTable.Add("accessToSecretRoom", false);
     }
 
     [YarnFunction("Check_Collected")]
@@ -51,5 +56,18 @@ public class GameManager : Singleton<GameManager>
             return (bool)ProgressTable[newEntryName];
         }
         return false;
+    }
+
+    [YarnFunction("Check_Read")]
+    public static bool checkRead(string nodeName) {
+        return checkCollected(nodeName);
+    }
+
+    [YarnFunction("Set_Read")]
+    public static void setRead(string nodeName) {
+        if (ProgressTable.ContainsKey(nodeName))
+            ProgressTable[nodeName] = true;
+        else
+            Debug.LogWarning("can't find node: " + nodeName);
     }
 }
