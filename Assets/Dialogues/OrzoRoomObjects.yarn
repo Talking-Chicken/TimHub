@@ -40,9 +40,9 @@ title: orzoCloset
 tags:
 position: 124,-16
 ---
-<<if Check_Collected("closet") == false>>
+<<if Check_Collected("orzoCloset") == false>>
     Penne: This closet is basically empty. All that's inside is a hastily packed suitcase. Vacation time...?
-    <<set $newItem to "closet">>
+    <<set $newItem to "orzoCloset ">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -79,14 +79,14 @@ title: mounTimDewTimling
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("mountTimDewTimling") == false>>
+<<if Check_Collected("mounTimDewTimling") == false>>
     Penne: Uh... hi? What are you doing in Orzo's wall?
     Timling: I live here. Orzo's gone tho, so now I don't wanna. I'm lonely! Take me with you!
         -> Yes!
             Penne: Sure, little dude! All aboard the Penne train!
             Timling: Nice. 
             Timling: ...Got any games on your phone?
-            <<set $newItem to "mountTimDewTimling">>
+            <<set $newItem to "mounTimDewTimling">>
             <<jump addEntry>>
         -> Nah.
             Penne: Uh, no thanks.
