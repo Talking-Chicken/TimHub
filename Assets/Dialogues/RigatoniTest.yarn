@@ -1,5 +1,6 @@
 ﻿title: RigatoniTest
 tags:
+position: -1,-117
 ---
 //if player hasn't read the introduction/first conversation
 <<set $introRead to false>>
