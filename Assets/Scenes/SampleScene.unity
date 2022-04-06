@@ -2334,6 +2334,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.161722, y: 1.0131948}
   m_EdgeRadius: 0
+--- !u!114 &1986895886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986895884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: rugLady
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: rugLady
+  collider: {fileID: 0}
+  entryList:
+  - entryName: rugLady
+    entryDes: The rug lady
+    entryImage: {fileID: 21300000, guid: 7c13d68ae6a214e478f8e5e74d808490, type: 3}
+    entryType: 0
 --- !u!1001 &1578899833302754818
 PrefabInstance:
   m_ObjectHideFlags: 0
