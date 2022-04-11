@@ -29,8 +29,8 @@ public class JournalControl : MonoBehaviour
 {
     //gameobjects of different sections
     [SerializeField, BoxGroup("Journal Body"), Tooltip("this is used to block player mouse raycast, when clicking on journal icon")]
-    private GameObject blockRaycastSquare; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
-    [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon;
+    private GameObject blockRaycastSquareForJournal, blockRaycastSquareForExit; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
+    [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon, exitIcon;
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab;
     [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
@@ -96,7 +96,8 @@ public class JournalControl : MonoBehaviour
         currentState.updateState(this);
 
         //happens all states
-        blockRaycastSquare.transform.position = Camera.main.ScreenToWorldPoint(journalIcon.transform.position);
+        blockRaycastSquareForJournal.transform.position = Camera.main.ScreenToWorldPoint(journalIcon.transform.position);
+        blockRaycastSquareForExit.transform.position = Camera.main.ScreenToWorldPoint(exitIcon.transform.position);
         pageText.text = page + "/" + maxPage;
     }
 

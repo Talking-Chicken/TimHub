@@ -11,8 +11,9 @@ public class PlayerStateDialogue : PlayerStateBase
     public override void updateState(PlayerControl player) {
         if (!player.runner.IsDialogueRunning)
             player.changeState(player.stateExplore);
-        if (Input.GetMouseButtonUp(0))
-            player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
+        if (Input.GetMouseButtonDown(0))
+            if (player.HoveringObj == null || !player.HoveringObj.tag.Equals("Blocker"))
+                player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
     }
 
     public override void fixedUpdate(PlayerControl player)
@@ -20,6 +21,6 @@ public class PlayerStateDialogue : PlayerStateBase
         
     }
     public override void leaveState(PlayerControl player) {
-        
+        player.previousState = this;
     }
 }
