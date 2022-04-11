@@ -50,5 +50,7 @@ public class PlayerStateExplore : PlayerStateBase
         //stop player moving
         player.Destination = player.transform.position;
         player.blurCamera.SetActive(true);
+
+        player.previousState = this;
     }
 }

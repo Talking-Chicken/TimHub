@@ -6,7 +6,6 @@ using Yarn.Unity;
 
 public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 {
-    [SerializeField, BoxGroup("Character Info")] private string characterName;
     [SerializeField, BoxGroup("Dialogue")] private bool _talkable;
     [SerializeField, BoxGroup("interaction")] private bool _interactable;
     [SerializeField, BoxGroup("interaction"), Header("do interact before dialogue"),ShowIf("_talkable")] 
@@ -28,12 +27,6 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 
     void Start()
     {
-        //set gameobject name to character name
-        if (characterName != "")
-            name = characterName;
-        else
-            Debug.LogWarning("didn't set a character name for " + name);
-
         //check everything has set up
         if (collider == null)
             Debug.LogWarning(name + " has not set up a collider yet");

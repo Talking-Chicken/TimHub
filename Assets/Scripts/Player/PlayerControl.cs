@@ -10,7 +10,8 @@ public class PlayerControl : MonoBehaviour
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
     
-    
+    //mouse detection
+    [SerializeField] private GameObject hoveringObj;
 
     //dialogue
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
@@ -24,12 +25,14 @@ public class PlayerControl : MonoBehaviour
     public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
     public JournalControl Journal {get {return journal;}}
+    public GameObject HoveringObj {get => hoveringObj; set => hoveringObj = value;}
 
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
 
     //states
     private PlayerStateBase currentState;
+    public PlayerStateBase previousState{set; get;}
     public PlayerStateExplore stateExplore = new PlayerStateExplore();
     public PlayerStateDialogue stateDialogue = new PlayerStateDialogue();
     public PlayerStateJournal stateJournal = new PlayerStateJournal();
@@ -52,6 +55,12 @@ public class PlayerControl : MonoBehaviour
     public void changeToExploreState() {changeState(stateExplore);}
     public void changeToDialogueState() {changeState(stateDialogue);}
     public void changeToJournalState() {changeState(stateJournal);}
+    public void changeToPreviousState() {
+        if (previousState != null)
+            changeState(previousState);
+        else
+            changeToExploreState();
+    }
 
     void Start()
     {
@@ -62,6 +71,7 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+        HoveringObj = mouseHoveringObj();
         currentState.updateState(this);
     }
 
@@ -91,5 +101,13 @@ public class PlayerControl : MonoBehaviour
     public void closeJournal() {
         journalContainer.SetActive(false);
         journal.changeState(journal.stateIdle);
+    }
+
+    public GameObject mouseHoveringObj() {
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if (hit.collider != null) {
+            return hit.collider.gameObject;
+        }
+        return null;
     }
 }

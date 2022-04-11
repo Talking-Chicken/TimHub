@@ -27,9 +27,9 @@ title: bodegaReceipt
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("bodegaReceipt") == false>>
+<<if Check_Collected("Bodega_Receipt") == false>>
     Penne: This receipt says that Orzo bought something at the local bodega on Timsday. Aha!   
-    <<set $newItem to "bodegaReceipt">>
+    <<set $newItem to "Bodega_Receipt">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -40,9 +40,9 @@ title: orzoDreamJournal
 tags:
 position: -138,-170
 ---
-<<if Check_Collected("orzoJournal") == false>>
+<<if Check_Collected("Orzo_Journal") == false>>
     Penne: Dangnabbit, i's all gibberish and crazy-talk! I can only make out the words "escape", "true memory", and "did I leave the oven on?".  
-    <<set $newItem to "orzoJournal">>
+    <<set $newItem to "Orzo_Journal">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -53,9 +53,9 @@ title: orzoCloset
 tags:
 position: 124,-16
 ---
-<<if Check_Collected("orzo Closet") == false>>
+<<if Check_Collected("Orzo_Closet") == false>>
     Penne: This closet is basically empty. All that's inside is a hastily packed suitcase. Vacation time...?
-    <<set $newItem to "orzo_Closet ">>
+    <<set $newItem to "Orzo_Closet ">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!

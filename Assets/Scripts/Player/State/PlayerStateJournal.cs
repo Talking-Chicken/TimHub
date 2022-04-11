@@ -24,5 +24,7 @@ public class PlayerStateJournal : PlayerStateBase
     {
         player.closeJournal();
         player.blurCamera.SetActive(false);
+
+        player.previousState = this;
     }
 }
