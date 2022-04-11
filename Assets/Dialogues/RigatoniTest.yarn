@@ -3,15 +3,15 @@ tags:
 position: -1,-117
 ---
 //show dialogue choice to trigger intro/first convo
-<<if Check_Read("rigatoni introread") == false>>
+<<if Check_Read("rigatoni_introread") == false>>
     -> Talk to Rigatoni
         <<jump question_introductions>>
-<<elseif Check_Read("rigatoni investigationread") == false || Check_Read("rigatoni forgetfulnessread") == false>>
+<<elseif Check_Read("rigatoni_investigationread") == false || Check_Read("rigatoni_forgetfulnessread") == false>>
     -> Ask about investigation
         <<jump question_investigationSoFar>>
     -> Ask about forgetfulness
         <<jump question_rigatoniForgetfulness>>
-<<elseif Check_Read("rigatoni partnership") == false>>
+<<elseif Check_Read("rigatoni_partnership") == false>>
     -> Ask about partnership
         <<jump question_ourNewPartnership>>
 <<else>>
@@ -22,7 +22,7 @@ position: -1,-117
 title: question_aboutItems
 position:
 ---
-<<if Check_Collected("orzoJournal")>>
+<<if Check_Collected("Orzo_Journal")>>
     -> Ask about Orzo's Journal
 <<endif>>
 Penne: I can collect items and ask about them.

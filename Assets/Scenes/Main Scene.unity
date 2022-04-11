@@ -1772,6 +1772,18 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.9626781
       objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: Bodega Receipt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: characterName
+      value: Orzo Journal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: Orzo Journal
+      objectReference: {fileID: 0}
     - target: {fileID: 5879084694455019552, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.891502
