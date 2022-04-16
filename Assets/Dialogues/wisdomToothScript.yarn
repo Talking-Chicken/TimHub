@@ -2,17 +2,20 @@
 tags:
 ---
 //IF player has collected (but not as a journal entry...?) Mint Toothpaste
+<<if Check_Collected("obj_mintToothpaste")>>
     -> Give Mint Toothpaste to Wisdom Tooth
         <<jump question_mintToothpaste>>
 
 //ELSEIF player has collected Charcoal Toothpaste
+<<elseif Check_Collected("obj_charcoalToothpaste")>>
     -> Give Charcoal Toothpaset to Wisdom Tooth
         <<jump question_charcoalToothpaste>>
 
 //ELSEIF player has collected Spearmint Toothpaste
+<<elseif Check_Collected("obj_spearmintToothpaste")>>
     -> Give Spearmint Toothpaste to Wisdom Tooth
         <<jump question_spearmintToothpaste>>
-
+<<endif>>
 ===
 
 title: question_mintToothpaste
