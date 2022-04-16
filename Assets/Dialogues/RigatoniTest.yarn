@@ -32,10 +32,10 @@ title: question_introductions
 position: -204,-292
 ---
 //the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
-Penne: Rigatoni! It's so good to see you. I missed seeing you at HQ! //Penne Happy
+Penne: Rigatoni! It's so good to see you. I missed seeing you at Head Quarters! //Penne Happy
 Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
 Penne: You called for backup. So here I am! //Penne Happy
-Rigatoni: The bureau sent...you? //Rigatoni Disbelief
+Rigatoni: The investigations bureau sent...you? //Rigatoni Disbelief
 Penne: Yeah! //Penne Happy
 Rigatoni: Let me guess: nobody else volunteered. //Rigatoni Unamused
 Penne: Yeah! //Penne Happy
@@ -53,10 +53,21 @@ position: 174,-39
 ---
 //this convo is a tutorial for players on what needs to be done in the room
 Penne: So I got your letter with the case debriefing and all that jazz. How's the investigation so far? //Penne Happy
-Rigatoni: I have already investigated the locations and witnesses, but something is not adding up. The people here are hiding something. Afraid. I need you to go in for a second assessment. //Rigatoni Annoyed
-Penne: Gotcha! So what should I do? //Penne Happy
-Rigatoni: Talk to any witnesses you come across. Scope out any suspicious pieces of evidence. Whatever you may find could either be potential evidence for the case or prove a contradiction in an alibi. //Rigatoni Serious
-Rigatoni: Be sure to cross-check everything. If you need my professional opinion on anything, report back to me. //Rigatoni Serious
+Rigatoni: I have already investigated the locations and witnesses, but something is not adding up. The people here are hiding something. Afraid of something. 
+Penne: That's awful! We have to solve this case no matter what gets in our way. So what should I do? //Penne Happy
+Rigatoni: Talk to any witnesses you come across. Collect their alibis in your journals. Be aware that some of them may be lying, however.
+Penne: Got it. And how can I get the truth from a false alibi? 
+Rigatoni: Scope out any pieces of evidence and record them in your journal. Whatever you may find could either be potential evidence for the case or prove a contradiction in an alibi. //Rigatoni neutral
+Penne: Get alibis, collect evidence, and cross-examine for any lies. I think I get it!
+Rigatoni: If you need my professional opinion on anything, report back to me. //Rigatoni Serious
+Penne: And if worst comes to worst...give them a knuckle sandwich?
+Rigatoni: Now is not the time for jokes, Detective Scout...
+Penne: Hey, you didn't call me Dreadful!
+Rigatoni: Pardon me?
+Penne: Everyone at work calls me Detective Dreadful...it's a nickname I'm not the proudest of, haha...
+Rigatoni: How unprofessional and immature. You should have a word with HR. 
+Penne: Aw...I'm touched! This is why you're the bestest in all of our department!
+Rigatoni: S-Stop that! Get back to work...and bestest is NOT a word!
 
 //setting bool for player reading the investigation convo to true
 <<Set_Read rigatoni_investigationread>>
@@ -85,7 +96,7 @@ title: question_ourNewPartnership
 position: -227,-47
 ---
 //player can ask about how Rigatoni feels about partnering up with Penne
-Penne: So...partners, huh? We can do that lone wolf thing you love together. We can be pack, partner! //Penne Happy
+Penne: So...partners, huh? We can do that lone wolf thing you love together. We could be a pack, partner! //Penne Happy
 Rigatoni: I am not your partner. //Rigatoni Annoyed
 Penne: You're so right. Too formal. How do you like the sound of Toni? //Penne Happy
 Rigatoni: You may not call me that. //Rigatoni Annoyed
