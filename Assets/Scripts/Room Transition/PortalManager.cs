@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class PortalManager : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PortalManager : MonoBehaviour
             StartCoroutine(transitionAnimation());
     }
 
-    public static bool teleport() {
+    public static void teleport() {
         if (currentPortal != null) {
             for (int i = 0; i < portals.Count; i++)
             {
@@ -27,8 +28,13 @@ public class PortalManager : MonoBehaviour
                 }
             }
         }
-        return false;
+        
     }
+
+    [YarnCommand("Room_Change")]
+    public void roomChange() {
+        StartCoroutine(transitionAnimation());
+    } 
 
     IEnumerator transitionAnimation() {
         TransitionManager.Instance.roomTransitionAnimation();

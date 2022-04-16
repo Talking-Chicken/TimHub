@@ -24,6 +24,8 @@ position:
 ---
 <<if Check_Collected("Orzo_Journal")>>
     -> Ask about Orzo's Journal
+    -> Go to Bodega
+        <<jump go_to_bodega>>
 <<endif>>
 Penne: I can collect items and ask about them.
 ===
@@ -49,7 +51,7 @@ Rigatoni: Stop saying that! //Rigatoni Annoyed
 ===
 
 title: question_investigationSoFar
-position: 174,-39
+position: 247,-92
 ---
 //this convo is a tutorial for players on what needs to be done in the room
 Penne: So I got your letter with the case debriefing and all that jazz. How's the investigation so far? //Penne Happy
@@ -103,4 +105,12 @@ Rigatoni: You may not call me that. //Rigatoni Annoyed
 Penne: Aw. Are you sure? You could call me...Pen...? //Penne Sad
 Rigatoni: ...Pen is an awful nickname. Toni is far superior, without a doubt. //Rigatoni Slightly amused
 <<Set_Read rigatoni_partnership>>
+===
+title: go_to_bodega
+position: 200,157
+---
+Rigatoni: Time to go to Bodega?
+-> Yes, let's go!
+    <<Room_Change GameManager>>
+-> Not now.
 ===

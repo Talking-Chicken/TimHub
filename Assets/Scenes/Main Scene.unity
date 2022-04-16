@@ -1797,7 +1797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.081875
+      value: 12.526906
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalScale.y
@@ -1805,7 +1805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.14
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1845,7 +1845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955292, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: Portal (Orzo Room Exit)
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955293, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: isExit
