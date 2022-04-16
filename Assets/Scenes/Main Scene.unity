@@ -1787,17 +1787,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 655164323}
     m_Modifications:
+    - target: {fileID: 937761152071955282, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
+      propertyPath: m_Color.a
+      value: 0.34509805
+      objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.081875
+      objectReference: {fileID: 0}
+    - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.8399
+      objectReference: {fileID: 0}
+    - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.278455
+      value: -10.14
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.640546
+      value: -1.61
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1837,7 +1849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955293, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: isExit
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
@@ -1983,17 +1995,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 655164323}
     m_Modifications:
+    - target: {fileID: 937761152071955282, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
+      propertyPath: m_Color.a
+      value: 0.30588236
+      objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.8717613
+      value: 84.83
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3623407
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2029,7 +2045,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937761152071955292, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
       propertyPath: m_Name
-      value: Portal (1)
+      value: Portal (Bodega Entrance)
+      objectReference: {fileID: 0}
+    - target: {fileID: 937761152071955293, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
+      propertyPath: isExit
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}

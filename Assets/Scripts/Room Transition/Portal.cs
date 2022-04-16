@@ -24,7 +24,7 @@ public class Portal : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
-        if (collider.GetComponent<PlayerControl>() != null) {
+        if (collider.GetComponent<PlayerControl>() != null && !isExit) {
             PortalManager.currentPortal = this;
         }
     }
