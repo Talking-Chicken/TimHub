@@ -23,7 +23,7 @@ public class PortalManager : MonoBehaviour
             for (int i = 0; i < portals.Count; i++)
             {
                 if (currentPortal.equalsButNotSelf(portals[i])) {
-                    FindObjectOfType<PlayerControl>().transform.position = portals[i].transform.position;
+                    FindObjectOfType<PlayerControl>().teleport(portals[i].transform.position);
                 }
             }
         }
