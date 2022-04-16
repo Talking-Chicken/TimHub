@@ -2549,6 +2549,10 @@ PrefabInstance:
       propertyPath: characterName
       value: Rigatoni
       objectReference: {fileID: 0}
+    - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: Murder Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838394, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_Name
       value: Rigatoni

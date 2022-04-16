@@ -1,0 +1,31 @@
+﻿title: rigatoniChurch
+tags:
+---
+<<if Check_Read("rigatoniChurchIntro") == false>>
+    <<jump rigatoniChurchIntro>>
+<<elseif Check_Read("")>> //check read for church questions/
+===
+title: rigatoniChurchIntro
+tags:
+---
+//intro to church
+Penne: So this is the Church of Tim... Tim seems to be an important person in this town, huh. Do you know who he is, Toni?
+Rigatoni: Tim is... our lord and savior. Our indubitable leader. The unquestionable sovereign of all of Timsville!
+Penne: ...
+Penne: O-oh, is that so? Are you sure about that?
+Rigatoni: Of course I'm sure! I certainly hope you're not questioning our unquestionable soverign, Praise Tim.
+Penne: No, I-I'm not! But is that really what you believe?
+Rigatoni: Absolutimly. AnShe called me Pen..! Something really must be wrong!
+<<Set_Read rigatoniBodegaIntro>>
+
+===
+
+title: rigatoniChurchQuestions
+tags: 
+---
+-> About the Church
+    <<jump question_church>>
+-> About Rigatoni's forgetfulness
+    <<jump question_forgetfulness>>
+
+===

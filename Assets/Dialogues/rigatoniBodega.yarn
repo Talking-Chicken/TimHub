@@ -1,0 +1,36 @@
+﻿title: rigatoniBodega
+tags:
+---
+//intro to bodega
+Penne: Whoa, this place is filled with... stuff! Lots of stuff!
+Rigatoni: Of course it is. The Bodega is the only place to buy food and other goods in Timsville. 
+Penne: Seriously? Huh! I guess that makes sense, since Timsville is so small. 
+Rigatoni: Hm. Well, see what you can get out of the delivery man. I tried questioning him earlier, but I just know he's still hiding something. I'm going to take another look around.
+Penne: Sounds like a plan, Toni! 
+Rigatoni: I told you not to call me that.
+<<Set_Read rigatoniBodegaIntro>>
+
+===
+
+title: question_aboutInvestigating
+tags:
+---
+<<if Check_Read("rigatoniBodegaIntro") == true>>
+    Penne: Watcha lookin' at there, Toni?
+    Rigatoni: Nothing that requires your attention more than the rest of the Bodega.
+<<endif>>
+===
+
+title: murderWeapon
+tags: 
+---
+<<if Check_Collected("Murder_Weapon") ==  true>>
+    -> Toni, look at what I have!
+<<endif>>
+Penne: Toni, look at all this..! I think I'm onto something here!
+Rigatoni: ...Why did you bring me those things? I thought... I thought we were here to... What were we here to do again?
+Penne: Wha— What do you mean?! We're investigating Orzo's murder! I questioned Radiatore, and—
+Rigatoni: Oh, you shouldn't be questioning him! Radiatore's such a sweetheart, he'd never do anything wrong!
+Penne: That's not what you were saying a few minutes ago... (To herself) I think her forgetfulness is getting worse. We need to finish the investigation, stat!
+===
+
