@@ -15,7 +15,7 @@ public class PortalManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
-            teleport();
+            StartCoroutine(transitionAnimation());
     }
 
     public static bool teleport() {
@@ -28,5 +28,11 @@ public class PortalManager : MonoBehaviour
             }
         }
         return false;
+    }
+
+    IEnumerator transitionAnimation() {
+        TransitionManager.Instance.roomTransitionAnimation();
+        yield return new WaitForSeconds(1.0f);
+        teleport();
     }
 }

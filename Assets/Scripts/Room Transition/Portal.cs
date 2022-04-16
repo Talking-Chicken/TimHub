@@ -8,13 +8,7 @@ public class Portal : MonoBehaviour
     [SerializeField] private int portalNum;
     void Start()
     {
-        
-    }
-
-    
-    void Update()
-    {
-        
+        GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
     }
 
     public bool equalsButNotSelf(Portal other) {
