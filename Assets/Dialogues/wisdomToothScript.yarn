@@ -1,0 +1,54 @@
+﻿title: wisdomToothScript
+tags:
+---
+//IF player has collected (but not as a journal entry...?) Mint Toothpaste
+    -> Give Mint Toothpaste to Wisdom Tooth
+        <<jump question_mintToothpaste>>
+
+//ELSEIF player has collected Charcoal Toothpaste
+    -> Give Charcoal Toothpaset to Wisdom Tooth
+        <<jump question_charcoalToothpaste>>
+
+//ELSEIF player has collected Spearmint Toothpaste
+    -> Give Spearmint Toothpaste to Wisdom Tooth
+        <<jump question_spearmintToothpaste>>
+
+===
+
+title: question_mintToothpaste
+---
+//if player gives WT the MINT toothpaste, they fail
+Penne: We can try mint toothpaste to get rid of that cavity, or whatever is hurting you!
+Wisdom_Tooth: Mint? 'Tis but the most basic pastes of teeth. It is not worthy! No thanketh you.
+Penne: Drat. Maybe I should try another one...
+
+===
+
+title: question_charcoalToothpaste
+---
+//if player gives WT the CHARCOAL toothpaste, they fail
+Penne: Wanna try charcoal toothpaste to get rid of that tooth ache of yours?
+Wisdom_Tooth: Charcoal...? Nay, it shall ruin my bleach job. No thanketh you.
+Penne: Fiddlesticks! Is there another toothpaste I could try?
+
+===
+
+title: question_spearmintToothpaste
+---
+//if player gives WT the SPEARMINT toothpaste, they succeed in getting WT's alibi
+Penne: How do you feel about spearmint toothpaste for that tooth ache of yours?
+Wisdom_Tooth: SPEARMINT? O, scrumptious, serendipitous spearmint! 
+Wisdom_Tooth: If thou applyeth said toothpaste to thine being, I may impart my wisdom...eth!
+Penne: Wisdom? I could definitely use some of that! I shall applyeth it!
+//maybe some sort of SFX of her squeezing toothpaste
+Wisdom_Tooth: Mmmm...MMMMMM...!
+Penne: Uh...?
+//sfx of clanking noise because the Bloody Gardening Shears have fallen out!!!
+Wisdom_Tooth: AHHH...much better! I have been attempting to rid myself of that gardening accoutrement since Timsday! 
+Penne: Timsday...by any chance did you see the delivery man, Radiatore that day? Or anyone else?
+Wisdom_Tooth: Yes, as a victim and witness to cruelest of violences from the holy man, Tim, and the delivery chap! For SHAME, especially unto that so-called Man of God!
+Penne: Aha! So Tim and this holy man were here at the bodega as well! 
+Wisdom_Tooth: Ay! I couldest not speaketh mine truth because of the pain, but now I shall be silenced no longer! Taketh mine words as an alibi and proveth those rotten naysayers!
+Penne: Yes, thank you! Now I have something to make that sweaty sucker squeal...and tell the truth!
+
+===
