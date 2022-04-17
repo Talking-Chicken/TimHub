@@ -1,15 +1,32 @@
 ﻿title: StelleSprint3
 tags:
 ---
--> How did you know Orzo?
-    <<jump question_relationship>>
--> Do you understand anything in Orzo's journal? I can hardly read any of it!
-    <<jump question_journal>>
--> What's up with Orzo's closet?
-    <<jump question_closet>>
+<<if Check_Read("stelleIntro") == false>>
+    <<jump stelleIntro>>
+<<elseif Check_Read("stelleIntro") == true>>
+    -> How did you know Orzo?
+        <<jump question_relationship>>
+    -> Do you understand anything in Orzo's journal? I can hardly read any of it!
+        <<jump question_journal>>
+    -> What's up with Orzo's closet?
+        <<jump question_closet>>
+    -> I'm done.
+    Stelle: O-okay...
+<<endif>>
 // -> Do you know what this... little creature is?>
 //     <<jump question_timlings>>
 ===
+title: stelleIntro
+tags:
+---
+Penne: Hi there! My name is Penne, and I'm here to investigate the death of Orzo Parmesan. What's your name!
+Stelle: O-oh! M-my name is S-Stelle... Stelle Parmesan.
+Penne: Oh..! So you're related to the late Orzo. Do you mind if I ask you some questions about him?
+Stelle: *Sniff* N-no, I-I don't mind...
+
+<<Set_Read stelleIntro>>
+===
+
 title: question_relationship
 ---
 Stelle: Orzo was my big brother... H-he was the only family I had left! Now, I'm all alone... 

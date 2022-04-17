@@ -3,30 +3,30 @@ tags:
 position: 40,-174
 ---
 
-    -> Ask for alibi
+    -> When did you last see Orzo?
         <<jump question_neroAlibi>>
     
-    -> About the garden
+    -> What's up with the garden?
         <<jump question_aboutGarden>>
 
 <<if Check_Collected("cofession book,_letter to orzo,_receipt_4")>>
-    -> About the Mysterious Letter
+    -> What's with this strange letter?
         <<jump question_mysteriousLetter>>
 
 <<elseif Check_Collected("murder weapon___will for orzo___spearmint toothpaste_1")>>
-    -> About the Bloody Gardening Shears
+    -> What do you know about the gardening shears?
         <<jump question_neroBloodyShears>>
 
 <<elseif Check_Collected("cofession book,_letter to orzo,_receipt_0")>>
-    -> About the Confession Logbook
+    -> What you wrote in the confession logbook...
         <<jump question_confessionLogbook>>
 
 <<elseif Check_Collected("cofession book, letter to orzo, receipt_0") || Check_Collected("cofession book, letter to orzo, receipt_4")>>
-    -> About the Handwriting of Confession Logbook and Mysterious Letter matching
+    -> The handwriting in the confession logbook and the mysterious letter are strangely similar... 
         <<jump question_matchingHandwriting>>
 
 <<elseif Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_3")>>
-    -> About the Will
+    -> What's up with this will addressed to Orzo?
         <<jump question_aboutWill>>
 
 <<endif>>

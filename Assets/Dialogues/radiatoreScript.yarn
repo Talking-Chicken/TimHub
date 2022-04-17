@@ -6,21 +6,21 @@ position: -14,-216
 //it doesn't skip right away to the shears???
 
 <<if Check_Read("read_introQs") == false>>
-    -> Ask for alibi
+    -> When did you last see Orzo?
         <<jump question_radiatoreWrongAlibi>>
-    -> About your job
+    -> What's your day job?
         <<jump question_aboutJob>>
 
 <<elseif Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
-    -> About shipment of Orzo's corpse to NFZ
+    -> Why was Orzo's corpse shipped to New Fork Ziti?
         <<jump question_corpseShipment>>
 
 <<elseif Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1") || Check_Read("read_introQs") == true>>
-    -> About the Bloody Gardening Shears
+    -> What's up with these bloody gardening shears?
         <<jump question_bloodyShears>>
 
 <<elseif Check_Collected("wisdomTooth_alibi") || Check_Read("read_introQs") == true>>
-    -> About what the Wisdom Tooth saw
+    -> Know anything about what the Wisdom Tooth saw?
         <<jump question_radiatoreRightAlibi>>
 
 <<endif>>
