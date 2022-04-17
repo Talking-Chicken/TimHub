@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29233663313307815}
   m_LocalRotation: {x: -0, y: -0, z: 0.99595195, w: -0.08988815}
-  m_LocalPosition: {x: 1.68, y: -1.69, z: 0}
+  m_LocalPosition: {x: 1.53, y: -2.46, z: 0}
   m_LocalScale: {x: 0.47460547, y: 0.47460547, z: 0.47460547}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -204,7 +204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: mounTimDewTimling
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -240,7 +239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823924419427034230}
   m_LocalRotation: {x: -0, y: -0, z: 0.30480444, w: 0.952415}
-  m_LocalPosition: {x: 15.45, y: 2.74, z: 0}
+  m_LocalPosition: {x: 15.67, y: 3.35, z: 0}
   m_LocalScale: {x: 0.8017, y: 0.8017, z: 0.8017}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -569,7 +568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005938294501612836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.69, y: 1.49, z: 0}
+  m_LocalPosition: {x: 31.71, y: 1.31, z: 0}
   m_LocalScale: {x: 0.41407695, y: 0.41407695, z: 0.41407695}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -651,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2744950834931391568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.68, y: 2.96, z: 0}
+  m_LocalPosition: {x: 31.78, y: 2.49, z: 0}
   m_LocalScale: {x: 0.5658912, y: 0.5658912, z: 0.5658912}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -733,7 +732,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3904478504192277375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.22, y: 0.56, z: 0}
+  m_LocalPosition: {x: 13.99, y: 0.81, z: 0}
   m_LocalScale: {x: 0.9022, y: 0.9022, z: 0.9022}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -815,7 +814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4403048656822173752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.98, y: 2.57, z: 0}
+  m_LocalPosition: {x: 5.91, y: 2.44, z: 0}
   m_LocalScale: {x: 0.38225794, y: 0.38225794, z: 0.38225794}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -994,7 +993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Bodega Receipt
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -1224,7 +1222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5469724190127333424}
   m_LocalRotation: {x: -0, y: -0, z: -0.0018500637, w: 0.99999833}
-  m_LocalPosition: {x: 8.54, y: -0.33, z: 49.8923}
+  m_LocalPosition: {x: 8.61, y: -0.33, z: 49.8923}
   m_LocalScale: {x: 1.180893, y: 1.4723331, z: 1.1381006}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -1297,8 +1295,8 @@ BoxCollider2D:
   m_Offset: {x: 0.030461192, y: -1.0823534}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.05, y: 4.12}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 3.16, y: 3.7}
     newSize: {x: 6.05, y: 4.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1319,7 +1317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: orzoCloset
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -1342,7 +1339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: orzoCloset
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -1493,7 +1489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655661833481632849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.6474, y: 4.9946, z: 0}
+  m_LocalPosition: {x: 15.69, y: 4.86, z: 0}
   m_LocalScale: {x: 0.6216647, y: 0.6216647, z: 0.6216647}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -1568,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6911477619424351735
 Transform:
   m_ObjectHideFlags: 0
@@ -1577,7 +1573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6349709881792496450}
   m_LocalRotation: {x: -0, y: -0, z: -0.0018500637, w: 0.99999833}
-  m_LocalPosition: {x: 1.29, y: -5.63, z: 49.892254}
+  m_LocalPosition: {x: 1.01, y: -5.63, z: 49.892254}
   m_LocalScale: {x: 0.42690134, y: 0.39951357, z: 0.42690152}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -1659,7 +1655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
   _talkable: 0
   _interactable: 0
   _interactFirst: 0
@@ -1800,7 +1795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6906748191585206677}
   m_LocalRotation: {x: -0, y: -0, z: -0.97643125, w: -0.21582876}
-  m_LocalPosition: {x: 28.96, y: 6.18, z: 0}
+  m_LocalPosition: {x: 28.49, y: 6.6, z: 0}
   m_LocalScale: {x: 0.7213, y: 0.7213, z: 0.7213}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -1964,7 +1959,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7515925241830390466}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.64, y: -0.1, z: 0}
+  m_LocalPosition: {x: 31.71, y: 0.02, z: 0}
   m_LocalScale: {x: 0.4203, y: 0.4203, z: 0.4203}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -2092,7 +2087,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d7f39683eff7fa242af99a6aa6eb35c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 185d05747f7726e4d8ccca86a1bceba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2225,7 +2220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Fishbowl
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -2337,7 +2331,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 3.99, y: 4.24}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2358,7 +2352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: orzoJournal
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -2395,7 +2388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8104498278809245260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.66, y: -0.3, z: 0}
+  m_LocalPosition: {x: 2.46, y: -0.57, z: 0}
   m_LocalScale: {x: 0.6372, y: 0.6372, z: 0.6372}
   m_Children: []
   m_Father: {fileID: 952756792107084404}
@@ -2464,7 +2457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
   _talkable: 0
   _interactable: 0
   _interactFirst: 0
