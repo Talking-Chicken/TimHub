@@ -103,11 +103,19 @@ public class PlayerControl : MonoBehaviour
         journal.changeState(journal.stateIdle);
     }
 
+    /* return Gameobject that player mouse is hovering*/
     public GameObject mouseHoveringObj() {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if (hit.collider != null) {
             return hit.collider.gameObject;
         }
         return null;
+    }
+
+    /* teleport player to destination, also set _destination to new position*/
+    public void teleport(Vector2 destination) {
+        transform.position = new Vector3(destination.x, destination.y, transform.position.z);
+        Camera.main.transform.position = new Vector3(destination.x, destination.y, Camera.main.transform.position.z);
+        Destination = destination;
     }
 }

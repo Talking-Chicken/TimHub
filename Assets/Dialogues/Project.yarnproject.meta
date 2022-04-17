@@ -14,6 +14,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: 6bb08bcc4f82d4077b35f6c76daffb59, type: 3}
   - {fileID: 6391573757903218779, guid: 2dc6e8867b50547129dac94f652bc522, type: 3}
   - {fileID: 6391573757903218779, guid: 907f8afc95d8d42b8aa6fba9f24782ab, type: 3}
+  - {fileID: 6391573757903218779, guid: f4c7f120ac7314b76a21b42fb2c60ff3, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $variable
@@ -24,30 +25,6 @@ ScriptedImporter:
     description: 
     isImplicit: 0
     sourceYarnAsset: {instanceID: 0}
-  - name: $introRead
-    typeName: Bool
-    defaultValueBool: 0
-    defaultValueNumber: 0
-    defaultValueString: 
-    description: RigatoniTest.yarn, node RigatoniTest, line 1
-    isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: 2dc6e8867b50547129dac94f652bc522, type: 3}
-  - name: $investigationRead
-    typeName: Bool
-    defaultValueBool: 0
-    defaultValueNumber: 0
-    defaultValueString: 
-    description: RigatoniTest.yarn, node RigatoniTest, line 4
-    isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: 2dc6e8867b50547129dac94f652bc522, type: 3}
-  - name: $forgetfulnessRead
-    typeName: Bool
-    defaultValueBool: 0
-    defaultValueNumber: 0
-    defaultValueString: 
-    description: RigatoniTest.yarn, node RigatoniTest, line 7
-    isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: 2dc6e8867b50547129dac94f652bc522, type: 3}
   - name: $newItem
     typeName: String
     defaultValueBool: 0
