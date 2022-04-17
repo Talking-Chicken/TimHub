@@ -25,7 +25,7 @@ title: murderWeapon
 tags: 
 ---
 <<if Check_Collected("Murder_Weapon") ==  true>>
-    -> Toni, look at what I have!
+    -> Look at what I have!
 <<endif>>
 Penne: Toni, look at all this..! I think I'm onto something here!
 Rigatoni: ...Why did you bring me those things? I thought... I thought we were here to... What were we here to do again?

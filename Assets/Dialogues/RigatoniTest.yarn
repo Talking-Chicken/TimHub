@@ -6,14 +6,14 @@ position: -1,-117
 <<if Check_Read("rigatoni_introread") == false>>
     <<jump question_introductions>>
 <<elseif Check_Read("rigatoni_investigationread") == false || Check_Read("rigatoni_forgetfulnessread") == false>>
-    -> Ask about investigation
+    -> How's the investigation going?
         <<jump question_investigationSoFar>>
-    -> Ask about forgetfulness
+    -> Is it true you've been forgetting things?
         <<jump question_rigatoniForgetfulness>>
     -> I'm done.
     Rigatoni: Then stop bothering me.
 <<elseif Check_Read("rigatoni_partnership") == false>>
-    -> Ask about partnership
+    -> What's up with our partnership, huh?
         <<jump question_ourNewPartnership>>
     -> I'm done.
     Rigatoni: Then stop bothering me.

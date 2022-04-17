@@ -4,8 +4,12 @@ position: -6,-71
 ---
 <<if Check_Read("rigatoniChurchIntro") == false>>
     <<jump rigatoniChurchIntro>>
-<<elseif Check_Read("")>> //check read for church questions/
-
+<<elseif Check_Read("rigatoniChurchQuestions") == false>> //check read for church questions/
+    <<jump rigatoniChurchQuestions>>
+    -> I'm done.
+    Rigatoni: See ya!
+<<elseif Check_Read("rigatoniChurchIntro") == true || Check_Read("rigatoniChurchQuestions") == true>>>>
+   <<jump rigatoniInvestigate>>
 <<endif>>
 ===
 title: rigatoniChurchIntro
@@ -29,9 +33,42 @@ title: rigatoniChurchQuestions
 tags: 
 position: -190,-11
 ---
--> About the Church
+-> What's up with this Church?
     <<jump question_church>>
--> About Rigatoni's forgetfulness
+-> How come you're forgetting everything..?
     <<jump question_forgetfulness>>
+
+===
+
+title: question_church
+tags: 
+position: -190,-11
+---
+Penne: So... What can you tell me about the Church?
+Rigatoni: It is the place of worship to Tim. The center of Timsville. The holiest grounds to have ever been graced by his holiness, Praise Tim.
+Penne: O-Oh, is it really..? That seems... okay... I guess...
+
+===
+
+title: question_forgetfulness
+tags: 
+position: -190,-11
+---
+Penne: How are you feeling, Toni? Do you feel like you're forgetting anything else?
+Rigatoni: What? Forgetting what, Pen?
+Penne: Do you... remember why we're here? The case? The murder?!
+Rigatoni: Case? Murder? There are no cases of anything, here. No murders in such a wonderful place!
+
+===
+
+title: rigatoniInvestigate
+tags: 
+position: -190,-11
+---
+Penne: Toni! Toniiiii! What are you doing?
+Rigatoni: "...from the fairest creatures on Tim's green earth, sprouts the luscious pale figure of His seraphic physique..."
+Penne: She's writing... a sonnet to Tim? O-or is it... fanfiction?!
+Rigatoni:"...Know thy self and thy mind, for He will eat of thy limbs and extremeties..."
+Penne: ...I'll leave her alone for now.
 
 ===

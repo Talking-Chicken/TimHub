@@ -7,7 +7,7 @@ Penne: Do I want to record this as evidence?
         <<Add_Entry journal {$newItem}>>
         Penne: I'll take a picture of it and add it to my journal.
     -> Nope.
-        Penne: I have limited space in my journal, it's a good idea to look at other things first.
+        Penne: Hmm, maybe I shouldn't add this. Let me see what else I find.
 ===
 
 title: templateNode

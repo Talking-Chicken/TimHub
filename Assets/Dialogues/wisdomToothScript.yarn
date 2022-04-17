@@ -1,6 +1,9 @@
 ﻿title: wisdomToothScript
 tags:
 ---
+Penne: Hi there! Any wisdom to spare, o wisdom tooth?
+Wisdom_Tooth: O, the pain...the paaaaaain! I cannot giveth my wisdom in such PAIN! Helpeth me rid of my cavity...I implore you!
+Penne: Oh no! Coming right up, sir!
 //IF player has collected (but not as a journal entry...?) Mint Toothpaste
 <<if Check_Collected("obj_mintToothpaste")>>
     -> Give Mint Toothpaste to Wisdom Tooth
