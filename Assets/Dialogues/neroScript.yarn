@@ -2,24 +2,34 @@
 tags:
 position: 40,-174
 ---
-
+<<if Check_Read("neroIntro") == false>>
+    <<jump neroIntro>>
+<<elseif Check_Read("NeroIntro") == true>>
     -> When did you last see Orzo?
         <<jump question_neroAlibi>>
-    
     -> What's up with the garden?
         <<jump question_aboutGarden>>
+    -> I'm done.
+        Nero: Feel free to look around.
+<<endif>>
 
 <<if Check_Collected("cofession book,_letter to orzo,_receipt_4")>>
     -> What's with this strange letter?
         <<jump question_mysteriousLetter>>
+    -> I'm done.
+        Nero: See you around.
 
 <<elseif Check_Collected("murder weapon___will for orzo___spearmint toothpaste_1")>>
     -> What do you know about the gardening shears?
         <<jump question_neroBloodyShears>>
+    -> I'm done.
+        Nero: Sounds good.
 
 <<elseif Check_Collected("cofession book,_letter to orzo,_receipt_0")>>
     -> What you wrote in the confession logbook...
         <<jump question_confessionLogbook>>
+    -> I'm done.
+        Nero: Sounds good.
 
 <<elseif Check_Collected("cofession book, letter to orzo, receipt_0") || Check_Collected("cofession book, letter to orzo, receipt_4")>>
     -> The handwriting in the confession logbook and the mysterious letter are strangely similar... 
@@ -30,6 +40,15 @@ position: 40,-174
         <<jump question_aboutWill>>
 
 <<endif>>
+===
+
+title: neroIntro
+tags:
+---
+Penne: Hey hey! I'm Penne Dreadful, here investigating the death of Orzo Parmesan. Who might you be?
+Nero: Ah, wonderful. I am Nero di Seppia. Pleasure,
+Penne: Nice ta meet you, Nero! Can I ask you some questions about Orzo and the town?
+Nero: Of course. I'm happy to tell you anything you need to know.
 ===
 
 title: question_neroAlibi

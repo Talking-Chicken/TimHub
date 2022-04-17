@@ -10,20 +10,37 @@ position: -14,-216
         <<jump question_radiatoreWrongAlibi>>
     -> What's your day job?
         <<jump question_aboutJob>>
+    -> I'm done.
+        Radiatore: All right...
 
 <<elseif Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
     -> Why was Orzo's corpse shipped to New Fork Ziti?
         <<jump question_corpseShipment>>
+    -> I'm done.
+        Radiatore: C-cool.
 
 <<elseif Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1") || Check_Read("read_introQs") == true>>
     -> What's up with these bloody gardening shears?
         <<jump question_bloodyShears>>
+    -> I'm done.
+        Radiatore: Sure thing...
 
 <<elseif Check_Collected("wisdomTooth_alibi") || Check_Read("read_introQs") == true>>
     -> Know anything about what the Wisdom Tooth saw?
         <<jump question_radiatoreRightAlibi>>
+    -> I'm done.
+        Radiatore: Okay.
 
 <<endif>>
+===
+
+title: read_introQs
+tags: 
+---
+Penne: Hello! I'm Penne Dreadful, and I'm investigating the case of Orzo Paremsan's murder. Do you mind if I asked you a couple questions?
+Radiatore: I ah, I don't mind. Yes, g-go ahead. 
+Penne: Well, first off, what's your name, sir?
+Radiatore: I'm, ah... Radiatore Al F-Forno.
 ===
 
 title: question_radiatoreWrongAlibi
