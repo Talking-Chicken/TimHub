@@ -22,7 +22,7 @@ title: question_alibi
 <<Add_Entry journal The_First_Entry>>
 <<Add_Entry journal Test_2>>
 Stelle: The last I saw him was the night before Timsday, Praise Tim... We always have a big celebration. H-he used to love it...
--> Then were you during the time of the murder?
+-> Then where were you during the time of the murder?
     <<jump question_whereabouts>>
 ===
 
