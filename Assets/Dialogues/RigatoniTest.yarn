@@ -37,14 +37,18 @@ position: -204,-292
 //the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
 Penne: Rigatoni! It's so good to see you. I missed seeing you at Head Quarters! //Penne Happy
 Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
-Penne: You called for backup. So here I am! //Penne Happy
-Rigatoni: The investigations bureau sent...you? //Rigatoni Disbelief
-Penne: Yeah! //Penne Happy
-Rigatoni: Let me guess: nobody else volunteered. //Rigatoni Unamused
-Penne: Yeah! //Penne Happy
-Rigatoni: Of course. While I would have hoped they had sent a more...senior detective, it seems like I have no choice but to work with you. //Rigatoni Disdain
-Penne: Yeah! //Penne Happy
-Rigatoni: Stop saying that! //Rigatoni Annoyed
+Penne: You called for help...so here I am! //Penne Happy
+Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective.
+Penne: The one and only, reporting for duty! I assure you that no matter how dangerous this case is, I'll see it to the end with you. 
+Rigatoni: Really now. The bureau sent me an amateur, and said amateur is telling me all this. How relieved I am. Truly.
+Penne: I'm serious! You can count on me for anything and everything. I promise you.
+Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused
+Penne: Haha...well, yes...looks like you aren't our best detective for nothing...
+Rigatoni: I knew the bureau had its cowards, but right when I request for backup...this is simply embarrasing. 
+Penne: Don't worry. I'm armed with my wits and puns! My memories are crystal clear too!
+Rigatoni: Hmm. Good. At least we have one thing going for this case. 
+Penne: Together, nothing is im-pasta-ble! Haha, get it? //Penne Happy
+Rigatoni: ...I may require backup for my backup. //Rigatoni Annoyed
 
 //setting bool for player reading the intro/first convo to true
 <<Set_Read rigatoni_introread>>
@@ -60,8 +64,9 @@ Rigatoni: I have already investigated the locations and witnesses, but something
 Penne: That's awful! We have to solve this case no matter what gets in our way. So what should I do? //Penne Happy
 Rigatoni: Talk to any witnesses you come across. Collect their alibis in your journals. Be aware that some of them may be lying, however.
 Penne: Got it. And how can I get the truth from a false alibi? 
-Rigatoni: Scope out any pieces of evidence and record them in your journal. Whatever you may find could either be potential evidence for the case or prove a contradiction in an alibi. //Rigatoni neutral
-Penne: Get alibis, collect evidence, and cross-examine for any lies. I think I get it!
+Rigatoni: Scope out any pieces of evidence and record them in your journal. They could relate directly to the murder case or prove a contradiction in an alibi. //Rigatoni neutral
+Rigatoni: And never forget to reference your journal records, the case brief, and autopsy report. 
+Penne: Get alibis, collect evidence, find contradictions, and refer to the journal. I think I get it!
 Rigatoni: If you need my professional opinion on anything, report back to me. //Rigatoni Serious
 Penne: And if worst comes to worst...give them a knuckle sandwich?
 Rigatoni: Now is not the time for jokes, Detective Scout...
@@ -70,7 +75,8 @@ Rigatoni: Pardon me?
 Penne: Everyone at work calls me Detective Dreadful...it's a nickname I'm not the proudest of, haha...
 Rigatoni: How unprofessional and immature. You should have a word with HR. 
 Penne: Aw...I'm touched! This is why you're the bestest in all of our department!
-Rigatoni: S-Stop that! Get back to work...and bestest is NOT a word!
+Rigatoni: S-Stop that! Get back to work.
+Rigatoni: And bestest is NOT a real word!
 
 //setting bool for player reading the investigation convo to true
 <<Set_Read rigatoni_investigationread>>
@@ -82,10 +88,11 @@ position: -6,123
 ---
 //player can ask about Rigatoni's forgetfulness. This is the first hint at her deterioration!
 Penne: I heard through your letter that ever since you came to Timsville, you've been more forgetful? //Penne Neutral
-Rigatoni: ...I hate to admit it, but yes. For some reason, ever since I set foot in this town, I have experienced small lapses in my memory. //Rigatoni Serious
+Rigatoni: I hate to admit it, but yes. For some reason, ever since I set foot in this town, I have experienced small lapses in my memory. //Rigatoni Serious
 Penne: That's so unlike you! You're usually as sharp as a tack. //Penne Shocked
-Rigatoni: I know. It...unnerves me. We need to bring justice to Orchiette Parmagiano quickly before things take a turn for the worse. //Rigatoni Serious
+Rigatoni: We need to bring justice to Orchiette Parmagiano quickly before things take a turn for the worse. //Rigatoni Serious
 Penne: You mean Orzo Parmesan? //Penne Confused
+Rigatoni: I...
 Rigatoni: Is that not what I said? //Rigatoni Confused
 Penne: No...you called the victim the wrong name. //Penne Unnerved/Disturbed
 Rigatoni: Forget it happened. Let us continue our investigation. //Rigatoni Unnerved
@@ -100,19 +107,20 @@ position: -227,-47
 ---
 //player can ask about how Rigatoni feels about partnering up with Penne
 Penne: So...partners, huh? We can do that lone wolf thing you love together. We could be a pack, partner! //Penne Happy
-Rigatoni: I am not your partner. //Rigatoni Annoyed
+Rigatoni: Detective Scout, I am not your partner. //Rigatoni Annoyed
 Penne: You're so right. Too formal. How do you like the sound of Toni? //Penne Happy
 Rigatoni: You may not call me that. //Rigatoni Annoyed
 Penne: Aw. Are you sure? You could call me...Pen...? //Penne Sad
-Rigatoni: ...Pen is an awful nickname. Toni is far superior, without a doubt. //Rigatoni Slightly amused
+Rigatoni: Pen is an awful nickname. 
+Rigatoni: ...Toni is far superior, without a doubt. //Rigatoni Slightly amused
 <<Set_Read rigatoni_partnership>>
 ===
 title: go_to_bodega
 position: 200,157
 ---
-Rigatoni: Looks like you've cased the room pretty well. Think you're ready to move on?
+Rigatoni: Looks like you have thoroughly examined the room thus far. Ready to proceed to the next area?
 -> Yes, let's go!
     <<Room_Change GameManager>>
 -> Hmm, not yet.
-    Rigatoni: Hmph. Let me know when you're ready to leave, then.
+    Rigatoni: Hmph. Let me know when you are ready to leave, then.
 ===
