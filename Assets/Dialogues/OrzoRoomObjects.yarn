@@ -79,9 +79,9 @@ title: fishbowl
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("fishbowl") == false>>
+<<if Check_Collected("Fish_Bowl_Hand") == false>>
     Penne: Hey there... fishie... hand... thing...?
-    <<set $newItem to "fishbowl">>
+    <<set $newItem to "Fish_Bowl_Hand">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
