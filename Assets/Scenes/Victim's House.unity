@@ -213,6 +213,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1160172266, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: orzoCloset
+      objectReference: {fileID: 0}
+    - target: {fileID: 29233663313307815, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_welcomeMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 145196424576098938, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_mounTimDewTimling
+      objectReference: {fileID: 0}
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: fishbowlHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 823924419427034230, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_heartWindow
+      objectReference: {fileID: 0}
     - target: {fileID: 952756792107084404, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -260,6 +280,94 @@ PrefabInstance:
     - target: {fileID: 952756792107084407, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Name
       value: VictimHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006992903111026112, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_flowerSock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845923870627450702, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_flowerBoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005938294501612836, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_kirklandsBlessed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744950834931391568, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_kirklandsTim
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904478504192277375, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_starWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: bodegaReceipt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403048656822173752, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_kirklandsHomeSweetHome
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425927626480354779, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_bodegaReceipt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461170366245230823, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_eyeWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802397867950539662, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: orzoJournalPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469724190127333424, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_closet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655661833481632849, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_bunnyWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083200313221335764, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: timBeautifulPainting
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718980954143149427, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_flowerFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906748191585206677, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_peekWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914623983887157443, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_kirklandsLiveLaughLove
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515925241830390466, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_kirklandsLife
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729854163802291332, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_fishbowlHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915737829632165727, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_orzoJournalPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8104498278809245260, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_timBeautifulPainting
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226569623216163264, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Name
+      value: obj_smotheredRugMan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
