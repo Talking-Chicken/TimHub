@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5703303450325377580}
   m_Layer: 0
-  m_Name: Church Pews
+  m_Name: obj_churchPews
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5846292491622587781}
   m_Layer: 0
-  m_Name: Church Chairs
+  m_Name: obj_churchChairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 5632801430861902321}
   - component: {fileID: 3662679908608120680}
   m_Layer: 1
-  m_Name: church pew (7)
+  m_Name: obj_churchPews8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 1733344138683427638}
   - component: {fileID: 7991860879715154485}
   m_Layer: 1
-  m_Name: church pew (2)
+  m_Name: obj_churchPews3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 3692514659947927114}
   - component: {fileID: 7223438022151593007}
   m_Layer: 1
-  m_Name: church pew (1)
+  m_Name: obj_churchPews2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 6870616089750048188}
   - component: {fileID: 1571335924635245964}
   m_Layer: 0
-  m_Name: Bloody Altar
+  m_Name: obj_bloodyAltar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 1339716575719399532}
   - component: {fileID: 6147291076216901223}
   m_Layer: 1
-  m_Name: church pew
+  m_Name: obj_churchPews1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 2495165962358514860}
   - component: {fileID: 1574359137155929118}
   m_Layer: 1
-  m_Name: confession booth
+  m_Name: obj_confessionBooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 1680670018098668806}
   - component: {fileID: 862446316437335483}
   m_Layer: 1
-  m_Name: timling organ
+  m_Name: obj_timlingOrgan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 6886408189293430407}
   - component: {fileID: 5294924255145976372}
   m_Layer: 1
-  m_Name: church pew (5)
+  m_Name: obj_churchPews6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 2219683826617404204}
   - component: {fileID: 2971099402495244700}
   m_Layer: 1
-  m_Name: church pew (8)
+  m_Name: obj_churchPews9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1231,7 +1231,7 @@ GameObject:
   - component: {fileID: 4593728649430215427}
   - component: {fileID: 6580253003838323164}
   m_Layer: 1
-  m_Name: church pew (12)
+  m_Name: obj_churchPews13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,8 +1338,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8478349303265940405}
   - component: {fileID: 6219517027967356710}
+  - component: {fileID: 8872440421621901198}
   m_Layer: 0
-  m_Name: Priest
+  m_Name: obj_nero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,8 +1354,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5246428484727693412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.1095, y: 3.7148, z: 49.89235}
-  m_LocalScale: {x: 2.027587, y: 1.9956542, z: 2.5163784}
+  m_LocalPosition: {x: 4.7157, y: 2.32, z: 49.89235}
+  m_LocalScale: {x: 1.5340003, y: 1.4837592, z: 2.5163784}
   m_Children: []
   m_Father: {fileID: 8872440421651647760}
   m_RootOrder: 3
@@ -1399,8 +1400,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.29336643, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0fb5d40c4d093014aa7c2a3c3c62d586, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1410,6 +1411,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8872440421621901198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246428484727693412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 1
+  _interactFirst: 0
+  _startNode: 
+  collider: {fileID: 0}
+  entryList:
+  - entryName: Nero di Seppia
+    entryDes: A priest from the Church of Tim. Good gardener with great handwriting.
+      Told me he didn't come in contact with the victim when he was murdered.
+    entryImage: {fileID: 0}
+    entryType: 1
 --- !u!1 &5278552065157326746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,7 +1444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4795754558920949908}
   m_Layer: 0
-  m_Name: Church Candles
+  m_Name: obj_churchCandles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1452,7 +1476,7 @@ GameObject:
   - component: {fileID: 7852233195057656065}
   - component: {fileID: 7547665700542595407}
   m_Layer: 1
-  m_Name: church pew (6)
+  m_Name: obj_churchPews7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1561,7 +1585,7 @@ GameObject:
   - component: {fileID: 8070652880582682079}
   - component: {fileID: 2372673208484350517}
   m_Layer: 1
-  m_Name: church pew (11)
+  m_Name: obj_churchPews12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1670,7 +1694,7 @@ GameObject:
   - component: {fileID: 2797382951835461695}
   - component: {fileID: 5878307957107209949}
   m_Layer: 1
-  m_Name: church pew (9)
+  m_Name: obj_churchPews10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1779,7 +1803,7 @@ GameObject:
   - component: {fileID: 8213588841697901182}
   - component: {fileID: 6302393444321735563}
   m_Layer: 1
-  m_Name: church pew (4)
+  m_Name: obj_churchPews5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1887,7 +1911,7 @@ GameObject:
   - component: {fileID: 2354085676042358616}
   - component: {fileID: 2467599957536664325}
   m_Layer: 1
-  m_Name: rug _ test#1_0
+  m_Name: obj_churchRug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1968,8 +1992,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1011710230908586655}
   - component: {fileID: 752662239092555631}
+  - component: {fileID: 8872440421621901196}
+  - component: {fileID: 8872440421621901197}
   m_Layer: 0
-  m_Name: renaissance tim
+  m_Name: obj_renaissanceTim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,6 +2066,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8872440421621901196
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193709012348600633}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.77}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 3.87, y: 5.54}
+    newSize: {x: 3.87, y: 5.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.87, y: 5.54}
+  m_EdgeRadius: 0
+--- !u!114 &8872440421621901197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193709012348600633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: timPainting
+  collider: {fileID: 8872440421621901196}
+  entryList:
+  - entryName: Renaissance Tim Painting
+    entryDes: A painting of Tim, who is worshipped here at Timsville. Or, that's
+      my educated guess since the church seems to be dedicated all to him. Phrases
+      like "Praise Tim" and paths to salvation are quite common as part of the religion.
+    entryImage: {fileID: 21300000, guid: 0598ac7172a50224aa04050a900337b1, type: 3}
+    entryType: 0
 --- !u!1 &8211490559305846586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,7 +2128,7 @@ GameObject:
   - component: {fileID: 3819202755301007086}
   - component: {fileID: 4562773618730516552}
   m_Layer: 1
-  m_Name: church pew (10)
+  m_Name: obj_churchPews11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2161,7 +2237,7 @@ GameObject:
   - component: {fileID: 8102333783248277665}
   - component: {fileID: 1408388336559956505}
   m_Layer: 1
-  m_Name: church pew (3)
+  m_Name: obj_churchPews4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2270,7 +2346,7 @@ GameObject:
   - component: {fileID: 4234649700825083168}
   - component: {fileID: 318309242013436910}
   m_Layer: 1
-  m_Name: church pew (13)
+  m_Name: obj_churchPews14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
