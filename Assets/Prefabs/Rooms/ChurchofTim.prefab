@@ -493,6 +493,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6870616089750048188}
   - component: {fileID: 1571335924635245964}
+  - component: {fileID: 8349856977922486520}
+  - component: {fileID: 4689079871980588744}
   m_Layer: 0
   m_Name: obj_bloodyAltar
   m_TagString: Untagged
@@ -565,6 +567,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8349856977922486520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475232919042557513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: 
+  collider: {fileID: 4689079871980588744}
+  entryList:
+  - entryName: Bloody Altar
+    entryDes: A bloody altar. I assume maybe the Church of Tim has religious sacrifices
+      of some sort, or at least I hope so.
+    entryImage: {fileID: 0}
+    entryType: 0
+--- !u!61 &4689079871980588744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475232919042557513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2519545159110467790
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +736,7 @@ GameObject:
   - component: {fileID: 7004277476143921749}
   - component: {fileID: 2495165962358514860}
   - component: {fileID: 1574359137155929118}
+  - component: {fileID: 4322841594430116669}
   m_Layer: 1
   m_Name: obj_confessionBooth
   m_TagString: Untagged
@@ -767,7 +819,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.13850069, y: 1.1959139}
@@ -783,6 +835,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.754348, y: 2.3918278}
   m_EdgeRadius: 0
+--- !u!114 &4322841594430116669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658238117866891955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: 
+  collider: {fileID: 1574359137155929118}
+  entryList:
+  - entryName: Confession Booth
+    entryDes: A confession booth found in the Church of Tim. It's private and quiet
+      in there.
+    entryImage: {fileID: 21300000, guid: 8bf41901b468c9b4896d5c79c647d3c8, type: 3}
+    entryType: 0
 --- !u!1 &2725682727781973242
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +869,7 @@ GameObject:
   - component: {fileID: 2947633631519559738}
   - component: {fileID: 1680670018098668806}
   - component: {fileID: 862446316437335483}
+  - component: {fileID: 8832749329245129361}
   m_Layer: 1
   m_Name: obj_timlingOrgan
   m_TagString: Untagged
@@ -876,7 +952,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.29835415, y: 1.4084685}
@@ -892,6 +968,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.829079, y: 2.816937}
   m_EdgeRadius: 0
+--- !u!114 &8832749329245129361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2725682727781973242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: 
+  collider: {fileID: 862446316437335483}
+  entryList:
+  - entryName: Church Organ
+    entryDes: 'A church organ with strange Tim-like iconography. There are Timling-looking
+      figures made of ivory on top. '
+    entryImage: {fileID: 21300000, guid: f00e9b9e5b3f6214fb30e8c05a4226e4, type: 3}
+    entryType: 0
 --- !u!1 &2799324396377766938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1531,17 @@ MonoBehaviour:
   - entryName: Nero di Seppia
     entryDes: A priest from the Church of Tim. Good gardener with great handwriting.
       Told me he didn't come in contact with the victim when he was murdered.
+    entryImage: {fileID: 0}
+    entryType: 1
+  - entryName: Nero di Seppia Update
+    entryDes: Turns out he DID meet with Orzo the night he was killed! Why would
+      Nero lie about that to me?
+    entryImage: {fileID: 0}
+    entryType: 1
+  - entryName: Nero di Seppia New Alibi
+    entryDes: Apparently Orzo's father died in a hit-and-run, but how did Nero know
+      this? Also, he keeps saying that there's a path to salvation...something about
+      a light burning to reveal it. I should investiagte further with this information.
     entryImage: {fileID: 0}
     entryType: 1
 --- !u!1 &5278552065157326746

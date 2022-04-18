@@ -46,7 +46,7 @@ title: neroIntro
 tags:
 ---
 Penne: Hey hey! I'm Penne Dreadful, here investigating the death of Orzo Parmesan. Who might you be?
-Nero: Ah, wonderful. I am Nero di Seppia. Pleasure,
+Nero: Ah, wonderful. I am Nero di Seppia. Pleasure to meet you. 
 Penne: Nice ta meet you, Nero! Can I ask you some questions about Orzo and the town?
 Nero: Of course. I'm happy to tell you anything you need to know.
 ===
@@ -59,6 +59,9 @@ Penne: When was the last time you saw Orzo Parmesan?
 Nero: I don't believe I came into contact with Orzo Parmesan when he was murdered. But then again, I meet everyone so often as a Priest, it might've been an unfortunate detail that slipped my mind. 
 Penne: So business is doing well, huh?
 Nero: Of course. Everyone has something to confess.
+
+//add Nero's first alibi
+<<Add_Entry journal Nero_di_Seppia>>
 
 ===
 
@@ -122,6 +125,8 @@ Nero: As you can see, I nearly saw the whole town that day.
 Penne: Excuses aside, what happened?
 Nero: He came to me first, like usual, confessed, and then left. But he came frequently speaking of strange dreams, another life, etc. He's been doing it so often I didn't think it out of the ordinary.
 
+<<Add_Entry journal Nero_di_Seppia_Update>>
+
 ===
 
 title: question_matchingHandwriting
@@ -145,6 +150,8 @@ Nero: He came to me looking to make peace with the loss. Hopefully, Orzo has fou
 Nero: May the light burn at our darkest hour to reveal the mystic path to Salvation.
 Penne: Yes...definitely. 
 Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
+
+<<Add_Entry journal Nero_di_Seppia_New_Alibi>>
 
 ===
 
