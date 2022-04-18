@@ -44,6 +44,7 @@ public class JournalControl : MonoBehaviour
     //general jouranl variable
     private int page = 1, maxPage = 1; //maxPage will alter in different journal state
     [SerializeField, BoxGroup("General")] private TextMeshProUGUI pageText;
+    [SerializeField, BoxGroup("Case Report")] private List<CaseReportQuestion> questions;
 
     #region STATES
     private JournalStateBase currentState;
@@ -73,6 +74,7 @@ public class JournalControl : MonoBehaviour
     public void changeToAlibiState() {changeState(stateAlibis);}
     public void changeToItemState() {changeState(stateItems);}
     public void changeToCaseReportState() {changeState(stateCaseReport);}
+    public void changeToCaseBriefState() {changeState(stateCaseBrief);}
     #endregion
 
     void Start()
@@ -267,7 +269,7 @@ public class JournalControl : MonoBehaviour
             } else
                 maxPage = 1;
 
-            //active item entry and draw them based ob which page we are on
+            //active item entry and draw them based on which page we are on
             for (int i = 0; i < Mathf.Min(itemEntryObjects.Count, items.Count); i++) {
                 itemEntryObjects[i].SetActive(true);
                 
@@ -321,5 +323,19 @@ public class JournalControl : MonoBehaviour
     public void previousPage() {
         page = Mathf.Max(1, page-1);
         showEntries(currentState);
+    }
+
+    /* set case report questions to have corresponding questions in their list*/
+    public void setQuestions() {
+        for (int i = 0; i < questions.Count; i++) {
+            switch (questions[i].Type) {
+                case EntryType.Item:
+                    questions[i].updateOptions(items);
+                    break;
+                case EntryType.Alibi:
+                    questions[i].updateOptions(alibies);
+                    break;
+            }
+        }        
     }
 }

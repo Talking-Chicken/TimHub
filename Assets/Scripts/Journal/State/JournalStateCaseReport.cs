@@ -6,6 +6,7 @@ public class JournalStateCaseReport : JournalStateBase
 {
     public override void enterState(JournalControl journal) {
         journal.openCaseReport();
+        journal.setQuestions();
     }
     public override void updateState(JournalControl journal) {
 
