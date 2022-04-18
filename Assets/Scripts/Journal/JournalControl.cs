@@ -73,6 +73,7 @@ public class JournalControl : MonoBehaviour
     public void changeToAlibiState() {changeState(stateAlibis);}
     public void changeToItemState() {changeState(stateItems);}
     public void changeToCaseReportState() {changeState(stateCaseReport);}
+    public void changeToCaseBriefState() {changeState(stateCaseBrief);}
     #endregion
 
     void Start()

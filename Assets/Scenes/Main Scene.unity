@@ -1361,6 +1361,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -53.48
       objectReference: {fileID: 0}
+    - target: {fileID: 1792605350888361298, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeToCaseBriefState
+      objectReference: {fileID: 0}
     - target: {fileID: 2107522072384075092, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -7.5000153
