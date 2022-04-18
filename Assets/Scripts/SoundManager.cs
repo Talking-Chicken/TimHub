@@ -6,13 +6,8 @@ using NaughtyAttributes;
 
 [System.Serializable]
 public struct audio {
-    string clipName;
-    AudioClip clip;
-
-    public audio(string clipName, AudioClip clip) {
-        this.clipName = clipName;
-        this.clip = clip;
-    }
+    public string clipName;
+    public AudioClip clip;
 }
 
 public class SoundManager : MonoBehaviour
@@ -33,6 +28,15 @@ public class SoundManager : MonoBehaviour
 
     [YarnCommand("Play_SFX")]
     public void playSFX(string clipName) {
-        
+        string newName = GameManager.substituteUnderscoreWithSpace(clipName);
+        foreach (audio SFX in SFXAudios) {
+            if (SFX.clipName.ToLower().Trim().Equals(newName.ToLower().Trim())) {
+                SFXSource.clip = SFX.clip;
+                SFXSource.loop = false;
+                SFXSource.Play();
+                break;
+            }
+        }
+        Debug.LogWarning("cannot find audio clip with name "+newName);
     }
 }

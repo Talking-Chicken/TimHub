@@ -3104,7 +3104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BGMSource: {fileID: 0}
   SFXSource: {fileID: 0}
-  SFXAudios: []
+  SFXAudios:
+  - clipName: 
+    clip: {fileID: 0}
 --- !u!1 &1891784918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5409445403340980603, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
