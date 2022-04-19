@@ -52,6 +52,8 @@ Radiatore: I made my weekly delivery of bodega goods to restock what the shop wa
 Penne: Anybody else in shop?
 Radiatore: N-No, just me and him. I gave the receipt to Orzo, then left. Nothing else was said. Routine was same old, same old.
 
+<<Add_Entry journal Radiatore_al_Forno>>
+
 ===
 
 title: question_aboutJob
@@ -72,6 +74,7 @@ Radiatore: GAH! OK, OK. I'll, uh, stick around. (Am I sweaty...?)
 //setting bool for player reading the About Job question to true
 <<Set_Read radiatore_aboutJob>>
 <<Set_Read read_introQs>>
+
 ===
 
 title: question_corpseShipment
@@ -85,6 +88,8 @@ Radiatore: !!! *Sweating BUCKETS* Uh, listen bub! I...I have a right to remain s
 Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
 Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
+
+<<Add_Entry journal Radiatore_al_Forno_Update>>
 
 ===
 
@@ -118,5 +123,8 @@ Radiatore: This letter fell out of Tim's pocket when I put his body in the box. 
 Penne: You were the one who sent Orzo to us, weren't you?
 Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful. 
 
+<<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
+
 //code here for collected item: Mysterious Letter. She gets it after this convo!
+
 ===

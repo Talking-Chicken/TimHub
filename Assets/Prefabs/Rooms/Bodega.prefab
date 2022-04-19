@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8474252972904484198}
   - component: {fileID: 5915460446997731338}
   m_Layer: 1
-  m_Name: murder weapon _ will for orzo _ spearmint toothpaste_4
+  m_Name: obj_toothpaste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 3893913596089278449}
   - component: {fileID: 1793305437269528238}
   m_Layer: 0
-  m_Name: knife_5
+  m_Name: obj_knife1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 5009104394184854537}
   - component: {fileID: 7596407452099084738}
   m_Layer: 0
-  m_Name: hamdugo
+  m_Name: obj_hamDugo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 776619560489688485}
   - component: {fileID: 7487397852817273979}
   m_Layer: 0
-  m_Name: knife_6
+  m_Name: obj_knife2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 756713113834956250}
   - component: {fileID: 6726168412120902623}
   m_Layer: 0
-  m_Name: arms_2_0
+  m_Name: obj_arms3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 1986895885}
   - component: {fileID: 1986895886}
   m_Layer: 1
-  m_Name: rug lady
+  m_Name: obj_rugLady
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 5423065624774995007}
   - component: {fileID: 1789616345111774832}
   m_Layer: 0
-  m_Name: newspapers_4
+  m_Name: obj_newspapers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 3142741686033986969}
   - component: {fileID: 1209643720331155770}
   m_Layer: 1
-  m_Name: pocky
+  m_Name: obj_pocky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1161,7 +1161,7 @@ GameObject:
   - component: {fileID: 5233325793552806180}
   - component: {fileID: 3363927869338067563}
   m_Layer: 0
-  m_Name: radio_13
+  m_Name: obj_wallMouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1826,7 +1826,7 @@ GameObject:
   - component: {fileID: 5754120645513589128}
   - component: {fileID: 2596840875132299131}
   m_Layer: 0
-  m_Name: arms_2_1
+  m_Name: obj_arms2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1908,7 +1908,7 @@ GameObject:
   - component: {fileID: 8893139630517368751}
   - component: {fileID: 6784727677654767176}
   m_Layer: 1
-  m_Name: arms_2_1
+  m_Name: obj_aisleArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2229,6 +2229,153 @@ Transform:
   m_Father: {fileID: 2535304334433050988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5110788659630171836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5003980556252774116}
+  - component: {fileID: 1293481556813489691}
+  - component: {fileID: 1453317113385011348}
+  - component: {fileID: 4087943124003423001}
+  m_Layer: 0
+  m_Name: obj_radiatore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5003980556252774116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110788659630171836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.677536, y: -4.28413, z: 60.02978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5894379972735577724}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1293481556813489691
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110788659630171836}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.8, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &1453317113385011348
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110788659630171836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.049308777, y: 1.0626378}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.8, y: 2.5}
+    newSize: {x: 1.8, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5574951, y: 1.0602694}
+  m_EdgeRadius: 0
+--- !u!114 &4087943124003423001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110788659630171836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: 
+  collider: {fileID: 1453317113385011348}
+  entryList:
+  - entryName: Radiatore al Forno
+    entryDes: 'The delivery man in Timsville. He says he only saw Orzo on Timsday
+      working his shift to deliver something. No one else was there, and he only
+      saw him once. '
+    entryImage: {fileID: 0}
+    entryType: 0
+  - entryName: Radiatore al Forno Update
+    entryDes: He, along with Tim, should be the only two citizens that know exactly
+      what goes in and out of the town. Radiatore may have been the one to send the
+      bureau the corpse...
+    entryImage: {fileID: 0}
+    entryType: 0
+  - entryName: Radiatore al Forno New Alibi
+    entryDes: 'Orzo wasn''t the only person he saw: there was Tim and a "holy man"
+      at the bodega too. Why would he lie to me? Also, he doesn''t know anything
+      about the shears, so these suspicious people must have visited twice and Radiatore
+      was only there to witness the first time. '
+    entryImage: {fileID: 0}
+    entryType: 0
 --- !u!1 &5527178894983201357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,7 +2530,7 @@ GameObject:
   - component: {fileID: 7363356248099974109}
   - component: {fileID: 7836305373431162259}
   m_Layer: 1
-  m_Name: 1
+  m_Name: obj_bloodyTrashBag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2624,6 +2771,7 @@ Transform:
   - {fileID: 776619560489688485}
   - {fileID: 5423065624774995007}
   - {fileID: 5233325793552806180}
+  - {fileID: 5003980556252774116}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2720,7 +2868,7 @@ GameObject:
   - component: {fileID: 4240210727406038521}
   - component: {fileID: 8109021025343384071}
   m_Layer: 1
-  m_Name: frog
+  m_Name: obj_fwog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2804,7 +2952,7 @@ GameObject:
   - component: {fileID: 711352627954575037}
   - component: {fileID: 7750541306406738239}
   m_Layer: 1
-  m_Name: 1
+  m_Name: obj_mikuDance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2933,7 +3081,7 @@ GameObject:
   - component: {fileID: 2709665828799123400}
   - component: {fileID: 6248715912639565859}
   m_Layer: 0
-  m_Name: Aisle 1 (Teeth Products)
+  m_Name: obj_teethAisle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3048,7 +3196,7 @@ MonoBehaviour:
   _startNode: 
   collider: {fileID: 0}
   entryList:
-  - entryName: Teeth Aisle
+  - entryName: teethAisle
     entryDes: Aisle of Teeth in Tim's Bodega.
     entryImage: {fileID: 21300000, guid: 879f860d6c42fec43bee49ecc0646d69, type: 3}
     entryType: 0
@@ -3146,7 +3294,7 @@ GameObject:
   - component: {fileID: 3945324232479399459}
   - component: {fileID: 2491148016251456752}
   m_Layer: 1
-  m_Name: more teef_6
+  m_Name: obj_aisleArmTooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,7 +3376,7 @@ GameObject:
   - component: {fileID: 1400627280182376323}
   - component: {fileID: 1243931892759081405}
   m_Layer: 1
-  m_Name: radio_10
+  m_Name: obj_wisdomToothMouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3310,7 +3458,7 @@ GameObject:
   - component: {fileID: 1954938198842007614}
   - component: {fileID: 8309678018216459218}
   m_Layer: 1
-  m_Name: register
+  m_Name: obj_register
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3475,7 +3623,7 @@ GameObject:
   - component: {fileID: 6516381902636066585}
   - component: {fileID: 7463760690626265601}
   m_Layer: 0
-  m_Name: wfridge2
+  m_Name: obj_fridge2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3558,7 +3706,7 @@ GameObject:
   - component: {fileID: 406975308637908493}
   - component: {fileID: 4382657695653328263}
   m_Layer: 1
-  m_Name: wisdom tooth
+  m_Name: obj_wisdomTooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3666,7 +3814,7 @@ GameObject:
   - component: {fileID: 5060458159854884642}
   - component: {fileID: 7076664169260393131}
   m_Layer: 1
-  m_Name: radio_7
+  m_Name: obj_radio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3779,7 +3927,7 @@ GameObject:
   - component: {fileID: 6243984414652507151}
   - component: {fileID: 3817592338428144892}
   m_Layer: 0
-  m_Name: Register w/ Tim
+  m_Name: obj_timRegister
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3887,7 +4035,7 @@ GameObject:
   - component: {fileID: 327752955352109444}
   - component: {fileID: 2663873978871913392}
   m_Layer: 0
-  m_Name: arms_0
+  m_Name: obj_arms1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3968,7 +4116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7652874186589934371}
   m_Layer: 1
-  m_Name: GameObject
+  m_Name: obj_timProduce
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4357,7 +4505,7 @@ GameObject:
   - component: {fileID: 7311819831976590495}
   - component: {fileID: 6209133862420358985}
   m_Layer: 1
-  m_Name: 1
+  m_Name: obj_bodegaTim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4439,7 +4587,7 @@ GameObject:
   - component: {fileID: 6118160687474367971}
   - component: {fileID: 1833523554112488952}
   m_Layer: 1
-  m_Name: radio_10
+  m_Name: obj_radioMouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4523,7 +4671,7 @@ GameObject:
   - component: {fileID: 1274215900791047833}
   - component: {fileID: 4368621234847915298}
   m_Layer: 0
-  m_Name: Scottish Fish
+  m_Name: obj_scottishFishATM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4638,7 +4786,7 @@ MonoBehaviour:
   _startNode: 
   collider: {fileID: 0}
   entryList:
-  - entryName: ATM
+  - entryName: scottishFishATM
     entryDes: ATM in Tim's Bodega
     entryImage: {fileID: 21300000, guid: 9d0e81960b9e4514589259d2d05e9758, type: 3}
     entryType: 0
@@ -4683,7 +4831,7 @@ GameObject:
   - component: {fileID: 6405228554705920055}
   - component: {fileID: 3546331273954543821}
   m_Layer: 0
-  m_Name: wfridge3
+  m_Name: obj_fridge3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4848,7 +4996,7 @@ GameObject:
   - component: {fileID: 4555937165454599544}
   - component: {fileID: 7654059388646309010}
   m_Layer: 0
-  m_Name: wfridge1
+  m_Name: obj_fridge1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

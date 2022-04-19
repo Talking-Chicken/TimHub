@@ -1,16 +1,4 @@
-﻿title: addEntry
-tags:
-position: 96,-203
----
-Penne: Do I want to record this as evidence?
-    -> Yes!
-        <<Add_Entry journal {$newItem}>>
-        Penne: I'll take a picture of it and add it to my journal.
-    -> Nope.
-        Penne: I have limited space in my journal, it's a good idea to look at other things first.
-===
-
-title: rugLady
+﻿title: rugLady
 tags:
 position: 300,-101
 ---

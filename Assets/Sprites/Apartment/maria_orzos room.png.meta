@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: 796d79cc04b50014cbaeb2a28d979866
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8008239851674651222
+    second: maria_orzos room_3
+  - first:
+      213: -5951793028752361390
+    second: maria_orzos room_4
+  - first:
+      213: -4092812102462120386
+    second: maria_orzos room_5
+  - first:
+      213: -6552156525018764900
+    second: maria_orzos room_6
+  - first:
+      213: -154742200683283951
+    second: maria_orzos room_7
+  - first:
+      213: 8290550759086933099
+    second: maria_orzos room_17
+  - first:
+      213: 567544340980840444
+    second: maria_orzos room_24
+  - first:
+      213: -3991824175568300950
+    second: maria_orzos room_25
+  - first:
+      213: -5872417375247335130
+    second: maria_orzos room_36
+  - first:
+      213: -152964592567717435
+    second: maria_orzos room_43
+  - first:
+      213: 4166961259406060599
+    second: maria_orzos room_44
+  - first:
+      213: 3244184085957965263
+    second: maria_orzos room_46
+  - first:
+      213: -9335528375340025
+    second: maria_orzos room_47
+  - first:
+      213: 6924671798173065013
+    second: maria_orzos room_49
+  - first:
+      213: -7926492750665429037
+    second: maria_orzos room_50
+  - first:
+      213: -4557798948506751857
+    second: maria_orzos room_51
+  - first:
+      213: -5755566926840945634
+    second: maria_orzos room_52
+  - first:
+      213: 7514495848071238013
+    second: maria_orzos room_53
+  - first:
+      213: 6969603518672850935
+    second: maria_orzos room_54
+  - first:
+      213: -1421822629128365153
+    second: maria_orzos room_55
+  - first:
+      213: -5252014316406923461
+    second: maria_orzos room_56
+  - first:
+      213: -6826869605276607118
+    second: maria_orzos room_57
+  - first:
+      213: -3838390391777083633
+    second: maria_orzos room_58
+  - first:
+      213: 3242723022056664713
+    second: maria_orzos room_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: maria_orzos room_3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2650
+        width: 777
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa53eccc8440dd090800000000000000
+      internalID: -8008239851674651222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_4
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 2369
+        width: 1324
+        height: 1103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b19836cbf66da0800000000000000
+      internalID: -5951793028752361390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_6
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 2375
+        width: 861
+        height: 1055
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99af75fa501215a0800000000000000
+      internalID: -6552156525018764900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2985
+        width: 440
+        height: 371
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ab280d9ce3addf0800000000000000
+      internalID: -154742200683283951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2540
+        width: 478
+        height: 255
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64c8bb7df3fd0370800000000000000
+      internalID: 8290550759086933099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_24
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2136
+        width: 476
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf73276329250e700800000000000000
+      internalID: 567544340980840444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_25
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1782
+        width: 369
+        height: 656
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a645f69df013a98c0800000000000000
+      internalID: -3991824175568300950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_36
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1742
+        width: 436
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6210d87b28bf08ea0800000000000000
+      internalID: -5872417375247335130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_43
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1188
+        width: 520
+        height: 607
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1f9c4738f80edf0800000000000000
+      internalID: -152964592567717435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_44
+      rect:
+        serializedVersion: 2
+        x: 2854
+        y: 1025
+        width: 1492
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c66bb103504d930800000000000000
+      internalID: 4166961259406060599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_46
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1103
+        width: 423
+        height: 534
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5ff7ddc38a50d20800000000000000
+      internalID: 3244184085957965263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_49
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 839
+        width: 637
+        height: 561
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f554cdf40691060800000000000000
+      internalID: 6924671798173065013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_51
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 262
+        width: 240
+        height: 307
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c2b9c21027fb0c0800000000000000
+      internalID: -4557798948506751857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_52
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 266
+        width: 284
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14a8a4df5e1020b0800000000000000
+      internalID: -5755566926840945634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_53
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 267
+        width: 265
+        height: 497
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d711f6a092ad84860800000000000000
+      internalID: 7514495848071238013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_54
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 226
+        width: 224
+        height: 609
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffcec3497109b060800000000000000
+      internalID: 6969603518672850935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_55
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 278
+        width: 440
+        height: 416
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b11391adba44ce0800000000000000
+      internalID: -1421822629128365153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_56
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 260
+        width: 336
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f9c4b3ec81d17b0800000000000000
+      internalID: -5252014316406923461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_57
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 258
+        width: 140
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d9399a3461241a0800000000000000
+      internalID: -6826869605276607118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_58
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 274
+        width: 220
+        height: 367
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fbadc764c4bbac0800000000000000
+      internalID: -3838390391777083633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maria_orzos room_59
+      rect:
+        serializedVersion: 2
+        x: 4490
+        y: 298
+        width: 114
+        height: 271
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e2baa6867700d20800000000000000
+      internalID: 3242723022056664713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
