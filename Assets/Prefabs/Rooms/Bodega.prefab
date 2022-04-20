@@ -125,10 +125,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: spearmintToothpaste
+  _startNode: Spearmint_Toothpaste
   collider: {fileID: 0}
   entryList:
-  - entryName: spearmintToothpaste
+  - entryName: Spearmint_Toothpaste
     entryDes: Spearmint Toothpaste
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
@@ -312,10 +312,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: hamDugo
+  _startNode: Ham_Dugo
   collider: {fileID: 0}
   entryList:
-  - entryName: hameDugo
+  - entryName: Ham_Dugo
     entryDes: Ham Dugo in the Fridge
     entryImage: {fileID: 21300000, guid: 75c7386535840f746b0bce738b9868ac, type: 3}
     entryType: 0
@@ -995,11 +995,11 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: rugLady
+  _startNode: The_Rug_Lady
   collider: {fileID: 0}
   entryList:
-  - entryName: rugLady
-    entryDes: The Rug Lady
+  - entryName: The Rug Lady
+    entryDes: Rug lady in the Bodega.
     entryImage: {fileID: 21300000, guid: 7c13d68ae6a214e478f8e5e74d808490, type: 3}
     entryType: 0
 --- !u!1 &1774381452660925969
@@ -1182,10 +1182,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: bodegaCat
+  _startNode: Bodega_Cat
   collider: {fileID: 0}
   entryList:
-  - entryName: bodegaCat
+  - entryName: Bodega_Cat
     entryDes: Pocky the Bodega Cat
     entryImage: {fileID: 21300000, guid: caf8c0028bac8a042a5b225ebed08808, type: 3}
     entryType: 0
@@ -3155,10 +3155,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: miku
+  _startNode: Hatsune_Miku
   collider: {fileID: 0}
   entryList:
-  - entryName: miku
+  - entryName: Hatsune_Miku
     entryDes: Dancing Hatsune Miku
     entryImage: {fileID: 21300000, guid: cd3d9adfe807ecf408cd6d6fc4c6c6c0, type: 3}
     entryType: 0
@@ -3404,7 +3404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6245211900828679050}
   m_LocalRotation: {x: -0, y: -0, z: -0.3469701, w: 0.93787616}
-  m_LocalPosition: {x: -0.84, y: 1.81, z: 60.02978}
+  m_LocalPosition: {x: -11.77, y: -5.12, z: 60.02978}
   m_LocalScale: {x: 0.35887456, y: 0.35664952, z: 0.35887456}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
@@ -3451,7 +3451,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1273585, g: 1, b: 0.8979514, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3502,10 +3502,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: spearmintToothpaste
+  _startNode: Mint_Toothpaste
   collider: {fileID: 0}
   entryList:
-  - entryName: mintToothpaste
+  - entryName: Mint_Toothpaste
     entryDes: Mint Toothpaste
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
@@ -4236,10 +4236,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: spearmintToothpaste
+  _startNode: Charcoal_Toothpaste
   collider: {fileID: 0}
   entryList:
-  - entryName: charcoalToothpaste
+  - entryName: Charcoal_Toothpaste
     entryDes: Charcoal Toothpaste
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
@@ -5164,10 +5164,10 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: fishATM
+  _startNode: Fish_ATM
   collider: {fileID: 0}
   entryList:
-  - entryName: fishATM
+  - entryName: Fish_ATM
     entryDes: Scottish Fish ATM
     entryImage: {fileID: 21300000, guid: 9d0e81960b9e4514589259d2d05e9758, type: 3}
     entryType: 0
