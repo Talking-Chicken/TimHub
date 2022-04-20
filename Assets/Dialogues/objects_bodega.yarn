@@ -13,14 +13,14 @@ position: 300,-101
 <<endif>>
 ===
 
-title: teethIsle
+title: Produce_Isle
 tags:
 position: 300,-101
 ---
 //wait to see what we do with teeth isle/baby heads
-<<if Check_Collected("teethIsle") == false>>
+<<if Check_Collected("Produce_Isle") == false>>
     Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
-    <<set $newItem to "teethIsle">>
+    <<set $newItem to "Produce_Isle">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -131,4 +131,80 @@ position: 300,-101
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
+===
+
+title: timling3
+tags:
+---
+<<if Check_Collected("MounTimDew_Timling") == false>>
+    Penne: Another one? By golly, you guys get lost easily. 
+    MounTimDew_Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
+        -> Take MounTimDew Timling
+            Penne: Sure, come along with me! You and your can!
+            MounTimDew_Timling: You're the besht! Wanna sip?
+            <<set $newItem to "MounTimDew_Timling">>
+            <<Add_Entry journal {$newItem}>>
+            Penne: I'll take a picture and record you in my journal, too.
+            //make timling disappear from room
+        -> Leave MounTimDew Timling
+            Penne: Sorry, buddy. Maybe next time...
+            MounTimDew_Timling: (Sad sigh and gurgling soda noises)
+<<else>>
+    Penne: I already picked him up! He just left an EXACT copy of himself behind. 
+<<endif>>
+===
+
+title: timling4
+tags:
+---
+<<if Check_Collected("Sassy_Timling") == false>>
+    Penne: Hey there! See anything suspicious?
+    Sassy_Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
+        -> Take Timling
+            Penne: I am many things, but I am not a loser! All aboard the Penne train!
+            Sassy_Timling: Nice. 
+            Sassy_Timling: Got any games in your journal?
+            <<set $newItem to "Sassy_Timling">>
+            <<Add_Entry journal {$newItem}>>
+            Penne: I'll take a picture and record you in my journal, too.
+            //make timling disappear from room
+        -> Leave Timling
+            Penne: Uh, no thanks. The loser's life's for me.
+            Sassy_Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
+<<else>>
+    Penne: I already picked him up! He just left an EXACT copy of himself behind. 
+<<endif>>
+===
+
+title: Teeth_Isle
+---
+Penne: A shelf full of teeth. They seem to be for sale.
+===
+
+title: Fwog
+---
+Fwog: Wibbit wibbit.
+===
+
+title: Fridge_01
+---
+Penne: Guts, milks, medecines...
+===
+
+title: Fridge_02
+---
+Penne: S-sir..? Do you need any help?
+Fridge_Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
+===
+
+title: Fridge_03
+---
+Penne: Guts, milks, medecines... And a girl?!
+Penne: She... seems happy enough.
+===
+
+title: register
+---
+Penne: This register is keeping track of the Bodega's earnings!
+Register: *The Bodega currently has 0.74 cents in its account.*
 ===

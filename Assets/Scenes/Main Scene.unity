@@ -984,6 +984,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bodega
       objectReference: {fileID: 0}
+    - target: {fileID: 7311819831976590495, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -71.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7311819831976590495, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 38.93
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
 --- !u!1001 &619104264
@@ -3261,6 +3269,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3254187705404845448, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3254187705404845448, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 4434406276372292565, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3309,6 +3325,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Secret_Room
       objectReference: {fileID: 0}
+    - target: {fileID: 8659662700761314607, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659662700761314607, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659662700761314607, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ed9d24dd1eb826a4d83533195a853cee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
 --- !u!1001 &5580233427997335559
