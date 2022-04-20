@@ -85,9 +85,8 @@ GameObject:
   - component: {fileID: 7616523038266021988}
   - component: {fileID: 3452597165684895832}
   - component: {fileID: 9036553800617429055}
-  - component: {fileID: 7125686746026446288}
   m_Layer: 0
-  m_Name: rigatoni
+  m_Name: npc_rigatoni_church
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +167,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0218582, y: 1.2152389}
@@ -184,24 +183,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29167977, y: 0.9009835}
   m_EdgeRadius: 0
---- !u!114 &7125686746026446288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605739447563094129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: 
-  collider: {fileID: 0}
-  entryList: []
 --- !u!1 &827321634783399211
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,8 +904,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1901766707
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8bf41901b468c9b4896d5c79c647d3c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1056,8 +1037,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1901766707
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f00e9b9e5b3f6214fb30e8c05a4226e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1674,6 +1655,7 @@ GameObject:
   - component: {fileID: 8478349303265940405}
   - component: {fileID: 6219517027967356710}
   - component: {fileID: 8872440421621901198}
+  - component: {fileID: 2305988484311658745}
   m_Layer: 0
   m_Name: npc_nero
   m_TagString: Untagged
@@ -1780,6 +1762,32 @@ MonoBehaviour:
       a light burning to reveal it. I should investiagte further with this information.
     entryImage: {fileID: 0}
     entryType: 1
+--- !u!61 &2305988484311658745
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246428484727693412}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12111162, y: 1.1644893}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.8, y: 2.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.35255364, y: 1.8159056}
+  m_EdgeRadius: 0
 --- !u!1 &5278552065157326746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7335436894021345952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.1563, y: -3.99, z: 49.89235}
+  m_LocalPosition: {x: 10.51, y: -4.56, z: 49.89235}
   m_LocalScale: {x: 0.34568533, y: 0.31212288, z: 1}
   m_Children: []
   m_Father: {fileID: 8872440421651647760}
@@ -2532,8 +2540,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1901766707
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 369806729638861741, guid: 16804eed98b315944817232d93631107, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2579,7 +2587,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.25345153, y: 1.3151972}
@@ -2798,7 +2806,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.09645796, y: 1.6152263}
@@ -2835,7 +2843,7 @@ MonoBehaviour:
   - entryName: No Thoughts Timling
     entryDes: A strange, small, and squishy creature that resembles Tim. This one
       doesn't seem to have many...thoughts. But I think it's ok with that!
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
 --- !u!1 &8448707448776143267
 GameObject:

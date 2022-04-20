@@ -1,23 +1,29 @@
 ﻿title: StelleSprint3
 tags:
+position: 15,-240
 ---
 <<if Check_Read("stelleIntro") == false>>
     <<jump stelleIntro>>
-<<elseif Check_Read("stelleIntro") == true>>
-    -> How did you know Orzo?
-        <<jump question_relationship>>
-    -> Do you understand anything in Orzo's journal? I can hardly read any of it!
-        <<jump question_journal>>
-    -> What's up with Orzo's closet?
-        <<jump question_closet>>
-    -> I'm done.
-    Stelle: O-okay...
+
 <<endif>>
-// -> Do you know what this... little creature is?>
-//     <<jump question_timlings>>
+
+<<if Check_Read("stelleIntro") == true>>
+    -> Ask about relationship with Orzo
+        <<jump question_relationship>>
+    -> Ask about Orzo's closet <<if Check_Collected("Orzo_Closet") == true>>
+        <<jump question_closet>>
+    -> Ask about Orzo's Dream Journal <<if Check_Collected("Orzo_Dream_Journal") == true>>
+        <<jump question_journal>>
+    -> Ask about the Bodega Receipt <<if Check_Collected("Bodega_Receipt") == true>>
+        <<jump question_bodegaReceipt>>
+    -> I'm done.
+        Stelle: O-okay...
+
+<<endif>>
 ===
 title: stelleIntro
 tags:
+position: 83,131
 ---
 Penne: Hi there! My name is Penne, and I'm here to investigate the death of Orzo Parmesan. What's your name?
 Stelle: O-oh! M-my name is S-Stelle... Stelle Parmesan.
@@ -28,37 +34,73 @@ Stelle: *Sniff* N-no, I-I don't mind...
 ===
 
 title: question_relationship
+position: -66,-29
 ---
+Penne: What was your relationship with Orzo Parmesan?
 Stelle: Orzo was my big brother... H-he was the only family I had left! Now, I'm all alone... 
--> So when did you last see Orzo?
+-> Ask when Stelle last saw Orzo
     <<jump question_alibi>>>>
 ===
 
 title: question_alibi
+position: -45,323
 ---
-<<Add_Entry journal The_First_Entry>>
-<<Add_Entry journal Test_2>>
+<<Add_Entry journal Stelle_Parmesan_Alibi>>
+Penne: So when did you last see Orzo?
 Stelle: The last I saw him was the night before Timsday, Praise Tim... We always have a big celebration. H-he used to love it...
--> Then where were you during the time of the murder?
+
+-> Ask about where Stelle was during the time of the murder
     <<jump question_whereabouts>>
 ===
 
 title: question_whereabouts
+position: 169,372
 ---
-Stelle: I was helping the Church with the Timsday celebration, Praise Tim, after my shift at the library. My boss, Nero, was there with me the whole time. I-I didn't know why Orzo wasn't there...
+Penne: Then where were you during the time of the murder?
+Stelle: I was helping the Church with the Timsday celebration, Praise Tim, after my shift at the library. 
+Penne: Anybody there who can verify your presence that day?
+Stelle: The whole community! Everyone from Timsville was there. I-I didn't know why Orzo wasn't there...
+Penne: Everyone, huh. Alrighty, thanks a lot!
+
 ===
 
 title: question_journal
+position: 319,-84
 ---
-Stelle: Orzo came to me before he disappeared and told me he had some strange dreams... I think he was going crazy trying to prove that they were real. He called them "past memories". He was such a creative soul. 
+Penne: So, can you tell me anything about this dream journal of Orzo's?
+Stelle: Well, Orzo came to me before he disappeared and told me he had some strange dreams...He called them "past memories". 
+Penne: "Past memories"? Past memories about what?
+Stelle: A time...before Timsville. I think he was going crazy trying to prove that they were real. 
+Penne: Weird dreams that Orzo thought were memories...interesting. Did he tell you or anyone else about these dreams?
+Stelle: Me and the priest, Nero. Orzo would often go to confess to him about his troubles.
+Penne: Got it. Thanks for the information, Stelle. 
+
 ===
 
 title: question_closet
+position: -155,-170
 ---
-Stelle: My brother wasn't the neatest. He always seemed to be in a hurry, rushing off to somewhere. At least there aren't any skeletons in there! Haha! ...Right?
+Penne: I saw a half-packed suitcase inside of Orzo's messy closet. Do you know what he was up to?
+Stelle: A...suitcase? That's so odd. People never leave Timsville!
+Penne: Never leave? Not even for, like, vacation? Or work trips?
+Stelle: Never. It's against the holy scripture of Tim. 
+Penne: Huh. Well, it looks like he was going somewhere. Or...spring cleaning?
+Stelle: He wouldn't dare! Praise Tim, praise Tim, praise Tim!
+Penne: Haha, ok...? At least there aren't any skeletons in there! Haha! ...Right?
+
 ===
 
-title: question_timlings
+title: question_bodegaReceipt
+position: 268,94
 ---
-Stelle: Eek! Orzo called those his "roommates". He said that they were lonely. My brother was very... eccentric. But he was kind, in his own strange way. 
+Penne: I found these receipts. The time and date say that Orzo bought something from the bodega ON Timsday. 
+Stelle: O-Oh, well, you see...Well...!
+Penne: But you told me that the last you saw him alive the night before? Explain yourself!
+Stelle: I...must've forgotten. Forgive me! The shock of losing him must've, must've confused me, yes!
+Penne: Tell me the truth! When was Orzo Parmesan alive? 
+Stelle: He was alive on Timsday. I think he had a shift at the bodega, b-but I don't know anything else! I-I'm really sorry..!
+Penne: The bodega? Looks like that might be my next destination! 
+Penne: (I should tell Rigatoni about this new alibi...)
+
+<<Add_Entry journal Stelle_Parmesan_Alibi_Update>>
 ===
