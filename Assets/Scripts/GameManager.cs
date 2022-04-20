@@ -58,6 +58,10 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public static void setCollected(string key) {
+        setRead(key);
+    }
+
     public static string substituteUnderscoreWithSpace(string sentenceToModify) {
         if (sentenceToModify != null) {
             char[] characters = sentenceToModify.ToCharArray();
