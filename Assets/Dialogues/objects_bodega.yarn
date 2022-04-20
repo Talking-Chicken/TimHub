@@ -13,14 +13,14 @@ position: 300,-101
 <<endif>>
 ===
 
-title: teethIsle
+title: Produce_Isle
 tags:
 position: 300,-101
 ---
 //wait to see what we do with teeth isle/baby heads
-<<if Check_Collected("teethIsle") == false>>
+<<if Check_Collected("Produce_Isle") == false>>
     Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
-    <<set $newItem to "teethIsle">>
+    <<set $newItem to "Produce_Isle">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -174,4 +174,37 @@ tags:
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
+===
+
+title: Teeth_Isle
+---
+Penne: A shelf full of teeth. They seem to be for sale.
+===
+
+title: Fwog
+---
+Fwog: Wibbit wibbit.
+===
+
+title: Fridge_01
+---
+Penne: Guts, milks, medecines...
+===
+
+title: Fridge_02
+---
+Penne: S-sir..? Do you need any help?
+Fridge_Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
+===
+
+title: Fridge_03
+---
+Penne: Guts, milks, medecines... And a girl?!
+Penne: She... seems happy enough.
+===
+
+title: register
+---
+Penne: This register is keeping track of the Bodega's earnings!
+Register: *The Bodega currently has 0.74 cents in its account.*
 ===

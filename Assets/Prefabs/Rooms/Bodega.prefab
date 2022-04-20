@@ -3412,6 +3412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4240210727406038521}
   - component: {fileID: 8109021025343384071}
+  - component: {fileID: 789383031230310848}
   m_Layer: 1
   m_Name: obj_fwog
   m_TagString: Untagged
@@ -3484,6 +3485,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &789383031230310848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5933548110506523931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Fwog
+  collider: {fileID: 0}
+  entryList: []
 --- !u!1 &6039066733265720302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,13 +3926,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _talkable: 0
+  _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: 
+  _startNode: Teeth_Isle
   collider: {fileID: 2726554907353847236}
   entryList:
-  - entryName: teethAisle
+  - entryName: Teeth_Isle
     entryDes: Aisle of Teeth in Tim's Bodega.
     entryImage: {fileID: 21300000, guid: 879f860d6c42fec43bee49ecc0646d69, type: 3}
     entryType: 0
@@ -4541,6 +4560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400627280182376323}
   - component: {fileID: 1243931892759081405}
+  - component: {fileID: 3491823647082135213}
   m_Layer: 1
   m_Name: obj_wisdomToothMouth
   m_TagString: Untagged
@@ -4613,6 +4633,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3491823647082135213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6308964094093296553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 0
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: 
+  collider: {fileID: 0}
+  entryList: []
 --- !u!1 &6697297096287600406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4623,6 +4661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954938198842007614}
   - component: {fileID: 8309678018216459218}
+  - component: {fileID: 1004357744624539499}
   m_Layer: 1
   m_Name: obj_register
   m_TagString: Untagged
@@ -4638,7 +4677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6697297096287600406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.09, y: 0.93, z: 60.02978}
+  m_LocalPosition: {x: -10.090004, y: 0.92999995, z: 60.02978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
@@ -4695,6 +4734,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1004357744624539499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697297096287600406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: register
+  collider: {fileID: 0}
+  entryList: []
 --- !u!1 &6799741291897667209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4788,6 +4845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6516381902636066585}
   - component: {fileID: 7463760690626265601}
+  - component: {fileID: 7654299343381329249}
   m_Layer: 0
   m_Name: obj_fridge2
   m_TagString: Untagged
@@ -4860,6 +4918,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7654299343381329249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995554930722267049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Fridge_02
+  collider: {fileID: 0}
+  entryList: []
 --- !u!1 &7004217537915646881
 GameObject:
   m_ObjectHideFlags: 0
@@ -5497,6 +5573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7652874186589934371}
+  - component: {fileID: 1475363830003483348}
   m_Layer: 1
   m_Name: obj_timProduce
   m_TagString: Untagged
@@ -5537,6 +5614,28 @@ Transform:
   m_Father: {fileID: 5894379972735577724}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475363830003483348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110889175424617997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Produce_Isle
+  collider: {fileID: 0}
+  entryList:
+  - entryName: Produce_Isle
+    entryDes: A table full of baby heads, all waiting to be sold to prospective parents.
+    entryImage: {fileID: 0}
+    entryType: 0
 --- !u!1 &8124966360238454581
 GameObject:
   m_ObjectHideFlags: 0
@@ -6215,6 +6314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6405228554705920055}
   - component: {fileID: 3546331273954543821}
+  - component: {fileID: 8853541515733441258}
   m_Layer: 0
   m_Name: obj_fridge3
   m_TagString: Untagged
@@ -6287,6 +6387,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8853541515733441258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083030423287422415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Fridge_03
+  collider: {fileID: 0}
+  entryList: []
 --- !u!1 &9089202300163937206
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,6 +6498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4555937165454599544}
   - component: {fileID: 7654059388646309010}
+  - component: {fileID: 259436884710296402}
   m_Layer: 0
   m_Name: obj_fridge1
   m_TagString: Untagged
@@ -6452,6 +6571,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &259436884710296402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189316287082664569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Fridge_01
+  collider: {fileID: 0}
+  entryList: []
 --- !u!1 &9212847108574978482
 GameObject:
   m_ObjectHideFlags: 0
