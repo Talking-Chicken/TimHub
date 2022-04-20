@@ -12,12 +12,14 @@ position: -14,-216
 <<if Check_Read("read_introQs") == true>>
     -> Ask about when Orzo was last seen
         <<jump question_radiatoreWrongAlibi>>
-    -> What's your day job?
+    -> Ask about Radiatore's day job
         <<jump question_aboutJob>>
+    -> Why was Orzo's corpse shipped to New Fork Ziti? <<if Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
+        <<jump question_corpseShipment>>
     -> I'm done.
         Radiatore: All right...
+3
 
-<<elseif Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
     -> Why was Orzo's corpse shipped to New Fork Ziti?
         <<jump question_corpseShipment>>
     -> I'm done.
