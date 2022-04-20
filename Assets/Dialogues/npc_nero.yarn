@@ -9,13 +9,13 @@ position: 40,-174
         <<jump question_neroAlibi>>
     -> Ask Nero about the garden
         <<jump question_aboutGarden>>
-    -> Ask Nero about the Mysterious Letter <<if Check_Collected("cofession book,_letter to orzo,_receipt_4")>>
+    -> Ask Nero about the Mysterious Letter <<if Check_Collected("Mysterious_Letter")>>
         <<jump question_mysteriousLetter>>
     -> Ask Nero about the Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears")>>
         <<jump question_neroBloodyShears>>
     -> Ask Nero about the Confession Log Book <<if Check_Collected("Confession_Log_Book")>>
         <<jump question_confessionLogbook>>
-    -> Ask Nero about the matching handwriting of the Confession Log Book and Myterious Letter <<if Check_Collected("Confession_Log_Book") || Check_Collected("cofession book, letter to orzo, receipt_4")>>
+    -> Ask Nero about the matching handwriting of the Confession Log Book and Myterious Letter <<if Check_Collected("Mysterious_Letter")>>
         <<jump question_matchingHandwriting>>
     -> Ask Nero about the Will <<if Check_Collected("The_Will")>>
         <<jump question_aboutWill>>    
