@@ -156,7 +156,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -384,8 +384,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e733f964d6223a645b3947f31d6f2391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &176316974
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,7 +419,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -497,8 +497,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1d224172445028459da530daecce8da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &200989762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1578899831633838394, guid: e253a21556defa741a669c025e5d48f0, type: 3}
@@ -607,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5580233428515128808, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 369806729638861741, guid: 16804eed98b315944817232d93631107, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
@@ -689,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5580233428515128808, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -125224504512678041, guid: 16804eed98b315944817232d93631107, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
@@ -739,8 +739,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64ece816b49424946bcef50b834f82db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &512774860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -814,7 +814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5580233428515128808, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 288297130416697159, guid: 16804eed98b315944817232d93631107, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
@@ -862,8 +862,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a1cc27fc8e42054fbc9ee7c06538371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   followTransform: {fileID: 1034750825}
   worldBounds: {fileID: 1554358636}
   smoothRate: 0.09
@@ -934,8 +934,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   volumeTrigger: {fileID: 519420032}
   volumeLayer:
     serializedVersion: 2
@@ -994,8 +994,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de42c43403796ea4b90f9b8ffad9be0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   cursorTexture: {fileID: 2800000, guid: 340193e32ff4c714c8d6cfe909eaf12b, type: 3}
   cursorHover: {fileID: 2800000, guid: 37bd998145d97404884fa96d3fdc3acb, type: 3}
   cursorMode: 0
@@ -1033,7 +1033,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -1109,6 +1109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1986895886, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: _startNode
+      value: rugLady
+      objectReference: {fileID: 0}
     - target: {fileID: 5060458159854884642, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.9699936
@@ -1223,8 +1227,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -1241,8 +1245,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -1427,8 +1431,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98f3ee5fe557dce4b8190c6f7e0d927b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &925236261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,8 +1443,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dca645fee7764446a263802b9716ff4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &925236262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,8 +1455,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea2ebaf97fd15dd4db1cfefead108eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   transitionAnimator: {fileID: 1174649914}
 --- !u!114 &938455774 stripped
 MonoBehaviour:
@@ -1463,8 +1467,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &995426112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1814,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 1034750823}
     - target: {fileID: 2576053124528055942, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
@@ -2146,7 +2150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 1034750823}
     - target: {fileID: 6954200007111919704, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_RootOrder
@@ -2393,8 +2397,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12e5f38da5c62b4abc2beeefe3acc9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 9.44
   hoveringObj: {fileID: 0}
   interactingObj: {fileID: 0}
@@ -2652,7 +2656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2187432161125142365, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -7497795344851156692, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
     - target: {fileID: 2223705764876557781, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -2664,7 +2668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3026122443510956438, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -4348023394228764058, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
     - target: {fileID: 3316485833161930036, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Size.x
@@ -2696,7 +2700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3676817073997873437, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -901652650853108005, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
     - target: {fileID: 3987525412728553090, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -2788,7 +2792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643271701821767658, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 7091296469937441458, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
     - target: {fileID: 6875632219366588682, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -2832,7 +2836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8641127469156579915, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -2051142301355541852, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
     - target: {fileID: 8846753106637415415, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -3016,8 +3020,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46cf48407ab7b5e41adace432731cf4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
@@ -3080,8 +3084,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -3097,8 +3101,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -3171,7 +3175,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -3323,7 +3327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5580233428515128808, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -6956929644041464537, guid: 16804eed98b315944817232d93631107, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
@@ -3482,7 +3486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: collider
-      value: 
+      value:
       objectReference: {fileID: 1482947739}
     - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: _startNode
@@ -3498,7 +3502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: entryList.Array.data[0].entryName
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838394, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_Name
@@ -3510,7 +3514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838395, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: 7fe9b2d787ae6724889582ded9be993f, type: 3}
     - target: {fileID: 1578899831633838395, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_SortingLayer
@@ -3644,7 +3648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1257645556154266991, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: e6524d32a07085741b6b7c171bec62f8, type: 3}
     - target: {fileID: 3242813587827521579, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_IsActive
@@ -3859,12 +3863,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7abcba9f5eb195c49ba850553502fdaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   BGMSource: {fileID: 0}
   SFXSource: {fileID: 0}
   SFXAudios:
-  - clipName: 
+  - clipName:
     clip: {fileID: 0}
 --- !u!1 &1891784918 stripped
 GameObject:
@@ -3952,7 +3956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5580233428515128808, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: -7906610198853824376, guid: 16804eed98b315944817232d93631107, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
@@ -4096,7 +4100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: collider
-      value: 
+      value:
       objectReference: {fileID: 2068821642}
     - target: {fileID: 1578899831633838393, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: _startNode
@@ -4124,7 +4128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578899831633838395, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: 7fe9b2d787ae6724889582ded9be993f, type: 3}
     - target: {fileID: 1578899831633838395, guid: e253a21556defa741a669c025e5d48f0, type: 3}
       propertyPath: m_SortingLayer
@@ -4349,7 +4353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8659662700761314607, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ed9d24dd1eb826a4d83533195a853cee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}

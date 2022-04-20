@@ -118,6 +118,4 @@ Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful
 <<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
 <<set $newItem to "obj_mysteriousLetter">>
 <<Add_Entry journal {$newItem}>>
-
-//code here for collected item: Mysterious Letter. She gets it after this convo!
 ===
