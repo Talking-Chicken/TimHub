@@ -113,6 +113,7 @@ position: 282,33
             Penne: Oh, that's my shampoo scent! Wait, don't SMELL me!
             <<set $newItem to "Teeth_Timling">>
             <<Add_Entry journal {$newItem}>>
+            <<Collect_Timling obj_timling5>>
             //make timling disappear from room
             Penne: I'll take a picture and record you in my journal too. 
         -> Leave Teeth Timling

@@ -144,6 +144,7 @@ tags:
             MounTimDew_Timling: You're the besht! Wanna sip?
             <<set $newItem to "MounTimDew_Timling">>
             <<Add_Entry journal {$newItem}>>
+            <<Collect_Timling timlings_3>>
             Penne: I'll take a picture and record you in my journal, too.
             //make timling disappear from room
         -> Leave MounTimDew Timling
@@ -166,6 +167,7 @@ tags:
             Sassy_Timling: Got any games in your journal?
             <<set $newItem to "Sassy_Timling">>
             <<Add_Entry journal {$newItem}>>
+            <<Collect_Timling timlings_4>>
             Penne: I'll take a picture and record you in my journal, too.
             //make timling disappear from room
         -> Leave Timling
