@@ -7,7 +7,7 @@ position: -14,-216
 
 <<if Check_Read("read_introQs") == false>>
     <<jump read_introQs>>
-<<endiff>>
+<<endif>>
 
 <<if Check_Read("read_introQs") == true>>
     -> Ask about when Orzo was last seen
