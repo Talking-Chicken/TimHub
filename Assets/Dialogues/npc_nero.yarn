@@ -5,39 +5,23 @@ position: 40,-174
 <<if Check_Read("neroIntro") == false>>
     <<jump neroIntro>>
 <<elseif Check_Read("NeroIntro") == true>>
-    -> When did you last see Orzo?
+    -> Ask Nero when did he last saw Orzo
         <<jump question_neroAlibi>>
-    -> What's up with the garden?
+    -> Ask Nero about the garden
         <<jump question_aboutGarden>>
+    -> Ask Nero about the Mysterious Letter <<if Check_Collected("cofession book,_letter to orzo,_receipt_4")>>
+        <<jump question_mysteriousLetter>>
+    -> Ask Nero about the Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears")>>
+        <<jump question_neroBloodyShears>>
+    -> Ask Nero about the Confession Log Book <<if Check_Collected("Confession_Log_Book")>>
+        <<jump question_confessionLogbook>>
+    -> Ask Nero about the matching handwriting of the Confession Log Book and Myterious Letter <<if Check_Collected("Confession_Log_Book") || Check_Collected("cofession book, letter to orzo, receipt_4")>>
+        <<jump question_matchingHandwriting>>
+    -> Ask Nero about the Will <<if Check_Collected("The_Will")>>
+        <<jump question_aboutWill>>    
+
     -> I'm done.
         Nero: Feel free to look around.
-<<endif>>
-
-<<if Check_Collected("cofession book,_letter to orzo,_receipt_4")>>
-    -> What's with this strange letter?
-        <<jump question_mysteriousLetter>>
-    -> I'm done.
-        Nero: See you around.
-
-<<elseif Check_Collected("murder weapon___will for orzo___spearmint toothpaste_1")>>
-    -> What do you know about the gardening shears?
-        <<jump question_neroBloodyShears>>
-    -> I'm done.
-        Nero: Sounds good.
-
-<<elseif Check_Collected("cofession book,_letter to orzo,_receipt_0")>>
-    -> What you wrote in the confession logbook...
-        <<jump question_confessionLogbook>>
-    -> I'm done.
-        Nero: Sounds good.
-
-<<elseif Check_Collected("cofession book, letter to orzo, receipt_0") || Check_Collected("cofession book, letter to orzo, receipt_4")>>
-    -> The handwriting in the confession logbook and the mysterious letter are strangely similar... 
-        <<jump question_matchingHandwriting>>
-
-<<elseif Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_3")>>
-    -> What's up with this will addressed to Orzo?
-        <<jump question_aboutWill>>
 
 <<endif>>
 ===
