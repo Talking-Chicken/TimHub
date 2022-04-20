@@ -6,7 +6,7 @@ public class ChurchCandle : InteractiveObj
 {
     public override void interact()
     {
-        GameManager.setCollected("haveCandle");
+        GameManager.setCollected("church_candle");
         gameObject.SetActive(false);
     }
 }
