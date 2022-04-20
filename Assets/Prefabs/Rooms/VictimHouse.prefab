@@ -3051,6 +3051,7 @@ GameObject:
   - component: {fileID: 5727728696891077953}
   - component: {fileID: 59428362023261518}
   - component: {fileID: 1061571047}
+  - component: {fileID: 8292193731477899322}
   m_Layer: 1
   m_Name: obj_smotheredRugMan
   m_TagString: Untagged
@@ -3133,10 +3134,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.17}
+  m_Offset: {x: 0.43460703, y: 1.3126054}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -3147,7 +3148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.37, y: 2.34}
+  m_Size: {x: 4.039016, y: 1.4028786}
   m_EdgeRadius: 0
 --- !u!95 &1061571047
 Animator:
@@ -3168,6 +3169,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8292193731477899322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226569623216163264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: npc_blankieBoy
+  collider: {fileID: 59428362023261518}
+  entryList: []
 --- !u!1 &8800640476923816277
 GameObject:
   m_ObjectHideFlags: 0

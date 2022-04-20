@@ -21,6 +21,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: c1e5d1850d1a446a6bcfd7bd7a3f65b1, type: 3}
   - {fileID: 6391573757903218779, guid: d7da8e5d2c3f3436b81e847f98416fdd, type: 3}
   - {fileID: 6391573757903218779, guid: 0f52b7af0bee9e44c88b5e52fce5497e, type: 3}
+  - {fileID: 6391573757903218779, guid: 8471eaf0931d846f4b469148d8499308, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $variable
@@ -36,7 +37,7 @@ ScriptedImporter:
     defaultValueBool: 0
     defaultValueNumber: 0
     defaultValueString: 
-    description: OrzoRoomObjects.yarn, node templateNode, line 2
+    description: objects_orzo.yarn, node templateNode, line 2
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 907f8afc95d8d42b8aa6fba9f24782ab, type: 3}
   defaultLanguage: en-US
