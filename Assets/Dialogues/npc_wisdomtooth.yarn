@@ -8,15 +8,15 @@ tags:
 
 <<if Check_Read("wisdomToothIntro") == true >>
 //IF player has collected (but not as a journal entry...?) Mint Toothpaste
-    -> Give Mint Toothpaste to Wisdom Tooth <<if Check_Collected("mintToothpaste")>>
+    -> Give Mint Toothpaste to Wisdom Tooth <<if Check_Collected("Mint_Toothpaste")>>
         <<jump question_mintToothpaste>>
 
 //if player has collected Charcoal Toothpaste
-    -> Give Charcoal Toothpaset to Wisdom Tooth <<if Check_Collected("charcoalToothpaste")>>
+    -> Give Charcoal Toothpaset to Wisdom Tooth <<if Check_Collected("Charcoal_Toothpaste")>>
         <<jump question_charcoalToothpaste>>
 
 //if player has collected Spearmint Toothpaste
-    -> Give Spearmint Toothpaste to Wisdom Tooth <<if Check_Collected("spearmintToothpaste")>>
+    -> Give Spearmint Toothpaste to Wisdom Tooth <<if Check_Collected("Spearmint_Toothpaste")>>
         <<jump question_spearmintToothpaste>>
 
     -> I'm done. 
