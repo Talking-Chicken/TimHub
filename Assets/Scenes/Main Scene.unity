@@ -3339,6 +3339,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2305988484311658745, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9408922
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305988484311658745, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1988795
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305988484311658745, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.06663406
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305988484311658745, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.1982807
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305988484311658745, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857166712617000096, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: _startNode
+      value: confessionBook
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872440421621901198, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: _startNode
+      value: neroScript
+      objectReference: {fileID: 0}
     - target: {fileID: 8872440421651647760, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_RootOrder
       value: 5

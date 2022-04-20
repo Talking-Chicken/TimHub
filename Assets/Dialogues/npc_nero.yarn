@@ -4,7 +4,7 @@ position: 40,-174
 ---
 <<if Check_Read("neroIntro") == false>>
     <<jump neroIntro>>
-<<elseif Check_Read("NeroIntro") == true>>
+<<elseif Check_Read("neroIntro") == true>>
     -> Ask Nero when did he last saw Orzo
         <<jump question_neroAlibi>>
     -> Ask Nero about the garden
@@ -33,6 +33,8 @@ Penne: Hey hey! I'm Penne Dreadful, here investigating the death of Orzo Parmesa
 Nero: Ah, wonderful. I am Nero di Seppia. Pleasure to meet you. 
 Penne: Nice ta meet you, Nero! Can I ask you some questions about Orzo and the town?
 Nero: Of course. I'm happy to tell you anything you need to know.
+
+<<Set_Read neroIntro>>
 ===
 
 title: question_neroAlibi
