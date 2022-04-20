@@ -1,0 +1,57 @@
+﻿title: npc_blankieBoy
+tags:
+---
+
+<<if Check_Read("blankieBoyIntro") == false>>
+    <<jump blankieBoyIntro>>
+<<endif>>
+
+<<if Check_Read("blankieBoyIntro") == true>>
+    -> Ask if Blankie Boy heard anything else from Orzo
+        <<jump question_blankieBoyAlibi>>
+    -> Ask how Blankie Boy is doing 
+        <<jump question_blankieBoyBlues>>
+    -> I'm done.
+        Blankie_Boy: Good luck, detective! 
+<<endif>>
+===
+
+title: blankieBoyIntro
+---
+Penne: ACK! Who are you? What are you?
+Blankie_Boy: I'm a vaguely human-shaped sentient blanket. Orzo called me Dylan though.
+Penne: So you knew Orzo! Did you see anything happen to him?
+Blankie_Boy: I don't have eyes. 
+Penne: Oh. Uh, sorry...
+Blankie_Boy: I did hear him cry a lot and sing angsty songs in the shower!
+Penne: So you have ears?
+Blankie_Boy: Nope! No ears on me.
+Penne: ...
+Penne: I don't understand, and I don't think I want to. 
+Blankie_Boy: I don't get me either! 
+
+<<Set_Read blankieBoyIntro>>
+
+===
+
+title: question_blankieBoyAlibi
+---
+Penne: Did you hear anything else from Orzo besides...emo singing and crying?
+Blankie_Boy: He would talk in his sleep all the time. I think he had a lot of nightmares.
+Penne: Do you know what he said? Or what he was afraid of?
+Blankie_Boy: All I could ever understand clearly was something about memories. 
+Penne: Memories? Interesting. Do you have any details about this?
+Blankie_Boy: Not really, but I do know that he wrote everything in his dream journal. 
+Penne: A dream journal...maybe I should investigate that further and ask Stelle about it if I find it. 
+===
+
+title: question_blankieBoyBlues
+---
+Penne: How are you doing? It must be hard, losing someone. Especially like this. 
+Blankie_Boy: Yeah...you're right. I'll never feel the crinkle of plastic bags or receipts thrown on me again. 
+Penne: Oh, from the Timsville bodega? 
+Blankie_Boy: Orzo worked there a lot. He purchased things too because he got discounts. Sigh...
+Penne: I hope you feel better, vaguely human-shaped sentient blanket. 
+Blankie_Boy: Thank you, vaguely pasta-themed sentient flesh bag.
+
+===
