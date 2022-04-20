@@ -3147,7 +3147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6655958797321198799}
   - component: {fileID: 1990582725980443269}
-  - component: {fileID: 8396258644282983423}
+  - component: {fileID: 5205278777755580970}
   - component: {fileID: 2677655512577144109}
   - component: {fileID: 1590718227654989900}
   m_Layer: 0
@@ -3222,7 +3222,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8396258644282983423
+--- !u!114 &5205278777755580970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3231,7 +3231,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5424369849476756587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d92c7f7f8811dd84b82ef5b48f74e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _talkable: 1
@@ -7375,7 +7375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5197303641547728987}
   - component: {fileID: 857760337088992644}
-  - component: {fileID: 6533347026629476248}
+  - component: {fileID: 2715092647374607337}
   - component: {fileID: 2458840938548427173}
   m_Layer: 0
   m_Name: timlings_4
@@ -7449,7 +7449,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6533347026629476248
+--- !u!114 &2715092647374607337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7458,7 +7458,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9212847108574978482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d92c7f7f8811dd84b82ef5b48f74e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _talkable: 1

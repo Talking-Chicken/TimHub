@@ -3943,7 +3943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4519087512936759914}
   - component: {fileID: 6743294248169602452}
-  - component: {fileID: 2436207169555314730}
+  - component: {fileID: 536124378243406633}
   - component: {fileID: 6756055980855199348}
   m_Layer: 0
   m_Name: obj_timling5
@@ -4017,7 +4017,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2436207169555314730
+--- !u!114 &536124378243406633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4026,7 +4026,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7335436894021345952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d92c7f7f8811dd84b82ef5b48f74e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _talkable: 1
@@ -4187,6 +4187,7 @@ GameObject:
   - component: {fileID: 5877822242541162055}
   - component: {fileID: 6500568739012660703}
   - component: {fileID: 6456518135436097885}
+  - component: {fileID: 7943908829119137335}
   m_Layer: 0
   m_Name: obj_timling6
   m_TagString: Untagged
@@ -4295,6 +4296,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: timling6
+  collider: {fileID: 6500568739012660703}
+  entryList:
+  - entryName: No Thoughts Timling
+    entryDes: A strange, small, and squishy creature that resembles Tim. This one
+      doesn't seem to have many...thoughts. But I think it's ok with that!
+    entryImage: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
+    entryType: 0
+--- !u!114 &7943908829119137335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355743984497826535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92c7f7f8811dd84b82ef5b48f74e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _talkable: 1
