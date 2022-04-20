@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 2866082630136927462}
   - component: {fileID: 1593968702446652061}
   - component: {fileID: 7997716912711676651}
-  - component: {fileID: 3556175423902491701}
+  - component: {fileID: 5990302918506323311}
   - component: {fileID: 6788174663280455804}
   m_Layer: 1
   m_Name: obj_timling1
@@ -405,7 +405,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2123425, y: 4.453219}
   m_EdgeRadius: 0
---- !u!114 &3556175423902491701
+--- !u!114 &5990302918506323311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,14 +414,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 145196424576098938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d92c7f7f8811dd84b82ef5b48f74e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
+  _interactable: 1
+  _interactFirst: 1
   _startNode: timling1
-  collider: {fileID: 6788174663280455804}
+  collider: {fileID: 0}
   entryList:
   - entryName: Buff Timling
     entryDes: A strange, small, and squishy creature that looks like Tim. This one's
@@ -4698,7 +4698,7 @@ GameObject:
   - component: {fileID: 3776963814596721081}
   - component: {fileID: 7601112163858543110}
   - component: {fileID: 5782872268022904806}
-  - component: {fileID: 3718575178823491154}
+  - component: {fileID: 7165388270655913064}
   - component: {fileID: 824013251289912581}
   m_Layer: 0
   m_Name: obj_timling2
@@ -4798,7 +4798,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9198194, y: 2.28296}
   m_EdgeRadius: 0
---- !u!114 &3718575178823491154
+--- !u!114 &7165388270655913064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4807,14 +4807,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8800640476923816277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d92c7f7f8811dd84b82ef5b48f74e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
   _startNode: timling2
-  collider: {fileID: 824013251289912581}
+  collider: {fileID: 5782872268022904806}
   entryList:
   - entryName: Tape Timling
     entryDes: A strange, small, and squishy creature that looks like Tim. This little
