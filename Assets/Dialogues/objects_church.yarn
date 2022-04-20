@@ -2,8 +2,8 @@
 tags:
 position: 300,-101
 ---
-Penne: Wh-whoa! This painting,, it's so powerful,,, Is this what Tim really looks like?
-Penne: There's something written on the bottom. "By the light that shines from the heavens, may the truth be revealed." 
+Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
+Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
 Penne: Hmmm... Maybe the painting can be moved somehow?
 ===
 
@@ -28,8 +28,8 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("dadWill") == false>>
-    Penne: Hold up, what's this? "The Last Will and Testament of Ditalini Parmesan." 
-    Penne: According to this will, Ditalini was Orzo's dad! Was Orzo sent this will before he died? Why is it hidden here?
+    Penne: Hold up, what's this? "The Last Will and Testament of Pappardelle Parmesan." 
+    Penne: According to this will, Pappardelle was Orzo's dad! Was Orzo sent this will before he died? Why is it hidden here?
     <<set $newItem to "dadWill">>
     <<jump addEntry>>
 <<else>>
@@ -37,3 +37,77 @@ position: 300,-101
 <<endif>>
 ===
 
+title: confessionBooth
+tags:
+---
+<<if Check_Collected("confessionBooth") == false>>
+    Penne: A confession booth. Looks really well padded and cushy. A perfect place to rant!
+    <<set $newItem to "confessionBooth">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: churchOrgan
+tags:
+---
+<<if Check_Collected("churchOrgan") == false>>
+    Penne: How grand! Too bad I quit learning piano after, like, a month. They're the same, right...?
+    <<set $newItem to "churchOrgan">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: bloodyAltar
+tags:
+---
+<<if Check_Collected("bloodyAltar") == false>>
+    Penne: What is all this blood doing here!? I hope it's from an animal sacrifice or something...
+    <<set $newItem to "bloodyAltar">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: timling5
+tags:
+---
+<<if Check_Collected("timling5") == false>>
+    Penne: Uh...hey! Are you ok? Where did you get those?
+    Teeth_Timling: Lost...so lost...the teeth tell me the truth...help me be...found?
+        -> Take Timling
+            Penne: Yeah, why not? Come on!
+            Teeth_Timling: Yes......... *deep sniff* You smell like...apples...and morning sunshine...
+            Penne: Oh, that's my shampoo scent! Wait, don't SMELL me!
+
+            <<set $newItem to "timling5">>
+            <<jump addEntry>>
+            //make timling disappear from room
+        -> Leave Timling
+            Penne: Um...sorry. Maybe next time?
+            Teeth_Timling: Next time...but how long must I wait?
+<<endif>>
+===
+
+title: timling6
+tags:
+---
+<<if Check_Collected("timling6") == false>>
+    Penne: Hi there little fella. Are you lost?
+    No_Thoughts_Timling: I got lost on the path of salvation. I don't think I have the attention span for it. Take me with you instead!
+        -> Take Timling
+            Penne: I think I got room for you!
+            No_Thoughts_Timling: Yes! No more independence for me! I love being co-dependent. 
+       
+            <<set $newItem to "timling6">>
+            <<jump addEntry>>
+            //make timling disappear from room
+       -> Leave Timling
+            Penne: Sorry...maybe next time. 
+            No_Thoughts_Timling: No, my abandonment issues are flaring up...it aches! The angst is too much for my empty head...
+<<endif>>
+===
