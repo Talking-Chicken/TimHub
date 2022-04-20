@@ -7,9 +7,29 @@ position: 300,-101
     Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
     Penne: Hmmm... Maybe the painting can be moved somehow?
 <<else>>
-    -> use candle
-    -> maybe latter
+    <<if Check_Read("Painting_Burned") == false>>
+        -> use candle
+            <<Burn_Painting obj_renaissanceTim>>
+            <<Set_Read Painting_Burned>>
+        -> maybe latter
+    <<endif>>
+    <<if Check_Read("Painting_Burned") == true>>
+        Penne: A hole appears behind painting!
+        -> go into the hole
+            <<Room_Change GameManager>>
+        -> maybe latter
+    <<endif>>
 <<endif>>
+===
+
+title: churchCandle
+tags:
+position: 300,-101
+---
+Penne: It looks useful!
+-> pick up
+    <<Pick_Up_Candle obj_churchCandle>>
+-> maybe latter
 ===
 
 title: confessionBook
@@ -82,6 +102,7 @@ tags:
 
 title: timling5
 tags:
+position: 282,33
 ---
 <<if Check_Collected("Teeth_Timling") == false>>
     Penne: Uh...hey! Are you ok? Where did you get those?
@@ -90,7 +111,6 @@ tags:
             Penne: Yeah, why not? Come on!
             Teeth_Timling: Yes......... *deep sniff* You smell like...apples...and morning sunshine...
             Penne: Oh, that's my shampoo scent! Wait, don't SMELL me!
-
             <<set $newItem to "Teeth_Timling">>
             <<Add_Entry journal {$newItem}>>
             //make timling disappear from room
@@ -105,21 +125,21 @@ tags:
 
 title: timling6
 tags:
+position: 4,-91
 ---
 <<if Check_Collected("No_Thoughts_Timling") == false>>
     Penne: Hi there little fella. Are you lost?
     No_Thoughts_Timling: I got lost on the path of salvation. I don't think I have the attention span for it. Take me with you instead!
         -> Take Timling
-            Penne: I think I got room for you!
-            No_Thoughts_Timling: Yes! No more independence for me! I love being co-dependent. 
-       
-            <<set $newItem to "No_Thoughts_Timling">>
-            <<Add_Entry journal {$newItem}>>
-            //make timling disappear from room
-            Penne: I'll take a picture and record you in my journal too. 
+            // Penne: I think I got room for  you!
+            // No_Thoughts_Timling: Yes! No more independence for me! I love being co-dependent. 
+            // <<set $newItem to "No_Thoughts_Timling">>
+            // <<Add_Entry journal {$newItem}>>
+            // //make timling disappear from room
+            // Penne: I'll take a picture and record you in my journal too. 
        -> Leave Timling
-            Penne: Sorry...maybe next time. 
-            No_Thoughts_Timling: My abandonment issues are flaring up...it aches! The angst is too much for my empty head...
+            // Penne: Sorry...maybe next time. 
+            // No_Thoughts_Timling: My abandonment issues are flaring up...it aches! The angst is too much for my empty head...
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
