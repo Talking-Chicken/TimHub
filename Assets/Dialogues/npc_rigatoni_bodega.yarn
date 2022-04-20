@@ -34,3 +34,11 @@ Rigatoni: Oh, you shouldn't be questioning him! Radiatore's such a sweetheart, h
 Penne: That's not what you were saying a few minutes ago... (To herself) I think her forgetfulness is getting worse. We need to finish the investigation, stat!
 ===
 
+title: go_to_church
+---
+Rigatoni: Have you finished your snooping?
+-> Yes, let's go!
+    <<Room_Change GameManager>>
+-> Hmm, not yet.
+    Rigatoni: Keep on snooping on, then.
+===

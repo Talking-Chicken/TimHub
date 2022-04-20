@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    public static bool InChurch = false;
+
     public Transform followTransform;
     public BoxCollider2D worldBounds;
 
@@ -44,11 +46,20 @@ public class CameraMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        camY = Mathf.Clamp(followTransform.position.y, yMin + camSize, yMax - camSize);
-        camX = Mathf.Clamp(followTransform.position.x, xMin + camRatio, xMax - camRatio);
+        if (!InChurch) {
+            camY = Mathf.Clamp(followTransform.position.y, yMin + camSize, yMax - camSize);
+            camX = Mathf.Clamp(followTransform.position.x, xMin + camRatio, xMax - camRatio);
 
-        smoothPos = Vector3.Lerp(gameObject.transform.position, new Vector3(camX, camY, gameObject.transform.position.z), smoothRate);
+            smoothPos = Vector3.Lerp(gameObject.transform.position, new Vector3(camX, camY, gameObject.transform.position.z), smoothRate);
 
-        gameObject.transform.position = smoothPos;
+            gameObject.transform.position = smoothPos;
+        } else {
+            camY = Mathf.Clamp(followTransform.position.y, yMin + camSize, yMax - camSize);
+            camX = Mathf.Clamp(followTransform.position.x, xMin + camRatio, xMax - camRatio);
+
+            smoothPos = Vector3.Lerp(gameObject.transform.position, new Vector3(camX, camY+3, gameObject.transform.position.z), smoothRate);
+
+            gameObject.transform.position = smoothPos;
+        }
     }
 }

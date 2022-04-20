@@ -7,9 +7,28 @@ position: 300,-101
     Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
     Penne: Hmmm... Maybe the painting can be moved somehow?
 <<else>>
-    -> use candle
-    -> maybe latter
+    <<if Check_Read("Painting_Burned") == false>>
+        -> use candle
+            <<Burn_Painting obj_renaissanceTim>>
+            <<Set_Read Painting_Burned>>
+        -> maybe latter
+    <<else>>
+        Penne: A hole appears behind painting!
+        -> go into the hole
+            <<Room_Change GameManager>>
+        -> maybe latter
+    <<endif>>
 <<endif>>
+===
+
+title: churchCandle
+tags:
+position: 300,-101
+---
+Penne: It looks useful!
+-> pick up
+    <<Pick_Up_Candle obj_churchCandle>>
+-> maybe latter
 ===
 
 title: confessionBook

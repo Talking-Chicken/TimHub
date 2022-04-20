@@ -69,7 +69,7 @@ position: 300,-101
 //done
 title: Fish_ATM
 tags:
-position: 300,-101
+position: 30s0,-101
 ---
 <<if Check_Collected("Fish_ATM") == false>>
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."

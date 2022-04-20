@@ -12,28 +12,16 @@ position: -14,-216
 <<if Check_Read("read_introQs") == true>>
     -> Ask about when Orzo was last seen
         <<jump question_radiatoreWrongAlibi>>
-    -> What's your day job?
+    -> Ask about Radiatore's day job
         <<jump question_aboutJob>>
-    -> I'm done.
-        Radiatore: All right...
-
-<<elseif Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
-    -> Why was Orzo's corpse shipped to New Fork Ziti?
+    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
         <<jump question_corpseShipment>>
-    -> I'm done.
-        Radiatore: C-cool.
-
-<<elseif Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1") || Check_Read("read_introQs") == true>>
-    -> What's up with these bloody gardening shears?
+    -> Ask about the bloody gardening shears <<if Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1") || Check_Read("read_introQs") == true>>
         <<jump question_bloodyShears>>
-    -> I'm done.
-        Radiatore: Sure thing...
-
-<<elseif Check_Collected("wisdomTooth_alibi") || Check_Read("read_introQs") == true>>
-    -> Know anything about what the Wisdom Tooth saw?
+    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("wisdomTooth_alibi") || Check_Read("read_introQs") == true>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
-        Radiatore: Okay.
+        Radiatore: C-cool...
 
 <<endif>>
 ===

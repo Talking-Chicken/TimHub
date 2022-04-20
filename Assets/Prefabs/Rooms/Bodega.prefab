@@ -129,8 +129,8 @@ MonoBehaviour:
   _startNode: Spearmint_Toothpaste
   collider: {fileID: 5924858372070748040}
   entryList:
-  - entryName: Spearmint_Toothpaste
-    entryDes: Spearmint Toothpaste
+  - entryName: Spearmint Toothpaste
+    entryDes: Spearmint toothpaste. The best one!
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
 --- !u!60 &5924858372070748040
@@ -373,7 +373,7 @@ MonoBehaviour:
   _startNode: Ham_Dugo
   collider: {fileID: 3765872721412750215}
   entryList:
-  - entryName: Ham_Dugo
+  - entryName: Ham Dugo
     entryDes: "A man named Ham Dugo who lives in the fridge, promoting his resum\xE9."
     entryImage: {fileID: 21300000, guid: 75c7386535840f746b0bce738b9868ac, type: 3}
     entryType: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   _startNode: Bodega_Cat
   collider: {fileID: 5007206860067831435}
   entryList:
-  - entryName: Bodega_Cat
+  - entryName: Bodega Cat
     entryDes: A cat who lives in the Bodega. Her name is Pocky!
     entryImage: {fileID: 21300000, guid: caf8c0028bac8a042a5b225ebed08808, type: 3}
     entryType: 0
@@ -4170,7 +4170,7 @@ MonoBehaviour:
   _startNode: Hatsune_Miku
   collider: {fileID: 632347267095626110}
   entryList:
-  - entryName: Hatsune_Miku
+  - entryName: Hatsune Miku
     entryDes: A dancing Hatsune Miku. What's not to love?
     entryImage: {fileID: 21300000, guid: cd3d9adfe807ecf408cd6d6fc4c6c6c0, type: 3}
     entryType: 0
@@ -4450,7 +4450,7 @@ MonoBehaviour:
   _startNode: Teeth_Isle
   collider: {fileID: 2726554907353847236}
   entryList:
-  - entryName: Teeth_Isle
+  - entryName: Teeth Isle
     entryDes: Aisle of Teeth in Tim's Bodega.
     entryImage: {fileID: 21300000, guid: 879f860d6c42fec43bee49ecc0646d69, type: 3}
     entryType: 0
@@ -4983,8 +4983,8 @@ MonoBehaviour:
   _startNode: Mint_Toothpaste
   collider: {fileID: 2920825394876370063}
   entryList:
-  - entryName: Mint_Toothpaste
-    entryDes: Mint Toothpaste
+  - entryName: Mint Toothpaste
+    entryDes: Mint toothpaste. Basic. Meh.
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
 --- !u!60 &2920825394876370063
@@ -6033,8 +6033,8 @@ MonoBehaviour:
   _startNode: Charcoal_Toothpaste
   collider: {fileID: 8352633789468532715}
   entryList:
-  - entryName: Charcoal_Toothpaste
-    entryDes: Charcoal Toothpaste
+  - entryName: Charcoal Toothpaste
+    entryDes: Charcoal toothpaste. Quirky...
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
 --- !u!60 &8352633789468532715
@@ -6957,14 +6957,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _talkable: 0
+  _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: 
+  _startNode: Fish_ATM
   collider: {fileID: 0}
   entryList:
-  - entryName: scottishFishATM
-    entryDes: ATM in Tim's Bodega
+  - entryName: Scottish Fish Arm
+    entryDes: A fish ATM that speaks in a Scottish accent.
     entryImage: {fileID: 21300000, guid: 9d0e81960b9e4514589259d2d05e9758, type: 3}
     entryType: 0
 --- !u!114 &3329582499889627371
