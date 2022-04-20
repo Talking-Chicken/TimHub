@@ -6,7 +6,11 @@ position: -14,-216
 //it doesn't skip right away to the shears???
 
 <<if Check_Read("read_introQs") == false>>
-    -> When did you last see Orzo?
+    <<jump read_introQs>>
+<<endiff>>
+
+<<if Check_Read("read_introQs") == true>>
+    -> Ask about when Orzo was last seen
         <<jump question_radiatoreWrongAlibi>>
     -> What's your day job?
         <<jump question_aboutJob>>
