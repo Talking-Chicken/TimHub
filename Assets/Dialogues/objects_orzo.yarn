@@ -55,7 +55,7 @@ position: 124,-16
 ---
 <<if Check_Collected("Orzo_Closet") == false>>
     Penne: This closet is seriously messy and an even messier, hastily packed suitcase. Vacation time...?
-    <<set $newItem to "Orzo_Closet ">>
+    <<set $newItem to "Orzo_Closet">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -92,7 +92,6 @@ position: 300,-101
             Buff_Timling: Gains, gains, gains! Gains all day, EVERY day!
             <<set $newItem to "Buff_Timling">>
             <<Add_Entry journal {$newItem}>>
-            <<Collect_Timling obj_timling1>>
             Penne: I'll take a picture and record you in my journal too. 
         -> Leave Buff Timling
             Penne: Uh, I think I'll pass. I'll live with my nerd arms, thanks.
@@ -115,7 +114,6 @@ position: 300,-101
             Tape_Timling: Thank...you...
             <<set $newItem to "Tape_Timling">>
             <<Add_Entry journal {$newItem}>>
-            <<Collect_Timling obj_timling2>>
             Penne: I'll take a picture and record you in my journal too. 
         -> Leave Tape Timling
             Penne: Sorry, but I'm really busy right now!
