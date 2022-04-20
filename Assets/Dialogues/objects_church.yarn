@@ -2,9 +2,14 @@
 tags:
 position: 300,-101
 ---
-Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
-Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
-Penne: Hmmm... Maybe the painting can be moved somehow?
+<<if Check_Collected("Church_Candle") == false>>
+    Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
+    Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
+    Penne: Hmmm... Maybe the painting can be moved somehow?
+<<else>>
+    -> use candle
+    -> maybe latter
+<<endif>>
 ===
 
 title: confessionBook

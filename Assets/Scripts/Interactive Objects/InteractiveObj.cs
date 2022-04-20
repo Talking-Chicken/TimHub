@@ -35,11 +35,6 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
             _interactFirst = false;
     }
 
-    void Update()
-    {
-        
-    }
-
     public virtual void interact() {
         
     }
