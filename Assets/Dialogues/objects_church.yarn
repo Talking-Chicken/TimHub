@@ -79,17 +79,20 @@ tags:
 <<if Check_Collected("timling5") == false>>
     Penne: Uh...hey! Are you ok? Where did you get those?
     Teeth_Timling: Lost...so lost...the teeth tell me the truth...help me be...found?
-        -> Take Timling
+        -> Take Teeth Timling
             Penne: Yeah, why not? Come on!
             Teeth_Timling: Yes......... *deep sniff* You smell like...apples...and morning sunshine...
             Penne: Oh, that's my shampoo scent! Wait, don't SMELL me!
 
-            <<set $newItem to "timling5">>
-            <<jump addEntry>>
+            <<set $newItem to "Teeth_Timling">>
+            <<Add_Entry journal {$newItem}>>
             //make timling disappear from room
-        -> Leave Timling
+            Penne: I'll take a picture and record you in my journal too. 
+        -> Leave Teeth Timling
             Penne: Um...sorry. Maybe next time?
             Teeth_Timling: Next time...but how long must I wait?
+<<else>>
+    Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
 ===
 
@@ -103,11 +106,14 @@ tags:
             Penne: I think I got room for you!
             No_Thoughts_Timling: Yes! No more independence for me! I love being co-dependent. 
        
-            <<set $newItem to "timling6">>
-            <<jump addEntry>>
+            <<set $newItem to "No_Thoughts_Timling">>
+            <<Add_Entry journal {$newItem}>>
             //make timling disappear from room
+            Penne: I'll take a picture and record you in my journal too. 
        -> Leave Timling
             Penne: Sorry...maybe next time. 
-            No_Thoughts_Timling: No, my abandonment issues are flaring up...it aches! The angst is too much for my empty head...
+            No_Thoughts_Timling: My abandonment issues are flaring up...it aches! The angst is too much for my empty head...
+<<else>>
+    Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
 ===
