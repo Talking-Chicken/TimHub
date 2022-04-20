@@ -2823,6 +2823,8 @@ GameObject:
   - component: {fileID: 6655958797321198799}
   - component: {fileID: 1990582725980443269}
   - component: {fileID: 8396258644282983423}
+  - component: {fileID: 2677655512577144109}
+  - component: {fileID: 1590718227654989900}
   m_Layer: 0
   m_Name: timlings_3
   m_TagString: Untagged
@@ -2911,13 +2913,101 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: timling3
-  collider: {fileID: 0}
+  collider: {fileID: 2677655512577144109}
   entryList:
   - entryName: MounTimDew_Timling
     entryDes: A strange, small, and squishy creature that looks like Tim. Looks like
       he's guarding the MounTim Dew.
     entryImage: {fileID: 288297130416697159, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+--- !u!60 &2677655512577144109
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424369849476756587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.47, y: 4.04}
+    newSize: {x: 2.47, y: 4.04}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.235, y: 0.19999999}
+      - {x: 1.235, y: 3.62}
+      - {x: 1.225, y: 3.81}
+      - {x: 1.145, y: 3.9099998}
+      - {x: 1.015, y: 3.97}
+      - {x: 0.85499996, y: 4.02}
+      - {x: 0.755, y: 4.04}
+      - {x: 0.105, y: 4.04}
+      - {x: 0.044999998, y: 4.02}
+      - {x: -0.205, y: 3.9099998}
+      - {x: -0.255, y: 3.83}
+      - {x: -0.275, y: 3.61}
+      - {x: -0.295, y: 3.1999998}
+      - {x: -0.505, y: 3.1999998}
+      - {x: -0.585, y: 3.1899998}
+      - {x: -0.765, y: 3.09}
+      - {x: -0.895, y: 2.9099998}
+      - {x: -1.005, y: 2.71}
+      - {x: -1.045, y: 2.55}
+      - {x: -1.0749999, y: 2.3899999}
+      - {x: -1.095, y: 2.1699998}
+      - {x: -1.105, y: 1.49}
+      - {x: -1.235, y: 1.13}
+      - {x: -1.235, y: 0.90999997}
+      - {x: -1.1949999, y: 0.77}
+      - {x: -1.0849999, y: 0.56}
+      - {x: -0.965, y: 0.42999998}
+      - {x: -0.73499995, y: 0.34}
+      - {x: -0.575, y: 0.32}
+      - {x: -0.345, y: 0.22999999}
+      - {x: -0.265, y: 0.11}
+      - {x: -0.21499999, y: 0.049999997}
+      - {x: 0.065, y: 0}
+      - {x: 0.73499995, y: 0}
+      - {x: 0.885, y: 0.01}
+      - {x: 1.095, y: 0.049999997}
+      - {x: 1.165, y: 0.099999994}
+--- !u!61 &1590718227654989900
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424369849476756587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.71271294}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.47, y: 4.04}
+    newSize: {x: 2.47, y: 4.04}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.47, y: 1.4254259}
+  m_EdgeRadius: 0
 --- !u!1 &5527178894983201357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,6 +4438,7 @@ GameObject:
   - component: {fileID: 6381523264800864809}
   - component: {fileID: 8110865109938486053}
   - component: {fileID: 511173480543708842}
+  - component: {fileID: 2920825394876370063}
   m_Layer: 1
   m_Name: obj_mintToothpaste
   m_TagString: Untagged
@@ -4462,12 +4553,68 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: Mint_Toothpaste
-  collider: {fileID: 0}
+  collider: {fileID: 2920825394876370063}
   entryList:
   - entryName: Mint_Toothpaste
     entryDes: Mint Toothpaste
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
+--- !u!60 &2920825394876370063
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245211900828679050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.69, y: 1.11}
+    newSize: {x: 2.69, y: 1.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.345, y: 0.9}
+      - {x: 1.3349999, y: 0.93}
+      - {x: 1.305, y: 0.96999997}
+      - {x: 1.115, y: 1.03}
+      - {x: 0.935, y: 1.05}
+      - {x: 0.885, y: 1.1}
+      - {x: 0.415, y: 1.11}
+      - {x: -0.415, y: 1.11}
+      - {x: -0.545, y: 1.1}
+      - {x: -0.78499997, y: 1.0699999}
+      - {x: -0.91499996, y: 1.0699999}
+      - {x: -1.025, y: 0.97999996}
+      - {x: -1.115, y: 0.81}
+      - {x: -1.295, y: 0.77}
+      - {x: -1.3349999, y: 0.72999996}
+      - {x: -1.345, y: 0.68}
+      - {x: -1.345, y: 0.44}
+      - {x: -1.3349999, y: 0.42}
+      - {x: -1.265, y: 0.38}
+      - {x: -1.135, y: 0.37}
+      - {x: -1.125, y: 0.32}
+      - {x: -0.995, y: 0.14}
+      - {x: -0.73499995, y: 0.11}
+      - {x: -0.265, y: 0.07}
+      - {x: 0.475, y: 0}
+      - {x: 1.035, y: 0.01}
+      - {x: 1.0749999, y: 0}
+      - {x: 1.155, y: 0}
+      - {x: 1.245, y: 0.04}
+      - {x: 1.305, y: 0.11}
+      - {x: 1.345, y: 0.22999999}
 --- !u!1 &6296508070609482986
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,6 +6747,7 @@ GameObject:
   - component: {fileID: 5197303641547728987}
   - component: {fileID: 857760337088992644}
   - component: {fileID: 6533347026629476248}
+  - component: {fileID: 2458840938548427173}
   m_Layer: 0
   m_Name: timlings_4
   m_TagString: Untagged
@@ -6688,10 +6836,101 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: timling4
-  collider: {fileID: 0}
+  collider: {fileID: 2458840938548427173}
   entryList:
   - entryName: Sassy_TImling
     entryDes: A strange, small, and squishy creature that looks like Tim. This guy's
       a sassy fella.
     entryImage: {fileID: -6956929644041464537, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+--- !u!60 &2458840938548427173
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212847108574978482}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.16, y: 3}
+    newSize: {x: 2.16, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.48, y: 0.71999997}
+      - {x: 0.47, y: 0.77}
+      - {x: 0.45999998, y: 1.02}
+      - {x: 0.45, y: 1.17}
+      - {x: 0.5, y: 1.3399999}
+      - {x: 0.65999997, y: 1.28}
+      - {x: 0.77, y: 1.23}
+      - {x: 0.88, y: 1.24}
+      - {x: 0.93, y: 1.26}
+      - {x: 1.04, y: 1.36}
+      - {x: 1.0799999, y: 1.43}
+      - {x: 1.0799999, y: 1.56}
+      - {x: 1.0699999, y: 1.64}
+      - {x: 1.01, y: 1.74}
+      - {x: 0.93, y: 1.8199999}
+      - {x: 0.81, y: 1.9}
+      - {x: 0.65, y: 1.9699999}
+      - {x: 0.59, y: 2.04}
+      - {x: 0.65999997, y: 2.25}
+      - {x: 0.76, y: 2.4299998}
+      - {x: 0.78999996, y: 2.61}
+      - {x: 0.66999996, y: 2.84}
+      - {x: 0.53999996, y: 2.95}
+      - {x: 0.42, y: 2.99}
+      - {x: 0.38, y: 3}
+      - {x: 0.16, y: 3}
+      - {x: 0.04, y: 2.97}
+      - {x: -0.04, y: 2.9199998}
+      - {x: -0.16, y: 2.8}
+      - {x: -0.25, y: 2.6599998}
+      - {x: -0.31, y: 2.49}
+      - {x: -0.35, y: 2.31}
+      - {x: -0.53999996, y: 2.1599998}
+      - {x: -0.68, y: 2.02}
+      - {x: -0.76, y: 1.8499999}
+      - {x: -0.78999996, y: 1.78}
+      - {x: -0.78, y: 1.5799999}
+      - {x: -0.89, y: 1.36}
+      - {x: -0.97999996, y: 1.04}
+      - {x: -1, y: 0.79999995}
+      - {x: -1.0799999, y: 0.44}
+      - {x: -1.0799999, y: 0.34}
+      - {x: -1.05, y: 0.31}
+      - {x: -0.90999997, y: 0.29999998}
+      - {x: -0.88, y: 0.37}
+      - {x: -0.78999996, y: 0.26999998}
+      - {x: -0.71999997, y: 0.24}
+      - {x: -0.53999996, y: 0.17999999}
+      - {x: -0.39999998, y: 0.17999999}
+      - {x: -0.37, y: 0.21}
+      - {x: -0.38, y: 0.32999998}
+      - {x: -0.45, y: 0.53999996}
+      - {x: -0.44, y: 0.66999996}
+      - {x: -0.28, y: 1}
+      - {x: -0.17999999, y: 1}
+      - {x: -0.13, y: 0.95}
+      - {x: -0.14999999, y: 0.78999996}
+      - {x: -0.19999999, y: 0.48}
+      - {x: -0.12, y: 0.39}
+      - {x: -0.02, y: 0.22}
+      - {x: 0.099999994, y: 0.08}
+      - {x: 0.22, y: 0.01}
+      - {x: 0.31, y: 0.01}
+      - {x: 0.35999998, y: 0.07}
+      - {x: 0.48, y: 0.35999998}
+      - {x: 0.5, y: 0.53}
