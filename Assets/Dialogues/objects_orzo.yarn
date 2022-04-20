@@ -1,0 +1,163 @@
+﻿title: addEntry
+tags:
+position: 96,-203
+---
+Penne: Do I want to record this as evidence?
+    -> Yes!
+        <<Add_Entry journal {$newItem}>>
+        Penne: I'll take a picture of it and add it to my journal.
+    -> Nope.
+        Penne: Hmm, maybe I shouldn't add this. Let me see what else I find.
+===
+
+title: templateNode
+tags:
+position: 300,-101
+---
+<<if Check_Collected("template") == false>>
+    Penne: This is a template node for collectible evidence!  
+    <<set $newItem to "template">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: bodegaReceipt
+tags:
+position: 300,-101
+---
+<<if Check_Collected("Bodega_Receipt") == false>>
+    Penne: This receipt says that Orzo bought something at the local bodega on Timsday. Aha!   
+    <<set $newItem to "Bodega_Receipt">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: orzoDreamJournal
+tags:
+position: -138,-170
+---
+<<if Check_Collected("Orzo_Dream_Journal") == false>>
+    Penne: Dangnabbit, it's all gibberish and crazy-talk! I can only make out the words "escape", "true memory", and "did I leave the oven on?".  
+    <<set $newItem to "Orzo_Dream_Journal">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: orzoCloset
+tags:
+position: 124,-16
+---
+<<if Check_Collected("Orzo_Closet") == false>>
+    Penne: This closet is seriously messy and an even messier, hastily packed suitcase. Vacation time...?
+    <<set $newItem to "Orzo_Closet ">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: fishbowl
+tags:
+position: 300,-101
+---
+<<if Check_Collected("Fish_Bowl_Hand") == false>>
+    Penne: Hey there... fishie... hand... thing...?
+    <<set $newItem to "Fish_Bowl_Hand">>
+    <<jump addEntry>>
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
+===
+
+title: timling1
+tags:
+position: 300,-101
+---
+<<if Check_Collected("Buff_Timling") == false>>
+    Penne: WOAH. Little dude, you are RIPPED!
+    Buff_Timling: Psh yeah I lift. Like, everyday. Think you got the guns to lift...me?
+    Penne: Why do you want me to lift you?
+    Buff_Timling: Cause I'm LOST and I'm tryna get found. 
+    Buff_Timling: Also, if you wanna get swole I suggest you try finding all of me and my alpha bros!
+    Penne: Find all of you and then do what, exactly?
+    Buff_Timling: Get FOUND! And JACKED! What do you say brah?
+        -> Take Buff Timling
+            Penne: Let's get BEEFY. Come with me, bro!
+            Buff_Timling: Gains, gains, gains! Gains all day, EVERY day!
+            <<set $newItem to "Buff_Timling">>
+            <<Add_Entry journal {$newItem}>>
+            Penne: I'll take a picture and record you in my journal too. 
+        -> Leave Buff Timling
+            Penne: Uh, I think I'll pass. I'll live with my nerd arms, thanks.
+            Buff_Timling: Ok, BETA. Guess I'll have to find my way by myself.  
+<<else>>
+    Penne: I already picked him up! He just left an EXACT copy of himself behind. 
+<<endif>>
+===
+title: timling2
+tags:
+position: 300,-101
+---
+<<if Check_Collected("Tape_Timling") == false>>
+    Penne: Uh...hi? What are you doing in Orzo's wall?
+    Tape_Timling: Take...me...with...you...
+    Penne: But why?
+    Tape_Timling: Got...lost...became one...with tape...help me...
+        -> Take Tape Timling
+            Penne: Ok! I'll stick you to my jacket!
+            Tape_Timling: Thank...you...
+            <<set $newItem to "Tape_Timling">>
+            <<Add_Entry journal {$newItem}>>
+            Penne: I'll take a picture and record you in my journal too. 
+        -> Leave Tape Timling
+            Penne: Sorry, but I'm really busy right now!
+            Tape_Timling: Tape eternal...being lost...inevitable...
+<<else>>
+    Penne: I already picked him up! He just left an EXACT copy of himself behind. 
+<<endif>>
+===
+
+title: timBeautifulPainting
+---
+
+Penne: Hhhh!! What a handsome sir..! Who exactly is he?
+Penne: Oh, it reads in very small writing below his pecs: 
+Penne: "Our Lord and Savior Tim. Best mayor, god, and banana bread baker in Timsville."
+Penne: So that's why this place is named Timsville! But, uh, god...? Interesting...
+===
+
+title: welcomeMat
+---
+
+Penne: What a cute mat! Though, is it knitted from organs? I'm gonna pretend that pink stain is strawberry milk! Haha...ha. 
+===
+
+title: flowerFoot
+---
+
+Penne: What a peculiar place to choose to live, mister plant...
+===
+
+title: kirklandsTim
+---
+
+Penne: A quite welcoming collection of signages. I guess Orzo wanted people to feel welcomed.
+===
+
+title: kirklandsBlessed
+---
+
+Penne: A quite welcoming collection of signages. I guess Orzo wanted people to feel welcomed.
+===
+
+title: kirklandsLife
+---
+
+Penne: A quite welcoming collection of signages. I guess Orzo wanted people to feel welcomed.
+===

@@ -2,10 +2,11 @@
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("rugLady") == false>>
+//  DONE
+<<if Check_Collected("The_Rug_Lady") == false>>
     Penne: Oh, I'm so sorry, I almost stepped on you! 
     RugLady: Worry not, my child. For my existence is naught if I am not a conduit for the soles of your chosen footwear. Avoiding that truth is futile.
-    <<set $newItem to "rugLady">>
+    <<set $newItem to "The_Rug_Lady">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
@@ -16,6 +17,7 @@ title: teethIsle
 tags:
 position: 300,-101
 ---
+//wait to see what we do with teeth isle/baby heads
 <<if Check_Collected("teethIsle") == false>>
     Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
     <<set $newItem to "teethIsle">>
@@ -29,100 +31,102 @@ title: hamDugo
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("hamDugo") == false>>
+//DONE
+<<if Check_Collected("Ham_Dugo") == false>>
     HamDugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
-    <<set $newItem to "hamDugo">>
+    <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-
+//DONE
 title: bodegaCat
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("bodegaCat") == false>>
+<<if Check_Collected("Bodega_Cat") == false>>
     Penne: Mrow. Meow! This cat's named Pocky. 
-    <<set $newItem to "bodegaCat">>
+    <<set $newItem to "Bodega_Cat">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-
+//Done
 title: miku
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("miku") == false>>
+<<if Check_Collected("Hatsune_Miku") == false>>
     Penne: *Sigh.* What a pretty lady. I wish I could give her a kiss.
-    <<set $newItem to "miku">>
+    <<set $newItem to "Hatsune_Miku">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-
-title: fishATM
+//done
+title: Fish_ATM
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("fishATM") == false>>
+<<if Check_Collected("Fish_ATM") == false>>
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
-    <<set $newItem to "fishATM">>
+    <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
 
-title: bloodyShears
+title: Bloody_Shears
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("bloodyShears") == false>>
+//not in the scene, no code for this guy yet
+<<if Check_Collected("Bloody_Shears") == false>>
     Penne: Shears that look like Tim. It's not marinara covering these shears...
-    <<set $newItem to "bloodyShears">>
+    <<set $newItem to "Bloody_Shears">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-
-title: spearmintToothpaste
+//done
+title: Spearmint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("bloodyShears") == false>>
+<<if Check_Collected("Spearmint_Toothpaste") == false>>
     Penne: Spearmint toothpaste. The best one!
-    <<set $newItem to "bloodyShears">>
+    <<set $newItem to "Spearmint_Toothpaste">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-
-title: charcoalToothpaste
+//done
+title: Charcoal_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("charcoalToothpaste") == false>>
+<<if Check_Collected("Charcoal_Toothpaste") == false>>
     Penne: Charcoal toothpaste. Quirky...
-    <<set $newItem to "charcoalToothpaste">>
+    <<set $newItem to "Charcoal_Toothpaste">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-
-title: mintToothpaste
+//done
+title: Mint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("mintToothpaste") == false>>
+<<if Check_Collected("Mint_Toothpaste") == false>>
     Penne: Mint toothpaste. Basic. Meh.
-    <<set $newItem to "mintToothpaste">>
+    <<set $newItem to "Mint_Toothpaste">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
