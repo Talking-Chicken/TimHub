@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 3452597165684895832}
   - component: {fileID: 9036553800617429055}
   - component: {fileID: 6437486122275435190}
+  - component: {fileID: 5066708019502277450}
   m_Layer: 0
   m_Name: npc_rigatoni_church
   m_TagString: Untagged
@@ -166,7 +167,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0218582, y: 1.2152389}
@@ -198,8 +199,96 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: rigatoniChurch
-  collider: {fileID: 9036553800617429055}
+  collider: {fileID: 5066708019502277450}
   entryList: []
+--- !u!60 &5066708019502277450
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605739447563094129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.8, y: 2.5}
+    newSize: {x: 1.8, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.11, y: 0.14999999}
+      - {x: 0.12, y: 0.04}
+      - {x: 0.22, y: 0.01}
+      - {x: 0.22999999, y: 0.01}
+      - {x: 0.45999998, y: 0.089999996}
+      - {x: 0.51, y: 0.16}
+      - {x: 0.35, y: 0.26}
+      - {x: 0.32, y: 0.44}
+      - {x: 0.35999998, y: 0.45999998}
+      - {x: 0.37, y: 0.56}
+      - {x: 0.41, y: 0.81}
+      - {x: 0.38, y: 0.87}
+      - {x: 0.61, y: 0.98999995}
+      - {x: 0.71, y: 1.0699999}
+      - {x: 0.71, y: 1.2099999}
+      - {x: 0.7, y: 1.23}
+      - {x: 0.62, y: 1.3399999}
+      - {x: 0.52, y: 1.39}
+      - {x: 0.45, y: 1.37}
+      - {x: 0.44, y: 1.48}
+      - {x: 0.39999998, y: 1.68}
+      - {x: 0.42999998, y: 1.8299999}
+      - {x: 0.47, y: 2}
+      - {x: 0.42, y: 2.07}
+      - {x: 0.39, y: 2.27}
+      - {x: 0.26, y: 2.4199998}
+      - {x: 0.22, y: 2.5}
+      - {x: 0.08, y: 2.5}
+      - {x: -0.04, y: 2.44}
+      - {x: -0.099999994, y: 2.49}
+      - {x: -0.22, y: 2.5}
+      - {x: -0.34, y: 2.5}
+      - {x: -0.37, y: 2.3999999}
+      - {x: -0.34, y: 2.32}
+      - {x: -0.32, y: 2.29}
+      - {x: -0.48, y: 2.1399999}
+      - {x: -0.52, y: 1.9599999}
+      - {x: -0.59999996, y: 1.92}
+      - {x: -0.59999996, y: 1.87}
+      - {x: -0.51, y: 1.65}
+      - {x: -0.58, y: 1.5899999}
+      - {x: -0.63, y: 1.49}
+      - {x: -0.63, y: 1.39}
+      - {x: -0.58, y: 1.3199999}
+      - {x: -0.59999996, y: 1.05}
+      - {x: -0.66999996, y: 1.02}
+      - {x: -0.66999996, y: 0.81}
+      - {x: -0.61, y: 0.58}
+      - {x: -0.56, y: 0.39}
+      - {x: -0.5, y: 0.35999998}
+      - {x: -0.45999998, y: 0.42}
+      - {x: -0.42999998, y: 0.47}
+      - {x: -0.39999998, y: 0.61}
+      - {x: -0.35999998, y: 0.51}
+      - {x: -0.32, y: 0.45999998}
+      - {x: -0.28, y: 0.19}
+      - {x: -0.26, y: 0.06}
+      - {x: -0.22999999, y: 0.02}
+      - {x: -0.17, y: 0.01}
+      - {x: 0.01, y: 0.01}
+      - {x: 0.04, y: 0.08}
+      - {x: -0.03, y: 0.19}
+      - {x: 0.01, y: 0.45999998}
 --- !u!1 &827321634783399211
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,6 +710,7 @@ GameObject:
   - component: {fileID: 1571335924635245964}
   - component: {fileID: 8349856977922486520}
   - component: {fileID: 4689079871980588744}
+  - component: {fileID: 1886552100958987173}
   m_Layer: 0
   m_Name: obj_bloodyAltar
   m_TagString: Untagged
@@ -709,7 +799,7 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: bloodyAltar
-  collider: {fileID: 4689079871980588744}
+  collider: {fileID: 1886552100958987173}
   entryList:
   - entryName: Bloody Altar
     entryDes: A bloody altar. I assume maybe the Church of Tim has religious sacrifices
@@ -718,6 +808,32 @@ MonoBehaviour:
     entryType: 0
 --- !u!61 &4689079871980588744
 BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475232919042557513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!60 &1886552100958987173
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -739,9 +855,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.5, y: 0.5}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.5, y: 0.5}
 --- !u!1 &2519545159110467790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,6 +3055,7 @@ GameObject:
   - component: {fileID: 6219517027967356710}
   - component: {fileID: 8872440421621901198}
   - component: {fileID: 2305988484311658745}
+  - component: {fileID: 271179396997465385}
   m_Layer: 0
   m_Name: npc_nero
   m_TagString: Untagged
@@ -3024,7 +3144,7 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: 
-  collider: {fileID: 2305988484311658745}
+  collider: {fileID: 271179396997465385}
   entryList:
   - entryName: Nero di Seppia
     entryDes: A priest from the Church of Tim. Good gardener with great handwriting.
@@ -3068,6 +3188,79 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35255364, y: 1.8159056}
   m_EdgeRadius: 0
+--- !u!60 &271179396997465385
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246428484727693412}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.8, y: 2.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.39999998, y: 0.22}
+      - {x: 0.41, y: 0.56}
+      - {x: 0.39, y: 0.78}
+      - {x: 0.5, y: 0.91999996}
+      - {x: 0.55, y: 1.03}
+      - {x: 0.56, y: 1.14}
+      - {x: 0.56, y: 1.35}
+      - {x: 0.5, y: 1.53}
+      - {x: 0.53, y: 1.75}
+      - {x: 0.53, y: 2.02}
+      - {x: 0.45999998, y: 2.1599998}
+      - {x: 0.35, y: 2.26}
+      - {x: 0.19, y: 2.29}
+      - {x: -0.03, y: 2.29}
+      - {x: -0.19, y: 2.25}
+      - {x: -0.38, y: 2.1699998}
+      - {x: -0.48999998, y: 2.09}
+      - {x: -0.48999998, y: 1.9699999}
+      - {x: -0.58, y: 1.8299999}
+      - {x: -0.59999996, y: 1.74}
+      - {x: -0.68, y: 1.77}
+      - {x: -0.7, y: 1.73}
+      - {x: -0.7, y: 1.52}
+      - {x: -0.69, y: 1.51}
+      - {x: -0.63, y: 1.4699999}
+      - {x: -0.53, y: 1.05}
+      - {x: -0.44, y: 1}
+      - {x: -0.42, y: 1.03}
+      - {x: -0.17, y: 0.94}
+      - {x: -0.19999999, y: 0.87}
+      - {x: -0.19999999, y: 0.59}
+      - {x: -0.17, y: 0.39}
+      - {x: -0.25, y: 0.26}
+      - {x: -0.17, y: 0.14999999}
+      - {x: -0.06, y: 0.049999997}
+      - {x: -0.03, y: 0.01}
+      - {x: 0.26999998, y: 0.01}
+      - {x: 0.31, y: 0.04}
+      - {x: 0.31, y: 0.08}
+      - {x: 0.35999998, y: 0.16}
+    - - {x: -0.41, y: 1.5699999}
+      - {x: -0.45, y: 1.56}
+      - {x: -0.44, y: 1.55}
+      - {x: -0.39, y: 1.5999999}
+      - {x: -0.39, y: 1.61}
+      - {x: -0.35999998, y: 1.61}
+      - {x: -0.37, y: 1.54}
+      - {x: -0.37, y: 1.55}
 --- !u!1 &5278552065157326746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,6 +3412,7 @@ GameObject:
   - component: {fileID: 8751424470606490039}
   - component: {fileID: 4163293805351008520}
   - component: {fileID: 5857166712617000096}
+  - component: {fileID: 2019256022198780765}
   m_Layer: 0
   m_Name: obj_confessionLogBook
   m_TagString: Untagged
@@ -3301,10 +3495,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.58953583}
+  m_Offset: {x: 0.01743722, y: 0.18501842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -3315,7 +3509,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.24, y: 1.1790717}
+  m_Size: {x: 2.1353984, y: 0.37003684}
   m_EdgeRadius: 0
 --- !u!114 &5857166712617000096
 MonoBehaviour:
@@ -3333,7 +3527,7 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: 
-  collider: {fileID: 4163293805351008520}
+  collider: {fileID: 2019256022198780765}
   entryList:
   - entryName: Confession Log Book
     entryDes: 'A log book full of confessions written down by the priest Nero. It''s
@@ -3342,6 +3536,61 @@ MonoBehaviour:
       is at night...a confession by Orzo Parmesan! '
     entryImage: {fileID: -3301689770227060559, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
     entryType: 0
+--- !u!60 &2019256022198780765
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466539155088613907}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.24, y: 1.37}
+    newSize: {x: 2.24, y: 1.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.04, y: 0.35}
+      - {x: 1.12, y: 0.38}
+      - {x: 1.12, y: 0.48}
+      - {x: 1.09, y: 0.5}
+      - {x: 1.02, y: 0.55}
+      - {x: 1.02, y: 0.71}
+      - {x: 1.0799999, y: 0.77}
+      - {x: 1.05, y: 0.84}
+      - {x: 0.84, y: 0.89}
+      - {x: 0.64, y: 0.96999997}
+      - {x: 0.62, y: 0.96999997}
+      - {x: 0.04, y: 1.26}
+      - {x: -0.049999997, y: 1.26}
+      - {x: -0.099999994, y: 1.25}
+      - {x: -0.59, y: 1.16}
+      - {x: -0.69, y: 1.14}
+      - {x: -0.96999997, y: 1.0699999}
+      - {x: -1.0699999, y: 1.02}
+      - {x: -1.12, y: 0.95}
+      - {x: -1.12, y: 0.7}
+      - {x: -1.09, y: 0.53}
+      - {x: -1.01, y: 0.45999998}
+      - {x: -0.66999996, y: 0.26999998}
+      - {x: -0.22999999, y: 0.049999997}
+      - {x: -0.21, y: 0.03}
+      - {x: -0.14999999, y: 0}
+      - {x: 0.089999996, y: 0}
+      - {x: 0.31, y: 0.049999997}
+      - {x: 0.65999997, y: 0.17999999}
+      - {x: 0.88, y: 0.26999998}
 --- !u!1 &5692649904218567245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +4194,7 @@ GameObject:
   - component: {fileID: 6743294248169602452}
   - component: {fileID: 536124378243406633}
   - component: {fileID: 6756055980855199348}
+  - component: {fileID: 8665142522853941082}
   m_Layer: 0
   m_Name: obj_timling5
   m_TagString: Untagged
@@ -4033,7 +4283,7 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: timling5
-  collider: {fileID: 6756055980855199348}
+  collider: {fileID: 8665142522853941082}
   entryList:
   - entryName: Teeth Timling
     entryDes: A strange, small, and squishy creature that resembles Tim. This one
@@ -4053,7 +4303,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25345153, y: 1.3151972}
+  m_Offset: {x: -0.286866, y: 0.4643539}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -4064,8 +4314,89 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6005157, y: 1.2235236}
+  m_Size: {x: 1.5580338, y: 0.90291446}
   m_EdgeRadius: 0
+--- !u!60 &8665142522853941082
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335436894021345952}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.33, y: 2.81}
+    newSize: {x: 2.33, y: 2.81}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.085, y: 0.12}
+      - {x: 0.055, y: 0.01}
+      - {x: 0.235, y: 0.01}
+      - {x: 0.385, y: 0.08}
+      - {x: 0.48499998, y: 0.19}
+      - {x: 0.525, y: 0.39999998}
+      - {x: 0.53499997, y: 0.57}
+      - {x: 0.505, y: 0.74}
+      - {x: 0.445, y: 1.04}
+      - {x: 0.53499997, y: 1.1999999}
+      - {x: 0.675, y: 1.28}
+      - {x: 0.805, y: 1.41}
+      - {x: 0.875, y: 1.53}
+      - {x: 0.875, y: 1.61}
+      - {x: 0.97499996, y: 1.7199999}
+      - {x: 1.055, y: 1.8499999}
+      - {x: 1.165, y: 2.06}
+      - {x: 1.165, y: 2.21}
+      - {x: 1.0849999, y: 2.26}
+      - {x: 0.945, y: 2.32}
+      - {x: 0.745, y: 2.33}
+      - {x: 0.655, y: 2.21}
+      - {x: 0.655, y: 2.03}
+      - {x: 0.575, y: 1.93}
+      - {x: 0.48499998, y: 1.81}
+      - {x: 0.285, y: 1.67}
+      - {x: 0.305, y: 1.75}
+      - {x: 0.505, y: 2}
+      - {x: 0.565, y: 2.1}
+      - {x: 0.615, y: 2.22}
+      - {x: 0.585, y: 2.47}
+      - {x: 0.515, y: 2.58}
+      - {x: 0.385, y: 2.72}
+      - {x: 0.255, y: 2.78}
+      - {x: 0.16499999, y: 2.81}
+      - {x: -0.185, y: 2.81}
+      - {x: -0.315, y: 2.72}
+      - {x: -0.49499997, y: 2.53}
+      - {x: -0.575, y: 2.4099998}
+      - {x: -0.705, y: 2.1399999}
+      - {x: -0.895, y: 1.88}
+      - {x: -1.015, y: 1.76}
+      - {x: -1.115, y: 1.63}
+      - {x: -1.165, y: 1.51}
+      - {x: -1.165, y: 1.26}
+      - {x: -1.025, y: 0.95}
+      - {x: -1.095, y: 0.58}
+      - {x: -1.115, y: 0.42}
+      - {x: -1.115, y: 0.22999999}
+      - {x: -1.0849999, y: 0.13}
+      - {x: -0.98499995, y: 0.01}
+      - {x: -0.955, y: 0}
+      - {x: -0.73499995, y: 0}
+      - {x: -0.645, y: 0.08}
+      - {x: -0.49499997, y: 0.31}
+      - {x: -0.225, y: 0.42999998}
 --- !u!1 &8211490559305846586
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4519,7 @@ GameObject:
   - component: {fileID: 6500568739012660703}
   - component: {fileID: 6456518135436097885}
   - component: {fileID: 7943908829119137335}
+  - component: {fileID: 4416435276722708895}
   m_Layer: 0
   m_Name: obj_timling6
   m_TagString: Untagged
@@ -4270,10 +4602,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.535}
+  m_Offset: {x: 0, y: 0.40345725}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -4284,7 +4616,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.21, y: 3.07}
+  m_Size: {x: 3.21, y: 0.8069145}
   m_EdgeRadius: 0
 --- !u!114 &6456518135436097885
 MonoBehaviour:
@@ -4325,13 +4657,93 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: timling6
-  collider: {fileID: 6500568739012660703}
+  collider: {fileID: 4416435276722708895}
   entryList:
   - entryName: No Thoughts Timling
     entryDes: A strange, small, and squishy creature that resembles Tim. This one
       doesn't seem to have many...thoughts. But I think it's ok with that!
     entryImage: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+--- !u!60 &4416435276722708895
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355743984497826535}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 3.21, y: 3.07}
+    newSize: {x: 3.21, y: 3.07}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.005, y: 0.51}
+      - {x: 0.125, y: 0.66999996}
+      - {x: 0.185, y: 0.68}
+      - {x: 0.295, y: 0.56}
+      - {x: 0.42499998, y: 0.32999998}
+      - {x: 0.565, y: 0.21}
+      - {x: 0.645, y: 0.17999999}
+      - {x: 0.84499997, y: 0.22}
+      - {x: 0.935, y: 0.29999998}
+      - {x: 0.995, y: 0.37}
+      - {x: 1.095, y: 0.57}
+      - {x: 1.125, y: 0.66999996}
+      - {x: 1.135, y: 0.87}
+      - {x: 1.135, y: 1.1}
+      - {x: 1.295, y: 1.4699999}
+      - {x: 1.425, y: 1.56}
+      - {x: 1.605, y: 1.79}
+      - {x: 1.605, y: 2.02}
+      - {x: 1.4549999, y: 2.22}
+      - {x: 1.305, y: 2.31}
+      - {x: 1.0749999, y: 2.34}
+      - {x: 0.695, y: 2.28}
+      - {x: 0.59499997, y: 2.34}
+      - {x: 0.42499998, y: 2.6799998}
+      - {x: 0.185, y: 2.9099998}
+      - {x: 0.114999995, y: 2.96}
+      - {x: -0.114999995, y: 3.07}
+      - {x: -0.385, y: 3.07}
+      - {x: -0.555, y: 2.99}
+      - {x: -0.705, y: 2.8}
+      - {x: -0.755, y: 2.6299999}
+      - {x: -0.765, y: 2.3899999}
+      - {x: -0.73499995, y: 2.18}
+      - {x: -0.73499995, y: 1.93}
+      - {x: -0.885, y: 1.7199999}
+      - {x: -1.165, y: 1.65}
+      - {x: -1.265, y: 1.63}
+      - {x: -1.435, y: 1.54}
+      - {x: -1.535, y: 1.43}
+      - {x: -1.605, y: 1.28}
+      - {x: -1.605, y: 1.11}
+      - {x: -1.535, y: 1.01}
+      - {x: -1.4649999, y: 0.98999995}
+      - {x: -0.945, y: 1.03}
+      - {x: -0.885, y: 0.96}
+      - {x: -0.885, y: 0.37}
+      - {x: -0.875, y: 0.29999998}
+      - {x: -0.84499997, y: 0.17999999}
+      - {x: -0.715, y: 0.03}
+      - {x: -0.645, y: 0}
+      - {x: -0.465, y: 0}
+      - {x: -0.405, y: 0.01}
+      - {x: -0.225, y: 0.11}
+      - {x: -0.16499999, y: 0.17}
+      - {x: -0.074999996, y: 0.35}
 --- !u!1 &8448707448776143267
 GameObject:
   m_ObjectHideFlags: 0
