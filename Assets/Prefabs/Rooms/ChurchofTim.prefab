@@ -3680,8 +3680,8 @@ GameObject:
   - component: {fileID: 1011710230908586655}
   - component: {fileID: 752662239092555631}
   - component: {fileID: 8872440421621901196}
-  - component: {fileID: 8872440421621901197}
   - component: {fileID: 4406565935886863476}
+  - component: {fileID: 414716848}
   m_Layer: 0
   m_Name: obj_renaissanceTim
   m_TagString: Untagged
@@ -3780,30 +3780,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.87, y: 5.54}
   m_EdgeRadius: 0
---- !u!114 &8872440421621901197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7193709012348600633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: timPainting
-  collider: {fileID: 4406565935886863476}
-  entryList:
-  - entryName: Renaissance Tim Painting
-    entryDes: A painting of Tim, who is worshipped here at Timsville. Or, that's
-      my educated guess since the church seems to be dedicated all to him. Phrases
-      like "Praise Tim" and paths to salvation are quite common as part of the religion.
-    entryImage: {fileID: 21300000, guid: 0598ac7172a50224aa04050a900337b1, type: 3}
-    entryType: 0
 --- !u!60 &4406565935886863476
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3933,6 +3909,30 @@ PolygonCollider2D:
       - {x: -0.305, y: 0.12}
       - {x: -0.285, y: 0.14}
       - {x: 0.015, y: 0.099999994}
+--- !u!114 &414716848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193709012348600633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37460ad5ff9111347b33ca5c1bd0121d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: timPainting
+  collider: {fileID: 8872440421621901196}
+  entryList:
+  - entryName: Renaissance Tim Painting
+    entryDes: A painting of Tim, who is worshipped here at Timsville. Or, that's
+      my educated guess since the church seems to be dedicated all to him. Phrases
+      like "Praise Tim" and paths to salvation are quite common as part of the religion.
+    entryImage: {fileID: 21300000, guid: 0598ac7172a50224aa04050a900337b1, type: 3}
+    entryType: 0
 --- !u!1 &7335436894021345952
 GameObject:
   m_ObjectHideFlags: 0

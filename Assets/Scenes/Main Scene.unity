@@ -698,40 +698,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5580233427000201847, guid: feccb79912eb4af44953ff8eacf866af, type: 3}
   m_PrefabInstance: {fileID: 325361516}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &414716847 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7193709012348600633, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
-  m_PrefabInstance: {fileID: 1462577656}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &414716848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414716847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37460ad5ff9111347b33ca5c1bd0121d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: timPainting
-  collider: {fileID: 414716851}
-  entryList:
-  - entryName: Renaissance Tim Painting
-    entryDes: A painting of Tim, who is worshipped here at Timsville. Or, that's
-      my educated guess since the church seems to be dedicated all to him. Phrases
-      like "Praise Tim" and paths to salvation are quite common as part of the religion.
-    entryImage: {fileID: 21300000, guid: 0598ac7172a50224aa04050a900337b1, type: 3}
-    entryType: 0
---- !u!61 &414716851 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
-  m_PrefabInstance: {fileID: 1462577656}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &476249675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,7 +2461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034750822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.6, y: 32.8, z: 0}
+  m_LocalPosition: {x: 52.3, y: 5.37, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3421,8 +3387,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChurchofTim
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8872440421621901197, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
 --- !u!1001 &1552282803
 PrefabInstance:
