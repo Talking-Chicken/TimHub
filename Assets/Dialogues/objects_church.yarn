@@ -12,7 +12,8 @@ position: 300,-101
             <<Burn_Painting obj_renaissanceTim>>
             <<Set_Read Painting_Burned>>
         -> maybe latter
-    <<else>>
+    <<endif>>
+    <<if Check_Read("Painting_Burned") == true>>
         Penne: A hole appears behind painting!
         -> go into the hole
             <<Room_Change GameManager>>
