@@ -6,24 +6,22 @@ position: -14,-216
 //it doesn't skip right away to the shears???
 
 <<if Check_Read("read_introQs") == false>>
+    <<Set_Read read_introQs>>
     <<jump read_introQs>>
+    
 <<endif>>
-
-<<if Check_Read("read_introQs") == true>>
     -> Ask about when Orzo was last seen
         <<jump question_radiatoreWrongAlibi>>
     -> Ask about Radiatore's day job
         <<jump question_aboutJob>>
-    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true || Check_Read("read_introQs") == true>>
+    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true>>
         <<jump question_corpseShipment>>
-    -> Ask about the bloody gardening shears <<if Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1") || Check_Read("read_introQs") == true>>
+    -> Ask about the bloody gardening shears <<if Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1")>>
         <<jump question_bloodyShears>>
-    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("wisdomTooth_alibi") || Check_Read("read_introQs") == true>>
+    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("wisdomTooth_alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
         Radiatore: C-cool...
-
-<<endif>>
 ===
 
 title: read_introQs
@@ -65,7 +63,6 @@ Radiatore: GAH! OK, OK. I'll, uh, stick around. (Am I sweaty...?)
 
 //setting bool for player reading the About Job question to true
 <<Set_Read radiatore_aboutJob>>
-<<Set_Read read_introQs>>
 
 ===
 
