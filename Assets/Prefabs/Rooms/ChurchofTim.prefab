@@ -3064,10 +3064,8 @@ MonoBehaviour:
   collider: {fileID: 2019256022198780765}
   entryList:
   - entryName: Confession Log Book
-    entryDes: 'A log book full of confessions written down by the priest Nero. It''s
-      handwriting is very neat and beautiful. It has all of the names, dates, and
-      times of the people that give confessions. The last one written down on Timsday
-      is at night...a confession by Orzo Parmesan! '
+    entryDes: 'A confession log book written by the priest Nero. It''s handwriting
+      is very beautiful. The last one is on Timsday is at night...by Orzo! '
     entryImage: {fileID: -3301689770227060559, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
     entryType: 0
 --- !u!60 &2019256022198780765
@@ -3581,9 +3579,8 @@ MonoBehaviour:
   collider: {fileID: 8872440421621901196}
   entryList:
   - entryName: Renaissance Tim Painting
-    entryDes: A painting of Tim, who is worshipped here at Timsville. Or, that's
-      my educated guess since the church seems to be dedicated all to him. Phrases
-      like "Praise Tim" and paths to salvation are quite common as part of the religion.
+    entryDes: A religious painting of Timsville's god, Tim. So hot the painting might
+      burn! I should mind the candles around here.
     entryImage: {fileID: 21300000, guid: 0598ac7172a50224aa04050a900337b1, type: 3}
     entryType: 0
 --- !u!1 &7335436894021345952

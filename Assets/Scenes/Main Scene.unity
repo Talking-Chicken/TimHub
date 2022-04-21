@@ -1111,6 +1111,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1694782785870733121, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryDes
+      value: A letter written to Orzo that says to meet ??? at the Church the same
+        night Orzo was murdered! Handwritiing is very nice!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714760223580102153, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714760223580102153, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryDes
+      value: 'This Wisdom Tooth had Bloody Gardening Shears stuck in it. After I
+        got it out, it told me that Radiatore was supposed to deliver something to
+        Orzo, but Tim and a "holy man" took away. These "holy men" then came back
+        and hurt the Wisdom Tooth, hence the gardening shears. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714760223580102153, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryName
+      value: Wisdom Tooth Alibi
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714760223580102153, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714760223580102153, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: b3a4fc70cb40fb94cbf68be6b707daf6, type: 3}
     - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[2].entryType
       value: 1
@@ -1175,7 +1203,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bodega
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 604956914, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+    - {fileID: 604956915, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
 --- !u!1001 &619104264
 PrefabInstance:
@@ -2508,7 +2538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034750822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.94, y: -0.36, z: 0}
+  m_LocalPosition: {x: 79.23, y: -8.88, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

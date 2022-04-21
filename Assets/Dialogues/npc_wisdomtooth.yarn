@@ -68,9 +68,10 @@ Penne: Timsday...by any chance did you see the delivery man, Radiatore that day?
 Wisdom_Tooth: Yes, as a victim and witness to cruelest of violences from the holy man, Tim, and the delivery chap! For SHAME, especially unto that so-called Man of God!
 Penne: Aha! So Tim and this holy man were here at the bodega as well! 
 Wisdom_Tooth: Ay! I couldest not speaketh mine truth because of the pain, but now I shall be silenced no longer! Taketh mine words as an alibi and proveth those rotten naysayers!
-Penne: Yes, thank you! I'm going to record this in my journal. 
+Penne: Yes, thank you! I'm going to record these shears AND your alibi into my journal. 
         <<set $newItem to "Bloody_Gardening_Shears">>
         <<Add_Entry journal {$newItem}>>
+        <<Add_Entry journal Wisdom_Tooth_Alibi>>
 Penne: And done! Now I have something to make that sweaty sucker squeal... I should go show him what I found!
 
 

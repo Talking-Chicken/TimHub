@@ -18,7 +18,7 @@ position: -14,-216
         <<jump question_corpseShipment>>
     -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
-    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("question_bloodyShears")>>
+    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
         Radiatore: C-cool...
