@@ -51,6 +51,11 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    public IEnumerator waitToChangeState(PlayerStateBase newState) {
+        yield return new WaitForSeconds(0.2f);
+        changeState(newState);
+    }
+
     //changing state function, for unity event (button)
     public void changeToExploreState() {changeState(stateExplore);}
     public void changeToDialogueState() {changeState(stateDialogue);}
