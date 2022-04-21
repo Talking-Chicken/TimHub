@@ -28,6 +28,8 @@ position:
 <<if Check_Collected("Orzo_Dream_Journal")>>
     -> Go to Bodega
         <<jump go_to_bodega>>
+<<else>>
+    Rigatoni: Looks like you missed some important evidence in your journal.
 <<endif>>
 ===
 
