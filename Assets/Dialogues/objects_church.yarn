@@ -115,7 +115,6 @@ position: 282,33
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling5>>
             //make timling disappear from room
-            Penne: I'll take a picture and record you in my journal too. 
         -> Leave Teeth Timling
             Penne: Um...sorry. Maybe next time?
             Teeth_Timling: Next time...but how long must I wait?
@@ -136,8 +135,8 @@ position: 282,33
             No_Thoughts_Timling: Yes! No more independence for me! I love being co-dependent.
             <<set $newItem to "No_Thoughts_Timling">>
             <<Add_Entry journal {$newItem}>>
+            <<Collect_Timling obj_timling6>>
             //make timling disappear from room
-            Penne: I'll take a picture and record you in my journal too. 
         -> Leave No Thoughts Timling
             Penne: Sorry...maybe next time. 
             No_Thoughts_Timling: My abandonment issues are flaring up...it aches! The angst is too much for my empty head...
