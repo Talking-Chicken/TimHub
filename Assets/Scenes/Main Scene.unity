@@ -3335,7 +3335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: fadeInTime
-      value: 0.0001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: autoAdvance
@@ -3343,7 +3343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: fadeOutTime
-      value: 0.0001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: useFadeEffect
@@ -3391,7 +3391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4945107112463637573, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: fadeTime
-      value: 0.0001
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4945107112463637593, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_SizeDelta.y
