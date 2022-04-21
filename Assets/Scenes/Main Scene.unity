@@ -1111,6 +1111,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[2].entryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[1].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[2].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
     - target: {fileID: 5894379972735577724, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2825,7 +2841,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16507149, y: 1.2173119}
+  m_Offset: {x: 0.008705139, y: 0.280859}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2836,7 +2852,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6047783, y: 0.83104324}
+  m_Size: {x: 0.79382324, y: 0.5028}
   m_EdgeRadius: 0
 --- !u!95 &1117723945
 Animator:
@@ -3845,12 +3861,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.22605896, y: 7.607868}
-      - {x: -0.7076102, y: 5.8561497}
-      - {x: -0.9817862, y: 1.0987741}
-      - {x: -0.093177795, y: 0.7434597}
-      - {x: 0.58778536, y: 1.1402476}
-      - {x: 0.3076582, y: 5.873539}
+    - - {x: -0.032974243, y: 3.5917397}
+      - {x: -0.2055884, y: 3.0950603}
+      - {x: -0.47977203, y: 0.13336003}
+      - {x: -0.015945435, y: 0.048360825}
+      - {x: 0.43332064, y: 0.039674997}
+      - {x: 0.23042583, y: 2.726284}
 --- !u!1001 &4434406276540771363
 PrefabInstance:
   m_ObjectHideFlags: 0

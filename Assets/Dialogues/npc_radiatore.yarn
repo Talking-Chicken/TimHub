@@ -10,15 +10,15 @@ position: -14,-216
     <<jump read_introQs>>
     
 <<endif>>
-    -> Ask about when Orzo was last seen
+    -> Ask about when Orzo was last seen <<if Check_Collected("Radiatore_al_Forno_Update") == false>>
         <<jump question_radiatoreWrongAlibi>>
     -> Ask about Radiatore's day job
         <<jump question_aboutJob>>
     -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true>>
         <<jump question_corpseShipment>>
-    -> Ask about the bloody gardening shears <<if Check_Collected("murder weapon _ will for orzo _ spearmint toothpaste_1")>>
+    -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
-    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("wisdomTooth_alibi")>>
+    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("question_bloodyShears")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
         Radiatore: C-cool...
@@ -77,7 +77,7 @@ Radiatore: !!! *Sweating BUCKETS* Uh, listen bub! I...I have a right to remain s
 Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
 Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
-
+<<Set_Read question_bloodyShears>>
 <<Add_Entry journal Radiatore_al_Forno_Update>>
 
 ===
@@ -88,6 +88,7 @@ position: -186,109
 //player presents bloody shears to Radiatore
 Penne: Any idea what these bloody shears are doing here? 
 Radiatore: I swear I don't know anything about those awful shears! I hate flowers. I've got allergies, ya see...
+<<Set_Read question_bloodyShears>>
 
 ===
 
@@ -113,6 +114,6 @@ Penne: You were the one who sent Orzo to us, weren't you?
 Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful. 
 
 <<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
-<<set $newItem to "obj_mysteriousLetter">>
+<<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
 ===

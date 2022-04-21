@@ -16,7 +16,7 @@ tags:
     //if player has collected Spearmint Toothpaste
     -> Give Spearmint Toothpaste to Wisdom Tooth <<if Check_Collected("Spearmint_Toothpaste")>>
         <<jump question_spearmintToothpaste>>
-    -> I'm done. 
+    -> I'm done.
         Wisdom_Tooth: O, when shall my pain be sooooothed? 
 <<endif>>
 ===

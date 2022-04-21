@@ -1,14 +1,18 @@
 ﻿title: rigatoniBodega
 tags:
 ---
-//intro to bodega
-Penne: Whoa, this place is filled with... stuff! Lots of stuff!
-Rigatoni: Of course it is. The Bodega is the only place to buy food and other goods in Timsville. 
-Penne: Seriously? Huh! I guess that makes sense, since Timsville is so small. 
-Rigatoni: Hm. Well, see what you can get out of the delivery man. I tried questioning him earlier, but I just know he's still hiding something. I'm going to take another look around.
-Penne: Sounds like a plan, Toni! 
-Rigatoni: I told you not to call me that.
-<<Set_Read rigatoniBodegaIntro>>
+<<if Check_Read("rigatoniBodegaIntro") == false>>
+    //intro to bodega
+    Penne: Whoa, this place is filled with... stuff! Lots of stuff!
+    Rigatoni: Of course it is. The Bodega is the only place to buy food and other goods in Timsville. 
+    Penne: Seriously? Huh! I guess that makes sense, since Timsville is so small. 
+    Rigatoni: Hm. Well, see what you can get out of the delivery man. I tried questioning him earlier, but I just know he's still hiding something. I'm going to take another look around.
+    Penne: Sounds like a plan, Toni! 
+    Rigatoni: I told you not to call me that.
+    <<Set_Read rigatoniBodegaIntro>>
+<<else>>
+    <<jump question_aboutInvestigating>>
+<<endif>>
 
 ===
 
@@ -16,22 +20,30 @@ title: question_aboutInvestigating
 tags:
 ---
 <<if Check_Read("rigatoniBodegaIntro") == true>>
-    Penne: Watcha lookin' at there, Toni?
-    Rigatoni: Nothing that requires your attention more than the rest of the Bodega.
+    <<if Check_Collected("Bloody Gardening Shears") && Check_Collected("Mysterious_Letter") && Check_Collected("Radiatore al Forno New Alibi")>>
+        -> Look at what I have!
+            <<jump murderWeapon>>
+    <<else>>
+        Penne: Watcha lookin' at there, Toni?
+        Rigatoni: Nothing that requires your attention more than the rest of the Bodega.
+    <<endif>>
 <<endif>>
 ===
 
 title: murderWeapon
 tags: 
 ---
-<<if Check_Collected("Murder_Weapon") ==  true>>
-    -> Look at what I have!
+<<if Check_Read("murderWeapon") == false>>
+    Penne: Toni, look at all this..! I think I'm onto something here!
+    Rigatoni: ...Why did you bring me those things? I thought... I thought we were here to... What were we here to do again?
+    Penne: Wha— What do you mean?! We're investigating Orzo's murder! I questioned Radiatore, and—
+    Rigatoni: Oh, you shouldn't be questioning him! Radiatore's such a sweetheart, he'd never do anything wrong!
+    Penne: That's not what you were saying a few minutes ago... (To herself) I think her forgetfulness is getting worse. We need to finish the investigation, stat!
+    <<Set_Read murderWeapon>>
 <<endif>>
-Penne: Toni, look at all this..! I think I'm onto something here!
-Rigatoni: ...Why did you bring me those things? I thought... I thought we were here to... What were we here to do again?
-Penne: Wha— What do you mean?! We're investigating Orzo's murder! I questioned Radiatore, and—
-Rigatoni: Oh, you shouldn't be questioning him! Radiatore's such a sweetheart, he'd never do anything wrong!
-Penne: That's not what you were saying a few minutes ago... (To herself) I think her forgetfulness is getting worse. We need to finish the investigation, stat!
+<<if Check_Read("murderWeapon")>>
+    <<jump go_to_church>>
+<<endif>>
 ===
 
 title: go_to_church
