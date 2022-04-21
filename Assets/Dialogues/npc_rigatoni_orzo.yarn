@@ -11,12 +11,12 @@ position: -1,-117
     -> Is it true you've been forgetting things?
         <<jump question_rigatoniForgetfulness>>
     -> I'm done.
-    Rigatoni: Then stop bothering me.
+        Rigatoni: Then stop bothering me.
 <<elseif Check_Read("rigatoni_partnership") == false>>
     -> What's up with our partnership, huh?
         <<jump question_ourNewPartnership>>
     -> I'm done.
-    Rigatoni: Then stop bothering me.
+        Rigatoni: Then stop bothering me.
 <<else>>
     <<jump question_aboutItems>>
 <<endif>>
@@ -25,7 +25,7 @@ position: -1,-117
 title: question_aboutItems
 position:
 ---
-<<if Check_Collected("Orzo_Journal")>>
+<<if Check_Collected("Orzo_Dream_Journal")>>
     -> Go to Bodega
         <<jump go_to_bodega>>
 <<endif>>
