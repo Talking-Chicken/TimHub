@@ -1111,14 +1111,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
-      propertyPath: entryList.Array.data[0].entryType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
-      propertyPath: entryList.Array.data[1].entryType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5894379972735577724, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_RootOrder
       value: 3
