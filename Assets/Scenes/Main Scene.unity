@@ -2538,7 +2538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034750822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.69, y: 1.81, z: 0}
+  m_LocalPosition: {x: -8.07, y: 0.31, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2627,6 +2627,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 428655607913427238, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: -901652650853108005, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
+    - target: {fileID: 564466281457312484, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75422174
+      objectReference: {fileID: 0}
+    - target: {fileID: 564466281457312484, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7978605
+      objectReference: {fileID: 0}
+    - target: {fileID: 564466281457312484, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 564466281457312484, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2
+      objectReference: {fileID: 0}
     - target: {fileID: 952756792107084404, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2674,6 +2694,61 @@ PrefabInstance:
     - target: {fileID: 952756792107084407, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Name
       value: VictimHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802368910033257510, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: -2051142301355541852, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
+    - target: {fileID: 1910432455382770396, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910432455382770396, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: 7091296469937441458, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
+    - target: {fileID: 5319064838426388621, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319064838426388621, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327757138753320167, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: -7497795344851156692, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
+    - target: {fileID: 5879084694455019552, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879084694455019552, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[0].entryDes
+      value: Orzo's sister. Works at the library and the Church. Claimed her brother
+        was last seen alive the night before Timsday. According to her, Orzo Parmesan
+        was then murdered on Timsday.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489631403543955708, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: entryList.Array.data[1].entryDes
+      value: Her brother was alive on Timsday! Stelle lied to me about when he was
+        last alive...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749306555127754099, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749306555127754099, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}

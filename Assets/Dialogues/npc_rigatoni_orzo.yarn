@@ -5,31 +5,47 @@ position: -1,-117
 //show dialogue choice to trigger intro/first convo
 <<if Check_Read("rigatoni_introread") == false>>
     <<jump question_introductions>>
-<<elseif Check_Read("rigatoni_investigationread") == false || Check_Read("rigatoni_forgetfulnessread") == false>>
-    -> How's the investigation going?
+<<elseif Check_Read("rigatoni_introread") == true>>
+    -> Ask about how the investigation is going so far
         <<jump question_investigationSoFar>>
-    -> Is it true you've been forgetting things?
-        <<jump question_rigatoniForgetfulness>>
-    -> I'm done.
-        Rigatoni: Then stop bothering me.
-<<elseif Check_Read("rigatoni_partnership") == false>>
-    -> What's up with our partnership, huh?
+    -> Ask about Rigatoni's forgetfulness <<if Check_Read("rigatoni_forgetfulnessread") == false>>
+        <<jump question_rigatoniForgetfulness>> 
+    -> Ask about the new partnership together <<if Check_Read("rigatoni_partnership") == false>>
         <<jump question_ourNewPartnership>>
+    -> Show Rigatoni evidence collected so far <<if Check_Read("rigatoni_stelleAlibiShown") == false>> //<<if player has collected anything>>
+        <<jump question_aboutItems>>
+    -> Show Rigatoni Stelle's new alibi <<if Check_Collected("Stelle_Parmesan_Alibi_Update") && Check_Read("rigatoni_stelleAlibiShown") == false>>
+            <<jump go_to_bodega>>
+    -> Leave Orzo's home <<if Check_Read("rigatoni_stelleAlibiShown") == true>>
+        Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
+            -> Yes, let's go!
+                <<Room_Change GameManager>>
+            -> Hmm, not yet.
+                Rigatoni: Hmph. Let me know when you are ready to leave, then.
     -> I'm done.
-        Rigatoni: Then stop bothering me.
-<<else>>
-    <<jump question_aboutItems>>
+        Rigatoni: Get back to work, detective.
 <<endif>>
 ===
 
 title: question_aboutItems
 position:
 ---
-<<if Check_Collected("Orzo_Dream_Journal")>>
-    -> Go to Bodega
-        <<jump go_to_bodega>>
+<<if Check_Collected("Bodega_Receipt")>>
+    Penne: What do you think about what I've collected so far?
+    Rigatoni: This receipt you have collected places our victim at an exact time, date, and location. Did Stelle mention anything about when or where Orzo was last seen?
+    Penne: Hey...you're right. She did! Maybe I need to think about what Stelle told me earlier more closely, especially her alibi. 
+    Rigatoni: Good. Thinking like an actual detective. 
+    Penne: Wow, validation!? Amazing! I should go talk to Stelle NOW! 
+    Rigatoni: Just question her normally, please. Mind your manners. 
+    Penne: More positive reinforcement, here I come!
+    <<jump RigatoniTest>>
 <<else>>
-    Rigatoni: Looks like you missed some important evidence in your journal.
+    Penne: What do you think about the evidence I've collected so far?
+    Rigatoni: Hmm. Something still is not adding up here. Perhaps you have overlooked some important evidence here. 
+    Rigatoni: Never forget, the evidence you have collected should also be shown to Stelle. 
+    Rigatoni: It is very likely she is hiding something. Show her something that contradicts her alibi, and we might actually go somewhere with this investigation.
+    Penne: Gotcha. I'll keep searching and adding evidence to my journal, and I'll follow up with Stelle about them too. 
+    <<jump RigatoniTest>>
 <<endif>>
 ===
 
@@ -83,7 +99,8 @@ Rigatoni: S-Stop that! Get back to work.
 Rigatoni: And bestest is NOT a real word!
 
 //setting bool for player reading the investigation convo to true
-<<Set_Read rigatoni_investigationread>>
+// <<Set_Read rigatoni_investigationread>>
+<<jump RigatoniTest>>
 
 ===
 
@@ -103,6 +120,7 @@ Rigatoni: Forget it happened. Let us continue our investigation. //Rigatoni Unne
 
 //setting bool for player reading the forgetfulness convo to true
 <<Set_Read rigatoni_forgetfulnessread>>
+<<jump RigatoniTest>>
 
 ===
 
@@ -118,13 +136,29 @@ Penne: Aw. Are you sure? You could call me...Pen...? //Penne Sad
 Rigatoni: Pen is an awful nickname. 
 Rigatoni: ...Toni is far superior, without a doubt. //Rigatoni Slightly amused
 <<Set_Read rigatoni_partnership>>
+<<jump RigatoniTest>>
+
 ===
 title: go_to_bodega
 position: 200,157
 ---
-Rigatoni: Looks like you have thoroughly examined the room thus far. Ready to proceed to the next area?
+<<if Check_Read("rigatoni_stelleAlibiShown") == false>>
+    Penne: Stelle was lying to me! Orzo wasn't last seen alive the night before Timsday—he was alive on Timsday, according to this receipt!
+    Rigatoni: And you have recorded everything so far?
+    Penne: That's right! It's all been put into my journal. 
+    Rigatoni: My intuition never fails me. I do not think this will be the last of our witnesses lying, so stay on guard.
+    Penne: Our...witnesses...? 
+    Rigatoni: Don't.
+    Penne: Aw, we ARE partners! That's so sweet and COOL and EXCITING AND—
+    Rigatoni: E-Enough! You are making my head...spin...ugh.
+    Penne: Oh no! I'm so so sorry. *whispering* What should we do now?
+    Rigatoni: Don't patronize me. I am fine. 
+    Penne: Ok...whatever you say...
+    Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
 -> Yes, let's go!
     <<Room_Change GameManager>>
 -> Hmm, not yet.
     Rigatoni: Hmph. Let me know when you are ready to leave, then.
+    <<Set_Read rigatoni_stelleAlibiShown>>
+<<endif>>
 ===

@@ -27,10 +27,14 @@ title: bodegaReceipt
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Bodega_Receipt") == false>>
-    Penne: This receipt says that Orzo bought something at the local bodega on Timsday. Aha!   
+<<if Check_Collected("Bodega_Receipt") == false && Check_Read("stelleIntro") == true>>
+    Penne: This receipt says that Orzo bought something at the local bodega on Timsday. 
+    Penne: ...hmm. Orzo bought something ON Timsday? 
+    Penne: This looks like it might be very important. I could collect this and show Rigatoni, then Stelle...
     <<set $newItem to "Bodega_Receipt">>
     <<jump addEntry>>
+<<elseif Check_Read("stelleIntro") == false>>
+    Penne: I should go talk to Stelle first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -40,10 +44,13 @@ title: orzoDreamJournal
 tags:
 position: -138,-170
 ---
-<<if Check_Collected("Orzo_Dream_Journal") == false>>
+<<if Check_Collected("Orzo_Dream_Journal") == false && Check_Read("stelleIntro") == true>>
+    Penne: Surely Orzo wouldn't mind if I took a peak? This is for work, after all! Highly professional stuff. 
     Penne: Dangnabbit, it's all gibberish and crazy-talk! I can only make out the words "escape", "true memory", and "did I leave the oven on?".  
     <<set $newItem to "Orzo_Dream_Journal">>
     <<jump addEntry>>
+<<elseif Check_Read("stelleIntro") == false>>
+    Penne: I should go talk to Stelle first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -53,10 +60,12 @@ title: orzoCloset
 tags:
 position: 124,-16
 ---
-<<if Check_Collected("Orzo_Closet") == false>>
+<<if Check_Collected("Orzo_Closet") == false && Check_Read("stelleIntro") == true>>
     Penne: This closet is seriously messy and an even messier, hastily packed suitcase. Vacation time...?
     <<set $newItem to "Orzo_Closet">>
     <<jump addEntry>>
+<<elseif Check_Read("stelleIntro") == false>>
+    Penne: I should go talk to Stelle first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -66,10 +75,12 @@ title: fishbowl
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Fish_Bowl_Hand") == false>>
+<<if Check_Collected("Fish_Bowl_Hand") == false && Check_Read("stelleIntro") == true>>
     Penne: Hey there... fishie... hand... thing...?
     <<set $newItem to "Fish_Bowl_Hand">>
     <<jump addEntry>>
+<<elseif Check_Read("stelleIntro") == false>>
+    Penne: I should go talk to Stelle first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -79,7 +90,7 @@ title: timling1
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Buff_Timling") == false>>
+<<if Check_Collected("Buff_Timling") == false && Check_Read("stelleIntro") == true>>
     Penne: WOAH. Little dude, you are RIPPED!
     Buff Timling: Psh yeah I lift. Like, everyday. Think you got the guns to lift...me?
     Penne: Why do you want me to lift you?
@@ -95,7 +106,9 @@ position: 300,-101
             <<Collect_Timling obj_timling1>> 
         -> Leave Buff Timling
             Penne: Uh, I think I'll pass. I'll live with my nerd arms, thanks.
-            Buff_Timling: Ok, BETA. Guess I'll have to find my way by myself.  
+            Buff_Timling: Ok, BETA. Guess I'll have to find my way by myself.
+<<elseif Check_Read("stelleIntro") == false>>
+    Penne: I should go talk to Stelle first and then come back to, uh, this guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -104,7 +117,7 @@ title: timling2
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Tape_Timling") == false>>
+<<if Check_Collected("Tape_Timling") == false && Check_Read("stelleIntro") == true>>
     Penne: Uh...hi? What are you doing in Orzo's wall?
     Tape Timling: Take...me...with...you...
     Penne: But why?
@@ -118,6 +131,8 @@ position: 300,-101
         -> Leave Tape Timling
             Penne: Sorry, but I'm really busy right now!
             Tape Timling: Tape eternal...being lost...inevitable...
+<<elseif Check_Read("stelleIntro") == false>>
+    Penne: I should go talk to Stelle first and then come back to, uh, this guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
