@@ -15,14 +15,12 @@ position: 40,-174
         <<jump question_neroBloodyShears>>
     -> Ask Nero about the Confession Log Book <<if Check_Collected("Confession_Log_Book")>>
         <<jump question_confessionLogbook>>
-    -> Ask Nero about the matching handwriting of the Confession Log Book and Myterious Letter <<if Check_Collected("Mysterious_Letter")>>
+    -> Ask Nero about the matching handwriting of the Log Book and Letter <<if Check_Collected("Mysterious_Letter")>>
         <<jump question_matchingHandwriting>>
     -> Ask Nero about the Will <<if Check_Collected("The_Will")>>
         <<jump question_aboutWill>>    
-
     -> I'm done.
         Nero: Feel free to look around.
-
 <<endif>>
 ===
 

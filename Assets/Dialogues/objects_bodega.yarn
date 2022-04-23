@@ -138,17 +138,17 @@ tags:
 ---
 <<if Check_Collected("MounTimDew_Timling") == false>>
     Penne: Another one? By golly, you guys get lost easily. 
-    MounTimDew_Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
+    MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
-            MounTimDew_Timling: You're the besht! Wanna sip?
+            MounTimDew Timling: You're the besht! Wanna sip?
             <<set $newItem to "MounTimDew_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_3>>
             //make timling disappear from room
         -> Leave MounTimDew Timling
             Penne: Sorry, buddy. Maybe next time...
-            MounTimDew_Timling: (Sad sigh and gurgling soda noises)
+            MounTimDew Timling: (Sad sigh and gurgling soda noises)
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -159,18 +159,18 @@ tags:
 ---
 <<if Check_Collected("Sassy_Timling") == false>>
     Penne: Hey there! See anything suspicious?
-    Sassy_Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
+    Sassy Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
         -> Take Timling
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
-            Sassy_Timling: Nice. 
-            Sassy_Timling: Got any games in your journal?
+            Sassy Timling: Nice. 
+            Sassy Timling: Got any games in your journal?
             <<set $newItem to "Sassy_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_4>>
             //make timling disappear from room
         -> Leave Timling
             Penne: Uh, no thanks. The loser's life's for me.
-            Sassy_Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
+            Sassy Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>

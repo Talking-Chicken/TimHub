@@ -2019,7 +2019,7 @@ MonoBehaviour:
   _startNode: timling3
   collider: {fileID: 2677655512577144109}
   entryList:
-  - entryName: MounTimDew_Timling
+  - entryName: MounTimDew Timling
     entryDes: A strange, small, and squishy creature that looks like Tim. Looks like
       he's guarding the MounTim Dew.
     entryImage: {fileID: 288297130416697159, guid: 16804eed98b315944817232d93631107, type: 3}
@@ -5506,7 +5506,7 @@ MonoBehaviour:
   _startNode: timling4
   collider: {fileID: 2458840938548427173}
   entryList:
-  - entryName: Sassy_TImling
+  - entryName: Sassy TImling
     entryDes: A strange, small, and squishy creature that looks like Tim. This guy's
       a sassy fella.
     entryImage: {fileID: -6956929644041464537, guid: 16804eed98b315944817232d93631107, type: 3}

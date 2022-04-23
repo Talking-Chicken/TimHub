@@ -55,6 +55,8 @@ Rigatoni: ...I may require backup for my backup. //Rigatoni Annoyed
 //setting bool for player reading the intro/first convo to true
 <<Set_Read rigatoni_introread>>
 
+<<jump RigatoniTest>>
+
 ===
 
 title: question_investigationSoFar

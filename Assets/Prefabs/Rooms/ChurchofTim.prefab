@@ -774,7 +774,7 @@ MonoBehaviour:
   - entryName: Bloody Altar
     entryDes: A bloody altar. I assume maybe the Church of Tim has religious sacrifices
       of some sort, or at least I hope so.
-    entryImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    entryImage: {fileID: 4203767568837603619, guid: 71f50436b7461f847bae3498be87c9e9, type: 3}
     entryType: 0
 --- !u!61 &4689079871980588744
 BoxCollider2D:
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   - entryName: Confession Booth
     entryDes: A confession booth found in the Church of Tim. It's private and quiet
       in there.
-    entryImage: {fileID: 21300000, guid: 8bf41901b468c9b4896d5c79c647d3c8, type: 3}
+    entryImage: {fileID: 21300000, guid: 085c7b01bc4c9ee408f4654dad33d808, type: 3}
     entryType: 0
 --- !u!60 &5852558115413343071
 PolygonCollider2D:
@@ -1740,7 +1740,7 @@ MonoBehaviour:
   - entryName: Church Organ
     entryDes: 'A church organ with strange Tim-like iconography. There are Timling-looking
       figures made of ivory on top. '
-    entryImage: {fileID: 21300000, guid: f00e9b9e5b3f6214fb30e8c05a4226e4, type: 3}
+    entryImage: {fileID: -3752594301158657335, guid: 71f50436b7461f847bae3498be87c9e9, type: 3}
     entryType: 0
 --- !u!60 &8220925095540678348
 PolygonCollider2D:
@@ -2740,18 +2740,18 @@ MonoBehaviour:
   - entryName: Nero di Seppia
     entryDes: A priest from the Church of Tim. Good gardener with great handwriting.
       Told me he didn't come in contact with the victim when he was murdered.
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 0fb5d40c4d093014aa7c2a3c3c62d586, type: 3}
     entryType: 1
   - entryName: Nero di Seppia Update
     entryDes: Turns out he DID meet with Orzo the night he was killed! Why would
       Nero lie about that to me?
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 0fb5d40c4d093014aa7c2a3c3c62d586, type: 3}
     entryType: 1
   - entryName: Nero di Seppia New Alibi
     entryDes: Apparently Orzo's father died in a hit-and-run, but how did Nero know
       this? Also, he keeps saying that there's a path to salvation...something about
       a light burning to reveal it. I should investiagte further with this information.
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 0fb5d40c4d093014aa7c2a3c3c62d586, type: 3}
     entryType: 1
 --- !u!61 &2305988484311658745
 BoxCollider2D:

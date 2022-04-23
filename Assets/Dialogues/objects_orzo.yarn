@@ -81,12 +81,12 @@ position: 300,-101
 ---
 <<if Check_Collected("Buff_Timling") == false>>
     Penne: WOAH. Little dude, you are RIPPED!
-    Buff_Timling: Psh yeah I lift. Like, everyday. Think you got the guns to lift...me?
+    Buff Timling: Psh yeah I lift. Like, everyday. Think you got the guns to lift...me?
     Penne: Why do you want me to lift you?
-    Buff_Timling: Cause I'm LOST and I'm tryna get found. 
-    Buff_Timling: Also, if you wanna get swole I suggest you try finding all of me and my alpha bros!
+    Buff Timling: Cause I'm LOST and I'm tryna get found. 
+    Buff Timling: Also, if you wanna get swole I suggest you try finding all of me and my alpha bros!
     Penne: Find all of you and then do what, exactly?
-    Buff_Timling: Get FOUND! And JACKED! What do you say brah?
+    Buff Timling: Get FOUND! And JACKED! What do you say brah?
         -> Take Buff Timling
             Penne: Let's get BEEFY. Come with me, bro!
             Buff_Timling: Gains, gains, gains! Gains all day, EVERY day!
@@ -106,18 +106,18 @@ position: 300,-101
 ---
 <<if Check_Collected("Tape_Timling") == false>>
     Penne: Uh...hi? What are you doing in Orzo's wall?
-    Tape_Timling: Take...me...with...you...
+    Tape Timling: Take...me...with...you...
     Penne: But why?
-    Tape_Timling: Got...lost...became one...with tape...help me...
+    Tape Timling: Got...lost...became one...with tape...help me...
         -> Take Tape Timling
             Penne: Ok! I'll stick you to my jacket!
-            Tape_Timling: Thank...you...
+            Tape Timling: Thank...you...
             <<set $newItem to "Tape_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling2>>
         -> Leave Tape Timling
             Penne: Sorry, but I'm really busy right now!
-            Tape_Timling: Tape eternal...being lost...inevitable...
+            Tape Timling: Tape eternal...being lost...inevitable...
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
