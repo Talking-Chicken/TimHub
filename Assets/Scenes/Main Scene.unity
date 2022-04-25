@@ -2444,7 +2444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9.44
-  myAnimator: {fileID: 0}
+  myAnimator: {fileID: 1034750829}
   hoveringObj: {fileID: 0}
   interactingObj: {fileID: 0}
   runner: {fileID: 938455774}
