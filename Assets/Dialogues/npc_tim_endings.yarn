@@ -1,0 +1,34 @@
+﻿title: npc_tim_endings
+tags:
+position: -8,-105
+---
+
+<<if function() == 0>>
+    <<jump End0>>
+<<elseif function() == 1>>
+    <<jump End1>>
+<<elseif function() == 2>>
+    <<jump End2>>
+<<endif>>
+===
+//GOOD ENDING
+title: End0 
+tags:
+position: -134,43
+---
+
+===
+//NEUTRAL ENDING
+title: End1
+tags:
+position: -6,107
+---
+
+===
+//BAD ENDING
+title: End2 
+tags:
+position: 129,36
+---
+
+===

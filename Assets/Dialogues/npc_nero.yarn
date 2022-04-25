@@ -16,9 +16,7 @@ position: 40,-174
     -> Ask Nero about the Confession Log Book <<if Check_Collected("Confession_Log_Book")>>
         <<jump question_confessionLogbook>>
     -> Ask Nero about the matching handwriting of the Log Book and Letter <<if Check_Collected("Mysterious_Letter")>>
-        <<jump question_matchingHandwriting>>
-    -> Ask Nero about the Will <<if Check_Collected("The_Will")>>
-        <<jump question_aboutWill>>    
+        <<jump question_matchingHandwriting>> 
     -> I'm done.
         Nero: Feel free to look around.
 <<endif>>
@@ -136,36 +134,4 @@ Penne: Yes...definitely.
 Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
 
 <<Add_Entry journal Nero_di_Seppia_New_Alibi>>
-
-===
-
-title: question_aboutWill
-position: -228,206
----
-
-Penne: Where is Rigatoni? What is this will to Parapadelle Parmesan? You know obstruction of justice is a crime, right?
-Nero: I don't know what that is…I've never seen it before. You took something from a sacred place. Put it back at once.
-Penne: You were right. It's unfortunate, what happened to Stelle.
-Nero: She's been perfectly fine and healthy. What are you talking about?
-Penne: You mentioned some unfortunate news about Orzo's family. Stelle is the only family Orzo has here. But now you say she was fine?
-Nero: ...What's your point?
-Penne: It wasn't her you were talking about—you were talking about Orzo's Dad. How else could you have known about his Dad's death? 
-Penne: The only way is that you could have known that is if you knew about the will this WHOLE TIME! You HID IT!
-Nero: N-Nonsense! Orzo mentioned it in passing when he came to confess!
-Penne: But you said you found out in a different way—it was not included in the log book!
-Penne: Orzo couldn't have known his Dad died in a hit-and-run because he never received the will, according to your delivery man—the only person who handles these things! 
-Penne: How else could you have known about it if you hadn't known about the will?
-Nero: ... //nero losing his cool, looking menacing
-Penne: Orzo was last seen on Timsday and the latest we know was here with you because you sent this letter to him. 
-Penne: Why did you lie? What's the REAL REASON you asked Orzo to come?
-Nero: He remembered things he shouldn't have. Looked where he shouldn't have. 
-Nero: So curious, that one. 
-Nero: Too curious. 
-Nero: He strayed from the path of salvation, but surely now he is better.
-Penne: Again with this path of salvation! What IS it?
-Nero: You're about to find out.
-
-//this is where a Cutscene is triggered/audio of Nero pushing and locking Penne in the secret room!
-//then, this should trigger to the next room, Secret Sacrificial room automatically!
-
 ===
