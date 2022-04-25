@@ -2863,6 +2863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9.44
   hoveringObj: {fileID: 0}
+  primaryMouseButton: 0
+  secondaryMouseButton: 1
   interactingObj: {fileID: 0}
   runner: {fileID: 938455774}
   journalContainer: {fileID: 1315632215}

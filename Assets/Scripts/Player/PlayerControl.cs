@@ -13,6 +13,9 @@ public class PlayerControl : MonoBehaviour
     //mouse detection
     [SerializeField] private GameObject hoveringObj;
 
+    //control
+    [SerializeField, BoxGroup("Control")] private int primaryMouseButton, secondaryMouseButton;
+
     //dialogue
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
     [BoxGroup("Dialgoue")] public DialogueRunner runner;
@@ -26,6 +29,8 @@ public class PlayerControl : MonoBehaviour
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
     public JournalControl Journal {get {return journal;}}
     public GameObject HoveringObj {get => hoveringObj; set => hoveringObj = value;}
+    public int PrimaryMouseBuotton {get => primaryMouseButton; set => primaryMouseButton = value;}
+    public int SecondaryMouseButton {get => secondaryMouseButton; set => secondaryMouseButton = value;}
 
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
@@ -122,5 +127,11 @@ public class PlayerControl : MonoBehaviour
         transform.position = new Vector3(destination.x, destination.y, transform.position.z);
         Camera.main.transform.position = new Vector3(destination.x, destination.y, Camera.main.transform.position.z);
         Destination = destination;
+    }
+
+    public void switchMouseButton() {
+        int temp = PrimaryMouseBuotton;
+        PrimaryMouseBuotton = SecondaryMouseButton;
+        SecondaryMouseButton = temp;
     }
 }

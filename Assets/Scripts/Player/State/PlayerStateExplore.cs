@@ -10,7 +10,20 @@ public class PlayerStateExplore : PlayerStateBase
     public override void updateState(PlayerControl player){
         InteractiveObj interactingObj = null;
 
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) {
+        if (Input.GetMouseButtonDown(player.PrimaryMouseBuotton) || Input.GetMouseButton(player.PrimaryMouseBuotton)) {
+            // RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            // if (hit.collider != null) {
+            //     Debug.Log("hit something");
+            //     if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
+            //         Debug.Log("hit interactive object");
+            //         interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
+            //     }
+            // }
+            // else 
+                player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
+        if (Input.GetMouseButtonDown(player.SecondaryMouseButton)) {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null) {
                 Debug.Log("hit something");
@@ -19,8 +32,6 @@ public class PlayerStateExplore : PlayerStateBase
                     interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
                 }
             }
-            else 
-                player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
         //start dialogue first, then interact
