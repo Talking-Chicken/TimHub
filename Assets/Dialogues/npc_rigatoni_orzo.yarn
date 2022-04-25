@@ -56,6 +56,7 @@ position: -204,-292
 Penne: Rigatoni! It's so good to see you. I missed seeing you at Head Quarters! //Penne Happy
 Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
 Penne: You called for help...so here I am! //Penne Happy
+<<Play_SFX SoundManager Pocky_Cat>>
 Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
 Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused
 Penne: Haha...well, yes...looks like you aren't our best detective for nothing...

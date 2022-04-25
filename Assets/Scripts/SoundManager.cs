@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
                 SFXSource.clip = SFX.clip;
                 SFXSource.loop = false;
                 SFXSource.Play();
-                break;
+                return;
             }
         }
         Debug.LogWarning("cannot find audio clip with name "+newName);
