@@ -11,11 +11,12 @@ position: -8,-105
     <<jump End2>>
 <<endif>>
 ===
-//GOOD ENDING
+//TRUE ENDING; DO THIS LAST
 title: End0 
 tags:
 position: -134,43
 ---
+
 
 ===
 //NEUTRAL ENDING
@@ -23,7 +24,68 @@ title: End1
 tags:
 position: -6,107
 ---
+Penne: *Penne presents the evidence she founds to Tim and Nero...*
+Penne: And that concludes my case.
+Tim: ...Oh.
+Tim: Oh wow!! You figured it out. Excellent work, Detective Dreadful.
+Penne: Really?! I-I mean, YES. I did!
+Nero: If only her had quietly complied... If only he had stayed six feet under...!
+Penne: You murderer...
+Nero: Orzo Parmesan's sacriligious treachery was a threat to Timsville! He could've continued on the right path, the Path of Tim, but once he started to remember his past he couldn't stay away from it.
+Nero: I lured him to the Church... I offered him a false escape, and the moment he acceted the plan, I knew he was too far gone. He could no longer be saved.
+Penne: All he wanted was to return to the life you took away from him!
+Nero: To show him the path to salvation. Those who choose to stray must be shepherded back to Tim and pay the price for their sins.
+Tim: I do love sheep.
+Nero: A path that you, Penne, must take, now that you know the truth.
+Penne: Now wait just a minute— WHAT?
+Tim:...
+Tim: Well, she did solve the case correctly.
+Nero: You mean to let her live, my Lord?
+Tim: With some conditions, yes. Penne Scout, for solving this case and entertaining me with your wit—
+Penne: Thank you.
+Tim: —you can keep your memories, but you must stay in Timsville forever. Or, you can leave Timsville unscathed, but you won't remember a single thing about it.
+Penne: What about Rigatoni?
+Tim: She'll stay or leave with you. I'd hate to separate the two of you. Loneliness is a terrible, awful feeling — one I know all too well...
+Penne: Something you know?
+Tim: What good are my godly powers to bend time and space if there is nobody to share it with? I am without family and friends, unlike you humans. Timsville is all I have, and I would do anything to keep it that way.
+Penne: That was unexpected. And... sad.
+Tim: By humanity's standards, I may be morally bankrupt, but I have a heart, too. Sort of.
+Nero: Our Lord is ever so merciful. You should be kissing the floor he crawls on, ingrate!
+Tim: Oh please don't. I haven't vacuumed this place in a while.
+Penne: Stay in Timsville with Toni forever, knowing I solved the biggest ever... or leave with Toni without a single memory of what may be the biggest break in my career...
+Tim: The choice is yours, Detective Dreadful.
+-> Stay in Timsville
+    <<jump stayInTimsville>>
+-> Leave Timsville
+    <<jump leaveTimsville>>
+===
+title: stayInTimsville
+---
+Penne: ...I choose to stay.
+Tim: Wonderful choice. You'll never be sad or lonely again here. And most of all, congratultions on solving the case, detective.
+Tim: Welcome to Timsville.
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: Toni and I move into Orzo's apartment. We're the senior detectives for Timsville's Detective agency, and today's the first anniversary of the agency. I don't know how to feel about that.
+Penne: I'm far from happy, but at least I have Rigatoni. She's safe. Happy, I think. I try not to think about it.
+Penne: What if I had done things differently? What if there was a way for us to leave safely with our memories, a way to convince Tim he didn't have to keep people trapped in Timsville, that he was never alone to begin with?
+Penne: What would Rigatoni have done?
+Penne: ...What does she truly think of me now?
+Penne: I'll never know. I don't think I deserve to know. I've made my choice already. And now I must say I've never been happier.
 
+===
+title: leaveTimsville
+---
+Penne: ...I choose to leave.
+Tim: Very well. You may go once I finish erasing your memories. Please hold still — it's hard to do it if you get squirmy.
+Tim: ...
+Penne: AHHHHHH...Ah?
+Tim: Well, this is just embarassing.
+Nero: The mind control isn't working on her. She has a particular immunity to your powers... Awfully annoying.
+Tim: I see. I hope you don't mind if we take more extreme measures.
+Penne: Wha—
+Tim: Congratulations on solving the case, detective.
+Tim: It's a shame you won't remember any of it.
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
 ===
 //BAD ENDING
 title: End2 
