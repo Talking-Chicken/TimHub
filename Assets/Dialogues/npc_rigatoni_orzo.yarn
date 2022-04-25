@@ -56,15 +56,18 @@ position: -204,-292
 Penne: Rigatoni! It's so good to see you. I missed seeing you at Head Quarters! //Penne Happy
 Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
 Penne: You called for help...so here I am! //Penne Happy
-Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective.
-Penne: The one and only, reporting for duty! I assure you that no matter how dangerous this case is, I'll see it to the end with you. 
-Rigatoni: Really now. The bureau sent me an amateur, and said amateur is telling me all this. How relieved I am. Truly.
-Penne: I'm serious! You can count on me for anything and everything. I promise you.
+Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
 Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused
 Penne: Haha...well, yes...looks like you aren't our best detective for nothing...
 Rigatoni: I knew the bureau had its cowards, but right when I request for backup...this is simply embarrasing. 
-Penne: Don't worry. I'm armed with my wits and puns! My memories are crystal clear too!
-Rigatoni: Hmm. Good. At least we have one thing going for this case. 
+Penne: Don't worry. We'll find evidence, get truthful alibis, and solve the murder of Orzo Parmesan. 
+Rigatoni: At least you did your research. Did the bureau give you any other pieces of information about the case I sent them?
+Penne: Yes! The corpse autopsy, the case brief, and what we know so far about the murder are all filed away in my journal right here. 
+Rigatoni: Be sure to look through the information you have now before questioning anyone or examining evidence. We want to make informed decisions here.
+Penne: Of course! I've got my journal, my wits, and my puns! As long as I have those and your big beautiful brain, there's nothing we can't solve!
+Rigatoni: Unfortunately, that may not be enough to solve this case. Timsville has a strange effect on outsiders as well. 
+Penne: You mean with the memory loss? I remember being briefed on that before I got here. I haven't forgotten anything so far since I arrived. It's crystal clear up here!
+Rigatoni: Hmm. Good. At least we have one thing going for this case. Perhaps the bureau sent more competent back up than I had previously assumed.
 Penne: Together, nothing is im-pasta-ble! Haha, get it? //Penne Happy
 Rigatoni: ...I may require backup for my backup. //Rigatoni Annoyed
 
@@ -95,8 +98,8 @@ Rigatoni: Pardon me?
 Penne: Everyone at work calls me Detective Dreadful...it's a nickname I'm not the proudest of, haha...
 Rigatoni: How unprofessional and immature. You should have a word with HR. 
 Penne: Aw...I'm touched! This is why you're the bestest in all of our department!
-Rigatoni: S-Stop that! Get back to work.
-Rigatoni: And bestest is NOT a real word!
+Rigatoni: S-Stop that! We are working, in case you have forgotten. Save that for someone else. 
+Rigatoni: ...And bestest is NOT a real word!
 
 //setting bool for player reading the investigation convo to true
 // <<Set_Read rigatoni_investigationread>>
@@ -108,7 +111,7 @@ title: question_rigatoniForgetfulness
 position: -6,123
 ---
 //player can ask about Rigatoni's forgetfulness. This is the first hint at her deterioration!
-Penne: I heard through your letter that ever since you came to Timsville, you've been more forgetful? //Penne Neutral
+Penne: I heard that ever since you came to Timsville, you've been more forgetful? //Penne Neutral
 Rigatoni: I hate to admit it, but yes. For some reason, ever since I set foot in this town, I have experienced small lapses in my memory. //Rigatoni Serious
 Penne: That's so unlike you! You're usually as sharp as a tack. //Penne Shocked
 Rigatoni: We need to bring justice to Orchiette Parmagiano quickly before things take a turn for the worse. //Rigatoni Serious
