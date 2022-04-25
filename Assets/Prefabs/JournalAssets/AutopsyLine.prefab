@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 332.0009, y: 0}
-  m_SizeDelta: {x: 616.0018, y: 0}
+  m_AnchoredPosition: {x: 24, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6972070623553371982
 CanvasRenderer:
@@ -163,7 +163,6 @@ GameObject:
   - component: {fileID: 4006289954446904205}
   - component: {fileID: 847913323609901088}
   - component: {fileID: 329262861816582795}
-  - component: {fileID: 6280420093392240363}
   m_Layer: 5
   m_Name: AutopsyLine
   m_TagString: Untagged
@@ -284,17 +283,3 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 4, y: 4}
   m_UseGraphicAlpha: 1
---- !u!114 &6280420093392240363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8018991235697465962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929d57d4cd40d444a9e4eefb3e62a91c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  dropdown: {fileID: 0}
