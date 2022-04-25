@@ -83,7 +83,7 @@ public class PlayerControl : MonoBehaviour
         currentState.updateState(this);
         Animate();
         
-        //Debug.Log(Vector2.Distance(transform.position, Destination) <= 0.1f);
+        Debug.Log(Vector2.Distance(transform.position, Destination));
         
     }
 
@@ -104,8 +104,8 @@ public class PlayerControl : MonoBehaviour
         float moveX = 0f;
         float moveY = 0f;
 
-        moveX = movingPos.x;
-        moveY = movingPos.y;
+        moveX = destination.x;
+        moveY = destination.y;
         moveDir = new Vector3(moveX, moveY).normalized;
 
         transform.position = Vector2.Lerp(transform.position, movingPos, 0.5f);;
@@ -138,7 +138,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     void Animate() {
-        myAnimator.SetFloat("moveX", moveDir.x);
+        myAnimator.SetFloat("moveX", -moveDir.x);
         myAnimator.SetFloat("moveY", moveDir.y);
         myAnimator.SetFloat("moveMagnitude",  Vector2.Distance(transform.position, Destination));
     }
