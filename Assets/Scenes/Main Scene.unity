@@ -4059,30 +4059,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: useFadeEffect
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5973304710701887872, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5973304710701887872, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5973304710701887872, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5973304710701887872, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5973304710701887872, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6192342561213899268, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_Name
       value: CharaDialogueBox
@@ -4129,34 +4105,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6192342561213899269, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6994914287042196542, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6994914287042196542, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6994914287042196542, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 950.5613
-      objectReference: {fileID: 0}
-    - target: {fileID: 6994914287042196542, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 723.28064
-      objectReference: {fileID: 0}
-    - target: {fileID: 6994914287042196542, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -118.14415
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178607737342426284, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_Colors.m_NormalColor.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8148270197237216733, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
