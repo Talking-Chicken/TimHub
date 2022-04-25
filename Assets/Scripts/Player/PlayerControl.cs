@@ -83,7 +83,7 @@ public class PlayerControl : MonoBehaviour
         currentState.updateState(this);
         Animate();
         
-        Debug.Log(Vector2.Distance(transform.position, Destination));
+        //Debug.Log(Vector2.Distance(transform.position, Destination));
         
     }
 
@@ -101,11 +101,13 @@ public class PlayerControl : MonoBehaviour
             myRenderer.flipX = true;
         else
             myRenderer.flipX = false;*/
+
+        Vector2 direction = new Vector2(movingPos.x - transform.position.x, movingPos.y - transform.position.y);
         float moveX = 0f;
         float moveY = 0f;
 
-        moveX = destination.x;
-        moveY = destination.y;
+        moveX = direction.x;
+        moveY = direction.y;
         moveDir = new Vector3(moveX, moveY).normalized;
 
         transform.position = Vector2.Lerp(transform.position, movingPos, 0.5f);;
@@ -138,7 +140,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     void Animate() {
-        myAnimator.SetFloat("moveX", -moveDir.x);
+        myAnimator.SetFloat("moveX", moveDir.x);
         myAnimator.SetFloat("moveY", moveDir.y);
         myAnimator.SetFloat("moveMagnitude",  Vector2.Distance(transform.position, Destination));
     }
