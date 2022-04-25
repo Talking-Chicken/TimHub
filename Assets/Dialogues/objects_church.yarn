@@ -50,20 +50,6 @@ position: 300,-101
 <<endif>>
 ===
 
-title: dadWill
-tags:
-position: 300,-101
----
-<<if Check_Collected("The_Will") == false>>
-    Penne: Hold up, what's this? "The Last Will and Testament of Pappardelle Parmesan." 
-    Penne: According to this will, Pappardelle was Orzo's dad! Was Orzo sent this will before he died? Why is it hidden here?
-    <<set $newItem to "The_Will">>
-    <<jump addEntry>>
-<<else>>
-    Penne: I already recorded this evidence!
-<<endif>>
-===
-
 title: confessionBooth
 tags:
 ---
