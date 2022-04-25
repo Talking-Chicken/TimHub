@@ -11,34 +11,55 @@ position: -228,206
 Penne: Hold up, what's this? "The Last Will and Testament of Pappardelle Parmesan." 
 Penne: According to this will, Pappardelle was Orzo's dad! Was Orzo sent this will before he died? Why is it hidden here?
 Penne: This looks really important... I'm gonna add it to my journal now. 
-Penne: I also need to find Nero and ask about the will. If he obstructed evidence...
-Nero: I'm right here.
+<<set $newItem to "The_Will">>
+<<Add_Entry journal {$newItem}>>
+Penne: I also need to find Nero and ask about the will. If he hid evidence that's a crime! 
+//NERO ENTERS THE RING. SUSSY
+Nero: ...What are you doing here?
 Penne: OH! H-hello. Eh-hem. 
 Penne: So what is this will to Parapadelle Parmesan? You know obstruction of justice is a crime, right?
-Nero: I don't know what that is…I've never seen it before. You took something from a sacred place. Put it back at once.
-Penne: You were right. It's unfortunate, what happened to Stelle.
-Nero: She's been perfectly fine and healthy. What are you talking about?
-Penne: You mentioned some unfortunate news about Orzo's family. Stelle is the only family Orzo has here. But now you say she was fine?
-Nero: ...What's your point?
-Penne: It wasn't her you were talking about—you were talking about Orzo's Dad. How else could you have known about his Dad's death? 
-Penne: The only way is that you could have known that is if you knew about the will this WHOLE TIME! You HID IT!
-Nero: N-Nonsense! Orzo mentioned it in passing when he came to confess!
-Penne: But you said you found out in a different way—it was not included in the log book!
-Penne: Orzo couldn't have known his Dad died in a hit-and-run because he never received the will, according to your delivery man—the only person who handles these things! 
-Penne: How else could you have known about it if you hadn't known about the will?
-Nero: ... //nero losing his cool, looking menacing
-Penne: Orzo was last seen on Timsday and the latest we know was here with you because you sent this letter to him. 
-Penne: Why did you lie? What's the REAL REASON you asked Orzo to come?
+Nero: I don't know what that is….I've never seen it before. You took something from a sacred place. Put it back at once!
+Penne: (He's avoiding the question, but I've got him right where I want him. I think I know how to get him to tell me the truth.)
+Nero: Are you listening to me? I understand justice must be served, but this is highly sacriligeous. Offensive, even. 
+Penne: You were right, you know. When you told me about that accident in Orzo's family earlier when I showed you the Log Book? It's unfortunate, what happened to Stelle.
+Nero: Stelle Parmesan? I don't understand what you mean. She's been perfectly fine and healthy, free of any ailments as far as I'm aware.
+Penne: But you mentioned some unfortunate news about Orzo's family. Stelle is the only family Orzo has here. But now you say she was fine?
+Nero: ...
+Penne: Unless you lied to me? But why would you lie to me and hide the journal? 
+Nero: ...
+Penne: What else are you hiding, Nero?
 Nero: He remembered things he shouldn't have. Looked where he shouldn't have. 
 Nero: So curious, that one. 
 Nero: Too curious. 
 Nero: He strayed from the path of salvation, but surely now he is better.
 Penne: Again with this path of salvation! What IS it?
 Nero: You're about to find out.
-<<set $newItem to "The_Will">>
-<<Add_Entry journal {$newItem}>>
-===
+//TIM ENTERS THE RINNNNNNG
+Tim: You called?
+Penne: ACK! Wh-what? Where did you come from? 
+
 
 //tim show up, talks from here
 //shows the evidence
 //goes to tim's yarn for endings
+
+Penne: Unless you KNEW something that no one else should have, unless they had this will.
+Nero: Where are you going with this?
+Penne: It wasn't Stelle you were talking about—you were talking about Orzo's father! How else could you have known about his Dad's death? 
+Penne: The only way is that you could have known about that accident is if you knew AND read the will this WHOLE TIME! You HID the will from me! 
+Nero: N-Nonsense! Orzo mentioned it in passing when he came to confess! Yes, that's right. 
+Penne: But you said you found out in a different way, not as a confession—it was not included in the Log Book! 
+Penne: Which is strange to me since you would think Orzo would confess his feelings about the death of his Dad and the contents of the will.
+Penne: ...unless he didn't know about it because you hid it from him?
+Nero: You dare accuse me of all the lies? Detective, this is not a game. This is real life. Investigating this matter further will endanger you.
+Penne: You don't scare me. You know why? Because I have proof that Orzo couldn't have access to the will and the details of his dad's death.
+Penne: Orzo couldn't have known his Dad died in a hit-and-run because he never received the will, according to your delivery man—the only person who handles these things! 
+Nero: The delivery man...? Ugh, Radiatore al Forno...
+Penne: He was a witness to seeing you and someone else taking away something that was sent to Orzo from NFZ. 
+Penne: Looks like you weren't too careful, because he did pick up something ELSE that was sent to him...
+Nero: ... //nero losing his cool, looking menacing
+Penne: The letter. Orzo was last seen on Timsday and the latest we know was here with you because you sent this letter to him. Didn't you?
+Penne: Why did you lie? What's the REAL REASON you asked Orzo to come?
+
+
+===
