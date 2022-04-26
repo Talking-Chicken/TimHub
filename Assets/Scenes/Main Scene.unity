@@ -3116,6 +3116,22 @@ PrefabInstance:
       value: VictimHouse
       objectReference: {fileID: 0}
     - target: {fileID: 1654365736705857551, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9702617
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654365736705857551, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6343223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654365736705857551, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0071463585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654365736705857551, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.62659895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654365736705857551, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0
       objectReference: {fileID: 0}
