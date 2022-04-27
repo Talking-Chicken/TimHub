@@ -5797,6 +5797,13 @@ MonoBehaviour:
   SFXAudios:
   - clipName: Pocky Cat
     clip: {fileID: 8300000, guid: e0a9e3a275795154eb911e6603f21fc7, type: 3}
+  BGMAudios:
+  - clipName: Bodega Music
+    clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
+  - clipName: Church Music
+    clip: {fileID: 8300000, guid: b056c5ccaf3cee64c8aa80dd97a6c2f4, type: 3}
+  - clipName: Orzo Room Music
+    clip: {fileID: 8300000, guid: 5d08122eee706c346ac998ed7b28332b, type: 3}
 --- !u!82 &1804511611
 AudioSource:
   m_ObjectHideFlags: 0
