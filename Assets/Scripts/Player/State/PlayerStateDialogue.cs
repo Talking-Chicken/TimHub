@@ -18,6 +18,7 @@ public class PlayerStateDialogue : PlayerStateBase
                 player.runner.GetComponentInChildren<LineView>().UserRequestedViewAdvancement();
             }
         }
+        player.dialogueControl.changePortrait();
         player.canvasGroup.alpha = 1;
     }
 

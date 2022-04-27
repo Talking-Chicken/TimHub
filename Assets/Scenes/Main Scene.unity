@@ -5618,7 +5618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: useFadeEffect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 567900512731755973, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_Enabled
