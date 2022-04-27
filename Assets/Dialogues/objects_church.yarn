@@ -51,7 +51,7 @@ title: confessionBook
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Confession_Log_Book") == false>>
+<<if Check_Collected("Confession_Log_Book") == false && Check_Read("neroIntro") == true>>
     Penne: This is Nero's logbook of confessions. The entries from before Timsday are... about Orzo!
     Penne: Looks like he talked more about his strange dreams, and about having "a life before Timsville" and "doubts about the sanctity of Tim."
     Penne: According to this, Nero's advice was to pray and believe in Tim to guide him.
@@ -60,6 +60,8 @@ position: 300,-101
     Penne: I should definitely confront Nero about this. 
     <<set $newItem to "Confession_Log_Book">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -68,10 +70,12 @@ position: 300,-101
 title: confessionBooth
 tags:
 ---
-<<if Check_Collected("Confession_Booth") == false>>
+<<if Check_Collected("Confession_Booth") == false && Check_Read("neroIntro") == true>>
     Penne: A confession booth. Looks really well padded and cushy. A perfect place to rant!
     <<set $newItem to "Confession_Booth">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -80,10 +84,12 @@ tags:
 title: churchOrgan
 tags:
 ---
-<<if Check_Collected("Church_Organ") == false>>
+<<if Check_Collected("Church_Organ") == false && Check_Read("neroIntro") == true>>
     Penne: How grand! Too bad I quit learning piano after, like, a month. They're the same, right...?
     <<set $newItem to "Church_Organ">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -92,10 +98,12 @@ tags:
 title: bloodyAltar
 tags:
 ---
-<<if Check_Collected("Bloody_Altar") == false>>
+<<if Check_Collected("Bloody_Altar") == false && Check_Read("neroIntro") == true>>
     Penne: What is all this blood doing here!? I hope it's from an animal sacrifice or something...
     <<set $newItem to "Bloody_Altar">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -105,7 +113,7 @@ title: timling5
 tags:
 position: 282,33
 ---
-<<if Check_Collected("Teeth_Timling") == false>>
+<<if Check_Collected("Teeth_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Uh...hey! Are you ok? Where did you get those?
     Teeth Timling: Lost...so lost...the teeth tell me the truth...help me be...found?
         -> Take Teeth Timling
@@ -119,6 +127,8 @@ position: 282,33
         -> Leave Teeth Timling
             Penne: Um...sorry. Maybe next time?
             Teeth Timling: Next time...but how long must I wait?
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this little guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -128,7 +138,7 @@ title: timling6
 tags:
 position: 282,33
 ---
-<<if Check_Collected("No_Thoughts_Timling") == false>>
+<<if Check_Collected("No_Thoughts_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Hi there little fella. Are you lost?
     No Thoughts Timling: I got lost on the path of salvation. I don't think I have the attention span for it. Take me with you instead!
         -> Take No Thoughts Timling
@@ -141,6 +151,8 @@ position: 282,33
         -> Leave No Thoughts Timling
             Penne: Sorry...maybe next time. 
             No Thoughts Timling: My abandonment issues are flaring up...it aches! The angst is too much for my empty head...
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this little guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>

@@ -31,6 +31,7 @@ Penne: Nice ta meet you, Nero! Can I ask you some questions about Orzo and the t
 Nero: Of course. I'm happy to tell you anything you need to know.
 
 <<Set_Read neroIntro>>
+<<jump neroScript>>
 ===
 
 title: question_neroAlibi
@@ -44,7 +45,7 @@ Nero: Of course. Everyone has something to confess.
 
 //add Nero's first alibi
 <<Add_Entry journal Nero_di_Seppia>>
-
+<<jump neroScript>>
 ===
 
 title: question_aboutGarden
@@ -62,7 +63,7 @@ Penne: It's been on my mind lately, and I don't know how to approach the issue!
 Nero: Continue...
 Penne: So basically—WAIT! I'm here to do my job, not talk about my problems! Man, you're GOOD at this.
 Nero: I try.
-
+<<jump neroScript>>
 ===
 
 title: question_mysteriousLetter
@@ -75,7 +76,7 @@ Penne: I'm the one asking the questions here!
 Nero: I've never seen that letter before. Terribly sorry. Lovely handwriting though.
 Penne: Oh, yeah. Really great penmanship.
 Nero: Agreed. 
-
+<<jump neroScript>>
 ===
 
 title: question_neroBloodyShears
@@ -93,7 +94,7 @@ Nero: Everyone knows this and has access to them—not just me.
 Penne: But why?
 Nero: Community gardening is a way we all bond. 
 Penne: Of course it is. 
-
+<<jump neroScript>>
 ===
 
 title: question_confessionLogbook
@@ -108,7 +109,7 @@ Penne: Excuses aside, what happened?
 Nero: He came to me first, like usual, confessed, and then left. But he came frequently speaking of strange dreams, another life, etc. He's been doing it so often I didn't think it out of the ordinary.
 
 <<Add_Entry journal Nero_di_Seppia_Update>>
-
+<<jump neroScript>>
 ===
 
 title: question_matchingHandwriting
@@ -132,6 +133,6 @@ Nero: He came to me looking to make peace with the loss. Hopefully, Orzo has fou
 Nero: May the light burn at our darkest hour to reveal the mystic path to Salvation.
 Penne: Yes...definitely. 
 Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
-
+<<jump neroScript>>
 <<Add_Entry journal Nero_di_Seppia_New_Alibi>>
 ===
