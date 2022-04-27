@@ -1199,6 +1199,7 @@ GameObject:
   - component: {fileID: 6192342561213899269}
   - component: {fileID: 938455774}
   - component: {fileID: 938455776}
+  - component: {fileID: 345782691}
   m_Layer: 0
   m_Name: CharaDialogueBox
   m_TagString: Untagged
@@ -1246,7 +1247,19 @@ MonoBehaviour:
   verboseLogging: 1
   onNodeStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 345782691}
+        m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
+        m_MethodName: changePortrait
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onNodeComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -1270,6 +1283,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showDebug: 0
   debugTextView: {fileID: 0}
+--- !u!114 &345782691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6192342561213899268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7940100f9ab5dba4daf6b4c84bfdd2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueNameText: {fileID: 567900510996186644}
+  portraitImage: {fileID: 5521259352609601660}
+  penneDefault: {fileID: 21300000, guid: 60fea96cf9b92fc419aadf451afec541, type: 3}
+  radiatorDefault: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
+  RigatoniDefault: {fileID: 21300000, guid: e4b9e7239fd66ef4a8a49af599168cfa, type: 3}
+  stelleDefault: {fileID: 21300000, guid: fd9cf6535c2a4b7499c5f82b85183642, type: 3}
+  timDefault: {fileID: 21300000, guid: 19fba00d6bf88d24ca1b0f14cc9aef85, type: 3}
+  portraitDefault: {fileID: 21300000, guid: 76692ff8164d5fc4b913b7b039adc522, type: 3}
 --- !u!1 &6530467890658221114
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,8 @@ public class PlayerControl : MonoBehaviour
 
     //dialogue
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
-    [BoxGroup("Dialgoue")] public DialogueRunner runner;
+    [BoxGroup("Dialogue")] public DialogueRunner runner;
+    [BoxGroup("Dialogue")] public DialogueControl dialogueControl;
 
     //journal
     [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
