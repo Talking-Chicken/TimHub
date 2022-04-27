@@ -4,12 +4,15 @@ position: -6,-71
 ---
 <<if Check_Read("rigatoniChurchIntro") == false>>
     <<jump rigatoniChurchIntro>>
-<<elseif Check_Read("rigatoniChurchQuestions") == false>> //check read for church questions/
-    <<jump rigatoniChurchQuestions>>
+<<elseif Check_Read("rigatoniChurchIntro") == true>> 
+    -> Ask about any other details about the church
+        <<jump question_church>>
+    -> Convince Rigatoni to help solve the case
+        <<jump question_forgetfulness>>
+    -> Ask what Rigatoni will do 
+        <<jump rigatoniInvestigate>>
     -> I'm done.
-    Rigatoni: See ya!
-<<elseif Check_Read("rigatoniChurchIntro") == true || Check_Read("rigatoniChurchQuestions") == true>>>>
-   <<jump rigatoniInvestigate>>
+        Rigatoni: Praise Tim. 
 <<endif>>
 ===
 title: rigatoniChurchIntro
@@ -17,58 +20,79 @@ tags:
 position: -2,45
 ---
 //intro to church
-Penne: So this is the Church of Tim... Tim seems to be an important person in this town, huh. Do you know who he is, Toni?
-Rigatoni: Tim is... our lord and savior. Our indubitable leader. The unquestionable sovereign of all of Timsville!
-Penne: ...
-Penne: O-oh, is that so? Are you sure about that?
-Rigatoni: Of course I'm sure! I certainly hope you're not questioning our unquestionable soverign, Praise Tim.
-Penne: No, I-I'm not! But is that really what you believe?
-Rigatoni: Absolutimly. And you believe it, too, Pen, I know you do!
-Penne: She called me Pen..! Something really must be wrong!
-<<Set_Read rigatoniBodegaIntro>>
-
-===
-
-title: rigatoniChurchQuestions
-tags: 
-position: -190,-11
----
--> What's up with this Church?
-    <<jump question_church>>
--> How come you're forgetting everything..?
-    <<jump question_forgetfulness>>
-
+Penne: So this is the Church of Tim... There are a lot of gardens outside we had to go through! Looks like a lot of hard work to maintain them.
+Rigatoni: So fragile are forms of life. They require guidance. It is apt that Tim is a ruler who can provide that.
+Penne: Tim seems to be a worshipped person in this town, huh. Got any other information on him Toni?
+Rigatoni: Tim has ascended far past a human life form. He is a powerful entity who has graced us with his presence as our lord and savior. 
+Penne: ...Uh-huh. 
+Rigatoni: Tim, our indubitable leader. The unquestionable sovereign of all of Timsville. 
+Rigatoni: He fills the Void in our hearts, for he is the Void. All-consuming, burning light that shows the path to salvation.
+Penne: O-oh, is that so? Are you sure about that? 
+Rigatoni: I have never been more sure of something in my life. 
+Penne: Haha, good one, Toni! You don't really believe Tim is some higher power, right? 
+Rigatoni: He is. I certainly hope you are not questioning our holy god.
+Penne: No, I-I'm not! But is that really what you think now?
+Rigatoni: Absolutimly. And you believe it too, Pen. I know you do. You would not have made it this far without his mercy.
+Penne: (She called me Pen..! Something really must be wrong!)
+Rigatoni: Pen, investigate all you want, but do it quickly. I shall remain here. 
+Penne: What? But why? We're here to solve the case together! Find the truth of who killed—
+Rigatoni: Do not speak of sinful things in these hallowed halls! 
+Penne: Ok...just let me know if you want to help me with the case. Or even tell me "Get back to work"! That's fine too...
+Rigatoni: The case means nothing compared to the glory of Tim. Letting the case go has made room for something greater: Tim. I hope you will come to realize that yourself. 
+Penne: (The memory loss must have taken complete control of Rigatoni! She can't seem to remember who she is or why she's here!)
+Penne: (I remember being told that people from the outside forget things, but this is like she's being brainwashed to believe she's a citizen of Timsville too.)
+Penne: (This is really bad. I need to hurry and talk to the witness, collect evidence, and solve this case fast before she gets even worse!)
+<<Set_Read rigatoniChurchIntro>>
+<<jump rigatoniChurch>>
 ===
 
 title: question_church
 tags: 
 position: -190,-11
 ---
-Penne: So... What can you tell me about the Church?
-Rigatoni: It is the place of worship to Tim. The center of Timsville. The holiest grounds to have ever been graced by his holiness, Praise Tim.
+Penne: So... Is there anything else you can tell me about the Church?
+Rigatoni: It is the place of worship to Tim. The center of Timsville. The holiest grounds to have ever been graced by his holiness.
 Penne: O-Oh, is it really..? That seems... okay... I guess...
-
+Penne: But what about its relevance to the case? You know, our jobs? You love work, Rigatoni!
+Rigatoni: It would be disrespectful in a place of worship to discuss such mundane matters.
+Penne: But that's why we're here!
+Rigatoni: Really? Well, Tim precedes all other matters in importance. 
+Rigatoni: If you wish to pray together, let me know. Prayers to Tim cannot be done alone, for Tim loathes loneliness. 
+Penne: Sure...thanks a lot, Rigatoni. 
+Penne: (Holy gnocchi. I don't think I can get any help from Rigatoni at this point.)
+Penne: (I couldn't get through to her even when enticing her with her favorite thing in the world: work!)
+Penne: (Looks like I'm on my own at this point. But that's ok—I can do it for us!)
+<<jump rigatoniChurch>>
 ===
 
 title: question_forgetfulness
 tags: 
 position: -190,-11
 ---
-Penne: How are you feeling, Toni? Do you feel like you're forgetting anything else?
-Rigatoni: What? Forgetting what, Pen?
-Penne: Do you... remember why we're here? The case? The murder?!
-Rigatoni: Case? Murder? There are no cases of anything, here. No murders in such a wonderful place!
-
+Penne: Toni, please! I need your help to solve this case. I feel like we're really onto something here!
+Rigatoni: Ugh...not now. My head...
+Penne: Oh no, how are you feeling Toni? 
+Rigatoni: The pain shall pass for Tim shall guide me through it.
+Penne: Umm, well, do you feel up to solving anything yet?
+Rigatoni: What? Solving what, Pen?
+Penne: You know. The case? The murder of Orzo Parmesan?!
+Rigatoni: Case? Murder? Pen, please. Not here. That is highly uncouth to speak of something like that here.
+Penne: But Toni!
+Rigatoni: Enough. I do not want to hear anymore about the case. 
+Penne: Ok...
+Penne: (It's no use. It's not even that she's forgotten the case: she refuses to have anything to do with it!)
+<<jump rigatoniChurch>>
 ===
 
 title: rigatoniInvestigate
 tags: 
 position: -190,-11
 ---
-Penne: Toni! Toniiiii! What are you doing?
+Penne: So...Toni...what are you planning to do while I solve this case?
 Rigatoni: "...from the fairest creatures on Tim's green earth, sprouts the luscious pale figure of His seraphic physique..."
-Penne: She's writing... a sonnet to Tim? O-or is it... fanfiction?!
+Penne: (She's writing... a sonnet to Tim?)
 Rigatoni:"...Know thy self and thy mind, for He will eat of thy limbs and extremeties..."
-Penne: ...I'll leave her alone for now.
-
+Penne: (O-or is it... fanfiction?!)
+Penne: (It seems that she's too enraptured in her writing. I'll leave her alone...)
+<<jump rigatoniChurch>>
 ===

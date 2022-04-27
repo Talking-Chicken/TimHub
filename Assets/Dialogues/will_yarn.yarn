@@ -13,7 +13,8 @@ Penne: This looks really important... I'm gonna add it to my journal now.
 <<set $newItem to "The_Will">>
 <<Add_Entry journal {$newItem}>>
 Penne: I also need to find Nero and ask about the will. If he hid evidence that's a crime! 
-//NERO ENTERS THE RING. SUSSY
+//NERO ENTERS THE RING. SUSSY - Enable Nero's sprite
+//door opening sfx
 Nero: ...What are you doing here?
 Penne: OH! H-hello. Eh-hem. 
 Penne: So what is this will to Parapadelle Parmesan? You know obstruction of justice is a crime, right?
@@ -33,7 +34,7 @@ Nero: Too curious.
 Nero: He strayed from the path of salvation, but surely now he is better.
 Penne: Again with this path of salvation! What IS it?
 Nero: You're about to find out.
-//TIM ENTERS THE RINNNNNNG
+//TIM ENTERS THE RINNNNNNG - Enable Tim's sprite, but opacity goes fromm 0 to 100%
 //tim show up, talks from here
 Tim: Honey, I'm home!
 Penne: ACK!

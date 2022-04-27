@@ -4,20 +4,32 @@ position: 300,-101
 ---
 <<if Check_Collected("Church_Candle") == false>>
     Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
-    Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
-    Penne: Hmmm... Maybe the painting can be moved somehow?
+    Penne: There's something written on the bottom. 
+    Penne: "By the light that burns through the Tim, may the path to salvation be revealed." 
+    Penne: Hmmm...there seems to be something BEHIND thhis painting!
+    Penne: The light that burns through reveals something...maybe this painting leads somewhere important!
 <<else>>
     <<if Check_Read("Painting_Burned") == false>>
-        -> use candle
+    Penne: Yeah, there's definitely something behind this painting.
+    Penne: This candle could be used to burn it. 
+    Penne: Arson is a crime, but this could lead to something big for the case!
+        -> Use candle to burn the painting
             <<Burn_Painting obj_renaissanceTim>>
             <<Set_Read Painting_Burned>>
-        -> maybe latter
+            Penne: FOR JUSTICE!
+            //tim painting BURNSSSS
+        -> Maybe commit arson later 
+            Penne: Maybe I shouldn't be burning things...
+            Penne: Yet.
+            Penne: I'll take another look around for anything else. 
     <<endif>>
     <<if Check_Read("Painting_Burned") == true>>
-        Penne: A hole appears behind painting!
-        -> go into the hole
+        Penne: Woah, a secret entrance appeared behind painting!
+        Penne: Once I enter, there's no going back. 
+        -> Enter the void (Penne cannot return to the Church if she enters the void.)
             <<Room_Change GameManager>>
-        -> maybe latter
+        -> Maybe later 
+            Penne: I'll take another look around for anything else. 
     <<endif>>
 <<endif>>
 ===
@@ -26,10 +38,13 @@ title: churchCandle
 tags:
 position: 300,-101
 ---
-Penne: It looks useful!
--> pick up
+Penne: The flame looks really strong. I should be careful—it could potentially burn something!
+Penne: This candle might be useful for me. Should I pick it up?
+-> Pick the candle up
+    Penne: Ok! Now, where could I use this to help me...?s
     <<Pick_Up_Candle obj_churchCandle>>
--> maybe latter
+-> Don't pick the candle up
+    Penne: Hmm. Maybe I'll pick it up later. 
 ===
 
 title: confessionBook

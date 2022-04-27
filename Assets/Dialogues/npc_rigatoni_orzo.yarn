@@ -12,7 +12,7 @@ position: -1,-117
         <<jump question_rigatoniForgetfulness>> 
     -> Ask about the new partnership together <<if Check_Read("rigatoni_partnership") == false>>
         <<jump question_ourNewPartnership>>
-    -> Show Rigatoni evidence collected so far <<if Check_Read("rigatoni_stelleAlibiShown") == false && Check_Read("stelleIntro") == true>> //<<if player has collected anything>>
+    -> Show Rigatoni evidence collected so far <<if Check_Read("rigatoni_stelleAlibiShown") == false && Check_Read("stelleIntro") == true && Check_Collected("Bodega_Receipt") || Check_Collected("Orzo_Dream_Journal") || Check_Collected("Fish_Bowl_Hand")>> //<<if player has collected anything>>
         <<jump question_aboutItems>>
     -> Show Rigatoni Stelle's new alibi <<if Check_Collected("Stelle_Parmesan_Alibi_Update") && Check_Read("rigatoni_stelleAlibiShown") == false>>
             <<jump go_to_bodega>>
