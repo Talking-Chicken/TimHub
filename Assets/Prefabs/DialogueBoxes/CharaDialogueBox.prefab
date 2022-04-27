@@ -489,9 +489,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 567900512731755973}
-  useFadeEffect: 0
-  fadeInTime: 0
-  fadeOutTime: 0
+  useFadeEffect: 1
+  fadeInTime: 0.1
+  fadeOutTime: 0.1
   lineText: {fileID: 567900512421781114}
   showCharacterNameInLineView: 1
   characterNameText: {fileID: 567900510996186644}
@@ -862,7 +862,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1866963942424614091}
   optionViewPrefab: {fileID: 7178607737342426284}
   lastLineText: {fileID: 567900512421781114}
-  fadeTime: 0
+  fadeTime: 0.1
   showUnavailableOptions: 0
 --- !u!114 &3865215780636305389
 MonoBehaviour:
