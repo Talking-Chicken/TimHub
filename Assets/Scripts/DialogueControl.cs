@@ -42,7 +42,7 @@ public class DialogueControl : MonoBehaviour
                 break;
             default:
                 portraitImage.sprite = portraitDefault;
-                Debug.Log("default");
+                Debug.Log("default portrait used, check whether dialogue control spelled name correctly");
                 break;
         }
     }

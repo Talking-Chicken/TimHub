@@ -2962,6 +2962,7 @@ MonoBehaviour:
   interactingObj: {fileID: 0}
   runner: {fileID: 938455774}
   dialogueControl: {fileID: 345782691}
+  canvasGroup: {fileID: 1403703764}
   journalContainer: {fileID: 1315632215}
   journal: {fileID: 194212326}
   blurCamera: {fileID: 1891784918}
@@ -5298,6 +5299,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 579100912551039011, guid: 8fad3d541d627544d801673aade47a12, type: 3}
   m_PrefabInstance: {fileID: 1340167382}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &1403703764 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 567900512731755973, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+  m_PrefabInstance: {fileID: 1552282803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1452337643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5609,6 +5615,14 @@ PrefabInstance:
     - target: {fileID: 938455774, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: useFadeEffect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 567900512731755973, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6192342561213899268, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_Name

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using NaughtyAttributes;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PlayerControl : MonoBehaviour
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
     [BoxGroup("Dialogue")] public DialogueRunner runner;
     [BoxGroup("Dialogue")] public DialogueControl dialogueControl;
+    [BoxGroup("Dialogue")] public CanvasGroup canvasGroup;
 
     //journal
     [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
