@@ -86,11 +86,41 @@ Penne: Wha—
 Tim: Congratulations on solving the case, detective.
 Tim: It's a shame you won't remember any of it.
 //BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: One year later, Toni and I are back in the New Fork Ziti Bureau of Investigation. 
+Penne: Nothing much has changed since Rigatoni and I came back from Timsville. We both remember that Timsville exists, but... we don't remember what happened there. 
+Penne: The case files are empty. It's hard to explain, but all the files pertaining to the Timsville case is missing information.
+Penne: Even more mysteriously, Timsville itself seems to have disappeared. The bureau had no choice but to permanently close the case.
+Penne: Ever since we got back, I've felt a strange emptiness. Loneliness. Maybe it's because I always wonder, what did we leave behind in Timsville? What did we forget? 
+Penne: Was there a way for us to leave with our memories? Negotiated with whoever we faced? 
+Penne: I can't shake the feeling that maybe if I had done things differently, we would have been better off. Happier, even. But I guess I'll never know for sure.
 ===
 //BAD ENDING
 title: End2 
 tags:
 position: 129,36
 ---
-
+Penne: *Penne presents the evidence she founds to Tim and Nero...*
+Penne: And that concludes my case.
+Tim: Oh... I hate to be "that guy," but you got it wrong.
+Penne: No! This was my chance to prove to my boss, to the bureau, and to Toni!
+Tim: Terribly sorry, but you failed, so you and Detective Ragu get to stay here... forever!
+Tim: Though, I do take slight offense at the idea that this is a punishment. We're all happy, it's never lonely, and...
+Tim: ...you won't have anything to miss from your old life once I'm done!
+Penne: AHHHHHHH!
+Penne: ...
+Penne: Ahhhhhhh..?
+Tim: Well, that's just embarrassing?
+Nero: The mind control doesn't work on her. She has a particular immunity to your powers... awfully annoying.
+Tim: I see. I hope you don't mind then if we take more extreme measures?
+Penne: Wha—
+Tim: Don't be disheartened, detective. You may have failed...
+Tim: ...but a position has opened up in Timsville, just for you.
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: Toni and I moved into Orzo's old home. We've redecorated it with awards we've gotten for being "the best detectivesin Timsville".
+Penne: We're senior detectives for Timsville's Detective agency, and today's the first year anniversary of it's initial opening.
+Penne: It's hard work, but I've finally achieved my dream of being the best detective with the love of my life.
+Penne: There was a time before Timsville... I know there was. I can sometimes feel something at the back of my head.
+Penne: Sometimes I wonder, if I had done things differently before, would I be as happy as I am now?
+Penne: I guess I'll never know, and I don't want to know! And I'll never need to know, because I have everything I've ever wanted.
+Penne: I've never been happier!
 ===
