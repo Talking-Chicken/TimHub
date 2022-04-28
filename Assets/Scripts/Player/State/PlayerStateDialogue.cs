@@ -14,8 +14,8 @@ public class PlayerStateDialogue : PlayerStateBase
         if (Input.GetMouseButtonDown(0)) {
             if (player.HoveringObj == null || !player.HoveringObj.tag.Equals("Blocker")) {
                 //player.dialogueControl.changePortrait();
-                //player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
-                player.runner.GetComponentInChildren<LineView>().UserRequestedViewAdvancement();
+                player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
+                //player.runner.GetComponentInChildren<LineView>().UserRequestedViewAdvancement();
             }
         }
         player.dialogueControl.changePortrait();
@@ -28,5 +28,6 @@ public class PlayerStateDialogue : PlayerStateBase
     }
     public override void leaveState(PlayerControl player) {
         player.previousState = this;
+        player.canvasGroup.alpha = 0;
     }
 }

@@ -9,26 +9,15 @@ public class PlayerStateExplore : PlayerStateBase
     }
     public override void updateState(PlayerControl player){
         InteractiveObj interactingObj = null;
-
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if (Input.GetMouseButtonDown(player.PrimaryMouseBuotton) || Input.GetMouseButton(player.PrimaryMouseBuotton)) {
-            // RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            // if (hit.collider != null) {
-            //     Debug.Log("hit something");
-            //     if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
-            //         Debug.Log("hit interactive object");
-            //         interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
-            //     }
-            // }
-            // else 
+            if (hit.collider == null || !hit.collider.tag.Equals("Blocker"))
                 player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
         if (Input.GetMouseButtonDown(player.SecondaryMouseButton)) {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null) {
-                Debug.Log("hit something");
                 if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
-                    Debug.Log("hit interactive object");
                     interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
                 }
             }
@@ -36,9 +25,6 @@ public class PlayerStateExplore : PlayerStateBase
 
         //start dialogue first, then interact
         if (interactingObj != null) {
-            //for test first, add its entry to journal
-            //player.Journal.addEntry(interactingObj.Entry);
-
             if (interactingObj.IsInteractFirst) {
                 interactingObj.interact();
                 interactingObj.talk();
