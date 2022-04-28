@@ -22,6 +22,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: d7da8e5d2c3f3436b81e847f98416fdd, type: 3}
   - {fileID: 6391573757903218779, guid: 0f52b7af0bee9e44c88b5e52fce5497e, type: 3}
   - {fileID: 6391573757903218779, guid: 8471eaf0931d846f4b469148d8499308, type: 3}
+  - {fileID: 6391573757903218779, guid: 2aa0ec8713d2f4a0e9584a0a13383aae, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $variable
