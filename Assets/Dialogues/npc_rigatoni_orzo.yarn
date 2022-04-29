@@ -20,6 +20,7 @@ position: -1,-117
         Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
             -> Yes, let's go!
                 <<Room_Change GameManager>>
+                <<Move_And_Talk_To Player Rigatoni_Bodega>>
             -> Hmm, not yet.
                 Rigatoni: Hmph. Let me know when you are ready to leave, then.
     -> I'm done.
@@ -161,6 +162,7 @@ position: 200,157
     Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
 -> Yes, let's go!
     <<Room_Change GameManager>>
+    <<Move_And_Talk_To Player Rigatoni_Bodega>>
 -> Hmm, not yet.
     Rigatoni: Hmph. Let me know when you are ready to leave, then.
     <<Set_Read rigatoni_stelleAlibiShown>>

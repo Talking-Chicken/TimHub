@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField, Range(3.0f,15.0f), BoxGroup("Movement")] private float speed;
+    [SerializeField, BoxGroup("Movement")] private bool isForcedToMove = false;
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
     public Animator myAnimator;
@@ -24,10 +25,13 @@ public class PlayerControl : MonoBehaviour
     [BoxGroup("Dialogue")] public DialogueRunner runner;
     [BoxGroup("Dialogue")] public DialogueControl dialogueControl;
     [BoxGroup("Dialogue")] public CanvasGroup canvasGroup;
+    private InteractiveObj targetingDialogueNPC;
 
     //journal
     [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
     [SerializeField, BoxGroup("Journal")] private JournalControl journal;
+
+    [SerializeField] private InteractiveObj NPCTOTALK;
 
     //getters & setters
     public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
@@ -36,6 +40,8 @@ public class PlayerControl : MonoBehaviour
     public GameObject HoveringObj {get => hoveringObj; set => hoveringObj = value;}
     public int PrimaryMouseBuotton {get => primaryMouseButton; set => primaryMouseButton = value;}
     public int SecondaryMouseButton {get => secondaryMouseButton; set => secondaryMouseButton = value;}
+    public InteractiveObj TargetingDialogueNPC {get => targetingDialogueNPC;}
+    public bool IsForcedToMove {get => isForcedToMove; set => isForcedToMove = value;}
 
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
@@ -83,6 +89,7 @@ public class PlayerControl : MonoBehaviour
         changeState(stateExplore);
         myRenderer = GetComponent<SpriteRenderer>();
         _destination = transform.position;
+        moveAndTalkTo("Rigatoni");
     }
 
     void Update()
@@ -91,6 +98,8 @@ public class PlayerControl : MonoBehaviour
         currentState.updateState(this);
         Animate();
         
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+            waitMoveAndTalkTo("Rigatoni");
         //Debug.Log(Vector2.Distance(transform.position, Destination));
         
     }
@@ -156,5 +165,42 @@ public class PlayerControl : MonoBehaviour
         myAnimator.SetFloat("moveX", moveDir.x);
         myAnimator.SetFloat("moveY", moveDir.y);
         myAnimator.SetFloat("moveMagnitude",  Vector2.Distance(transform.position, Destination));
+    }
+
+
+    [YarnCommand("Move_And_Talk_To")]
+    public void waitMoveAndTalkTo(string NPCName) {
+        StartCoroutine(waitToMove(NPCName));
+    }
+
+    public void moveAndTalkTo(string NPCName) {
+        InteractiveObj[] NPCs = FindObjectsOfType<InteractiveObj>();
+        foreach(InteractiveObj NPC in NPCs) {
+            if (NPC.name.Equals(NPCName)) {
+                targetingDialogueNPC = NPC;
+                isForcedToMove = true;
+                if (runner.IsDialogueRunning)
+                    runner.Stop();
+                changeState(stateExplore);
+            }
+        }
+    }
+
+    public void moveAndTalkTo(InteractiveObj NPC) {
+        if (NPC.IsTalkable) {
+            Vector2 NPCPos = NPC.transform.position;
+            Vector2 playerPos = transform.position;
+            Vector2 unit = (playerPos-NPCPos).normalized;
+            Destination = NPCPos + (unit * 1.5f);
+        }
+        if (Vector2.Distance(transform.position, Destination) <= 0.1f) {
+            NPC.talk();
+            isForcedToMove = false;
+        }
+    }
+
+    IEnumerator waitToMove(string NPCName) {
+        yield return new WaitForSeconds(2.0f);
+        moveAndTalkTo(NPCName);
     }
 }

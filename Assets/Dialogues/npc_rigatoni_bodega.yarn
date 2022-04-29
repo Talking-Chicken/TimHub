@@ -51,6 +51,7 @@ title: go_to_church
 Rigatoni: Have you finished your snooping?
 -> Yes, let's go!
     <<Room_Change GameManager>>
+    <<Move_And_Talk_To Player npc_rigatoni_church>>
 -> Hmm, not yet.
     Rigatoni: Keep on snooping on, then.
 ===

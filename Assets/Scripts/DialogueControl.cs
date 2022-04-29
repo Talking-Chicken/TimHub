@@ -10,7 +10,7 @@ public class DialogueControl : MonoBehaviour
     [SerializeField, BoxGroup("Dialogue GUI")] TextMeshProUGUI dialogueNameText; 
     [SerializeField, BoxGroup("Dialogue GUI")] Image portraitImage;
     [SerializeField, Foldout("Portraits")] 
-    Sprite penneDefault, radiatorDefault, RigatoniDefault, stelleDefault, timDefault, neroDefault, portraitDefault; 
+    Sprite penneDefault, radiatorDefault, RigatoniDefault, stelleDefault, timDefault, neroDefault, orzoDefault, portraitDefault; 
 
     /* show portrait of the talking character, if there's one.
        if there's not, show default portrait*/
@@ -33,6 +33,9 @@ public class DialogueControl : MonoBehaviour
                 break;
             case "nero":
                 portraitImage.sprite = neroDefault;
+                break;
+            case "orzo":
+                portraitImage.sprite = orzoDefault;
                 break;
             default:
                 portraitImage.sprite = portraitDefault;

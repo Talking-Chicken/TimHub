@@ -15,26 +15,30 @@ public class PlayerStateExplore : PlayerStateBase
                 player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (Input.GetMouseButtonDown(player.SecondaryMouseButton)) {
-            if (hit.collider != null) {
-                if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
-                    interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
+        if (!player.IsForcedToMove) {
+            if (Input.GetMouseButtonDown(player.SecondaryMouseButton)) {
+                if (hit.collider != null) {
+                    if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
+                        interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
+                    }
                 }
             }
-        }
 
-        //start dialogue first, then interact
-        if (interactingObj != null) {
-            if (interactingObj.IsInteractFirst) {
-                interactingObj.interact();
-                interactingObj.talk();
-            }
-            else {
-                if (interactingObj.IsTalkable)
-                    interactingObj.talk();
-                if (interactingObj.IsInteractable)
+            //start dialogue first, then interact
+            if (interactingObj != null) {
+                if (interactingObj.IsInteractFirst) {
                     interactingObj.interact();
-            }    
+                    interactingObj.talk();
+                }
+                else {
+                    if (interactingObj.IsTalkable)
+                        interactingObj.talk();
+                    if (interactingObj.IsInteractable)
+                        interactingObj.interact();
+                }    
+            }
+        } else {
+            player.moveAndTalkTo(player.TargetingDialogueNPC);
         }
     }
 
@@ -47,7 +51,7 @@ public class PlayerStateExplore : PlayerStateBase
         //stop player moving
         player.Destination = player.transform.position;
         player.blurCamera.SetActive(true);
-
+        
         player.previousState = this;
     }
 }
