@@ -52,6 +52,7 @@ public class PlayerControl : MonoBehaviour
     public PlayerStateExplore stateExplore = new PlayerStateExplore();
     public PlayerStateDialogue stateDialogue = new PlayerStateDialogue();
     public PlayerStateJournal stateJournal = new PlayerStateJournal();
+    public PlayerStatePause statePause = new PlayerStatePause();
 
     public void changeState(PlayerStateBase newState) {
         if (currentState != null)
@@ -62,7 +63,7 @@ public class PlayerControl : MonoBehaviour
         currentState = newState;
 
         if (currentState != null)
-        {  
+        {
             currentState.enterState(this);
         }
     }
@@ -78,7 +79,7 @@ public class PlayerControl : MonoBehaviour
     public void changeToJournalState() {changeState(stateJournal);}
     public void changeToPreviousState() {
         if (previousState != null)
-            changeState(previousState);
+            StartCoroutine(waitToChangeState(previousState));
         else
             changeToExploreState();
     }
@@ -101,6 +102,9 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5))
             waitMoveAndTalkTo("Rigatoni");
         //Debug.Log(Vector2.Distance(transform.position, Destination));
+        if (!currentState.Equals(statePause))
+            if (Input.GetKeyDown(KeyCode.P))
+                changeState(statePause);
         
     }
 

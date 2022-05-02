@@ -41,4 +41,9 @@ public class CharacterManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         NPC.SetActive(false);
     }
+
+    [YarnCommand("Camera_Lerp_To")]
+    public void cameraLerpTo(GameObject target) {
+        Camera.main.GetComponent<CameraMovement>().followTransform = target.transform;
+    }
 }
