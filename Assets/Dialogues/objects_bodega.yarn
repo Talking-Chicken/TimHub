@@ -78,22 +78,8 @@ position: 30s0,-101
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
-// ===
 
-// title: Bloody_Shears
-// tags:
-// position: 300,-101
-// ---
-// //not in the scene, no code for this guy yet
-// <<if Check_Collected("Bloody_Gardening_Shears") == false>>
-//     Penne: Shears that look like Tim. It's not marinara covering these shears...
-//     <<set $newItem to "Bloody_Gardening_Shears">>
-//     <<jump addEntry>>
-// <<else>>
-//     Penne: I already recorded this evidence!
-// <<endif>>
 ===
-//done
 title: Spearmint_Toothpaste
 tags:
 position: 300,-101
@@ -106,7 +92,6 @@ position: 300,-101
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-//done
 title: Charcoal_Toothpaste
 tags:
 position: 300,-101
@@ -119,7 +104,6 @@ position: 300,-101
     Penne: I already recorded this evidence!
 <<endif>>
 ===
-//done
 title: Mint_Toothpaste
 tags:
 position: 300,-101
