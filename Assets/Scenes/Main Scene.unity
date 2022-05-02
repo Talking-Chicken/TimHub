@@ -10603,6 +10603,28 @@ MonoBehaviour:
   SFXAudios:
   - clipName: Pocky Cat
     clip: {fileID: 8300000, guid: e0a9e3a275795154eb911e6603f21fc7, type: 3}
+  - clipName: Fwog
+    clip: {fileID: 8300000, guid: a01f1b60892fe4d44bd37a080ecb25cc, type: 3}
+  - clipName: Bodega Receipt
+    clip: {fileID: 8300000, guid: 2af721a4df8b1c04f982405b8ffe6992, type: 3}
+  - clipName: Blankie Boy
+    clip: {fileID: 8300000, guid: 101d2cc151e87496c8431d6867c0d674, type: 3}
+  - clipName: Scottish Fish
+    clip: {fileID: 8300000, guid: df0eeb20debe00544968e36de4cd1f39, type: 3}
+  - clipName: Ham Dugo
+    clip: {fileID: 8300000, guid: fad1717c3954e4a668b6b239b5ccd532, type: 3}
+  - clipName: Bodega Register
+    clip: {fileID: 8300000, guid: e7e71fa120f1c439cb2a12a4624b35d0, type: 3}
+  - clipName: Church Organ
+    clip: {fileID: 8300000, guid: 2d14df46cab9f4062bcf4e08b07ee836, type: 3}
+  - clipName: Fishbowl
+    clip: {fileID: 8300000, guid: de09fdcab2ac44d889b8a1e576f2de8f, type: 3}
+  - clipName: Orzo Closet
+    clip: {fileID: 8300000, guid: 3c6f16a908b144274b1b74318f13d717, type: 3}
+  - clipName: Orzo Tim Painting
+    clip: {fileID: 8300000, guid: a3c2b64945aa146c0ad797aa6d75724c, type: 3}
+  - clipName: Toothpaste
+    clip: {fileID: 8300000, guid: e879563f5eb7c4f6f9442b9907011fe2, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}

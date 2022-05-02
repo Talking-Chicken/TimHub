@@ -16,6 +16,8 @@ position: -14,-216
         <<jump question_aboutJob>>
     -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true>>
         <<jump question_corpseShipment>>
+    -> Ask about the talking tooth <<if Check_Read("question_radiatoreWisdomTooth") == false>>
+        <<jump question_radiatoreWisdomTooth>>
     -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
     -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
@@ -31,6 +33,19 @@ Penne: Hello! I'm Penne Dreadful, and I'm investigating the case of Orzo Paremsa
 Radiatore: I ah, I don't mind. Yes, g-go ahead. 
 Penne: Well, first off, what's your name, sir?
 Radiatore: I'm, ah... Radiatore Al F-Forno.
+Penne: Nice ta meetcha, Radiatore! What are you doing here in the Bodega?
+Radiatore: I'm usually always here when I'm off-duty. There aren't many places to hang out here. Plus the food is good.
+Penne: I don't see much food in here. It seems pretty... sparse, for a Bodega.
+Radiatore: Whadya mean? It's chock full of goodies! Everything handpicked by Tim, ordered and delivered by me. 
+Penne: Handpicked by Tim... Does anyone else work here, then?
+Radiatore: Ah— N-no, no one else. It's only—
+Wisdom_Tooth: EH-HEM!
+//Camera lerp to Wisdom Tooth talking here
+Wisdom_Tooth: Thou dares deny the presence of the almighty Wisdom Tooth! Thou dares to diminish my pivotal role in the Bodega of Timsville!
+Penne: AAH! You— You're a talking tooth!
+Radiatore: H-hey, shut up, Tooth! What has Nero told you about barging into other people's conversations?!
+Wisdom_Tooth: ...Harumph!
+Radiatore: Sorry, ahha, i-ignore him. Do you, uh, still want to ask me questions?
 ===
 
 title: question_radiatoreWrongAlibi
@@ -116,4 +131,16 @@ Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful
 <<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
 <<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
+===
+
+title: question_radiatoreWisdomTooth
+position: 244,98
+---
+//more on the wisdom tooth
+Penne: So what's the deal with that tooth guy?
+Radiatore: A-Ah, the Wisdom Tooth? He's always been here. I heard that he used to be one of Tim's teeth.
+Penne: Whoa, Tim must be a pretty big guy... I'll go chat with them once we're done here!
+Radiatore: Y-you really don't have to talk to them you know! Ahaha, he might be a wise tooth but he... couldn't have seen anything important...
+Penne: Hmmmmm. I'll make that decision for myself!
+<<Set_Read question_radiatoreWisdomTooth>>
 ===
