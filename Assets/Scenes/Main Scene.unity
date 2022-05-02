@@ -3393,6 +3393,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
   m_PrefabInstance: {fileID: 900970653}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &901323782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246428484727693412, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+  m_PrefabInstance: {fileID: 1462577656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &925236258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3477,7 +3482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd27efd4c9fcf8947b8591ff29bb3817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nero: {fileID: 0}
+  nero: {fileID: 901323782}
   tim: {fileID: 1816707701}
 --- !u!114 &925236264
 MonoBehaviour:
@@ -8616,6 +8621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3366250423740663510, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: _interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3452597165684895832, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -10111,6 +10120,10 @@ PrefabInstance:
     - target: {fileID: 5066708019502277450, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[165].y
       value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246428484727693412, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7616523038266021988, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_LocalScale.x
