@@ -28,12 +28,18 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Bodega_Receipt") == false && Check_Read("stelleIntro") == true>>
+
+    //<<Play_SFX SoundManager Paper_Crumble>>
+
     Penne: This receipt says that Orzo bought something at the local bodega on Timsday. 
     Penne: ...hmm. Orzo bought something ON Timsday? 
     Penne: This looks like it might be very important. I could collect this and show Rigatoni, then Stelle...
     <<set $newItem to "Bodega_Receipt">>
     <<jump addEntry>>
 <<elseif Check_Read("stelleIntro") == false>>
+
+    <<Play_SFX SoundManager Paper_Crumble>>
+
     Penne: I should go talk to Stelle first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
