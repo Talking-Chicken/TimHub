@@ -10383,6 +10383,38 @@ PrefabInstance:
       propertyPath: useFadeEffect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1804511610}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playUISound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SoundManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: NPC Talk Pop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597352524, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 567900512731755973, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -10522,6 +10554,7 @@ GameObject:
   - component: {fileID: 1804511610}
   - component: {fileID: 1804511612}
   - component: {fileID: 1804511611}
+  - component: {fileID: 1804511613}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -10557,6 +10590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BGMSource: {fileID: 1804511612}
   SFXSource: {fileID: 1804511611}
+  UISource: {fileID: 1804511613}
   SFXAudios:
   - clipName: Pocky Cat
     clip: {fileID: 8300000, guid: e0a9e3a275795154eb911e6603f21fc7, type: 3}
@@ -10567,6 +10601,23 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b056c5ccaf3cee64c8aa80dd97a6c2f4, type: 3}
   - clipName: Orzo Room Music
     clip: {fileID: 8300000, guid: 5d08122eee706c346ac998ed7b28332b, type: 3}
+  UIAudios:
+  - clipName: Click On Item
+    clip: {fileID: 8300000, guid: a0328800982438a4ea7ded00462f1461, type: 3}
+  - clipName: Close Notebook
+    clip: {fileID: 8300000, guid: c77ab8539ada5164a9ba7e16e5154fa0, type: 3}
+  - clipName: Journal Scribble
+    clip: {fileID: 8300000, guid: 848c85a7a494dd547961ff95cfdb2575, type: 3}
+  - clipName: Journal Close
+    clip: {fileID: 8300000, guid: ccd7d426bef0441a69e15df312713d3e, type: 3}
+  - clipName: Journal Open
+    clip: {fileID: 8300000, guid: 4fdd39f8c1ccb4dadbbfe2d91d0c4e2e, type: 3}
+  - clipName: New Entry
+    clip: {fileID: 8300000, guid: 5da346db28c3e43a6bff3965b1dc4123, type: 3}
+  - clipName: Page Turn
+    clip: {fileID: 8300000, guid: 40670aee15ade4226be333007f90be5a, type: 3}
+  - clipName: NPC Talk Pop
+    clip: {fileID: 8300000, guid: 960b828316c5d46f1bbeb9450a04b3a4, type: 3}
 --- !u!82 &1804511611
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10675,6 +10726,102 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1804511613
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804511608}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
