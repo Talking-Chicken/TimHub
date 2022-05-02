@@ -3393,6 +3393,7 @@ GameObject:
   - component: {fileID: 925236260}
   - component: {fileID: 925236261}
   - component: {fileID: 925236262}
+  - component: {fileID: 925236263}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3451,6 +3452,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnimator: {fileID: 1174649914}
+--- !u!114 &925236263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925236258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd27efd4c9fcf8947b8591ff29bb3817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nero: {fileID: 0}
+  tim: {fileID: 1816707701}
 --- !u!1 &937529806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 605739447563094129, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
@@ -10716,6 +10731,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1816707701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6054308607878529250, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+  m_PrefabInstance: {fileID: 4434406276540771363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1821639312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11350,6 +11370,14 @@ PrefabInstance:
     - target: {fileID: 4434406276372292567, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
       propertyPath: m_Name
       value: Secret_Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054308607878529250, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659662700761314607, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
