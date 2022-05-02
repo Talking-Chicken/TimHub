@@ -12,7 +12,14 @@ position: -6,-71
     -> Ask what Rigatoni will do 
         <<jump rigatoniInvestigate>>
     -> I'm done.
+        <<if Check_Read("neroIntro") == false>>
+        Penne: (There's a good chance that an alibi and some pieces of evidence I find in the church could solve this case!)
+        Penne: (I need to find a witness that could explain Orzo's murder based off of the Mysterious Letter I found.)
+        Penne: (After I get some more information and an alibi, I should collect more evidence and further this case.)
+        Penne: (I feel like we're getting close to solving this whole murder...hang in there Rigatoni!)
+        <<elseif Check_Read("neroIntro") == true>>
         Rigatoni: Praise Tim. 
+        <<endif>>
 <<endif>>
 ===
 title: rigatoniChurchIntro

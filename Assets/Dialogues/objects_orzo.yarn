@@ -29,7 +29,7 @@ position: 300,-101
 ---
 <<if Check_Collected("Bodega_Receipt") == false && Check_Read("stelleIntro") == true>>
 
-    //<<Play_SFX SoundManager Paper_Crumble>>
+    <<Play_SFX SoundManager Bodega_Receipt>>
 
     Penne: This receipt says that Orzo bought something at the local bodega on Timsday. 
     Penne: ...hmm. Orzo bought something ON Timsday? 
@@ -67,6 +67,9 @@ tags:
 position: 124,-16
 ---
 <<if Check_Collected("Orzo_Closet") == false && Check_Read("stelleIntro") == true>>
+    
+    <<Play_SFX SoundManager Orzo_Closet>>
+    
     Penne: This closet is seriously messy and an even messier, hastily packed suitcase. Vacation time...?
     <<set $newItem to "Orzo_Closet">>
     <<jump addEntry>>
@@ -81,7 +84,11 @@ title: fishbowl
 tags:
 position: 300,-101
 ---
+
 <<if Check_Collected("Fish_Bowl_Hand") == false && Check_Read("stelleIntro") == true>>
+    
+    <<Play_SFX SoundManager Fishbowl>>
+    
     Penne: Hey there... fishie... hand... thing...?
     <<set $newItem to "Fish_Bowl_Hand">>
     <<jump addEntry>>
@@ -151,6 +158,8 @@ position: 300,-101
 
 title: timBeautifulPainting
 ---
+
+<<Play_SFX SoundManager Orzo_Tim_Painting>>
 
 Penne: Hhhh!! What a handsome sir..! Who exactly is he?
 Penne: Oh, it reads in very small writing below his pecs: 
