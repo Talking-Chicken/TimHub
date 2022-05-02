@@ -19,7 +19,7 @@ public class DialogueControl : MonoBehaviour
             case "penne":
                 portraitImage.sprite = penneDefault;
                 break;
-            case "radiator":
+            case "radiatore":
                 portraitImage.sprite = radiatorDefault;
                 break;
             case "rigatoni":

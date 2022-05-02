@@ -11,6 +11,8 @@ public class PlayerStatePause : PlayerStateBase
 
     public override void updateState(PlayerControl player)
     {
+        if (Input.GetKeyDown(KeyCode.P))
+            player.changeToPreviousState();
         
     }
 

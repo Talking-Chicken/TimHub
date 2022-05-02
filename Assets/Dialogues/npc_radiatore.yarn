@@ -48,10 +48,14 @@ Penne: Handpicked by Tim... Does anyone else work here, then?
 Radiatore: Ah— N-no, no one else. It's only—
 Wisdom_Tooth: EH-HEM!
 //Camera lerp to Wisdom Tooth talking here
+<<Camera_Lerp_To GameManager obj_wisdomTooth>>
 Wisdom_Tooth: Thou dares deny the presence of the almighty Wisdom Tooth! Thou dares to diminish my pivotal role in the Bodega of Timsville!
+<<Camera_Lerp_To GameManager Player>>
 Penne: AAH! You— You're a talking tooth!
 Radiatore: H-hey, shut up, Tooth! What has Nero told you about barging into other people's conversations?!
+<<Camera_Lerp_To GameManager obj_wisdomTooth>>
 Wisdom_Tooth: ...Harumph!
+<<Camera_Lerp_To GameManager Player>>
 Radiatore: Sorry, ahha, i-ignore him. Do you, uh, still want to ask me questions?
 ===
 
