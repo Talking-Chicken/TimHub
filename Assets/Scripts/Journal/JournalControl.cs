@@ -23,7 +23,7 @@ public struct entry {
 #endregion
 
 //to categorize which kind of entry the entry is (item or alibi)
-public enum EntryType {Item, Alibi}
+public enum EntryType {Item, Alibi, Custom}
 
 public class JournalControl : MonoBehaviour
 {
@@ -337,5 +337,14 @@ public class JournalControl : MonoBehaviour
                     break;
             }
         }        
+    }
+
+
+    [YarnCommand("Add_Answer")]
+    public void addAnswer(string dropdownName, string answer) {
+        foreach (CaseReportQuestion question in questions) {
+            if (question.name.ToLower().Trim().Equals(dropdownName.ToLower().Trim()))
+                question.AnswerDropdown.options.Add(new TMP_Dropdown.OptionData() {text = answer});
+        }
     }
 }
