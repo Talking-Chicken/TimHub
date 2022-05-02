@@ -28,6 +28,7 @@ public class CharacterManager : MonoBehaviour
     public void timFadeIn() {
         isTimFading = true;
         tim.SetActive(true);
+        //TODO: play tim fade in sound fx
     }
 
     [YarnCommand("Nero_Transition_Out")]
