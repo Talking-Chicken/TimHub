@@ -85,6 +85,9 @@ title: churchOrgan
 tags:
 ---
 <<if Check_Collected("Church_Organ") == false && Check_Read("neroIntro") == true>>
+
+    <<Play_SFX SoundManager Church_Organ>>
+
     Penne: How grand! Too bad I quit learning piano after, like, a month. They're the same, right...?
     <<set $newItem to "Church_Organ">>
     <<jump addEntry>>

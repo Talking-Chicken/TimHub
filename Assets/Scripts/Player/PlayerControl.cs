@@ -197,7 +197,7 @@ public class PlayerControl : MonoBehaviour
             Vector2 unit = (playerPos-NPCPos).normalized;
             Destination = NPCPos + (unit * 1.5f);
         }
-        if (Vector2.Distance(transform.position, Destination) <= 0.1f) {
+        if (Vector2.Distance(transform.position, Destination) <= 0.3f) {
             NPC.talk();
             isForcedToMove = false;
         }

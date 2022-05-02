@@ -41,15 +41,16 @@ Radiatore: I ah, I don't mind. Yes, g-go ahead.
 Penne: Well, first off, what's your name, sir?
 Radiatore: I'm, ah... Radiatore Al F-Forno.
 Penne: Nice ta meetcha, Radiatore! What are you doing here in the Bodega?
-Radiatore: I'm usually always here when I'm off-duty. There aren't many places to hang out here. Plus the food is good.
+Radiatore: I was told by a detective that I had to stay here until the investigation is finished.
+Radiatore: I'm usually always here when I'm off-duty, anyways. There aren't many places to hang out here. Plus the food is good.
 Penne: I don't see much food in here. It seems pretty... sparse, for a Bodega.
-Radiatore: Whadya mean? It's chock full of goodies! Everything handpicked by Tim, ordered and delivered by me. 
+Radiatore: Whadya mean? It's chock full of delicious things! Everything handpicked by Tim, ordered and delivered by me. 
 Penne: Handpicked by Tim... Does anyone else work here, then?
 Radiatore: Ah— N-no, no one else. It's only—
 Wisdom_Tooth: EH-HEM!
 //Camera lerp to Wisdom Tooth talking here
 <<Camera_Lerp_To GameManager obj_wisdomTooth>>
-Wisdom_Tooth: Thou dares deny the presence of the almighty Wisdom Tooth! Thou dares to diminish my pivotal role in the Bodega of Timsville!
+Wisdom_Tooth: Thou dares deny the presence of the almighty Wisdom Tooth! Thou dares to diminish my pivotal role in the Bodega of Timsville! I hear, I see, I smell all that occurs!
 <<Camera_Lerp_To GameManager Player>>
 Penne: AAH! You— You're a talking tooth!
 Radiatore: H-hey, shut up, Tooth! What has Nero told you about barging into other people's conversations?!
@@ -57,6 +58,9 @@ Radiatore: H-hey, shut up, Tooth! What has Nero told you about barging into othe
 Wisdom_Tooth: ...Harumph!
 <<Camera_Lerp_To GameManager Player>>
 Radiatore: Sorry, ahha, i-ignore him. Do you, uh, still want to ask me questions?
+
+<<Set_Read read_introQs>>
+<<jump radiatoreScript>>
 ===
 
 title: question_radiatoreWrongAlibi
@@ -69,6 +73,7 @@ Penne: Anybody else in shop?
 Radiatore: N-No, just me and him. I gave the receipt to Orzo, then left. Nothing else was said. Routine was same old, same old.
 
 <<Add_Entry journal Radiatore_al_Forno>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -89,6 +94,7 @@ Radiatore: GAH! OK, OK. I'll, uh, stick around. (Am I sweaty...?)
 
 //setting bool for player reading the About Job question to true
 <<Set_Read radiatore_aboutJob>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -105,6 +111,7 @@ Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
 <<Set_Read question_bloodyShears>>
 <<Add_Entry journal Radiatore_al_Forno_Update>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -115,6 +122,7 @@ position: -186,109
 Penne: Any idea what these bloody shears are doing here? 
 Radiatore: I swear I don't know anything about those awful shears! I hate flowers. I've got allergies, ya see...
 <<Set_Read question_bloodyShears>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -142,6 +150,7 @@ Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful
 <<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
 <<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
+<<jump radiatoreScript>>
 ===
 
 title: question_radiatoreWisdomTooth
@@ -155,4 +164,5 @@ Radiatore: Y-you really don't have to talk to them you know! Ahaha, he might be 
 Radiatore: It, ah, sounds like he's actually in some pain right now, too...
 Penne: Hmmmmm. I'll make that decision for myself!
 <<Set_Read question_radiatoreWisdomTooth>>
+<<jump radiatoreScript>>
 ===

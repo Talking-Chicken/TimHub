@@ -4,11 +4,22 @@ position: 40,-174
 ---
 <<if Check_Read("neroIntro") == false>>
     <<jump neroIntro>>
-<<elseif Check_Read("neroIntro") == true>>
-    -> Ask Nero when did he last saw Orzo
+<<elseif Check_Read("neroIntro") == true && Check_Read("neroQuestions") == false>>
+    -> Ask Nero when he last saw Orzo Parmesan <<if Check_Read("neroAlibi") == false>>
         <<jump question_neroAlibi>>
-    -> Ask Nero about the garden
+    -> Ask Nero about his job <<if Check_Read("neroJob") == false>>
         <<jump question_aboutGarden>>
+    -> Ask Nero about the evidence collected so far
+        <<if Check_Read("neroJob") == true && Check_Read("neroAlibi") == true>>
+            Penne: (Alrighty! I've collected Nero's alibi and asked everything I wanted to know.)
+            Penne: (Now I should ask him about the evidence I've collected so far. Hopefully he can give me new information for the case.)
+            <<Set_Read neroQuestions>>
+            <<jump neroScript>>
+        <<elseif Check_Read("neroAlibi") == false || Check_Read("neroJob") == false>>
+            Penne: (Wait! There's something else I want to ask him before I move on to ask about the evidence I've collected so far.)
+                <<jump neroScript>>
+        <<endif>>
+<<elseif Check_Read("neroIntro") == true && Check_Read("neroQuestions") == true>>
     -> Ask Nero about the Mysterious Letter <<if Check_Collected("Mysterious_Letter")>>
         <<jump question_mysteriousLetter>>
     -> Ask Nero about the Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears")>>
@@ -21,14 +32,15 @@ position: 40,-174
         Nero: Feel free to look around.
 <<endif>>
 ===
-
 title: neroIntro
 tags:
 ---
-Penne: Hey hey! I'm Penne Dreadful, here investigating the death of Orzo Parmesan. Who might you be?
-Nero: Ah, wonderful. I am Nero di Seppia. Pleasure to meet you. 
-Penne: Nice ta meet you, Nero! Can I ask you some questions about Orzo and the town?
-Nero: Of course. I'm happy to tell you anything you need to know.
+Penne: I'm Detective Pennelope Scout, here investigating the death of Orzo Parmesan. Who might you be?
+Nero: Ah, I've been expecting you, detective. 
+Penne: (Wait. He's been expecting me? Hmm.)
+Nero: I am Nero di Seppia, a priest for the Church of Tim. Pleasure to meet you. 
+Penne: A priest? Wait, that's perfect! Can I ask you some questions about Orzo Parmesan?
+Nero: Of course. I'm happy to lend a hand for your investigation. 
 
 <<Set_Read neroIntro>>
 <<jump neroScript>>
@@ -39,30 +51,39 @@ position: -248,-96
 ---
 //first alibi from Nero (he lies)
 Penne: When was the last time you saw Orzo Parmesan?
-Nero: I don't believe I came into contact with Orzo Parmesan when he was murdered. But then again, I meet everyone so often as a Priest, it might've been an unfortunate detail that slipped my mind. 
+Nero: I don't believe I came into contact with Orzo Parmesan when he was murdered. 
+Nero: But then again, I meet everyone so often as a Priest, it might've been an unfortunate detail that slipped my mind. 
 Penne: So business is doing well, huh?
 Nero: Of course. Everyone has something to confess.
-
+Penne: (Hmm. Something tells me that he's being vague on purpose here.)
+Penne: (Maybe I can find a piece of evidence to prove that Nero met Orzo here!)
+Penne: (For now, I'll record Nero's alibi in my journal under the Alibi tab and revisit this information if I want to later.)
 //add Nero's first alibi
 <<Add_Entry journal Nero_di_Seppia>>
+<<Set_Read neroAlibi>>
 <<jump neroScript>>
 ===
 
 title: question_aboutGarden
 position: -247,-31
 ---
-Penne: Got a lot of flowers and...other sorts of vegetation I'm not familiar with around here. Do you take care of them?
-Nero: Yes. I love to cultivate all sorts of flora for Timsville. 
-Penne: I thought you were a priest. You have time for that kind of stuff? 
-Nero: Flowers and people are the same, detective. They must be properly guided and cared for in order to flourish. 
+Penne: So you're a priest, huh? Anything I should know about your job? Or what you do around here?
+Nero: I listen to the plights the people of Timsville confess to me. I also am a passionate gardener. 
+Penne: (A gardener? I should ask him about those gardening shears later!)
+Penne: A gardener? That's a little unexpected.
+Nero: I like to believe that gardening is also a practice of patience and faith. 
+Nero: You see, flowers and people are the same, detective. They must be properly guided and cared for in order to flourish. 
 Penne: Interesting. I can barely keep any of my own plants alive...
 Nero: Then you both must be in need of guidance. Please, feel free to ask me anything that plagues your mind. 
 Penne: Oh, well actually there IS this one thing...
 Nero: Do tell.
 Penne: It's been on my mind lately, and I don't know how to approach the issue!
 Nero: Continue...
-Penne: So basically—WAIT! I'm here to do my job, not talk about my problems! Man, you're GOOD at this.
+Penne: So basically—WAIT! I'm here to do my job, not talk about my problems! 
+Penne: Man, you're GOOD at this.
 Nero: I try.
+Penne: (Yikes! I should be careful around this guy.)
+<<Set_Read neroJob>>
 <<jump neroScript>>
 ===
 
