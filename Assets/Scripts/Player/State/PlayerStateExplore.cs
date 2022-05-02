@@ -28,11 +28,13 @@ public class PlayerStateExplore : PlayerStateBase
             if (interactingObj != null) {
                 if (interactingObj.IsInteractFirst) {
                     interactingObj.interact();
-                    interactingObj.talk();
+                    player.moveAndTalkTo(interactingObj.name);
+                    //interactingObj.talk();
                 }
                 else {
                     if (interactingObj.IsTalkable)
-                        interactingObj.talk();
+                        player.moveAndTalkTo(interactingObj.name);
+                        //interactingObj.talk();
                     if (interactingObj.IsInteractable)
                         interactingObj.interact();
                 }    
