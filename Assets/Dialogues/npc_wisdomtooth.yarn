@@ -36,6 +36,9 @@ Penne: (Maybe I can find something around here and give to him.)
 title: question_mintToothpaste
 ---
 //if player gives WT the MINT toothpaste, they fail
+
+<<Play_SFX SoundManager Toothpaste>>
+
 Penne: We can try mint toothpaste to get rid of that cavity, or whatever is hurting you!
 Wisdom_Tooth: Mint? 'Tis but the most basic pastes of teeth. It is not worthy! No thanketh you.
 Penne: Drat. Maybe I should try another one...
@@ -45,6 +48,9 @@ Penne: Drat. Maybe I should try another one...
 title: question_charcoalToothpaste
 ---
 //if player gives WT the CHARCOAL toothpaste, they fail
+
+<<Play_SFX SoundManager Toothpaste>>
+
 Penne: Wanna try charcoal toothpaste to get rid of that tooth ache of yours?
 Wisdom_Tooth: Charcoal...? Nay, it shall ruin my bleach job. No thanketh you.
 Penne: Fiddlesticks! Is there another toothpaste I could try?
@@ -54,6 +60,9 @@ Penne: Fiddlesticks! Is there another toothpaste I could try?
 title: question_spearmintToothpaste
 ---
 //if player gives WT the SPEARMINT toothpaste, they succeed in getting WT's alibi
+
+<<Play_SFX SoundManager Toothpaste>>
+
 Penne: How do you feel about spearmint toothpaste for that tooth ache of yours?
 Wisdom_Tooth: SPEARMINT? O, scrumptious, serendipitous spearmint! 
 Wisdom_Tooth: If thou applyeth said toothpaste to thine being, I may impart my wisdom...eth!

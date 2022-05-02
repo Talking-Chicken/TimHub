@@ -14,13 +14,16 @@ tags:
     -> Ask how Blankie Boy is doing 
         <<jump question_blankieBoyBlues>>
     -> I'm done.
+
+        <<Play_SFX SoundManager Blankie_Boy>>
+
         Blankie Boy: Good luck, detective! 
 <<endif>>
 ===
 
 title: blankieBoyIntro
 ---
-//<<Play_SFX SoundManager Blankie_Boy>>
+<<Play_SFX SoundManager Blankie_Boy>>
 
 Penne: ACK! Who are you? What are you?
 Blankie Boy: I'm a vaguely human-shaped sentient blanket. Orzo called me Dylan though.
@@ -41,6 +44,9 @@ Blankie Boy: I don't get me either!
 title: question_blankieBoyAlibi
 ---
 Penne: Did you hear anything else from Orzo besides...emo singing and crying?
+
+<<Play_SFX SoundManager Blankie_Boy>>
+
 Blankie Boy: He would talk in his sleep all the time. I think he had a lot of nightmares.
 Penne: Do you know what he said? Or what he was afraid of?
 Blankie Boy: All I could ever understand clearly was something about memories. 
@@ -52,7 +58,10 @@ Penne: A dream journal...maybe I should investigate that and Stelle together fur
 
 title: question_blankieBoyBlues
 ---
-Penne: How are you doing? It must be hard, losing someone. Especially like this. 
+Penne: How are you doing? It must be hard, losing someone. Especially like this.
+
+<<Play_SFX SoundManager Blankie_Boy>>
+
 Blankie Boy: Yeah...you're right. I'll never feel the crinkle of plastic bags or receipts thrown on me again. 
 Penne: Oh, from the Timsville bodega? 
 Blankie Boy: Orzo worked there a lot. He purchased things too because he got discounts. Sigh...

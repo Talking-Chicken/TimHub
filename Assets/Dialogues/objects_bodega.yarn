@@ -33,6 +33,9 @@ position: 300,-101
 ---
 //DONE
 <<if Check_Collected("Ham_Dugo") == false>>
+    
+    <<Play_SFX SoundManager Ham_Dugo>>
+    
     HamDugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
@@ -46,6 +49,9 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Bodega_Cat") == false>>
+    
+    <<Play_SFX SoundManager Pocky_Cat>>
+
     Penne: Mrow. Meow! This cat's named Pocky. 
     <<set $newItem to "Bodega_Cat">>
     <<jump addEntry>>
@@ -72,6 +78,9 @@ tags:
 position: 30s0,-101
 ---
 <<if Check_Collected("Fish_ATM") == false>>
+    
+    <<Play_SFX SoundManager Scottish_Fish>>
+
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
     <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
@@ -99,6 +108,9 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Spearmint_Toothpaste") == false>>
+    
+    <<Play_SFX SoundManager Toothpaste>>
+    
     Penne: Spearmint toothpaste. The best one!
     <<set $newItem to "Spearmint_Toothpaste">>
     <<jump addEntry>>
@@ -112,6 +124,9 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Charcoal_Toothpaste") == false>>
+    
+    <<Play_SFX SoundManager Toothpaste>>
+
     Penne: Charcoal toothpaste. Quirky...
     <<set $newItem to "Charcoal_Toothpaste">>
     <<jump addEntry>>
@@ -125,6 +140,9 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Mint_Toothpaste") == false>>
+    
+    <<Play_SFX SoundManager Toothpaste>>
+
     Penne: Mint toothpaste. Basic. Meh.
     <<set $newItem to "Mint_Toothpaste">>
     <<jump addEntry>>
@@ -184,6 +202,8 @@ Penne: A shelf full of teeth. They seem to be for sale.
 title: Fwog
 ---
 
+<<Play_SFX SoundManager Fwog>>
+
 Fwog: Wibbit wibbit.
 ===
 
@@ -206,6 +226,9 @@ Penne: She... seems happy enough.
 
 title: Register
 ---
+
+<<Play_SFX SoundManager Bodega_Register>>
+
 Penne: This register is keeping track of the Bodega's earnings!
 Register: *The Bodega currently has 0.74 cents in its account.*
 ===
