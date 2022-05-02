@@ -8,9 +8,11 @@ public class CharacterManager : MonoBehaviour
     [SerializeField] private GameObject nero, tim;
     private bool isTimFading = false;
     private SpriteRenderer timeRenderer;
+    private TransitionManager transition;
     void Start()
     {
         timeRenderer = tim.GetComponent<SpriteRenderer>();
+        transition = FindObjectOfType<TransitionManager>();
     }
 
     
@@ -26,5 +28,17 @@ public class CharacterManager : MonoBehaviour
     public void timFadeIn() {
         isTimFading = true;
         tim.SetActive(true);
-    } 
+        //TODO: play tim fade in sound fx
+    }
+
+    [YarnCommand("Nero_Transition_Out")]
+    public void neroTransitionIn() {
+        transition.roomTransitionAnimation();
+        StartCoroutine(waitToDeactive(nero));
+    }
+
+    IEnumerator waitToDeactive(GameObject NPC) {
+        yield return new WaitForSeconds(1.0f);
+        NPC.SetActive(false);
+    }
 }

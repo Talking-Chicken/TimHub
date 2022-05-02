@@ -9,7 +9,7 @@ position: -1,-117
     -> Ask about how the investigation is going so far
         <<jump question_investigationSoFar>>
     -> Ask about Rigatoni's forgetfulness <<if Check_Read("rigatoni_forgetfulnessread") == false>>
-        <<jump question_rigatoniForgetfulness>> 
+        <<jump question_rigatoniForgetfulness>>
     -> Ask about the new partnership together <<if Check_Read("rigatoni_partnership") == false>>
         <<jump question_ourNewPartnership>>
     -> Show Rigatoni evidence collected so far <<if Check_Read("rigatoni_stelleAlibiShown") == false && Check_Read("stelleIntro") == true && Check_Collected("Bodega_Receipt") || Check_Collected("Orzo_Dream_Journal") || Check_Collected("Fish_Bowl_Hand")>> //<<if player has collected anything>>
@@ -24,7 +24,14 @@ position: -1,-117
             -> Hmm, not yet.
                 Rigatoni: Hmph. Let me know when you are ready to leave, then.
     -> I'm done.
-        Rigatoni: Get back to work, detective.
+        <<if Check_Read("stelleIntro") == false>>
+            Rigatoni: Go talk to Stelle Parmesan and get her alibi. Be thorough and ask as many questions you can. Then, investigate your surroundings for evidence.
+            Rigatoni: Remember to record evidence in your journal. If you need help, ask me or Stelle about what you have collected if they are relevant to the case.
+            Rigatoni: If they aren't relevant to the case, look for other pieces of evidence. Ask questions about them if possible. They may further the case or contradict an alibi.
+            Penne: Alright! Time to find Stelle and interrogate her. I need to have an alibi from her, then I can start collecting evidence.
+        <<elseif Check_Read("stelleIntro") == true>>
+            Rigatoni: Get back to work, detective.
+        <<endif>>
 <<endif>>
 ===
 
@@ -34,18 +41,18 @@ position:
 <<if Check_Collected("Bodega_Receipt")>>
     Penne: What do you think about what I've collected so far?
     Rigatoni: This receipt you have collected places our victim at an exact time, date, and location. Did Stelle mention anything about when or where Orzo was last seen?
-    Penne: Hey...you're right. She did! Maybe I need to think about what Stelle told me earlier more closely, especially her alibi. 
-    Rigatoni: Good. Thinking like an actual detective. 
-    Penne: Wow, validation!? Amazing! I should go talk to Stelle NOW! 
-    Rigatoni: Just question her normally, please. Mind your manners. 
+    Penne: Hey...you're right. She did! Maybe I need to think about what Stelle told me earlier more closely, especially her alibi.
+    Rigatoni: Good. Thinking like an actual detective.
+    Penne: Wow, validation!? Amazing! I should go talk to Stelle NOW!
+    Rigatoni: Just question her normally, please. Mind your manners.
     Penne: More positive reinforcement, here I come!
     <<jump RigatoniTest>>
 <<else>>
     Penne: What do you think about the evidence I've collected so far?
-    Rigatoni: Hmm. Something still is not adding up here. Perhaps you have overlooked some important evidence here. 
-    Rigatoni: Never forget, the evidence you have collected should also be shown to Stelle. 
+    Rigatoni: Hmm. Something still is not adding up here. Perhaps you have overlooked some important evidence here.
+    Rigatoni: Never forget, the evidence you have collected should also be shown to Stelle.
     Rigatoni: It is very likely she is hiding something. Show her something that contradicts her alibi, and we might actually go somewhere with this investigation.
-    Penne: Gotcha. I'll keep searching and adding evidence to my journal, and I'll follow up with Stelle about them too. 
+    Penne: Gotcha. I'll keep searching and adding evidence to my journal, and I'll follow up with Stelle about them too.
     <<jump RigatoniTest>>
 <<endif>>
 ===
@@ -54,21 +61,22 @@ title: question_introductions
 position: -204,-292
 ---
 //the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
-Penne: Rigatoni! It's so good to see you. I missed seeing you at Head Quarters! //Penne Happy
-Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
-Penne: You called for help...so here I am! //Penne Happy
-// <<Play_SFX SoundManager Pocky_Cat>>
+Penne: Rigatoni! I missed seeing you at Head Quarters! Unfortunate that the next time I see you is at an investigation scene...//Penne Happy
+Rigatoni: That's Detective Rigatoni to you. What are you even doing here? This is murder victim's home for the case I'm working on.//Rigatoni Disdain
+Penne: That's the thing! You called for help for said murder case...so here I am! //Penne Happy
+<<Play_SFX SoundManager Pocky_Cat>>
 <<Add_Answer journal Question(Criminal) "it's me!">>
 Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
 Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused
 Penne: Haha...well, yes...looks like you aren't our best detective for nothing...
-Rigatoni: I knew the bureau had its cowards, but right when I request for backup...this is simply embarrasing. 
-Penne: Don't worry. We'll find evidence, get truthful alibis, and solve the murder of Orzo Parmesan. 
+Rigatoni: I knew the bureau had its cowards, but right when I request for backup...this is simply embarrasing.
+Penne: Don't worry. We'll find evidence, get truthful alibis, and solve the murder of Orzo Parmesan.
 Rigatoni: At least you did your research. Did the bureau give you any other pieces of information about the case I sent them?
-Penne: Yes! The corpse autopsy, the case brief, and what we know so far about the murder are all filed away in my journal right here. 
-Rigatoni: Be sure to look through the information you have now before questioning anyone or examining evidence. We want to make informed decisions here.
-Penne: Of course! I've got my journal, my wits, and my puns! As long as I have those and your big beautiful brain, there's nothing we can't solve!
-Rigatoni: Unfortunately, that may not be enough to solve this case. Timsville has a strange effect on outsiders as well. 
+Penne: Yes! The corpse autopsy, the case brief, and what we know so far about the murder are all filed away in my journal right here.
+Rigatoni: Check the information in your journal before questioning anyone or examining evidence. We want to make informed decisions here.
+Rigatoni: Your first task is going to be questioning our first witness, Stelle Parmesan. After you're done talking to me, ask her every question you can think of.
+Penne: Gotcha. I've got my journal, my wits, and my puns! As long as I have those and your big beautiful brain, there's nothing we can't solve!
+Rigatoni: Unfortunately, that may not be enough to solve this case. Timsville has a strange effect on outsiders as well.
 Penne: You mean with the memory loss? I remember being briefed on that before I got here. I haven't forgotten anything so far since I arrived. It's crystal clear up here!
 Rigatoni: Hmm. Good. At least we have one thing going for this case. Perhaps the bureau sent more competent back up than I had previously assumed.
 Penne: Together, nothing is im-pasta-ble! Haha, get it? //Penne Happy
@@ -86,22 +94,22 @@ position: 247,-92
 ---
 //this convo is a tutorial for players on what needs to be done in the room
 Penne: So I got your letter with the case debriefing and all that jazz. How's the investigation so far? //Penne Happy
-Rigatoni: I have already investigated the locations and witnesses, but something is not adding up. The people here are hiding something. Afraid of something. 
+Rigatoni: I have already investigated the locations and witnesses, but something is not adding up. The people here are hiding something. Afraid of something.
 Penne: That's awful! We have to solve this case no matter what gets in our way. So what should I do? //Penne Happy
 Rigatoni: Talk to any witnesses you come across. Collect their alibis in your journals. Be aware that some of them may be lying, however.
-Penne: Got it. And how can I get the truth from a false alibi? 
+Penne: Got it. And how can I get the truth from a false alibi?
 Rigatoni: Scope out any pieces of evidence and record them in your journal. They could relate directly to the murder case or prove a contradiction in an alibi. //Rigatoni neutral
-Rigatoni: And never forget to reference your journal records, the case brief, and autopsy report. 
+Rigatoni: And never forget to reference your journal records, the case brief, and autopsy report.
 Penne: Get alibis, collect evidence, find contradictions, and refer to the journal. I think I get it!
 Rigatoni: If you need my professional opinion on anything, report back to me. //Rigatoni Serious
 Penne: And if worst comes to worst...give them a knuckle sandwich?
 Rigatoni: Now is not the time for jokes, Detective Scout...
 Penne: Hey, you didn't call me Dreadful!
 Rigatoni: Pardon me?
-Penne: Everyone at work calls me Detective Dreadful...it's a nickname I'm not the proudest of, haha...
-Rigatoni: How unprofessional and immature. You should have a word with HR. 
+Penne: Everyone at work calls me Detective Dreadful. It's a nickname I'm not the proudest of, haha...
+Rigatoni: That is unprofessional. You should have a word with HR about this grade-school behavior.
 Penne: Aw...I'm touched! This is why you're the bestest in all of our department!
-Rigatoni: S-Stop that! We are working, in case you have forgotten. Save that for someone else. 
+Rigatoni: S-Stop that! We are working, in case you have forgotten. Save that for someone else.
 Rigatoni: ...And bestest is NOT a real word!
 
 //setting bool for player reading the investigation convo to true
@@ -139,7 +147,7 @@ Rigatoni: Detective Scout, I am not your partner. //Rigatoni Annoyed
 Penne: You're so right. Too formal. How do you like the sound of Toni? //Penne Happy
 Rigatoni: You may not call me that. //Rigatoni Annoyed
 Penne: Aw. Are you sure? You could call me...Pen...? //Penne Sad
-Rigatoni: Pen is an awful nickname. 
+Rigatoni: Pen is an awful nickname.
 Rigatoni: ...Toni is far superior, without a doubt. //Rigatoni Slightly amused
 <<Set_Read rigatoni_partnership>>
 <<jump RigatoniTest>>
@@ -151,14 +159,14 @@ position: 200,157
 <<if Check_Read("rigatoni_stelleAlibiShown") == false>>
     Penne: Stelle was lying to me! Orzo wasn't last seen alive the night before Timsday—he was alive on Timsday, according to this receipt!
     Rigatoni: And you have recorded everything so far?
-    Penne: That's right! It's all been put into my journal. 
+    Penne: That's right! It's all been put into my journal.
     Rigatoni: My intuition never fails me. I do not think this will be the last of our witnesses lying, so stay on guard.
-    Penne: Our...witnesses...? 
+    Penne: Our...witnesses...?
     Rigatoni: Don't.
     Penne: Aw, we ARE partners! That's so sweet and COOL and EXCITING AND—
     Rigatoni: E-Enough! You are making my head...spin...ugh.
     Penne: Oh no! I'm so so sorry. *whispering* What should we do now?
-    Rigatoni: Don't patronize me. I am fine. 
+    Rigatoni: Don't patronize me. I am fine.
     Penne: Ok...whatever you say...
     Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
 -> Yes, let's go!
