@@ -74,6 +74,7 @@ Radiatore: N-No, just me and him. I gave the receipt to Orzo, then left. Nothing
 
 <<Add_Entry journal Radiatore_al_Forno>>
 <<jump radiatoreScript>>
+<<Set_Read radiatoreLies>>
 
 ===
 
@@ -109,7 +110,7 @@ Radiatore: !!! *Sweating BUCKETS* Uh, listen bub! I...I have a right to remain s
 Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
 Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
-<<Set_Read question_bloodyShears>>
+<<Set_Read question_corpseShipment>>
 <<Add_Entry journal Radiatore_al_Forno_Update>>
 <<jump radiatoreScript>>
 
