@@ -15,7 +15,7 @@ position: 40,-174
         <<jump question_neroBloodyShears>>
     -> Ask Nero about the Confession Log Book <<if Check_Collected("Confession_Log_Book")>>
         <<jump question_confessionLogbook>>
-    -> Ask Nero about the matching handwriting of the Log Book and Letter <<if Check_Collected("Mysterious_Letter")>>
+    -> Ask Nero about the matching handwriting of the Log Book and Letter <<if Check_Collected("Mysterious_Letter") && Check_Read("neroCongessionLogbook") && Check_Read("neroBloddyShears")>>
         <<jump question_matchingHandwriting>> 
     -> I'm done.
         Nero: Feel free to look around.
@@ -93,7 +93,8 @@ Penne: Everywhere? Seriously?
 Nero: Everyone knows this and has access to them—not just me. 
 Penne: But why?
 Nero: Community gardening is a way we all bond. 
-Penne: Of course it is. 
+Penne: Of course it is.
+<<Set_Read neroBloddyShears>>
 <<jump neroScript>>
 ===
 
@@ -107,6 +108,8 @@ Penne: How could you not tell me such vital information?
 Nero: As you can see, I nearly saw the whole town that day.
 Penne: Excuses aside, what happened?
 Nero: He came to me first, like usual, confessed, and then left. But he came frequently speaking of strange dreams, another life, etc. He's been doing it so often I didn't think it out of the ordinary.
+
+<<Set_Read neroCongessionLogbook>>
 
 <<Add_Entry journal Nero_di_Seppia_Update>>
 <<jump neroScript>>
@@ -131,6 +134,7 @@ Penne: (I didn't hear anything about a car accident relating to Orzo or his fami
 Nero: He came to me looking to make peace with the loss. Hopefully, Orzo has found that now that he has passed onto the path to Salvation.
 //insert Nero giving VERY BIG HINT TO THE PAINTING PUZZLE!!!
 Nero: May the light burn at our darkest hour to reveal the mystic path to Salvation.
+<<Nero_Transition_Out GameManager>>
 Penne: Yes...definitely. 
 Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
 <<jump neroScript>>

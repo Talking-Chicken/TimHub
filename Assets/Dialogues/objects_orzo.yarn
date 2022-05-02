@@ -101,18 +101,20 @@ position: 300,-101
     Buff Timling: Psh yeah I lift. Like, everyday. Think you got the guns to lift...me?
     Penne: Why do you want me to lift you?
     Buff Timling: Cause I'm LOST and I'm tryna get found. 
-    Buff Timling: Also, if you wanna get swole I suggest you try finding all of me and my alpha bros!
+    Buff Timling: Also, if you wanna get swole I suggest you try finding all of me and my alpha bros—ALL SIX OF US!
     Penne: Find all of you and then do what, exactly?
-    Buff Timling: Get FOUND! And JACKED! What do you say brah?
+    Buff Timling: FAMILY REUNION! We all wanna get FOUND! And JACKED, TOGETHER! What do you say brah?
         -> Take Buff Timling
             Penne: Let's get BEEFY. Come with me, bro!
-            Buff_Timling: Gains, gains, gains! Gains all day, EVERY day!
+            Buff Timling: Gains, gains, gains! Gains all day, EVERY day!
+            Buff Timling: Can't wait to beef up with all of my Timling bros!
             <<set $newItem to "Buff_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling1>> 
         -> Leave Buff Timling
             Penne: Uh, I think I'll pass. I'll live with my nerd arms, thanks.
-            Buff_Timling: Ok, BETA. Guess I'll have to find my way by myself.
+            Buff Timling: Ok, BETA. Guess I'll just stay lost and sibling-less. 
+            Buff Timling: Where are all my timling bros...? *soft sobbing* 
 <<elseif Check_Read("stelleIntro") == false>>
     Penne: I should go talk to Stelle first and then come back to, uh, this guy!
 <<else>>
@@ -128,15 +130,18 @@ position: 300,-101
     Tape Timling: Take...me...with...you...
     Penne: But why?
     Tape Timling: Got...lost...became one...with tape...help me...
+    Penne: How can I help you, exactly?
+    Tape Timling: Collect...me...find my...siblings...reunite me with the other...TIMLINGS!
         -> Take Tape Timling
             Penne: Ok! I'll stick you to my jacket!
-            Tape Timling: Thank...you...
+            Tape Timling: Thank...you...I can't wait...to see everyone...
             <<set $newItem to "Tape_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling2>>
         -> Leave Tape Timling
             Penne: Sorry, but I'm really busy right now!
             Tape Timling: Tape eternal...being lost...inevitable...
+            Tape Timling: I miss...my siblings...
 <<elseif Check_Read("stelleIntro") == false>>
     Penne: I should go talk to Stelle first and then come back to, uh, this guy!
 <<else>>

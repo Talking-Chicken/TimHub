@@ -62,9 +62,9 @@ public class SoundManager : MonoBehaviour
             string newName = GameManager.substituteUnderscoreWithSpace(clipName);
             foreach (audio UIAudio in UIAudios) {
                 if (UIAudio.clipName.ToLower().Trim().Equals(newName.ToLower().Trim())) {
-                    SFXSource.clip = UIAudio.clip;
-                    SFXSource.loop = false;
-                    SFXSource.Play();
+                    UISource.clip = UIAudio.clip;
+                    UISource.loop = false;
+                    UISource.Play();
                     return;
                 }
             }

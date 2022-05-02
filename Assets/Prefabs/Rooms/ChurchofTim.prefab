@@ -2971,8 +2971,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2003100397508417335}
   - component: {fileID: 8751424470606490039}
-  - component: {fileID: 5857166712617000096}
   - component: {fileID: 2019256022198780765}
+  - component: {fileID: 3366250423740663510}
   m_Layer: 0
   m_Name: obj_confessionLogBook
   m_TagString: Untagged
@@ -3045,29 +3045,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &5857166712617000096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5466539155088613907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: confessionBook
-  collider: {fileID: 2019256022198780765}
-  entryList:
-  - entryName: Confession Log Book
-    entryDes: 'A confession log book written by the priest Nero. It''s handwriting
-      is very beautiful. The last one is on Timsday is at night...by Orzo! '
-    entryImage: {fileID: -3301689770227060559, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
-    entryType: 0
 --- !u!60 &2019256022198780765
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3123,6 +3100,29 @@ PolygonCollider2D:
       - {x: 0.31, y: 0.049999997}
       - {x: 0.65999997, y: 0.17999999}
       - {x: 0.88, y: 0.26999998}
+--- !u!114 &3366250423740663510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466539155088613907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa501539c1c035144b6130d8bb2442a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 1
+  _interactFirst: 0
+  _startNode: confessionBook
+  collider: {fileID: 2019256022198780765}
+  entryList:
+  - entryName: Confession Log Book
+    entryDes: 'A confession log book written by the priest Nero. It''s handwriting
+      is very beautiful. The last one is on Timsday is at night...by Orzo! '
+    entryImage: {fileID: -3301689770227060559, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
+    entryType: 0
 --- !u!1 &5692649904218567245
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ position: 15,-240
         <<jump question_relationship>>
     -> Ask when Stelle last saw Orzo <<if Check_Read("stelleLastSeeOrzo") == false>>
         <<jump question_alibi>>>>
-    -> Ask about where Stelle was during the time of the murder
+    -> Ask about where Stelle was during the time of the murder <<if Check_Read("stelleLastSeeOrzo") == true>>
         <<jump question_whereabouts>>
     -> Ask about Orzo's closet <<if Check_Collected("Orzo_Closet") == true && Check_Read("orzoClosetExamined") == false>>
         <<jump question_closet>>
@@ -21,18 +21,26 @@ position: 15,-240
     -> Ask about the Bodega Receipt <<if Check_Collected("Bodega_Receipt") == true>>
         <<jump question_bodegaReceipt>>
     -> I'm done.
-        Stelle: O-okay...
-
+    <<if Check_Read("stelleRelationship") == false || Check_Read("stelleLastSeeOrzo") == false || Check_Read("stelleWhereTimeOfMurder") == false>>
+        Penne: (Wait! There's something else I want to ask her before ending our conversation.)
+        <<jump StelleSprint3>>
+    <<else>>
+        Stelle: P-Praise Tim, detective...
+    <<endif>>
 <<endif>>
 ===
 title: stelleIntro
 tags:
 position: 83,131
 ---
-Penne: Hi there! My name is Penne, and I'm here to investigate the death of Orzo Parmesan. What's your name?
-Stelle: O-oh! M-my name is S-Stelle... Stelle Parmesan.
-Penne: Oh..! So you're related to the late Orzo. Do you mind if I ask you some questions about him?
-Stelle: *Sniff* N-no, I-I don't mind...
+Penne: Hi there! I'm Detective Pennelope Scout, and I'm here to investigate the death of Orzo Parmesan. Are you Stelle Parmesan?
+Stelle: O-oh! Yes...M-my name is S-Stelle Parmesan. Good day to you, detective...
+Penne: I didn't mean to interrupt...uh, whatever it is that you're doing. What are you doing, exactly?
+Stelle: I...I'm here to collect Orzo's things. But I was told by the other detective to leave things as they are because it's a related scene to the crime...
+Stelle: So I'm just waiting here...b-but it pains me to be in his home and n-not have him here...
+Stelle: A-and also I-I was told to be here to answer some questions f-for the investigation...
+Penne: Do you mind if I ask you a couple of things? I gotta collect as much information possible about you and Orzo Parmesan to solve the case.
+Stelle: *Sniff* N-no, I-I don't mind...go right ahead...
 
 <<Set_Read stelleIntro>>
 <<jump StelleSprint3>>
@@ -72,6 +80,7 @@ Stelle: H-He was...killed...that night before Timsday. Y-Yes, that's right.
 Penne: Great, thank you for your cooperation, Stelle.
 Stelle: O-Of course, d-detective. 
 Penne: (I've recorded this information in my journal under Stelle Parmesan in the Alibi tab!)
+Penne: (If I want to revisit what Stelle just told me, I can go to my journal as a reference.)
 <<Set_Read stelleLastSeeOrzo>>
 <<jump StelleSprint3>>
 ===
@@ -87,7 +96,7 @@ Stelle: A-And then nobody heard from him! H-He had gone m-missing, a-and so we c
 Penne: Uh-huh...so while everyone was busy, Orzo had disappeared and wasn't seen on Timsday. 
 Stelle: Y-you could, um, assume he w-was...killed...before T-Timsday...
 Penne: Hmm, alright. Guess that makes sense if he disappeared the day before and hadn't been seen since. 
-
+<<Set_Read stelleWhereTimeOfMurder>>
 <<jump StelleSprint3>>
 ===
 

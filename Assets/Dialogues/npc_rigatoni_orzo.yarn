@@ -24,7 +24,14 @@ position: -1,-117
             -> Hmm, not yet.
                 Rigatoni: Hmph. Let me know when you are ready to leave, then.
     -> I'm done.
-        Rigatoni: Get back to work, detective.
+        <<if Check_Read("stelleIntro") == false>>
+            Rigatoni: Go talk to Stelle Parmesan and get her alibi. Be thorough and ask as many questions you can. Then, investigate your surroundings for evidence.
+            Rigatoni: Remember to record evidence in your journal. If you need help, ask me or Stelle about what you have collected if they are relevant to the case. 
+            Rigatoni: If they aren't relevant to the case, look for other pieces of evidence. Ask questions about them if possible. They may further the case or contradict an alibi. 
+            Penne: Alright! Time to find Stelle and interrogate her. I need to have an alibi from her, then I can start collecting evidence. 
+        <<elseif Check_Read("stelleIntro") == true>>
+            Rigatoni: Get back to work, detective.
+        <<endif>>
 <<endif>>
 ===
 
@@ -54,9 +61,9 @@ title: question_introductions
 position: -204,-292
 ---
 //the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
-Penne: Rigatoni! It's so good to see you. I missed seeing you at Head Quarters! //Penne Happy
-Rigatoni: That's Detective Rigatoni to you. What are you even doing here? //Rigatoni Disdain
-Penne: You called for help...so here I am! //Penne Happy
+Penne: Rigatoni! I missed seeing you at Head Quarters! Unfortunate that the next time I see you is at an investigation scene...//Penne Happy
+Rigatoni: That's Detective Rigatoni to you. What are you even doing here? This is murder victim's home for the case I'm working on.//Rigatoni Disdain
+Penne: That's the thing! You called for help for said murder case...so here I am! //Penne Happy
 <<Play_SFX SoundManager Pocky_Cat>>
 <<Add_Answer journal Question(Criminal) "it's me!">>
 Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
@@ -66,8 +73,9 @@ Rigatoni: I knew the bureau had its cowards, but right when I request for backup
 Penne: Don't worry. We'll find evidence, get truthful alibis, and solve the murder of Orzo Parmesan. 
 Rigatoni: At least you did your research. Did the bureau give you any other pieces of information about the case I sent them?
 Penne: Yes! The corpse autopsy, the case brief, and what we know so far about the murder are all filed away in my journal right here. 
-Rigatoni: Be sure to look through the information you have now before questioning anyone or examining evidence. We want to make informed decisions here.
-Penne: Of course! I've got my journal, my wits, and my puns! As long as I have those and your big beautiful brain, there's nothing we can't solve!
+Rigatoni: Check the information in your journal before questioning anyone or examining evidence. We want to make informed decisions here.
+Rigatoni: Your first task is going to be questioning our first witness, Stelle Parmesan. After you're done talking to me, ask her every question you can think of. 
+Penne: Gotcha. I've got my journal, my wits, and my puns! As long as I have those and your big beautiful brain, there's nothing we can't solve!
 Rigatoni: Unfortunately, that may not be enough to solve this case. Timsville has a strange effect on outsiders as well. 
 Penne: You mean with the memory loss? I remember being briefed on that before I got here. I haven't forgotten anything so far since I arrived. It's crystal clear up here!
 Rigatoni: Hmm. Good. At least we have one thing going for this case. Perhaps the bureau sent more competent back up than I had previously assumed.
@@ -98,8 +106,8 @@ Penne: And if worst comes to worst...give them a knuckle sandwich?
 Rigatoni: Now is not the time for jokes, Detective Scout...
 Penne: Hey, you didn't call me Dreadful!
 Rigatoni: Pardon me?
-Penne: Everyone at work calls me Detective Dreadful...it's a nickname I'm not the proudest of, haha...
-Rigatoni: How unprofessional and immature. You should have a word with HR. 
+Penne: Everyone at work calls me Detective Dreadful. It's a nickname I'm not the proudest of, haha...
+Rigatoni: That is unprofessional. You should have a word with HR about this grade-school behavior. 
 Penne: Aw...I'm touched! This is why you're the bestest in all of our department!
 Rigatoni: S-Stop that! We are working, in case you have forgotten. Save that for someone else. 
 Rigatoni: ...And bestest is NOT a real word!
