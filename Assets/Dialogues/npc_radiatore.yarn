@@ -8,8 +8,9 @@ position: -14,-216
 <<if Check_Read("read_introQs") == false>>
     <<Set_Read read_introQs>>
     <<jump read_introQs>>
-    
 <<endif>>
+
+<<if Check_Read("read_introQs") == true>>
     -> Ask about when Orzo was last seen <<if Check_Collected("Radiatore_al_Forno_Update") == false>>
         <<jump question_radiatoreWrongAlibi>>
     -> Ask about Radiatore's day job
@@ -23,7 +24,13 @@ position: -14,-216
     -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
+    <<if Check_Read("Radiatore_al_Forno_Update") == false || Check_Read("question_aboutJob") == false || Check_Read("question_corpseShipment") == false || Check_Read("question_radiatoreWisdomTooth") == false>>
+        Penne: (Wait! There's something else I want to ask Radiatore before ending our conversation.)
+        <<jump radiatoreScript>>
+    <<else>>
         Radiatore: C-cool...
+    <<endif>>
+<<endif>>
 ===
 
 title: read_introQs
@@ -141,6 +148,7 @@ Penne: So what's the deal with that tooth guy?
 Radiatore: A-Ah, the Wisdom Tooth? He's always been here. I heard that he used to be one of Tim's teeth.
 Penne: Whoa, Tim must be a pretty big guy... I'll go chat with them once we're done here!
 Radiatore: Y-you really don't have to talk to them you know! Ahaha, he might be a wise tooth but he... couldn't have seen anything important...
+Radiatore: It, ah, sounds like he's actually in some pain right now, too...
 Penne: Hmmmmm. I'll make that decision for myself!
 <<Set_Read question_radiatoreWisdomTooth>>
 ===
