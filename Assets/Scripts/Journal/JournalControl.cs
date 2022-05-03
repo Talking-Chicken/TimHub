@@ -137,6 +137,7 @@ public class JournalControl : MonoBehaviour
 
     public void openCaseReport()
     {
+        Canvas.ForceUpdateCanvases();
         caseReport.SetActive(true);
         bringToTop(caseReportTab, journalBody);
     }
