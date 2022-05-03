@@ -5057,7 +5057,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133.23462, y: 319.8402}
+  m_AnchoredPosition: {x: 176.7, y: 494}
   m_SizeDelta: {x: 12, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1697643976296841929
@@ -5476,7 +5476,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 374180645127040138, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 967054282016394968, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5489,6 +5489,10 @@ PrefabInstance:
     - target: {fileID: 1726192148938417583, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Name
       value: Question (Time)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125198727303385088, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5575151681891726351, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_text
@@ -5669,7 +5673,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 374180645127040138, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 967054282016394968, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5682,6 +5686,10 @@ PrefabInstance:
     - target: {fileID: 1726192148938417583, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Name
       value: Question (Cause)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125198727303385088, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5575151681891726351, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_text
@@ -6654,7 +6662,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 374180645127040138, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 967054282016394968, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6667,6 +6675,10 @@ PrefabInstance:
     - target: {fileID: 1726192148938417583, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Name
       value: Question (Details)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125198727303385088, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5575151681891726351, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_text
@@ -7041,7 +7053,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 374180645127040138, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 967054282016394968, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7054,6 +7066,10 @@ PrefabInstance:
     - target: {fileID: 1726192148938417583, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Name
       value: Question (Location)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125198727303385088, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5575151681891726351, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_text
@@ -7638,7 +7654,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 374180645127040138, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 967054282016394968, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7651,6 +7667,10 @@ PrefabInstance:
     - target: {fileID: 1726192148938417583, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Name
       value: Question(Criminal)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125198727303385088, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3428660276392853806, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: type
