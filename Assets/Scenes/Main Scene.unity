@@ -983,10 +983,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de42c43403796ea4b90f9b8ffad9be0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 340193e32ff4c714c8d6cfe909eaf12b, type: 3}
-  cursorHover: {fileID: 2800000, guid: 37bd998145d97404884fa96d3fdc3acb, type: 3}
-  cursorMode: 0
+  cursorTexture: {fileID: 2800000, guid: 721289ccca919594aa753750548ac09e, type: 3}
+  cursorHover: {fileID: 2800000, guid: beaf411575d0575449eb8fccc1f2c37e, type: 3}
+  cursorMode: 1
   hotSpot: {x: 0, y: 0}
+  playerControl: {fileID: 0}
 --- !u!1 &586259390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1578899833171252546, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
@@ -4596,7 +4597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5922631771259244009, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5954316761523474548, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_AnchorMax.y
