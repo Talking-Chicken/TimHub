@@ -37,7 +37,7 @@ public class JournalControl : MonoBehaviour
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab;
     [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
-    [SerializeField, BoxGroup("Case Brief")] private GameObject caseBrief, caseBriefTab, autopsyReport;
+    [SerializeField, BoxGroup("Case Brief")] private GameObject caseBrief, caseBriefTab;
 
     //journal entries
     private List<entry> alibies = new List<entry>(), items = new List<entry>();
@@ -98,7 +98,6 @@ public class JournalControl : MonoBehaviour
             alibiEntryObjects.Add(entryArray[i].gameObject);
         }
         Canvas.ForceUpdateCanvases();
-        resetObj(autopsyReport);
     }
 
 
@@ -149,7 +148,6 @@ public class JournalControl : MonoBehaviour
 
     public void openCaseBrief()
     {
-        resetObj(autopsyReport);
         caseBrief.SetActive(true);
         bringToTop(caseBriefTab, journalBody);
     }
