@@ -2234,15 +2234,15 @@ PrefabInstance:
     - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[0].entryImage
       value: 
-      objectReference: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+      objectReference: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[1].entryImage
       value: 
-      objectReference: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+      objectReference: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[2].entryImage
       value: 
-      objectReference: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+      objectReference: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     - target: {fileID: 5003980556252774116, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
