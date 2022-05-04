@@ -4254,6 +4254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: journal
       objectReference: {fileID: 0}
+    - target: {fileID: 604600224106567687, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 825907684498488144, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_SizeDelta.y
       value: 53.91
@@ -4420,19 +4424,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1315632215}
+      objectReference: {fileID: 1034750823}
     - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: changeToJournalState
       objectReference: {fileID: 0}
     - target: {fileID: 2521295643373179074, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: PlayerControl, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2562512807831045648, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
@@ -4440,7 +4444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2576053124528055942, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2864875559327847704, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4472,7 +4476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056864984908375706, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3342841468526830542, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4560,7 +4564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5922631771259244009, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5954316761523474548, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4604,19 +4608,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1315632215}
+      objectReference: {fileID: 1034750823}
     - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: changeToPreviousState
       objectReference: {fileID: 0}
     - target: {fileID: 6797248993900157891, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: PlayerControl, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6954200007111919704, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_RootOrder
@@ -4748,6 +4752,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8859884906115547827, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044033306101056606, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
