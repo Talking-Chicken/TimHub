@@ -107,7 +107,7 @@ Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
 Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
 <<Set_Read radiatoreCorpseShipment>>
-<<Add_Entry journal Radiatore_al_Forno_Update>>
+<<Add_Entry journal More_on_Radiatore_al_Forno>>
 <<jump radiatoreScript>>
 
 ===
@@ -127,10 +127,10 @@ title: question_radiatoreRightAlibi
 position: -218,-147
 ---
 //player finds a hole in radiatore's alibi through wisdom tooth's alibi (gets the truth)
-Penne: The wisdom tooth told me that those shears were in them since Timsday. Said that you and some "holy people" were here that day. Care to explain?
+Penne: The Wisdom Tooth told me that those shears were in them since Timsday. Said that you and some "holy people" were here that day. Care to explain?
 Radiatore: ...Ok, so I may have seen Tim and Nero here on Timsday when I was delivering things to Orzo. 
 Penne: Aha! I knew there was something fishy about you! 
-Radiatore: Look, I'm sorry I lied, ok? I, uh, panicked! 
+Radiatore: L-look, I'm sorry I lied, ok? I, uh, I panicked! 
 Penne: That's what they all say, delivery man. 
 Radiatore: I don't know what they were doing or what those shears are though! I'm innocent!
 Penne: Then prove it! Tell me the truth. 
@@ -143,11 +143,11 @@ Penne: You don't look too well...do you want to sit down? Get some water?
 Radiatore: This letter fell out of Tim's pocket when I put his body in the box. I haven't read it. Looked important. I don't know.
 Penne: You were the one who sent Orzo to us, weren't you?
 Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful. 
+Penne: (Penne recieved: a mysterious letter!)
 
-<<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
+<<Add_Entry journal Radiatore_al_Forno_Alibi>>
 <<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
-<<jump radiatoreScript>>
 ===
 
 title: question_radiatoreWisdomTooth
