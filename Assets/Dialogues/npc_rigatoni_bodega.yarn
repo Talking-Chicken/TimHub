@@ -6,7 +6,8 @@ tags:
     Penne: Whoa, this place is filled with... stuff! Lots of stuff!
     Rigatoni: Of course it is. The Bodega is the only place to buy food and other goods in Timsville. 
     Penne: Seriously? Huh! I guess that makes sense, since Timsville is so small. 
-    Rigatoni: Hm. Well, see what you can get out of the delivery man. I tried questioning him earlier, but I just know he's still hiding something. I'm going to take another look around.
+    Rigatoni: Hm. Well, do the same thing you did in Orzo's room: talk to the people here and scour for as much evidence as you can find.
+    Rigatoni: Especially, see what you can get out of the delivery man. I tried questioning him earlier, but I just know he's still hiding something. I'm going to take another look around.
     Penne: Sounds like a plan, Toni! 
     Rigatoni: I told you not to call me that.
     <<Set_Read rigatoniBodegaIntro>>
@@ -26,6 +27,7 @@ tags:
     <<else>>
         Penne: Watcha lookin' at there, Toni?
         Rigatoni: Nothing that requires your attention more than the rest of the Bodega.
+        Rigatoni: Make sure to talk to the delivery man and the Wisdom Tooth. The latter seems strange, but I have a feeling he knows more than would seem.
     <<endif>>
 <<endif>>
 ===
@@ -38,7 +40,8 @@ tags:
     Rigatoni: ...Why did you bring me those things? I thought... I thought we were here to... What were we here to do again?
     Penne: Wha— What do you mean?! We're investigating Orzo's murder! I questioned Radiatore, and—
     Rigatoni: Oh, you shouldn't be questioning him! Radiatore's such a sweetheart, he'd never do anything wrong!
-    Penne: That's not what you were saying a few minutes ago... (To herself) I think her forgetfulness is getting worse. We need to finish the investigation, stat!
+    Penne: That's not what you were saying a few minutes ago... 
+    Penne: (I think her forgetfulness is getting worse. We need to finish the investigation, stat! Let's see if Radiatore has more to say.)
     <<Set_Read murderWeapon>>
 <<endif>>
 <<if Check_Read("murderWeapon")>>

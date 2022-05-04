@@ -12,7 +12,7 @@ position: -14,-216
         <<jump question_radiatoreWrongAlibi>>
     -> Ask about Radiatore's day job <<if Check_Read("radiatoreAboutJob") == false>>
         <<jump question_aboutJob>>
-    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatoreCorpseShipment") == false && Check_Read("radiatoreAboutJob") == true>>
+    -> (New!) Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatoreCorpseShipment") == false && Check_Read("radiatoreAboutJob") == true>>
         <<jump question_corpseShipment>>
     -> Ask about the talking tooth <<if Check_Read("radiatoreWisdomTooth") == false>>
         <<jump question_radiatoreWisdomTooth>>
