@@ -19,13 +19,19 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     //hovering over objects variables (including cursor)
     private SpriteRenderer objSprite;
 
+    //pathfinding destination
+    [SerializeField, BoxGroup("Path Finding")] private bool hasDifferentDestination;
+    [SerializeField, EnableIf("hasDifferentDestination"), BoxGroup("Path Finding")] private Transform destination;
+    
+
     //getter & setters
     public string StartNode { get { return _startNode; } set { _startNode = value; } }
     public bool IsTalkable { get { return _talkable; } set { _talkable = value; } }
     public bool IsInteractable { get { return _interactable; } set { _interactable = value; } }
     public bool IsInteractFirst { get { return _interactFirst; } private set { _interactFirst = value; } }
-
     public List<entry> EntryList { get => entryList; set => entryList = value; }
+    public bool HasDifferentDestination {get => hasDifferentDestination;}
+    public Transform Destination {get => destination;}
 
     void Start()
     {
@@ -36,7 +42,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
         if (!_interactable)
             _interactFirst = false;
 
-        objSprite = gameObject.GetComponent<SpriteRenderer>();
+        objSprite = collider.gameObject.GetComponent<SpriteRenderer>();
     }
 
     public virtual void interact() {
