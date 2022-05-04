@@ -26,7 +26,7 @@ public class CursorBehavior : MonoBehaviour
         if (hit.collider != null && hit.collider.gameObject.GetComponent<InteractiveObj>() != null)
         {
             Cursor.SetCursor(cursorHover, hotSpot, cursorMode);
-            print(hit.collider.gameObject);
+            //print(hit.collider.gameObject);
         } else {
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         }

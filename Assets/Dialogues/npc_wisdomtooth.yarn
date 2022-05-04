@@ -29,8 +29,21 @@ Penne: I could really use some wisdom right now. Is there anything I can do for 
 Wisdom_Tooth: Helpeth me rid of my tooth ache! Heal my cavity...I implore you!
 Penne: Oh no! Coming right up, sir!
 Penne: (Maybe I can find something around here and give to him.)
-
 <<Set_Read wisdomToothIntro>>
+<<if Check_Collected("Mint_Toothpaste") == true>>
+    Penne: Wait a second, I've already got a toothpaste!
+    <<jump wisdomToothScript>>
+<<elseif Check_Collected("Charcoal_Toothpaste") == true>>
+    Penne: Wait a second, I've already got a toothpaste!
+    <<jump wisdomToothScript>>
+<<elseif Check_Collected("Spearmint_Toothpaste") == true>>
+    Penne: Wait a second, I've already got a toothpaste!
+    <<jump wisdomToothScript>>
+
+<<elseif Check_Collected("Mint_Toothpaste") == false || Check_Collected("Charcoal_Toothpaste") == false || Check_Collected("Spearmint_Toothpaste") == false>>
+    Wisdom_Tooth: Go! Go unto the interior of the inscrutable Tim's Bodega and gather the dispersed dentifrices! Aid me in my suffering!s
+//tutorialize; toothpaste around the bodega
+<<endif>>
 ===
 
 title: question_mintToothpaste
@@ -83,7 +96,4 @@ Penne: (Penne recieved: a pair of bloody shears!)
         <<Add_Entry journal {$newItem}>>
         <<Add_Entry journal Wisdom_Tooth_Alibi>>
 Penne: And done! Now I have something to make that sweaty sucker squeal... I should go show him what I found!
-
-
-
 ===
