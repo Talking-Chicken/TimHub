@@ -4502,6 +4502,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5505678305904219171, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_Name
+      value: Pause Icon
+      objectReference: {fileID: 0}
     - target: {fileID: 5543811149097813195, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
