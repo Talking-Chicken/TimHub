@@ -587,7 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 6406203403362885971}
   descriptionText: {fileID: 3480991041867027313}
-  image: {fileID: 0}
+  image: {fileID: 1178325003555029880}
 --- !u!114 &6015489204849160793
 MonoBehaviour:
   m_ObjectHideFlags: 0
