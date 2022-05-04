@@ -10705,6 +10705,16 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: a3c2b64945aa146c0ad797aa6d75724c, type: 3}
   - clipName: Toothpaste
     clip: {fileID: 8300000, guid: e879563f5eb7c4f6f9442b9907011fe2, type: 3}
+  - clipName: Camera Shutter
+    clip: {fileID: 8300000, guid: eed1107f2a54d4feea37aae5ebe505ef, type: 3}
+  - clipName: Buff Timling
+    clip: {fileID: 8300000, guid: 80b02aa2148984ddf8b374e7a663ab40, type: 3}
+  - clipName: Timling Collect
+    clip: {fileID: 8300000, guid: 6599a7dfe38c84338a47d47409ff3c79, type: 3}
+  - clipName: Taped Timling
+    clip: {fileID: 8300000, guid: deacec297ba524bf7b4ae974c8675c71, type: 3}
+  - clipName: Orzo Journal
+    clip: {fileID: 8300000, guid: 8cf8b8b836df243e18ada2a7a430c662, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
