@@ -6,9 +6,7 @@ Penne: Do I want to record this as evidence?
     -> Yes!
         <<Add_Entry journal {$newItem}>>
         Penne: I'll take a picture of it and add it to my journal.
-
         <<Play_SFX SoundManager Camera_Shutter>>
-
     -> Nope.
         Penne: Hmm, maybe I shouldn't add this. Let me see what else I find.
 ===
@@ -31,9 +29,7 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Bodega_Receipt") == false && Check_Read("stelleIntro") == true>>
-
     <<Play_SFX SoundManager Bodega_Receipt>>
-
     Penne: This receipt says that Orzo bought something at the local bodega on Timsday. 
     Penne: ...hmm. Orzo bought something ON Timsday? 
     Penne: This looks like it might be very important. I could collect this and show Rigatoni, then Stelle...
@@ -51,9 +47,7 @@ tags:
 position: -138,-170
 ---
 <<if Check_Collected("Orzo_Dream_Journal") == false && Check_Read("stelleIntro") == true>>
-    
     <<Play_SFX SoundManager Orzo_Journal>>    
-
     Penne: Surely Orzo wouldn't mind if I took a peak? This is for work, after all! Highly professional stuff. 
     Penne: Dangnabbit, it's all gibberish and crazy-talk! I can only make out the words "escape", "true memory", and "did I leave the oven on?".  
     <<set $newItem to "Orzo_Dream_Journal">>
@@ -70,9 +64,7 @@ tags:
 position: 124,-16
 ---
 <<if Check_Collected("Orzo_Closet") == false && Check_Read("stelleIntro") == true>>
-    
     <<Play_SFX SoundManager Orzo_Closet>>
-    
     Penne: This closet is seriously messy and an even messier, hastily packed suitcase. Vacation time...?
     <<set $newItem to "Orzo_Closet">>
     <<jump addEntry>>
@@ -89,9 +81,7 @@ position: 300,-101
 ---
 
 <<if Check_Collected("Fish_Bowl_Hand") == false && Check_Read("stelleIntro") == true>>
-    
     <<Play_SFX SoundManager Fishbowl>>
-    
     Penne: Hey there... fishie... hand... thing...?
     <<set $newItem to "Fish_Bowl_Hand">>
     <<jump addEntry>>
@@ -108,9 +98,7 @@ position: 300,-101
 ---
 <<if Check_Collected("Buff_Timling") == false && Check_Read("stelleIntro") == true>>
     Penne: WOAH. Little dude, you are RIPPED!
-
     <<Play_SFX SoundManager Buff_Timling>>
-
     Buff Timling: Psh yeah I lift. Like, everyday. Think you got the guns to lift...me?
     Penne: Why do you want me to lift you?
     Buff Timling: Cause I'm LOST and I'm tryna get found. 
@@ -121,9 +109,7 @@ position: 300,-101
             Penne: Let's get BEEFY. Come with me, bro!
             Buff Timling: Gains, gains, gains! Gains all day, EVERY day!
             Buff Timling: Can't wait to beef up with all of my Timling bros!
-
             <<Play_SFX SoundManager Timling_Collect>>
-
             <<set $newItem to "Buff_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling1>> 
@@ -143,9 +129,7 @@ position: 300,-101
 ---
 <<if Check_Collected("Tape_Timling") == false && Check_Read("stelleIntro") == true>>
     Penne: Uh...hi? What are you doing in Orzo's wall?
-
-     <<Play_SFX SoundManager Taped_Timling>>
-
+    <<Play_SFX SoundManager Taped_Timling>>
     Tape Timling: Take...me...with...you...
     Penne: But why?
     Tape Timling: Got...lost...became one...with tape...help me...
@@ -154,9 +138,7 @@ position: 300,-101
         -> Take Tape Timling
             Penne: Ok! I'll stick you to my jacket!
             Tape Timling: Thank...you...I can't wait...to see everyone...
-
             <<Play_SFX SoundManager Timling_Collect>>
-
             <<set $newItem to "Tape_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling2>>
@@ -173,9 +155,7 @@ position: 300,-101
 
 title: timBeautifulPainting
 ---
-
 <<Play_SFX SoundManager Orzo_Tim_Painting>>
-
 Penne: Hhhh!! What a handsome sir..! Who exactly is he?
 Penne: Oh, it reads in very small writing below his pecs: 
 Penne: "Our Lord and Savior Tim. Best mayor, god, and banana bread baker in Timsville."

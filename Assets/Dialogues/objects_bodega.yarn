@@ -45,9 +45,7 @@ position: 300,-101
 ---
 //DONE
 <<if Check_Collected("Ham_Dugo") == false>>
-    
     <<Play_SFX SoundManager Ham_Dugo>>
-    
     HamDugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
@@ -61,9 +59,7 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Bodega_Cat") == false>>
-    
     <<Play_SFX SoundManager Pocky_Cat>>
-
     Penne: Mrow. Meow! This cat's named Pocky. 
     <<set $newItem to "Bodega_Cat">>
     <<jump addEntry>>
@@ -90,9 +86,7 @@ tags:
 position: 30s0,-101
 ---
 <<if Check_Collected("Fish_ATM") == false>>
-    
     <<Play_SFX SoundManager Scottish_Fish>>
-
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
     <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
@@ -143,16 +137,12 @@ tags:
 ---
 <<if Check_Collected("MounTimDew_Timling") == false>>
     Penne: Another one? By golly, you guys get lost easily.
-
     <<Play_SFX SoundManager Mount_Timling>>
-
     MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
             MounTimDew Timling: You're the besht! Wanna sip?
-
             <<Play_SFX SoundManager Timling_Collect>>
-
             <<set $newItem to "MounTimDew_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_3>>
@@ -175,9 +165,7 @@ tags:
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
             Sassy Timling: Nice. 
             Sassy Timling: Got any games in your journal?
-
             <<Play_SFX SoundManager Timling_Collect>>
-
             <<set $newItem to "Sassy_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_4>>
@@ -197,9 +185,7 @@ Penne: A shelf full of teeth. They seem to be for sale.
 
 title: Fwog
 ---
-
 <<Play_SFX SoundManager Fwog>>
-
 Fwog: Wibbit wibbit.
 ===
 
@@ -211,9 +197,7 @@ Penne: Guts, milks, medecines...
 title: Fridge_02
 ---
 Penne: S-sir..? Do you need any help?
-
 <<Play_SFX SoundManager Blankie_Boy>>
-
 Fridge_Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
 ===
 
@@ -225,9 +209,7 @@ Penne: She... seems happy enough.
 
 title: Register
 ---
-
 <<Play_SFX SoundManager Bodega_Register>>
-
 Penne: This register is keeping track of the Bodega's earnings!
 Register: *The Bodega currently has 0.74 cents in its account.*
 ===
