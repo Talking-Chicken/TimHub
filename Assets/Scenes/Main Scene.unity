@@ -1102,7 +1102,7 @@ PrefabInstance:
     - target: {fileID: 2714760223580102153, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[0].entryImage
       value: 
-      objectReference: {fileID: 21300000, guid: b3a4fc70cb40fb94cbf68be6b707daf6, type: 3}
+      objectReference: {fileID: 21300000, guid: 432d443681bd7f44e826aadbf7791349, type: 3}
     - target: {fileID: 3308927373513252369, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_IsTrigger
       value: 0
