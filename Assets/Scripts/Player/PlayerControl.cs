@@ -192,10 +192,14 @@ public class PlayerControl : MonoBehaviour
 
     public void moveAndTalkTo(InteractiveObj NPC) {
         if (NPC.IsTalkable) {
-            Vector2 NPCPos = NPC.transform.position;
-            Vector2 playerPos = transform.position;
-            Vector2 unit = (playerPos-NPCPos).normalized;
-            Destination = NPCPos + (unit * 1.5f);
+            if (!NPC.HasDifferentDestination) {
+                Vector2 NPCPos = NPC.transform.position;
+                Vector2 playerPos = transform.position;
+                Vector2 unit = (playerPos-NPCPos).normalized;
+                Destination = NPCPos + (unit * 1.5f);
+            } else {
+                Destination = NPC.Destination.position;
+            }
         }
         if (Vector2.Distance(transform.position, Destination) <= 0.3f) {
             NPC.talk();
