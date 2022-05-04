@@ -773,9 +773,9 @@ MonoBehaviour:
   _startNode: bloodyAltar
   collider: {fileID: 1886552100958987173}
   entryList:
-  - entryName: Bloody Altar
-    entryDes: A bloody altar. I assume maybe the Church of Tim has religious sacrifices
-      of some sort, or at least I hope so.
+  - entryName: Handy Altar
+    entryDes: An altar with hands.  I guess you could say that the hands have a really
+      good GRASP of the scripture of Tim, right?
     entryImage: {fileID: 4203767568837603619, guid: 71f50436b7461f847bae3498be87c9e9, type: 3}
     entryType: 0
   hasDifferentDestination: 0

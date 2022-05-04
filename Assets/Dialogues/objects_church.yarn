@@ -2,17 +2,24 @@
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Church_Candle") == false>>
+<<if Check_Collected("Church_Candle") == false && Check_Read ("neroGone") == false>>
     Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
     Penne: There's something written on the bottom. 
-    Penne: "By the light that burns through the Tim, may the path to salvation be revealed." 
-    Penne: Hmmm...there seems to be something BEHIND thhis painting!
+    Penne: "By the light that burns through the Tim, may the path to Salvation be revealed." 
+    Penne: Hmmm...there seems to be something BEHIND this painting!
     Penne: The light that burns through reveals something...maybe this painting leads somewhere important!
+    Nero: Please step away from the painting. It's extremely fragile.
+    Penne: (Drat! Even if I wanted to investigate or do something to this painting, Nero won't let me.)
+    Penne: (I should collect other pieces of evidence and question him more. While I investigate, maybe Nero will leave and give me an opportunity to do something here!)
+<<elseif Check_Collected("Church_Candle") == false && Check_Read ("neroGone") == true>>
+    Penne: There's definitely something behind this painting! 
+    Penne: I can't seem to move it. This thing really won't budge...
+    Penne: I know Nero was hiding something here. If I could do something to it with an object in the church, maybe I could investigate what's behind it!
 <<else>>
-    <<if Check_Read("Painting_Burned") == false>>
-    Penne: Yeah, there's definitely something behind this painting.
-    Penne: This candle could be used to burn it. 
-    Penne: Arson is a crime, but this could lead to something big for the case!
+    <<if Check_Collected("Church_Candle") == true && Check_Read("Painting_Burned") == false>>
+    Penne: This candle I have could be used to burn the painting. 
+    Penne: Arson is a crime, but this could lead to something big for the case. I know Nero was hiding something here. 
+    Penne: And there's only one way to find out...
         -> Use candle to burn the painting
             <<Burn_Painting obj_renaissanceTim>>
             <<Set_Read Painting_Burned>>
@@ -24,7 +31,7 @@ position: 300,-101
             Penne: I'll take another look around for anything else. 
     <<endif>>
     <<if Check_Read("Painting_Burned") == true>>
-        Penne: Woah, a secret entrance appeared behind painting!
+        Penne: Woah, a secret entrance appeared behind painting! I KNEW there was something that priest was hiding!
         Penne: Once I enter, there's no going back. 
         -> Enter the void (Penne cannot return to the Church if she enters the void.)
             <<Room_Change GameManager>>
@@ -102,7 +109,8 @@ title: bloodyAltar
 tags:
 ---
 <<if Check_Collected("Bloody_Altar") == false && Check_Read("neroIntro") == true>>
-    Penne: What is all this blood doing here!? I hope it's from an animal sacrifice or something...
+    Penne: An altar with hands? They're holding the scriptures of Tim!
+    Penne: The book is glued to the fingers...talk about devotion, huh. 
     <<set $newItem to "Bloody_Altar">>
     <<jump addEntry>>
 <<elseif Check_Read("neroIntro") == false>>

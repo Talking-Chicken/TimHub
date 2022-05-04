@@ -218,7 +218,7 @@ Penne: (And done. Nero's new alibi is now in my journal.)
 Nero: Hopefully, Orzo has found that now that he has passed and has journeyed onto the path to Salvation.
 Penne: What is the path to Salvation? Is it like...a better place? After you, um, you know...die?
 Nero: It is a holy place of divine revelation. As Tim always says: 
-Nero: May the light burn at our darkest hour to reveal the mystic path to Salvation.
+Nero: By the light that burns through the Tim, may the path to Salvation be revealed.
 Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
 //Rigatoni teleports next to the candle HERE
 Nero: Wait, what are you doing? That's dangerous!
@@ -227,17 +227,17 @@ Nero: No, her!
 <<Camera_Lerp_To GameManager npc_rigatoni_church>>
 Rigatoni: I must journey on to the path to reach Salvation...
 Nero: Put the candle down before you do something you'll regret!
-Rigatoni: May the light burn at our darkest hour to reveal the mystic path to Salvation.
+Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed.
 Penne: Rigatoni, careful! You could set something on FIRE—we don't have the budget to pay for damages at the bureau!!!
 Rigatoni: I can sense the place of Salvation here...Orzo and Tim call for me! 
 <<Camera_Lerp_To GameManager obj_renaissanceTim>>
-Rigatoni: May the light burn at our darkest hour to reveal the mystic path to Salvation...
+Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed....
 Penne: (This painting again! Oh my gnocchi she's walking towards it with the candle!)
 <<Camera_Lerp_To GameManager npc_nero>>
 Nero: DO NOT GO NEAR THE PAINTING WITH THE CANDLE!
 <<Camera_Lerp_To GameManager Player>>
 Penne: (GO NEAR THE PAINTING WITH THE CANDLE!)
-Rigatoni: May the light burn at our darkest hour to reveal the mystic path to Salvation!
+Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed!
 Nero: Rigatoni. Put the candle down. Let us...discuss what you are going through together. 
 Nero: AWAY from the painting and candle. Please.
 Rigatoni: Of...course...
@@ -246,12 +246,13 @@ Penne: Oh yeah! Go right ahead! I'll just finish up investigating the church.
 Nero: Please do not do anything rash while I am away. 
 Penne: Yes sir!
 <<Nero_Transition_Out GameManager>>
+<<Set_Read neroGone>>
 //Rigatoni is also out of the scene too
 Penne: (Thank you for distracting Nero, Rigatoni! I hope she'll be safe around him...)
 Penne: (Now with that annoying priest gone, I can finally do something about that painting!)
-Penne: (Both Nero and Rigatoni said "May the light burn at our darkest hour to reveal the mystic path to Salvation.")
+Penne: (Both Nero and Rigatoni said "By the light that burns through the Tim, may the path to Salvation be revealed.")
 Penne: (Given how protective Nero was of this painting, it must be the key to something else he's hiding!)
 Penne: (There's no use in investigating the painting again—it hasn't changed since I got here.) 
 Penne: (But maybe I can do something TO it instead...like Rigatoni was about to do.)
-Penne: (If I could pick up that candle...maybe I could use it on the painting to "reveal the mystic path to Salvation"!)
+Penne: (If I could pick up that candle...maybe I could use it on the painting to reveal path to Salvation!)
 ===
