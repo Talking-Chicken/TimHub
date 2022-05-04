@@ -5,6 +5,9 @@ position: 96,-203
 Penne: Do I want to pick up this toothpaste?
     -> Yes!
         <<Add_Entry journal {$newItem}>>
+
+       <<Play_SFX SoundManager Toothpaste>>
+
         Penne: This might come in handy!
     -> Nope.
         Penne: Hmm, maybe I should leave it be.
@@ -105,10 +108,7 @@ title: Spearmint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Spearmint_Toothpaste") == false>>
-    
-    <<Play_SFX SoundManager Toothpaste>>
-    
+<<if Check_Collected("Spearmint_Toothpaste") == false>>    
     Penne: Spearmint toothpaste. The best one!
     <<set $newItem to "Spearmint_Toothpaste">>
     <<jump addEntryToothpaste>>
@@ -121,9 +121,6 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Charcoal_Toothpaste") == false>>
-    
-    <<Play_SFX SoundManager Toothpaste>>
-
     Penne: Charcoal toothpaste. Quirky...
     <<set $newItem to "Charcoal_Toothpaste">>
     <<jump addEntryToothpaste>>
@@ -136,9 +133,6 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Mint_Toothpaste") == false>>
-    
-    <<Play_SFX SoundManager Toothpaste>>
-
     Penne: Mint toothpaste. Basic. Meh.
     <<set $newItem to "Mint_Toothpaste">>
     <<jump addEntryToothpaste>>
@@ -151,11 +145,17 @@ title: timling3
 tags:
 ---
 <<if Check_Collected("MounTimDew_Timling") == false>>
-    Penne: Another one? By golly, you guys get lost easily. 
+    Penne: Another one? By golly, you guys get lost easily.
+
+    <<Play_SFX SoundManager Mount_Timling>>
+
     MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
             MounTimDew Timling: You're the besht! Wanna sip?
+
+            <<Play_SFX SoundManager Timling_Collect>>
+
             <<set $newItem to "MounTimDew_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_3>>
@@ -178,6 +178,9 @@ tags:
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
             Sassy Timling: Nice. 
             Sassy Timling: Got any games in your journal?
+
+            <<Play_SFX SoundManager Timling_Collect>>
+
             <<set $newItem to "Sassy_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_4>>
@@ -211,6 +214,9 @@ Penne: Guts, milks, medecines...
 title: Fridge_02
 ---
 Penne: S-sir..? Do you need any help?
+
+<<Play_SFX SoundManager Blankie_Boy>>
+
 Fridge_Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
 ===
 
