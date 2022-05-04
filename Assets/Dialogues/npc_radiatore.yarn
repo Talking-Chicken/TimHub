@@ -13,7 +13,7 @@ position: -14,-216
 <<if Check_Read("read_introQs") == true>>
     -> Ask about when Orzo was last seen <<if Check_Read("RadiatoreLies") == false>>
         <<jump question_radiatoreWrongAlibi>>
-    -> Ask about Radiatore's day job <<if ChecK_Read("RadiatoreAboutJob") == false>>
+    -> Ask about Radiatore's day job <<if Check_Read("RadiatoreAboutJob") == false>>
         <<jump question_aboutJob>>
     -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("RadiatoreCorpseShipment") == true>>
         <<jump question_corpseShipment>>
@@ -24,7 +24,7 @@ position: -14,-216
     -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
-    <<if Check_Read("Radiatore_al_Forno_Update") == false || Check_Read("question_aboutJob") == false || Check_Read("question_corpseShipment") == false || Check_Read("question_radiatoreWisdomTooth") == false>>
+    <<if Check_Read("question_radiatoreWrongAlibi") == false || Check_Read("Radiatore_al_Forno_Update") == false || Check_Read("question_aboutJob") == false || Check_Read("question_corpseShipment") == false || Check_Read("question_radiatoreWisdomTooth") == false>>
         Penne: (Wait! There's something else I want to ask Radiatore before ending our conversation.)
         <<jump radiatoreScript>>
     <<else>>
