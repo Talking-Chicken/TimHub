@@ -1047,6 +1047,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 58531fab596793c40942a758365f815a, type: 3}
+    - target: {fileID: 1453317113385011348, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453317113385011348, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1578899833171252544, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2206,6 +2214,14 @@ PrefabInstance:
     - target: {fileID: 3308927373513252369, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[136].y
       value: 0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[1].entryName
+      value: More on Radiatore al Forno
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[2].entryName
+      value: Radiatore al Forno Alibi
       objectReference: {fileID: 0}
     - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[2].entryType

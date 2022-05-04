@@ -1,4 +1,16 @@
-﻿title: rugLady
+﻿title: addEntryToothpaste
+tags:
+position: 96,-203
+---
+Penne: Do I want to pick up this toothpaste?
+    -> Yes!
+        <<Add_Entry journal {$newItem}>>
+        Penne: This might come in handy!
+    -> Nope.
+        Penne: Hmm, maybe I should leave it be.
+===
+
+title: rugLady
 tags:
 position: 300,-101
 ---
@@ -99,9 +111,9 @@ position: 300,-101
     
     Penne: Spearmint toothpaste. The best one!
     <<set $newItem to "Spearmint_Toothpaste">>
-    <<jump addEntry>>
+    <<jump addEntryToothpaste>>
 <<else>>
-    Penne: I already recorded this evidence!
+    Penne: I already picked this up!
 <<endif>>
 ===
 title: Charcoal_Toothpaste
@@ -114,9 +126,9 @@ position: 300,-101
 
     Penne: Charcoal toothpaste. Quirky...
     <<set $newItem to "Charcoal_Toothpaste">>
-    <<jump addEntry>>
+    <<jump addEntryToothpaste>>
 <<else>>
-    Penne: I already recorded this evidence!
+    Penne: I already picked this up!
 <<endif>>
 ===
 title: Mint_Toothpaste
@@ -129,9 +141,9 @@ position: 300,-101
 
     Penne: Mint toothpaste. Basic. Meh.
     <<set $newItem to "Mint_Toothpaste">>
-    <<jump addEntry>>
+    <<jump addEntryToothpaste>>
 <<else>>
-    Penne: I already recorded this evidence!
+    Penne: I already picked this up!
 <<endif>>
 ===
 
@@ -226,4 +238,10 @@ title: Bloody_Bag
 ---
 Penne: I... think that bag just moved.
 Penne: I'll leave it alone.
+===
+
+title: Newspaper
+---
+Penne: This newspaper's a couple days old. It reads:
+Penne: "Timsville Times. Daily quote: 'Who are all these people with cameras?' -Tim"
 ===
