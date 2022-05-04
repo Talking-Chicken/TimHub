@@ -11,13 +11,13 @@ position: -14,-216
 <<endif>>
 
 <<if Check_Read("read_introQs") == true>>
-    -> Ask about when Orzo was last seen <<if Check_Collected("Radiatore_al_Forno_Update") == false>>
+    -> Ask about when Orzo was last seen <<if Check_Read("RadiatoreLies") == false>>
         <<jump question_radiatoreWrongAlibi>>
-    -> Ask about Radiatore's day job
+    -> Ask about Radiatore's day job <<if ChecK_Read("RadiatoreAboutJob") == false>>
         <<jump question_aboutJob>>
-    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true>>
+    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("RadiatoreCorpseShipment") == true>>
         <<jump question_corpseShipment>>
-    -> Ask about the talking tooth <<if Check_Read("question_radiatoreWisdomTooth") == false>>
+    -> Ask about the talking tooth <<if Check_Read("RadiatoreWisdomTooth") == false>>
         <<jump question_radiatoreWisdomTooth>>
     -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
@@ -94,7 +94,7 @@ Penne: Witnesses may not leave until all questioning has been completed! Also, t
 Radiatore: GAH! OK, OK. I'll, uh, stick around. (Am I sweaty...?)
 
 //setting bool for player reading the About Job question to true
-<<Set_Read radiatore_aboutJob>>
+<<Set_Read radiatoreAboutJob>>
 <<jump radiatoreScript>>
 
 ===
@@ -110,7 +110,7 @@ Radiatore: !!! *Sweating BUCKETS* Uh, listen bub! I...I have a right to remain s
 Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
 Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
-<<Set_Read question_corpseShipment>>
+<<Set_Read RadiatoreCorpseShipment>>
 <<Add_Entry journal Radiatore_al_Forno_Update>>
 <<jump radiatoreScript>>
 
@@ -164,6 +164,6 @@ Penne: Whoa, Tim must be a pretty big guy... I'll go chat with them once we're d
 Radiatore: Y-you really don't have to talk to them you know! Ahaha, he might be a wise tooth but he... couldn't have seen anything important...
 Radiatore: It, ah, sounds like he's actually in some pain right now, too...
 Penne: Hmmmmm. I'll make that decision for myself!
-<<Set_Read question_radiatoreWisdomTooth>>
+<<Set_Read RadiatoreWisdomTooth>>
 <<jump radiatoreScript>>
 ===
