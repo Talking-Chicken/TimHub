@@ -6642,10 +6642,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 2463305613360157057, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463305613360157057, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.52
+      objectReference: {fileID: 0}
     - target: {fileID: 4026385815620712236, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: entryList.Array.data[0].entryImage
       value: 
       objectReference: {fileID: 7091296469937441458, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
+    - target: {fileID: 5088994041563593948, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: hasDifferentDestination
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5319064838426388621, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.14
@@ -6666,9 +6678,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -7.29
       objectReference: {fileID: 0}
+    - target: {fileID: 6265867209611719721, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265867209611719721, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6352331428084717021, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6352331428084717021, guid: 74f42316845d84e8081e2e415d90d16c, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
@@ -8260,6 +8280,8 @@ MonoBehaviour:
   _startNode: churchCandle
   collider: {fileID: 2069234838}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &1117723944
 BoxCollider2D:
   m_ObjectHideFlags: 0
