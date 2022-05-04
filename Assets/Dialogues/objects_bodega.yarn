@@ -4,11 +4,8 @@ position: 96,-203
 ---
 Penne: Do I want to pick up this toothpaste?
     -> Yes!
-        <<Add_Entry journal {$newItem}>>
-
-       <<Play_SFX SoundManager Toothpaste>>
-
         Penne: This might come in handy!
+        <<Add_Entry journal {$newItem}>><<Play_SFX SoundManager Toothpaste>>
     -> Nope.
         Penne: Hmm, maybe I should leave it be.
 ===

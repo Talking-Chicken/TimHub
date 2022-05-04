@@ -254,6 +254,9 @@ public class JournalControl : MonoBehaviour
         {
             if (addEntry(character.EntryList, newEntryName))
             {
+
+                FindObjectOfType<SoundManager>().playUISound("New Entry");
+
                 //if not contains this name, create a key in hashtable of GameManager
                 if (!GameManager.ProgressTable.ContainsKey(newEntryName.ToLower().Trim()))
                 {
@@ -385,6 +388,8 @@ public class JournalControl : MonoBehaviour
     {
         page = Mathf.Min(maxPage, page + 1);
         showEntries(currentState);
+
+        FindObjectOfType<SoundManager>().playUISound("Page Turn");
     }
 
     /*flip to previous page if there's any*/
@@ -392,6 +397,8 @@ public class JournalControl : MonoBehaviour
     {
         page = Mathf.Max(1, page - 1);
         showEntries(currentState);
+
+        FindObjectOfType<SoundManager>().playUISound("Page Turn");
     }
 
     /* set case report questions to have corresponding questions in their list*/

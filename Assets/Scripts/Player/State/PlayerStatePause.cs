@@ -6,7 +6,7 @@ public class PlayerStatePause : PlayerStateBase
 {
     public override void enterState(PlayerControl player)
     {
-        
+        player.openPauseScreen();
     }
 
     public override void updateState(PlayerControl player)
@@ -23,5 +23,6 @@ public class PlayerStatePause : PlayerStateBase
 
     public override void leaveState(PlayerControl player)
     {
+        player.closePauseScreen();
     }
 }

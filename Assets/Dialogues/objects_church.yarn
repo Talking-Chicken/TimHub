@@ -45,13 +45,18 @@ title: churchCandle
 tags:
 position: 300,-101
 ---
-Penne: The flame looks really strong. I should be careful—it could potentially burn something!
-Penne: This candle might be useful for me. Should I pick it up?
--> Pick the candle up
-    Penne: Ok! Now, where could I use this to help me...?s
-    <<Pick_Up_Candle obj_churchCandle>>
--> Don't pick the candle up
-    Penne: Hmm. Maybe I'll pick it up later. 
+<<if Check_Read("neroGone") == false>>
+    Penne: The flame looks really strong. I should be careful—it could potentially burn something!
+    Nero: 
+<<elseif Check_Read("neroGone") == true>>
+    Penne: The flame looks really strong. I should be careful—it could potentially burn something!
+    Penne: This candle might be useful for me. Should I pick it up?
+        -> Pick the candle up
+            Penne: Ok! Now, where could I use this to help me...?
+            <<Pick_Up_Candle obj_churchCandle>>
+        -> Don't pick the candle up
+            Penne: Hmm. Maybe I'll pick it up later. 
+<<endif>>
 ===
 
 title: confessionBook
