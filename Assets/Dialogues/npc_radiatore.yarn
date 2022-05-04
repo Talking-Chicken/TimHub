@@ -6,25 +6,22 @@ position: -14,-216
 //it doesn't skip right away to the shears???
 
 <<if Check_Read("read_introQs") == false>>
-    <<Set_Read read_introQs>>
     <<jump read_introQs>>
-<<endif>>
-
-<<if Check_Read("read_introQs") == true>>
-    -> Ask about when Orzo was last seen <<if Check_Read("RadiatoreLies") == false>>
+<<elseif Check_Read("read_introQs") == true>>
+    -> Ask about when Orzo was last seen <<if Check_Read("radiatoreLies") == false>>
         <<jump question_radiatoreWrongAlibi>>
-    -> Ask about Radiatore's day job <<if Check_Read("RadiatoreAboutJob") == false>>
+    -> Ask about Radiatore's day job <<if Check_Read("radiatoreAboutJob") == false>>
         <<jump question_aboutJob>>
-    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("RadiatoreCorpseShipment") == true>>
+    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatoreCorpseShipment") == false && Check_Read("radiatoreAboutJob") == true>>
         <<jump question_corpseShipment>>
-    -> Ask about the talking tooth <<if Check_Read("RadiatoreWisdomTooth") == false>>
+    -> Ask about the talking tooth <<if Check_Read("radiatoreWisdomTooth") == false>>
         <<jump question_radiatoreWisdomTooth>>
     -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
     -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
-    <<if Check_Read("question_radiatoreWrongAlibi") == false || Check_Read("Radiatore_al_Forno_Update") == false || Check_Read("question_aboutJob") == false || Check_Read("question_corpseShipment") == false || Check_Read("question_radiatoreWisdomTooth") == false>>
+    <<if Check_Read("radiatoreLies") == false || Check_Read("radiatoreAboutJob") == false || Check_Read("radiatoreCorpseShipment") == false || Check_Read("radiatoreWisdomTooth") == false>>
         Penne: (Wait! There's something else I want to ask Radiatore before ending our conversation.)
         <<jump radiatoreScript>>
     <<else>>
@@ -71,10 +68,9 @@ Penne: Tell me the last time you came into contact with Orzo Parmesan. And don't
 Radiatore: I made my weekly delivery of bodega goods to restock what the shop was running low on. Orzo works here, so that's when I met him. 
 Penne: Anybody else in shop?
 Radiatore: N-No, just me and him. I gave the receipt to Orzo, then left. Nothing else was said. Routine was same old, same old.
-
+<<Set_Read radiatoreLies>>
 <<Add_Entry journal Radiatore_al_Forno>>
 <<jump radiatoreScript>>
-<<Set_Read radiatoreLies>>
 
 ===
 
@@ -110,7 +106,7 @@ Radiatore: !!! *Sweating BUCKETS* Uh, listen bub! I...I have a right to remain s
 Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
 Radiatore: Uhhh...UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
-<<Set_Read RadiatoreCorpseShipment>>
+<<Set_Read radiatoreCorpseShipment>>
 <<Add_Entry journal Radiatore_al_Forno_Update>>
 <<jump radiatoreScript>>
 
@@ -164,6 +160,6 @@ Penne: Whoa, Tim must be a pretty big guy... I'll go chat with them once we're d
 Radiatore: Y-you really don't have to talk to them you know! Ahaha, he might be a wise tooth but he... couldn't have seen anything important...
 Radiatore: It, ah, sounds like he's actually in some pain right now, too...
 Penne: Hmmmmm. I'll make that decision for myself!
-<<Set_Read RadiatoreWisdomTooth>>
+<<Set_Read radiatoreWisdomTooth>>
 <<jump radiatoreScript>>
 ===
