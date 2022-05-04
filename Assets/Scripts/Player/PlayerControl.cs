@@ -33,6 +33,9 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] private InteractiveObj NPCTOTALK;
 
+    //pause screen
+    [SerializeField, BoxGroup("Pause Screen")] private GameObject pauseScreen;
+
     //getters & setters
     public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
@@ -77,6 +80,7 @@ public class PlayerControl : MonoBehaviour
     public void changeToExploreState() {changeState(stateExplore);}
     public void changeToDialogueState() {changeState(stateDialogue);}
     public void changeToJournalState() {changeState(stateJournal);}
+    public void changeToPauseState() {changeState(statePause);}
     public void changeToPreviousState() {
         if (previousState != null)
             StartCoroutine(waitToChangeState(previousState));
@@ -142,6 +146,14 @@ public class PlayerControl : MonoBehaviour
     public void closeJournal() {
         journalContainer.SetActive(false);
         journal.changeState(journal.stateIdle);
+    }
+
+    public void openPauseScreen() {
+        pauseScreen.SetActive(true);
+    }
+
+    public void closePauseScreen() {
+        pauseScreen.SetActive(false);
     }
 
     /* return Gameobject that player mouse is hovering*/
