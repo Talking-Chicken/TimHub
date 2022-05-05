@@ -17,31 +17,24 @@ tags:
     -> Give Spearmint Toothpaste to Wisdom Tooth <<if Check_Collected("Spearmint_Toothpaste")>>
         <<jump question_spearmintToothpaste>>
     -> I'm done.
-        Wisdom_Tooth: O, when shall my pain be sooooothed? 
+        Wisdom Tooth: O, when shall my pain be sooooothed? 
 <<endif>>
 ===
 
 title: wisdomToothIntro
 ---
 Penne: Hi there! Any wisdom to spare, o wisdom tooth?
-Wisdom_Tooth: O, the pain...the paaaaaain! I cannot giveth my wisdom in such PAIN! 
+Wisdom Tooth: O, the pain...the paaaaaain! I cannot giveth my wisdom in such PAIN! 
 Penne: I could really use some wisdom right now. Is there anything I can do for you?
-Wisdom_Tooth: Helpeth me rid of my tooth ache! Heal my cavity...I implore you!
+Wisdom Tooth: Helpeth me rid of my tooth ache! Heal my cavity...I implore you!
 Penne: Oh no! Coming right up, sir!
 Penne: (Maybe I can find something around here and give to him.)
 <<Set_Read wisdomToothIntro>>
-<<if Check_Collected("Mint_Toothpaste") == true>>
+<<if Check_Collected("Mint_Toothpaste") == true || Check_Collected("Charcoal_Toothpaste") == true || Check_Collected("Spearmint_Toothpaste") == true>>
     Penne: Wait a second, I've already got a toothpaste!
     <<jump wisdomToothScript>>
-<<elseif Check_Collected("Charcoal_Toothpaste") == true>>
-    Penne: Wait a second, I've already got a toothpaste!
-    <<jump wisdomToothScript>>
-<<elseif Check_Collected("Spearmint_Toothpaste") == true>>
-    Penne: Wait a second, I've already got a toothpaste!
-    <<jump wisdomToothScript>>
-
 <<elseif Check_Collected("Mint_Toothpaste") == false || Check_Collected("Charcoal_Toothpaste") == false || Check_Collected("Spearmint_Toothpaste") == false>>
-    Wisdom_Tooth: Go! Go unto the interior of the inscrutable Tim's Bodega and gather the dispersed dentifrices! Aid me in my suffering!s
+    Wisdom Tooth: Go! Go unto the interior of the inscrutable Tim's Bodega and gather the dispersed dentifrices! Aid me in ending my suffering!
 //tutorialize; toothpaste around the bodega
 <<endif>>
 ===
@@ -53,7 +46,7 @@ title: question_mintToothpaste
 <<Play_SFX SoundManager Toothpaste>>
 
 Penne: We can try mint toothpaste to get rid of that cavity, or whatever is hurting you!
-Wisdom_Tooth: Mint? 'Tis but the most basic pastes of teeth. It is not worthy! No thanketh you.
+Wisdom Tooth: Mint? 'Tis but the most basic pastes of teeth. It is not worthy! No thanketh you.
 Penne: Drat. Maybe I should try another one...
 
 ===
@@ -65,7 +58,7 @@ title: question_charcoalToothpaste
 <<Play_SFX SoundManager Toothpaste>>
 
 Penne: Wanna try charcoal toothpaste to get rid of that tooth ache of yours?
-Wisdom_Tooth: Charcoal...? Nay, it shall ruin my bleach job. No thanketh you.
+Wisdom Tooth: Charcoal...? Nay, it shall ruin my bleach job. No thanketh you.
 Penne: Fiddlesticks! Is there another toothpaste I could try?
 
 ===
@@ -77,23 +70,41 @@ title: question_spearmintToothpaste
 <<Play_SFX SoundManager Toothpaste>>
 
 Penne: How do you feel about spearmint toothpaste for that tooth ache of yours?
-Wisdom_Tooth: SPEARMINT? O, scrumptious, serendipitous spearmint! 
-Wisdom_Tooth: If thou applyeth said toothpaste to thine being, I may impart my wisdom...eth!
+Wisdom Tooth: SPEARMINT? O, scrumptious, serendipitous spearmint! 
+Wisdom Tooth: If thou applyeth said toothpaste to thine being, I may impart my wisdom...eth!
 Penne: Wisdom? I could definitely use some of that! I shall applyeth it!
 //maybe some sort of SFX of her squeezing toothpaste
-Wisdom_Tooth: Mmmm...
-Wisdom_Tooth: MMMMMM...!
+Wisdom Tooth: Mmmm...
+Wisdom Tooth: MMMMMM...!
 Penne: Uh...?
+Penne: (CLANK! The sound of something metal falls out of the Wisdom Tooth!)
 //sfx of clanking noise because the Bloody Gardening Shears have fallen out!!!
-Wisdom_Tooth: AHHH...much better! I have been attempting to rid myself of that gardening accoutrement since Timsday! 
-Penne: Timsday...by any chance did you see the delivery man, Radiatore that day? Or anyone else?
-Wisdom_Tooth: Yes, as a victim and witness to cruelest of violences from the holy man, Tim, and the delivery chap! For SHAME, especially unto that so-called Man of God!
-Penne: Aha! So Tim and this holy man were here at the bodega as well! 
-Wisdom_Tooth: Ay! I couldest not speaketh mine truth because of the pain, but now I shall be silenced no longer! Taketh mine words as an alibi and proveth those rotten naysayers!
+Wisdom Tooth: AHHH...much better! 
+Penne: What the—you had some gardening shears stuck in you this WHOLE time?
+Wisdom Tooth: Indeed, Pennelope! I have been attempting to rid myself of that gardening accoutrement since late Timsday! 
+Penne: Timsday...by any chance did you see the delivery man, Radiatore earlier that day? Or anyone else?
+Wisdom Tooth: I, Wisdom Tooth, saw Orzo, Tim, the holy man, and the delivery chap the night of Timsday!
+Penne: Aha! So Radiatore LIED to me—the night of Timsday, he saw Tim, a holy man, and Orzo while making his delivery!
+Penne: (But why would Radiatore not tell me about Tim or this holy man? Why would he cover for those two?)
+Wisdom Tooth: Then Tim and the holy man, yet again HOURS AFTER the night of Timsday, when they stucketh the gardening shears in my bodacious BODY!
+Penne: ...Wait, Tim and this holy man came back around to the boedega AGAIN to put those shears into you?
+Wisdom Tooth: YES. No other being stirred in those unholy hours. Radiatore and Orzo were NOT there!
+Penne: (I see, so Tim and this holy man came to the bodega twice. Once during the night when Radiatore made a delivery to Orzo...)
+Penne: (...and once AFTER the night of Timsday to perhaps HIDE the shears, the morning after Timsday.) 
+Penne: (This small window of time makes me think that's when Orzo was killed!)
+Wisdom Tooth: OOOOOH, woe is me! A victim and witness to cruelest of violences from the holy man and Tim! 
+Wisdom Tooth: For SHAME, for SHAAAAAAAAAME!
+Penne: I think I have a clear timeline of events coming together now, thanks to your alibi, Wisdom Tooth. 
+Wisdom Tooth: I couldest not speaketh mine truth because of the pain, but now I shall be silenced no longer! 
+Wisdom Tooth: Taketh mine words as an alibi and proveth those rotten naysayers!
 Penne: Yes, thank you! I'm going to record these shears AND your alibi into my journal. 
+Wisdom Tooth: Nay, taketh the pair of shears! I shan't see them again, for they shall evoke the darkest hour of pain I have ever known...
+Penne: Oh, ok then. I guess I'll take a picture of them to record in my journal and pick it up.
 Penne: (Penne recieved: a pair of bloody shears!)
         <<set $newItem to "Bloody_Gardening_Shears">>
         <<Add_Entry journal {$newItem}>>
         <<Add_Entry journal Wisdom_Tooth_Alibi>>
-Penne: And done! Now I have something to make that sweaty sucker squeal... I should go show him what I found!
+Penne: (And done! I've recorded the Bloody Gardening Shears and the Wisdom Tooth's alibi into my journal!)
+Penne: Now I have something to show to make that sweaty sucker squeal... 
+Penne: I should go show Radiatore these bloody gardening shears and confront him with the Wisdom Tooth's alibi!
 ===

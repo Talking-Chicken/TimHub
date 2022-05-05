@@ -64,8 +64,8 @@ position: -204,-292
 Penne: Rigatoni! I missed seeing you at Head Quarters! Unfortunate that the next time I see you is at an investigation scene...//Penne Happy
 Rigatoni: That's Detective Rigatoni to you. What are you even doing here? This is murder victim's home for the case I'm working on.//Rigatoni Disdain
 Penne: That's the thing! You called for help for said murder case...so here I am! //Penne Happy
-<<Play_SFX SoundManager Pocky_Cat>>
-<<Add_Answer journal Question(Criminal) "it's me!">>
+// <<Play_SFX SoundManager Pocky_Cat>>
+// <<Add_Answer journal Question(Criminal) "it's me!">>
 Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
 Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused
 Penne: Haha...well, yes...looks like you aren't our best detective for nothing...
