@@ -6,11 +6,11 @@ tags:
 <<elseif Check_Read("rigatoniBodegaIntroRead") == true>>
         -> Ask about Rigatoni's condition <<if Check_Read("rigatoniConditionRead") == false>>
             <<jump question_rigatoniCondition>>
-        -> Ask for advice <<if Check_Read("read_introQs") == true>>
+        -> Ask for advice <<if Check_Read("read_introQs") == true && Check_Read("wisdomToothAlibiCollected") == false>>
             <<jump question_rigatoniAfterRadiatore>>
-        -> Show Rigatoni Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears")>>
+        -> Show Rigatoni Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("radiatoreNewAlibi") == false>>
             <<jump question_rigatoniShears>>
-        -> Show Rigatoni Radiatore's New Alibi <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Mysterious_Letter") && Check_Collected("Radiatore_al_Forno_New_Alibi")>>
+        -> Show Rigatoni Radiatore's New Alibi <<if Check_Collected("Radiatore_al_Forno_Update")>>// <<if Check_Read("radiatoreNewAlibi") == true>>
             <<jump question_rigatoniRadiatoreNewAlibi>>
         -> (New!) Go to the Church of Tim <<if Check_Read("rigatoniRadiatoreNewAlibiShown") == true>>
             Rigatoni: The Church of Tim...
@@ -27,18 +27,23 @@ tags:
                     Rigatoni: Keep on snooping on, then.
         -> I'm done.
             <<if Check_Read("read_introQs") == false>>
-                Rigatoni: Make sure to talk to the delivery man first. He acts shifty, which leads me to believe he is hiding something.
-                Rigatoni: Ask him all the questions you can. Record his alibi, and then investigate everything in the bodega.
-                Rigatoni: And maybe—ugh...!
-                Penne: Rigatoni! Are you ok?
-                Rigatoni: I-I'm fine...I was going to suggest you come to me for advice. 
-                Rigatoni: However, with my current condition I may not be as helpful...looking at anything that seems like evidence hurts.
-                Penne: Okie dokie, so if I'm stuck, can I still come to you?
-                Rigatoni: I may be able to guide you, yes...but go speak to Radiatore, look around the bodega, and then come to me.
-                Penne: Talk to Radiatore, take a look around the bodega, and come to you for any advice!
+                <<if Check_Read("rigatoniConditionRead") == true>>
+                    Rigatoni: Make sure to talk to the delivery man first. He acts shifty, which leads me to believe he is hiding something.
+                    Rigatoni: Ask him all the questions you can. Record his alibi, and then investigate everything in the bodega.
+                    Rigatoni: And maybe—ugh...!
+                    Penne: Rigatoni! Are you ok?
+                    Rigatoni: I-I'm fine...I was going to suggest you come to me for advice. 
+                    Rigatoni: However, with my current condition I may not be as helpful...looking at anything that seems like evidence hurts.
+                    Penne: Okie dokie, so if I'm stuck, can I still come to you?
+                    Rigatoni: I may be able to guide you, yes...but go speak to Radiatore, look around the bodega, and then come to me.
+                    Penne: Talk to Radiatore, take a look around the bodega, and come to you for any advice!
+                <<elseif Check_Read("rigatoniConditionRead") == false>>
+                    Penne: Wait! I still want to check in with how Rigatoni is feeling before ending the conversation.
+                    <<jump rigatoniBodega>>
+                <<endif>>
             <<elseif Check_Read("read_introQs") == true>>
                 Rigatoni: Get back to work, detective.
-            <<elseif Check_Read("read_introQs") == true && Check_Read("wisdomToothIntro") && Check_Read("rigatoniDeteriorate") == true>>
+            <<elseif Check_Read("read_introQs") == true && Check_Read("rigatoniDeteriorate") == true>>
                 Rigatoni: Ugh...get back to work...
             <<endif>>
 <<endif>>
@@ -54,8 +59,8 @@ Rigatoni: Hm. Well, do the same thing you did in Orzo's room: talk to the people
 Rigatoni: Especially, see what you can get out of the delivery man. I tried questioning him earlier, but I just know he's still hiding something. I'm going to take another look around.
 Penne: Sounds like a plan, Toni! 
 Rigatoni: I told you not to call me that.
-    <<Set_Read rigatoniBodegaIntroRead>>
-    <<jump rigatoniBodega>>
+<<Set_Read rigatoniBodegaIntroRead>>
+<<jump rigatoniBodega>>
 ===
 
 title: question_rigatoniCondition
@@ -84,8 +89,15 @@ Rigatoni: If you have already spoken to the delivery man Radiatore, I suggest yo
 Penne: Question...the tooth? But why?
 Rigatoni: He seems strange with all that incessant wailing, but I have a feeling he knows more than would seem.
 Rigatoni: He may be an important witness to something Radiatore is not telling us.
-Penne: He seemed a bit hysterical, but maybe you're right!
-Penne: (I should go talk to the Wisdom Tooth. Maybe if I help him out, he'll help me with the case!)
+Penne: But what if he won't tell me anything? All he's doing is wailing about his pain, or something!
+Rigatoni: Have you looked around the bodega? They have just about everything in here. Perhaps if you give the Tooth something...
+Penne: ...He'll do me a favor in return! 
+Rigatoni: Precisely.
+Penne: BRIBERY!
+Rigatoni: No!
+Penne: Hehe, just kidding. The Wisdom Tooth seemed a bit hysterical, but I think you're right!
+Rigatoni: Of course I am. 
+Penne: (I should go talk to the Wisdom Tooth. Maybe if I help him out with his pain, he'll help me with the case!)
 Penne: (And by help me, I mean the Wisdom Tooth'll give me something to make Radiatore spill some new info!)
     <<jump rigatoniBodega>>
 ===
@@ -101,7 +113,7 @@ Penne: That's right. Don't you wanna take a look, Rigatoni? We're solving this c
 Rigatoni: Ugh...my head hurts too much to look at it. I-I think you should go talk to Radiatore about it...
 Rigatoni: If you show him either those shears or that alibi you mentioned...he might just crack and tell us something new.
 Rigatoni: I-I need to rest for a moment. If you could excuse me...
-Penne: Penne: (I think her forgetfulness is getting worse. We need to finish the investigation, stat!)
+Penne: (I think her forgetfulness is getting worse. We need to finish the investigation, stat!)
 Penne: (I should hurry up and go show the shears and Wisdom Tooth's alibi to Radiatore.)
 <<Set_Read rigatoniDeteriorate>>
 <<jump rigatoniBodega>>

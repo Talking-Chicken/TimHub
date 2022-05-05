@@ -18,7 +18,7 @@ position: -14,-216
         <<jump question_radiatoreWisdomTooth>>
     -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
-    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
+    -> (New!) Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
     <<if Check_Read("radiatoreLies") == false || Check_Read("radiatoreAboutJob") == false || Check_Read("radiatoreCorpseShipment") == false || Check_Read("radiatoreWisdomTooth") == false>>
@@ -175,7 +175,7 @@ Penne: Looks like my next destination for this investigation is the Church of Ti
 Radiatore: T-the church...watch yourself. A-And you didn't hear anything from me, alright!
 Penne: Too late! I'm gonna add this letter AND your new alibi to my journal!
 Radiatore: Man...why do I even bother. 
-<<Add_Entry journal Radiatore_al_Forno_Alibi>>
+<<Add_Entry journal Radiatore_al_Forno_Update>>
 <<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
 Penne: (And done! I've recorded the Mysterious Letter into my journal. I can read the details there!)
@@ -184,6 +184,7 @@ Penne: Thank you, Radiatore for your cooperation.
 Radiatore: A-Anytime...detective. 
 Penne: (Now that that's done, I should go talk to Rigatoni and show her Radiatore's new alibi!)
 Penne: (I really hope she's feeling ok...)
+<<Set_Read radiatoreNewAlibi>>
 <<jump radiatoreScript>>
 ===
 
