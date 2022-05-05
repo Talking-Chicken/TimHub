@@ -17,7 +17,9 @@ position: -1,-117
     -> Show Rigatoni Stelle's new alibi <<if Check_Collected("Stelle_Parmesan_Alibi_Update") && Check_Read("rigatoni_stelleAlibiShown") == false>>
             <<jump go_to_bodega>>
     -> Leave Orzo's home <<if Check_Read("rigatoni_stelleAlibiShown") == true>>
-        Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
+        Rigatoni: It seems as though we have thoroughly examined the room thus far. 
+        Rigatoni: Thanks to the bodega receipt and Stelle's new alibi, we now know that Orzo was last alive in the bodega.
+        Rigatoni: Ready to proceed to the next area, the bodega, to investigate further?
             -> Yes, let's go!
                 <<Room_Change GameManager>>
                 <<Move_And_Talk_To Player Rigatoni_Bodega>>

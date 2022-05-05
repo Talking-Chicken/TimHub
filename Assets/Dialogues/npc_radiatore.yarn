@@ -168,10 +168,23 @@ Radiatore: This letter fell out of Tim's pocket when I put his body in the box. 
 Penne: You were the one who sent Orzo to us, weren't you?
 Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful. 
 Penne: (Penne recieved: a mysterious letter!)
-
+Penne: This mysterious letter was written to Orzo! Whoever wrote it told Orzo to meet them at the Church of Tim...
+Penne: ...the night of Timsday?
+Penne: If Orzo was last seen alive at the bodega, then the night of Timsday something must've happened to him at the church!
+Penne: Looks like my next destination for this investigation is the Church of Tim!
+Radiatore: T-the church...watch yourself. A-And you didn't hear anything from me, alright!
+Penne: Too late! I'm gonna add this letter AND your new alibi to my journal!
+Radiatore: Man...why do I even bother. 
 <<Add_Entry journal Radiatore_al_Forno_Alibi>>
 <<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
+Penne: (And done! I've recorded the Mysterious Letter into my journal. I can read the details there!)
+Penne: (I've also updated Radiatore's alibi with the truth he told me. I can check my journal for it in case I forget.)
+Penne: Thank you, Radiatore for your cooperation. 
+Radiatore: A-Anytime...detective. 
+Penne: (Now that that's done, I should go talk to Rigatoni and show her Radiatore's new alibi!)
+Penne: (I really hope she's feeling ok...)
+<<jump radiatoreScript>>
 ===
 
 title: question_radiatoreWisdomTooth

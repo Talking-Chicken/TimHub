@@ -8,19 +8,38 @@ tags:
             <<jump question_rigatoniShears>>
         -> Show Rigatoni Radiatore's New Alibi <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Mysterious_Letter") && Check_Collected("Radiatore al Forno New Alibi")>>
             <<jump question_rigatoniRadiatoreNewAlibi>>
-        -> I'm done.
+        -> (New!) Go to the Church of Tim <<if Check_Read("rigatoniRadiatoreNewAlibiShown") == true>>
+            Rigatoni: The Church of Tim...
+            Penne: Uh, earth to Rigatoni?
+            Rigatoni: Oh, you. Have you finished your snooping?
+            Penne: S-Snooping? It's our job to be snooping around, Rigatoni!
+            Rigatoni: Of course it is. You make a convincing argument, as always. 
+            Penne: (At least she hasn't forgotten what sarcasm is...)
+            Rigatoni: Are you ready to proceed to the next area, the Church of Tim?
+                -> Yes, let's go!
+                    <<Room_Change GameManager>>
+                    <<Move_And_Talk_To Player npc_rigatoni_church>>
+                -> Hmm, not yet.
+                    Rigatoni: Keep on snooping on, then.
+                        -> I'm done.
             <<if Check_Read("read_introQs") == false>>
-                Rigatoni: Make sure to talk to the delivery man and the Wisdom Tooth. 
-                Rigatoni: The latter seems strange, but I have a feeling he knows more than would seem.
-                Penne: (Ok, looks like I should go help out the Wisdom Tooth. Maybe he'll give me something to make Radiatore spill some new info!)
+                Rigatoni: Make sure to talk to the delivery man first. He acts shifty, which leads me to believe he is hiding something.
+                Rigatoni: Ask him all the questions you can. Record his alibi, and then move on. 
+                Rigatoni: I would talk to the Wisdom Tooth after talking to the delivery man. 
+                Penne: The Wisdom Tooth? But why?
+                Rigatoni: He seems strange with all that incessant wailing, but I have a feeling he knows more than would seem.
+                Penne: Okie dokie, partner! Talk to Radiatore, take a look around the bodega, and then talk to the Wisdom Tooth!
             <<elseif Check_Read("read_introQs") == true>>
                 Rigatoni: If you have already spoken to the delivery man Radiatore, I suggest you question the Wisdom Tooth.
                 Penne: Question...the tooth?
                 Rigatoni: He may be an important witness to something Radiatore is not telling us.
                 Penne: He seemed a bit hysterical, but maybe you're right!
                 Penne: (I should go talk to the Wisdom Tooth. Maybe if I help him out, he'll help me with the case!)
-            <<elseif Check_Read("read_introQs") == true && Check_Read("wisdomToothIntro")>>
+                Penne: (And by help me, I mean the Wisdom Tooth'll give me something to make Radiatore spill some new info!)
+            <<elseif Check_Read("read_introQs") == true && Check_Read("wisdomToothIntro") == true>>
                 Rigatoni: Get back to work, detective.
+            <<elseif Check_Read("read_introQs") == true && Check_Read("wisdomToothIntro") && Check_Read("rigatoniDeteriorate") == true>>
+                Rigatoni: Ugh...get back to work...
             <<endif>>
 <<endif>>
 ===
@@ -36,35 +55,44 @@ Rigatoni: Especially, see what you can get out of the delivery man. I tried ques
 Penne: Sounds like a plan, Toni! 
 Rigatoni: I told you not to call me that.
     <<Set_Read rigatoniBodegaIntroRead>>
-
+    <<jump rigatoniBodega>>
 ===
+
 title: question_rigatoniShears
 tags: 
 ---
-// <<if Check_Read("Bloody_Gardening_Shears") == false>>
-    Penne: Toni, look at all this..! I think I'm onto something here!
-    Penne: It turns out that Radiatore was lying! He saw some other people that last saw Orzo alive, and—
-    Rigatoni: ...Why did you bring me those things? 
-    Penne: Oh, right, I should start with the Wisdom Tooth's alibi! He was in pain because he had these shears stuck and—
-    Rigatoni: I thought... I thought we were here to... What were we here to do again?
-    Penne: Wha— What do you mean?! We're investigating Orzo's murder! I questioned Radiatore, and—
-    Rigatoni: Why question our delivery man? Radiatore's is rather spineless, but he has a conscience. He would never do anything wrong!
-    Penne: That's not what you were saying a few minutes ago... 
-    Penne: (I think her forgetfulness is getting worse. We need to finish the investigation, stat! Let's see if Radiatore has more to say.)
-
-//     <<Set_Read murderWeapon>>
-// <<endif>>
-// <<if Check_Read("murderWeapon")>>
-//     <<jump go_to_church>>
-// <<endif>>
+Penne: Toni, look at all this..! I think I'm onto something here!
+Rigatoni: What's this...bloody gardening shears? Why would you show me such a thing?
+Penne: I got this piece of evidence from the Wisdom Tooth. I could even show you his alibi!
+Rigatoni: Alibi...yes, that's right...we're on an investigation?
+Penne: That's right. Don't you wanna take a look, Rigatoni? We're solving this case together after all!
+Rigatoni: Ugh...my head hurts too much to look at it. I-I think you should go talk to Radiatore about it...
+Rigatoni: If you show him either those shears or that alibi you mentioned...he might just crack and tell us something new.
+Rigatoni: I-I need to rest for a moment. If you could excuse me...
+Penne: Penne: (I think her forgetfulness is getting worse. We need to finish the investigation, stat!)
+Penne: (I should hurry up and go show the shears and Wisdom Tooth's alibi to Radiatore.)
+<<Set_Read rigatoniDeteriorate>>
+<<jump rigatoniBodega>>
 ===
 
-title: go_to_church
+title: question_rigatoniRadiatoreNewAlibi
 ---
-Rigatoni: Have you finished your snooping?
--> Yes, let's go!
-    <<Room_Change GameManager>>
-    <<Move_And_Talk_To Player npc_rigatoni_church>>
--> Hmm, not yet.
-    Rigatoni: Keep on snooping on, then.
+Penne: Toni, toni! Look at what I recorded...a new alibi from Radiatore, thanks to the Wisdom Tooth!
+Penne: It turns out that Radiatore was lying! He saw some other people that last saw Orzo alive, and—
+Rigatoni: My head...Why did you bring me those things? 
+Penne: Oh, right, I should start with the Wisdom Tooth's alibi! He was in pain because he had these shears stuck and—
+Rigatoni: I thought... I thought we were here to... What were we here to do again?
+Penne: Wha— What do you mean?! We're investigating Orzo's murder! I questioned Radiatore, and—
+Rigatoni: Why question our delivery man? Radiatore's is rather spineless, but he has a conscience. He would never do anything wrong!
+Penne: That's not what you were saying earlier... 
+Rigatoni: I do not recall saying anything like that earlier.
+Penne: (Looks like the memory loss is kicking in! We better go investigate the church and finish this case before she gets worst!)
+Penne: Say, Rigatoni, with all this new evidence I've found, I think we should go to the church next!
+Rigatoni: The...church.
+Penne: I think if we go there, we could potentially find things and solve Orzo's murder! What do you say?
+Rigatoni: The church...a place of worship for...Tim. Yes. We can go to the church.
+Penne: (Ok! Looks like I've convinced her. Now we can proceed to church!)
+<<Set_Read rigatoniRadiatoreNewAlibiShown>>
+<<Set_Read rigatoniDeteriorate>>
+<<jump rigatoniBodega>>
 ===
