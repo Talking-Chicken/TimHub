@@ -45,9 +45,18 @@ title: churchCandle
 tags:
 position: 300,-101
 ---
-<<if Check_Read("neroGone") == false>>
+<<if Check_Read("neroGone") == false && Check_Read("neroIntro") == true>>>>
     Penne: The flame looks really strong. I should be careful—it could potentially burn something!
-    Nero: 
+    Penne: This candle could be useful for me...
+    <<Camera_Lerp_To GameManager npc_nero>>
+    Nero: Whatever you're thinking of doing with that candle, do not. It's very dangerous.
+    Penne: But what if I want to—
+    Nero: It's for your and everyone's safety. Please, step away from the candle. 
+    <<Camera_Lerp_To GameManager Player>>
+    Penne: (Suspicious! He definitely doesn't want me to do anything with this candle.)
+    Penne: (That can only mean he's hiding something, and this might help me later!)
+    Penne: (I should come back to this candle and investigate other pieces of evidence here instead, or confront Nero with them.)
+    Penne: (While I carry on the investigation, Nero might leave during it so that I can pick this candle up!)
 <<elseif Check_Read("neroGone") == true>>
     Penne: The flame looks really strong. I should be careful—it could potentially burn something!
     Penne: This candle might be useful for me. Should I pick it up?
@@ -56,6 +65,8 @@ position: 300,-101
             <<Pick_Up_Candle obj_churchCandle>>
         -> Don't pick the candle up
             Penne: Hmm. Maybe I'll pick it up later. 
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<endif>>
 ===
 
@@ -64,11 +75,11 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Confession_Log_Book") == false && Check_Read("neroIntro") == true>>
-    Penne: This is Nero's logbook of confessions. The entries from before Timsday are... about Orzo!
+    Penne: This is Nero's logbook of confessions. The entries from on the night Timsday are... about Orzo!
     Penne: Looks like he talked more about his strange dreams, and about having "a life before Timsville" and "doubts about the sanctity of Tim."
     Penne: According to this, Nero's advice was to pray and believe in Tim to guide him.
     Penne: ...The handwriting in this book looks really beautiful...and familiar...
-    Penne: Wait a minute! The handwriting looks the SAME! 
+    Penne: Wait a minute! The handwriting looks really similar to the Mysterious Letter's! 
     Penne: I should definitely confront Nero about this. 
     <<set $newItem to "Confession_Log_Book">>
     <<jump addEntry>>

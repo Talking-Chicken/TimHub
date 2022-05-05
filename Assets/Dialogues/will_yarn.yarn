@@ -76,7 +76,7 @@ Tim: Yes! But can you assemble the pieces correctly?
 Nero: My Lord! We must deal with her at once!
 Tim: Oh, live a little, Nero. She's made it all the way here—might as well hear her out!
 Tim: Detective! I will give you the opportunity to show me your findings. 
-Tim: With the pieces of evidence you have found, present to me a completed Case Brief in your journal.
+Tim: With the pieces of evidence you have found, present to me a completed Case Report in your journal.
 Tim: Tell me: Who killed Orzo Parmesan, when, where, how, and why!
 Tim: Then, I shall determine if you got everything about Orzo's murder right or wrong. I'm mostly omniscient, after all!
 Tim: If you solve the case correctly, I shall be amused and let you escape Timsville!
@@ -89,9 +89,10 @@ Tim: Because I think it would be fun! I love talking to others. Companionship is
 Tim: Also I'm not really going to give you a choice here, haha. 
 Penne: (I'm terrified! This whole situation has taken a turn for the worse.)
 Penne: (But I can't give up now.)
-Penne: (I can solve this case. I just need to match the right evidence to answer the five main questions in the case brief.)
+Penne: (I can solve this case. I just need to match the right evidence to answer the five main questions in the Case Report.)
 Penne: (This is it...! I gotta get this right—my life and Rigatoni's life depends on it!)
-//shows the evidence
+//Conversation ends here. 
+//Penne should go to her journal to put the evidence in the places for the case report
 //if penne gets it wrong, go to Bad End
 //if penne gets it right:
 Penne: Here's how the murder really went down. 
