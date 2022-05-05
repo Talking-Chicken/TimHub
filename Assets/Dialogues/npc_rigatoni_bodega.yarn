@@ -4,9 +4,13 @@ tags:
 <<if Check_Read("rigatoniBodegaIntroRead") == false>>
     <<jump rigatoniBodegaIntro>>
 <<elseif Check_Read("rigatoniBodegaIntroRead") == true>>
+        -> Ask about Rigatoni's condition <<if Check_Read("rigatoniConditionRead") == false>>
+            <<jump question_rigatoniCondition>>
+        -> Ask for advice <<if Check_Read("read_introQs") == true>>
+            <<jump question_rigatoniAfterRadiatore>>
         -> Show Rigatoni Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears")>>
             <<jump question_rigatoniShears>>
-        -> Show Rigatoni Radiatore's New Alibi <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Mysterious_Letter") && Check_Collected("Radiatore al Forno New Alibi")>>
+        -> Show Rigatoni Radiatore's New Alibi <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Mysterious_Letter") && Check_Collected("Radiatore_al_Forno_New_Alibi")>>
             <<jump question_rigatoniRadiatoreNewAlibi>>
         -> (New!) Go to the Church of Tim <<if Check_Read("rigatoniRadiatoreNewAlibiShown") == true>>
             Rigatoni: The Church of Tim...
@@ -21,22 +25,18 @@ tags:
                     <<Move_And_Talk_To Player npc_rigatoni_church>>
                 -> Hmm, not yet.
                     Rigatoni: Keep on snooping on, then.
-                        -> I'm done.
+        -> I'm done.
             <<if Check_Read("read_introQs") == false>>
                 Rigatoni: Make sure to talk to the delivery man first. He acts shifty, which leads me to believe he is hiding something.
-                Rigatoni: Ask him all the questions you can. Record his alibi, and then move on. 
-                Rigatoni: I would talk to the Wisdom Tooth after talking to the delivery man. 
-                Penne: The Wisdom Tooth? But why?
-                Rigatoni: He seems strange with all that incessant wailing, but I have a feeling he knows more than would seem.
-                Penne: Okie dokie, partner! Talk to Radiatore, take a look around the bodega, and then talk to the Wisdom Tooth!
+                Rigatoni: Ask him all the questions you can. Record his alibi, and then investigate everything in the bodega.
+                Rigatoni: And maybe—ugh...!
+                Penne: Rigatoni! Are you ok?
+                Rigatoni: I-I'm fine...I was going to suggest you come to me for advice. 
+                Rigatoni: However, with my current condition I may not be as helpful...looking at anything that seems like evidence hurts.
+                Penne: Okie dokie, so if I'm stuck, can I still come to you?
+                Rigatoni: I may be able to guide you, yes...but go speak to Radiatore, look around the bodega, and then come to me.
+                Penne: Talk to Radiatore, take a look around the bodega, and come to you for any advice!
             <<elseif Check_Read("read_introQs") == true>>
-                Rigatoni: If you have already spoken to the delivery man Radiatore, I suggest you question the Wisdom Tooth.
-                Penne: Question...the tooth?
-                Rigatoni: He may be an important witness to something Radiatore is not telling us.
-                Penne: He seemed a bit hysterical, but maybe you're right!
-                Penne: (I should go talk to the Wisdom Tooth. Maybe if I help him out, he'll help me with the case!)
-                Penne: (And by help me, I mean the Wisdom Tooth'll give me something to make Radiatore spill some new info!)
-            <<elseif Check_Read("read_introQs") == true && Check_Read("wisdomToothIntro") == true>>
                 Rigatoni: Get back to work, detective.
             <<elseif Check_Read("read_introQs") == true && Check_Read("wisdomToothIntro") && Check_Read("rigatoniDeteriorate") == true>>
                 Rigatoni: Ugh...get back to work...
@@ -55,6 +55,38 @@ Rigatoni: Especially, see what you can get out of the delivery man. I tried ques
 Penne: Sounds like a plan, Toni! 
 Rigatoni: I told you not to call me that.
     <<Set_Read rigatoniBodegaIntroRead>>
+    <<jump rigatoniBodega>>
+===
+
+title: question_rigatoniCondition
+---
+Penne: How are you feeling, Rigatoni? You seem to be in a lot of pain right now...
+Rigatoni: I have a massive headache. 
+Penne: Not because of me, right?
+Rigatoni: ...
+Penne: PLEASE don't answer that!
+Rigatoni: No, it is not because of you. 
+Rigatoni: Back at Orzo's home, the pain was tolerable. But the further we investigate, the worse it gets.
+Penne: No! That's awful! I wish I could kiss it better!!!
+Rigatoni: D-Detective, that is extremely inappropriate!
+Penne: I believe in the power of LOVE, Rigatoni!
+Rigatoni: Get back to work! Now! Go speak to someone else!
+Penne: (Ehehe...hopefully that at least lifted her spirits.)
+Penne: (Now I gotta get back to work!)
+<<Set_Read rigatoniConditionRead>>
+    <<jump rigatoniBodega>>
+===
+
+title: question_rigatoniAfterRadiatore
+---
+Penne: I spoke to Radiatore, but I still don't know what to do!
+Rigatoni: If you have already spoken to the delivery man Radiatore, I suggest you question the Wisdom Tooth.
+Penne: Question...the tooth? But why?
+Rigatoni: He seems strange with all that incessant wailing, but I have a feeling he knows more than would seem.
+Rigatoni: He may be an important witness to something Radiatore is not telling us.
+Penne: He seemed a bit hysterical, but maybe you're right!
+Penne: (I should go talk to the Wisdom Tooth. Maybe if I help him out, he'll help me with the case!)
+Penne: (And by help me, I mean the Wisdom Tooth'll give me something to make Radiatore spill some new info!)
     <<jump rigatoniBodega>>
 ===
 
