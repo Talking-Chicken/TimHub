@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.882353, g: 0.8196079, b: 0.7568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 8320928331107923941}
   - component: {fileID: 3428660276392853806}
   - component: {fileID: 3309467628431664234}
+  - component: {fileID: 299887174002488978}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -207,6 +208,21 @@ MonoBehaviour:
   m_Spacing: {x: 16, y: 16}
   m_Constraint: 1
   m_ConstraintCount: 2
+--- !u!114 &299887174002488978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726192148938417583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.23529412}
+  m_EffectDistance: {x: -4, y: -4}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2004089160746312137
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +235,7 @@ GameObject:
   - component: {fileID: 3038571741616185475}
   - component: {fileID: 7625044063683367341}
   - component: {fileID: 5706912601243595035}
+  - component: {fileID: 8728078763578914841}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -315,6 +332,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8728078763578914841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004089160746312137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.23529412}
+  m_EffectDistance: {x: -4, y: -4}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2125198727303385088
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,8 +755,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.754717, g: 0.43716624, b: 0.64629376, a: 1}
+    m_NormalColor: {r: 0.87843144, g: 0.81568635, b: 0.75294125, a: 1}
+    m_HighlightedColor: {r: 0.75294125, g: 0.43529415, b: 0.64705884, a: 1}
     m_PressedColor: {r: 0.7490196, g: 0.43137258, b: 0.6431373, a: 1}
     m_SelectedColor: {r: 0.7490196, g: 0.43137258, b: 0.6431373, a: 1}
     m_DisabledColor: {r: 0.7490196, g: 0.43137258, b: 0.6431373, a: 0.5019608}
