@@ -9,35 +9,38 @@ public class PlayerStateExplore : PlayerStateBase
     }
     public override void updateState(PlayerControl player){
         InteractiveObj interactingObj = null;
-
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null) {
-                Debug.Log("hit something");
-                if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
-                    Debug.Log("hit interactive object");
-                    interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
-                }
-            }
-            else 
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if (Input.GetMouseButtonDown(player.PrimaryMouseBuotton) || Input.GetMouseButton(player.PrimaryMouseBuotton)) {
+            if (hit.collider == null || !hit.collider.tag.Equals("Blocker"))
                 player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        //start dialogue first, then interact
-        if (interactingObj != null) {
-            //for test first, add its entry to journal
-            //player.Journal.addEntry(interactingObj.Entry);
-
-            if (interactingObj.IsInteractFirst) {
-                interactingObj.interact();
-                interactingObj.talk();
+        if (!player.IsForcedToMove) {
+            if (Input.GetMouseButtonDown(player.SecondaryMouseButton)) {
+                if (hit.collider != null) {
+                    if (hit.collider.GetComponentInParent<InteractiveObj>() != null) {
+                        interactingObj = hit.collider.GetComponentInParent<InteractiveObj>();
+                    }
+                }
             }
-            else {
-                if (interactingObj.IsTalkable)
-                    interactingObj.talk();
-                if (interactingObj.IsInteractable)
+
+            //start dialogue first, then interact
+            if (interactingObj != null) {
+                if (interactingObj.IsInteractFirst) {
                     interactingObj.interact();
-            }    
+                    player.moveAndTalkTo(interactingObj.name);
+                    //interactingObj.talk();
+                }
+                else {
+                    if (interactingObj.IsTalkable)
+                        player.moveAndTalkTo(interactingObj.name);
+                        //interactingObj.talk();
+                    if (interactingObj.IsInteractable)
+                        interactingObj.interact();
+                }    
+            }
+        } else {
+            player.moveAndTalkTo(player.TargetingDialogueNPC);
         }
     }
 
@@ -50,7 +53,7 @@ public class PlayerStateExplore : PlayerStateBase
         //stop player moving
         player.Destination = player.transform.position;
         player.blurCamera.SetActive(true);
-
+        
         player.previousState = this;
     }
 }

@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 9036553800617429055}
   - component: {fileID: 6437486122275435190}
   - component: {fileID: 5066708019502277450}
+  - component: {fileID: 937529807}
   m_Layer: 0
   m_Name: npc_rigatoni_church
   m_TagString: Untagged
@@ -71,7 +72,7 @@ Transform:
   m_GameObject: {fileID: 605739447563094129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.79, y: -22.35, z: 49.89235}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8872440421651647760}
   m_RootOrder: 1
@@ -116,7 +117,7 @@ SpriteRenderer:
   m_SortingLayerID: -1901766707
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7fe9b2d787ae6724889582ded9be993f, type: 3}
+  m_Sprite: {fileID: 3158565735017259173, guid: fa54638c816b4934da31172180061193, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,18 +141,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.029281482, y: 0.19081014}
+  m_Offset: {x: 0.009274915, y: 0.2758301}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.8, y: 2.5}
+    oldSize: {x: 2.15, y: 3.4}
     newSize: {x: 1.8, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5935638, y: 0.28731614}
+  m_Size: {x: 0.9336456, y: 0.4573562}
   m_EdgeRadius: 0
 --- !u!114 &6437486122275435190
 MonoBehaviour:
@@ -171,6 +172,8 @@ MonoBehaviour:
   _startNode: rigatoniChurch
   collider: {fileID: 5066708019502277450}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &5066708019502277450
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -181,14 +184,14 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.8, y: 2.5}
+    oldSize: {x: 2.15, y: 3.4}
     newSize: {x: 1.8, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -196,69 +199,208 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.11, y: 0.14999999}
-      - {x: 0.12, y: 0.04}
-      - {x: 0.22, y: 0.01}
-      - {x: 0.22999999, y: 0.01}
-      - {x: 0.45999998, y: 0.089999996}
-      - {x: 0.51, y: 0.16}
-      - {x: 0.35, y: 0.26}
-      - {x: 0.32, y: 0.44}
-      - {x: 0.35999998, y: 0.45999998}
-      - {x: 0.37, y: 0.56}
-      - {x: 0.41, y: 0.81}
-      - {x: 0.38, y: 0.87}
-      - {x: 0.61, y: 0.98999995}
-      - {x: 0.71, y: 1.0699999}
-      - {x: 0.71, y: 1.2099999}
-      - {x: 0.7, y: 1.23}
-      - {x: 0.62, y: 1.3399999}
-      - {x: 0.52, y: 1.39}
-      - {x: 0.45, y: 1.37}
-      - {x: 0.44, y: 1.48}
-      - {x: 0.39999998, y: 1.68}
-      - {x: 0.42999998, y: 1.8299999}
-      - {x: 0.47, y: 2}
-      - {x: 0.42, y: 2.07}
-      - {x: 0.39, y: 2.27}
-      - {x: 0.26, y: 2.4199998}
-      - {x: 0.22, y: 2.5}
-      - {x: 0.08, y: 2.5}
-      - {x: -0.04, y: 2.44}
-      - {x: -0.099999994, y: 2.49}
-      - {x: -0.22, y: 2.5}
-      - {x: -0.34, y: 2.5}
-      - {x: -0.37, y: 2.3999999}
-      - {x: -0.34, y: 2.32}
-      - {x: -0.32, y: 2.29}
-      - {x: -0.48, y: 2.1399999}
-      - {x: -0.52, y: 1.9599999}
-      - {x: -0.59999996, y: 1.92}
-      - {x: -0.59999996, y: 1.87}
-      - {x: -0.51, y: 1.65}
-      - {x: -0.58, y: 1.5899999}
-      - {x: -0.63, y: 1.49}
-      - {x: -0.63, y: 1.39}
-      - {x: -0.58, y: 1.3199999}
-      - {x: -0.59999996, y: 1.05}
-      - {x: -0.66999996, y: 1.02}
-      - {x: -0.66999996, y: 0.81}
-      - {x: -0.61, y: 0.58}
-      - {x: -0.56, y: 0.39}
-      - {x: -0.5, y: 0.35999998}
-      - {x: -0.45999998, y: 0.42}
-      - {x: -0.42999998, y: 0.47}
-      - {x: -0.39999998, y: 0.61}
-      - {x: -0.35999998, y: 0.51}
-      - {x: -0.32, y: 0.45999998}
-      - {x: -0.28, y: 0.19}
-      - {x: -0.26, y: 0.06}
-      - {x: -0.22999999, y: 0.02}
-      - {x: -0.17, y: 0.01}
-      - {x: 0.01, y: 0.01}
-      - {x: 0.04, y: 0.08}
-      - {x: -0.03, y: 0.19}
-      - {x: 0.01, y: 0.45999998}
+    - - {x: -0.08, y: 0.25}
+      - {x: -0.074999996, y: 0.33499998}
+      - {x: -0.049999997, y: 0.675}
+      - {x: -0.024999999, y: 0.7}
+      - {x: -0.024999999, y: 0.72999996}
+      - {x: -0.035, y: 0.755}
+      - {x: -0.02, y: 0.79499996}
+      - {x: -0.024999999, y: 0.7}
+      - {x: 0.01, y: 0.65999997}
+      - {x: 0.044999998, y: 0.52}
+      - {x: 0.14, y: 0.25}
+      - {x: 0.17, y: 0.085}
+      - {x: 0.205, y: 0.055}
+      - {x: 0.275, y: 0.049999997}
+      - {x: 0.285, y: 0.095}
+      - {x: 0.315, y: 0.055}
+      - {x: 0.405, y: 0.055}
+      - {x: 0.585, y: 0.074999996}
+      - {x: 0.615, y: 0.14}
+      - {x: 0.585, y: 0.16}
+      - {x: 0.48999998, y: 0.19}
+      - {x: 0.41, y: 0.36499998}
+      - {x: 0.38, y: 0.59999996}
+      - {x: 0.39999998, y: 0.59499997}
+      - {x: 0.45999998, y: 0.59}
+      - {x: 0.47, y: 0.60499996}
+      - {x: 0.47, y: 0.615}
+      - {x: 0.445, y: 0.66499996}
+      - {x: 0.48, y: 0.74}
+      - {x: 0.475, y: 0.79999995}
+      - {x: 0.45499998, y: 0.84499997}
+      - {x: 0.48, y: 0.87}
+      - {x: 0.49499997, y: 0.945}
+      - {x: 0.48, y: 1.005}
+      - {x: 0.505, y: 1.05}
+      - {x: 0.5, y: 1.13}
+      - {x: 0.48499998, y: 1.155}
+      - {x: 0.45499998, y: 1.18}
+      - {x: 0.53499997, y: 1.225}
+      - {x: 0.715, y: 1.355}
+      - {x: 0.78499997, y: 1.355}
+      - {x: 0.84999996, y: 1.375}
+      - {x: 0.91499996, y: 1.4499999}
+      - {x: 0.91999996, y: 1.4699999}
+      - {x: 0.91999996, y: 1.605}
+      - {x: 0.895, y: 1.655}
+      - {x: 0.84499997, y: 1.6999999}
+      - {x: 0.88, y: 1.73}
+      - {x: 0.85999995, y: 1.795}
+      - {x: 0.805, y: 1.81}
+      - {x: 0.7, y: 1.8399999}
+      - {x: 0.675, y: 1.885}
+      - {x: 0.655, y: 1.88}
+      - {x: 0.64, y: 1.87}
+      - {x: 0.565, y: 1.6899999}
+      - {x: 0.545, y: 1.775}
+      - {x: 0.59499997, y: 1.905}
+      - {x: 0.59499997, y: 1.9749999}
+      - {x: 0.585, y: 2.03}
+      - {x: 0.57, y: 2.085}
+      - {x: 0.48, y: 2.205}
+      - {x: 0.505, y: 2.27}
+      - {x: 0.52, y: 2.455}
+      - {x: 0.56, y: 2.51}
+      - {x: 0.53999996, y: 2.5349998}
+      - {x: 0.505, y: 2.5449998}
+      - {x: 0.52, y: 2.62}
+      - {x: 0.55, y: 2.615}
+      - {x: 0.59499997, y: 2.6399999}
+      - {x: 0.60499996, y: 2.7}
+      - {x: 0.585, y: 2.715}
+      - {x: 0.53999996, y: 2.74}
+      - {x: 0.51, y: 2.77}
+      - {x: 0.53499997, y: 2.84}
+      - {x: 0.53999996, y: 2.915}
+      - {x: 0.52, y: 3.01}
+      - {x: 0.5, y: 3.04}
+      - {x: 0.42999998, y: 3.1}
+      - {x: 0.375, y: 3.1399999}
+      - {x: 0.28, y: 3.195}
+      - {x: 0.29, y: 3.235}
+      - {x: 0.305, y: 3.28}
+      - {x: 0.26999998, y: 3.3249998}
+      - {x: 0.265, y: 3.36}
+      - {x: 0.22999999, y: 3.385}
+      - {x: 0.175, y: 3.385}
+      - {x: 0.08, y: 3.345}
+      - {x: -0.024999999, y: 3.2549999}
+      - {x: -0.105, y: 3.3}
+      - {x: -0.175, y: 3.3249998}
+      - {x: -0.235, y: 3.35}
+      - {x: -0.29999998, y: 3.365}
+      - {x: -0.435, y: 3.365}
+      - {x: -0.45999998, y: 3.35}
+      - {x: -0.48499998, y: 3.31}
+      - {x: -0.48999998, y: 3.2749999}
+      - {x: -0.435, y: 3.23}
+      - {x: -0.45499998, y: 3.215}
+      - {x: -0.48499998, y: 3.135}
+      - {x: -0.45499998, y: 3.11}
+      - {x: -0.44, y: 3.0549998}
+      - {x: -0.515, y: 3.02}
+      - {x: -0.56, y: 2.99}
+      - {x: -0.63, y: 2.9199998}
+      - {x: -0.66499996, y: 2.845}
+      - {x: -0.66499996, y: 2.73}
+      - {x: -0.65999997, y: 2.6399999}
+      - {x: -0.775, y: 2.605}
+      - {x: -0.79999995, y: 2.595}
+      - {x: -0.79999995, y: 2.56}
+      - {x: -0.78499997, y: 2.5249999}
+      - {x: -0.72999996, y: 2.475}
+      - {x: -0.72499996, y: 2.44}
+      - {x: -0.72999996, y: 2.35}
+      - {x: -0.69, y: 2.27}
+      - {x: -0.815, y: 2.115}
+      - {x: -0.865, y: 2.03}
+      - {x: -0.875, y: 1.99}
+      - {x: -0.875, y: 1.9499999}
+      - {x: -0.865, y: 1.885}
+      - {x: -0.81, y: 1.8299999}
+      - {x: -0.81, y: 1.63}
+      - {x: -0.805, y: 1.56}
+      - {x: -0.81, y: 1.49}
+      - {x: -0.805, y: 1.42}
+      - {x: -0.83, y: 1.395}
+      - {x: -0.875, y: 1.3199999}
+      - {x: -0.875, y: 1.225}
+      - {x: -0.87, y: 1.1999999}
+      - {x: -0.81, y: 1.15}
+      - {x: -0.84, y: 1.11}
+      - {x: -0.84999996, y: 1.0649999}
+      - {x: -0.84999996, y: 1.015}
+      - {x: -0.81, y: 0.92499995}
+      - {x: -0.83, y: 0.865}
+      - {x: -0.825, y: 0.835}
+      - {x: -0.78999996, y: 0.79499996}
+      - {x: -0.79999995, y: 0.68}
+      - {x: -0.78499997, y: 0.655}
+      - {x: -0.73499995, y: 0.58}
+      - {x: -0.75, y: 0.515}
+      - {x: -0.73499995, y: 0.51}
+      - {x: -0.71, y: 0.51}
+      - {x: -0.63, y: 0.585}
+      - {x: -0.60499996, y: 0.625}
+      - {x: -0.59, y: 0.68}
+      - {x: -0.61, y: 0.79499996}
+      - {x: -0.565, y: 0.84999996}
+      - {x: -0.58, y: 0.945}
+      - {x: -0.565, y: 0.98499995}
+      - {x: -0.525, y: 0.92499995}
+      - {x: -0.525, y: 0.895}
+      - {x: -0.505, y: 0.83}
+      - {x: -0.47, y: 0.78}
+      - {x: -0.5, y: 0.74}
+      - {x: -0.5, y: 0.7}
+      - {x: -0.445, y: 0.65999997}
+      - {x: -0.41, y: 0.515}
+      - {x: -0.375, y: 0.22}
+      - {x: -0.355, y: 0.049999997}
+      - {x: -0.35, y: 0.04}
+      - {x: -0.33499998, y: 0.035}
+      - {x: -0.024999999, y: 0.035}
+      - {x: -0.01, y: 0.049999997}
+      - {x: -0.01, y: 0.085}
+      - {x: -0.055, y: 0.19}
+    - - {x: -0.57, y: 1.105}
+      - {x: -0.585, y: 1.14}
+      - {x: -0.56, y: 1.165}
+      - {x: -0.55, y: 1.18}
+      - {x: -0.53999996, y: 1.2049999}
+      - {x: -0.53999996, y: 1.22}
+      - {x: -0.52, y: 1.1949999}
+      - {x: -0.5, y: 1.1899999}
+      - {x: -0.51, y: 1.18}
+      - {x: -0.53499997, y: 1.15}
+      - {x: -0.565, y: 1.105}
+      - {x: -0.57, y: 1.0849999}
+      - {x: -0.565, y: 1.0849999}
+    - - {x: 0.815, y: 1.755}
+      - {x: 0.805, y: 1.76}
+      - {x: 0.825, y: 1.75}
+      - {x: 0.815, y: 1.75}
+--- !u!95 &937529807
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605739447563094129}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6dec52ad0b249bc408f58481eb8be814, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &827321634783399211
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,11 +913,13 @@ MonoBehaviour:
   _startNode: bloodyAltar
   collider: {fileID: 1886552100958987173}
   entryList:
-  - entryName: Bloody Altar
-    entryDes: A bloody altar. I assume maybe the Church of Tim has religious sacrifices
-      of some sort, or at least I hope so.
-    entryImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  - entryName: Handy Altar
+    entryDes: An altar with hands.  I guess you could say that the hands have a really
+      good GRASP of the scripture of Tim, right?
+    entryImage: {fileID: 4203767568837603619, guid: 71f50436b7461f847bae3498be87c9e9, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &4689079871980588744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1167,8 +1311,10 @@ MonoBehaviour:
   - entryName: Confession Booth
     entryDes: A confession booth found in the Church of Tim. It's private and quiet
       in there.
-    entryImage: {fileID: 21300000, guid: 8bf41901b468c9b4896d5c79c647d3c8, type: 3}
+    entryImage: {fileID: 21300000, guid: 085c7b01bc4c9ee408f4654dad33d808, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &5852558115413343071
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1740,8 +1886,10 @@ MonoBehaviour:
   - entryName: Church Organ
     entryDes: 'A church organ with strange Tim-like iconography. There are Timling-looking
       figures made of ivory on top. '
-    entryImage: {fileID: 21300000, guid: f00e9b9e5b3f6214fb30e8c05a4226e4, type: 3}
+    entryImage: {fileID: -3752594301158657335, guid: 71f50436b7461f847bae3498be87c9e9, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &8220925095540678348
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2740,19 +2888,21 @@ MonoBehaviour:
   - entryName: Nero di Seppia
     entryDes: A priest from the Church of Tim. Good gardener with great handwriting.
       Told me he didn't come in contact with the victim when he was murdered.
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 1ac183a2a275c254982d5cfe4d5388d7, type: 3}
     entryType: 1
   - entryName: Nero di Seppia Update
     entryDes: Turns out he DID meet with Orzo the night he was killed! Why would
       Nero lie about that to me?
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 1ac183a2a275c254982d5cfe4d5388d7, type: 3}
     entryType: 1
   - entryName: Nero di Seppia New Alibi
     entryDes: Apparently Orzo's father died in a hit-and-run, but how did Nero know
       this? Also, he keeps saying that there's a path to salvation...something about
       a light burning to reveal it. I should investiagte further with this information.
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 1ac183a2a275c254982d5cfe4d5388d7, type: 3}
     entryType: 1
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &2305988484311658745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2971,8 +3121,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2003100397508417335}
   - component: {fileID: 8751424470606490039}
-  - component: {fileID: 5857166712617000096}
   - component: {fileID: 2019256022198780765}
+  - component: {fileID: 3366250423740663510}
   m_Layer: 0
   m_Name: obj_confessionLogBook
   m_TagString: Untagged
@@ -3045,31 +3195,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &5857166712617000096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5466539155088613907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: confessionBook
-  collider: {fileID: 2019256022198780765}
-  entryList:
-  - entryName: Confession Log Book
-    entryDes: 'A log book full of confessions written down by the priest Nero. It''s
-      handwriting is very neat and beautiful. It has all of the names, dates, and
-      times of the people that give confessions. The last one written down on Timsday
-      is at night...a confession by Orzo Parmesan! '
-    entryImage: {fileID: -3301689770227060559, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
-    entryType: 0
 --- !u!60 &2019256022198780765
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3125,6 +3250,31 @@ PolygonCollider2D:
       - {x: 0.31, y: 0.049999997}
       - {x: 0.65999997, y: 0.17999999}
       - {x: 0.88, y: 0.26999998}
+--- !u!114 &3366250423740663510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466539155088613907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa501539c1c035144b6130d8bb2442a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: confessionBook
+  collider: {fileID: 2019256022198780765}
+  entryList:
+  - entryName: Confession Log Book
+    entryDes: 'A confession log book written by the priest Nero. It''s handwriting
+      is very beautiful. The last one is on Timsday is at night...by Orzo! '
+    entryImage: {fileID: -3301689770227060559, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
+    entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &5692649904218567245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,8 +3629,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7193709012348600633}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.24, y: 4.02, z: 49.89235}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.54, y: 4.05, z: 49.89235}
+  m_LocalScale: {x: 0.89996713, y: 0.8574, z: 1}
   m_Children: []
   m_Father: {fileID: 8872440421651647760}
   m_RootOrder: 8
@@ -3535,7 +3685,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!61 &8872440421621901196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3581,11 +3731,12 @@ MonoBehaviour:
   collider: {fileID: 8872440421621901196}
   entryList:
   - entryName: Renaissance Tim Painting
-    entryDes: A painting of Tim, who is worshipped here at Timsville. Or, that's
-      my educated guess since the church seems to be dedicated all to him. Phrases
-      like "Praise Tim" and paths to salvation are quite common as part of the religion.
+    entryDes: A religious painting of Timsville's god, Tim. So hot the painting might
+      burn! I should mind the candles around here.
     entryImage: {fileID: 21300000, guid: 0598ac7172a50224aa04050a900337b1, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &7335436894021345952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,6 +3845,8 @@ MonoBehaviour:
       has a deep fascination with teeth. Pretty creepy.
     entryImage: {fileID: 369806729638861741, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &6756055980855199348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3939,7 +4092,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8355743984497826535}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.73, y: -28.52, z: 49.89235}
+  m_LocalPosition: {x: 8.46, y: -11.25, z: 49.89235}
   m_LocalScale: {x: 0.2284, y: 0.2197, z: 1}
   m_Children: []
   m_Father: {fileID: 8872440421651647760}
@@ -4045,6 +4198,8 @@ MonoBehaviour:
       doesn't seem to have many...thoughts. But I think it's ok with that!
     entryImage: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!114 &7943908829119137335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4068,6 +4223,8 @@ MonoBehaviour:
       doesn't seem to have many...thoughts. But I think it's ok with that!
     entryImage: {fileID: 3981338291027512829, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &4416435276722708895
 PolygonCollider2D:
   m_ObjectHideFlags: 0

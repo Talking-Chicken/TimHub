@@ -6,22 +6,28 @@ position: -14,-216
 //it doesn't skip right away to the shears???
 
 <<if Check_Read("read_introQs") == false>>
-    <<Set_Read read_introQs>>
     <<jump read_introQs>>
-    
-<<endif>>
-    -> Ask about when Orzo was last seen <<if Check_Collected("Radiatore_al_Forno_Update") == false>>
+<<elseif Check_Read("read_introQs") == true>>
+    -> Ask about when Orzo was last seen <<if Check_Read("radiatoreLies") == false>>
         <<jump question_radiatoreWrongAlibi>>
-    -> Ask about Radiatore's day job
+    -> Ask about Radiatore's day job <<if Check_Read("radiatoreAboutJob") == false>>
         <<jump question_aboutJob>>
-    -> Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatore_aboutJob") == true>>
+    -> (New!) Ask about Orzo's corpse being shipped to NFZ <<if Check_Read("radiatoreCorpseShipment") == false && Check_Read("radiatoreAboutJob") == true>>
         <<jump question_corpseShipment>>
+    -> Ask about the talking tooth <<if Check_Read("radiatoreWisdomTooth") == false>>
+        <<jump question_radiatoreWisdomTooth>>
     -> Ask about the bloody gardening shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Radiatore_al_Forno_New_Alibi") == false && Check_Read("question_bloodyShears")>>
         <<jump question_bloodyShears>>
-    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("question_bloodyShears")>>
+    -> Ask about what the Wisdom Tooth saw <<if Check_Collected("Bloody_Gardening_Shears") && Check_Collected("Wisdom_Tooth_Alibi")>>
         <<jump question_radiatoreRightAlibi>>
     -> I'm done.
+    <<if Check_Read("radiatoreLies") == false || Check_Read("radiatoreAboutJob") == false || Check_Read("radiatoreCorpseShipment") == false || Check_Read("radiatoreWisdomTooth") == false>>
+        Penne: (Wait! There's something else I want to ask Radiatore before ending our conversation.)
+        <<jump radiatoreScript>>
+    <<else>>
         Radiatore: C-cool...
+    <<endif>>
+<<endif>>
 ===
 
 title: read_introQs
@@ -31,18 +37,50 @@ Penne: Hello! I'm Penne Dreadful, and I'm investigating the case of Orzo Paremsa
 Radiatore: I ah, I don't mind. Yes, g-go ahead. 
 Penne: Well, first off, what's your name, sir?
 Radiatore: I'm, ah... Radiatore Al F-Forno.
+Penne: Nice ta meetcha, Radiatore! What are you doing here in the Bodega?
+Radiatore: I was told by a detective that I had to stay here until the investigation is finished.
+Radiatore: I'm usually always here when I'm off-duty, anyways. There aren't many places to hang out here. Plus the food is good.
+Penne: I don't see much food in here. It seems pretty... sparse, for a Bodega.
+Radiatore: Whadya mean? It's chock full of delicious things! Everything handpicked by Tim, ordered and delivered by me. 
+Penne: Handpicked by Tim... Does anyone else work here, then?
+Radiatore: Ah— N-no, no one else. It's only—
+Wisdom Tooth: EH-HEM!
+//Camera lerp to Wisdom Tooth talking here
+<<Camera_Lerp_To GameManager obj_wisdomTooth>>
+Wisdom Tooth: Thou dares deny the presence of the almighty Wisdom Tooth! Thou dares to diminish my pivotal role in the Bodega of Timsville! I hear, I see, I smell all that occurs!
+<<Camera_Lerp_To GameManager Player>>
+Penne: AAH! You— You're a talking tooth!
+Radiatore: H-hey, shut up, Tooth! What has Nero told you about barging into other people's conversations?!
+<<Camera_Lerp_To GameManager obj_wisdomTooth>>
+Wisdom Tooth: ...Harumph!
+<<Camera_Lerp_To GameManager Player>>
+Radiatore: Sorry, ahha, i-ignore him. Do you, uh, still want to ask me questions?
+
+<<Set_Read read_introQs>>
+<<jump radiatoreScript>>
 ===
 
 title: question_radiatoreWrongAlibi
 position: 258,-29
 ---
 //first alibi from Radiatore. He lies here
-Penne: Tell me the last time you came into contact with Orzo Parmesan. And don't be smart with me: I have a receipt that proves he was here!
-Radiatore: I made my weekly delivery of bodega goods to restock what the shop was running low on. Orzo works here, so that's when I met him. 
-Penne: Anybody else in shop?
-Radiatore: N-No, just me and him. I gave the receipt to Orzo, then left. Nothing else was said. Routine was same old, same old.
-
+Penne: Tell me the last time you came into contact with Orzo Parmesan. 
+Penne: And don't be smart with me: I have a receipt that proves he was at the bodega with a time stamp, proving when he was alive!
+Radiatore: Y-Yeesh...alright, I, uh. I made my weekly delivery of bodega goods to restock what the shop was running low on. 
+Radiatore: Orzo works here as the manager, so that's when I saw him. He was wrapping up his shift when I made a delivery to him.
+Radiatore: Orzo bought some MounTim Dew soda, clocked out, then left. 
+Penne: That's it? He didn't tell you anything about what was going on?
+Radiatore: Nothing else was said. Routine was same old, same old.
+Penne: And nothing suspicious or out of the ordinary was happening when you delivered him something before he left the bodega?
+Radiatore: Uh, um, n-no. Nothin' s-suspicious happening that night.
+Penne: (This guy is definitely lying! He's gonna drown us with all that nervous sweat!) 
+Penne: (I just have to get him to tell me the details of the truth! Maybe I gotta be more specific...)
+Penne: Ok...when you made the delivery and saw Orzo, was there anybody else in the bodega besides you and him?
+Radiatore: N-No! I-It was just me and him. N-Nobody else. For sure. 
+Radiatore: J-Just him and I. B-Business was s-slow. 
+<<Set_Read radiatoreLies>>
 <<Add_Entry journal Radiatore_al_Forno>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -56,13 +94,18 @@ Penne: Hey, I'm just trying to do my job right!
 Radiatore: You and me both.
 Penne: Anything I should know about your job?
 Radiatore: ..I'm the only one who knows every package that comes in and out of Timsville.
-Penne: Hmm...the only one, huh? Interesting. Very interesting.
+Penne: Hmm...the only one, huh? 
+Penne: (If I remember correctly, Orzo Parmesan's corpse was sent to New Fork Ziti through a shipment from Timsville.)
+Penne: (Does that mean Radiatore sent the corpse to us? Or knows who did?)
+Penne: (I should definitely ask him about the corpse shipment!)
+Penne: Interesting. Very interesting.
 Radiatore: Say, can I, uh, go now?
 Penne: Witnesses may not leave until all questioning has been completed! Also, that makes you look extra suspicious, you sweaty man!
 Radiatore: GAH! OK, OK. I'll, uh, stick around. (Am I sweaty...?)
-
+Penne: (I'm not gonna let you go until I ask you about Orzo's corpse shipment!)
 //setting bool for player reading the About Job question to true
-<<Set_Read radiatore_aboutJob>>
+<<Set_Read radiatoreAboutJob>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -75,10 +118,15 @@ Radiatore: ... *Sweating profusely*
 Penne: Radiatore, did you ship Orzo's corpse to us at the Detective Bureau?
 Radiatore: !!! *Sweating BUCKETS* Uh, listen bub! I...I have a right to remain silent?!
 Penne: I'm not arresting you! ...UNLESS...? (You killed him?)
-Radiatore: Uhhh...UHHH....???
+Radiatore: Uhhh...
+Penne: WELL???
+Radiatore: UHHH....???
 Penne: Don't feel like talking? Fine by me. I can always find something that'll make you talk...evidence!
-<<Set_Read question_bloodyShears>>
-<<Add_Entry journal Radiatore_al_Forno_Update>>
+Penne: (Oh, he totally knows about the corpse shipment! Radiatore's a terrible liar.)
+Penne: (Though, I can't say he looks very guilty...maybe he's scared of something, like Rigatoni told me earlier.)
+<<Set_Read radiatoreCorpseShipment>>
+<<Add_Entry journal More_on_Radiatore_al_Forno>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -87,8 +135,13 @@ position: -186,109
 ---
 //player presents bloody shears to Radiatore
 Penne: Any idea what these bloody shears are doing here? 
-Radiatore: I swear I don't know anything about those awful shears! I hate flowers. I've got allergies, ya see...
+Radiatore: I swear I don't know anything about those shears! 
+Penne: Uh huh. So these aren't yours?
+Radiatore: N-no. I hate flowers. I've got allergies, ya see...and I'm not lyin'!
+Penne: (Hmm, looks like he doesn't know about these shears.)
+Penne: (I should ask him a different question instead. Maybe then he'll give me some new info!)
 <<Set_Read question_bloodyShears>>
+<<jump radiatoreScript>>
 
 ===
 
@@ -96,10 +149,12 @@ title: question_radiatoreRightAlibi
 position: -218,-147
 ---
 //player finds a hole in radiatore's alibi through wisdom tooth's alibi (gets the truth)
-Penne: The wisdom tooth told me that those shears were in them since Timsday. Said that you and some "holy people" were here that day. Care to explain?
+Penne: The Wisdom Tooth told me that these shears were in them since Timsday. 
+Radiatore: W-What's that got to do with me, detective?
+Penne: Said that you and some "holy people" were here that day. On TIMSDAY, when you last saw him alive here! Care to explain?
 Radiatore: ...Ok, so I may have seen Tim and Nero here on Timsday when I was delivering things to Orzo. 
 Penne: Aha! I knew there was something fishy about you! 
-Radiatore: Look, I'm sorry I lied, ok? I, uh, panicked! 
+Radiatore: L-look, I'm sorry I lied, ok? I, uh, I panicked! 
 Penne: That's what they all say, delivery man. 
 Radiatore: I don't know what they were doing or what those shears are though! I'm innocent!
 Penne: Then prove it! Tell me the truth. 
@@ -112,8 +167,36 @@ Penne: You don't look too well...do you want to sit down? Get some water?
 Radiatore: This letter fell out of Tim's pocket when I put his body in the box. I haven't read it. Looked important. I don't know.
 Penne: You were the one who sent Orzo to us, weren't you?
 Radiatore: Look, I REALLY CAN'T say anything else. Just take it...and be careful. 
-
-<<Add_Entry journal Radiatore_al_Forno_New_Alibi>>
+Penne: (Penne recieved: a mysterious letter!)
+Penne: This mysterious letter was written to Orzo! Whoever wrote it told Orzo to meet them at the Church of Tim...
+Penne: ...the night of Timsday?
+Penne: If Orzo was last seen alive at the bodega, then the night of Timsday something must've happened to him at the church!
+Penne: Looks like my next destination for this investigation is the Church of Tim!
+Radiatore: T-the church...watch yourself. A-And you didn't hear anything from me, alright!
+Penne: Too late! I'm gonna add this letter AND your new alibi to my journal!
+Radiatore: Man...why do I even bother. 
+<<Add_Entry journal Radiatore_al_Forno_Alibi>>
 <<set $newItem to "Mysterious_Letter">>
 <<Add_Entry journal {$newItem}>>
+Penne: (And done! I've recorded the Mysterious Letter into my journal. I can read the details there!)
+Penne: (I've also updated Radiatore's alibi with the truth he told me. I can check my journal for it in case I forget.)
+Penne: Thank you, Radiatore for your cooperation. 
+Radiatore: A-Anytime...detective. 
+Penne: (Now that that's done, I should go talk to Rigatoni and show her Radiatore's new alibi!)
+Penne: (I really hope she's feeling ok...)
+<<jump radiatoreScript>>
+===
+
+title: question_radiatoreWisdomTooth
+position: 244,98
+---
+//more on the wisdom tooth
+Penne: So what's the deal with that tooth guy?
+Radiatore: A-Ah, the Wisdom Tooth? He's always been here. I heard that he used to be one of Tim's teeth.
+Penne: Whoa, Tim must be a pretty big guy... I'll go chat with them once we're done here!
+Radiatore: Y-you really don't have to talk to them you know! Ahaha, he might be a wise tooth but he... couldn't have seen anything important...
+Radiatore: It, ah, sounds like he's actually in some pain right now, too...
+Penne: Hmmmmm. I'll make that decision for myself!
+<<Set_Read radiatoreWisdomTooth>>
+<<jump radiatoreScript>>
 ===

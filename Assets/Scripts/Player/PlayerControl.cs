@@ -102,10 +102,10 @@ public class PlayerControl : MonoBehaviour
         HoveringObj = mouseHoveringObj();
         currentState.updateState(this);
         Animate();
-
+        
         if (Input.GetKeyDown(KeyCode.Alpha5))
             waitMoveAndTalkTo("Rigatoni");
-        Debug.Log(Vector2.Distance(transform.position, Destination));
+        //Debug.Log(Vector2.Distance(transform.position, Destination));
         if (!currentState.Equals(statePause))
             if (Input.GetKeyDown(KeyCode.P))
                 changeState(statePause);

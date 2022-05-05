@@ -106,6 +106,8 @@ MonoBehaviour:
     entryDes: Spearmint toothpaste. The best one!
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &5924858372070748040
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -268,6 +270,8 @@ MonoBehaviour:
     entryDes: "A man named Ham Dugo who lives in the fridge, promoting his resum\xE9."
     entryImage: {fileID: 21300000, guid: 75c7386535840f746b0bce738b9868ac, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &3765872721412750215
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -406,6 +410,7 @@ GameObject:
   - component: {fileID: 1578899833171252545}
   - component: {fileID: 1482947738}
   - component: {fileID: 5633201556032642457}
+  - component: {fileID: 586259391}
   m_Layer: 1
   m_Name: Rigatoni_Bodega
   m_TagString: Untagged
@@ -422,10 +427,10 @@ Transform:
   m_GameObject: {fileID: 1578899833171252546}
   m_LocalRotation: {x: -0.050021876, y: -0, z: -0, w: 0.9987482}
   m_LocalPosition: {x: -11.919998, y: -7.3100004, z: 60.03978}
-  m_LocalScale: {x: 1.25, y: 1.2500001, z: 0.8140001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: -5.734, y: 0, z: 0}
 --- !u!212 &1578899833171252547
 SpriteRenderer:
@@ -467,7 +472,7 @@ SpriteRenderer:
   m_SortingLayerID: -1901766707
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7fe9b2d787ae6724889582ded9be993f, type: 3}
+  m_Sprite: {fileID: 3158565735017259173, guid: fa54638c816b4934da31172180061193, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -500,6 +505,8 @@ MonoBehaviour:
     entryDes: 
     entryImage: {fileID: 0}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &1482947738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -513,18 +520,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0103568435, y: 0.19399795}
+  m_Offset: {x: 0.05719894, y: 0.2630443}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.8, y: 2.5}
+    oldSize: {x: 2.15, y: 3.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88678813, y: 0.3879959}
+  m_Size: {x: 0.98047245, y: 0.46331862}
   m_EdgeRadius: 0
 --- !u!60 &5633201556032642457
 PolygonCollider2D:
@@ -536,14 +543,14 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.8, y: 2.5}
+    oldSize: {x: 2.15, y: 3.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -551,69 +558,208 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.11, y: 0.14999999}
-      - {x: 0.12, y: 0.04}
-      - {x: 0.22, y: 0.01}
-      - {x: 0.22999999, y: 0.01}
-      - {x: 0.45999998, y: 0.089999996}
-      - {x: 0.51, y: 0.16}
-      - {x: 0.35, y: 0.26}
-      - {x: 0.32, y: 0.44}
-      - {x: 0.35999998, y: 0.45999998}
-      - {x: 0.37, y: 0.56}
-      - {x: 0.41, y: 0.81}
-      - {x: 0.38, y: 0.87}
-      - {x: 0.61, y: 0.98999995}
-      - {x: 0.71, y: 1.0699999}
-      - {x: 0.71, y: 1.2099999}
-      - {x: 0.7, y: 1.23}
-      - {x: 0.62, y: 1.3399999}
-      - {x: 0.52, y: 1.39}
-      - {x: 0.45, y: 1.37}
-      - {x: 0.44, y: 1.48}
-      - {x: 0.39999998, y: 1.68}
-      - {x: 0.42999998, y: 1.8299999}
-      - {x: 0.47, y: 2}
-      - {x: 0.42, y: 2.07}
-      - {x: 0.39, y: 2.27}
-      - {x: 0.26, y: 2.4199998}
-      - {x: 0.22, y: 2.5}
-      - {x: 0.08, y: 2.5}
-      - {x: -0.04, y: 2.44}
-      - {x: -0.099999994, y: 2.49}
-      - {x: -0.22, y: 2.5}
-      - {x: -0.34, y: 2.5}
-      - {x: -0.37, y: 2.3999999}
-      - {x: -0.34, y: 2.32}
-      - {x: -0.32, y: 2.29}
-      - {x: -0.48, y: 2.1399999}
-      - {x: -0.52, y: 1.9599999}
-      - {x: -0.59999996, y: 1.92}
-      - {x: -0.59999996, y: 1.87}
-      - {x: -0.51, y: 1.65}
-      - {x: -0.58, y: 1.5899999}
-      - {x: -0.63, y: 1.49}
-      - {x: -0.63, y: 1.39}
-      - {x: -0.58, y: 1.3199999}
-      - {x: -0.59999996, y: 1.05}
-      - {x: -0.66999996, y: 1.02}
-      - {x: -0.66999996, y: 0.81}
-      - {x: -0.61, y: 0.58}
-      - {x: -0.56, y: 0.39}
-      - {x: -0.5, y: 0.35999998}
-      - {x: -0.45999998, y: 0.42}
-      - {x: -0.42999998, y: 0.47}
-      - {x: -0.39999998, y: 0.61}
-      - {x: -0.35999998, y: 0.51}
-      - {x: -0.32, y: 0.45999998}
-      - {x: -0.28, y: 0.19}
-      - {x: -0.26, y: 0.06}
-      - {x: -0.22999999, y: 0.02}
-      - {x: -0.17, y: 0.01}
-      - {x: 0.01, y: 0.01}
-      - {x: 0.04, y: 0.08}
-      - {x: -0.03, y: 0.19}
-      - {x: 0.01, y: 0.45999998}
+    - - {x: -0.08, y: 0.25}
+      - {x: -0.074999996, y: 0.33499998}
+      - {x: -0.049999997, y: 0.675}
+      - {x: -0.024999999, y: 0.7}
+      - {x: -0.024999999, y: 0.72999996}
+      - {x: -0.035, y: 0.755}
+      - {x: -0.02, y: 0.79499996}
+      - {x: -0.024999999, y: 0.7}
+      - {x: 0.01, y: 0.65999997}
+      - {x: 0.044999998, y: 0.52}
+      - {x: 0.14, y: 0.25}
+      - {x: 0.17, y: 0.085}
+      - {x: 0.205, y: 0.055}
+      - {x: 0.275, y: 0.049999997}
+      - {x: 0.285, y: 0.095}
+      - {x: 0.315, y: 0.055}
+      - {x: 0.405, y: 0.055}
+      - {x: 0.585, y: 0.074999996}
+      - {x: 0.615, y: 0.14}
+      - {x: 0.585, y: 0.16}
+      - {x: 0.48999998, y: 0.19}
+      - {x: 0.41, y: 0.36499998}
+      - {x: 0.38, y: 0.59999996}
+      - {x: 0.39999998, y: 0.59499997}
+      - {x: 0.45999998, y: 0.59}
+      - {x: 0.47, y: 0.60499996}
+      - {x: 0.47, y: 0.615}
+      - {x: 0.445, y: 0.66499996}
+      - {x: 0.48, y: 0.74}
+      - {x: 0.475, y: 0.79999995}
+      - {x: 0.45499998, y: 0.84499997}
+      - {x: 0.48, y: 0.87}
+      - {x: 0.49499997, y: 0.945}
+      - {x: 0.48, y: 1.005}
+      - {x: 0.505, y: 1.05}
+      - {x: 0.5, y: 1.13}
+      - {x: 0.48499998, y: 1.155}
+      - {x: 0.45499998, y: 1.18}
+      - {x: 0.53499997, y: 1.225}
+      - {x: 0.715, y: 1.355}
+      - {x: 0.78499997, y: 1.355}
+      - {x: 0.84999996, y: 1.375}
+      - {x: 0.91499996, y: 1.4499999}
+      - {x: 0.91999996, y: 1.4699999}
+      - {x: 0.91999996, y: 1.605}
+      - {x: 0.895, y: 1.655}
+      - {x: 0.84499997, y: 1.6999999}
+      - {x: 0.88, y: 1.73}
+      - {x: 0.85999995, y: 1.795}
+      - {x: 0.805, y: 1.81}
+      - {x: 0.7, y: 1.8399999}
+      - {x: 0.675, y: 1.885}
+      - {x: 0.655, y: 1.88}
+      - {x: 0.64, y: 1.87}
+      - {x: 0.565, y: 1.6899999}
+      - {x: 0.545, y: 1.775}
+      - {x: 0.59499997, y: 1.905}
+      - {x: 0.59499997, y: 1.9749999}
+      - {x: 0.585, y: 2.03}
+      - {x: 0.57, y: 2.085}
+      - {x: 0.48, y: 2.205}
+      - {x: 0.505, y: 2.27}
+      - {x: 0.52, y: 2.455}
+      - {x: 0.56, y: 2.51}
+      - {x: 0.53999996, y: 2.5349998}
+      - {x: 0.505, y: 2.5449998}
+      - {x: 0.52, y: 2.62}
+      - {x: 0.55, y: 2.615}
+      - {x: 0.59499997, y: 2.6399999}
+      - {x: 0.60499996, y: 2.7}
+      - {x: 0.585, y: 2.715}
+      - {x: 0.53999996, y: 2.74}
+      - {x: 0.51, y: 2.77}
+      - {x: 0.53499997, y: 2.84}
+      - {x: 0.53999996, y: 2.915}
+      - {x: 0.52, y: 3.01}
+      - {x: 0.5, y: 3.04}
+      - {x: 0.42999998, y: 3.1}
+      - {x: 0.375, y: 3.1399999}
+      - {x: 0.28, y: 3.195}
+      - {x: 0.29, y: 3.235}
+      - {x: 0.305, y: 3.28}
+      - {x: 0.26999998, y: 3.3249998}
+      - {x: 0.265, y: 3.36}
+      - {x: 0.22999999, y: 3.385}
+      - {x: 0.175, y: 3.385}
+      - {x: 0.08, y: 3.345}
+      - {x: -0.024999999, y: 3.2549999}
+      - {x: -0.105, y: 3.3}
+      - {x: -0.175, y: 3.3249998}
+      - {x: -0.235, y: 3.35}
+      - {x: -0.29999998, y: 3.365}
+      - {x: -0.435, y: 3.365}
+      - {x: -0.45999998, y: 3.35}
+      - {x: -0.48499998, y: 3.31}
+      - {x: -0.48999998, y: 3.2749999}
+      - {x: -0.435, y: 3.23}
+      - {x: -0.45499998, y: 3.215}
+      - {x: -0.48499998, y: 3.135}
+      - {x: -0.45499998, y: 3.11}
+      - {x: -0.44, y: 3.0549998}
+      - {x: -0.515, y: 3.02}
+      - {x: -0.56, y: 2.99}
+      - {x: -0.63, y: 2.9199998}
+      - {x: -0.66499996, y: 2.845}
+      - {x: -0.66499996, y: 2.73}
+      - {x: -0.65999997, y: 2.6399999}
+      - {x: -0.775, y: 2.605}
+      - {x: -0.79999995, y: 2.595}
+      - {x: -0.79999995, y: 2.56}
+      - {x: -0.78499997, y: 2.5249999}
+      - {x: -0.72999996, y: 2.475}
+      - {x: -0.72499996, y: 2.44}
+      - {x: -0.72999996, y: 2.35}
+      - {x: -0.69, y: 2.27}
+      - {x: -0.815, y: 2.115}
+      - {x: -0.865, y: 2.03}
+      - {x: -0.875, y: 1.99}
+      - {x: -0.875, y: 1.9499999}
+      - {x: -0.865, y: 1.885}
+      - {x: -0.81, y: 1.8299999}
+      - {x: -0.81, y: 1.63}
+      - {x: -0.805, y: 1.56}
+      - {x: -0.81, y: 1.49}
+      - {x: -0.805, y: 1.42}
+      - {x: -0.83, y: 1.395}
+      - {x: -0.875, y: 1.3199999}
+      - {x: -0.875, y: 1.225}
+      - {x: -0.87, y: 1.1999999}
+      - {x: -0.81, y: 1.15}
+      - {x: -0.84, y: 1.11}
+      - {x: -0.84999996, y: 1.0649999}
+      - {x: -0.84999996, y: 1.015}
+      - {x: -0.81, y: 0.92499995}
+      - {x: -0.83, y: 0.865}
+      - {x: -0.825, y: 0.835}
+      - {x: -0.78999996, y: 0.79499996}
+      - {x: -0.79999995, y: 0.68}
+      - {x: -0.78499997, y: 0.655}
+      - {x: -0.73499995, y: 0.58}
+      - {x: -0.75, y: 0.515}
+      - {x: -0.73499995, y: 0.51}
+      - {x: -0.71, y: 0.51}
+      - {x: -0.63, y: 0.585}
+      - {x: -0.60499996, y: 0.625}
+      - {x: -0.59, y: 0.68}
+      - {x: -0.61, y: 0.79499996}
+      - {x: -0.565, y: 0.84999996}
+      - {x: -0.58, y: 0.945}
+      - {x: -0.565, y: 0.98499995}
+      - {x: -0.525, y: 0.92499995}
+      - {x: -0.525, y: 0.895}
+      - {x: -0.505, y: 0.83}
+      - {x: -0.47, y: 0.78}
+      - {x: -0.5, y: 0.74}
+      - {x: -0.5, y: 0.7}
+      - {x: -0.445, y: 0.65999997}
+      - {x: -0.41, y: 0.515}
+      - {x: -0.375, y: 0.22}
+      - {x: -0.355, y: 0.049999997}
+      - {x: -0.35, y: 0.04}
+      - {x: -0.33499998, y: 0.035}
+      - {x: -0.024999999, y: 0.035}
+      - {x: -0.01, y: 0.049999997}
+      - {x: -0.01, y: 0.085}
+      - {x: -0.055, y: 0.19}
+    - - {x: -0.57, y: 1.105}
+      - {x: -0.585, y: 1.14}
+      - {x: -0.56, y: 1.165}
+      - {x: -0.55, y: 1.18}
+      - {x: -0.53999996, y: 1.2049999}
+      - {x: -0.53999996, y: 1.22}
+      - {x: -0.52, y: 1.1949999}
+      - {x: -0.5, y: 1.1899999}
+      - {x: -0.51, y: 1.18}
+      - {x: -0.53499997, y: 1.15}
+      - {x: -0.565, y: 1.105}
+      - {x: -0.57, y: 1.0849999}
+      - {x: -0.565, y: 1.0849999}
+    - - {x: 0.815, y: 1.755}
+      - {x: 0.805, y: 1.76}
+      - {x: 0.825, y: 1.75}
+      - {x: 0.815, y: 1.75}
+--- !u!95 &586259391
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578899833171252546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6dec52ad0b249bc408f58481eb8be814, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1656838863243280116
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +791,7 @@ Transform:
   m_LocalScale: {x: 0.5508, y: 0.5956, z: 1}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &318559079854193516
 SpriteRenderer:
@@ -747,6 +893,8 @@ MonoBehaviour:
       Wisdom Tooth.
     entryImage: {fileID: -479675088507309908, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &1773271879784563672
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +1001,8 @@ MonoBehaviour:
     entryDes: 'A lady who''s sewn into a rug. '
     entryImage: {fileID: 21300000, guid: 7c13d68ae6a214e478f8e5e74d808490, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &4645225834087316696
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1066,6 +1216,8 @@ MonoBehaviour:
     entryDes: A cat who lives in the Bodega. Her name is Pocky!
     entryImage: {fileID: 21300000, guid: caf8c0028bac8a042a5b225ebed08808, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &5007206860067831435
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1264,6 +1416,162 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &2430235960019286711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7516724736907967710}
+  - component: {fileID: 618338590766836710}
+  - component: {fileID: 5638630434523019359}
+  m_Layer: 0
+  m_Name: obj_newspaper_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7516724736907967710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430235960019286711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5894379972735577724}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &618338590766836710
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430235960019286711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 12.70747, y: 1.526257}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9995499, y: 1.257441}
+  m_EdgeRadius: 0
+--- !u!114 &5638630434523019359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430235960019286711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Newspaper_02
+  collider: {fileID: 618338590766836710}
+  entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
+--- !u!1 &2996412534351582483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5008299331513535118}
+  - component: {fileID: 8434563525640249385}
+  - component: {fileID: 5828135761407702704}
+  m_Layer: 0
+  m_Name: obj_newspaper_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5008299331513535118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996412534351582483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5894379972735577724}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8434563525640249385
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996412534351582483}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.0340347, y: -2.2320957}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8906097, y: 1.3663797}
+  m_EdgeRadius: 0
+--- !u!114 &5828135761407702704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996412534351582483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Newspaper_01
+  collider: {fileID: 8434563525640249385}
+  entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &3684826974172073648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,7 +1875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
-  m_RootOrder: 28
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2827112454561852827
 SpriteRenderer:
@@ -1639,12 +1947,12 @@ MonoBehaviour:
   collider: {fileID: 4808605895185458959}
   entryList:
   - entryName: Mysterious Letter
-    entryDes: "A mysterious letter written to Orzo given to me by Radiatore. I don't
-      know who it's from, but it says to meet them at the Church of Tim the night
-      of Timsville\u2014the same night Orzo was murdered. Also, the handwritiing
-      is very nice!"
+    entryDes: A letter written to Orzo that says to meet ??? at the Church the same
+      night Orzo was murdered! Handwritiing is very nice!
     entryImage: {fileID: 1654927486645190255, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &4808605895185458959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1700,7 +2008,7 @@ Transform:
   m_GameObject: {fileID: 5110788659630171836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.45, y: -3.16, z: 60.02978}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
   m_RootOrder: 24
@@ -1745,7 +2053,7 @@ SpriteRenderer:
   m_SortingLayerID: -1901766707
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 270f7006b5995ce4080755fd381c50c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58531fab596793c40942a758365f815a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1773,7 +2081,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.8, y: 2.5}
+    oldSize: {x: 2.15, y: 3.4}
     newSize: {x: 1.8, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1804,21 +2112,23 @@ MonoBehaviour:
     entryDes: 'The delivery man in Timsville. He says he only saw Orzo on Timsday
       working his shift to deliver something. No one else was there, and he only
       saw him once. '
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     entryType: 1
-  - entryName: Radiatore al Forno Update
+  - entryName: More on Radiatore al Forno
     entryDes: He, along with Tim, should be the only two citizens that know exactly
       what goes in and out of the town. Radiatore may have been the one to send the
       bureau the corpse...
-    entryImage: {fileID: 0}
+    entryImage: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     entryType: 1
-  - entryName: Radiatore al Forno New Alibi
+  - entryName: Radiatore al Forno Alibi
     entryDes: 'Orzo wasn''t the only person he saw: there was Tim and a "holy man"
       at the bodega too. Why would he lie to me? Also, he doesn''t know anything
       about the shears, so these suspicious people must have visited twice and Radiatore
       was only there to witness the first time. '
-    entryImage: {fileID: 0}
-    entryType: 0
+    entryImage: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
+    entryType: 1
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &3308927373513252369
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1829,14 +2139,14 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.8, y: 2.5}
+    oldSize: {x: 2.15, y: 3.4}
     newSize: {x: 1.8, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1844,78 +2154,143 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.089999996, y: 0.26999998}
-      - {x: 0.16, y: 0.14}
-      - {x: 0.19999999, y: 0.08}
-      - {x: 0.35999998, y: 0.049999997}
-      - {x: 0.47, y: 0.06}
-      - {x: 0.5, y: 0.089999996}
-      - {x: 0.39, y: 0.29}
-      - {x: 0.53, y: 0.39999998}
-      - {x: 0.53, y: 0.45}
-      - {x: 0.48999998, y: 0.53}
-      - {x: 0.74, y: 0.78999996}
-      - {x: 0.78, y: 0.9}
-      - {x: 0.72999996, y: 0.97999996}
-      - {x: 0.59, y: 1.17}
-      - {x: 0.48999998, y: 1.28}
-      - {x: 0.44, y: 1.41}
-      - {x: 0.37, y: 1.4}
-      - {x: 0.56, y: 1.52}
-      - {x: 0.59999996, y: 1.56}
-      - {x: 0.59999996, y: 1.79}
-      - {x: 0.48999998, y: 1.92}
-      - {x: 0.53, y: 1.92}
-      - {x: 0.55, y: 2.04}
-      - {x: 0.5, y: 2.19}
-      - {x: 0.47, y: 2.23}
-      - {x: 0.31, y: 2.31}
-      - {x: 0.04, y: 2.36}
-      - {x: -0.11, y: 2.37}
-      - {x: -0.17999999, y: 2.37}
-      - {x: -0.29999998, y: 2.34}
-      - {x: -0.51, y: 2.22}
-      - {x: -0.59999996, y: 2.1399999}
-      - {x: -0.61, y: 2.03}
-      - {x: -0.69, y: 1.9599999}
-      - {x: -0.77, y: 1.87}
-      - {x: -0.77, y: 1.8}
-      - {x: -0.72999996, y: 1.75}
-      - {x: -0.71999997, y: 1.5799999}
-      - {x: -0.69, y: 1.54}
-      - {x: -0.64, y: 1.4399999}
-      - {x: -0.59, y: 1.28}
-      - {x: -0.71999997, y: 1.09}
-      - {x: -0.7, y: 0.95}
-      - {x: -0.68, y: 0.85999995}
-      - {x: -0.62, y: 0.81}
-      - {x: -0.44, y: 0.78999996}
-      - {x: -0.47, y: 0.69}
-      - {x: -0.45999998, y: 0.35}
-      - {x: -0.32999998, y: 0.17999999}
-      - {x: -0.38, y: 0.06}
-      - {x: -0.32, y: 0.03}
-      - {x: -0.19, y: 0.03}
-      - {x: -0.089999996, y: 0.06}
-      - {x: -0.08, y: 0.29999998}
-      - {x: 0.07, y: 0.34}
-    - - {x: -0.57, y: 1.51}
-      - {x: -0.59, y: 1.49}
-      - {x: -0.59, y: 1.4599999}
-      - {x: -0.56, y: 1.41}
-      - {x: -0.55, y: 1.4399999}
-    - - {x: 0.48999998, y: 1.64}
-      - {x: 0.48999998, y: 1.65}
-      - {x: 0.47, y: 1.63}
-      - {x: 0.47, y: 1.62}
-      - {x: 0.5, y: 1.5899999}
-      - {x: 0.51, y: 1.5899999}
-      - {x: 0.52, y: 1.5999999}
-      - {x: 0.47, y: 1.62}
-    - - {x: -0.62, y: 1.87}
-      - {x: -0.59999996, y: 1.86}
-      - {x: -0.61, y: 1.8499999}
-      - {x: -0.64, y: 1.8499999}
+    - - {x: -0.12, y: 0.375}
+      - {x: -0.099999994, y: 0.45499998}
+      - {x: 0.11, y: 0.45}
+      - {x: 0.185, y: 0.295}
+      - {x: 0.26999998, y: 0.145}
+      - {x: 0.285, y: 0.099999994}
+      - {x: 0.325, y: 0.085}
+      - {x: 0.44, y: 0.074999996}
+      - {x: 0.59499997, y: 0.08}
+      - {x: 0.61, y: 0.105}
+      - {x: 0.61, y: 0.12}
+      - {x: 0.51, y: 0.255}
+      - {x: 0.48499998, y: 0.37}
+      - {x: 0.49499997, y: 0.405}
+      - {x: 0.47, y: 0.45499998}
+      - {x: 0.55, y: 0.465}
+      - {x: 0.58, y: 0.48}
+      - {x: 0.66499996, y: 0.53}
+      - {x: 0.71, y: 0.575}
+      - {x: 0.71, y: 0.585}
+      - {x: 0.57, y: 0.805}
+      - {x: 0.59999996, y: 0.85999995}
+      - {x: 0.635, y: 0.84499997}
+      - {x: 0.655, y: 0.84}
+      - {x: 0.74, y: 0.92499995}
+      - {x: 0.78999996, y: 0.98999995}
+      - {x: 0.89, y: 1.15}
+      - {x: 0.965, y: 1.305}
+      - {x: 0.965, y: 1.3199999}
+      - {x: 0.945, y: 1.36}
+      - {x: 0.905, y: 1.42}
+      - {x: 0.79999995, y: 1.535}
+      - {x: 0.585, y: 1.6899999}
+      - {x: 0.565, y: 1.765}
+      - {x: 0.555, y: 1.79}
+      - {x: 0.525, y: 1.8249999}
+      - {x: 0.51, y: 1.8299999}
+      - {x: 0.47, y: 1.8349999}
+      - {x: 0.45999998, y: 1.8199999}
+      - {x: 0.45999998, y: 1.81}
+      - {x: 0.475, y: 1.795}
+      - {x: 0.45, y: 1.79}
+      - {x: 0.45499998, y: 1.8199999}
+      - {x: 0.475, y: 1.8549999}
+      - {x: 0.555, y: 1.87}
+      - {x: 0.59999996, y: 1.895}
+      - {x: 0.615, y: 1.9449999}
+      - {x: 0.71, y: 2.0349998}
+      - {x: 0.77, y: 2.08}
+      - {x: 0.78499997, y: 2.1299999}
+      - {x: 0.73499995, y: 2.185}
+      - {x: 0.695, y: 2.175}
+      - {x: 0.685, y: 2.165}
+      - {x: 0.685, y: 2.1499999}
+      - {x: 0.65999997, y: 2.125}
+      - {x: 0.645, y: 2.19}
+      - {x: 0.66999996, y: 2.1699998}
+      - {x: 0.685, y: 2.1699998}
+      - {x: 0.715, y: 2.195}
+      - {x: 0.72999996, y: 2.205}
+      - {x: 0.76, y: 2.26}
+      - {x: 0.765, y: 2.34}
+      - {x: 0.745, y: 2.4099998}
+      - {x: 0.695, y: 2.485}
+      - {x: 0.635, y: 2.5549998}
+      - {x: 0.575, y: 2.615}
+      - {x: 0.60499996, y: 2.705}
+      - {x: 0.635, y: 2.77}
+      - {x: 0.64, y: 2.845}
+      - {x: 0.59499997, y: 2.96}
+      - {x: 0.555, y: 3.0149999}
+      - {x: 0.45999998, y: 3.095}
+      - {x: 0.285, y: 3.1799998}
+      - {x: 0.17999999, y: 3.205}
+      - {x: 0.07, y: 3.21}
+      - {x: -0.145, y: 3.21}
+      - {x: -0.26999998, y: 3.185}
+      - {x: -0.35, y: 3.1599998}
+      - {x: -0.44, y: 3.11}
+      - {x: -0.66499996, y: 2.955}
+      - {x: -0.805, y: 2.835}
+      - {x: -0.825, y: 2.79}
+      - {x: -0.83, y: 2.72}
+      - {x: -0.79999995, y: 2.6699998}
+      - {x: -0.9, y: 2.6599998}
+      - {x: -0.91999996, y: 2.6499999}
+      - {x: -0.9, y: 2.59}
+      - {x: -0.84499997, y: 2.5449998}
+      - {x: -0.805, y: 2.51}
+      - {x: -0.77, y: 2.51}
+      - {x: -0.89, y: 2.435}
+      - {x: -0.9, y: 2.47}
+      - {x: -0.84, y: 2.5149999}
+      - {x: -0.84, y: 2.54}
+      - {x: -0.895, y: 2.57}
+      - {x: -0.98999995, y: 2.5049999}
+      - {x: -1.005, y: 2.46}
+      - {x: -1.005, y: 2.3899999}
+      - {x: -0.97999996, y: 2.345}
+      - {x: -0.895, y: 2.34}
+      - {x: -0.96, y: 2.245}
+      - {x: -0.96999997, y: 2.145}
+      - {x: -0.91999996, y: 2.07}
+      - {x: -0.82, y: 2.06}
+      - {x: -0.81, y: 2.09}
+      - {x: -0.79999995, y: 2.08}
+      - {x: -0.825, y: 2.0449998}
+      - {x: -0.84499997, y: 2.0149999}
+      - {x: -0.865, y: 1.9699999}
+      - {x: -0.85999995, y: 1.915}
+      - {x: -0.84, y: 1.895}
+      - {x: -0.79499996, y: 1.8449999}
+      - {x: -0.78, y: 1.78}
+      - {x: -0.775, y: 1.7099999}
+      - {x: -0.755, y: 1.66}
+      - {x: -0.91999996, y: 1.48}
+      - {x: -0.935, y: 1.4499999}
+      - {x: -0.935, y: 1.3399999}
+      - {x: -0.92499995, y: 1.245}
+      - {x: -0.87, y: 1.12}
+      - {x: -0.685, y: 1.125}
+      - {x: -0.56, y: 1.155}
+      - {x: -0.59499997, y: 0.695}
+      - {x: -0.59, y: 0.415}
+      - {x: -0.55, y: 0.31}
+      - {x: -0.52, y: 0.29999998}
+      - {x: -0.505, y: 0.325}
+      - {x: -0.45, y: 0.39}
+      - {x: -0.465, y: 0.345}
+      - {x: -0.42499998, y: 0.32999998}
+      - {x: -0.405, y: 0.17}
+      - {x: -0.525, y: 0.095}
+      - {x: -0.5, y: 0.049999997}
+      - {x: -0.47, y: 0.044999998}
+      - {x: -0.33499998, y: 0.044999998}
+      - {x: -0.175, y: 0.07}
+      - {x: -0.16, y: 0.085}
 --- !u!1 &5424369849476756587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,7 +2323,7 @@ Transform:
   m_LocalScale: {x: 0.3678, y: 0.3678, z: 0.3678}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1990582725980443269
 SpriteRenderer:
@@ -2019,11 +2394,13 @@ MonoBehaviour:
   _startNode: timling3
   collider: {fileID: 2677655512577144109}
   entryList:
-  - entryName: MounTimDew_Timling
+  - entryName: MounTimDew Timling
     entryDes: A strange, small, and squishy creature that looks like Tim. Looks like
       he's guarding the MounTim Dew.
     entryImage: {fileID: 288297130416697159, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &2677655512577144109
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2125,7 +2502,6 @@ GameObject:
   - component: {fileID: 462606132177940710}
   - component: {fileID: 8142928917579398414}
   - component: {fileID: 5825304503752449423}
-  - component: {fileID: 604956914}
   m_Layer: 1
   m_Name: obj_bloodyTrashBag
   m_TagString: Untagged
@@ -2216,6 +2592,8 @@ MonoBehaviour:
   _startNode: Bloody_Bag
   collider: {fileID: 8142928917579398414}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &8142928917579398414
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2296,24 +2674,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4013436, y: 0.4849437}
   m_EdgeRadius: 0
---- !u!114 &604956914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5648089378223314273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: Bloody_Bag
-  collider: {fileID: 0}
-  entryList: []
 --- !u!1 &5894379972735577725
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,6 +2726,8 @@ Transform:
   - {fileID: 756713113834956250}
   - {fileID: 5233325793552806180}
   - {fileID: 5003980556252774116}
+  - {fileID: 5008299331513535118}
+  - {fileID: 7516724736907967710}
   - {fileID: 6655958797321198799}
   - {fileID: 5197303641547728987}
   - {fileID: 390283396342901487}
@@ -2476,6 +2838,8 @@ MonoBehaviour:
   _startNode: Fwog
   collider: {fileID: 3869534936363973680}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &3869534936363973680
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2664,6 +3028,8 @@ MonoBehaviour:
     entryDes: A dancing Hatsune Miku. What's not to love?
     entryImage: {fileID: 21300000, guid: cd3d9adfe807ecf408cd6d6fc4c6c6c0, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &632347267095626110
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2944,6 +3310,8 @@ MonoBehaviour:
     entryDes: Aisle of Teeth in Tim's Bodega.
     entryImage: {fileID: 21300000, guid: 879f860d6c42fec43bee49ecc0646d69, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &2726554907353847236
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3367,6 +3735,8 @@ MonoBehaviour:
     entryDes: Mint toothpaste. Basic. Meh.
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &2920825394876370063
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3525,6 +3895,8 @@ MonoBehaviour:
   _startNode: Register
   collider: {fileID: 6916228959265712286}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &6916228959265712286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3735,6 +4107,8 @@ MonoBehaviour:
   _startNode: Fridge_02
   collider: {fileID: 2729856985862929622}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &2729856985862929622
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3924,7 +4298,16 @@ MonoBehaviour:
   _interactFirst: 0
   _startNode: wisdomToothScript
   collider: {fileID: 7702301020996552777}
-  entryList: []
+  entryList:
+  - entryName: Wisdom Tooth Alibi
+    entryDes: 'This Wisdom Tooth had Bloody Gardening Shears stuck in it. After I
+      got it out, it told me that Radiatore was supposed to deliver something to
+      Orzo, but Tim and a "holy man" took away. These "holy men" then came back and
+      hurt the Wisdom Tooth, hence the gardening shears. '
+    entryImage: {fileID: 21300000, guid: 432d443681bd7f44e826aadbf7791349, type: 3}
+    entryType: 1
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &7702301020996552777
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3994,7 +4377,6 @@ GameObject:
   - component: {fileID: 7076664169260393131}
   - component: {fileID: 8349784035019205896}
   - component: {fileID: 819678454561366640}
-  - component: {fileID: 604956915}
   m_Layer: 1
   m_Name: obj_radio
   m_TagString: Untagged
@@ -4085,6 +4467,8 @@ MonoBehaviour:
   _startNode: Radio
   collider: {fileID: 819678454561366640}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &819678454561366640
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4266,24 +4650,6 @@ PolygonCollider2D:
       - {x: 1.3299999, y: 0.77}
       - {x: 1.3399999, y: 0.76}
       - {x: 1.3399999, y: 0.56}
---- !u!114 &604956915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7025940359776933434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: radio
-  collider: {fileID: 0}
-  entryList: []
 --- !u!1 &7162559616916096429
 GameObject:
   m_ObjectHideFlags: 0
@@ -4417,6 +4783,8 @@ MonoBehaviour:
     entryDes: Charcoal toothpaste. Quirky...
     entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &8352633789468532715
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4771,6 +5139,8 @@ MonoBehaviour:
     entryDes: A table full of baby heads, all waiting to be sold to prospective parents.
     entryImage: {fileID: 0}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!61 &5482908345242925475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5027,6 +5397,8 @@ MonoBehaviour:
     entryDes: A fish ATM that speaks in a Scottish accent.
     entryImage: {fileID: 21300000, guid: 9d0e81960b9e4514589259d2d05e9758, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &5495361957601697916
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5065,7 +5437,7 @@ PolygonCollider2D:
       - {x: 0.7886214, y: 2.5960906}
       - {x: 0.6086214, y: 2.7460907}
       - {x: 0.48862144, y: 2.7860906}
-      - {x: 0.28862143, y: 2.7760906}
+      - {x: 0.30317613, y: 2.7688136}
       - {x: 0.16862144, y: 2.8560905}
       - {x: 0.088621445, y: 2.8860905}
       - {x: -0.13137855, y: 2.8860905}
@@ -5190,6 +5562,8 @@ MonoBehaviour:
   _startNode: Fridge_03
   collider: {fileID: 3476079796057378075}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &3476079796057378075
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5364,6 +5738,8 @@ MonoBehaviour:
   _startNode: Fridge_01
   collider: {fileID: 2031049359023937238}
   entryList: []
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &2031049359023937238
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5435,7 +5811,7 @@ Transform:
   m_LocalScale: {x: 0.4443, y: 0.4443, z: 0.4443}
   m_Children: []
   m_Father: {fileID: 5894379972735577724}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &857760337088992644
 SpriteRenderer:
@@ -5506,11 +5882,13 @@ MonoBehaviour:
   _startNode: timling4
   collider: {fileID: 2458840938548427173}
   entryList:
-  - entryName: Sassy_TImling
+  - entryName: Sassy TImling
     entryDes: A strange, small, and squishy creature that looks like Tim. This guy's
       a sassy fella.
     entryImage: {fileID: -6956929644041464537, guid: 16804eed98b315944817232d93631107, type: 3}
     entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!60 &2458840938548427173
 PolygonCollider2D:
   m_ObjectHideFlags: 0

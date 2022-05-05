@@ -8,38 +8,57 @@ position: 15,-240
 <<endif>>
 
 <<if Check_Read("stelleIntro") == true>>
-    -> Ask about relationship with Orzo
+    -> Ask about relationship with Orzo <<if Check_Read("stelleRelationship") == false>>
         <<jump question_relationship>>
-    -> Ask about Orzo's closet <<if Check_Collected("Orzo_Closet") == true>>
+    -> Ask when Stelle last saw Orzo <<if Check_Read("stelleLastSeeOrzo") == false>>
+        <<jump question_alibi>>>>
+    -> Ask about where Stelle was during the time of the murder <<if Check_Read("stelleLastSeeOrzo") == true>>
+        <<jump question_whereabouts>>
+    -> Ask about Orzo's closet <<if Check_Collected("Orzo_Closet") == true && Check_Read("orzoClosetExamined") == false>>
         <<jump question_closet>>
     -> Ask about Orzo's Dream Journal <<if Check_Collected("Orzo_Dream_Journal") == true>>
         <<jump question_journal>>
     -> Ask about the Bodega Receipt <<if Check_Collected("Bodega_Receipt") == true>>
         <<jump question_bodegaReceipt>>
     -> I'm done.
-        Stelle: O-okay...
-
+    <<if Check_Read("stelleRelationship") == false || Check_Read("stelleLastSeeOrzo") == false || Check_Read("stelleWhereTimeOfMurder") == false>>
+        Penne: (Wait! There's something else I want to ask her before ending our conversation.)
+        <<jump StelleSprint3>>
+    <<else>>
+        Stelle: P-Praise Tim, detective...
+    <<endif>>
 <<endif>>
 ===
 title: stelleIntro
 tags:
 position: 83,131
 ---
-Penne: Hi there! My name is Penne, and I'm here to investigate the death of Orzo Parmesan. What's your name?
-Stelle: O-oh! M-my name is S-Stelle... Stelle Parmesan.
-Penne: Oh..! So you're related to the late Orzo. Do you mind if I ask you some questions about him?
-Stelle: *Sniff* N-no, I-I don't mind...
+Penne: Hi there! I'm Detective Pennelope Scout, and I'm here to investigate the death of Orzo Parmesan. Are you Stelle Parmesan?
+Stelle: O-oh! Yes...M-my name is S-Stelle Parmesan. Good day to you, detective...
+Penne: I didn't mean to interrupt...uh, whatever it is that you're doing. What are you doing, exactly?
+Stelle: I...I'm here to collect Orzo's things. But I was told by the other detective to leave things as they are because it's a related scene to the crime...
+Stelle: So I'm just waiting here...b-but it pains me to be in his home and n-not have him here...
+Stelle: A-and also I-I was told to be here to answer some questions f-for the investigation...
+Penne: Do you mind if I ask you a couple of things? I gotta collect as much information possible about you and Orzo Parmesan to solve the case.
+Stelle: *Sniff* N-no, I-I don't mind...go right ahead...
 
 <<Set_Read stelleIntro>>
+<<jump StelleSprint3>>
 ===
 
 title: question_relationship
 position: -66,-29
 ---
 Penne: What was your relationship with Orzo Parmesan?
-Stelle: Orzo was my big brother... H-he was the only family I had left! Now, I'm all alone... 
--> Ask when Stelle last saw Orzo
-    <<jump question_alibi>>>>
+Stelle: Orzo was my big brother...my half brother, you see.
+Penne: Half brother? 
+Stelle: Yes. We have the same mother. Before he came to Timsville, he lived with his father. 
+Penne: I see. So, he moved here to live near you and his mother then. 
+Stelle: Yes...but our mother passed a long time ago. H-he was the only family I had left! Now, I'm all alone... 
+Penne: My condolences, Ms. Parmesan. I'll catch your brother's killer, mark my words!
+Stelle: May Tim's light guide you...
+<<Set_Read stelleRelationship>>
+<<jump StelleSprint3>>
 ===
 
 title: question_alibi
@@ -47,21 +66,38 @@ position: -45,323
 ---
 <<Add_Entry journal Stelle_Parmesan_Alibi>>
 Penne: So when did you last see Orzo?
-Stelle: The last I saw him was the night before Timsday, Praise Tim... We always have a big celebration. H-he used to love it...
-
--> Ask about where Stelle was during the time of the murder
-    <<jump question_whereabouts>>
+Stelle: The last I saw him was the night before Timsday, Praise Tim...
+Penne: Timsday? What's that, some sort of founding day for Timsville?
+Stelle: Praise Tim, yes! Our leader Tim's birthday, which is every last week of the day: Timsday!
+Penne: Erm, I don't think that's how birthdays work...but anyway, you last saw Orzo then?
+Stelle: The whole town prepares the big celebration the day before Timsday. O-Orzo used to love it...
+Penne: Notice any strange behavior from Orzo?
+Stelle: He was so distant a-and scared! He left preparations early that day and holed himself up in his room. 
+Penne: I see. So when was he last seen alive then?
+Stelle: U-Uh, well, um...that day. H-He was last alive...the day before Timsday. 
+Penne: Ok, got it. So then if we narrow down an estimate of the time of murder—
+Stelle: H-He was...killed...that night before Timsday. Y-Yes, that's right. 
+Penne: Great, thank you for your cooperation, Stelle.
+Stelle: O-Of course, d-detective. 
+Penne: (I've recorded this information in my journal under Stelle Parmesan in the Alibi tab!)
+Penne: (If I want to revisit what Stelle just told me, I can go to my journal as a reference.)
+<<Set_Read stelleLastSeeOrzo>>
+<<jump StelleSprint3>>
 ===
 
 title: question_whereabouts
 position: 169,372
 ---
-Penne: Then where were you during the time of the murder?
-Stelle: I was helping the Church with the Timsday celebration, Praise Tim, after my shift at the library. 
+Penne: Where were you during the time of the murder?
+Stelle: P-preparing for the Timsday celebration at the church, praise Tim. 
 Penne: Anybody there who can verify your presence that day?
-Stelle: The whole community! Everyone from Timsville was there. I-I didn't know why Orzo wasn't there...
-Penne: Everyone, huh. Alrighty, thanks a lot!
-
+Stelle: The whole community! Everyone from Timsville was there. O-Orzo was long gone before...
+Stelle: A-And then nobody heard from him! H-He had gone m-missing, a-and so we celebrated T-Timsday without him. 
+Penne: Uh-huh...so while everyone was busy, Orzo had disappeared and wasn't seen on Timsday. 
+Stelle: Y-you could, um, assume he w-was...killed...before T-Timsday...
+Penne: Hmm, alright. Guess that makes sense if he disappeared the day before and hadn't been seen since. 
+<<Set_Read stelleWhereTimeOfMurder>>
+<<jump StelleSprint3>>
 ===
 
 title: question_journal
@@ -74,7 +110,7 @@ Stelle: A time...before Timsville. I think he was going crazy trying to prove th
 Penne: Weird dreams that Orzo thought were memories...interesting. Did he tell you or anyone else about these dreams?
 Stelle: Me and the priest, Nero. Orzo would often go to confess to him about his troubles.
 Penne: Got it. Thanks for the information, Stelle. 
-
+<<jump StelleSprint3>>
 ===
 
 title: question_closet
@@ -86,21 +122,26 @@ Penne: Never leave? Not even for, like, vacation? Or work trips?
 Stelle: Never. It's against the holy scripture of Tim. 
 Penne: Huh. Well, it looks like he was going somewhere. Or...spring cleaning?
 Stelle: He wouldn't dare! Praise Tim, praise Tim, praise Tim!
-Penne: Haha, ok...? At least there aren't any skeletons in there! Haha! ...Right?
-
+Penne: Haha, ok...? At least there aren't any skeletons in there! 
+Penne: ...Right?
+<<jump StelleSprint3>>
+<<Check_Read orzoClosetExamined>>
 ===
 
 title: question_bodegaReceipt
 position: 268,94
 ---
 Penne: I found these receipts. The time and date say that Orzo bought something from the bodega ON Timsday. 
-Stelle: O-Oh, well, you see...Well...!
-Penne: But you told me that the last you saw him alive the night before? Explain yourself!
+Stelle: O-Oh, well, you see...well...!
+Penne: Yet you told me that the last you saw him alive the night before? That he disappeared the whole Timsday celebration? Explain yourself!
 Stelle: I...must've forgotten. Forgive me! The shock of losing him must've, must've confused me, yes!
-Penne: Tell me the truth! When was Orzo Parmesan alive? 
-Stelle: He was alive on Timsday. I think he had a shift at the bodega, b-but I don't know anything else! I-I'm really sorry..!
-Penne: The bodega? Looks like that might be my next destination! 
-Penne: (I should tell Rigatoni about this new alibi...)
+Penne: Tell me the truth! When was Orzo Parmesan last seen alive?
+Stelle: H-He was alive on Timsday. I think he had a shift at the bodega, b-but I don't know anything else! I-I'm really sorry..!
+Penne: For now, I'll let you off with your excuse of forgetting, but don't lie during an investigation!
+Stelle: I-I wasn't lying! I f-forgot...I-I'm sorry...
+Penne: It's fine. I got what I needed, and look like the next destination might be the bodega if he was proven to be alive there!
+Penne: (I should definitely tell Rigatoni about this new alibi I've collected now!)
 
 <<Add_Entry journal Stelle_Parmesan_Alibi_Update>>
+<<jump StelleSprint3>>
 ===

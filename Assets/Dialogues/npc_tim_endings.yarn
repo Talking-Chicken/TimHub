@@ -1,0 +1,202 @@
+﻿title: npc_tim_endings
+tags:
+position: -8,-105
+---
+
+<<if function() == 0>>
+    <<jump End0>>
+<<elseif function() == 1>>
+    <<jump End1>>
+<<elseif function() == 2>>
+    <<jump End2>>
+<<endif>>
+===
+//TRUE ENDING; DO THIS LAST
+title: End0 
+tags:
+position: -134,43
+---
+Penne: *Penne presents the evidence she founds to Tim and Nero...*
+Penne: And that concludes my case.
+Tim:... Oh.
+Tim: Oh wow! You solved the case. Excellent work, detective.
+Penne: Really?! I-I mean, YES. I did!
+Nero: If only he had quietly complied... If only he had stayed six feet under...!
+Penne: You murderer...
+Nero: Orzo Parmesan's sacriligious treachery was a threat to Timsville! He could've continued on the right path, the Path of Tim, but once he started to remember his past he couldn't stay away from it.
+Nero: I lured him to the Church... I offered him a false escape, and the moment he accepted the plan, I knew he was too far gone. He could no longer be saved.
+Penne: All he wanted was to return to the life you took away from him!
+Nero: And all I wanted was to how him the path to salvation. A path that you must take, now that you know the truth.
+Penne: Now wait just a minute— WHAT?
+Tim: Well... she *did* solve the case correctly.
+Nero: You mean to let her live, my Lord?
+Tim: With some conditions, yes.
+Penne: What about Rigatoni?
+Tim: She'll stay or leave with you. I'd hate to separate you both.
+Penne: Why?
+Tim: Loneliness is a terrible, awful feeling—one I know all too well...
+Tim: I am without family and friends, unline you humans. Timsville is all I have. I'd do anything to keep it that way. You understand why I do the things I do now, don't you?
+Penne: There's another way— You can set me, Rigatoni, and all of Timsville free and still not be lonely?
+Tim: How?
+Penne: With *these* guys— HUZZAH!!!
+Penne: *All of the Timlings Penne has collected rush out of her detective coat!*
+Tim: Oh... OH... MY TIMLINGS!
+Penne: I met these little fellas around Timsville. They were all looking to be found. Don't you see you all have each other?
+Tim: I thought I had lost you all for good. Where were you all this time? 
+Buff_Timling: When you became lonely and created Timsville, you turned to control, manipulation, and lies.
+Tape_Timling: VERY UNHEALTHY COPING MECHANISMS!
+MounTimDew_Timling: And by doing so, you lost parts of yourself, too.
+Sassy_Timling: Your humanity.
+Teeth_Timling: Your compassion.
+No_Thoughts_Timling: Us.
+Tape_Timling: I'M NOT CALLING YOU DAD, TIM.
+Tim: *Tim stands on his back legs, getting off of all fours. He smacks his back and his chest pops open!*
+Tim: All this time, I thought what I was doing would make me less lonely, fill the voids in my heart.
+Tim: But it seems that my actions have only created more voids... in me and in others as well. Despite everything I've done, would you still like to return?
+Buff_Timling: It will be hard to forget the pain you have caused others.
+MounTimDew_Timling: But even so...
+Sassy_Timling: We will stay. Always.
+Teeth_Timling: If you can heal the holes in your heart, you can heal the ones you've caused in other's, too.
+No_Thoughts_Timling: If they let you in.
+Tape_Timling: *Sniff sniff* I MISSED YOU... DAD!
+Tim: *The Timlings fuse with Tim's heart. It becomes whole and voidless.*
+Tim: This warmth. This ache. This love. I feel... whole. At long last. Thank you, detective.
+Penne: Just because you were suffering from loneliness doesn't give you the right to make everyone else miserable, or to use them selfishly to fulfill your own needs.
+Tim: Detective... I cannot bring back young Orzo Parmesan, but I promise to release everyone in Timsville from my control.
+Nero: What?! My Lord, your divine reign! You can't give up your power just yet; we were only getting started—
+Tim: Did this whole cut scene teach you nothing?
+Nero: Cut... what? My Lord, what do you—
+Tim: Tut, tut. Timeout for you, young Nero. Let us both learn our lessons... together.
+Tim: *Tim's chest cavity opens once more, and the Timlings drag Nero in!*
+Timlings: (Chanting) Timeout, timeout, TIMEOUT!!!
+Nero: No... NOOOOOOOO!
+Tim:...
+Tim: Ah, the beauty of fatherhood. Detective, I can't thank you enough for helping me realize my wrongdoings. Please, accept my humble gift before we part ways.
+Tim: *Tim spits out the arm in his mouth and hacks up a BABY TOOTH.*
+Tim: It has much learning and growing to do, like me. But one day, it will be wise.
+Penne: Thank you... so... much?
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: *At New Fork Ziti's Bureau of Investigation...*
+Penne: *Penne enters an office with a takeout cup in hand. The walls are covered in awards. Rigatoni is working at a desk.*
+Penne: Rejoice, Toni— The caffeine has finally arrived!
+Rigatoni: I thought I told you to refrain from calling me that at work.
+Penne: But how else can I show that I love you... a latte?
+Rigatoni: ...I'll let it slide just this once. But you need to stop doing this kind of thing. You're a senior detective now.
+Penne: Mmmm... It's been a whole year since my promotion. Since Timsville.
+Penne: Say... do you ever think about where it went after we left, or the case?
+Rigatoni: Penne, I have something to confess.
+Penne: Is this FINALLY HAPPENING—?
+Rigatoni: N-No! What I mean to say is that the Timsville case got to me in a way that is shameful for a Ragu. But it also made me realize something far more important.
+Penne: Toni...
+Rigatoni: I thought going down my own path away from the expectations of my family meant isolating myself from distractions. Hobbies. Joy. You.
+Rigatoni: But it turns out, that path was unfulfilling and... lonely. And ultimately, those "distractions" ended up saving my life.
+Rigatoni: Penne, I want to thank you for not giving up on the job, or on me. Meeting you has made me... happier. I can only wish you the same.
+Penne: I have never been happier... partner!
+Rigatoni: Let's get back to work, detective.
+
+===
+//NEUTRAL ENDING
+title: End1
+tags:
+position: -6,107
+---
+Penne: *Penne presents the evidence she founds to Tim and Nero...*
+Penne: And that concludes my case.
+Tim: ...Oh.
+Tim: Oh wow!! You figured it out. Excellent work, Detective Dreadful.
+Penne: Really?! I-I mean, YES. I did!
+Nero: If only her had quietly complied... If only he had stayed six feet under...!
+Penne: You murderer...
+Nero: Orzo Parmesan's sacriligious treachery was a threat to Timsville! He could've continued on the right path, the Path of Tim, but once he started to remember his past he couldn't stay away from it.
+Nero: I lured him to the Church... I offered him a false escape, and the moment he accepted the plan, I knew he was too far gone. He could no longer be saved.
+Penne: All he wanted was to return to the life you took away from him!
+Nero: To show him the path to salvation. Those who choose to stray must be shepherded back to Tim and pay the price for their sins.
+Tim: I do love sheep.
+Nero: A path that you, Penne, must take, now that you know the truth.
+Penne: Now wait just a minute— WHAT?
+Tim:...
+Tim: Well, she did solve the case correctly.
+Nero: You mean to let her live, my Lord?
+Tim: With some conditions, yes. Penne Scout, for solving this case and entertaining me with your wit—
+Penne: Thank you.
+Tim: —you can keep your memories, but you must stay in Timsville forever. Or, you can leave Timsville unscathed, but you won't remember a single thing about it.
+Penne: What about Rigatoni?
+Tim: She'll stay or leave with you. I'd hate to separate the two of you. Loneliness is a terrible, awful feeling — one I know all too well...
+Penne: Something you know?
+Tim: What good are my godly powers to bend time and space if there is nobody to share it with? I am without family and friends, unlike you humans. Timsville is all I have, and I would do anything to keep it that way.
+Penne: That was unexpected. And... sad.
+Tim: By humanity's standards, I may be morally bankrupt, but I have a heart, too. Sort of.
+Nero: Our Lord is ever so merciful. You should be kissing the floor he crawls on, ingrate!
+Tim: Oh please don't. I haven't vacuumed this place in a while.
+Penne: Stay in Timsville with Toni forever, knowing I solved the biggest ever... or leave with Toni without a single memory of what may be the biggest break in my career...
+Tim: The choice is yours, Detective Dreadful.
+-> Stay in Timsville
+    <<jump stayInTimsville>>
+-> Leave Timsville
+    <<jump leaveTimsville>>
+===
+title: stayInTimsville
+---
+Penne: ...I choose to stay.
+Tim: Wonderful choice. You'll never be sad or lonely again here. And most of all, congratultions on solving the case, detective.
+Tim: Welcome to Timsville.
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: Toni and I move into Orzo's apartment. We're the senior detectives for Timsville's Detective agency, and today's the first anniversary of the agency. I don't know how to feel about that.
+Penne: I'm far from happy, but at least I have Rigatoni. She's safe. Happy, I think. I try not to think about it.
+Penne: What if I had done things differently? What if there was a way for us to leave safely with our memories, a way to convince Tim he didn't have to keep people trapped in Timsville, that he was never alone to begin with?
+Penne: What would Rigatoni have done?
+Penne: ...What does she truly think of me now?
+Penne: I'll never know. I don't think I deserve to know. I've made my choice already. And now I must say I've never been happier.
+
+===
+title: leaveTimsville
+---
+Penne: ...I choose to leave.
+Tim: Very well. You may go once I finish erasing your memories. Please hold still — it's hard to do it if you get squirmy.
+Tim: ...
+Penne: AHHHHHH...Ah?
+Tim: Well, this is just embarassing.
+Nero: The mind control isn't working on her. She has a particular immunity to your powers... Awfully annoying.
+Tim: I see. I hope you don't mind if we take more extreme measures.
+Penne: Wha—
+Tim: Congratulations on solving the case, detective.
+Tim: It's a shame you won't remember any of it.
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: One year later, Toni and I are back in the New Fork Ziti Bureau of Investigation. 
+Penne: Nothing much has changed since Rigatoni and I came back from Timsville. We both remember that Timsville exists, but... we don't remember what happened there. 
+Penne: The case files are empty. It's hard to explain, but all the files pertaining to the Timsville case is missing information.
+Penne: Even more mysteriously, Timsville itself seems to have disappeared. The bureau had no choice but to permanently close the case.
+Penne: Ever since we got back, I've felt a strange emptiness. Loneliness. Maybe it's because I always wonder, what did we leave behind in Timsville? What did we forget? 
+Penne: Was there a way for us to leave with our memories? Negotiated with whoever we faced? 
+Penne: I can't shake the feeling that maybe if I had done things differently, we would have been better off. Happier, even. But I guess I'll never know for sure.
+===
+//BAD ENDING
+title: End2 
+tags:
+position: 129,36
+---
+Penne: *Penne presents the evidence she founds to Tim and Nero...*
+Penne: And that concludes my case.
+Tim: Oh... I hate to be "that guy," but you got it wrong.
+Penne: No! This was my chance to prove to my boss, to the bureau, and to Toni!
+Tim: Terribly sorry, but you failed, so you and Detective Ragu get to stay here... forever!
+Tim: Though, I do take slight offense at the idea that this is a punishment. We're all happy, it's never lonely, and...
+Tim: ...you won't have anything to miss from your old life once I'm done!
+Penne: AHHHHHHH!
+Penne: ...
+Penne: Ahhhhhhh..?
+Tim: Well, that's just embarrassing?
+Nero: The mind control doesn't work on her. She has a particular immunity to your powers... awfully annoying.
+Tim: I see. I hope you don't mind then if we take more extreme measures?
+Penne: Wha—
+Tim: Don't be disheartened, detective. You may have failed...
+Tim: ...but a position has opened up in Timsville, just for you.
+//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Penne: Toni and I moved into Orzo's old home. We've redecorated it with awards we've gotten for being "the best detectivesin Timsville".
+Penne: We're senior detectives for Timsville's Detective agency, and today's the first year anniversary of it's initial opening.
+Penne: It's hard work, but I've finally achieved my dream of being the best detective with the love of my life.
+Penne: There was a time before Timsville... I know there was. I can sometimes feel something at the back of my head.
+Penne: Sometimes I wonder, if I had done things differently before, would I be as happy as I am now?
+Penne: I guess I'll never know, and I don't want to know! And I'll never need to know, because I have everything I've ever wanted.
+Penne: I've never been happier!
+===

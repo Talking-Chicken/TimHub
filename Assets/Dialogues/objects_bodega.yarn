@@ -1,4 +1,16 @@
-﻿title: rugLady
+﻿title: addEntryToothpaste
+tags:
+position: 96,-203
+---
+Penne: Do I want to pick up this toothpaste?
+    -> Yes!
+        Penne: This might come in handy!
+        <<Add_Entry journal {$newItem}>><<Play_SFX SoundManager Toothpaste>>
+    -> Nope.
+        Penne: Hmm, maybe I should leave it be.
+===
+
+title: rugLady
 tags:
 position: 300,-101
 ---
@@ -33,6 +45,7 @@ position: 300,-101
 ---
 //DONE
 <<if Check_Collected("Ham_Dugo") == false>>
+    <<Play_SFX SoundManager Ham_Dugo>>
     HamDugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
@@ -46,6 +59,7 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Bodega_Cat") == false>>
+    <<Play_SFX SoundManager Pocky_Cat>>
     Penne: Mrow. Meow! This cat's named Pocky. 
     <<set $newItem to "Bodega_Cat">>
     <<jump addEntry>>
@@ -72,41 +86,27 @@ tags:
 position: 30s0,-101
 ---
 <<if Check_Collected("Fish_ATM") == false>>
+    <<Play_SFX SoundManager Scottish_Fish>>
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
     <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
-===
 
-title: Bloody_Shears
-tags:
-position: 300,-101
----
-//not in the scene, no code for this guy yet
-<<if Check_Collected("Bloody_Gardening_Shears") == false>>
-    Penne: Shears that look like Tim. It's not marinara covering these shears...
-    <<set $newItem to "Bloody_Gardening_Shears">>
-    <<jump addEntry>>
-<<else>>
-    Penne: I already recorded this evidence!
-<<endif>>
 ===
-//done
 title: Spearmint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Spearmint_Toothpaste") == false>>
+<<if Check_Collected("Spearmint_Toothpaste") == false>>    
     Penne: Spearmint toothpaste. The best one!
     <<set $newItem to "Spearmint_Toothpaste">>
-    <<jump addEntry>>
+    <<jump addEntryToothpaste>>
 <<else>>
-    Penne: I already recorded this evidence!
+    Penne: I already picked this up!
 <<endif>>
 ===
-//done
 title: Charcoal_Toothpaste
 tags:
 position: 300,-101
@@ -114,12 +114,11 @@ position: 300,-101
 <<if Check_Collected("Charcoal_Toothpaste") == false>>
     Penne: Charcoal toothpaste. Quirky...
     <<set $newItem to "Charcoal_Toothpaste">>
-    <<jump addEntry>>
+    <<jump addEntryToothpaste>>
 <<else>>
-    Penne: I already recorded this evidence!
+    Penne: I already picked this up!
 <<endif>>
 ===
-//done
 title: Mint_Toothpaste
 tags:
 position: 300,-101
@@ -127,9 +126,9 @@ position: 300,-101
 <<if Check_Collected("Mint_Toothpaste") == false>>
     Penne: Mint toothpaste. Basic. Meh.
     <<set $newItem to "Mint_Toothpaste">>
-    <<jump addEntry>>
+    <<jump addEntryToothpaste>>
 <<else>>
-    Penne: I already recorded this evidence!
+    Penne: I already picked this up!
 <<endif>>
 ===
 
@@ -137,18 +136,20 @@ title: timling3
 tags:
 ---
 <<if Check_Collected("MounTimDew_Timling") == false>>
-    Penne: Another one? By golly, you guys get lost easily. 
-    MounTimDew_Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
+    Penne: Another one? By golly, you guys get lost easily.
+    <<Play_SFX SoundManager Mount_Timling>>
+    MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
-            MounTimDew_Timling: You're the besht! Wanna sip?
+            MounTimDew Timling: You're the besht! Wanna sip?
+            <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "MounTimDew_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_3>>
             //make timling disappear from room
         -> Leave MounTimDew Timling
             Penne: Sorry, buddy. Maybe next time...
-            MounTimDew_Timling: (Sad sigh and gurgling soda noises)
+            MounTimDew Timling: (Sad sigh and gurgling soda noises)
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -159,18 +160,19 @@ tags:
 ---
 <<if Check_Collected("Sassy_Timling") == false>>
     Penne: Hey there! See anything suspicious?
-    Sassy_Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
+    Sassy Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
         -> Take Timling
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
-            Sassy_Timling: Nice. 
-            Sassy_Timling: Got any games in your journal?
+            Sassy Timling: Nice. 
+            Sassy Timling: Got any games in your journal?
+            <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Sassy_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling timlings_4>>
             //make timling disappear from room
         -> Leave Timling
             Penne: Uh, no thanks. The loser's life's for me.
-            Sassy_Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
+            Sassy Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -183,6 +185,7 @@ Penne: A shelf full of teeth. They seem to be for sale.
 
 title: Fwog
 ---
+<<Play_SFX SoundManager Fwog>>
 Fwog: Wibbit wibbit.
 ===
 
@@ -194,6 +197,7 @@ Penne: Guts, milks, medecines...
 title: Fridge_02
 ---
 Penne: S-sir..? Do you need any help?
+<<Play_SFX SoundManager Blankie_Boy>>
 Fridge_Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
 ===
 
@@ -205,6 +209,7 @@ Penne: She... seems happy enough.
 
 title: Register
 ---
+<<Play_SFX SoundManager Bodega_Register>>
 Penne: This register is keeping track of the Bodega's earnings!
 Register: *The Bodega currently has 0.74 cents in its account.*
 ===
@@ -218,4 +223,15 @@ title: Bloody_Bag
 ---
 Penne: I... think that bag just moved.
 Penne: I'll leave it alone.
+===
+title: Newspaper_01
+---
+Penne: This newspaper's about a week old. It reads:
+Penne: "Timsville Times. Sportsball. An image of someone running after someone elsed and throwing a ball at them. "RUN!!!!!""
+===
+
+title: Newspaper_02
+---
+Penne: This newspaper's a couple days old. It reads:
+Penne: "Timsville Times. Daily quote: 'Who are all these people with cameras?' -Tim"
 ===

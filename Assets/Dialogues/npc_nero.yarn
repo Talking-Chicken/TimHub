@@ -4,37 +4,54 @@ position: 40,-174
 ---
 <<if Check_Read("neroIntro") == false>>
     <<jump neroIntro>>
-<<elseif Check_Read("neroIntro") == true>>
-    -> Ask Nero when did he last saw Orzo
+<<elseif Check_Read("neroIntro") == true && Check_Read("neroQuestions") == false>>
+    -> Ask Nero when he last saw Orzo Parmesan <<if Check_Read("neroAlibi") == false>>
         <<jump question_neroAlibi>>
-    -> Ask Nero about the garden
+    -> Ask Nero about his job <<if Check_Read("neroJob") == false>>
         <<jump question_aboutGarden>>
-    -> Ask Nero about the Mysterious Letter <<if Check_Collected("Mysterious_Letter")>>
+    -> Ask Nero about Tim <<if Check_Read("neroAboutTim") == false>>
+        <<jump question_aboutTim>>
+    -> Ask Nero about the evidence collected so far
+        <<if Check_Read("neroJob") == true && Check_Read("neroAlibi") == true && Check_Read("neroAboutTim") == true>>
+            Penne: (Alrighty! I've collected Nero's alibi and asked everything I wanted to know.)
+            Penne: (Now I should ask him about the evidence I've collected so far. Hopefully he can give me new information for the case.)
+            <<Set_Read neroQuestions>>
+            <<jump neroScript>>
+        <<elseif Check_Read("neroAlibi") == false || Check_Read("neroJob") == false || Check_Read("neroAboutTim") == false>>
+            Penne: (Wait! There's something else I want to ask him before I move on to ask about the evidence I've collected so far.)
+                <<jump neroScript>>
+        <<endif>>
+<<elseif Check_Read("neroIntro") == true && Check_Read("neroQuestions") == true>>
+    -> Ask Nero about the Mysterious Letter <<if Check_Collected("Mysterious_Letter") && Check_Read("neroMysteriousLetter") == false>>
         <<jump question_mysteriousLetter>>
-    -> Ask Nero about the Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears")>>
+    -> Ask Nero about the Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("neroBloodyShears") == false>>
         <<jump question_neroBloodyShears>>
     -> Ask Nero about the Confession Log Book <<if Check_Collected("Confession_Log_Book")>>
         <<jump question_confessionLogbook>>
-    -> Ask Nero about the matching handwriting of the Confession Log Book and Myterious Letter <<if Check_Collected("Mysterious_Letter")>>
-        <<jump question_matchingHandwriting>>
-    -> Ask Nero about the Will <<if Check_Collected("The_Will")>>
-        <<jump question_aboutWill>>    
-
+    -> (New!) Ask about the matching handwriting of the Log Book and Letter <<if Check_Collected("Mysterious_Letter") && Check_Read("neroCongessionLogbook") && Check_Read("neroBloodyShears")>>
+        <<jump question_matchingHandwriting>> 
     -> I'm done.
-        Nero: Feel free to look around.
-
+        <<if Check_Read("neroBloodyShears") == true && Check_Read("neroMysteriousLetter") == true>>
+            Nero: Investigate all you like.
+            Nero: Mind the candle on the left. The Tim painting in this church is quite flammmable. 
+        <<elseif Check_Read("neroMysteriousLetter") == false || Check_Read("neroBloodyShears") == false>>
+            Penne: (Wait! There's something else I want to ask him about the evidence I've collected so far.)
+                <<jump neroScript>>
+        <<endif>>
 <<endif>>
 ===
-
 title: neroIntro
 tags:
 ---
-Penne: Hey hey! I'm Penne Dreadful, here investigating the death of Orzo Parmesan. Who might you be?
-Nero: Ah, wonderful. I am Nero di Seppia. Pleasure to meet you. 
-Penne: Nice ta meet you, Nero! Can I ask you some questions about Orzo and the town?
-Nero: Of course. I'm happy to tell you anything you need to know.
+Penne: I'm Detective Pennelope Scout, here investigating the death of Orzo Parmesan. Who might you be?
+Nero: Ah, I've been expecting you, detective. 
+Penne: (Wait. He's been expecting me? Hmm.)
+Nero: I am Nero di Seppia, a priest for the Church of Tim. Pleasure to meet you. 
+Penne: A priest? Wait, that's perfect! Can I ask you some questions about Orzo Parmesan?
+Nero: Of course. I'm happy to lend a hand for your investigation. 
 
 <<Set_Read neroIntro>>
+<<jump neroScript>>
 ===
 
 title: question_neroAlibi
@@ -42,31 +59,73 @@ position: -248,-96
 ---
 //first alibi from Nero (he lies)
 Penne: When was the last time you saw Orzo Parmesan?
-Nero: I don't believe I came into contact with Orzo Parmesan when he was murdered. But then again, I meet everyone so often as a Priest, it might've been an unfortunate detail that slipped my mind. 
+Nero: I don't believe I came into contact with Orzo Parmesan when he was murdered.
+Penne: You hadn't come into contact with Orzo Parmesan at all? Not even in passing?
+Nero: No. I last saw him probably the day before Timsday, before the whole fiasco.  
+Nero: But then again, I meet everyone so often as a Priest, it might've been an unfortunate detail that slipped my mind. 
 Penne: So business is doing well, huh?
 Nero: Of course. Everyone has something to confess.
-
+Penne: (Hmm. Did he really not meet Orzo at all? Something tells me that he's being vague on purpose here.)
+Penne: (Maybe I can find a piece of evidence to prove that Nero met Orzo here!)
+Penne: (For now, I'll record Nero's alibi in my journal under the Alibi tab and revisit this information if I want to later.)
 //add Nero's first alibi
 <<Add_Entry journal Nero_di_Seppia>>
-
+<<Set_Read neroAlibi>>
+<<jump neroScript>>
 ===
 
 title: question_aboutGarden
 position: -247,-31
 ---
-Penne: Got a lot of flowers and...other sorts of vegetation I'm not familiar with around here. Do you take care of them?
-Nero: Yes. I love to cultivate all sorts of flora for Timsville. 
-Penne: I thought you were a priest. You have time for that kind of stuff? 
-Nero: Flowers and people are the same, detective. They must be properly guided and cared for in order to flourish. 
+Penne: So you're a priest, huh? Anything I should know about your job? Or what you do around here?
+Nero: I listen to the plights the people of Timsville confess to me. I also am a passionate gardener. 
+Penne: (A gardener? I should ask him about those gardening shears later!)
+Penne: A gardener? That's a little unexpected.
+Nero: I like to believe that gardening is also a practice of patience and faith. 
+Nero: You see, flowers and people are the same, detective. They must be properly guided and cared for in order to flourish. 
 Penne: Interesting. I can barely keep any of my own plants alive...
 Nero: Then you both must be in need of guidance. Please, feel free to ask me anything that plagues your mind. 
 Penne: Oh, well actually there IS this one thing...
 Nero: Do tell.
 Penne: It's been on my mind lately, and I don't know how to approach the issue!
 Nero: Continue...
-Penne: So basically—WAIT! I'm here to do my job, not talk about my problems! Man, you're GOOD at this.
+Penne: So basically—WAIT! I'm here to do my job, not talk about my problems! 
+Penne: Man, you're GOOD at this.
 Nero: I try.
+Penne: (Yikes! I should be careful around this guy.)
+<<Set_Read neroJob>>
+<<jump neroScript>>
+===
 
+title: question_aboutTim
+---
+Penne: I hope this isn't offensive or anything, but who exactly is Tim? I know this church is dedicated to him, but I'm still a little confused.
+Nero: I welcome any person curious about our holy Lord to educate themselves about Tim.
+Nero: Tim is Timsville's god and ruler. He is omnipresent, omnnipotent, and extremely powerful. 
+<<Camera_Lerp_To GameManager obj_renaissanceTim>>
+Nero: This is a painting created in his divine image. Beautiful, powerful, and so holy. Wouldn't you agree?
+Penne: Such a privelege to...uh, bask in his. Um. Pectoral glory?
+Nero: Personally, I'm an advocate for Tim's abdominal eminence. But everything about Tim is perfect. 
+Penne: Yeah, it's a really shiny and sparkly painting, too! Makes me want to touch it—
+Nero: Do NOT touch the painting. It is exceptionally fragile and could easily be destroyed.
+Penne: Jeepers, sorry! I'll be careful around the painting. 
+Penne: (I wasn't actually going to touch it. But Nero's reaction was interesting. He totally freaked out for someone who is so calm and serene. It almost seems suspicious.)
+Penne: (Now really looking at the painting, I think there's something behind it! I can see the shadow of something because of Tim's pale white abs.)
+Nero: ...hands, the burning flame of a candle, anything could bring ruin to his holy painting. We must always be cautious.
+Penne: Yeah, totally. I'll be super duper careful!
+Penne: (Ugh, but I can't really investigate this painting with him around!)
+Penne: (While investigating everything else in the church, if Nero ever gets distracted or leaves, I can do something to the painting!)
+<<Camera_Lerp_To GameManager Player>>
+Nero: We celebrate his birthday, Timsday, every week. Group prayers are the only way to worship Tim through the mind. We also give offerings to him in his honor. 
+Nero: However, the most compelling draw of Tim is that he makes you feel as if you were never lonely.
+Nero: If you ever are lost, feel alone in the world...Tim makes you feel found. Tim finds everybody. 
+Penne: I see. Funny how Tim hasn't caught on outside of Timsville, given your devotion.
+Nero: That is because it is forbidden to speak of the outside world. Tim and Timsville provide everything a person needs. It is pointless to think of anything else or desire anything outside of Tim's holy sphere. 
+Penne: O-Oh, I see...
+Nero: Praise Tim, detective. 
+Penne: Uh-huh, yeah. 
+<<Set_Read neroAboutTim>>
+<<jump neroScript>>
 ===
 
 title: question_mysteriousLetter
@@ -76,10 +135,17 @@ position: -248,34
 Penne: Have you ever seen this letter before?
 Nero: Where did you get that…? 
 Penne: I'm the one asking the questions here! 
-Nero: I've never seen that letter before. Terribly sorry. Lovely handwriting though.
+Nero: ...
+Nero: I've never seen that letter before. Terribly sorry. 
+Penne: (Are you serious? Crabapples!)
+Penne: (He definitely hesitated before giving me his answer. Something about his reaction is a little off.)
+Nero: I don't know what that letter is, but it does have lovely handwriting though.
 Penne: Oh, yeah. Really great penmanship.
 Nero: Agreed. 
-
+Penne: (So this didn't make him give me any new information...just great.)
+Penne: (I do find it strange that he would compliment the handwriting out of everything else. I'll try to remember that.)
+<<Set_Read neroMysteriousLetter>>
+<<jump neroScript>>
 ===
 
 title: question_neroBloodyShears
@@ -96,78 +162,120 @@ Penne: Everywhere? Seriously?
 Nero: Everyone knows this and has access to them—not just me. 
 Penne: But why?
 Nero: Community gardening is a way we all bond. 
-Penne: Of course it is. 
-
+Penne: Of course it is.
+<<Set_Read neroBloodyShears>>
+<<jump neroScript>>
 ===
 
 title: question_confessionLogbook
 position: 189,119
 ---
 
-Penne: Your log book states that Orzo came to confess to you the night he was murdered. Care to explain?
-Nero: Hmm...ah, yes. I remember now. I did see Orzo that night. 
-Penne: How could you not tell me such vital information?
-Nero: As you can see, I nearly saw the whole town that day.
-Penne: Excuses aside, what happened?
-Nero: He came to me first, like usual, confessed, and then left. But he came frequently speaking of strange dreams, another life, etc. He's been doing it so often I didn't think it out of the ordinary.
+Penne: Your log book states that Orzo came to confess to you the night he was murdered. 
+Nero: ...
+Penne: You've written here that you saw him the night he died. The log book puts Orzo's location right here at the church!
+Penne: Care to explain why you lied about not seeing him?
+Nero: Hmm...
+Nero: Ah, yes. I remember now. I did see Orzo that night. 
+Penne: How could you not tell me such vital information? He was MURDERED!
+Nero: As you can see, I nearly saw the whole town that day. Forgive me for not letting you know. 
+Penne: Excuses aside, Orzo came to the church here to confess the night he was last alive. What happened exactly?
+Penne: And DON'T skimp on the details!
+Nero: Of course, detective. Let's see...
+Nero: He came to me first, like usual, confessed, and then left. He came frequently speaking of strange dreams, another life, etc. 
+Nero: Blasphemous dreams. It's against the scripture of Tim to speak of the outside world because it is tainted. 
+Nero: Orzo's confessed to me about these nightmares so often, I didn't think it out of the ordinary. That must've been why I failed to remember it the first time around. 
+Penne: (I've written this alibi update in my journal. Now I have a more accurate, detailed account from Nero.)
+Penne: That's it? But...but that's so normal! Are you sure he just left the church? He didn't, say, meet anyone suspicious. 
+Nero: Not to my knowledge. My condolences, detective. 
+Penne: (Ugh, he's dodging all of my questions! This is getting fishier by the moment.)
+Penne: (But wait! The handwriting for this Log Book is familiar. Maybe I can ask him about it...)
+Penne: You handwrite every confession you have with people in this log book, correct? 
+Nero: I wouldn't go so far as to say every confessions. They're merely names, times, and dates with short summmaries.
+Penne: But this is your handwriting, right?
+Nero: Yes. This is a unique way of writing that only the highest priest in Timsville is trained in. No other person in Timsville writes the way I do.
+Penne: Must be nice to be so close to the top, huh? Fancy handwriting that is distinctive and yours. 
+Nero: Correct. I take pride in my penmanship. 
+Penne: (Now I understand! This handwriting is the SAME as the Mysterious Letter that was sent to Orzo.) 
+Penne: (Put them side by side in front of anyone and it's as clear as day they were written by the same person.)
+Penne: (And the writer himself confirmed that he is the only one with this kind of handwriting!)
+Penne: (Ok—time to confront Nero about the matching handwriting for the letter AND the log book.)
+<<Set_Read neroCongessionLogbook>>
 
 <<Add_Entry journal Nero_di_Seppia_Update>>
-
+<<jump neroScript>>
 ===
 
 title: question_matchingHandwriting
 position: 10,213
 ---
 
-Penne: If you take a look at this letter and your log book, the handwriting is the same!
+Penne: If you take a look at this letter and your log book, the handwriting is the same! You said it yourself too: you're the only person in Timsville with this very beautiful and unique handwriting, no? 
 Nero: ...!
-Penne: You wrote this letter to Orzo, didn't you!?
+Penne: You wrote this letter to Orzo and asked him to come to the church, didn't you!?
 Nero: As someone concerned with all of the poor souls of Timsville, I wrote and sent that letter to Orzo to see me so that he could escape…his troubles. 
-Nero: It was a very brief meeting, however. He must've been too distraught after he heard the unfortunate news about his family. 
+Penne: Stop conveniently forgetting these details and tell me the TRUTH: what happened the night Orzo came to the church, just before he was killed?
+Nero: I asked him to come and confess. That's all. It was a very brief meeting, however. Nothing out of the ordinary. The usual spiel about dreams of beyond Timsville, calling them memories.
+Nero: Quite frankly, it was a brief yet tumultuous confession. I could barely make sense out of it, which is why the summary is rather bare bones. 
+Penne: Tell me more about his emotional state.
+Nero: Scared, nervous...Orzo must've been too distraught after he heard the unfortunate news about his family. 
+Penne: (Wait a minute. This is the first time I'm hearing about this!)
 Penne: Unfortunate news about his family? 
-Nero: I'm sure you know that Orzo used to live in New For Ziti?
+Nero: I'm sure you know that Orzo used to live in New Fork Ziti?
 Penne: Yes, I was briefed about his whole background. 
 Nero: Then you must be aware of the car accident in NFZ. Cars are banned in Timsville, so hit-and-runs would never happen in our revered town. 
 Penne: And he told you all of this? Because I couldn't find it in the log book.
 Nero: No, the log book only states what is said during sessions. I found out through different means.
 Penne: (I didn't hear anything about a car accident relating to Orzo or his family! What is he talking about?)
-Nero: He came to me looking to make peace with the loss. Hopefully, Orzo has found that now that he has passed onto the path to Salvation.
-//insert Nero giving VERY BIG HINT TO THE PAINTING PUZZLE!!!
-Nero: May the light burn at our darkest hour to reveal the mystic path to Salvation.
-Penne: Yes...definitely. 
-Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
-
+Nero: He came to me looking to make peace with the loss. 
+Penne: I see. Time to make yet another amendment to your alibi in my journal...
 <<Add_Entry journal Nero_di_Seppia_New_Alibi>>
-
-===
-
-title: question_aboutWill
-position: -228,206
----
-
-Penne: Where is Rigatoni? What is this will to Parapadelle Parmesan? You know obstruction of justice is a crime, right?
-Nero: I don't know what that is…I've never seen it before. You took something from a sacred place. Put it back at once.
-Penne: You were right. It's unfortunate, what happened to Stelle.
-Nero: She's been perfectly fine and healthy. What are you talking about?
-Penne: You mentioned some unfortunate news about Orzo's family. Stelle is the only family Orzo has here. But now you say she was fine?
-Nero: ...What's your point?
-Penne: It wasn't her you were talking about—you were talking about Orzo's Dad. How else could you have known about his Dad's death? 
-Penne: The only way is that you could have known that is if you knew about the will this WHOLE TIME! You HID IT!
-Nero: N-Nonsense! Orzo mentioned it in passing when he came to confess!
-Penne: But you said you found out in a different way—it was not included in the log book!
-Penne: Orzo couldn't have known his Dad died in a hit-and-run because he never received the will, according to your delivery man—the only person who handles these things! 
-Penne: How else could you have known about it if you hadn't known about the will?
-Nero: ... //nero losing his cool, looking menacing
-Penne: Orzo was last seen on Timsday and the latest we know was here with you because you sent this letter to him. 
-Penne: Why did you lie? What's the REAL REASON you asked Orzo to come?
-Nero: He remembered things he shouldn't have. Looked where he shouldn't have. 
-Nero: So curious, that one. 
-Nero: Too curious. 
-Nero: He strayed from the path of salvation, but surely now he is better.
-Penne: Again with this path of salvation! What IS it?
-Nero: You're about to find out.
-
-//this is where a Cutscene is triggered/audio of Nero pushing and locking Penne in the secret room!
-//then, this should trigger to the next room, Secret Sacrificial room automatically!
-
+Penne: (And done. Nero's new alibi is now in my journal.)
+//insert Nero giving VERY BIG HINT TO THE PAINTING PUZZLE!!!
+Nero: Hopefully, Orzo has found that now that he has passed and has journeyed onto the path to Salvation.
+Penne: What is the path to Salvation? Is it like...a better place? After you, um, you know...die?
+Nero: It is a holy place of divine revelation. As Tim always says: 
+Nero: By the light that burns through the Tim, may the path to Salvation be revealed.
+Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
+//Rigatoni teleports next to the candle HERE
+Nero: Wait, what are you doing? That's dangerous!
+Penne: Who, me!?
+Nero: No, HER!
+<<Camera_Lerp_To GameManager npc_rigatoni_church>>
+Rigatoni: I must journey on to the path to reach Salvation...
+Penne: (Rigatoni picks up the candle and walks towards the Tim Painting very slowly...)
+Nero: Put the candle down before you do something you'll regret!
+Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed.
+Penne: Rigatoni, careful! You could set something on FIRE—we don't have the budget to pay for damages at the bureau!!!
+Rigatoni: I can sense the place of Salvation here...Orzo and Tim call for me! 
+<<Camera_Lerp_To GameManager obj_renaissanceTim>>
+Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed....
+Penne: (This painting again! Oh my gnocchi she's walking towards it with the candle!)
+<<Camera_Lerp_To GameManager npc_nero>>
+Nero: DO NOT GO NEAR THE PAINTING WITH THE CANDLE!
+<<Camera_Lerp_To GameManager Player>>
+Penne: (GO NEAR THE PAINTING WITH THE CANDLE!!!)
+<<Camera_Lerp_To GameManager npc_rigatoni_church>>
+Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed!
+<<Camera_Lerp_To GameManager npc_nero>>
+Nero: Rigatoni. Put the candle down. Let us...discuss what you are going through together. 
+Nero: AWAY from the painting and candle. Please.
+Rigatoni: Of...course...
+Nero: Detective Scout, please excuse me and Rigatoni for the time being. She must be so in awe of Tim that her devotion has caused her to be...reckless. 
+<<Camera_Lerp_To GameManager Player>>
+Penne: Oh yeah! Go right ahead! I'll just finish up investigating the church. 
+Nero: Please do not do anything rash while I am away. 
+Nero: You may come to regret it. 
+Penne: Yes sir!
+<<Nero_Transition_Out GameManager>>
+<<Set_Read neroGone>>
+//Rigatoni is also out of the scene too
+Penne: ...
+Penne: (Thank you for distracting Nero, Rigatoni! I hope she'll be safe around him...)
+Penne: (Now with that annoying priest gone, I can finally do something about that painting!)
+Penne: (Both Nero and Rigatoni said "By the light that burns through the Tim, may the path to Salvation be revealed.")
+Penne: (Given how protective Nero was of this painting, it must be the key to something else he's hiding!)
+Penne: (There's no use in investigating the painting again—it hasn't changed since I got here.) 
+Penne: (But maybe I can do something TO it instead...like Rigatoni was about to do.)
+Penne: (If I could pick up that candle...maybe I could use it on the painting to reveal path to Salvation!)
 ===

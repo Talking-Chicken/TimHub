@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Yarn.Unity;
 
 public class CaseReportQuestion : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class CaseReportQuestion : MonoBehaviour
     private string currentAnswer = "";
 
     public EntryType Type {get => type; set => type = value;}
+    public TMP_Dropdown AnswerDropdown {get => dropdown; set => dropdown = value;}
     void Start()
     {
         dropdown.onValueChanged.AddListener(delegate {
@@ -34,4 +36,5 @@ public class CaseReportQuestion : MonoBehaviour
     public void setCurrentAnswer(int value) {
         currentAnswer = dropdown.options[value].text;
     }
+
 }

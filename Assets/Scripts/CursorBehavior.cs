@@ -9,6 +9,8 @@ public class CursorBehavior : MonoBehaviour
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
 
+    public PlayerControl playerControl;
+
 
 
     // Start is called before the first frame update
@@ -21,10 +23,10 @@ public class CursorBehavior : MonoBehaviour
     void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-        if (hit.collider != null)
+        if (hit.collider != null && hit.collider.gameObject.GetComponent<InteractiveObj>() != null)
         {
             Cursor.SetCursor(cursorHover, hotSpot, cursorMode);
-            print(hit.collider.gameObject);
+            //print(hit.collider.gameObject);
         } else {
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         }

@@ -11,9 +11,15 @@ public class PlayerStateDialogue : PlayerStateBase
     public override void updateState(PlayerControl player) {
         if (!player.runner.IsDialogueRunning)
             player.StartCoroutine(player.waitToChangeState(player.stateExplore));
-        if (Input.GetMouseButtonDown(0))
-            if (player.HoveringObj == null || !player.HoveringObj.tag.Equals("Blocker"))
+        if (Input.GetMouseButtonDown(0)) {
+            if (player.HoveringObj == null || !player.HoveringObj.tag.Equals("Blocker")) {
+                //player.dialogueControl.changePortrait();
                 player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
+                //player.runner.GetComponentInChildren<LineView>().UserRequestedViewAdvancement();
+            }
+        }
+        player.dialogueControl.changePortrait();
+        player.canvasGroup.alpha = 1;
     }
 
     public override void fixedUpdate(PlayerControl player)
@@ -22,5 +28,6 @@ public class PlayerStateDialogue : PlayerStateBase
     }
     public override void leaveState(PlayerControl player) {
         player.previousState = this;
+        player.canvasGroup.alpha = 0;
     }
 }

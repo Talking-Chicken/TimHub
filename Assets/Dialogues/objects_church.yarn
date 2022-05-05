@@ -2,22 +2,41 @@
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Church_Candle") == false>>
+<<if Check_Collected("Church_Candle") == false && Check_Read ("neroGone") == false>>
     Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
-    Penne: There's something written on the bottom. "By the light that burns through the heavens, may the truth path be revealed." 
-    Penne: Hmmm... Maybe the painting can be moved somehow?
+    Penne: There's something written on the bottom. 
+    Penne: "By the light that burns through the Tim, may the path to Salvation be revealed." 
+    Penne: Hmmm...there seems to be something BEHIND this painting!
+    Penne: The light that burns through reveals something...maybe this painting leads somewhere important!
+    Nero: Please step away from the painting. It's extremely fragile.
+    Penne: (Drat! Even if I wanted to investigate or do something to this painting, Nero won't let me.)
+    Penne: (I should collect other pieces of evidence and question him more. While I investigate, maybe Nero will leave and give me an opportunity to do something here!)
+<<elseif Check_Collected("Church_Candle") == false && Check_Read ("neroGone") == true>>
+    Penne: There's definitely something behind this painting! 
+    Penne: I can't seem to move it. This thing really won't budge...
+    Penne: I know Nero was hiding something here. If I could do something to it with an object in the church, maybe I could investigate what's behind it!
 <<else>>
-    <<if Check_Read("Painting_Burned") == false>>
-        -> use candle
+    <<if Check_Collected("Church_Candle") == true && Check_Read("Painting_Burned") == false>>
+    Penne: This candle I have could be used to burn the painting. 
+    Penne: Arson is a crime, but this could lead to something big for the case. I know Nero was hiding something here. 
+    Penne: And there's only one way to find out...
+        -> Use candle to burn the painting
             <<Burn_Painting obj_renaissanceTim>>
             <<Set_Read Painting_Burned>>
-        -> maybe latter
+            Penne: FOR JUSTICE!
+            //tim painting BURNSSSS
+        -> Maybe commit arson later 
+            Penne: Maybe I shouldn't be burning things...
+            Penne: Yet.
+            Penne: I'll take another look around for anything else. 
     <<endif>>
     <<if Check_Read("Painting_Burned") == true>>
-        Penne: A hole appears behind painting!
-        -> go into the hole
+        Penne: Woah, a secret entrance appeared behind painting! I KNEW there was something that priest was hiding!
+        Penne: Once I enter, there's no going back. 
+        -> Enter the void (Penne cannot return to the Church if she enters the void.)
             <<Room_Change GameManager>>
-        -> maybe latter
+        -> Maybe later 
+            Penne: I'll take another look around for anything else. 
     <<endif>>
 <<endif>>
 ===
@@ -26,39 +45,47 @@ title: churchCandle
 tags:
 position: 300,-101
 ---
-Penne: It looks useful!
--> pick up
-    <<Pick_Up_Candle obj_churchCandle>>
--> maybe latter
+<<if Check_Read("neroGone") == false && Check_Read("neroIntro") == true>>>>
+    Penne: The flame looks really strong. I should be careful—it could potentially burn something!
+    Penne: This candle could be useful for me...
+    <<Camera_Lerp_To GameManager npc_nero>>
+    Nero: Whatever you're thinking of doing with that candle, do not. It's very dangerous.
+    Penne: But what if I want to—
+    Nero: It's for your and everyone's safety. Please, step away from the candle. 
+    <<Camera_Lerp_To GameManager Player>>
+    Penne: (Suspicious! He definitely doesn't want me to do anything with this candle.)
+    Penne: (That can only mean he's hiding something, and this might help me later!)
+    Penne: (I should come back to this candle and investigate other pieces of evidence here instead, or confront Nero with them.)
+    Penne: (While I carry on the investigation, Nero might leave during it so that I can pick this candle up!)
+<<elseif Check_Read("neroGone") == true>>
+    Penne: The flame looks really strong. I should be careful—it could potentially burn something!
+    Penne: This candle might be useful for me. Should I pick it up?
+        -> Pick the candle up
+            Penne: Ok! Now, where could I use this to help me...?
+            <<Pick_Up_Candle obj_churchCandle>>
+        -> Don't pick the candle up
+            Penne: Hmm. Maybe I'll pick it up later. 
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
+<<endif>>
 ===
 
 title: confessionBook
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Confession_Log_Book") == false>>
-    Penne: This is Nero's logbook of confessions. The entries from before Timsday are... about Orzo!
+<<if Check_Collected("Confession_Log_Book") == false && Check_Read("neroIntro") == true>>
+    Penne: This is Nero's logbook of confessions. The entries from on the night Timsday are... about Orzo!
+    
     Penne: Looks like he talked more about his strange dreams, and about having "a life before Timsville" and "doubts about the sanctity of Tim."
     Penne: According to this, Nero's advice was to pray and believe in Tim to guide him.
     Penne: ...The handwriting in this book looks really beautiful...and familiar...
-    Penne: Wait a minute! The handwriting looks the SAME! 
+    Penne: Wait a minute! The handwriting looks really similar to the Mysterious Letter's! 
     Penne: I should definitely confront Nero about this. 
     <<set $newItem to "Confession_Log_Book">>
     <<jump addEntry>>
-<<else>>
-    Penne: I already recorded this evidence!
-<<endif>>
-===
-
-title: dadWill
-tags:
-position: 300,-101
----
-<<if Check_Collected("The_Will") == false>>
-    Penne: Hold up, what's this? "The Last Will and Testament of Pappardelle Parmesan." 
-    Penne: According to this will, Pappardelle was Orzo's dad! Was Orzo sent this will before he died? Why is it hidden here?
-    <<set $newItem to "The_Will">>
-    <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -67,10 +94,12 @@ position: 300,-101
 title: confessionBooth
 tags:
 ---
-<<if Check_Collected("Confession_Booth") == false>>
+<<if Check_Collected("Confession_Booth") == false && Check_Read("neroIntro") == true>>
     Penne: A confession booth. Looks really well padded and cushy. A perfect place to rant!
     <<set $newItem to "Confession_Booth">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -79,10 +108,15 @@ tags:
 title: churchOrgan
 tags:
 ---
-<<if Check_Collected("Church_Organ") == false>>
+<<if Check_Collected("Church_Organ") == false && Check_Read("neroIntro") == true>>
+
+    <<Play_SFX SoundManager Church_Organ>>
+
     Penne: How grand! Too bad I quit learning piano after, like, a month. They're the same, right...?
     <<set $newItem to "Church_Organ">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -91,10 +125,13 @@ tags:
 title: bloodyAltar
 tags:
 ---
-<<if Check_Collected("Bloody_Altar") == false>>
-    Penne: What is all this blood doing here!? I hope it's from an animal sacrifice or something...
+<<if Check_Collected("Bloody_Altar") == false && Check_Read("neroIntro") == true>>
+    Penne: An altar with hands? They're holding the scriptures of Tim!
+    Penne: The book is glued to the fingers...talk about devotion, huh. 
     <<set $newItem to "Bloody_Altar">>
     <<jump addEntry>>
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -104,7 +141,7 @@ title: timling5
 tags:
 position: 282,33
 ---
-<<if Check_Collected("Teeth_Timling") == false>>
+<<if Check_Collected("Teeth_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Uh...hey! Are you ok? Where did you get those?
     Teeth Timling: Lost...so lost...the teeth tell me the truth...help me be...found?
         -> Take Teeth Timling
@@ -118,6 +155,8 @@ position: 282,33
         -> Leave Teeth Timling
             Penne: Um...sorry. Maybe next time?
             Teeth Timling: Next time...but how long must I wait?
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this little guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -127,7 +166,7 @@ title: timling6
 tags:
 position: 282,33
 ---
-<<if Check_Collected("No_Thoughts_Timling") == false>>
+<<if Check_Collected("No_Thoughts_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Hi there little fella. Are you lost?
     No Thoughts Timling: I got lost on the path of salvation. I don't think I have the attention span for it. Take me with you instead!
         -> Take No Thoughts Timling
@@ -140,6 +179,8 @@ position: 282,33
         -> Leave No Thoughts Timling
             Penne: Sorry...maybe next time. 
             No Thoughts Timling: My abandonment issues are flaring up...it aches! The angst is too much for my empty head...
+<<elseif Check_Read("neroIntro") == false>>
+    Penne: I should go talk to the witness first and then examine this little guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
