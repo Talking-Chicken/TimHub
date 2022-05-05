@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using NaughtyAttributes;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField, Range(3.0f,15.0f), BoxGroup("Movement")] private float speed;
+    [SerializeField, BoxGroup("Movement")] private bool isForcedToMove = false;
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
     public Animator myAnimator;
@@ -15,19 +17,34 @@ public class PlayerControl : MonoBehaviour
     //mouse detection
     [SerializeField] private GameObject hoveringObj;
 
+    //control
+    [SerializeField, BoxGroup("Control")] private int primaryMouseButton, secondaryMouseButton;
+
     //dialogue
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
-    [BoxGroup("Dialgoue")] public DialogueRunner runner;
+    [BoxGroup("Dialogue")] public DialogueRunner runner;
+    [BoxGroup("Dialogue")] public DialogueControl dialogueControl;
+    [BoxGroup("Dialogue")] public CanvasGroup canvasGroup;
+    private InteractiveObj targetingDialogueNPC;
 
     //journal
     [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
     [SerializeField, BoxGroup("Journal")] private JournalControl journal;
+
+    [SerializeField] private InteractiveObj NPCTOTALK;
+
+    //pause screen
+    [SerializeField, BoxGroup("Pause Screen")] private GameObject pauseScreen;
 
     //getters & setters
     public SpriteRenderer MyRenderer {get {return myRenderer;} private set {myRenderer = value;}}
     public Vector2 Destination{get {return _destination;} set {_destination = value;}}
     public JournalControl Journal {get {return journal;}}
     public GameObject HoveringObj {get => hoveringObj; set => hoveringObj = value;}
+    public int PrimaryMouseBuotton {get => primaryMouseButton; set => primaryMouseButton = value;}
+    public int SecondaryMouseButton {get => secondaryMouseButton; set => secondaryMouseButton = value;}
+    public InteractiveObj TargetingDialogueNPC {get => targetingDialogueNPC;}
+    public bool IsForcedToMove {get => isForcedToMove; set => isForcedToMove = value;}
 
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
@@ -38,6 +55,7 @@ public class PlayerControl : MonoBehaviour
     public PlayerStateExplore stateExplore = new PlayerStateExplore();
     public PlayerStateDialogue stateDialogue = new PlayerStateDialogue();
     public PlayerStateJournal stateJournal = new PlayerStateJournal();
+    public PlayerStatePause statePause = new PlayerStatePause();
 
     public void changeState(PlayerStateBase newState) {
         if (currentState != null)
@@ -48,7 +66,7 @@ public class PlayerControl : MonoBehaviour
         currentState = newState;
 
         if (currentState != null)
-        {  
+        {
             currentState.enterState(this);
         }
     }
@@ -62,9 +80,10 @@ public class PlayerControl : MonoBehaviour
     public void changeToExploreState() {changeState(stateExplore);}
     public void changeToDialogueState() {changeState(stateDialogue);}
     public void changeToJournalState() {changeState(stateJournal);}
+    public void changeToPauseState() {changeState(statePause);}
     public void changeToPreviousState() {
         if (previousState != null)
-            changeState(previousState);
+            StartCoroutine(waitToChangeState(previousState));
         else
             changeToExploreState();
     }
@@ -75,6 +94,7 @@ public class PlayerControl : MonoBehaviour
         changeState(stateExplore);
         myRenderer = GetComponent<SpriteRenderer>();
         _destination = transform.position;
+        moveAndTalkTo("Rigatoni");
     }
 
     void Update()
@@ -82,10 +102,6 @@ public class PlayerControl : MonoBehaviour
         HoveringObj = mouseHoveringObj();
         currentState.updateState(this);
         Animate();
-<<<<<<< Updated upstream
-        
-        //Debug.Log(Vector2.Distance(transform.position, Destination));
-=======
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
             waitMoveAndTalkTo("Rigatoni");
@@ -93,7 +109,6 @@ public class PlayerControl : MonoBehaviour
         if (!currentState.Equals(statePause))
             if (Input.GetKeyDown(KeyCode.P))
                 changeState(statePause);
->>>>>>> Stashed changes
         
     }
 
@@ -133,6 +148,14 @@ public class PlayerControl : MonoBehaviour
         journal.changeState(journal.stateIdle);
     }
 
+    public void openPauseScreen() {
+        pauseScreen.SetActive(true);
+    }
+
+    public void closePauseScreen() {
+        pauseScreen.SetActive(false);
+    }
+
     /* return Gameobject that player mouse is hovering*/
     public GameObject mouseHoveringObj() {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
@@ -149,9 +172,55 @@ public class PlayerControl : MonoBehaviour
         Destination = destination;
     }
 
+    public void switchMouseButton() {
+        int temp = PrimaryMouseBuotton;
+        PrimaryMouseBuotton = SecondaryMouseButton;
+        SecondaryMouseButton = temp;
+    }
     void Animate() {
         myAnimator.SetFloat("moveX", moveDir.x);
         myAnimator.SetFloat("moveY", moveDir.y);
         myAnimator.SetFloat("moveMagnitude",  Vector2.Distance(transform.position, Destination));
+    }
+
+
+    [YarnCommand("Move_And_Talk_To")]
+    public void waitMoveAndTalkTo(string NPCName) {
+        StartCoroutine(waitToMove(NPCName));
+    }
+
+    public void moveAndTalkTo(string NPCName) {
+        InteractiveObj[] NPCs = FindObjectsOfType<InteractiveObj>();
+        foreach(InteractiveObj NPC in NPCs) {
+            if (NPC.name.Equals(NPCName)) {
+                targetingDialogueNPC = NPC;
+                isForcedToMove = true;
+                if (runner.IsDialogueRunning)
+                    runner.Stop();
+                changeState(stateExplore);
+            }
+        }
+    }
+
+    public void moveAndTalkTo(InteractiveObj NPC) {
+        if (NPC.IsTalkable) {
+            if (!NPC.HasDifferentDestination) {
+                Vector2 NPCPos = NPC.transform.position;
+                Vector2 playerPos = transform.position;
+                Vector2 unit = (playerPos-NPCPos).normalized;
+                Destination = NPCPos + (unit * 1.5f);
+            } else {
+                Destination = NPC.Destination.position;
+            }
+        }
+        if (Vector2.Distance(transform.position, Destination) <= 0.3f) {
+            NPC.talk();
+            isForcedToMove = false;
+        }
+    }
+
+    IEnumerator waitToMove(string NPCName) {
+        yield return new WaitForSeconds(2.0f);
+        moveAndTalkTo(NPCName);
     }
 }
