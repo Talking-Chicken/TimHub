@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour
     public Animator myAnimator;
     private Vector3 moveDir;
 
+    private bool contact = false;
+
     //mouse detection
     [SerializeField] private GameObject hoveringObj;
 
@@ -102,10 +104,10 @@ public class PlayerControl : MonoBehaviour
         HoveringObj = mouseHoveringObj();
         currentState.updateState(this);
         Animate();
-        
+
         if (Input.GetKeyDown(KeyCode.Alpha5))
             waitMoveAndTalkTo("Rigatoni");
-        //Debug.Log(Vector2.Distance(transform.position, Destination));
+        Debug.Log(contact);
         if (!currentState.Equals(statePause))
             if (Input.GetKeyDown(KeyCode.P))
                 changeState(statePause);
@@ -171,6 +173,16 @@ public class PlayerControl : MonoBehaviour
         Camera.main.transform.position = new Vector3(destination.x, destination.y, Camera.main.transform.position.z);
         Destination = destination;
     }
+
+    void OnCollisionEnter2D(Collision2D col){
+        
+      if (col.gameObject.tag == "Untagged"){
+
+          contact = true;
+      }
+        
+    }
+    
 
     public void switchMouseButton() {
         int temp = PrimaryMouseBuotton;
