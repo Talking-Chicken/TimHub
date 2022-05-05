@@ -26,11 +26,17 @@ position: -1,-117
             -> Hmm, not yet.
                 Rigatoni: Hmph. Let me know when you are ready to leave, then.
     -> I'm done.
-        <<if Check_Read("stelleIntro") == false>>
-            Rigatoni: Go talk to Stelle Parmesan and get her alibi. Be thorough and ask as many questions you can. Then, investigate your surroundings for evidence.
-            Rigatoni: Remember to record evidence in your journal. If you need help, ask me or Stelle about what you have collected if they are relevant to the case.
-            Rigatoni: If they aren't relevant to the case, look for other pieces of evidence. Ask questions about them if possible. They may further the case or contradict an alibi.
-            Penne: Alright! Time to find Stelle and interrogate her. I need to have an alibi from her, then I can start collecting evidence.
+        <<if Check_Read("stelleIntro") == false >>
+            <<if Check_Read("rigatoni_forgetfulnessread") == false || Check_Read("rigatoniInvestigationSoFarRead") == false || Check_Read("rigatoni_partnership") == false>>
+                Penne: (Wait! I still have things I want to ask Rigatoni before ending the conversation.)
+                <<jump RigatoniTest>>
+            <<elseif Check_Read("rigatoni_forgetfulnessread") == true && Check_Read("rigatoniInvestigationSoFarRead") == true && Check_Read("rigatoni_partnership") == true>>
+                Rigatoni: Go talk to Stelle Parmesan and get her alibi. Be thorough and ask as many questions you can. Then, investigate your surroundings for evidence.
+                Rigatoni: Remember to record evidence in your journal. If you need help, ask me or Stelle about what you have collected if they are relevant to the case.
+                Rigatoni: If they aren't relevant to the case, look for other pieces of evidence. Ask questions about them if possible. They may further the case or contradict an alibi.
+                Penne: You got it, Detective Ragu! 
+                Penne: (Alright! Time to find Stelle and interrogate her. I need to have an alibi from her, then I can start collecting evidence.)
+            <<endif>>
         <<elseif Check_Read("stelleIntro") == true>>
             Rigatoni: Get back to work, detective.
         <<endif>>
@@ -115,7 +121,7 @@ Rigatoni: S-Stop that! We are working, in case you have forgotten. Save that for
 Rigatoni: ...And bestest is NOT a real word!
 
 //setting bool for player reading the investigation convo to true
-// <<Set_Read rigatoni_investigationread>>
+<<Set_Read rigatoniInvestigationSoFarRead>>
 <<jump RigatoniTest>>
 
 ===

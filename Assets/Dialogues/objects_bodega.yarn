@@ -15,11 +15,13 @@ tags:
 position: 300,-101
 ---
 //  DONE
-<<if Check_Collected("The_Rug_Lady") == false>>
+<<if Check_Collected("The_Rug_Lady") == false && Check_Read("intro_Qs") == true>>
     Penne: Oh, I'm so sorry, I almost stepped on you! 
     RugLady: Worry not, my child. For my existence is naught if I am not a conduit for the soles of your chosen footwear. Avoiding that truth is futile.
     <<set $newItem to "The_Rug_Lady">>
     <<jump addEntry>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -30,10 +32,12 @@ tags:
 position: 300,-101
 ---
 //wait to see what we do with teeth isle/baby heads
-<<if Check_Collected("Produce_Isle") == false>>
+<<if Check_Collected("Produce_Isle") == false && Check_Read("intro_Qs") == true>>
     Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
     <<set $newItem to "Produce_Isle">>
     <<jump addEntry>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -44,11 +48,13 @@ tags:
 position: 300,-101
 ---
 //DONE
-<<if Check_Collected("Ham_Dugo") == false>>
+<<if Check_Collected("Ham_Dugo") == false && Check_Read("intro_Qs") == true>>
     <<Play_SFX SoundManager Ham_Dugo>>
-    HamDugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
+    Ham Dugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -58,11 +64,13 @@ title: bodegaCat
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Bodega_Cat") == false>>
+<<if Check_Collected("Bodega_Cat") == false && Check_Read("intro_Qs") == true>>
     <<Play_SFX SoundManager Pocky_Cat>>
     Penne: Mrow. Meow! This cat's named Pocky. 
     <<set $newItem to "Bodega_Cat">>
     <<jump addEntry>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -72,10 +80,12 @@ title: miku
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Hatsune_Miku") == false>>
-    Penne: *Sigh.* What a pretty lady. I wish I could give her a kiss.
+<<if Check_Collected("Hatsune_Miku") == false && Check_Read("intro_Qs") == true>>
+    Penne: *Sigh* What a pretty lady. Her beauty is simply mesmerizing!
     <<set $newItem to "Hatsune_Miku">>
     <<jump addEntry>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -85,11 +95,13 @@ title: Fish_ATM
 tags:
 position: 30s0,-101
 ---
-<<if Check_Collected("Fish_ATM") == false>>
+<<if Check_Collected("Fish_ATM") == false && Check_Read("intro_Qs") == true>>
     <<Play_SFX SoundManager Scottish_Fish>>
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
     <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
 <<endif>>
@@ -99,10 +111,12 @@ title: Spearmint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Spearmint_Toothpaste") == false>>    
+<<if Check_Collected("Spearmint_Toothpaste") == false && Check_Read("intro_Qs") == true>>    
     Penne: Spearmint toothpaste. The best one!
     <<set $newItem to "Spearmint_Toothpaste">>
     <<jump addEntryToothpaste>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already picked this up!
 <<endif>>
@@ -111,10 +125,12 @@ title: Charcoal_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Charcoal_Toothpaste") == false>>
+<<if Check_Collected("Charcoal_Toothpaste") == false && Check_Read("intro_Qs") == true>>
     Penne: Charcoal toothpaste. Quirky...
     <<set $newItem to "Charcoal_Toothpaste">>
     <<jump addEntryToothpaste>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!    
 <<else>>
     Penne: I already picked this up!
 <<endif>>
@@ -123,10 +139,12 @@ title: Mint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Mint_Toothpaste") == false>>
+<<if Check_Collected("Mint_Toothpaste") == false && Check_Read("intro_Qs") == true>>
     Penne: Mint toothpaste. Basic. Meh.
     <<set $newItem to "Mint_Toothpaste">>
     <<jump addEntryToothpaste>>
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already picked this up!
 <<endif>>
@@ -135,10 +153,13 @@ position: 300,-101
 title: timling3
 tags:
 ---
-<<if Check_Collected("MounTimDew_Timling") == false>>
+<<if Check_Collected("MounTimDew_Timling") == false && Check_Read("intro_Qs") == true>>
     Penne: Another one? By golly, you guys get lost easily.
     <<Play_SFX SoundManager Mount_Timling>>
-    MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. Halp me find him! 
+    MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. 
+    Penne: Oh no! You lost your Dad?
+    MounTimDew Timling: Mah Dad...mah shiblings...I mith them...
+    MounTimDew Timling: Take me with you and halp me find them! 
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
             MounTimDew Timling: You're the besht! Wanna sip?
@@ -150,6 +171,8 @@ tags:
         -> Leave MounTimDew Timling
             Penne: Sorry, buddy. Maybe next time...
             MounTimDew Timling: (Sad sigh and gurgling soda noises)
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this, um, little guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -158,9 +181,12 @@ tags:
 title: timling4
 tags:
 ---
-<<if Check_Collected("Sassy_Timling") == false>>
+<<if Check_Collected("Sassy_Timling") == false && Check_Read("intro_Qs") == true>>
     Penne: Hey there! See anything suspicious?
     Sassy Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
+    Penne: Take you with me? 
+    Sassy Timling: You heard me right! I'm, like, trying to get found. Cuz I'm lost!
+    Sassy Timling: Take me with you and, like, reunite me with my fam!
         -> Take Timling
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
             Sassy Timling: Nice. 
@@ -172,7 +198,9 @@ tags:
             //make timling disappear from room
         -> Leave Timling
             Penne: Uh, no thanks. The loser's life's for me.
-            Sassy Timling: You SUCK! Now I'm gonna DIE ALL ALONE. 
+            Sassy Timling: You SUCK! Now I'm gonna DIE ALL ALONE, LOST FOREVER. 
+<<elseif Check_Read("intro_Qs") == false>>
+    Penne: I should go talk to the witness first and then examine this, um, little one!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
 <<endif>>
@@ -198,7 +226,7 @@ title: Fridge_02
 ---
 Penne: S-sir..? Do you need any help?
 <<Play_SFX SoundManager Blankie_Boy>>
-Fridge_Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
+Fridge Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
 ===
 
 title: Fridge_03
