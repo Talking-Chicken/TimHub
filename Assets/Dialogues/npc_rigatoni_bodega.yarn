@@ -6,7 +6,7 @@ tags:
 <<elseif Check_Read("rigatoniBodegaIntroRead") == true>>
         -> Ask about Rigatoni's condition <<if Check_Read("rigatoniConditionRead") == false>>
             <<jump question_rigatoniCondition>>
-        -> Ask for advice <<if Check_Read("read_introQs") == true && Check_Read("wisdomToothAlibiCollected") == false>>
+        -> Ask for advice <<if Check_Read("radiatoreIntroRead") == true && Check_Read("wisdomToothAlibiCollected") == false>>
             <<jump question_rigatoniAfterRadiatore>>
         -> Show Rigatoni Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("radiatoreNewAlibi") == false>>
             <<jump question_rigatoniShears>>
@@ -26,7 +26,7 @@ tags:
                 -> Hmm, not yet.
                     Rigatoni: Keep on snooping on, then.
         -> I'm done.
-            <<if Check_Read("read_introQs") == false>>
+            <<if Check_Read("radiatoreIntroRead") == false>>
                 <<if Check_Read("rigatoniConditionRead") == true>>
                     Rigatoni: Make sure to talk to the delivery man first. He acts shifty, which leads me to believe he is hiding something.
                     Rigatoni: Ask him all the questions you can. Record his alibi, and then investigate everything in the bodega.
@@ -41,9 +41,9 @@ tags:
                     Penne: Wait! I still want to check in with how Rigatoni is feeling before ending the conversation.
                     <<jump rigatoniBodega>>
                 <<endif>>
-            <<elseif Check_Read("read_introQs") == true>>
+            <<elseif Check_Read("radiatoreIntroRead") == true>>
                 Rigatoni: Get back to work, detective.
-            <<elseif Check_Read("read_introQs") == true && Check_Read("rigatoniDeteriorate") == true>>
+            <<elseif Check_Read("radiatoreIntroRead") == true && Check_Read("rigatoniDeteriorate") == true>>
                 Rigatoni: Ugh...get back to work...
             <<endif>>
 <<endif>>

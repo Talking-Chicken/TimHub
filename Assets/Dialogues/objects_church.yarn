@@ -45,7 +45,7 @@ title: churchCandle
 tags:
 position: 300,-101
 ---
-<<if Check_Read("neroGone") == false && Check_Read("neroIntro") == true>>>>
+<<if Check_Read("neroGone") == false && Check_Read("neroIntro") == true>>
     Penne: The flame looks really strong. I should be careful—it could potentially burn something!
     Penne: This candle could be useful for me...
     <<Camera_Lerp_To GameManager npc_nero>>

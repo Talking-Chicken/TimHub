@@ -15,12 +15,12 @@ tags:
 position: 300,-101
 ---
 //  DONE
-<<if Check_Collected("The_Rug_Lady") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("The_Rug_Lady") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: Oh, I'm so sorry, I almost stepped on you! 
     RugLady: Worry not, my child. For my existence is naught if I am not a conduit for the soles of your chosen footwear. Avoiding that truth is futile.
     <<set $newItem to "The_Rug_Lady">>
     <<jump addEntry>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
@@ -32,11 +32,11 @@ tags:
 position: 300,-101
 ---
 //wait to see what we do with teeth isle/baby heads
-<<if Check_Collected("Produce_Isle") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Produce_Isle") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
     <<set $newItem to "Produce_Isle">>
     <<jump addEntry>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
@@ -48,12 +48,12 @@ tags:
 position: 300,-101
 ---
 //DONE
-<<if Check_Collected("Ham_Dugo") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Ham_Dugo") == false && Check_Read("radiatoreIntroRead") == true>>
     <<Play_SFX SoundManager Ham_Dugo>>
     Ham Dugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
@@ -64,12 +64,12 @@ title: bodegaCat
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Bodega_Cat") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Bodega_Cat") == false && Check_Read("radiatoreIntroRead") == true>>
     <<Play_SFX SoundManager Pocky_Cat>>
     Penne: Mrow. Meow! This cat's named Pocky. 
     <<set $newItem to "Bodega_Cat">>
     <<jump addEntry>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
@@ -80,11 +80,11 @@ title: miku
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Hatsune_Miku") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Hatsune_Miku") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: *Sigh* What a pretty lady. Her beauty is simply mesmerizing!
     <<set $newItem to "Hatsune_Miku">>
     <<jump addEntry>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
@@ -95,12 +95,12 @@ title: Fish_ATM
 tags:
 position: 30s0,-101
 ---
-<<if Check_Collected("Fish_ATM") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Fish_ATM") == false && Check_Read("radiatoreIntroRead") == true>>
     <<Play_SFX SoundManager Scottish_Fish>>
     Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
     <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already recorded this evidence!
@@ -111,11 +111,11 @@ title: Spearmint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Spearmint_Toothpaste") == false && Check_Read("intro_Qs") == true>>    
+<<if Check_Collected("Spearmint_Toothpaste") == false && Check_Read("radiatoreIntroRead") == true>>    
     Penne: Spearmint toothpaste. The best one!
     <<set $newItem to "Spearmint_Toothpaste">>
     <<jump addEntryToothpaste>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already picked this up!
@@ -125,11 +125,11 @@ title: Charcoal_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Charcoal_Toothpaste") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Charcoal_Toothpaste") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: Charcoal toothpaste. Quirky...
     <<set $newItem to "Charcoal_Toothpaste">>
     <<jump addEntryToothpaste>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!    
 <<else>>
     Penne: I already picked this up!
@@ -139,11 +139,11 @@ title: Mint_Toothpaste
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Mint_Toothpaste") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Mint_Toothpaste") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: Mint toothpaste. Basic. Meh.
     <<set $newItem to "Mint_Toothpaste">>
     <<jump addEntryToothpaste>>
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
 <<else>>
     Penne: I already picked this up!
@@ -153,7 +153,7 @@ position: 300,-101
 title: timling3
 tags:
 ---
-<<if Check_Collected("MounTimDew_Timling") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("MounTimDew_Timling") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: Another one? By golly, you guys get lost easily.
     <<Play_SFX SoundManager Mount_Timling>>
     MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. 
@@ -171,7 +171,7 @@ tags:
         -> Leave MounTimDew Timling
             Penne: Sorry, buddy. Maybe next time...
             MounTimDew Timling: (Sad sigh and gurgling soda noises)
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this, um, little guy!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
@@ -181,7 +181,7 @@ tags:
 title: timling4
 tags:
 ---
-<<if Check_Collected("Sassy_Timling") == false && Check_Read("intro_Qs") == true>>
+<<if Check_Collected("Sassy_Timling") == false && Check_Read("radiatoreIntroRead") == true>>
     Penne: Hey there! See anything suspicious?
     Sassy Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
     Penne: Take you with me? 
@@ -199,7 +199,7 @@ tags:
         -> Leave Timling
             Penne: Uh, no thanks. The loser's life's for me.
             Sassy Timling: You SUCK! Now I'm gonna DIE ALL ALONE, LOST FOREVER. 
-<<elseif Check_Read("intro_Qs") == false>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
     Penne: I should go talk to the witness first and then examine this, um, little one!
 <<else>>
     Penne: I already picked him up! He just left an EXACT copy of himself behind. 
