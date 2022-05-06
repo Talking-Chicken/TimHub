@@ -18,6 +18,9 @@ public class PlayerStateDialogue : PlayerStateBase
                 //player.runner.GetComponentInChildren<LineView>().UserRequestedViewAdvancement();
             }
         }
+
+        if (Input.GetKey(KeyCode.LeftControl))
+            player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
         player.dialogueControl.changePortrait();
         player.canvasGroup.alpha = 1;
     }
@@ -29,5 +32,7 @@ public class PlayerStateDialogue : PlayerStateBase
     public override void leaveState(PlayerControl player) {
         player.previousState = this;
         player.canvasGroup.alpha = 0;
+        if(player.TargetingDialogueNPC.name.ToLower().Trim().Contains("rigatoni"))
+            player.TargetingDialogueNPC = null;
     }
 }

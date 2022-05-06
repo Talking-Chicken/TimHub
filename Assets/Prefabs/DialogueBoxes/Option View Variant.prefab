@@ -199,5 +199,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option View Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7675626013573353695, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}

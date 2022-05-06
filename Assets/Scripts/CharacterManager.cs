@@ -7,11 +7,10 @@ public class CharacterManager : MonoBehaviour
 {
     [SerializeField] private GameObject nero, tim;
     private bool isTimFading = false;
-    private SpriteRenderer timeRenderer;
+    [SerializeField]private SpriteRenderer timeRenderer;
     private TransitionManager transition;
     void Start()
     {
-        timeRenderer = tim.GetComponent<SpriteRenderer>();
         transition = FindObjectOfType<TransitionManager>();
     }
 

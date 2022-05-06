@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 712133217519975097}
   - component: {fileID: 2000751082081601548}
   - component: {fileID: 1479276393471075729}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EdgeCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4253,7 +4253,7 @@ GameObject:
   - component: {fileID: 1985203487}
   - component: {fileID: 1985203488}
   - component: {fileID: 1985203489}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

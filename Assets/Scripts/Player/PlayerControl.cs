@@ -31,8 +31,6 @@ public class PlayerControl : MonoBehaviour
     [SerializeField, BoxGroup("Journal")] private GameObject journalContainer;
     [SerializeField, BoxGroup("Journal")] private JournalControl journal;
 
-    [SerializeField] private InteractiveObj NPCTOTALK;
-
     //pause screen
     [SerializeField, BoxGroup("Pause Screen")] private GameObject pauseScreen;
 
@@ -43,7 +41,7 @@ public class PlayerControl : MonoBehaviour
     public GameObject HoveringObj {get => hoveringObj; set => hoveringObj = value;}
     public int PrimaryMouseBuotton {get => primaryMouseButton; set => primaryMouseButton = value;}
     public int SecondaryMouseButton {get => secondaryMouseButton; set => secondaryMouseButton = value;}
-    public InteractiveObj TargetingDialogueNPC {get => targetingDialogueNPC;}
+    public InteractiveObj TargetingDialogueNPC {get => targetingDialogueNPC; set => targetingDialogueNPC = value;}
     public bool IsForcedToMove {get => isForcedToMove; set => isForcedToMove = value;}
 
     //post processing
@@ -222,5 +220,10 @@ public class PlayerControl : MonoBehaviour
     IEnumerator waitToMove(string NPCName) {
         yield return new WaitForSeconds(2.0f);
         moveAndTalkTo(NPCName);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider) {
+        if (collider.tag.Equals("Blocker"))
+            Destination = transform.position;
     }
 }

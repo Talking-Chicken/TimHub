@@ -11,8 +11,11 @@ public class PlayerStateExplore : PlayerStateBase
         InteractiveObj interactingObj = null;
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if (Input.GetMouseButtonDown(player.PrimaryMouseBuotton) || Input.GetMouseButton(player.PrimaryMouseBuotton)) {
-            if (hit.collider == null || !hit.collider.tag.Equals("Blocker"))
-                player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (hit.collider == null || (!hit.collider.tag.Equals("Blocker") && hit.collider.GetComponent<InteractiveObj>() == null))
+                if (player.TargetingDialogueNPC == null || !player.TargetingDialogueNPC.name.ToLower().Trim().Contains("rigatoni")) {
+                    player.Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    player.IsForcedToMove = false;
+                }
         }
 
         if (!player.IsForcedToMove) {
@@ -39,7 +42,7 @@ public class PlayerStateExplore : PlayerStateBase
                         interactingObj.interact();
                 }    
             }
-        } else {
+        } else if (player.TargetingDialogueNPC != null){
             player.moveAndTalkTo(player.TargetingDialogueNPC);
         }
     }
