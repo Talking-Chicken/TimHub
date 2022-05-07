@@ -116,6 +116,7 @@ position: 300,-101
             Penne: Let's get BEEFY. Come with me, bro!
             Buff Timling: Gains, gains, gains! Gains all day, EVERY day!
             Buff Timling: Can't wait to beef up with all of my Timling bros!
+            <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Buff_Timling">>
             <<Add_Entry journal {$newItem}>>
@@ -145,6 +146,7 @@ position: 300,-101
         -> Take Tape Timling
             Penne: Ok! I'll stick you to my jacket!
             Tape Timling: Thank...you...I can't wait...to see everyone...
+            <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Tape_Timling">>
             <<Add_Entry journal {$newItem}>>

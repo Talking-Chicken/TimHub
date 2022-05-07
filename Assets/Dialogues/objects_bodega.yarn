@@ -163,6 +163,7 @@ tags:
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
             MounTimDew Timling: You're the besht! Wanna sip?
+            <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "MounTimDew_Timling">>
             <<Add_Entry journal {$newItem}>>
@@ -191,6 +192,7 @@ tags:
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
             Sassy Timling: Nice. 
             Sassy Timling: Got any games in your journal?
+            <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Sassy_Timling">>
             <<Add_Entry journal {$newItem}>>
