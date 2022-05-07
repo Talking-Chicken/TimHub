@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 4689079871980588744}
   - component: {fileID: 1886552100958987173}
   m_Layer: 1
-  m_Name: obj_bloodyAltar
+  m_Name: obj_handyAltar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: bloodyAltar
+  _startNode: handyAltar
   collider: {fileID: 1886552100958987173}
   entryList:
   - entryName: Handy Altar

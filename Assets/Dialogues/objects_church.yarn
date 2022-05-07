@@ -125,10 +125,10 @@ tags:
 title: bloodyAltar
 tags:
 ---
-<<if Check_Collected("Bloody_Altar") == false && Check_Read("neroIntro") == true>>
+<<if Check_Collected("Handy_Altar") == false && Check_Read("neroIntro") == true>>
     Penne: An altar with hands? They're holding the scriptures of Tim!
     Penne: The book is glued to the fingers...talk about devotion, huh. 
-    <<set $newItem to "Bloody_Altar">>
+    <<set $newItem to "Handy_Altar">>
     <<jump addEntry>>
 <<elseif Check_Read("neroIntro") == false>>
     Penne: I should go talk to the witness first and then examine this piece of evidence!
