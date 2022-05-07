@@ -142,12 +142,18 @@ tags:
 position: 282,33
 ---
 <<if Check_Collected("Teeth_Timling") == false && Check_Read("neroIntro") == true>>
-    Penne: Uh...hey! Are you ok? Where did you get those?
-    Teeth Timling: Lost...so lost...the teeth tell me the truth...help me be...found?
+    Penne: Uh...hey! Are you ok? 
+    Teeth Timling: Lost...so lost...
+    Penne: Where did you get those, uh, teeth? (Wait do I really want to know that?)
+    Teeth Timling: The teeth...from my Dad...they tell me the truths...
+    Penne: Oh yeah? What kinds of truth?
+    Teeth Timling: Help me feel...less...lost and lonely...
+    Teeth Timling: Will you be like...the teeth? Help me be...found?
         -> Take Teeth Timling
-            Penne: Yeah, why not? Come on!
-            Teeth Timling: Yes......... *deep sniff* You smell like...apples...and morning sunshine...
-            Penne: Oh, that's my shampoo scent! Wait, don't SMELL me!
+            Penne: Yeah, why not? Just call me PenneloTEETH! 
+            Teeth Timling: Yes... *deep sniff* You smell like...apples...and morning sunshine...
+            Penne: Oh, that's my shampoo scent! 
+            Penne: ACK! Wait, don't SMELL me!
             <<set $timlingCount = $timlingCount + 1>>
             <<set $newItem to "Teeth_Timling">>
             <<Add_Entry journal {$newItem}>>
@@ -169,9 +175,14 @@ position: 282,33
 ---
 <<if Check_Collected("No_Thoughts_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Hi there little fella. Are you lost?
-    No Thoughts Timling: I got lost on the path of salvation. I don't think I have the attention span for it. Take me with you instead!
+    No Thoughts Timling: I got lost on the path of salvation. I don't think I have the attention span for it. 
+    Penne: So why are you hanging around the church?
+    No Thoughts Timling: I may not have many thoughts, but I do know I miss my family...my Dad and siblings...
+    No Thoughts Timling: Somehow this church makes me feel at home. But I don't really know why.
+    Penne: Maybe this place reminds you of your family? You look an awful lot like Tim. 
+    No Thoughts Timling: Will you help me find them? My two braincells can only take me so far. 
         -> Take No Thoughts Timling
-            Penne: I think I got room for  you!
+            Penne: I think I got room for you!
             No Thoughts Timling: Yes! No more independence for me! I love being co-dependent.
             <<set $timlingCount = $timlingCount + 1>>
             <<set $newItem to "No_Thoughts_Timling">>

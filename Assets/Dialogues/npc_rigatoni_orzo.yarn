@@ -12,9 +12,10 @@ position: -1,-117
         <<jump question_rigatoniForgetfulness>>
     -> Ask about the new partnership together <<if Check_Read("rigatoni_partnership") == false>>
         <<jump question_ourNewPartnership>>
-    -> Show Rigatoni evidence collected so far <<if Check_Collected("Stelle_Parmesan_Alibi_Update") == false && Check_Read("rigatoni_stelleAlibiShown") == false && Check_Read("stelleIntro") == true && Check_Collected("Bodega_Receipt") || Check_Collected("Orzo_Dream_Journal") || Check_Collected("Fish_Bowl_Hand") || Check_Collected("Orzo_Closet")>> //<<if player has collected anything>>
+    -> Show Rigatoni evidence collected so far <<if Check_Collected("Stelle_Parmesan_Alibi_Update") == false && Check_Read("rigatoni_stelleAlibiShown") == false && Check_Read("stelleIntro") == true>>
+        //Check_Collected("Bodega_Receipt") || Check_Collected("Orzo_Dream_Journal") || Check_Collected("Fish_Bowl_Hand") || Check_Collected("Orzo_Closet")>> //<<if player has collected anything>>
         <<jump question_aboutItems>>
-    -> Show Rigatoni Stelle's new alibi <<if Check_Collected("Stelle_Parmesan_Alibi_Update") && Check_Read("rigatoni_stelleAlibiShown") == false>>
+    -> Show Rigatoni Stelle's new alibi <<if Check_Collected("Stelle_Parmesan_Alibi_Update") == true && Check_Read("rigatoni_stelleAlibiShown") == false>>
             <<jump go_to_bodega>>
     -> Leave Orzo's home <<if Check_Read("rigatoni_stelleAlibiShown") == true>>
         Rigatoni: It seems as though we have thoroughly examined the room thus far. 
@@ -46,7 +47,7 @@ position: -1,-117
 title: question_aboutItems
 position:
 ---
-<<if Check_Collected("Bodega_Receipt")>> // && Check_Read("stelleReceiptShown") == false
+<<if Check_Collected("Bodega_Receipt")>>
     Penne: What do you think about what I've collected so far?
     Rigatoni: This receipt you have collected places our victim at an exact time, date, and location. Did Stelle mention anything about when or where Orzo was last seen?
     Penne: Hey...you're right. She did! Maybe I need to think about what Stelle told me earlier more closely, especially her alibi.
@@ -54,14 +55,14 @@ position:
     Penne: Wow, validation!? Amazing! I should go talk to Stelle NOW!
     Rigatoni: Just question her normally, please. Mind your manners.
     Penne: More positive reinforcement, here I come!
-    <<jump RigatoniTest>>
-<<else>>
+        <<jump RigatoniTest>>
+<<elseif Check_Collected("Orzo_Dream_Journal") || Check_Collected("Fish_Bowl_Hand") || Check_Collected("Orzo_Closet")>>
     Penne: What do you think about the evidence I've collected so far?
     Rigatoni: Hmm. Something still is not adding up here. Perhaps you have overlooked some important evidence here.
     Rigatoni: Never forget, the evidence you have collected should also be shown to Stelle.
     Rigatoni: It is very likely she is hiding something. Show her something that contradicts her alibi, and we might actually go somewhere with this investigation.
     Penne: Gotcha. I'll keep searching and adding evidence to my journal, and I'll follow up with Stelle about them too.
-    <<jump RigatoniTest>>
+        <<jump RigatoniTest>>
 <<endif>>
 ===
 

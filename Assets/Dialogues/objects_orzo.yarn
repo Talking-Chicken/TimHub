@@ -116,6 +116,7 @@ position: 300,-101
             Penne: Let's get BEEFY. Come with me, bro!
             Buff Timling: Gains, gains, gains! Gains all day, EVERY day!
             Buff Timling: Can't wait to beef up with all of my Timling bros!
+            Penne: If there are six of you, I wonder if I can collect the rest of you? I should be on the look out for more Timlings!
             <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Buff_Timling">>
@@ -136,16 +137,18 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Tape_Timling") == false && Check_Read("stelleIntro") == true>>
-    Penne: Uh...hi? What are you doing in Orzo's wall?
+    Penne: Uh...hi? What are you doing taped to Orzo's wall?
     <<Play_SFX SoundManager Taped_Timling>>
-    Tape Timling: Take...me...with...you...
+    Tape Timling: So lonely...Take me...with you...
     Penne: But why?
-    Tape Timling: Got...lost...became one...with tape...help me...
+    Tape Timling: Got lost...became one...with tape...help me...
     Penne: How can I help you, exactly?
-    Tape Timling: Collect...me...find my...siblings...reunite me with the other...TIMLINGS!
+    Tape Timling: Collect...me...find my siblings...reunite me with the other...TIMLINGS!
         -> Take Tape Timling
             Penne: Ok! I'll stick you to my jacket!
             Tape Timling: Thank...you...I can't wait...to see everyone...
+            Tape Timling: Together...we are SIX...timlings...
+            Penne: (Six of these little guys total, huh? Maybe I should keep an eye for the others and collect them!)
             <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Tape_Timling">>
