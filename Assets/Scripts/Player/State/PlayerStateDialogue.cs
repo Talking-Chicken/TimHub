@@ -6,7 +6,7 @@ using Yarn.Unity;
 public class PlayerStateDialogue : PlayerStateBase
 {
     public override void enterState(PlayerControl player) {
-        
+        player.turnOffOutOfMapBlockers();
     }
     public override void updateState(PlayerControl player) {
         if (!player.runner.IsDialogueRunning)
@@ -34,5 +34,7 @@ public class PlayerStateDialogue : PlayerStateBase
         player.canvasGroup.alpha = 0;
         if(player.TargetingDialogueNPC.name.ToLower().Trim().Contains("rigatoni"))
             player.TargetingDialogueNPC = null;
+
+        player.turnOnOutOfMapBlockers();
     }
 }

@@ -2227,6 +2227,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9.44
   isForcedToMove: 0
+  outOfMapBlockers:
+  - {fileID: 1570256275}
+  - {fileID: 444070969}
+  - {fileID: 1987084316}
   myAnimator: {fileID: 1034750829}
   hoveringObj: {fileID: 0}
   primaryMouseButton: 0

@@ -9,6 +9,9 @@ public class PlayerControl : MonoBehaviour
 {
     [SerializeField, Range(3.0f,15.0f), BoxGroup("Movement")] private float speed;
     [SerializeField, BoxGroup("Movement")] private bool isForcedToMove = false;
+
+    [SerializeField, BoxGroup("Movement")] private List<GameObject> outOfMapBlockers;
+
     private Vector2 _destination;
     private SpriteRenderer myRenderer;
     public Animator myAnimator;
@@ -225,5 +228,15 @@ public class PlayerControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider) {
         if (collider.tag.Equals("Blocker"))
             Destination = transform.position;
+    }
+
+    public void turnOffOutOfMapBlockers() {
+        foreach(GameObject collision in outOfMapBlockers)
+            collision.SetActive(false);
+    }
+
+    public void turnOnOutOfMapBlockers() {
+        foreach(GameObject collision in outOfMapBlockers)
+            collision.SetActive(true);
     }
 }
