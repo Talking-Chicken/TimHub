@@ -2830,8 +2830,8 @@ MonoBehaviour:
   collider: {fileID: 2223705764876557781}
   entryList:
   - entryName: Orzo Closet
-    entryDes: The closet in Orzo's room. There's a very hastily-packed suitcase inside,
-      but the closet is otherwise empty.
+    entryDes: "The closet in Orzo's room. It\u2019s extremely messy and disorganized.
+      There's a very hastily-packed suitcase inside."
     entryImage: {fileID: -2051142301355541852, guid: 4bf5dadb372de7647b9f95edc29804f8, type: 3}
     entryType: 0
   hasDifferentDestination: 0
