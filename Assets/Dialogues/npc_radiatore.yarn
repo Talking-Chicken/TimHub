@@ -102,8 +102,8 @@ Radiatore: Say, can I, uh, go now?
 Penne: Witnesses may not leave until all questioning has been completed! Also, that makes you look extra suspicious, you sweaty man!
 Radiatore: GAH! OK, OK. I'll, uh, stick around. (Am I sweaty...?)
 Penne: (I'm not gonna let you go until I ask you about Orzo's corpse shipment!)
-//setting bool for player reading the About Job question to true
-<<Set_Read radiatoreAboutJob>>
+<<Add_Answer journal Question(Location) "New Fork Ziti">>
+<<Set_Read radiatoreAboutJob>> //setting bool for player reading the About Job question to true
 <<jump radiatoreScript>>
 
 ===

@@ -76,7 +76,8 @@ Stelle: He was so distant a-and scared! He left preparations early that day and 
 Penne: I see. So when was he last seen alive then?
 Stelle: U-Uh, well, um...that day. H-He was last alive...the day before Timsday. 
 Penne: Ok, got it. So then if we narrow down an estimate of the time of murder—
-Stelle: H-He was...killed...that night before Timsday. Y-Yes, that's right. 
+Stelle: H-He was...killed...that night before Timsday. Y-Yes, that's right.
+<<Add_Answer journal Question(Time) "The night before Timsday">>
 Penne: Great, thank you for your cooperation, Stelle.
 Stelle: O-Of course, d-detective. 
 Penne: (I've recorded this information in my journal under Stelle Parmesan in the Alibi tab!)
@@ -141,7 +142,7 @@ Penne: For now, I'll let you off with your excuse of forgetting, but don't lie d
 Stelle: I-I wasn't lying! I f-forgot...I-I'm sorry...
 Penne: It's fine. I got what I needed, and look like the next destination might be the bodega if he was proven to be alive there!
 Penne: (I should definitely tell Rigatoni about this new alibi I've collected now!)
-
+<<Add_Answer journal Question(Time) "Timsday Celebration">>
 <<Add_Entry journal Stelle_Parmesan_Alibi_Update>>
 <<jump StelleSprint3>>
 ===
