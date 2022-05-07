@@ -1,20 +1,6 @@
-﻿title: npc_tim_endings
+﻿title: EndTrue
 tags:
-position: -8,-105
----
-
-<<if function() == 0>>
-    <<jump End0>>
-<<elseif function() == 1>>
-    <<jump End1>>
-<<elseif function() == 2>>
-    <<jump End2>>
-<<endif>>
-===
-//TRUE ENDING; DO THIS LAST
-title: End0 
-tags:
-position: -134,43
+position: -63,-14
 ---
 Penne: *Penne presents the evidence she founds to Tim and Nero...*
 Penne: And that concludes my case.
@@ -93,12 +79,11 @@ Rigatoni: But it turns out, that path was unfulfilling and... lonely. And ultima
 Rigatoni: Penne, I want to thank you for not giving up on the job, or on me. Meeting you has made me... happier. I can only wish you the same.
 Penne: I have never been happier... partner!
 Rigatoni: Let's get back to work, detective.
-
 ===
-//NEUTRAL ENDING
-title: End1
+
+title: EndNeutral
 tags:
-position: -6,107
+position: -154,-388
 ---
 Penne: *Penne presents the evidence she founds to Tim and Nero...*
 Penne: And that concludes my case.
@@ -135,21 +120,23 @@ Tim: The choice is yours, Detective Dreadful.
 -> Leave Timsville
     <<jump leaveTimsville>>
 ===
+
 title: stayInTimsville
+position: 76,-244
 ---
 Penne: ...I choose to stay.
 Tim: Wonderful choice. You'll never be sad or lonely again here. And most of all, congratultions on solving the case, detective.
-Tim: Welcome to Timsville.
-//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Tim: Welcome to Timsville.//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
 Penne: Toni and I move into Orzo's apartment. We're the senior detectives for Timsville's Detective agency, and today's the first anniversary of the agency. I don't know how to feel about that.
 Penne: I'm far from happy, but at least I have Rigatoni. She's safe. Happy, I think. I try not to think about it.
 Penne: What if I had done things differently? What if there was a way for us to leave safely with our memories, a way to convince Tim he didn't have to keep people trapped in Timsville, that he was never alone to begin with?
 Penne: What would Rigatoni have done?
 Penne: ...What does she truly think of me now?
 Penne: I'll never know. I don't think I deserve to know. I've made my choice already. And now I must say I've never been happier.
-
 ===
+
 title: leaveTimsville
+position: -159,-122
 ---
 Penne: ...I choose to leave.
 Tim: Very well. You may go once I finish erasing your memories. Please hold still — it's hard to do it if you get squirmy.
@@ -160,8 +147,7 @@ Nero: The mind control isn't working on her. She has a particular immunity to yo
 Tim: I see. I hope you don't mind if we take more extreme measures.
 Penne: Wha—
 Tim: Congratulations on solving the case, detective.
-Tim: It's a shame you won't remember any of it.
-//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Tim: It's a shame you won't remember any of it.//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
 Penne: One year later, Toni and I are back in the New Fork Ziti Bureau of Investigation. 
 Penne: Nothing much has changed since Rigatoni and I came back from Timsville. We both remember that Timsville exists, but... we don't remember what happened there. 
 Penne: The case files are empty. It's hard to explain, but all the files pertaining to the Timsville case is missing information.
@@ -170,10 +156,10 @@ Penne: Ever since we got back, I've felt a strange emptiness. Loneliness. Maybe 
 Penne: Was there a way for us to leave with our memories? Negotiated with whoever we faced? 
 Penne: I can't shake the feeling that maybe if I had done things differently, we would have been better off. Happier, even. But I guess I'll never know for sure.
 ===
-//BAD ENDING
-title: End2 
+
+title: EndBad
 tags:
-position: 129,36
+position: 46,-112
 ---
 Penne: *Penne presents the evidence she founds to Tim and Nero...*
 Penne: And that concludes my case.
@@ -190,8 +176,7 @@ Nero: The mind control doesn't work on her. She has a particular immunity to you
 Tim: I see. I hope you don't mind then if we take more extreme measures?
 Penne: Wha—
 Tim: Don't be disheartened, detective. You may have failed...
-Tim: ...but a position has opened up in Timsville, just for you.
-//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Tim: ...but a position has opened up in Timsville, just for you.//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
 Penne: Toni and I moved into Orzo's old home. We've redecorated it with awards we've gotten for being "the best detectivesin Timsville".
 Penne: We're senior detectives for Timsville's Detective agency, and today's the first year anniversary of it's initial opening.
 Penne: It's hard work, but I've finally achieved my dream of being the best detective with the love of my life.

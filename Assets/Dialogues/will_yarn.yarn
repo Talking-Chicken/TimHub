@@ -34,10 +34,8 @@ Nero: Too curious.
 Nero: He strayed from the path of salvation, but surely now he is better.
 Penne: Again with this path of salvation! What IS it?
 Nero: You're about to find out.
-//TIM ENTERS THE RINNNNNNG - Enable Tim's sprite, but opacity goes fromm 0 to 100%
-<<Tim_Fade_In GameManager>>
-//tim show up, talks from here
-Tim: Honey, I'm home!
+<<Tim_Fade_In GameManager>>//TIM ENTERS THE RINNNNNNG - Enable Tim's sprite, but opacity goes fromm 0 to 100%
+Tim: Honey, I'm home!//tim show up, talks from here
 Penne: ACK!
 Nero: ...
 Tim: Did I get it right? I read it in one of those human books you gave me, and wanted to give it a try.
@@ -90,12 +88,12 @@ Tim: Also I'm not really going to give you a choice here, haha.
 Penne: (I'm terrified! This whole situation has taken a turn for the worse.)
 Penne: (But I can't give up now.)
 Penne: (I can solve this case. I just need to match the right evidence to answer the five main questions in the Case Report.)
-Penne: (This is it...! I gotta get this right—my life and Rigatoni's life depends on it!)
-//Conversation ends here. 
-//Penne should go to her journal to put the evidence in the places for the case report
-//if penne gets it wrong, go to Bad End
-//if penne gets it right:
-Penne: Here's how the murder really went down. 
+Penne: (This is it...! I gotta get this right—my life and Rigatoni's life depends on it!)//Conversation ends here. 
+<<set $endInt to Report_Answer()>>//Penne should go to her journal to put the evidence in the places for the case report
+<<if $endInt < 100>>
+    <<jump EndBad>> //if penne gets it wrong, go to Bad End
+<<endif>>
+Penne: Here's how the murder really went down. //if penne gets it right:
 Penne: Orzo Parmesan had been recalling his past memories through the form of strange dreams, but they weren't confimed memories until something jogged his memories. 
 Penne: What would be "it"? Easy—you two took a will written to Orzo by his late father! 
 Nero: You can't prove that it was either of us had anything to do with that. 
@@ -133,6 +131,9 @@ Penne: Thus, to prevent Orzo from escaping Timsville, Nero had stabbed Orzo with
 Penne: Something he was familiar with as a gardener and had multiple copies everywhere so he could escape the blame.
 Penne: This would've been the perfect crime if only Nero didn't account for the Wisdom Tooth he stuck it in to give me intel or for me to find the Mysterious Letter he used to trick Orzo. 
 Penne: The Receipts, the Gardening Shears, the Mysterious Letter, the Confession Log Book and its handwriting, and finally the Will...all of these signs are pointing to Nero: the murderer of Orzo Parmesan!
-//if penne has ALL 6 Timlings: go to True End
-//if penne does NOT have Timlings: go to Neutral Ends
+<<if $timlingCount == 6>>
+    <<jump EndTrue>>//if penne has ALL 6 Timlings: go to True End
+<<else>>
+    <<jump EndNeutral>>//if penne does NOT have Timlings: go to Neutral Ends
+<<endif>>
 ===

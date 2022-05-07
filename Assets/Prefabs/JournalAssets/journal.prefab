@@ -8724,6 +8724,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165548369597598871, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165548369597598871, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
       value: Rigatoni
       objectReference: {fileID: 0}
@@ -8761,7 +8765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042888447184328808, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
       propertyPath: m_text
-      value: Rigatoni
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c729fd15a224d54fbd88aa68afed578, type: 3}
