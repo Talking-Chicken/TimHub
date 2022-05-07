@@ -74,6 +74,8 @@ Rigatoni: That's Detective Rigatoni to you. What are you even doing here? This i
 Penne: That's the thing! You called for help for said murder case...so here I am! //Penne Happy
 // <<Play_SFX SoundManager Pocky_Cat>>
 // <<Add_Answer journal Question(Criminal) "it's me!">>
+//DOWN BELOW: setting integer variable for the Timling Count!
+<<set $timlingCount to 0>>
 <<Add_Answer journal Question(Location) "Orzo's Apartment">>
 Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
 Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused

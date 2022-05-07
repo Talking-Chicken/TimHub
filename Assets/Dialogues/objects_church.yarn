@@ -122,7 +122,7 @@ tags:
 <<endif>>
 ===
 
-title: bloodyAltar
+title: handyAltar
 tags:
 ---
 <<if Check_Collected("Handy_Altar") == false && Check_Read("neroIntro") == true>>
@@ -148,6 +148,7 @@ position: 282,33
             Penne: Yeah, why not? Come on!
             Teeth Timling: Yes......... *deep sniff* You smell like...apples...and morning sunshine...
             Penne: Oh, that's my shampoo scent! Wait, don't SMELL me!
+            <<set $timlingCount = $timlingCount + 1>>
             <<set $newItem to "Teeth_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling5>>
@@ -172,6 +173,7 @@ position: 282,33
         -> Take No Thoughts Timling
             Penne: I think I got room for  you!
             No Thoughts Timling: Yes! No more independence for me! I love being co-dependent.
+            <<set $timlingCount = $timlingCount + 1>>
             <<set $newItem to "No_Thoughts_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling6>>

@@ -142,6 +142,7 @@ Penne: For now, I'll let you off with your excuse of forgetting, but don't lie d
 Stelle: I-I wasn't lying! I f-forgot...I-I'm sorry...
 Penne: It's fine. I got what I needed, and look like the next destination might be the bodega if he was proven to be alive there!
 Penne: (I should definitely tell Rigatoni about this new alibi I've collected now!)
+<<Set_Read stelleReceiptShown>>
 <<Add_Answer journal Question(Time) "Timsday Celebration">>
 <<Add_Entry journal Stelle_Parmesan_Alibi_Update>>
 <<jump StelleSprint3>>
