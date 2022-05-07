@@ -32,8 +32,10 @@ public class PlayerStateDialogue : PlayerStateBase
     public override void leaveState(PlayerControl player) {
         player.previousState = this;
         player.canvasGroup.alpha = 0;
-        if(player.TargetingDialogueNPC.name.ToLower().Trim().Contains("rigatoni"))
-            player.TargetingDialogueNPC = null;
+        if (player.TargetingDialogueNPC != null) {
+            if(player.TargetingDialogueNPC.name.ToLower().Trim().Contains("rigatoni"))
+                player.TargetingDialogueNPC = null;
+        }
 
         player.turnOnOutOfMapBlockers();
     }
