@@ -1561,8 +1561,8 @@ MonoBehaviour:
   detailAnswerText: {fileID: 995426117}
   criminal: Nero di Seppia
   cause: Bloody Gardening Shears
-  time: The Night of Timsday
-  location: The Church of Tim
+  time: The night of Timsday
+  location: Church of Tim
   detail: Murdered for doubts about Tim
 --- !u!114 &938455774 stripped
 MonoBehaviour:
@@ -1596,7 +1596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 604600224106567687, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825907684498488144, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1871,6 +1871,10 @@ PrefabInstance:
       value: 239.44
       objectReference: {fileID: 0}
     - target: {fileID: 4663061012544477367, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861873647323284863, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
