@@ -6,6 +6,13 @@ Penne: Do I want to pick up this toothpaste?
     -> Yes!
         Penne: This might come in handy!
         <<Add_Entry journal {$newItem}>><<Play_SFX SoundManager Toothpaste>>
+        <<if $newItem == "Spearmint_Toothpaste">>
+            <<Collect_ToothPaste obj_toothpaste>>
+        <<elseif $newItem == "Charcoal_Toothpaste">>
+            <<Collect_ToothPaste obj_charcoalToothpaste>>
+        <<elseif $newItem == "Mint_Toothpaste">>
+            <<Collect_ToothPaste obj_mintToothpaste>>
+        <<endif>>
     -> Nope.
         Penne: Hmm, maybe I should leave it be.
 ===

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5566401849984058070}
   - component: {fileID: 8474252972904484198}
-  - component: {fileID: 5109461611262404571}
   - component: {fileID: 5924858372070748040}
+  - component: {fileID: 1073727196472256449}
   m_Layer: 1
   m_Name: obj_toothpaste
   m_TagString: Untagged
@@ -84,30 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &5109461611262404571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48561314622049264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: Spearmint_Toothpaste
-  collider: {fileID: 5924858372070748040}
-  entryList:
-  - entryName: Spearmint Toothpaste
-    entryDes: Spearmint toothpaste. The best one!
-    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
-    entryType: 0
-  hasDifferentDestination: 0
-  destination: {fileID: 0}
 --- !u!60 &5924858372070748040
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -164,6 +140,30 @@ PolygonCollider2D:
       - {x: 1.245, y: 0.04}
       - {x: 1.305, y: 0.11}
       - {x: 1.345, y: 0.22999999}
+--- !u!114 &1073727196472256449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48561314622049264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7760318ded3234da44b589e87764fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Spearmint_Toothpaste
+  collider: {fileID: 5924858372070748040}
+  entryList:
+  - entryName: Spearmint Toothpaste
+    entryDes: Spearmint toothpaste. The best one!
+    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
+    entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &146692170328503087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4366,8 +4366,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2525941910417240686}
   - component: {fileID: 6381523264800864809}
-  - component: {fileID: 511173480543708842}
   - component: {fileID: 2920825394876370063}
+  - component: {fileID: 4249116192393174835}
   m_Layer: 1
   m_Name: obj_mintToothpaste
   m_TagString: Untagged
@@ -4440,30 +4440,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &511173480543708842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6245211900828679050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: Mint_Toothpaste
-  collider: {fileID: 2920825394876370063}
-  entryList:
-  - entryName: Mint Toothpaste
-    entryDes: Mint toothpaste. Basic. Meh.
-    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
-    entryType: 0
-  hasDifferentDestination: 0
-  destination: {fileID: 0}
 --- !u!60 &2920825394876370063
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4520,6 +4496,30 @@ PolygonCollider2D:
       - {x: 1.245, y: 0.04}
       - {x: 1.305, y: 0.11}
       - {x: 1.345, y: 0.22999999}
+--- !u!114 &4249116192393174835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245211900828679050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7760318ded3234da44b589e87764fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Mint_Toothpaste
+  collider: {fileID: 2920825394876370063}
+  entryList:
+  - entryName: Mint Toothpaste
+    entryDes: Mint toothpaste. Basic. Meh.
+    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
+    entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &6697297096287600406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5485,9 +5485,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4955775503921108302}
   - component: {fileID: 3948849678566240325}
-  - component: {fileID: 3275966776513877032}
-  - component: {fileID: 8469955298907495579}
   - component: {fileID: 8352633789468532715}
+  - component: {fileID: 5842855591207516991}
   m_Layer: 1
   m_Name: obj_charcoalToothpaste
   m_TagString: Untagged
@@ -5560,56 +5559,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!61 &3275966776513877032
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7162559616916096429}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.555}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.69, y: 1.11}
-    newSize: {x: 2.69, y: 1.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.69, y: 1.11}
-  m_EdgeRadius: 0
---- !u!114 &8469955298907495579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7162559616916096429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8f6f4f1623e77459a14c90674ea4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _talkable: 1
-  _interactable: 0
-  _interactFirst: 0
-  _startNode: Charcoal_Toothpaste
-  collider: {fileID: 8352633789468532715}
-  entryList:
-  - entryName: Charcoal Toothpaste
-    entryDes: Charcoal toothpaste. Quirky...
-    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
-    entryType: 0
-  hasDifferentDestination: 0
-  destination: {fileID: 0}
 --- !u!60 &8352633789468532715
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5666,6 +5615,30 @@ PolygonCollider2D:
       - {x: 1.245, y: 0.04}
       - {x: 1.305, y: 0.11}
       - {x: 1.345, y: 0.22999999}
+--- !u!114 &5842855591207516991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162559616916096429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7760318ded3234da44b589e87764fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _talkable: 1
+  _interactable: 0
+  _interactFirst: 0
+  _startNode: Charcoal_Toothpaste
+  collider: {fileID: 8352633789468532715}
+  entryList:
+  - entryName: Charcoal Toothpaste
+    entryDes: Charcoal toothpaste. Quirky...
+    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
+    entryType: 0
+  hasDifferentDestination: 0
+  destination: {fileID: 0}
 --- !u!1 &7665076279923745654
 GameObject:
   m_ObjectHideFlags: 0
