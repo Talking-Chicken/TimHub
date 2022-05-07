@@ -82,6 +82,7 @@ Penne: Great, thank you for your cooperation, Stelle.
 Stelle: O-Of course, d-detective. 
 Penne: (I've recorded this information in my journal under Stelle Parmesan in the Alibi tab!)
 Penne: (If I want to revisit what Stelle just told me, I can go to my journal as a reference.)
+Penne: (That being said...where was Stelle the time Orzo was murdered? I should follow up on this question!)
 <<Set_Read stelleLastSeeOrzo>>
 <<jump StelleSprint3>>
 ===

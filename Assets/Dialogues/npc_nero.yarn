@@ -22,7 +22,7 @@ position: 40,-174
                 <<jump neroScript>>
         <<endif>>
 <<elseif Check_Read("neroIntro") == true && Check_Read("neroQuestions") == true>>
-    -> Ask Nero about the Mysterious Letter <<if Check_Collected("Mysterious_Letter") && Check_Read("neroMysteriousLetter") == false>>
+    -> Ask Nero about the Mysterious Letter <<if Check_Collected("Mysterious_Letter")>> //Check_Read("neroMysteriousLetter") == false
         <<jump question_mysteriousLetter>>
     -> Ask Nero about the Bloody Gardening Shears <<if Check_Collected("Bloody_Gardening_Shears") && Check_Read("neroBloodyShears") == false>>
         <<jump question_neroBloodyShears>>
