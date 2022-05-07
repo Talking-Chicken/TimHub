@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField, BoxGroup("SFX")] private List<audio> SFXAudios;
     [SerializeField, BoxGroup("BGM")] private List<audio> BGMAudios;
     [SerializeField, BoxGroup("UI Sound")] private List<audio> UIAudios;
+
+    private bool isStoppingBGM = false;
     void Start()
     {
         playBGM("Orzo Room Music");
@@ -26,7 +28,8 @@ public class SoundManager : MonoBehaviour
     
     void Update()
     {
-        
+        if (isStoppingBGM)
+            BGMSource.volume -= 1.5f * Time.deltaTime;
     }
 
     [YarnCommand("Play_SFX")]
@@ -45,6 +48,8 @@ public class SoundManager : MonoBehaviour
 
     [YarnCommand("Play_BGM")]
     public void playBGM(string clipName) {
+        isStoppingBGM = false;
+        BGMSource.volume = 100;
         string newName = GameManager.substituteUnderscoreWithSpace(clipName);
         foreach (audio BGM in BGMAudios) {
             if (BGM.clipName.ToLower().Trim().Equals(newName.ToLower().Trim())) {
@@ -55,6 +60,11 @@ public class SoundManager : MonoBehaviour
             }
         }
         Debug.LogWarning("cannot find audio clip with name " +newName);
+    }
+
+    [YarnCommand("Stop_BGM")]
+    public void stopBGM() {
+        isStoppingBGM = true;
     }
 
     public void playUISound(string clipName) {

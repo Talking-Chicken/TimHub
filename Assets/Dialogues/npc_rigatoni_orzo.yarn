@@ -180,6 +180,7 @@ position: 200,157
     Penne: Ok...whatever you say...
     Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
 -> Yes, let's go!
+    <<Stop_BGM SoundManager>>
     <<Room_Change GameManager>>
     <<Move_And_Talk_To Player Rigatoni_Bodega>>
 -> Hmm, not yet.

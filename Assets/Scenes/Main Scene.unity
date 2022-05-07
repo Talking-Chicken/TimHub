@@ -244,7 +244,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &138692361
 BoxCollider2D:
@@ -1104,13 +1104,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 511173480543708842, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: _interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4087943124003423001, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: entryList.Array.data[2].entryName
       value: Radiatore al Forno Update
       objectReference: {fileID: 0}
+    - target: {fileID: 5109461611262404571, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: _interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894379972735577724, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5894379972735577724, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1159,6 +1167,10 @@ PrefabInstance:
     - target: {fileID: 7665076279923745654, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469955298907495579, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: _interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
@@ -2000,7 +2012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6954200007111919704, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6954200007111919704, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3384,7 +3396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872440421651647760, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8872440421651647760, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3663,7 +3675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6192342561213899269, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6192342561213899269, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3762,7 +3774,7 @@ Transform:
   m_LocalScale: {x: 4.0296, y: 4.0296, z: 4.0296}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570256275
 GameObject:
@@ -4999,7 +5011,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4434406276372292565, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4434406276372292565, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
       propertyPath: m_LocalPosition.x

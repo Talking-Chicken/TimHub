@@ -3,6 +3,7 @@ tags:
 position: -6,-71
 ---
 <<if Check_Read("rigatoniChurchIntro") == false>>
+    <<Play_BGM SoundManager Church_Music>>
     <<jump rigatoniChurchIntro>>
 <<elseif Check_Read("rigatoniChurchIntro") == true>> 
     -> Ask about any other details about the church

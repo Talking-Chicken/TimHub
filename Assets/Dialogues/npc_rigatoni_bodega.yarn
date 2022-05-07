@@ -2,6 +2,7 @@
 tags:
 ---
 <<if Check_Read("rigatoniBodegaIntroRead") == false>>
+    <<Play_BGM SoundManager Bodega_Music>>
     <<jump rigatoniBodegaIntro>>
 <<elseif Check_Read("rigatoniBodegaIntroRead") == true>>
         -> Ask about Rigatoni's condition <<if Check_Read("rigatoniConditionRead") == false>>
@@ -21,6 +22,7 @@ tags:
             Penne: (At least she hasn't forgotten what sarcasm is...)
             Rigatoni: Are you ready to proceed to the next area, the Church of Tim?
                 -> Yes, let's go!
+                    <<Stop_BGM SoundManager>>
                     <<Room_Change GameManager>>
                     <<Move_And_Talk_To Player npc_rigatoni_church>>
                 -> Hmm, not yet.
