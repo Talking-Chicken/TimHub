@@ -48,7 +48,7 @@ Nero: Ah, I've been expecting you, detective.
 Penne: (Wait. He's been expecting me? Hmm.)
 Nero: I am Nero di Seppia, a priest for the Church of Tim. Pleasure to meet you. 
 Penne: A priest? Wait, that's perfect! Can I ask you some questions about Orzo Parmesan?
-Nero: Of course. I'm happy to lend a hand for your investigation. 
+Nero: Of course. I'm happy to lend a hand for your investigation.
 
 <<Set_Read neroIntro>>
 <<jump neroScript>>
@@ -69,7 +69,7 @@ Penne: (Hmm. Did he really not meet Orzo at all? Something tells me that he's be
 Penne: (Maybe I can find a piece of evidence to prove that Nero met Orzo here!)
 Penne: (For now, I'll record Nero's alibi in my journal under the Alibi tab and revisit this information if I want to later.)
 //add Nero's first alibi
-<<Add_Entry journal Nero_di_Seppia>>
+<<Add_Entry journal Nero_di_Seppia>><<Add_Answer journal Question(Criminal) "Nero di Seppia">>
 <<Set_Read neroAlibi>>
 <<jump neroScript>>
 ===

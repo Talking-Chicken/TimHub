@@ -78,7 +78,7 @@ Penne: Ok...when you made the delivery and saw Orzo, was there anybody else in t
 Radiatore: N-No! I-It was just me and him. N-Nobody else. For sure. 
 Radiatore: J-Just him and I. B-Business was s-slow. 
 <<Set_Read radiatoreLies>>
-<<Add_Entry journal Radiatore_al_Forno>>
+<<Add_Entry journal Radiatore_al_Forno>><<Add_Answer journal Question(Criminal) "Radiatore al Forno">>
 <<jump radiatoreScript>>
 
 ===

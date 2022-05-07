@@ -11,7 +11,7 @@ position: 15,-240
     -> Ask about relationship with Orzo <<if Check_Read("stelleRelationship") == false>>
         <<jump question_relationship>>
     -> Ask when Stelle last saw Orzo <<if Check_Read("stelleLastSeeOrzo") == false>>
-        <<jump question_alibi>>>>
+        <<jump question_alibi>>
     -> Ask about where Stelle was during the time of the murder <<if Check_Read("stelleLastSeeOrzo") == true>>
         <<jump question_whereabouts>>
     -> Ask about Orzo's closet <<if Check_Collected("Orzo_Closet") == true && Check_Read("orzoClosetExamined") == false>>
@@ -64,7 +64,7 @@ Stelle: May Tim's light guide you...
 title: question_alibi
 position: -45,323
 ---
-<<Add_Entry journal Stelle_Parmesan_Alibi>>
+<<Add_Entry journal Stelle_Parmesan_Alibi>><<Add_Answer journal Question(Criminal) "Stelle Parmesan">>
 Penne: So when did you last see Orzo?
 Stelle: The last I saw him was the night before Timsday, Praise Tim...
 Penne: Timsday? What's that, some sort of founding day for Timsville?
@@ -81,7 +81,7 @@ Penne: Great, thank you for your cooperation, Stelle.
 Stelle: O-Of course, d-detective. 
 Penne: (I've recorded this information in my journal under Stelle Parmesan in the Alibi tab!)
 Penne: (If I want to revisit what Stelle just told me, I can go to my journal as a reference.)
-<<Set_Read stelleLastSeeOrzo>><<Add_Answer("criminal", "Stelle Parmesan")>>
+<<Set_Read stelleLastSeeOrzo>>
 <<jump StelleSprint3>>
 ===
 

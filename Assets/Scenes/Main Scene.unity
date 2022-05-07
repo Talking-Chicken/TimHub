@@ -1559,11 +1559,11 @@ MonoBehaviour:
   timeAnswerText: {fileID: 995426114}
   locationAnswerText: {fileID: 995426113}
   detailAnswerText: {fileID: 995426117}
-  criminal: Nero
-  cause: 
-  time: 
-  location: 
-  detail: 
+  criminal: Nero di Seppia
+  cause: Bloody Gardening Shears
+  time: The Night of Timsday
+  location: The Church of Tim
+  detail: Murdered for doubts about Tim
 --- !u!114 &938455774 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 938455774, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
