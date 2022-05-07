@@ -2481,7 +2481,7 @@ MonoBehaviour:
   entryList:
   - entryName: Mysterious Letter
     entryDes: A letter written to Orzo that says to meet ??? at the Church the same
-      night Orzo was murdered! Handwritiing is very nice!
+      night Orzo was murdered! Handwriting is very nice!
     entryImage: {fileID: 1654927486645190255, guid: 63fb944b4a0171d41a55632fcaf57cf3, type: 3}
     entryType: 0
   hasDifferentDestination: 0
