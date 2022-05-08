@@ -5177,14 +5177,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Secret_Room
       objectReference: {fileID: 0}
-    - target: {fileID: 4434406276372292567, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
-      propertyPath: m_TagString
-      value: Blocker
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434406277988990545, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 49dc7e61b0a482949aa2fba2286975c1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
 --- !u!1001 &5580233427997335559
