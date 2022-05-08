@@ -28666,7 +28666,9 @@ MonoBehaviour:
   nero: {fileID: 901323782}
   tim: {fileID: 1816707701}
   secretNero: {fileID: 1731232968}
+  rigatoni: {fileID: 1938501208}
   timeRenderer: {fileID: 1816707702}
+  candlePosition: {x: 66.12, y: 30.32}
 --- !u!114 &925236264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29735,6 +29737,7 @@ GameObject:
   - component: {fileID: 1117723944}
   - component: {fileID: 1117723943}
   - component: {fileID: 1117723945}
+  - component: {fileID: 1117723946}
   m_Layer: 0
   m_Name: obj_churchCandle
   m_TagString: Untagged
@@ -29792,7 +29795,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1117723942
 Transform:
   m_ObjectHideFlags: 0
@@ -29803,8 +29806,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 65.33, y: 30.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2069234837}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29824,7 +29826,7 @@ MonoBehaviour:
   _interactable: 0
   _interactFirst: 0
   _startNode: churchCandle
-  collider: {fileID: 2069234838}
+  collider: {fileID: 1117723946}
   entryList: []
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -29873,6 +29875,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1117723946
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117723940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.032974243, y: 3.5917397}
+      - {x: -0.550788, y: 3.275877}
+      - {x: -0.47977203, y: 0.13336003}
+      - {x: -0.015945435, y: 0.048360825}
+      - {x: 0.43332064, y: 0.039674997}
+      - {x: 0.44412518, y: 3.3016129}
 --- !u!1 &1174649909
 GameObject:
   m_ObjectHideFlags: 0
@@ -31613,6 +31646,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5409445403340980603, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
   m_PrefabInstance: {fileID: 1462577656}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1938501208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 605739447563094129, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+  m_PrefabInstance: {fileID: 1462577656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1987084316
 GameObject:
   m_ObjectHideFlags: 0
@@ -31904,68 +31942,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}
   m_PrefabInstance: {fileID: 2036327981}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2069234836
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2069234837}
-  - component: {fileID: 2069234838}
-  m_Layer: 0
-  m_Name: Interactive Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2069234837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069234836}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1117723942}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &2069234838
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069234836}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.032974243, y: 3.5917397}
-      - {x: -0.2055884, y: 3.0950603}
-      - {x: -0.47977203, y: 0.13336003}
-      - {x: -0.015945435, y: 0.048360825}
-      - {x: 0.43332064, y: 0.039674997}
-      - {x: 0.23042583, y: 2.726284}
 --- !u!1 &2123188314
 GameObject:
   m_ObjectHideFlags: 0

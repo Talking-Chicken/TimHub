@@ -239,6 +239,7 @@ Nero: It is a holy place of divine revelation. As Tim always says:
 Nero: By the light that burns through the Tim, may the path to Salvation be revealed.
 Penne: (How does Nero know something that I don't? Is this another lie or something bigger than that? This is getting suspicious. I should investigate further.)
 //Rigatoni teleports next to the candle HERE
+<<Rigatoni_Move_To_Candle GameManager>>
 Nero: Wait, what are you doing? That's dangerous!
 Penne: Who, me!?
 Nero: No, HER!
@@ -271,6 +272,7 @@ Penne: Yes sir!
 <<Nero_Transition_Out GameManager>>
 <<Set_Read neroGone>>
 //Rigatoni is also out of the scene too
+<<Rigatoni_Move_Out GameManager>>
 Penne: ...
 Penne: (Thank you for distracting Nero, Rigatoni! I hope she'll be safe around him...)
 Penne: (Now with that annoying priest gone, I can finally do something about that painting!)

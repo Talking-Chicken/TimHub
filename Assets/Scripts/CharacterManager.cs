@@ -5,10 +5,11 @@ using Yarn.Unity;
 
 public class CharacterManager : MonoBehaviour
 {
-    [SerializeField] private GameObject nero, tim, secretNero;
+    [SerializeField] private GameObject nero, tim, secretNero, rigatoni;
     private bool isTimFading = false;
     [SerializeField] private SpriteRenderer timeRenderer;
     private TransitionManager transition;
+    [SerializeField] Vector2 candlePosition;
     void Start()
     {
         transition = FindObjectOfType<TransitionManager>();
@@ -43,6 +44,16 @@ public class CharacterManager : MonoBehaviour
     {
         transition.roomTransitionAnimation();
         StartCoroutine(waitToActive(secretNero));
+    }
+
+    [YarnCommand("Rigatoni_Move_To_Candle")]
+    public void rigatoniMoveToCandle() {
+        rigatoni.transform.position = candlePosition;
+    }
+
+    [YarnCommand("Rigatoni_Move_Out")]
+    public void rigatoniMoveOut() {
+        rigatoni.SetActive(false);
     }
 
     IEnumerator waitToActive(GameObject NPC)
