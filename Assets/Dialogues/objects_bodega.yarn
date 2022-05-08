@@ -58,8 +58,16 @@ position: 300,-101
 ---
 //DONE
 <<if Check_Collected("Ham_Dugo") == false && Check_Read("radiatoreIntroRead") == true>>
+    Penne: Um, hey there! Have you seen anything or anyone suspicious lately?
+    Ham Dugo: I can't see anything. I'm not wearing sunglasses—these are regular glasses I colored in with a black permanent marker!
+    Penne: Why would you do that to your glasses!?
+    Ham Dugo: To look like someone who's ready to enter the workforce—that's why! I have a fantastic resume AND LinkedIn profile image.
     <<Play_SFX SoundManager Ham_Dugo>>
-    Ham Dugo: I speak fifteen percent Italian, and am one hundred percent skilled in keeping it cool. I have a fantastic resume.
+    Ham Dugo: I speak fifteen percent Italian and am one hundred percent skilled in keeping it cool. 
+    Penne: Oh wow! That's so impressive. Do you work here then? In, um, the fridge...?
+    Ham Dugo: I am unemployed. 
+    Penne: Don't worry. I'm sure some employer out there is looking for someone exactly like you! 
+    Ham Dugo: Thanks detective... (I should've taken the Survival Skills class at the NYU Game Center...if only I knew how helpful it would be!)
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
 <<elseif Check_Read("radiatoreIntroRead") == false>>
@@ -92,13 +100,20 @@ position: 300,-101
 <<if Check_Collected("Hatsune_Miku") == false && Check_Read("radiatoreIntroRead") == true && Check_Read("mikuDialoguePlayed") == false>>
     Penne: Holy cannoli! My favorite pop star, Hatsune Miku?! 
     <<Play_SFX SoundManager Miku>>
-    Hatsune Miku: こんにちは！はじめまして、探偵。(Hello! Nice to meet you, detective.)
+    // Hatsune Miku: こんにちは！はじめまして、探偵。(Hello! Nice to meet you, detective.)
+    // Penne: O-Oh! I am so arigato-ful to meet someone as talented as you!
+    // Hatsune Miku: それは本当の言葉ではありません！しかし、あなたの努力はとても面白かったです www。(That is not a real word! But your effort was very funny lol.)
+    // Penne: C-Can I ask...um, you some questions? UwU...
+    // Hatsune Miku: 「UwU」と大声で言いましたか...？ (Did you just say "UwU" out loud...?)
+    // Penne: OH HAHA DID I SAY THAT WOW THAT UM WAS SO EMBARRASING!!!
+    // Hatsune Miku: 何を聞いてくれたの？(What were you going to ask me?)
+    Hatsune Miku: Kon'nichiwa! Hajimemashite, tantei. (Hello! Nice to meet you, detective.)
     Penne: O-Oh! I am so arigato-ful to meet someone as talented as you!
-    Hatsune Miku: それは本当の言葉ではありません！しかし、あなたの努力はとても面白かったです www。(That is not a real word! But your effort was very funny lol.)
+    Hatsune Miku: Sore wa hontō no kotobade wa arimasen! Demo anata no doryoku wa totemo omoshirokattadesu www. (That is not a real word! But your effort was very funny lol.)
     Penne: C-Can I ask...um, you some questions? UwU...
-    Hatsune Miku: 「UwU」と大声で言いましたか...？ (Did you just say "UwU" out loud...?)
+    Hatsune Miku: `UwU' to ōgoe de iimashita ka…? (Did you just say "UwU" out loud...?)
     Penne: OH HAHA DID I SAY THAT WOW THAT UM WAS SO EMBARRASING!!!
-    Hatsune Miku: 何を聞いてくれたの？(What were you going to ask me?)
+    Hatsune Miku: Nani o kiite kureta no? (What were you going to ask me?)
     Penne: Can I get your autograph? You can sign my journal, or my hat, or—
     <<Camera_Lerp_To GameManager Rigatoni_Bodega>>
     Rigatoni: Detective Scout! What do you think you're doing? Focus on the case!
@@ -106,7 +121,7 @@ position: 300,-101
     <<Play_SFX SoundManager Penne_Shriek>>
     Penne: Eek! I've been caught!!!
     <<Camera_Lerp_To GameManager obj_radiatore>>
-    Radiatore: Autographs cost 100,000 tim bucks. 
+    Radiatore: Autographs cost 100,000 tim bucks, y'know...
     <<Camera_Lerp_To GameManager Player>>
     Penne: What!? That doesn't sound like something I can afford!
     <<Camera_Lerp_To GameManager obj_wisdomTooth>>
@@ -117,8 +132,8 @@ position: 300,-101
     <<set $newItem to "Hatsune_Miku">>
     <<jump addEntry>>
 <<elseif Check_Collected("Hatsune_Miku") == false && Check_Read("radiatoreIntroRead") == true && Check_Read("mikuDialoguePlayed") == true>>
-    Penne: Konnichiwa again!
-    Hatsune: こんにちは愚かな探偵！私が永遠に踊るのを見てください！(Hello silly detective! Watch me dance for eternity!)
+    Penne: Kon'nichiwa again!
+    Hatsune: Kon'nichiwa orokana tantei! Watashi ga eien ni odoru no o mitekudasai! (Hello silly detective! Watch me dance for eternity!)
     <<set $newItem to "Hatsune_Miku">>
     <<jump addEntry>>
 <<elseif Check_Read("radiatoreIntroRead") == false>>
@@ -134,7 +149,8 @@ position: 30s0,-101
 ---
 <<if Check_Collected("Fish_ATM") == false && Check_Read("radiatoreIntroRead") == true>>
     <<Play_SFX SoundManager Scottish_Fish>>
-    Penne: There's a sign on this ATM. "Currently out of commission. No longer dispensing money. Only good vibes."
+    Penne: There's a sign on this ATM:
+    Penne: "Currently out of commission. No longer dispensing money. Only good vibes."
     <<set $newItem to "Fish_ATM">>
     <<jump addEntry>>
 <<elseif Check_Read("radiatoreIntroRead") == false>>
@@ -191,7 +207,7 @@ title: timling3
 tags:
 ---
 <<if Check_Collected("MounTimDew_Timling") == false && Check_Read("radiatoreIntroRead") == true>>
-    Penne: Another one? By golly, you guys get lost easily.
+    Penne: Woah! Are you ok little buddy? 
     <<Play_SFX SoundManager Mount_Timling>>
     MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. 
     Penne: Oh no! You lost your Dad?
@@ -282,7 +298,7 @@ title: Register
 ---
 <<Play_SFX SoundManager Bodega_Register>>
 Penne: This register is keeping track of the Bodega's earnings!
-Register: *The Bodega currently has 0.74 cents in its account.*
+Register: *The Bodega currently has 0.74 tim cents in its account.*
 ===
 
 title: Radio
@@ -301,7 +317,7 @@ title: Newspaper_01
 ---
 Penne: This newspaper's about a week old. It reads:
 <<Play_SFX SoundManager Bodega_Newspaper>>
-Penne: "Timsville Times. Sportsball. An image of someone running after someone elsed and throwing a ball at them. "RUN!!!!!""
+Penne: "Timsville Times. Sportsball. An image of someone running after someone else and throwing a ball at them. "RUN!!!!!""
 ===
 
 title: Newspaper_02
