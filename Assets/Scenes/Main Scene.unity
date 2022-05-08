@@ -1621,6 +1621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nero: {fileID: 901323782}
   tim: {fileID: 1816707701}
+  secretNero: {fileID: 1731232968}
   timeRenderer: {fileID: 1816707702}
 --- !u!114 &925236264
 MonoBehaviour:
@@ -4025,6 +4026,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1731232968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4434406277988990547, guid: 3411ecb9ef21b2e44829ce28e32dbe5f, type: 3}
+  m_PrefabInstance: {fileID: 4434406276540771363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1745600176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 937761152071955283, guid: a3ccd1eb8f8b85f46bd201e1ba1c7a54, type: 3}

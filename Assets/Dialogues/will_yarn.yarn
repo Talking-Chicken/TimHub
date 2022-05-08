@@ -13,7 +13,9 @@ Penne: This looks really important... I'm gonna add it to my journal now.
 <<set $newItem to "The_Will">>
 <<Add_Entry journal {$newItem}>>
 Penne: I also need to find Nero and ask about the will. If he hid evidence that's a crime! 
-//NERO ENTERS THE RING. SUSSY - Enable Nero's sprite
+<<Transition_Anim GameManager>>
+<<Nero_In GameManager>>
+<<wait 2>>
 //door opening sfx
 Nero: ...What are you doing here?
 Penne: OH! H-hello. Eh-hem. 
