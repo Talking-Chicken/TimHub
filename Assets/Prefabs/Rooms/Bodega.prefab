@@ -3873,8 +3873,6 @@ PolygonCollider2D:
     - - {x: -0.24499999, y: 0.555}
       - {x: -0.235, y: 0.555}
       - {x: -0.235, y: 0.545}
-    - []
-    - []
 --- !u!1 &6111744179818658896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4841,35 +4839,8 @@ PolygonCollider2D:
       - {x: 0.97999996, y: -0.049999997}
       - {x: 0.97999996, y: 1.61}
       - {x: 0.89, y: 1.68}
-      - {x: -0.29, y: 1.68}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
-      - {x: 0, y: 0}
+      - {x: -0.90512455, y: 1.6427196}
+      - {x: -0.8574454, y: -1.1836536}
 --- !u!1 &7004217537915646881
 GameObject:
   m_ObjectHideFlags: 0
@@ -6566,7 +6537,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b1ca9d9f55eb5e418b637f427d46080, type: 3}
+  m_Sprite: {fileID: 8172378605579822608, guid: 532e87da3cfcecb4682f79dda3adb6b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6613,8 +6584,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.52, y: 3.78}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.41, y: 3.65}
     newSize: {x: 2.52, y: 3.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6802,10 +6773,7 @@ PolygonCollider2D:
     - - {x: 0.97999996, y: -0.59999996}
       - {x: 0.97999996, y: 1.36}
       - {x: 0.87, y: 1.4499999}
-      - {x: -0.17, y: 1.4499999}
-      - {x: -0.42999998, y: 1.43}
-      - {x: -0.84999996, y: 1.4499999}
-      - {x: -0.94, y: 1.38}
+      - {x: -0.90974206, y: 1.4319576}
       - {x: -0.94, y: -0.64}
       - {x: -0.93, y: -1.15}
       - {x: -0.90999997, y: -1.39}
