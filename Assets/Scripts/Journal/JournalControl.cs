@@ -116,11 +116,13 @@ public class JournalControl : MonoBehaviour
     {
         alibiEntriesContainer.SetActive(true);
         bringToTop(alibieTab, journalBody);
+        FindObjectOfType<SoundManager>().playUISound("Journal Open");
     }
 
     public void closeAlibi()
     {
         alibiEntriesContainer.SetActive(false);
+        FindObjectOfType<SoundManager>().playUISound("Journal Close");
         //destroy all alibi entries
     }
 
@@ -128,11 +130,13 @@ public class JournalControl : MonoBehaviour
     {
         itemEntriesContainer.SetActive(true);
         bringToTop(itemTab, journalBody);
+        FindObjectOfType<SoundManager>().playUISound("Journal Open");
     }
 
     public void closeItem()
     {
         itemEntriesContainer.SetActive(false);
+        FindObjectOfType<SoundManager>().playUISound("Journal Close");
     }
 
     public void openCaseReport()
@@ -140,17 +144,20 @@ public class JournalControl : MonoBehaviour
         Canvas.ForceUpdateCanvases();
         caseReport.SetActive(true);
         bringToTop(caseReportTab, journalBody);
+        FindObjectOfType<SoundManager>().playUISound("Journal Open");
     }
 
     public void closeCaseReport()
     {
         caseReport.SetActive(false);
+        FindObjectOfType<SoundManager>().playUISound("Journal Close");
     }
 
     public void openCaseBrief()
     {
         caseBrief.SetActive(true);
         bringToTop(caseBriefTab, journalBody);
+        FindObjectOfType<SoundManager>().playUISound("Journal Open");
     }
 
     IEnumerator resetObj(GameObject obj)
@@ -164,6 +171,7 @@ public class JournalControl : MonoBehaviour
     public void closeCaseBrief()
     {
         caseBrief.SetActive(false);
+        FindObjectOfType<SoundManager>().playUISound("Journal Close");
     }
     #endregion
 
@@ -388,7 +396,6 @@ public class JournalControl : MonoBehaviour
     {
         page = Mathf.Min(maxPage, page + 1);
         showEntries(currentState);
-
         FindObjectOfType<SoundManager>().playUISound("Page Turn");
     }
 
@@ -397,7 +404,6 @@ public class JournalControl : MonoBehaviour
     {
         page = Mathf.Max(1, page - 1);
         showEntries(currentState);
-
         FindObjectOfType<SoundManager>().playUISound("Page Turn");
     }
 
