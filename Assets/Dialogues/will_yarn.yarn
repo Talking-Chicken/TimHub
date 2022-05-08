@@ -13,7 +13,9 @@ Penne: This looks really important... I'm gonna add it to my journal now.
 <<set $newItem to "The_Will">>
 <<Add_Entry journal {$newItem}>>
 Penne: I also need to find Nero and ask about the will. If he hid evidence that's a crime! 
-//NERO ENTERS THE RING. SUSSY - Enable Nero's sprite
+<<Transition_Anim GameManager>>
+<<Nero_In GameManager>>
+<<wait 2>>
 //door opening sfx
 Nero: ...What are you doing here?
 Penne: OH! H-hello. Eh-hem. 
@@ -89,51 +91,5 @@ Penne: (I'm terrified! This whole situation has taken a turn for the worse.)
 Penne: (But I can't give up now.)
 Penne: (I can solve this case. I just need to match the right evidence to answer the five main questions in the Case Report.)
 Penne: (This is it...! I gotta get this right—my life and Rigatoni's life depends on it!)//Conversation ends here. 
-<<set $endInt to Report_Answer()>>//Penne should go to her journal to put the evidence in the places for the case report
-<<if $endInt < 100>>
-    <<jump EndBad>> //if penne gets it wrong, go to Bad End
-<<endif>>
-Penne: Here's how the murder really went down. //if penne gets it right:
-Penne: Orzo Parmesan had been recalling his past memories through the form of strange dreams, but they weren't confimed memories until something jogged his memories. 
-Penne: What would be "it"? Easy—you two took a will written to Orzo by his late father! 
-// Nero: You can't prove that it was either of us had anything to do with that. 
-// Penne: I literally found the will here, a secret room in the church! That you hid from me, too!
-// Penne: Furthermore, you couldn't have known about any family accident unless you knew about the will.
-// Nero: N-Nonsense! Orzo mentioned it in passing when he came to confess! Yes, that's right. 
-// Penne: But you said you found out in a different way, not as a confession—it was not included in the Log Book! 
-Penne: Which is strange to me since you would think Orzo would confess his feelings about the death of his Dad and the contents of the will.
-Penne: ...unless he didn't know about it because you hid it from him?
-Nero: You dare accuse me of all the lies? Continue and you will face even greater dangers than Orzo Parmesan!
-Penne: I have proof that Orzo couldn't have access to the will and the details of his dad's death.
-Penne: Orzo couldn't have known his Dad died in a hit-and-run because he never received the will!
-Penne: The delivery man said he was supposed to deliver something to Orzo during his shift at the bodega, but Tim and Nero took it before Orzo could receive them!
-Penne: Radiatore—the only person in Timsville who can confirm what comes in and out of this town!
-Nero: The delivery man? Time and time again! Ugh, Radiatore al Forno...
-Penne: He was a witness to seeing you and someone else taking away something that was sent to Orzo from NFZ. 
-Penne: Looks like you weren't too careful, because he did pick up something ELSE that was sent to him...
-Nero: ... //nero losing his cool, looking menacing
-Penne: The letter. Orzo was last seen on Timsday and the latest we know was here with you because you sent this letter to him. Didn't you?
-Penne: You knew that Orzo was already slipping away from the lies he had been told in Timsville.
-Penne: And whatever glimpse Orzo got of his own father's will must have been enough to make him remember enough to convince him to escape—a hysteria that didn't go unnoticed by his only sister Stelle. 
-Penne: Orzo, having retained some of his memories, rushed to pack his things and leave at once. 
-Penne: The will was the catalyst that caused Orzo to try escaping Timsville. 
-Penne: In fact, it is the very source of motivation for his murder!
-Penne: Why? Because he would've exposed all of the inhumane things happening here: brainwashing and trapping innocent people!
-Penne: Nobody ever leaves this place with their memories because you want to keep everything under wraps. Orzo would threaten that if he escaped!
-Penne: Moving on, Orzo was last seen the night of Timsday and NOT the day before like Stelle claimed in an earlier alibi.
-Penne: How do we know this? Because the Receipts from the bodega are official documents that date him there: time, credit card under his name, everything!
-Penne: This means that Orzo was last alive before going to the Church, which is proved by the Mysterious Letter he found. 
-Penne: The Mysterious Letter claimed to be helping him and was used to lure him to the church so that he could be killed...by the priest Nero!
-Penne: How could it have been the priest? 
-Penne: Well, the handwriting in his Confession Log Book matches that of the Mysterious Letter's! 
-Penne: Because Orzo sought comfort through confessions, Nero must've known to expect this development. 
-Penne: Thus, to prevent Orzo from escaping Timsville, Nero had stabbed Orzo with the Gardening Shears, the perfect murder weapon: 
-Penne: Something he was familiar with as a gardener and had multiple copies everywhere so he could escape the blame.
-Penne: This would've been the perfect crime if only Nero didn't account for the Wisdom Tooth he stuck it in to give me intel or for me to find the Mysterious Letter he used to trick Orzo. 
-Penne: The Receipts, the Gardening Shears, the Mysterious Letter, the Confession Log Book and its handwriting, and finally the Will...all of these signs are pointing to Nero: the murderer of Orzo Parmesan!
-<<if $timlingCount == 6>>
-    <<jump EndTrue>>//if penne has ALL 6 Timlings: go to True End
-<<else>>
-    <<jump EndNeutral>>//if penne does NOT have Timlings: go to Neutral Ends
-<<endif>>
+
 ===
