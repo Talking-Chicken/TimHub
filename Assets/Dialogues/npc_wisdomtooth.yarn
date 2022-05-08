@@ -102,6 +102,7 @@ Penne: (Penne recieved: a pair of bloody shears!)
         <<Add_Entry journal {$newItem}>>
         <<Add_Entry journal Wisdom_Tooth_Alibi>><<Add_Answer journal Question(Criminal) "Wisdom Tooth">>
         <<Add_Answer journal Question(Time) "The night of Timsday">>
+        <<Add_Answer journal Question(Detail) "Accidental death from gardening">>
 Penne: (And done! I've recorded the Bloody Gardening Shears and the Wisdom Tooth's alibi into my journal!)
 Penne: Now I have something to show to make that sweaty sucker squeal... 
 Penne: I should go show these bloody shears to Rigatoni first and report my findings!

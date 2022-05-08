@@ -98,6 +98,7 @@ Stelle: A-And then nobody heard from him! H-He had gone m-missing, a-and so we c
 Penne: Uh-huh...so while everyone was busy, Orzo had disappeared and wasn't seen on Timsday. 
 Stelle: Y-you could, um, assume he w-was...killed...before T-Timsday...
 Penne: Hmm, alright. Guess that makes sense if he disappeared the day before and hadn't been seen since. 
+<<Add_Answer journal Question(Detail) "Murdered for not attending the Celebration">>
 <<Set_Read stelleWhereTimeOfMurder>>
 <<jump StelleSprint3>>
 ===
@@ -111,7 +112,7 @@ Penne: "Past memories"? Past memories about what?
 Stelle: A time...before Timsville. I think he was going crazy trying to prove that they were real. 
 Penne: Weird dreams that Orzo thought were memories...interesting. Did he tell you or anyone else about these dreams?
 Stelle: Me and the priest, Nero. Orzo would often go to confess to him about his troubles.
-Penne: Got it. Thanks for the information, Stelle. 
+Penne: Got it. Thanks for the information, Stelle.
 <<jump StelleSprint3>>
 ===
 

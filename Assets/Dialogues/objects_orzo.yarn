@@ -53,6 +53,7 @@ position: -138,-170
     Penne: Surely Orzo wouldn't mind if I took a peak? This is for work, after all! Highly professional stuff. 
     Penne: Dangnabbit, it's all gibberish and crazy-talk! I can only make out the words "escape", "true memory", and "did I leave the oven on?".  
     Penne: Dreams are weird, but a lot of this stuff seems rather lucid now looking at it closely. Albeit frantically. 
+    <<Add_Answer journal Question(Detail) "Suicide to escape Timsville">>
     <<set $newItem to "Orzo_Dream_Journal">>
     <<jump addEntry>>
 <<elseif Check_Read("stelleIntro") == false>>

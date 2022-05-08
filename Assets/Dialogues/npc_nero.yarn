@@ -125,6 +125,7 @@ Penne: O-Oh, I see...
 Nero: Praise Tim, detective. 
 Penne: Uh-huh, yeah. 
 <<Set_Read neroAboutTim>>
+<<Add_Answer journal Question(Detail) "Murdered to make a delicious snack for Tim">>
 <<jump neroScript>>
 ===
 

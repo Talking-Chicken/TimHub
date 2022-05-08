@@ -76,7 +76,7 @@ position: 300,-101
 ---
 <<if Check_Collected("Confession_Log_Book") == false && Check_Read("neroIntro") == true>>
     Penne: This is Nero's logbook of confessions. The entries from on the night Timsday are... about Orzo!
-    
+    <<Add_Answer journal Question(Detail) "Murdered for doubts about Tim">>
     Penne: Looks like he talked more about his strange dreams, and about having "a life before Timsville" and "doubts about the sanctity of Tim."
     Penne: According to this, Nero's advice was to pray and believe in Tim to guide him.
     Penne: ...The handwriting in this book looks really beautiful...and familiar...
