@@ -13,6 +13,7 @@ tags:
 position:
 ---
 <<if Report_Answer() < 100>>
+    <<Black_Out_Screen GameManager>>
     <<jump EndBad>> //if penne gets it wrong, go to Bad End
 <<endif>>
 Penne: Here's how the murder really went down. //if penne gets it right:
@@ -53,6 +54,7 @@ Penne: Thus, to prevent Orzo from escaping Timsville, Nero had stabbed Orzo with
 Penne: Something he was familiar with as a gardener and had multiple copies everywhere so he could escape the blame.
 Penne: This would've been the perfect crime if only Nero didn't account for the Wisdom Tooth he stuck it in to give me intel or for me to find the Mysterious Letter he used to trick Orzo. 
 Penne: The Receipts, the Gardening Shears, the Mysterious Letter, the Confession Log Book and its handwriting, and finally the Will...all of these signs are pointing to Nero: the murderer of Orzo Parmesan!
+<<Black_Out_Screen GameManager>>
 <<if $timlingCount == 6>>
     <<jump EndTrue>>//if penne has ALL 6 Timlings: go to True End
 <<else>>

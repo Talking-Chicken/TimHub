@@ -7,7 +7,7 @@ public class CharacterManager : MonoBehaviour
 {
     [SerializeField] private GameObject nero, tim, secretNero, rigatoni;
     private bool isTimFading = false;
-    [SerializeField] private SpriteRenderer timeRenderer;
+    [SerializeField] private SpriteRenderer timRenderer;
     private TransitionManager transition;
     [SerializeField] Vector2 candlePosition;
     void Start()
@@ -19,8 +19,8 @@ public class CharacterManager : MonoBehaviour
     void Update()
     {
         if (isTimFading)
-            timeRenderer.color += new Color(0, 0, 0, 0.5f * Time.deltaTime);
-        if (timeRenderer.color.a >= 255)
+            timRenderer.color += new Color(0, 0, 0, 0.5f * Time.deltaTime);
+        if (timRenderer.color.a >= 255)
             isTimFading = false;
     }
 
