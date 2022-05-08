@@ -3,6 +3,7 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Church_Candle") == false && Check_Read ("neroGone") == false>>
+    <<Play_SFX SoundManager Orzo_Tim_Painting>>
     Penne: Wh-whoa! This painting...it's so powerful! Is this what Tim really looks like?
     Penne: There's something written on the bottom. 
     Penne: "By the light that burns through the Tim, may the path to Salvation be revealed." 
@@ -21,6 +22,7 @@ position: 300,-101
     Penne: Arson is a crime, but this could lead to something big for the case. I know Nero was hiding something here. 
     Penne: And there's only one way to find out...
         -> Use candle to burn the painting
+            <<Play_SFX SoundManager Burn_Painting>>
             <<Burn_Painting obj_renaissanceTim>>
             <<Set_Read Painting_Burned>>
             Penne: FOR JUSTICE!
@@ -45,6 +47,7 @@ title: churchCandle
 tags:
 position: 300,-101
 ---
+<<Play_SFX SoundManager Candle>>
 <<if Check_Read("neroGone") == false && Check_Read("neroIntro") == true>>
     Penne: The flame looks really strong. I should be careful—it could potentially burn something!
     Penne: This candle could be useful for me...
@@ -75,6 +78,7 @@ tags:
 position: 300,-101
 ---
 <<if Check_Collected("Confession_Log_Book") == false && Check_Read("neroIntro") == true>>
+    <<Play_SFX SoundManager Confession_Book>>
     Penne: This is Nero's logbook of confessions. The entries from on the night Timsday are... about Orzo!
     <<Add_Answer journal Question(Detail) "Murdered for doubts about Tim">>
     Penne: Looks like he talked more about his strange dreams, and about having "a life before Timsville" and "doubts about the sanctity of Tim."
@@ -95,6 +99,7 @@ title: confessionBooth
 tags:
 ---
 <<if Check_Collected("Confession_Booth") == false && Check_Read("neroIntro") == true>>
+    <<Play_SFX SoundManager Confession_Booth_Curtain>>
     Penne: A confession booth. Looks really well padded and cushy. A perfect place to rant!
     <<set $newItem to "Confession_Booth">>
     <<jump addEntry>>
@@ -109,9 +114,7 @@ title: churchOrgan
 tags:
 ---
 <<if Check_Collected("Church_Organ") == false && Check_Read("neroIntro") == true>>
-
     <<Play_SFX SoundManager Church_Organ>>
-
     Penne: How grand! Too bad I quit learning piano after, like, a month. They're the same, right...?
     <<set $newItem to "Church_Organ">>
     <<jump addEntry>>
@@ -142,7 +145,8 @@ tags:
 position: 282,33
 ---
 <<if Check_Collected("Teeth_Timling") == false && Check_Read("neroIntro") == true>>
-    Penne: Uh...hey! Are you ok? 
+    Penne: Uh...hey! Are you ok?
+    <<Play_SFX SoundManager Teeth_Timling>> 
     Teeth Timling: Lost...so lost...
     Penne: Where did you get those, uh, teeth? (Wait do I really want to know that?)
     Teeth Timling: The teeth...from my Dad...they tell me the truths...
@@ -155,6 +159,7 @@ position: 282,33
             Penne: Oh, that's my shampoo scent! 
             Penne: ACK! Wait, don't SMELL me!
             <<set $timlingCount = $timlingCount + 1>>
+            <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Teeth_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling5>>
@@ -175,6 +180,7 @@ position: 282,33
 ---
 <<if Check_Collected("No_Thoughts_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Hi there little fella. Are you lost?
+    <<Play_SFX SoundManager No_Thoughts_Timling>>
     No Thoughts Timling: I got lost on the path of salvation. I don't think I have the attention span for it. 
     Penne: So why are you hanging around the church?
     No Thoughts Timling: I may not have many thoughts, but I do know I miss my family...my Dad and siblings...
@@ -185,6 +191,7 @@ position: 282,33
             Penne: I think I got room for you!
             No Thoughts Timling: Yes! No more independence for me! I love being co-dependent.
             <<set $timlingCount = $timlingCount + 1>>
+            <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "No_Thoughts_Timling">>
             <<Add_Entry journal {$newItem}>>
             <<Collect_Timling obj_timling6>>

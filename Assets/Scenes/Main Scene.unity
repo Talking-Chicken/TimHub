@@ -4116,6 +4116,38 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 8cf8b8b836df243e18ada2a7a430c662, type: 3}
   - clipName: Mount Timling
     clip: {fileID: 8300000, guid: b281765eeff034fe09d6bad13cede6f5, type: 3}
+  - clipName: Cat Rug
+    clip: {fileID: 8300000, guid: ddd475442df384dd4b32454935931637, type: 3}
+  - clipName: Candle
+    clip: {fileID: 8300000, guid: 4ef373bba66fc40728b16410761fea2a, type: 3}
+  - clipName: Confession Book
+    clip: {fileID: 8300000, guid: 8cf8b8b836df243e18ada2a7a430c662, type: 3}
+  - clipName: Burn Painting
+    clip: {fileID: 8300000, guid: 12e886c36839648319b7a779e9603caf, type: 3}
+  - clipName: Confession Booth Curtain
+    clip: {fileID: 8300000, guid: 77b1d91ceb99a4afca0365f1b26d7881, type: 3}
+  - clipName: Rug Lady
+    clip: {fileID: 8300000, guid: 34c0b93440cad46c08ceb81eb60d1c36, type: 3}
+  - clipName: Miku
+    clip: {fileID: 8300000, guid: 34c0b93440cad46c08ceb81eb60d1c36, type: 3}
+  - clipName: Sassy Timling
+    clip: {fileID: 8300000, guid: 34c0b93440cad46c08ceb81eb60d1c36, type: 3}
+  - clipName: Teeth Isle
+    clip: {fileID: 8300000, guid: 7d56ebf374c75491ca338595f21f7abb, type: 3}
+  - clipName: Bodega Fridge
+    clip: {fileID: 8300000, guid: 1bb85cd44e46044ceb8f5e95e77510da, type: 3}
+  - clipName: Bodega Radio
+    clip: {fileID: 8300000, guid: e75623f8c4a4f4cc6b45dc60669b4784, type: 3}
+  - clipName: Bloody Bag
+    clip: {fileID: 8300000, guid: 4ebd49126f4a3453795e001a4fe20d55, type: 3}
+  - clipName: Bodega Newspaper
+    clip: {fileID: 8300000, guid: 452b9845b25fe4d259db9a5d0df37f0f, type: 3}
+  - clipName: Produce Isle
+    clip: {fileID: 8300000, guid: 9cd6b0925a4c541959b5d72afddd1a75, type: 3}
+  - clipName: No Thoughts Timling
+    clip: {fileID: 8300000, guid: 7fba50785e66149ffa1aa5d1c7364460, type: 3}
+  - clipName: Teeth Timling
+    clip: {fileID: 8300000, guid: 36bd0fccb342243f1beb3051376f4bb3, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
