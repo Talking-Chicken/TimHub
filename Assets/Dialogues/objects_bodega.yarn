@@ -89,9 +89,36 @@ title: miku
 tags:
 position: 300,-101
 ---
-<<if Check_Collected("Hatsune_Miku") == false && Check_Read("radiatoreIntroRead") == true>>
+<<if Check_Collected("Hatsune_Miku") == false && Check_Read("radiatoreIntroRead") == true && Check_Read("mikuDialoguePlayed") == false>>
+    Penne: Holy cannoli! My favorite pop star, Hatsune Miku?! 
     <<Play_SFX SoundManager Miku>>
-    Penne: *Sigh* What a pretty lady. Her beauty is simply mesmerizing!
+    Hatsune Miku: こんにちは！はじめまして、探偵。(Hello! Nice to meet you, detective.)
+    Penne: O-Oh! I am so arigato-ful to meet someone as talented as you!
+    Hatsune Miku: それは本当の言葉ではありません！しかし、あなたの努力はとても面白かったです www。(That is not a real word! But your effort was very funny lol.)
+    Penne: C-Can I ask...um, you some questions? UwU...
+    Hatsune Miku: 「UwU」と大声で言いましたか...？ (Did you just say "UwU" out loud...?)
+    Penne: OH HAHA DID I SAY THAT WOW THAT UM WAS SO EMBARRASING!!!
+    Hatsune Miku: 何を聞いてくれたの？(What were you going to ask me?)
+    Penne: Can I get your autograph? You can sign my journal, or my hat, or—
+    <<Camera_Lerp_To GameManager Rigatoni_Bodega>>
+    Rigatoni: Detective Scout! What do you think you're doing? Focus on the case!
+    <<Camera_Lerp_To GameManager Player>>
+    <<Play_SFX SoundManager Penne_Shriek>>
+    Penne: Eek! I've been caught!!!
+    <<Camera_Lerp_To GameManager obj_radiatore>>
+    Radiatore: Autographs cost 100,000 tim bucks. 
+    <<Camera_Lerp_To GameManager Player>>
+    Penne: What!? That doesn't sound like something I can afford!
+    <<Camera_Lerp_To GameManager obj_wisdomTooth>>
+    Wisdom Tooth: Why does nobody asketh ME for an authograph!?
+    <<Camera_Lerp_To GameManager Player>>
+    Penne: The life of a fangirl is hard. *Sigh* I shall be content with soaking in her mesmerizing beauty... 
+    <<Set_Read mikuDialoguePlayed>>
+    <<set $newItem to "Hatsune_Miku">>
+    <<jump addEntry>>
+<<elseif Check_Collected("Hatsune_Miku") == false && Check_Read("radiatoreIntroRead") == true && Check_Read("mikuDialoguePlayed") == true>>
+    Penne: Konnichiwa again!
+    Hatsune: こんにちは愚かな探偵！私が永遠に踊るのを見てください！(Hello silly detective! Watch me dance for eternity!)
     <<set $newItem to "Hatsune_Miku">>
     <<jump addEntry>>
 <<elseif Check_Read("radiatoreIntroRead") == false>>

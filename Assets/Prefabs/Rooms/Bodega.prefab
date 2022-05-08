@@ -454,11 +454,12 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: Ham_Dugo
+  _startNode: hamDugo
   collider: {fileID: 3765872721412750215}
   entryList:
   - entryName: Ham Dugo
-    entryDes: "A man named Ham Dugo who lives in the fridge, promoting his resum\xE9."
+    entryDes: "A man named Ham Dugo who lives in the fridge. His resum\xE9 is truly
+      out of this world. Employers want him, competitors fear him!"
     entryImage: {fileID: 21300000, guid: 75c7386535840f746b0bce738b9868ac, type: 3}
     entryType: 0
   hasDifferentDestination: 1
@@ -3748,7 +3749,7 @@ MonoBehaviour:
   _talkable: 1
   _interactable: 0
   _interactFirst: 0
-  _startNode: Hatsune_Miku
+  _startNode: miku
   collider: {fileID: 632347267095626110}
   entryList:
   - entryName: Hatsune Miku

@@ -77,6 +77,8 @@ Penne: (I just have to get him to tell me the details of the truth! Maybe I gott
 Penne: Ok...when you made the delivery and saw Orzo, was there anybody else in the bodega besides you and him?
 Radiatore: N-No! I-It was just me and him. N-Nobody else. For sure. 
 Radiatore: J-Just him and I. B-Business was s-slow. 
+Penne: (That was totally unconvincing! I should write down in his alibi for now, but I'm willing to bet a lot that it's a lie!)
+Penne: (Hopefully as I investigate this place further, he'll tell me the truth. For now, I'll just have to stick with what he told me.)
 <<Set_Read radiatoreLies>>
 <<Add_Entry journal Radiatore_al_Forno>><<Add_Answer journal Question(Criminal) "Radiatore al Forno">>
 <<jump radiatoreScript>>

@@ -30826,6 +30826,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7fba50785e66149ffa1aa5d1c7364460, type: 3}
   - clipName: Teeth Timling
     clip: {fileID: 8300000, guid: 36bd0fccb342243f1beb3051376f4bb3, type: 3}
+  - clipName: Penne Shriek
+    clip: {fileID: 8300000, guid: c019cdc1bb5b95d4988e80c6261e1949, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
