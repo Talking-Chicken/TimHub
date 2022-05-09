@@ -430,8 +430,13 @@ public class JournalControl : MonoBehaviour
     {
         foreach (CaseReportQuestion question in questions)
         {
-            if (question.name.ToLower().Trim().Equals(dropdownName.ToLower().Trim()))
+            if (question.name.ToLower().Trim().Equals(dropdownName.ToLower().Trim())) {
+                if (question.AnswerDropdown.options.Count > 0)
+                    foreach (TMP_Dropdown.OptionData optionData in question.AnswerDropdown.options)
+                        if (optionData.text.Equals(answer))
+                            return;
                 question.AnswerDropdown.options.Add(new TMP_Dropdown.OptionData() { text = answer });
+            }
         }
     }
 }
