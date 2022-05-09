@@ -580,7 +580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sussy Knife
+  m_text: Bloody Gardening Shears
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 91c659d74d21c1b42bb548a8aeec316b, type: 2}
   m_sharedMaterial: {fileID: 4776083757339672980, guid: 91c659d74d21c1b42bb548a8aeec316b, type: 2}
@@ -700,8 +700,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 71.984215, y: 105.251526}
-  m_SizeDelta: {x: 280, y: 38.2062}
+  m_AnchoredPosition: {x: 84.08431, y: 105.251526}
+  m_SizeDelta: {x: 304.2002, y: 38.2062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &168510250816671700
 CanvasRenderer:
