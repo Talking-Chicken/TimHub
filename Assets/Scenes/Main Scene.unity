@@ -27808,6 +27808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question(Location)
       objectReference: {fileID: 0}
+    - target: {fileID: 5178899440854237906, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5505678305904219171, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_Name
       value: Pause Icon
