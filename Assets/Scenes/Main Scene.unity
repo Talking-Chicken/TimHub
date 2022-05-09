@@ -27055,6 +27055,7 @@ GameObject:
   - component: {fileID: 828241869}
   - component: {fileID: 828241868}
   - component: {fileID: 828241867}
+  - component: {fileID: 828241866}
   m_Layer: 5
   m_Name: Black Screen Canvas
   m_TagString: Untagged
@@ -27062,6 +27063,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &828241866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828241865}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &828241867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27436,7 +27454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 604600224106567687, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 825907684498488144, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
       propertyPath: m_SizeDelta.y
