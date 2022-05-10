@@ -70,12 +70,12 @@ Penne: How do you feel about spearmint toothpaste for that tooth ache of yours?
 Wisdom Tooth: SPEARMINT? O, scrumptious, serendipitous spearmint! 
 Wisdom Tooth: If thou applyeth said toothpaste to thine being, I may impart my wisdom...eth!
 Penne: Wisdom? I could definitely use some of that! I shall applyeth it!
-//maybe some sort of SFX of her squeezing toothpaste
+<<Play_SFX SoundManager Toothpaste>>
 Wisdom Tooth: Mmmm...
 Wisdom Tooth: MMMMMM...!
 Penne: Uh...?
 Penne: (CLANK! The sound of something metal falls out of the Wisdom Tooth!)
-//sfx of clanking noise because the Bloody Gardening Shears have fallen out!!!
+<<Play_SFX SoundManager Shears_Drop>>
 Wisdom Tooth: AHHH...much better! 
 Penne: What the—you had some gardening shears stuck in you this WHOLE time?
 Wisdom Tooth: Indeed, Pennelope! I have been attempting to rid myself of that gardening accoutrement since late Timsday! 

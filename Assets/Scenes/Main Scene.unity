@@ -31529,6 +31529,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 36bd0fccb342243f1beb3051376f4bb3, type: 3}
   - clipName: Penne Shriek
     clip: {fileID: 8300000, guid: c019cdc1bb5b95d4988e80c6261e1949, type: 3}
+  - clipName: Shears Drop
+    clip: {fileID: 8300000, guid: 4c76218dfa3c14f69a00a7fbd5f1a2bf, type: 3}
+  - clipName: Nero Enter
+    clip: {fileID: 8300000, guid: 5a0135333db9249898f4c4bdb4bbeea0, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}

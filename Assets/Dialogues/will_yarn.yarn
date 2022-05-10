@@ -16,7 +16,7 @@ Penne: I also need to find Nero and ask about the will. If he hid evidence that'
 <<Transition_Anim GameManager>>
 <<Nero_In GameManager>>
 <<wait 2>>
-//door opening sfx
+<<Play_SFX SoundManager Nero_Enter>>
 Nero: ...What are you doing here?
 Penne: OH! H-hello. Eh-hem. 
 Penne: So what is this will to Parapadelle Parmesan? You know obstruction of justice is a crime, right?
