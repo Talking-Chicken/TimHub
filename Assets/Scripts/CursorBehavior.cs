@@ -22,10 +22,12 @@ public class CursorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if (hit.collider != null && hit.collider.gameObject.GetComponent<InteractiveObj>() != null)
         {
-            Cursor.SetCursor(cursorHover, hotSpot, cursorMode);
+            if (playerControl.CanInvestigate)
+                Cursor.SetCursor(cursorHover, hotSpot, cursorMode);
             //print(hit.collider.gameObject);
         } else {
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);

@@ -24,6 +24,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     [SerializeField, EnableIf("hasDifferentDestination"), BoxGroup("Path Finding")] private Transform destination;
     [SerializeField, EnableIf("hasDifferentDestination"), BoxGroup("Path Finding")] private List<Transform> destinations;
     
+    private PlayerControl player;
 
     //getter & setters
     public string StartNode { get { return _startNode; } set { _startNode = value; } }
@@ -45,6 +46,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
             _interactFirst = false;
 
         objSprite = collider.gameObject.GetComponent<SpriteRenderer>();
+        player = FindObjectOfType<PlayerControl>();
     }
 
     public virtual void interact() {
@@ -56,7 +58,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
      */
     public virtual void talk()
     {
-        PlayerControl player = FindObjectOfType<PlayerControl>();
+        
         DialogueRunner runner = player.runner;
         runner.StartDialogue(StartNode);
         player.changeState(player.stateDialogue);
@@ -64,11 +66,13 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
 
     void OnMouseOver()
     {
-        objSprite.color = new Color(1, (float)0.7, (float)0.9, 1);
+        if (player.CanInvestigate)
+            objSprite.color = new Color(1, (float)0.7, (float)0.9, 1);
     }
 
     void OnMouseExit()
     {
-        objSprite.color = Color.white;
+        if (player.CanInvestigate)
+            objSprite.color = Color.white;
     }
 }

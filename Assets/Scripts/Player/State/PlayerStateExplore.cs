@@ -6,6 +6,7 @@ public class PlayerStateExplore : PlayerStateBase
 {
     public override void enterState(PlayerControl player){
         player.blurCamera.SetActive(false);
+        player.CanInvestigate = true;
     }
     public override void updateState(PlayerControl player){
         InteractiveObj interactingObj = null;
@@ -53,6 +54,8 @@ public class PlayerStateExplore : PlayerStateBase
             player.moveTo(player.Destination);
     }
     public override void leaveState(PlayerControl player){
+        player.CanInvestigate = false;
+
         //stop player moving
         player.Destination = player.transform.position;
         player.blurCamera.SetActive(true);

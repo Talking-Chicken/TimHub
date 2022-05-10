@@ -1103,7 +1103,7 @@ MonoBehaviour:
   cursorHover: {fileID: 2800000, guid: beaf411575d0575449eb8fccc1f2c37e, type: 3}
   cursorMode: 1
   hotSpot: {x: 0, y: 0}
-  playerControl: {fileID: 0}
+  playerControl: {fileID: 1034750823}
 --- !u!114 &566502071 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2735779755873038952, guid: 985ae7672d1b92a4cb5ce2f86d218d60, type: 3}
@@ -2910,6 +2910,7 @@ MonoBehaviour:
   entryList: []
   hasDifferentDestination: 0
   destination: {fileID: 0}
+  destinations: []
 --- !u!61 &1117723944
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ public class PlayerControl : MonoBehaviour
 
     //control
     [SerializeField, BoxGroup("Control")] private int primaryMouseButton, secondaryMouseButton;
+    private bool canInvestigate = false;
 
     //dialogue
     [BoxGroup("Dialgoue")] public InteractiveObj interactingObj;
@@ -46,7 +47,7 @@ public class PlayerControl : MonoBehaviour
     public int SecondaryMouseButton {get => secondaryMouseButton; set => secondaryMouseButton = value;}
     public InteractiveObj TargetingDialogueNPC {get => targetingDialogueNPC; set => targetingDialogueNPC = value;}
     public bool IsForcedToMove {get => isForcedToMove; set => isForcedToMove = value;}
-
+    public bool CanInvestigate {get => canInvestigate; set => canInvestigate = value;}
     //post processing
     [BoxGroup("post-processing")] public GameObject blurCamera; //active it when want to blur the camera
 
