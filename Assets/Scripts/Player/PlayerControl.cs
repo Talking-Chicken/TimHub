@@ -211,7 +211,14 @@ public class PlayerControl : MonoBehaviour
                 Vector2 unit = (playerPos-NPCPos).normalized;
                 Destination = NPCPos + (unit * 1.5f);
             } else {
-                Destination = NPC.Destination.position;
+                if (NPC.Destinations.Count < 1)
+                    Destination = NPC.Destination.position;
+                else {
+                    Destination = NPC.Destinations[0].position;
+                    foreach(Transform targetDes in NPC.Destinations)
+                        if (Vector2.Distance(transform.position, targetDes.position) < Vector2.Distance(transform.position, Destination))
+                            Destination = targetDes.position;
+                }
             }
         }
         if (Vector2.Distance(transform.position, Destination) <= 0.3f) {

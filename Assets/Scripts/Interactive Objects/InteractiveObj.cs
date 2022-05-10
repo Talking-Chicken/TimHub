@@ -22,6 +22,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     //pathfinding destination
     [SerializeField, BoxGroup("Path Finding")] private bool hasDifferentDestination;
     [SerializeField, EnableIf("hasDifferentDestination"), BoxGroup("Path Finding")] private Transform destination;
+    [SerializeField, EnableIf("hasDifferentDestination"), BoxGroup("Path Finding")] private List<Transform> destinations;
     
 
     //getter & setters
@@ -32,6 +33,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
     public List<entry> EntryList { get => entryList; set => entryList = value; }
     public bool HasDifferentDestination {get => hasDifferentDestination;}
     public Transform Destination {get => destination;}
+    public List<Transform> Destinations {get => destinations;}
 
     void Start()
     {
