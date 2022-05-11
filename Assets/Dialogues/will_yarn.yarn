@@ -7,7 +7,8 @@ tags:
 title: aboutWill
 position: -228,206
 ---
-Penne: Hold up, what's this? "The Last Will and Testament of Pappardelle Parmesan." 
+Penne: Hold up, what's this? 
+Penne: "The Last Will and Testament of Pappardelle Parmesan." 
 Penne: According to this will, Pappardelle was Orzo's dad! Was Orzo sent this will before he died? Why is it hidden here?
 Penne: This looks really important... I'm gonna add it to my journal now. 
 <<set $newItem to "The_Will">>
