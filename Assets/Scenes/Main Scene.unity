@@ -3706,6 +3706,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6c3b15291f470f34299e2a657e10af6a, type: 3}
     - target: {fileID: 345782691, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
+      propertyPath: rugLadyDefault
+      value: 
+      objectReference: {fileID: 21300000, guid: 1df7af06d119b5348b7d65534e495f23, type: 3}
+    - target: {fileID: 345782691, guid: f6fabc0779c95934582bd1e334ac8504, type: 3}
       propertyPath: fridgeBoyDefault
       value: 
       objectReference: {fileID: 21300000, guid: ae2f9dedd8cd768418d53b7b2ad0267d, type: 3}

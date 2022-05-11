@@ -12,7 +12,7 @@ public class DialogueControl : MonoBehaviour
     [SerializeField, Foldout("Portraits")] 
     Sprite penneDefault, radiatorDefault, RigatoniDefault, stelleDefault, timDefault, neroDefault, orzoDefault, portraitDefault,
            hamDugoDefault, blankieBoyDefault, mikuDefault, wisdomToothDefault, buffTimlingDefault, tapeTimlingDefault,
-           mounTimlingDefault, sassyTimlingDefault, teethTimglingDefault, noThoughtTimlingDefault, fridgeBoyDefault; 
+           mounTimlingDefault, sassyTimlingDefault, teethTimglingDefault, noThoughtTimlingDefault, fridgeBoyDefault, rugLadyDefault; 
 
     /* show portrait of the talking character, if there's one.
        if there's not, show default portrait*/
@@ -71,6 +71,9 @@ public class DialogueControl : MonoBehaviour
                 break;
             case "fridge gremlin":
                 portraitImage.sprite = fridgeBoyDefault;
+                break;
+            case "rug lady":
+                portraitImage.sprite = rugLadyDefault;
                 break;
             default:
                 portraitImage.sprite = portraitDefault;
