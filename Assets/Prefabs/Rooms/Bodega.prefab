@@ -2824,8 +2824,9 @@ MonoBehaviour:
   entryList:
   - entryName: Radiatore al Forno
     entryDes: 'The delivery man in Timsville. He says he only saw Orzo on Timsday
-      working his shift to deliver something. No one else was there, and he only
-      saw him once. '
+      evening working his shift to deliver something, but made a mistake. Whatever
+      he was delivering was supposedly not for Orzo. No one else was there, and he
+      only saw him once. '
     entryImage: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     entryType: 1
   - entryName: More on Radiatore al Forno
@@ -2836,9 +2837,9 @@ MonoBehaviour:
     entryType: 1
   - entryName: Radiatore al Forno Update
     entryDes: 'Orzo wasn''t the only person he saw: there was Tim and a "holy man"
-      at the bodega too. Why would he lie to me? Also, he doesn''t know anything
-      about the shears, so these suspicious people must have visited twice and Radiatore
-      was only there to witness the first time. '
+      at the bodega too. Was supposed to deliver something to Orzo, Orzo got a glimpse
+      of it, but it was taken away by Tim and the holy man. These suspicious people
+      must have visited twice and Radiatore was only there to witness the first time. '
     entryImage: {fileID: 21300000, guid: 1f412b208805d8844b5bfd0ea066a570, type: 3}
     entryType: 1
   hasDifferentDestination: 0

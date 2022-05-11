@@ -23,7 +23,8 @@ position: 300,-101
 ---
 //  DONE
 <<if Check_Collected("The_Rug_Lady") == false && Check_Read("radiatoreIntroRead") == true>>
-    Penne: Oh, I'm so sorry, I almost stepped on you!
+    Penne: Oh, I'm so sorry! I didn't notice you there. 
+    Penne: Um, does it hurt when I step on you? (Am I allowed to?)
     <<Play_SFX SoundManager Rug_Lady>>
     Rug Lady: Worry not, my child. For my existence is naught if I am not a conduit for the soles of your chosen footwear. Avoiding that truth is futile.
     <<set $newItem to "The_Rug_Lady">>
@@ -58,7 +59,7 @@ position: 300,-101
     Ham Dugo: I speak fifteen percent Italian and am one hundred percent skilled in keeping it cool. 
     Penne: Oh wow! That's so impressive. Do you work here then? In, um, the fridge...?
     Ham Dugo: I am unemployed. 
-    Penne: Don't worry. I'm sure some employer out there is looking for someone exactly like you! 
+    Penne: ...Oh. Um...don't worry! I'm sure some employer out there is looking for someone exactly like you! 
     Ham Dugo: Thanks detective... (I should've taken the Survival Skills class at the NYU Game Center...if only I knew how helpful it would be!)
     <<set $newItem to "Ham_Dugo">>
     <<jump addEntry>>
@@ -204,7 +205,7 @@ tags:
     MounTimDew Timling: (muffled) I losht mah Dad and am shtuck to this can. 
     Penne: Oh no! You lost your Dad?
     MounTimDew Timling: Mah Dad...mah shiblings...I mith them...
-    MounTimDew Timling: Take me with you and halp me find them! 
+    MounTimDew Timling: Take me with you and halp me find all six of us! 
         -> Take MounTimDew Timling
             Penne: Sure, come along with me! You and your can!
             MounTimDew Timling: You're the besht! Wanna sip?
@@ -233,7 +234,7 @@ tags:
     Sassy Timling: Yeah, your FACE, crusty! If you take me maybe you'll be less of a loser.
     Penne: Take you with me? 
     Sassy Timling: You heard me right! I'm, like, trying to get found. Cuz I'm lost!
-    Sassy Timling: Take me with you and, like, reunite me with my fam!
+    Sassy Timling: Take me with you and, like, reunite me with my fam: all SIX of my siblings!
         -> Take Timling
             Penne: I am many things, but I am not a loser! All aboard the Penne train!
             Sassy Timling: Nice. 
@@ -278,7 +279,7 @@ Penne: Wibbit wibbit.
 title: Fridge_01
 ---
 <<Play_SFX SoundManager Bodega_Fridge>>
-Penne: Guts, milks, medecines...
+Penne: Guts, milks, medicine...all the Timsvillian usuals, huh?
 ===
 
 title: Fridge_02
@@ -286,12 +287,14 @@ title: Fridge_02
 Penne: S-sir..? Do you need any help?
 <<Play_SFX SoundManager Blankie_Boy>>
 Fridge Gremlin: No thank you, miss, I am quite all right. I am enjoying the luxurious sensation of dipping my toes in innards and entrails.
+Fridge Gremlin: It's so moisturizing! 
+Penne: I-I can imagine...
 ===
 
 title: Fridge_03
 ---
 <<Play_SFX SoundManager Bodega_Fridge>>
-Penne: Guts, milks, medecines... And a girl?!
+Penne: Guts, milks, medicine... And a girl?!
 Penne: She... seems happy enough.
 ===
 
@@ -305,7 +308,8 @@ Register: *The Bodega currently has 0.74 tim cents in its account.*
 title: Radio
 ---
 <<Play_SFX SoundManager Bodega_Radio>>
-Penne: The announcer on the radio is complaining about the weather. Apparently it's too nice outside.
+Penne: The announcer on the radio is complaining about the weather. 
+Penne: Apparently it's too nice outside.
 ===
 
 title: Bloody_Bag
@@ -316,14 +320,17 @@ Penne: I'll leave it alone.
 ===
 title: Newspaper_01
 ---
-Penne: This newspaper's about a week old. It reads:
+Penne: This newspaper from the Timsville Times is about a week old. The headline reads:
 <<Play_SFX SoundManager Bodega_Newspaper>>
-Penne: "Timsville Times. Sportsball. An image of someone running after someone else and throwing a ball at them. "RUN!!!!!""
+Penne: "Sportsball!" (What kind of sport is that?)
+Penne: There's also an image of someone running after someone else and throwing a ball at them. 
+Penne: There's a big quote right next to it: "RUN!!!!!"
+Penne: ...Sportsball sounds super intense!
 ===
 
 title: Newspaper_02
 ---
-Penne: This newspaper's a couple days old. It reads:
+Penne: This newspaper's from the Timsville Times. It's a couple days old. The main article reads:
 <<Play_SFX SoundManager Bodega_Newspaper>>
-Penne: "Timsville Times. Daily quote: 'Who are all these people with cameras?' -Tim"
+Penne: "Daily quote: 'Who are all these people with cameras?' - Tim"
 ===
