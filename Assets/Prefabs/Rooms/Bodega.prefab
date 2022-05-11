@@ -3195,7 +3195,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1901766707
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1429078332597849585, guid: fba992f0b80f0491dbb6f0dec1583efb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9034,7 +9034,7 @@ MonoBehaviour:
   _startNode: Fish_ATM
   collider: {fileID: 5495361957601697916}
   entryList:
-  - entryName: Fish_ATM
+  - entryName: Fish ATM
     entryDes: A fish ATM that speaks in a Scottish accent.
     entryImage: {fileID: 21300000, guid: 9d0e81960b9e4514589259d2d05e9758, type: 3}
     entryType: 0
