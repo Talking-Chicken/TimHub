@@ -42,7 +42,7 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("Nero_Death")]
     public void neroDeath()
     {
-        StartCoroutine(waitToDective(secretNero));
+        StartCoroutine(waitToDeactive(secretNero));
     }
 
     [YarnCommand("Nero_In")]
