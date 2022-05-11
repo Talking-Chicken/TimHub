@@ -1170,7 +1170,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bodega
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5881176685151186494, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
 --- !u!1 &655164322
 GameObject:
@@ -3498,6 +3499,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1299875784404771153, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574359137155929118, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440045917920144281, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852558115413343071, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004277476143921749, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
+      objectReference: {fileID: 0}
     - target: {fileID: 8872440421651647760, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -4036,11 +4057,15 @@ PolygonCollider2D:
       - {x: -13.449282, y: 1.4288592}
       - {x: -12.602331, y: 0.6026056}
       - {x: -12.449572, y: 0.04383874}
-      - {x: -16.312479, y: 0.041005135}
-      - {x: -16.351175, y: 0.6221347}
-      - {x: -14.128662, y: 0.67187357}
+      - {x: -13.377998, y: 0.07714391}
+      - {x: -13.795143, y: 0.66360116}
+      - {x: -13.783779, y: 1.5152986}
+      - {x: -14.176283, y: 1.9191818}
       - {x: -14.141521, y: 4.910408}
       - {x: -17.726646, y: 4.8889437}
+      - {x: -17.755634, y: 0.69767237}
+      - {x: -15.0935, y: 0.7270882}
+      - {x: -15.169373, y: 0.051475525}
       - {x: -17.679003, y: 0.03730321}
       - {x: -18.274883, y: 0.023257732}
 --- !u!4 &1570256277

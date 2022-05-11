@@ -58,7 +58,6 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
      */
     public virtual void talk()
     {
-        
         DialogueRunner runner = player.runner;
         runner.StartDialogue(StartNode);
         player.changeState(player.stateDialogue);
