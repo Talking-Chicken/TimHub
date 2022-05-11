@@ -33,7 +33,7 @@ public class JournalControl : MonoBehaviour
     //gameobjects of different sections
     [SerializeField, BoxGroup("Journal Body"), Tooltip("this is used to block player mouse raycast, when clicking on journal icon")]
     private GameObject blockRaycastSquareForJournal, blockRaycastSquareForExit; //the suqare that blocks mouse raycast, so player won't move when they clicked on journal icon
-    [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon, exitIcon;
+    [SerializeField, BoxGroup("Journal Body")] private GameObject journalBody, journalIcon, exitIcon, nextPageButton, previousPageButton;
     [SerializeField, BoxGroup("Alibi")] private GameObject alibiEntriesContainer, alibieTab;
     [SerializeField, BoxGroup("Item")] private GameObject itemEntriesContainer, itemTab;
     [SerializeField, BoxGroup("Case Report")] private GameObject caseReport, caseReportTab;
@@ -109,6 +109,13 @@ public class JournalControl : MonoBehaviour
         blockRaycastSquareForJournal.transform.position = Camera.main.ScreenToWorldPoint(journalIcon.transform.position);
         blockRaycastSquareForExit.transform.position = Camera.main.ScreenToWorldPoint(exitIcon.transform.position);
         pageText.text = page + "/" + maxPage;
+        if (maxPage <= 1) {
+            nextPageButton.SetActive(false);
+            previousPageButton.SetActive(false);
+        } else {
+            nextPageButton.SetActive(true);
+            previousPageButton.SetActive(true);
+        }
     }
 
     #region open and close sections, also notice that tab will change their hierarchy in canvas
@@ -142,6 +149,7 @@ public class JournalControl : MonoBehaviour
     public void openCaseReport()
     {
         Canvas.ForceUpdateCanvases();
+        maxPage = 1;
         caseReport.SetActive(true);
         bringToTop(caseReportTab, journalBody);
         FindObjectOfType<SoundManager>().playUISound("Journal Open");
@@ -155,6 +163,7 @@ public class JournalControl : MonoBehaviour
 
     public void openCaseBrief()
     {
+        maxPage = 1;
         caseBrief.SetActive(true);
         bringToTop(caseBriefTab, journalBody);
         FindObjectOfType<SoundManager>().playUISound("Journal Open");
