@@ -39,6 +39,12 @@ public class CharacterManager : MonoBehaviour
         StartCoroutine(waitToDeactive(nero));
     }
 
+    [YarnCommand("Nero_Death")]
+    public void neroDeath()
+    {
+        waitToDeactive(secretNero);
+    }
+
     [YarnCommand("Nero_In")]
     public void neroIn()
     {
@@ -47,12 +53,14 @@ public class CharacterManager : MonoBehaviour
     }
 
     [YarnCommand("Rigatoni_Move_To_Candle")]
-    public void rigatoniMoveToCandle() {
+    public void rigatoniMoveToCandle()
+    {
         rigatoni.transform.position = candlePosition;
     }
 
     [YarnCommand("Rigatoni_Move_Out")]
-    public void rigatoniMoveOut() {
+    public void rigatoniMoveOut()
+    {
         rigatoni.SetActive(false);
     }
 
