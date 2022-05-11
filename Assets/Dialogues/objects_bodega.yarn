@@ -302,7 +302,7 @@ title: Register
 ---
 <<Play_SFX SoundManager Bodega_Register>>
 Penne: This register is keeping track of the Bodega's earnings!
-Register: *The Bodega currently has 0.74 tim cents in its account.*
+Penne: *The Bodega currently has 0.74 tim cents in its account.*
 ===
 
 title: Radio

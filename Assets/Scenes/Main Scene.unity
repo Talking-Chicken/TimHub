@@ -4195,6 +4195,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4c76218dfa3c14f69a00a7fbd5f1a2bf, type: 3}
   - clipName: Nero Enter
     clip: {fileID: 8300000, guid: 5a0135333db9249898f4c4bdb4bbeea0, type: 3}
+  - clipName: Tim Fade
+    clip: {fileID: 8300000, guid: 3c28405c088c242208955e5e06677d7e, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
