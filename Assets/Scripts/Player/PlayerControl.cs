@@ -221,6 +221,7 @@ public class PlayerControl : MonoBehaviour
         }
         if (Vector2.Distance(transform.position, Destination) <= 0.3f) {
             NPC.talk();
+            NPC.OnMouseExit();
             isForcedToMove = false;
         }
     }

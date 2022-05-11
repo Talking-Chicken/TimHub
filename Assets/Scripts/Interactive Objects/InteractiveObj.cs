@@ -69,7 +69,7 @@ public class InteractiveObj : MonoBehaviour, IInteractable, ITalkable
             objSprite.color = new Color(1, (float)0.7, (float)0.9, 1);
     }
 
-    void OnMouseExit()
+    public void OnMouseExit()
     {
         if (player.CanInvestigate)
             objSprite.color = Color.white;

@@ -9,6 +9,8 @@ public class EndingManager : MonoBehaviour
 {
     [SerializeField, Foldout("player attempt answer")] TMP_Dropdown criminalAnswerText, causeAnswerText, timeAnswerText, locationAnswerText, detailAnswerText; 
     [SerializeField, BoxGroup("THE correct answer"),ResizableTextArea]string criminal, cause, time, location, detail;
+    [SerializeField, BoxGroup("Ending Screen")] GameObject endingScreen;
+    [SerializeField, BoxGroup("Ending Screen")] TextMeshProUGUI endingText;
     public static int answerCorrectness = 0;
 
     [YarnFunction("Report_Answer")]
@@ -35,5 +37,33 @@ public class EndingManager : MonoBehaviour
             if (detailAnswerText.options[detailAnswerText.value].text.ToLower().Trim().Equals(detail.ToLower().Trim())) percentCorrect += 20;
         answerCorrectness = percentCorrect;
         Debug.Log(answerCorrectness + " is the correctness");
+    }
+
+    public void activeEndingScreen() {
+        endingScreen.SetActive(true);
+    }
+
+    [YarnCommand("Active_Bad_End")]
+    public void activeBadEnd() {
+        activeEndingScreen();
+        endingText.text = "Bad End (1/4)";
+    }
+
+    [YarnCommand("Active_Neutral_End_Stay")]
+    public void activeNeturalEndStay() {
+        activeEndingScreen();
+        endingText.text = "Neutral End: Stay in Timsville (2/4)";
+    }
+
+    [YarnCommand("Active_Neutral_End_Leave")]
+    public void activeNeutralEndLeave() {
+        activeEndingScreen();
+        endingText.text = "Neutral End: Leave Timsville (3/4)";
+    }
+
+    [YarnCommand("Active_Good_End")]
+    public void activeGoodEnd() {
+        activeEndingScreen();
+        endingText.text = "True End (4/4)";
     }
 }
