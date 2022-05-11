@@ -15,7 +15,6 @@ tags:
 position:
 ---
 <<if Report_Answer() < 100>>
-    <<Black_Out_Screen GameManager>>
     <<jump EndBad>> //if penne gets it wrong, go to Bad End
 <<endif>>
 Penne: Here's how the murder really went down. //if penne gets it right:
