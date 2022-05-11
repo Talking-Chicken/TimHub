@@ -109,7 +109,7 @@ Nero: Personally, I'm an advocate for Tim's abdominal eminence. But everything a
 Penne: Yeah, it's a really shiny and sparkly painting, too! Makes me want to touch it—
 Nero: Do NOT touch the painting. It is exceptionally fragile and could easily be destroyed.
 Penne: Jeepers, sorry! I'll be careful around the painting. 
-Penne: (I wasn't actually going to touch it. But Nero's reaction was interesting. He totally freaked out for someone who is so calm and serene. It almost seems suspicious.)
+Penne: (I wasn't actually going to touch it. But Nero's reaction was interesting. He totally freaked out for someone who seems so calm and collected. It almost seems suspicious.)
 Penne: (Now really looking at the painting, I think there's something behind it! I can see the shadow of something because of Tim's pale white abs.)
 Nero: ...hands, the burning flame of a candle, anything could bring ruin to his holy painting. We must always be cautious.
 Penne: Yeah, totally. I'll be super duper careful!
@@ -172,10 +172,10 @@ title: question_confessionLogbook
 position: 189,119
 ---
 
-Penne: Your log book states that Orzo came to confess to you the night he was murdered. 
+Penne: Your log book states that Orzo came to confess to you the night he was murdered!
 Nero: ...
-Penne: You've written here that you saw him the night he died. The log book puts Orzo's location right here at the church!
-Penne: Care to explain why you lied about not seeing him?
+Penne: The log book puts Orzo's location right here at the church! You've written here that you saw him the night he died. 
+Penne: Why would you lie about not seeing Orzo? That's extra suspicious, you know! 
 Nero: Hmm...
 Nero: Ah, yes. I remember now. I did see Orzo that night. 
 Penne: How could you not tell me such vital information? He was MURDERED!
@@ -246,7 +246,9 @@ Nero: No, HER!
 <<Camera_Lerp_To GameManager npc_rigatoni_church>>
 Rigatoni: I must journey on to the path to reach Salvation...
 Penne: (Rigatoni picks up the candle and walks towards the Tim Painting very slowly...)
+<<Camera_Lerp_To GameManager npc_nero>>
 Nero: Put the candle down before you do something you'll regret!
+<<Camera_Lerp_To GameManager npc_rigatoni_church>>
 Rigatoni: By the light that burns through the Tim, may the path to Salvation be revealed.
 Penne: Rigatoni, careful! You could set something on FIRE—we don't have the budget to pay for damages at the bureau!!!
 Rigatoni: I can sense the place of Salvation here...Orzo and Tim call for me! 

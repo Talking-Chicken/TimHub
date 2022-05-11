@@ -34,8 +34,11 @@ position: 300,-101
     <<endif>>
     <<if Check_Read("Painting_Burned") == true>>
         Penne: Woah, a secret entrance appeared behind painting! I KNEW there was something that priest was hiding!
+        Penne: It looks like a small room. No windows, no other exits or entrances...
         Penne: Once I enter, there's no going back. 
-        -> Enter the void (Penne cannot return to the Church if she enters the void.)
+        -> Enter the secret room (Penne cannot return to the Church if she enters.)
+            Penne: Well, here goes nothing!
+            Penne: ...
             <<Room_Change GameManager>>
         -> Maybe later 
             Penne: I'll take another look around for anything else. 
@@ -79,7 +82,7 @@ position: 300,-101
 ---
 <<if Check_Collected("Confession_Log_Book") == false && Check_Read("neroIntro") == true>>
     <<Play_SFX SoundManager Confession_Book>>
-    Penne: This is Nero's logbook of confessions. The entries from on the night Timsday are... about Orzo!
+    Penne: This is Nero's log book of confessions. The entries from on the night Timsday are... about Orzo!
     <<Add_Answer journal Question(Detail) "Murdered for doubts about Tim">>
     Penne: Looks like he talked more about his strange dreams, and about having "a life before Timsville" and "doubts about the sanctity of Tim."
     Penne: According to this, Nero's advice was to pray and believe in Tim to guide him.
@@ -147,11 +150,12 @@ position: 282,33
 <<if Check_Collected("Teeth_Timling") == false && Check_Read("neroIntro") == true>>
     Penne: Uh...hey! Are you ok?
     <<Play_SFX SoundManager Teeth_Timling>> 
-    Teeth Timling: Lost...so lost...
+    Teeth Timling: Lost...so lost...where is...my family?
     Penne: Where did you get those, uh, teeth? (Wait do I really want to know that?)
     Teeth Timling: The teeth...from my Dad...they tell me the truths...
     Penne: Oh yeah? What kinds of truth?
     Teeth Timling: Help me feel...less...lost and lonely...
+    Teeth Timling: There were...six of us...but we are...now apart...
     Teeth Timling: Will you be like...the teeth? Help me be...found?
         -> Take Teeth Timling
             Penne: Yeah, why not? Just call me PenneloTEETH! 
