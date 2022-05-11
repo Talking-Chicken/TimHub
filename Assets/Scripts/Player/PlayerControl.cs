@@ -105,13 +105,14 @@ public class PlayerControl : MonoBehaviour
         currentState.updateState(this);
         Animate();
         
+        /*
         if (Input.GetKeyDown(KeyCode.Alpha5))
             waitMoveAndTalkTo("Rigatoni");
         //Debug.Log(Vector2.Distance(transform.position, Destination));
         if (!currentState.Equals(statePause))
             if (Input.GetKeyDown(KeyCode.P))
                 changeState(statePause);
-        
+        */
     }
 
     void FixedUpdate() {
@@ -124,10 +125,6 @@ public class PlayerControl : MonoBehaviour
     */
     public void moveTo(Vector2 destination) {
         Vector2 movingPos = Vector2.MoveTowards(transform.position, destination, Time.deltaTime*speed);
-        /*if (movingPos.x - transform.position.x > 0)
-            myRenderer.flipX = true;
-        else
-            myRenderer.flipX = false;*/
 
         Vector2 direction = new Vector2(movingPos.x - transform.position.x, movingPos.y - transform.position.y);
         float moveX = 0f;

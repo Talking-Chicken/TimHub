@@ -19,8 +19,9 @@ public class PlayerStateDialogue : PlayerStateBase
             }
         }
 
+        /*
         if (Input.GetKey(KeyCode.LeftControl))
-            player.runner.GetComponentInChildren<LineView>().OnContinueClicked();
+            player.runner.GetComponentInChildren<LineView>().OnContinueClicked(); */
         player.dialogueControl.changePortrait();
         player.canvasGroup.alpha = 1;
     }

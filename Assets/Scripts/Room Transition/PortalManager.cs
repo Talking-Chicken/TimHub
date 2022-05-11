@@ -15,8 +15,10 @@ public class PortalManager : MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.A))
             StartCoroutine(transitionAnimation());
+        */
     }
 
     public static void teleport()

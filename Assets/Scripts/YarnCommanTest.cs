@@ -11,12 +11,6 @@ public class YarnCommanTest : MonoBehaviour
         runner = FindObjectOfType<DialogueRunner>();
     }
 
-    
-    void Update()
-    {
-        
-    }
-
     [YarnCommand]
     public void debugMessage() {
         Debug.Log("debugging");
