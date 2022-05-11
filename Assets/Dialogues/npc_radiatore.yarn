@@ -51,7 +51,7 @@ Wisdom Tooth: Thou dares deny the presence of the almighty Wisdom Tooth! Thou da
 <<Camera_Lerp_To GameManager Player>>
 Penne: AAH! You— You're a talking tooth!
 Radiatore: H-hey, shut up, Tooth! What has Nero told you about barging into other people's conversations?!
-Penne: (Nero? Who's that? Sounds like someone important.)
+Penne: (Nero? That's the priest Stelle mentioned..!)
 <<Camera_Lerp_To GameManager obj_wisdomTooth>>
 Wisdom Tooth: ...Harumph!
 <<Camera_Lerp_To GameManager Player>>

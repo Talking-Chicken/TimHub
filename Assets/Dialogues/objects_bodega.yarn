@@ -260,7 +260,8 @@ title: Teeth_Isle
 //wait to see what we do with teeth isle/baby heads
 <<if Check_Collected("Produce_Isle") == false && Check_Read("radiatoreIntroRead") == true>>
     <<Play_SFX SoundManager Teeth_Isle>>
-    Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
+    Penne: The toddlers of Timsville have a bright future in store!
+    Penne: Though, I... don't know why they're hanging above those teeth pots.
     <<set $newItem to "Produce_Isle">>
     <<jump addEntry>>
 <<elseif Check_Read("radiatoreIntroRead") == false>>

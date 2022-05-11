@@ -33,7 +33,7 @@ position: 40,-174
     -> I'm done.
         <<if Check_Read("neroBloodyShears") == true && Check_Read("neroMysteriousLetter") == true>>
             Nero: Investigate all you like.
-            Nero: Mind the candle on the left. The Tim painting in this church is quite flammmable. 
+            Nero: Mind the candle on your right. The Tim painting in this church is quite flammmable. 
         <<elseif Check_Read("neroMysteriousLetter") == false || Check_Read("neroBloodyShears") == false>>
             Penne: (Wait! There's something else I want to ask him about the evidence I've collected so far.)
                 <<jump neroScript>>
