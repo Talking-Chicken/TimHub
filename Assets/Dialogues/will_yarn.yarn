@@ -37,7 +37,9 @@ Nero: Too curious.
 Nero: He strayed from the path of salvation, but surely now he is better.
 Penne: Again with this path of salvation! What IS it?
 Nero: You're about to find out.
-<<Tim_Fade_In GameManager>><<Play_SFX SoundManager Tim_Fade>><<Add_Answer journal Question(Criminal) "Tim">>//TIM ENTERS THE RINNNNNNG - Enable Tim's sprite, but opacity goes fromm 0 to 100%
+<<Tim_Fade_In GameManager>>
+<<Play_SFX SoundManager Tim_Fade>>
+<<Add_Answer journal Question(Criminal) "Tim">>//TIM ENTERS THE RINNNNNNG - Enable Tim's sprite, but opacity goes fromm 0 to 100%
 Tim: Honey, I'm home!//tim show up, talks from here
 Penne: ACK!
 Nero: ...
