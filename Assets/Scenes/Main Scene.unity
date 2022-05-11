@@ -1122,6 +1122,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3329582499889627371, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+      propertyPath: entryList.Array.data[0].entryImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 915e683e94c78634091b44506f2757bc, type: 3}
     - target: {fileID: 5894379972735577724, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4223,6 +4227,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b056c5ccaf3cee64c8aa80dd97a6c2f4, type: 3}
   - clipName: Orzo Room Music
     clip: {fileID: 8300000, guid: 5d08122eee706c346ac998ed7b28332b, type: 3}
+  - clipName: Secret Room Music
+    clip: {fileID: 8300000, guid: bcfa2c46944469b43b61f31d3b596752, type: 3}
   UIAudios:
   - clipName: Click On Item
     clip: {fileID: 8300000, guid: a0328800982438a4ea7ded00462f1461, type: 3}
