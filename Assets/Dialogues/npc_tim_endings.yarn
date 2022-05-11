@@ -3,9 +3,11 @@ tags:
 position:
 ---
 Tim: Well? Do you have your answers? Remember, you only have one try...
--> Yep!
+-> Present the Case Report to Tim
     <<jump EndCalc>>
--> No, wait...
+-> Don't present the Case Report just yet
+    Penne: Wait, um. I want to double check the case report one more time...
+    Tim: Come back and talk to me when you're done!
 ===
 
 title: EndCalc
@@ -53,7 +55,8 @@ Penne: Because Orzo sought comfort through confessions, Nero must've known to ex
 Penne: Thus, to prevent Orzo from escaping Timsville, Nero had stabbed Orzo with the Gardening Shears, the perfect murder weapon: 
 Penne: Something he was familiar with as a gardener and had multiple copies everywhere so he could escape the blame.
 Penne: This would've been the perfect crime if only Nero didn't account for the Wisdom Tooth he stuck it in to give me intel or for me to find the Mysterious Letter he used to trick Orzo. 
-Penne: The Receipts, the Gardening Shears, the Mysterious Letter, the Confession Log Book and its handwriting, and finally the Will...all of these signs are pointing to Nero: the murderer of Orzo Parmesan!
+Penne: The Receipts, the Gardening Shears, the Mysterious Letter, the Confession Log Book and its handwriting, and finally the Will...
+Penne: All of these signs are pointing to Nero: the murderer of Orzo Parmesan!
 <<if $timlingCount == 6>>
     <<jump EndTrue>>//if penne has ALL 6 Timlings: go to True End
 <<else>>
@@ -65,6 +68,7 @@ title: EndTrue
 tags:
 position: -63,-14
 ---
+Penne: ...
 Penne: *Penne presents the evidence she founds to Tim and Nero...*
 Penne: And that concludes my case.
 Tim:... Oh.
@@ -92,22 +96,22 @@ Penne: *All of the Timlings Penne has collected rush out of her detective coat!*
 Tim: Oh... OH... MY TIMLINGS!
 Penne: I met these little fellas around Timsville. They were all looking to be found. Don't you see you all have each other?
 Tim: I thought I had lost you all for good. Where were you all this time? 
-Buff Timling: When you became lonely and created Timsville, you turned to control, manipulation, and lies.
-Tape Timling: VERY UNHEALTHY COPING MECHANISMS!
+Tape Timling: When you became lonely and created Timsville, you turned to control, manipulation, and lies.
+Buff Timling: VERY UNHEALTHY COPING MECHANISMS!
 MounTimDew Timling: And by doing so, you lost parts of yourself, too.
 Sassy Timling: Your humanity.
 Teeth Timling: Your compassion.
 No Thoughts Timling: Us.
-Tape Timling: I'M NOT CALLING YOU DAD, TIM.
+Buff Timling: I'M NOT CALLING YOU DAD, TIM.
 Tim: *Tim stands on his back legs, getting off of all fours. He smacks his back and his chest pops open!*
 Tim: All this time, I thought what I was doing would make me less lonely, fill the voids in my heart.
 Tim: But it seems that my actions have only created more voids... in me and in others as well. Despite everything I've done, would you still like to return?
-Buff Timling: It will be hard to forget the pain you have caused others.
+Tape Timling: It will be hard to forget the pain you have caused others.
 MounTimDew Timling: But even so...
 Sassy Timling: We will stay. Always.
 Teeth Timling: If you can heal the holes in your heart, you can heal the ones you've caused in other's, too.
 No Thoughts Timling: If they let you in.
-Tape Timling: *Sniff sniff* I MISSED YOU... DAD!
+Buff Timling: *Sniff sniff* I MISSED YOU... DAD!
 Tim: *The Timlings fuse with Tim's heart. It becomes whole and voidless.*
 Tim: This warmth. This ache. This love. I feel... whole. At long last. Thank you, detective.
 Penne: Just because you were suffering from loneliness doesn't give you the right to make everyone else miserable, or to use them selfishly to fulfill your own needs.
@@ -121,13 +125,14 @@ Sassy Timling: (Chanting) Timeout, timeout, TIMEOUT!!!
 Nero: No... NOOOOOOOO!
 Tim:...
 Tim: Ah, the beauty of fatherhood. Detective, I can't thank you enough for helping me realize my wrongdoings. Please, accept my humble gift before we part ways.
+<<Play_SFX SoundManager Tim_Fade>>
 Tim: *Tim spits out the arm in his mouth and hacks up a BABY TOOTH.*
 Tim: It has much learning and growing to do, like me. But one day, it will be wise.
 Penne: Thank you... so... much?
 <<Black_Out_Screen GameManager>>
 <<Stop_BGM SoundManager>>
 <<Play_BGM SoundManager Ending_Theme>>
-Penne: *At New Fork Ziti's Bureau of Investigation...*
+Penne: (One year later: At New Fork Ziti's Bureau of Investigation...)
 Penne: *Penne enters an office with a takeout cup in hand. The walls are covered in awards. Rigatoni is working at a desk.*
 Penne: Rejoice, Toni— The caffeine has finally arrived!
 Rigatoni: I thought I told you to refrain from calling me that at work.
@@ -144,6 +149,16 @@ Rigatoni: But it turns out, that path was unfulfilling and... lonely. And ultima
 Rigatoni: Penne, I want to thank you for not giving up on the job, or on me. Meeting you has made me... happier. I can only wish you the same.
 Penne: I have never been happier... partner!
 Rigatoni: Let's get back to work, detective.
+Penne: (THE END!)
+Penne: (TRUE END - Ending 4 out of 4 endings total)
+<<Play_SFX SoundManager Tim_Fade>>
+Tim: Congratulations on reaching the TRUE ENDING! 
+Tim: Thank you for healing my heart, player. It is so nice to be whole again.
+Tim: We'll miss you very much. We've had quite an adventure after all! You are like family to me now. 
+Tim: Feel free to come visit us again anytime. 
+Tim: After all, you are always welcome in Timsville.
+Tim: And as always...
+Tim: Thank you for playing.
 <<Active_Good_End GameManager>>
 ===
 
@@ -151,12 +166,13 @@ title: EndNeutral
 tags:
 position: -154,-388
 ---
+Penne: ...
 Penne: *Penne presents the evidence she founds to Tim and Nero...*
 Penne: And that concludes my case.
 Tim: ...Oh.
 Tim: Oh wow!! You figured it out. Excellent work, Detective Dreadful.
 Penne: Really?! I-I mean, YES. I did!
-Nero: If only her had quietly complied... If only he had stayed six feet under...!
+Nero: If only he had quietly complied... If only he had stayed six feet under...!
 Penne: You murderer...
 Nero: Orzo Parmesan's sacriligious treachery was a threat to Timsville! He could've continued on the right path, the Path of Tim, but once he started to remember his past he couldn't stay away from it.
 Nero: I lured him to the Church... I offered him a false escape, and the moment he accepted the plan, I knew he was too far gone. He could no longer be saved.
@@ -180,7 +196,7 @@ Tim: By humanity's standards, I may be morally bankrupt, but I have a heart, too
 Nero: Our Lord is ever so merciful. You should be kissing the floor he crawls on, ingrate!
 Tim: Oh please don't. I haven't vacuumed this place in a while.
 Penne: Stay in Timsville with Toni forever, knowing I solved the most complex case I've ever faced... or leave with Toni without a single memory of what may be the biggest break in my career...
-Tim: The choice is yours, Detective Dreadful.
+Tim: The choice is yours, detective.
 -> Stay in Timsville
     <<jump stayInTimsville>>
 -> Leave Timsville
@@ -191,17 +207,31 @@ title: stayInTimsville
 position: 76,-244
 ---
 Penne: ...I choose to stay.
-Tim: Wonderful choice. You'll never be sad or lonely again here. And most of all, congratultions on solving the case, detective.
+Tim: Wonderful choice. You'll never be sad or lonely again here. 
+Tim: And most of all, congratultions on solving the case, detective.
 Tim: Welcome to Timsville.
 <<Black_Out_Screen GameManager>>
 <<Stop_BGM SoundManager>>
 <<Play_BGM SoundManager Ending_Theme>>
 Penne: Toni and I move into Orzo's apartment. We're the senior detectives for Timsville's Detective agency, and today's the first anniversary of the agency. I don't know how to feel about that.
 Penne: I'm far from happy, but at least I have Rigatoni. She's safe. Happy, I think. I try not to think about it.
-Penne: What if I had done things differently? What if there was a way for us to leave safely with our memories, a way to convince Tim he didn't have to keep people trapped in Timsville, that he was never alone to begin with?
+Penne: What if I had done things differently? What if there was a way for us to leave safely with our memories?
+Penne: A way to convince Tim he didn't have to keep people trapped in Timsville, that he was never alone to begin with?
 Penne: What would Rigatoni have done?
 Penne: ...What does she truly think of me now?
 Penne: I'll never know. I don't think I deserve to know. I've made my choice already. And now I must say I've never been happier.
+Penne: (THE END...)
+Penne: (NEUTRAL END: STAY IN TIMSVILLE - Ending 2 out of 4 endings total)
+<<Play_SFX SoundManager Tim_Fade>>
+Tim: ...
+Tim: It's too bad, you know. You solved the mystery correctly!
+Tim: ...
+Tim: How do you reach the TRUE ENDING? 
+Tim: Say, have you seen those little guys all around Timsville? The ones that asked to be taken by Penne? 
+Tim: Try collecting all six of them next time. I'd like to be reunited with them, player. 
+Tim: What's lost should always be found. 
+Tim: But regardless...
+Tim: Thank you for playing. 
 <<Active_Neutral_End_Stay>>
 ===
 
@@ -225,9 +255,22 @@ Penne: One year later, Toni and I are back in the New Fork Ziti Bureau of Invest
 Penne: Nothing much has changed since Rigatoni and I came back from Timsville. We both remember that Timsville exists, but... we don't remember what happened there. 
 Penne: The case files are empty. It's hard to explain, but all the files pertaining to the Timsville case is missing information.
 Penne: Even more mysteriously, Timsville itself seems to have disappeared. The bureau had no choice but to permanently close the case.
-Penne: Ever since we got back, I've felt a strange emptiness. Loneliness. Maybe it's because I always wonder, what did we leave behind in Timsville? What did we forget? 
+Penne: Ever since we got back, I've felt a strange emptiness. Loneliness. 
+Penne: Maybe it's because I always wonder, what did we leave behind in Timsville? What did we forget? 
 Penne: Was there a way for us to leave with our memories? Negotiated with whoever we faced? 
 Penne: I can't shake the feeling that maybe if I had done things differently, we would have been better off. Happier, even. But I guess I'll never know for sure.
+Penne: (THE END...)
+Penne: (NEUTRAL END: LEAVE TIMSVILLE - Ending 3 out of 4 endings total)
+<<Play_SFX SoundManager Tim_Fade>>
+Tim: ...
+Tim: What a shame. You solved the mystery correctly!
+Tim: ...
+Tim: How do you reach the TRUE ENDING? 
+Tim: Say, have you seen those little guys all around Timsville? The ones that asked to be taken by Penne? 
+Tim: Try collecting all six of them next time. I'd like to be reunited with them, player. 
+Tim: What's lost should always be found. 
+Tim: But regardless...
+Tim: Thank you for playing. 
 <<Active_Neutral_End_Leave GameManager>>
 ===
 
@@ -235,6 +278,7 @@ title: EndBad
 tags:
 position: 46,-112
 ---
+Penne: ...
 Penne: *Penne presents the evidence she founds to Tim and Nero...*
 Penne: And that concludes my case.
 Tim: Oh... I hate to be "that guy," but you got it wrong.
@@ -261,5 +305,17 @@ Penne: There was a time before Timsville... I know there was. I can sometimes fe
 Penne: Sometimes I wonder, if I had done things differently before, would I be as happy as I am now?
 Penne: I guess I'll never know, and I don't want to know! And I'll never need to know, because I have everything I've ever wanted.
 Penne: I've never been happier!
+Penne: (THE END...)
+Penne: (BAD END - Ending 1 out of 4 endings total)
+<<Play_SFX SoundManager Tim_Fade>>
+Tim: ...
+Tim: Ah...what a shame. So close! But alas, player. You did not solve the case correctly. 
+Tim: ...
+Tim: You are also a power that exists outside and above of this world, aren't you? 
+Tim: We are quite similar, you and I. 
+Tim: Rewind time and solve the case again! I know you can do it correctly. 
+Tim: Or don't. You can let Penne and Rigatoni stay with me. I enjoy the company, for I am quite lonely you see.
+Tim: But regardless of what you choose to do next...
+Tim: Thank you for playing. 
 <<Active_Bad_End GameManager>>
 ===
