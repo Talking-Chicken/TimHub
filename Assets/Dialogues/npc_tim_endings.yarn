@@ -54,7 +54,6 @@ Penne: Thus, to prevent Orzo from escaping Timsville, Nero had stabbed Orzo with
 Penne: Something he was familiar with as a gardener and had multiple copies everywhere so he could escape the blame.
 Penne: This would've been the perfect crime if only Nero didn't account for the Wisdom Tooth he stuck it in to give me intel or for me to find the Mysterious Letter he used to trick Orzo. 
 Penne: The Receipts, the Gardening Shears, the Mysterious Letter, the Confession Log Book and its handwriting, and finally the Will...all of these signs are pointing to Nero: the murderer of Orzo Parmesan!
-<<Black_Out_Screen GameManager>>
 <<if $timlingCount == 6>>
     <<jump EndTrue>>//if penne has ALL 6 Timlings: go to True End
 <<else>>
@@ -125,7 +124,9 @@ Tim: Ah, the beauty of fatherhood. Detective, I can't thank you enough for helpi
 Tim: *Tim spits out the arm in his mouth and hacks up a BABY TOOTH.*
 Tim: It has much learning and growing to do, like me. But one day, it will be wise.
 Penne: Thank you... so... much?
-//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+<<Black_Out_Screen GameManager>>
+<<Stop_BGM SoundManager>>
+<<Play_BGM SoundManager Ending_Theme>>
 Penne: *At New Fork Ziti's Bureau of Investigation...*
 Penne: *Penne enters an office with a takeout cup in hand. The walls are covered in awards. Rigatoni is working at a desk.*
 Penne: Rejoice, Toni— The caffeine has finally arrived!
@@ -190,7 +191,10 @@ position: 76,-244
 ---
 Penne: ...I choose to stay.
 Tim: Wonderful choice. You'll never be sad or lonely again here. And most of all, congratultions on solving the case, detective.
-Tim: Welcome to Timsville.//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Tim: Welcome to Timsville.
+<<Black_Out_Screen GameManager>>
+<<Stop_BGM SoundManager>>
+<<Play_BGM SoundManager Ending_Theme>>
 Penne: Toni and I move into Orzo's apartment. We're the senior detectives for Timsville's Detective agency, and today's the first anniversary of the agency. I don't know how to feel about that.
 Penne: I'm far from happy, but at least I have Rigatoni. She's safe. Happy, I think. I try not to think about it.
 Penne: What if I had done things differently? What if there was a way for us to leave safely with our memories, a way to convince Tim he didn't have to keep people trapped in Timsville, that he was never alone to begin with?
@@ -211,7 +215,10 @@ Nero: The mind control isn't working on her. She has a particular immunity to yo
 Tim: I see. I hope you don't mind if we take more extreme measures.
 Penne: Wha—
 Tim: Congratulations on solving the case, detective.
-Tim: It's a shame you won't remember any of it.//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Tim: It's a shame you won't remember any of it.
+<<Black_Out_Screen GameManager>>
+<<Stop_BGM SoundManager>>
+<<Play_BGM SoundManager Ending_Theme>>
 Penne: One year later, Toni and I are back in the New Fork Ziti Bureau of Investigation. 
 Penne: Nothing much has changed since Rigatoni and I came back from Timsville. We both remember that Timsville exists, but... we don't remember what happened there. 
 Penne: The case files are empty. It's hard to explain, but all the files pertaining to the Timsville case is missing information.
@@ -240,7 +247,10 @@ Nero: The mind control doesn't work on her. She has a particular immunity to you
 Tim: I see. I hope you don't mind then if we take more extreme measures?
 Penne: Wha—
 Tim: Don't be disheartened, detective. You may have failed...
-Tim: ...but a position has opened up in Timsville, just for you.//BLACK SCREEN WITH DIALOGUE BOX STARTING HERE
+Tim: ...but a position has opened up in Timsville, just for you.
+<<Black_Out_Screen GameManager>>
+<<Stop_BGM SoundManager>>
+<<Play_BGM SoundManager Ending_Theme>>
 Penne: Toni and I moved into Orzo's old home. We've redecorated it with awards we've gotten for being "the best detectivesin Timsville".
 Penne: We're senior detectives for Timsville's Detective agency, and today's the first year anniversary of it's initial opening.
 Penne: It's hard work, but I've finally achieved my dream of being the best detective with the love of my life.

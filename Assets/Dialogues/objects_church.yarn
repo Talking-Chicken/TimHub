@@ -39,6 +39,8 @@ position: 300,-101
         -> Enter the secret room (Penne cannot return to the Church if she enters.)
             Penne: Well, here goes nothing!
             Penne: ...
+            <<Stop_BGM SoundManager>>
+            <<Play_BGM SoundManager Secret_Room_Music>>
             <<Room_Change GameManager>>
         -> Maybe later 
             Penne: I'll take another look around for anything else. 
