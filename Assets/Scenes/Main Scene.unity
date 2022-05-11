@@ -4409,6 +4409,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5a0135333db9249898f4c4bdb4bbeea0, type: 3}
   - clipName: Tim Fade
     clip: {fileID: 8300000, guid: 3c28405c088c242208955e5e06677d7e, type: 3}
+  - clipName: Tim Zap
+    clip: {fileID: 8300000, guid: 8b8b8ee45871d412e8f504b277fc7ba4, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
