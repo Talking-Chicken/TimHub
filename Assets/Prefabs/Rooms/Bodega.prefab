@@ -3195,7 +3195,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1901766707
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1429078332597849585, guid: fba992f0b80f0491dbb6f0dec1583efb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3956,7 +3956,7 @@ MonoBehaviour:
   entryList:
   - entryName: Hatsune Miku
     entryDes: A dancing Hatsune Miku. What's not to love?
-    entryImage: {fileID: 21300000, guid: cd3d9adfe807ecf408cd6d6fc4c6c6c0, type: 3}
+    entryImage: {fileID: 21300000, guid: 325fc44d709aba54f929a257a3260b30, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -8406,7 +8406,6 @@ GameObject:
   - component: {fileID: 1475363830003483348}
   - component: {fileID: 4156795084836529382}
   - component: {fileID: 604956920}
-  - component: {fileID: 5881176685151186494}
   m_Layer: 1
   m_Name: obj_timProduce
   m_TagString: Untagged
@@ -8783,32 +8782,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &5881176685151186494
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110889175424617997}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.15981293, y: 2.4018419}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.18, y: 7.535}
-    newSize: {x: 2.99, y: 5.1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.1049042, y: 4.6293445}
-  m_EdgeRadius: 0
 --- !u!1 &8880655770203724904
 GameObject:
   m_ObjectHideFlags: 0
@@ -9036,7 +9009,7 @@ MonoBehaviour:
   entryList:
   - entryName: Fish ATM
     entryDes: A fish ATM that speaks in a Scottish accent.
-    entryImage: {fileID: 21300000, guid: 9d0e81960b9e4514589259d2d05e9758, type: 3}
+    entryImage: {fileID: 21300000, guid: 915e683e94c78634091b44506f2757bc, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
