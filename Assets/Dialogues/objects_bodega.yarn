@@ -39,17 +39,9 @@ title: Produce_Isle
 tags:
 position: 300,-101
 ---
-//wait to see what we do with teeth isle/baby heads
-<<if Check_Collected("Produce_Isle") == false && Check_Read("radiatoreIntroRead") == true>>
-    <<Play_SFX SoundManager Produce_Isle>>
-    Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
-    <<set $newItem to "Produce_Isle">>
-    <<jump addEntry>>
-<<elseif Check_Read("radiatoreIntroRead") == false>>
-    Penne: I should go talk to the witness first and then examine this piece of evidence!
-<<else>>
-    Penne: I already recorded this evidence!
-<<endif>>
+<<Play_SFX SoundManager Produce_Isle>>
+Penne: "Farm-Fresh Produce and... Magical Girls?!"
+Penne: I'm so used to seeing them on TV... How did they get here?
 ===
 
 title: hamDugo
@@ -264,8 +256,17 @@ tags:
 
 title: Teeth_Isle
 ---
-<<Play_SFX SoundManager Teeth_Isle>>
-Penne: A shelf full of teeth. They seem to be for sale.
+//wait to see what we do with teeth isle/baby heads
+<<if Check_Collected("Produce_Isle") == false && Check_Read("radiatoreIntroRead") == true>>
+    <<Play_SFX SoundManager Teeth_Isle>>
+    Penne: Ahh yes, the toddlers of Timsville have a bright future in store.
+    <<set $newItem to "Produce_Isle">>
+    <<jump addEntry>>
+<<elseif Check_Read("radiatoreIntroRead") == false>>
+    Penne: I should go talk to the witness first and then examine this piece of evidence!
+<<else>>
+    Penne: I already recorded this evidence!
+<<endif>>
 ===
 
 title: Fwog
