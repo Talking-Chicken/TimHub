@@ -155,7 +155,7 @@ MonoBehaviour:
   entryList:
   - entryName: Spearmint Toothpaste
     entryDes: Spearmint toothpaste. The best one!
-    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
+    entryImage: {fileID: -3170073439025796112, guid: 532e87da3cfcecb4682f79dda3adb6b5, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -1407,7 +1407,7 @@ MonoBehaviour:
   entryList:
   - entryName: The Rug Lady
     entryDes: 'A lady who''s sewn into a rug. '
-    entryImage: {fileID: 21300000, guid: 7c13d68ae6a214e478f8e5e74d808490, type: 3}
+    entryImage: {fileID: 21300000, guid: 52345b0ce1554ff47bead9e02c444bf2, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   entryList:
   - entryName: Bodega Cat
     entryDes: A cat who lives in the Bodega. Her name is Pocky!
-    entryImage: {fileID: 21300000, guid: caf8c0028bac8a042a5b225ebed08808, type: 3}
+    entryImage: {fileID: 21300000, guid: 5b089dfa6227fa9478f4d19d84b301c7, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -6827,7 +6827,7 @@ MonoBehaviour:
   entryList:
   - entryName: Mint Toothpaste
     entryDes: Mint toothpaste. Basic. Meh.
-    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
+    entryImage: {fileID: -6421574581697964928, guid: 532e87da3cfcecb4682f79dda3adb6b5, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -7986,7 +7986,7 @@ MonoBehaviour:
   entryList:
   - entryName: Charcoal Toothpaste
     entryDes: Charcoal toothpaste. Quirky...
-    entryImage: {fileID: -2611357951223775283, guid: e19e27b4edd90c147ae4fa5749caf5f4, type: 3}
+    entryImage: {fileID: -4270101432794722908, guid: 532e87da3cfcecb4682f79dda3adb6b5, type: 3}
     entryType: 0
   hasDifferentDestination: 0
   destination: {fileID: 0}
@@ -9481,7 +9481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9212847108574978482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6349, y: -2.24, z: 60.02978}
+  m_LocalPosition: {x: 8.397, y: -2.24, z: 60.02978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8648696143787784362}
