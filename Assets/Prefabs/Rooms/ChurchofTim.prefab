@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1117723943}
   - component: {fileID: 1117723945}
   - component: {fileID: 1117723946}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: obj_churchCandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1901766707
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ac19b1a288714cf468412b1203f02eae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1495,7 +1495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2658238117866891955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.88, y: -0.76, z: 49.89235}
+  m_LocalPosition: {x: -1.88, y: 0.86, z: 49.89235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1299875784404771153}
@@ -1567,7 +1567,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028090477, y: 2.8225079}
+  m_Offset: {x: -0.028090477, y: 1.14}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.12261758}
@@ -1621,7 +1621,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.08}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.12261758}
@@ -3297,7 +3297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4694541575155656808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -0.79, z: 0}
+  m_LocalPosition: {x: -0.13, y: -1.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7004277476143921749}
@@ -3379,6 +3379,7 @@ GameObject:
   - component: {fileID: 8872440421621901198}
   - component: {fileID: 2305988484311658745}
   - component: {fileID: 271179396997465385}
+  - component: {fileID: 901323783}
   m_Layer: 0
   m_Name: npc_nero
   m_TagString: Untagged
@@ -3839,6 +3840,25 @@ PolygonCollider2D:
     - - {x: 0.69, y: 3.29}
       - {x: 0.69, y: 3.2649999}
       - {x: 0.695, y: 3.2649999}
+--- !u!95 &901323783
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246428484727693412}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a48d47c4ea11f9245a444c3b06256321, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5409445403340980603
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,7 +5573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2622483020794663530, guid: dea29b9092192ee4ab62f6c29ba4b411, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.75
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 2622483020794663530, guid: dea29b9092192ee4ab62f6c29ba4b411, type: 3}
       propertyPath: m_LocalPosition.z

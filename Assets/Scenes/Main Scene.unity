@@ -1127,10 +1127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3329582499889627371, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
-      propertyPath: entryList.Array.data[0].entryImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 915e683e94c78634091b44506f2757bc, type: 3}
     - target: {fileID: 5894379972735577724, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1179,8 +1175,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bodega
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5881176685151186494, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beb6dd32489ad49c6abfa7264d40ed02, type: 3}
 --- !u!1 &655164322
 GameObject:
@@ -1677,25 +1672,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5246428484727693412, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
   m_PrefabInstance: {fileID: 1462577656}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &901323783
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901323782}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a48d47c4ea11f9245a444c3b06256321, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &925236258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,29 +3520,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1299875784404771153, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+    - target: {fileID: 752662239092555631, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a54732e3500f3f54b81b5aa25352e63f, type: 3}
+    - target: {fileID: 1011710230908586655, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2295777
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011710230908586655, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2143977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011710230908586655, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5179969
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011710230908586655, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011710230908586655, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.99
+      value: 4.0131
       objectReference: {fileID: 0}
-    - target: {fileID: 1574359137155929118, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4955509
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Size.y
+      value: 3.4764984
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09332764
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_Offset.y
-      value: 1.14
+      value: 1.8715197
       objectReference: {fileID: 0}
-    - target: {fileID: 2440045917920144281, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852558115413343071, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 6219517027967356710, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
-      propertyPath: m_SortingOrder
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7004277476143921749, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.86
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872440421621901196, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 5.945
       objectReference: {fileID: 0}
     - target: {fileID: 8872440421651647760, guid: fa26439df1b5643c98bedd48eb4c1c1d, type: 3}
       propertyPath: m_RootOrder
@@ -4265,6 +4269,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4c76218dfa3c14f69a00a7fbd5f1a2bf, type: 3}
   - clipName: Nero Enter
     clip: {fileID: 8300000, guid: 5a0135333db9249898f4c4bdb4bbeea0, type: 3}
+  - clipName: Tim Fade
+    clip: {fileID: 8300000, guid: 3c28405c088c242208955e5e06677d7e, type: 3}
   BGMAudios:
   - clipName: Bodega Music
     clip: {fileID: 8300000, guid: 4be5123c35f830e4ca655666b996adae, type: 3}
