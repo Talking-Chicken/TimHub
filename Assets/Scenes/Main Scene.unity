@@ -4252,6 +4252,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5d08122eee706c346ac998ed7b28332b, type: 3}
   - clipName: Secret Room Music
     clip: {fileID: 8300000, guid: bcfa2c46944469b43b61f31d3b596752, type: 3}
+  - clipName: Ending Theme
+    clip: {fileID: 8300000, guid: f23fa60a61a5c4e68906b2f7f894f2f7, type: 3}
   UIAudios:
   - clipName: Click On Item
     clip: {fileID: 8300000, guid: a0328800982438a4ea7ded00462f1461, type: 3}
