@@ -31,7 +31,7 @@ position: 300,-101
 <<if Check_Collected("Bodega_Receipt") == false && Check_Read("stelleIntro") == true>>
     <<Play_SFX SoundManager Bodega_Receipt>>
     Penne: This receipt says that Orzo bought something at the local bodega on Timsday in the evening. 
-    Penne: ...wait gosh darn minute. Orzo bought something ON Timsday? 
+    Penne: ...wait a gosh darn minute. Orzo bought something ON Timsday? 
     Penne: Didn't Stelle tell me that Orzo was last seen alive the day BEFORE Timsday?
     Penne: This piece of evidence directly contradicts her alibi! This is a SERIOUS breakthrough for the case!
     Penne: I should collect this and show Rigatoni first! Then, I can show this to Stelle and confront her to get the truth!
@@ -52,7 +52,7 @@ position: -138,-170
     <<Play_SFX SoundManager Orzo_Journal>>    
     Penne: Surely Orzo wouldn't mind if I took a peak? This is for work, after all! Highly professional stuff. 
     Penne: Dangnabbit, it's all gibberish and crazy-talk! I can only make out the words "escape", "true memory", and "did I leave the oven on?".  
-    Penne: Dreams are weird, but a lot of this stuff seems rather lucid now looking at it closely. Albeit frantically. 
+    Penne: Hmm, there are a lot of sharp details here though. His writing, though frantic, seems lucid to me. How strange...
     <<Add_Answer journal Question(Detail) "Suicide to escape Timsville">>
     <<set $newItem to "Orzo_Dream_Journal">>
     <<jump addEntry>>
@@ -116,8 +116,8 @@ position: 300,-101
         -> Take Buff Timling
             Penne: Let's get BEEFY. Come with me, bro!
             Buff Timling: Gains, gains, gains! Gains all day, EVERY day!
-            Buff Timling: Can't wait to beef up with all of my Timling bros!
-            Penne: If there are six of you, I wonder if I can collect the rest of you? I should be on the look out for more Timlings!
+            Buff Timling: Can't wait to beef up with all FIVE OTHER of my Timling bros!
+            Penne: (If there are six of you total, I wonder if I can collect the rest of you? I should be on the look out for more Timlings!)
             <<set $timlingCount = $timlingCount + 1>>
             <<Play_SFX SoundManager Timling_Collect>>
             <<set $newItem to "Buff_Timling">>

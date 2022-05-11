@@ -17,7 +17,7 @@ position: -1,-117
         <<jump question_aboutItems>>
     -> Show Rigatoni Stelle's new alibi <<if Check_Collected("Stelle_Parmesan_Alibi_Update") == true && Check_Read("rigatoni_stelleAlibiShown") == false>>
             <<jump go_to_bodega>>
-    -> Leave Orzo's home <<if Check_Read("rigatoni_stelleAlibiShown") == true>>
+    -> Go to the Bodega <<if Check_Read("rigatoni_stelleAlibiShown") == true>>
         Rigatoni: It seems as though we have thoroughly examined the room thus far. 
         Rigatoni: Thanks to the bodega receipt and Stelle's new alibi, we now know that Orzo was last alive in the bodega.
         Rigatoni: Ready to proceed to the next area, the bodega, to investigate further?
@@ -84,7 +84,7 @@ Penne: Haha...well, yes...looks like you aren't our best detective for nothing..
 Rigatoni: I knew the bureau had its cowards, but right when I request for backup...this is simply embarrasing.
 Penne: Don't worry. We'll find evidence, get truthful alibis, and solve the murder of Orzo Parmesan.
 Rigatoni: At least you did your research. Did the bureau give you any other pieces of information about the case I sent them?
-Penne: Yes! The corpse autopsy, the case brief, and what we know so far about the murder are all filed away in my journal right here.
+Penne: Yes! The corpse autopsy, the case report, and what we know so far about the murder are all filed away in my journal right here.
 Rigatoni: Check the information in your journal before questioning anyone or examining evidence. We want to make informed decisions here.
 Rigatoni: Your first task is going to be questioning our first witness, Stelle Parmesan. After you're done talking to me, ask her every question you can think of.
 Penne: Gotcha. I've got my journal, my wits, and my puns! As long as I have those and your big beautiful brain, there's nothing we can't solve!
@@ -105,7 +105,7 @@ title: question_investigationSoFar
 position: 247,-92
 ---
 //this convo is a tutorial for players on what needs to be done in the room
-Penne: So I got your letter with the case debriefing and all that jazz. How's the investigation so far? //Penne Happy
+Penne: So I got your letter with the information on Orzo Parmesan, the case, and all that jazz. How's the investigation so far? //Penne Happy
 Rigatoni: I have already investigated the locations and witnesses, but something is not adding up. The people here are hiding something. Afraid of something.
 Penne: That's awful! We have to solve this case no matter what gets in our way. So what should I do? //Penne Happy
 Rigatoni: Talk to any witnesses you come across. Collect their alibis in your journals. Be aware that some of them may be lying, however.
@@ -168,17 +168,18 @@ position: 200,157
 ---
 <<if Check_Read("rigatoni_stelleAlibiShown") == false>>
     Penne: Stelle was lying to me! Orzo wasn't last seen alive the night before Timsday—he was alive on Timsday, according to this receipt!
-    Rigatoni: And you have recorded everything so far?
+    Penne: Orzo Parmesan was specifically last proven to be alive at the bodega. 
+    Rigatoni: That sounds like our next area of interest then. Have recorded everything so far?
     Penne: That's right! It's all been put into my journal.
     Rigatoni: My intuition never fails me. I do not think this will be the last of our witnesses lying, so stay on guard.
     Penne: Our...witnesses...?
     Rigatoni: Don't.
     Penne: Aw, we ARE partners! That's so sweet and COOL and EXCITING AND—
-    Rigatoni: E-Enough! You are making my head...spin...ugh.
+    Rigatoni: E-Enough! You are making my head...spin...ugh. (Why does it hurt so much?)
     Penne: Oh no! I'm so so sorry. *whispering* What should we do now?
     Rigatoni: Don't patronize me. I am fine.
     Penne: Ok...whatever you say...
-    Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the next area?
+    Rigatoni: It seems as though we have thoroughly examined the room thus far. Ready to proceed to the bodega?
 -> Yes, let's go!
     <<Stop_BGM SoundManager>>
     <<Room_Change GameManager>>
