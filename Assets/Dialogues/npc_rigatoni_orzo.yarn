@@ -71,7 +71,7 @@ position: -204,-292
 ---
 //the first conversation Penne and Rigatoni have in the game. This is contextualizing/start of tutorial
 Penne: Rigatoni! I missed seeing you at Head Quarters! Unfortunate that the next time I see you is at an investigation scene...//Penne Happy
-Rigatoni: That's Detective Rigatoni to you. What are you even doing here? This is murder victim's home for the case I'm working on.//Rigatoni Disdain
+Rigatoni: That's Detective Rigatoni to you. What are you even doing here? This is the murder victim's home for the case I'm working on.//Rigatoni Disdain
 Penne: That's the thing! You called for help for said murder case...so here I am! //Penne Happy
 // <<Play_SFX SoundManager Pocky_Cat>>
 // <<Add_Answer journal Question(Criminal) "it's me!">>
@@ -81,9 +81,9 @@ Penne: That's the thing! You called for help for said murder case...so here I am
 Rigatoni: The investigations bureau sent you? I had hoped they would have sent a more...senior detective. Sigh.
 Rigatoni: Let me guess: nobody else volunteered but you, given the perilous nature of this case. //Rigatoni Unamused
 Penne: Haha...well, yes...looks like you aren't our best detective for nothing...
-Rigatoni: I knew the bureau had its cowards, but right when I request for backup...this is simply embarrasing.
+Rigatoni: I knew the bureau had its cowards, but right when I request for backup... this is simply embarrassing.
 Penne: Don't worry. We'll find evidence, get truthful alibis, and solve the murder of Orzo Parmesan.
-Rigatoni: At least you did your research. Did the bureau give you any other pieces of information about the case I sent them?
+Rigatoni: At least you did your research. Did the bureau give you any of the other pieces of information about the case I sent them?
 Penne: Yes! The corpse autopsy, the case report, and what we know so far about the murder are all filed away in my journal right here.
 Rigatoni: Check the information in your journal before questioning anyone or examining evidence. We want to make informed decisions here.
 Rigatoni: Your first task is going to be questioning our first witness, Stelle Parmesan. After you're done talking to me, ask her every question you can think of.
